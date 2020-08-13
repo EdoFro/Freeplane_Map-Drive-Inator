@@ -1,29 +1,8 @@
-// //region: =================== IMPORTING LIBS =========================================================
+
 import org.freeplane.plugin.script.proxy.ScriptUtils
 
-// import groovy.transform.EqualsAndHashCode
-// import groovy.io.FileType
-// import java.text.SimpleDateFormat;
-// //end
-
-// //region: =================== DEFINING CLASSES =======================================================
-// @EqualsAndHashCode
-// class xFile {
-	// String id
-	// String link
-	// String path
-
-    // xFile(id, link, path) {          
-        // this.id = id
-        // this.link = link
-        // this.path = path
-    // }
-// }
-// //end
 
 class MDI{
-    //region: =================== METHODS AND FUNCTIONS ==================================================
-    
     //region: ---------------------- Functions Initial Setup
     
     
@@ -430,5 +409,4 @@ class MDI{
     }
     //end
       
-    // end ============================== fin: METHODS AND FUNCTIONS ==============================
 }

@@ -17,7 +17,7 @@ def nodesToMove = nodeNewImports.find{it.link?.uri?.scheme == 'file' && !it.link
 // c.select(nodesToMove)
 // ui.informationMessage('nodesToMove :' + nodesToMove.size().toString())
 
-def rNodToMove = 100000
+def rNodToMove
 def evitarLoop =0
 while (nodesToMove.size()>0 && evitarLoop<5){
     def n = nodesToMove[0]
@@ -98,11 +98,6 @@ c.statusInfo = "    -------------   new 'file' Nodes positioned    -------------
 def obtainBaseFolder(n) {
 	return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle('file_folder') && it.hasStyle('baseFolder')}
 }
-
-// def obtainNewImportsNode(n){
-	// n.children.find{it.hasStyle('newFolderImport')}
-// }
-
 
 // function, returns list of Nodes, (folders in rootPath from selected node)
 	// all nodes that have a link to a file directory and have style "file_folder"

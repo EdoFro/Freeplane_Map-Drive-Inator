@@ -555,6 +555,7 @@ def armaListadoRutas(nodo, String path){
 }
 //end
 
+//TODO: pasar estas funciones a librería MDI
 def listFilesFromDrive(rootNode){
     def rootPath = MDI.getPathFromLink(rootNode)
     def listOfFiles = []
@@ -586,4 +587,3 @@ def excludedFolders(nodo){
     }
     return nodos.link.file.path
 }
-

@@ -236,6 +236,16 @@ class MDI{
                 getPathFromLink(h) == (obtainPathFromMap(h) + texto) 
             }
     }
+
+    def static excludedFolders(nodo){
+        def nodos=nodo.find(false,true,{isLocked(it)}).findAll{nodeIsFolder(it)}
+        nodos.each{
+            if(nodos.contains(it)) {
+                nodos = nodos - it.find(false,true,{nodeIsFolder(it)}).minus(it)
+            }
+        }
+        return nodos.link.file.path
+    }
     //end
 
     //region: ---------------------- Funciones Strings

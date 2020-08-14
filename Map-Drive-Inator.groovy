@@ -564,7 +564,7 @@ def listFilesFromDrive(rootNode){
             // listOfFiles << file.path
         // }
     // }
-    def excludedDirs = excludedFolders(rootNode)
+    def excludedDirs = MDI.excludedFolders(rootNode)
     def sortByTypeThenName = { a, b ->
      a.isFile() != b.isFile() ? a.isFile() <=> b.isFile() : a.name <=> b.name }  // multiplicando por -1 se puede invertir el orden del sorting
     new File(rootPath).traverse(
@@ -578,12 +578,4 @@ def listFilesFromDrive(rootNode){
     return listOfFiles
 }
 
-def excludedFolders(nodo){
-    def nodos=nodo.find(false,true,{MDI.isLocked(it)}).findAll{MDI.nodeIsFolder(it)}
-    nodos.each{
-        if(nodos.contains(it)) {
-            nodos = nodos - it.find(false,true,{MDI.nodeIsFolder(it)}).minus(it)
-        }
-    }
-    return nodos.link.file.path
-}
+

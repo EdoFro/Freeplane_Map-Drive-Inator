@@ -1,23 +1,26 @@
 // @ExecutionModes({ON_SINGLE_NODE="/main_menu/ScriptsEdo/MapDriveInator"})
 
-//.groovy
 import groovy.io.FileType
 import groovy.io.FileVisitResult
 
-baseFolderNode = MDI.obtainBaseFolder(node)
-baseFolderPath = MDI.getPathFromLink(baseFolderNode)
 
-importFoldersFromDrive(baseFolderNode)
+baseFolderNode = MDI.obtainBaseFolder(node)
+if(baseFolderNode){
+	baseFolderNode.style.name = 'baseFolder'
+	baseFolderPath = MDI.getPathFromLink(baseFolderNode)
+    importFoldersFromDrive(baseFolderNode)
+}else{
+	ui.informationMessage("couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)")
+}
+
 
 def importFoldersFromDrive(rootNode){
     def rootPath = MDI.getPathFromLink(rootNode)
-    //def excludedDirs = excludedFolders(rootNode)
-    def sortByTypeThenName = { a, b ->
-     a.isFile() != b.isFile() ? a.isFile() <=> b.isFile() : a.name <=> b.name }  // multiplicando por -1 se puede invertir el orden del sorting
+    def excludedDirs = MDI.excludedFolders(rootNode)
+    def sortByTypeThenName = { a, b -> a.isFile() != b.isFile() ? a.isFile() <=> b.isFile() : a.name <=> b.name }
     new File(rootPath).traverse(
         type         : FileType.DIRECTORIES,
-        //nameFilter   : ~/.*\.pdf/,
-        preDir       : { if (it.name[0] == '.') return FileVisitResult.SKIP_SUBTREE },
+        preDir       : { if (it.name[0] == '.' || it.path in excludedDirs) return FileVisitResult.SKIP_SUBTREE },
         sort         : sortByTypeThenName
     ){it ->
         // ui.informationMessage('it.path   :' + it.path as String)
@@ -25,22 +28,20 @@ def importFoldersFromDrive(rootNode){
     }
 }
 
+
 def addFolderNode(f) {
-    // agregar f a nodo nueva importación
     def nodoDonde = baseFolderNode
     def gPath = baseFolderPath
-    (f - baseFolderPath)?.split('\\\\').init().each{String dir ->
-        // ui.informationMessage('dir   :' + dir as String)
+    (f - baseFolderPath)?.split('\\\\').each{String dir ->
         gPath +=  dir << '\\'
-        // ui.informationMessage('gPath   :' + gPath as String)
-        nodoDonde = nodoDonde.children.find{it.text == dir}?:nodoDonde.createChild()
+        nodoDonde = nodoDonde.find{it.text == dir && (it.link?.file?.path + '\\') == gPath }[0]?:nodoDonde.createChild()
         if(nodoDonde.text==''){
             nodoDonde.text=dir
+            MDI.markAsNew(nodoDonde, true)
         }
-        // ui.informationMessage('nodoDonde   :' + nodoDonde as String)
         if(!nodoDonde.link?.file){nodoDonde.link.file = new File(gPath)}
     }
-    nodoDonde.createChild(f - gPath).link.file = new File(f)
 }
+
 
 

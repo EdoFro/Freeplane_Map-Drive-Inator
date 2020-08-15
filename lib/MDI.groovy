@@ -304,9 +304,9 @@ class MDI{
     
     def static markAsBroken(n,b){
         if(b){
-            if(!n.icons.contains('broken-line')){n.icons.add('broken-line')}
+            n.style.name = 'missing'
         } else {
-            if(n.icons.contains('broken-line')){n.icons.remove('broken-line')}
+            if (n.style.name == 'missing') {n.style.name = null}
         }
     }
     // end

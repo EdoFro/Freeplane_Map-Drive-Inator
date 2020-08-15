@@ -21,7 +21,7 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties fit_to_viewport="false;" show_icon_for_attributes="true" show_note_icons="true" show_notes_in_map="false"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -83,6 +83,9 @@
 <stylenode TEXT="Organizador">
 <icon BUILTIN="folder"/>
 <font BOLD="true"/>
+</stylenode>
+<stylenode TEXT="missing" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3.0 px">
+<icon BUILTIN="broken-line"/>
 </stylenode>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right" STYLE="bubble">
@@ -519,6 +522,9 @@
 <node TEXT="file_folder" ID="ID_796157526" CREATED="1593214180238" MODIFIED="1593214523143" ICON_SIZE="12.0 pt" BORDER_WIDTH="3.0 px">
 <icon BUILTIN="emoji-1F4C2"/>
 </node>
+<node TEXT="missing" ID="ID_1520632540" CREATED="1597422561327" MODIFIED="1597422654970" BORDER_WIDTH="3.0 px" BACKGROUND_COLOR="#f28bb3">
+<icon BUILTIN="broken-line"/>
+</node>
 </node>
 <node TEXT="Ctrl + C" ID="ID_21737143" CREATED="1592840130776" MODIFIED="1592840139065" NUMBERED="true"/>
 <node TEXT="apply new style from selection" ID="ID_1600968769" CREATED="1592839759108" MODIFIED="1597274597913" LINK="menuitem:_NewUserStyleAction" NUMBERED="true">
@@ -584,6 +590,7 @@
 <node TEXT="movedRenamed" STYLE_REF="movedRenamed" ID="ID_1167577854" CREATED="1595526352759" MODIFIED="1595526365006"/>
 <node TEXT="file" STYLE_REF="file" ID="ID_1716171840" CREATED="1593213432726" MODIFIED="1593213439198"/>
 <node TEXT="file_folder" STYLE_REF="file_folder" ID="ID_1057732732" CREATED="1593214134748" MODIFIED="1593214153053"/>
+<node TEXT="missing" STYLE_REF="missing" ID="ID_452128965" CREATED="1597422759657" MODIFIED="1597422798947"/>
 </node>
 </node>
 <node TEXT="if you want:" STYLE_REF="Organizador" ID="ID_356028967" CREATED="1592841407318" MODIFIED="1597274711148">
@@ -643,55 +650,71 @@
 <node TEXT="Actions:" STYLE_REF="Organizador" ID="ID_1321530167" CREATED="1590503364731" MODIFIED="1597274086662" NUMBERED="true">
 <node TEXT="MAP-DRIVE-INATOR" ID="ID_1022693340" CREATED="1594333825266" MODIFIED="1594333862163" LINK="menuitem:_Map-Drive-Inator_on_single_node"/>
 <node TEXT="Distribute New Nodes" ID="ID_462223382" CREATED="1590503514564" MODIFIED="1597274444903" LINK="menuitem:_DistributeNewNodes_on_single_node"/>
+<node TEXT="Import Just Folders" ID="ID_301694900" CREATED="1597423437025" MODIFIED="1597423471054" LINK="menuitem:_ImportJustFolders_on_single_node"/>
+<node TEXT="selected node&#xa; and its descendants" STYLE_REF="Organizador" ID="ID_1808490451" CREATED="1597445677095" MODIFIED="1597452205549">
+<node TEXT="Get file timestamps" ID="ID_426177707" CREATED="1597445579923" MODIFIED="1597445666648" LINK="menuitem:_GetFileTimestamps_on_selected_node"/>
+<node TEXT="Clear file timestamps in nodes" ID="ID_871470913" CREATED="1597445587207" MODIFIED="1597445777909" LINK="menuitem:_ClearFileTimestampsInNodes_on_selected_node"/>
+<node TEXT="Sort by timestamp" ID="ID_1034853517" CREATED="1597445588339" MODIFIED="1597446361495" LINK="menuitem:_SortByTimestamp_on_single_node"/>
+</node>
 <node TEXT="give node &apos;file_folder&apos; style" STYLE_REF="file_folder" ID="ID_815319331" CREATED="1590806506996" MODIFIED="1592082554300" LINK="menuitem:_AssignStyleAction.file_folder" MAX_WIDTH="250.0 px" MIN_WIDTH="250.0 px"/>
 <node TEXT="give node &apos;locked&apos; style" ID="ID_1595957319" CREATED="1596484461314" MODIFIED="1596484513782" LINK="menuitem:_AssignStyleAction.locked" MAX_WIDTH="250.0 px" MIN_WIDTH="250.0 px">
 <icon BUILTIN="emoji-1F512"/>
 </node>
 </node>
 </node>
-<node TEXT="Features" FOLDED="true" POSITION="right" ID="ID_1933019455" CREATED="1597336293381" MODIFIED="1597336813997" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
+<node TEXT="Features" POSITION="right" ID="ID_1933019455" CREATED="1597336293381" MODIFIED="1597336813997" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
-<node TEXT="basic" ID="ID_916161454" CREATED="1597337606934" MODIFIED="1597337616511">
+<node TEXT="basic" STYLE_REF="Organizador" ID="ID_916161454" CREATED="1597337606934" MODIFIED="1597452217797">
 <node TEXT="video 1" ID="ID_1939874482" CREATED="1597346952852" MODIFIED="1597346956474">
 <node TEXT="lo básico" ID="ID_1757220682" CREATED="1597346968785" MODIFIED="1597346975184" LINK="https://youtu.be/2vwd38rxAlY"/>
 </node>
-<node TEXT="import folder structure" ID="ID_893737363" CREATED="1597337330399" MODIFIED="1597346841668" NUMBERED="true">
+<node TEXT="import folder structure" ID="ID_893737363" CREATED="1597337330399" MODIFIED="1597452247973" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<font STRIKETHROUGH="false"/>
+<node TEXT="you can import the folder structure of any folder in your drive" ID="ID_508140405" CREATED="1597447897026" MODIFIED="1597447941760"/>
+</node>
+<node TEXT="import only new files and folders" ID="ID_115058096" CREATED="1597337362549" MODIFIED="1597452248021" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<font STRIKETHROUGH="false"/>
+<node TEXT="After the first import, Map-Drive-Inator imports only the new files and folders created in your drive without duplicating the allready existing one." ID="ID_1849562988" CREATED="1597447945011" MODIFIED="1597448081563"/>
+</node>
+<node TEXT="alerts about missing files" ID="ID_1917116963" CREATED="1597339003984" MODIFIED="1597452248055" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<font STRIKETHROUGH="false"/>
+<node TEXT="It alerts if any node links to a deleted or moved file." ID="ID_1077141148" CREATED="1597448085831" MODIFIED="1597448156723"/>
+<node TEXT="For example, if another program deletes, moves or renames a file, then MDI will alert you that a link in a node points to a missing file." ID="ID_1501941095" CREATED="1597448158588" MODIFIED="1597448316527"/>
+</node>
+<node TEXT="move file from one folder to another" ID="ID_1657805577" CREATED="1597337385547" MODIFIED="1597452248082" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<font STRIKETHROUGH="false"/>
+<node TEXT="if you move a &apos;file&apos; node in your mindmap from one &apos;folder&apos; node to another, the file gets moved in your drive also" ID="ID_1861751704" CREATED="1597448342653" MODIFIED="1597448703837"/>
+</node>
+<node TEXT="create new folders" ID="ID_984455598" CREATED="1597337406604" MODIFIED="1597452248114" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<font STRIKETHROUGH="false"/>
+<node TEXT="you can create nodes as folders in your map and move file nodes in it. MDI then creates the folders and moves the files into them." ID="ID_1135344312" CREATED="1597448756680" MODIFIED="1597448821859"/>
+</node>
+<node TEXT="rename files" ID="ID_1156580523" CREATED="1597337423991" MODIFIED="1597452248135" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<font STRIKETHROUGH="false"/>
+<node TEXT="if you modify the text of a file node, the file in the drive gets also renamed to this new text" ID="ID_1076188117" CREATED="1597448825127" MODIFIED="1597448900544"/>
+</node>
+<node TEXT="rename folders" ID="ID_120642634" CREATED="1597337431883" MODIFIED="1597452248148" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<font STRIKETHROUGH="false"/>
+<node TEXT="if you modify the text of a folder node, the folder in the drive gets also renamed to this new text" ID="ID_610792282" CREATED="1597448825127" MODIFIED="1597448921673"/>
+</node>
+<node TEXT="move outside files into the project" ID="ID_1675560792" CREATED="1597337502759" MODIFIED="1597452248162" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<font STRIKETHROUGH="false"/>
+<node TEXT="if you paste nodes with links to files that are outside of your base folder, MDI move them to their new position in your folder structure" ID="ID_1597509970" CREATED="1597448926581" MODIFIED="1597449056008"/>
+</node>
+<node TEXT="use copy of a folder in multiple positions in the map, but has to remain in the same path position" ID="ID_1651169814" CREATED="1597337789916" MODIFIED="1597452248171" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <font STRIKETHROUGH="false"/>
 </node>
-<node TEXT="import only new files and folders" ID="ID_115058096" CREATED="1597337362549" MODIFIED="1597346841712" NUMBERED="true">
-<font STRIKETHROUGH="false"/>
 </node>
-<node TEXT="alerts about missing files" ID="ID_1917116963" CREATED="1597339003984" MODIFIED="1597346841745" NUMBERED="true">
-<font STRIKETHROUGH="false"/>
-</node>
-<node TEXT="move file form one folder to another" ID="ID_1657805577" CREATED="1597337385547" MODIFIED="1597346841770" NUMBERED="true">
-<font STRIKETHROUGH="false"/>
-</node>
-<node TEXT="create new folders" ID="ID_984455598" CREATED="1597337406604" MODIFIED="1597346841790" NUMBERED="true">
-<font STRIKETHROUGH="false"/>
-</node>
-<node TEXT="rename files" ID="ID_1156580523" CREATED="1597337423991" MODIFIED="1597346841807" NUMBERED="true">
-<font STRIKETHROUGH="false"/>
-</node>
-<node TEXT="rename folders" ID="ID_120642634" CREATED="1597337431883" MODIFIED="1597346841820" NUMBERED="true">
-<font STRIKETHROUGH="false"/>
-</node>
-<node TEXT="move outside files into the project" ID="ID_1675560792" CREATED="1597337502759" MODIFIED="1597346841831" NUMBERED="true">
-<font STRIKETHROUGH="false"/>
-</node>
-<node TEXT="use copy of a folder in multiple positions in the map, but has to remain in the same path position" ID="ID_1651169814" CREATED="1597337789916" MODIFIED="1597347396716" NUMBERED="true">
-<font STRIKETHROUGH="false"/>
-</node>
-</node>
-<node TEXT="other" ID="ID_1743927001" CREATED="1597337666186" MODIFIED="1597347396709">
+<node TEXT="other" STYLE_REF="Organizador" ID="ID_1743927001" CREATED="1597337666186" MODIFIED="1597452217811">
 <font STRIKETHROUGH="false"/>
 <node TEXT="video 2" ID="ID_841866417" CREATED="1597347161697" MODIFIED="1597347165010">
 <node TEXT="el resto" ID="ID_1187409569" CREATED="1597347167450" MODIFIED="1597347175477" LINK="https://youtu.be/bd30aySucc4"/>
 </node>
-<node TEXT="can handle clones" ID="ID_550697123" CREATED="1597337673551" MODIFIED="1597347396735" NUMBERED="true">
+<node TEXT="can handle clones" ID="ID_550697123" CREATED="1597337673551" MODIFIED="1597452273710" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <font STRIKETHROUGH="false"/>
+<node TEXT="if you have clones of file or folder nodes in your map, MDI can handle them. If one of them is positioned correctly in the map, MDI understands that this file doesn&apos;t need to be moved" ID="ID_698551375" CREATED="1597449186268" MODIFIED="1597451161851"/>
 </node>
-<node TEXT="locked" ID="ID_1866219877" CREATED="1597336926216" MODIFIED="1597347396750" NUMBERED="true">
+<node TEXT="locked" ID="ID_1866219877" CREATED="1597336926216" MODIFIED="1597452273743" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <font STRIKETHROUGH="false"/>
 <richcontent TYPE="DETAILS">
 
@@ -706,20 +729,60 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="you can mark some nodes as &apos;locked&apos;. That means that MDI ignores it and its descendant." ID="ID_1653018271" CREATED="1597451193472" MODIFIED="1597451367785"/>
 <node TEXT="ignores outside files and doesn´t move them into the project folder" ID="ID_1931119002" CREATED="1597337957596" MODIFIED="1597347396757" NUMBERED="true">
 <font STRIKETHROUGH="false"/>
+<node TEXT="you can have nodes with links to files outside your base folder wihout having MDI moving the file form its original drive&apos;s position to your base folder." ID="ID_1337052967" CREATED="1597451378657" MODIFIED="1597451601733">
+<node TEXT="this way you can avoid this" ID="ID_1800171867" CREATED="1597451626292" MODIFIED="1597451664584">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#990000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1597509970" STARTINCLINATION="444;0;" ENDINCLINATION="444;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+</node>
 </node>
 <node TEXT="ignores folders and its subfolders and files when looking in the drive" ID="ID_1674185783" CREATED="1597337999248" MODIFIED="1597347396764" NUMBERED="true">
 <font STRIKETHROUGH="false"/>
+<node TEXT="any &apos;folder&apos; node marked as locked (or inside a locked node) will be ignored (and its content) when searching for file changes in the drive" ID="ID_746839135" CREATED="1597451675680" MODIFIED="1597451804436"/>
 </node>
 </node>
-<node TEXT="ignores folders with name starting with a dot (and its subfolders and files when looking in the drive)&#xa;example: &quot;.git&quot;" ID="ID_1343452811" CREATED="1597337999248" MODIFIED="1597347396768" NUMBERED="true">
+<node TEXT="ignores folders with name starting with a dot (and its subfolders and files when looking in the drive)&#xa;example: &quot;.git&quot;" ID="ID_1343452811" CREATED="1597337999248" MODIFIED="1597452273752" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <font STRIKETHROUGH="false"/>
+</node>
+</node>
+<node TEXT="more:" STYLE_REF="Organizador" ID="ID_1047604820" CREATED="1597446614477" MODIFIED="1597452217816">
+<node TEXT="Import folders only" ID="ID_345705392" CREATED="1597446635398" MODIFIED="1597452273760" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<node TEXT="imports the folders structure without the files" ID="ID_1717110614" CREATED="1597446766430" MODIFIED="1597446792528"/>
+<node TEXT="This helps at the beginning, before the first full import. So you can define if you want some folders to be ignored (to mark as locked)" ID="ID_1936711595" CREATED="1597446794196" MODIFIED="1597452356495">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node TEXT="so you can import only what you want and don&apos;t get excess files to manage in your map" ID="ID_645702854" CREATED="1597446986051" MODIFIED="1597452393673"/>
+</node>
+<node TEXT="import timestamps" ID="ID_1836261839" CREATED="1597447266628" MODIFIED="1597452273780" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<node TEXT="for the selected node and its descendants" ID="ID_1364816807" CREATED="1597447483708" MODIFIED="1597447503154"/>
+<node TEXT="you can import as attributes following timestamps from your files" ID="ID_591952294" CREATED="1597447276185" MODIFIED="1597447302574">
+<node TEXT="lastAccessTime" ID="ID_204841025" CREATED="1597447320479" MODIFIED="1597447320479"/>
+<node TEXT="lastModifiedTime" ID="ID_1910453294" CREATED="1597447325148" MODIFIED="1597447325148"/>
+<node TEXT="creationTime" ID="ID_1868439804" CREATED="1597447330003" MODIFIED="1597447330003"/>
+</node>
+<node TEXT="you can use them to sort, search and filter your nodes" ID="ID_1736997860" CREATED="1597447339271" MODIFIED="1597447390432"/>
+</node>
+<node TEXT="sort by timestamps" ID="ID_732574262" CREATED="1597447403834" MODIFIED="1597452273788" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<node TEXT="you can sort a node and its descendants by any of the timestamps" ID="ID_1033913354" CREATED="1597447415761" MODIFIED="1597447451002">
+<node TEXT="lastAccessTime" ID="ID_503866256" CREATED="1597447320479" MODIFIED="1597447320479"/>
+<node TEXT="lastModifiedTime" ID="ID_456157774" CREATED="1597447325148" MODIFIED="1597447325148"/>
+<node TEXT="creationTime" ID="ID_1495272951" CREATED="1597447330003" MODIFIED="1597447330003"/>
+</node>
+</node>
+<node TEXT="clear the timestamps" ID="ID_718889327" CREATED="1597447465341" MODIFIED="1597452273792" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<node TEXT="for the selected node and its descendants" ID="ID_290685175" CREATED="1597447483708" MODIFIED="1597447503154"/>
+<node TEXT="deletes the timestamps attributes in the nodes" ID="ID_7364982" CREATED="1597447535859" MODIFIED="1597447557117"/>
 </node>
 </node>
 </node>
 <node TEXT="Example:" POSITION="right" ID="ID_1316259066" CREATED="1597276969516" MODIFIED="1597276975690" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
+<node TEXT="look at this videos" ID="ID_525825074" CREATED="1597451868466" MODIFIED="1597451880593">
+<node TEXT="lo básico" ID="ID_1650411941" CREATED="1597346968785" MODIFIED="1597346975184" LINK="https://youtu.be/2vwd38rxAlY"/>
+<node TEXT="el resto" ID="ID_1146532349" CREATED="1597347167450" MODIFIED="1597347175477" LINK="https://youtu.be/bd30aySucc4"/>
+</node>
 </node>
 </node>
 </map>

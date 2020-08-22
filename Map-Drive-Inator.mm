@@ -105,13 +105,13 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="MapDriveInator" POSITION="right" ID="ID_1488840535" CREATED="1589833899017" MODIFIED="1597275408723" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
+<node TEXT="Map-Drive-Inator" FOLDED="true" POSITION="right" ID="ID_1488840535" CREATED="1589833899017" MODIFIED="1598135166130" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
 <node TEXT="UNDER CONSTUCTION" ID="ID_1021111333" CREATED="1597347715234" MODIFIED="1597347780404" BACKGROUND_COLOR="#ffff00">
 <icon BUILTIN="pencil"/>
 <font SIZE="16" BOLD="true"/>
 </node>
-<node TEXT="Instructions" STYLE_REF="Organizador" ID="ID_1687633798" CREATED="1590789587612" MODIFIED="1590791056779"><richcontent TYPE="NOTE">
+<node TEXT="Instructions" STYLE_REF="Organizador" FOLDED="true" ID="ID_1687633798" CREATED="1590789587612" MODIFIED="1590791056779"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -648,9 +648,10 @@
 </node>
 </node>
 <node TEXT="Actions:" STYLE_REF="Organizador" ID="ID_1321530167" CREATED="1590503364731" MODIFIED="1597274086662" NUMBERED="true">
-<node TEXT="MAP-DRIVE-INATOR" ID="ID_1022693340" CREATED="1594333825266" MODIFIED="1594333862163" LINK="menuitem:_Map-Drive-Inator_on_single_node"/>
-<node TEXT="Distribute New Nodes" ID="ID_462223382" CREATED="1590503514564" MODIFIED="1597274444903" LINK="menuitem:_DistributeNewNodes_on_single_node"/>
+<node TEXT="Create BaseFolder Node" ID="ID_1941122703" CREATED="1598135040614" MODIFIED="1598135093458" LINK="menuitem:_CreateBaseFolderNode_on_single_node"/>
 <node TEXT="Import Just Folders" ID="ID_301694900" CREATED="1597423437025" MODIFIED="1597423471054" LINK="menuitem:_ImportJustFolders_on_single_node"/>
+<node TEXT="MAP-DRIVE-INATOR" ID="ID_1022693340" CREATED="1594333825266" MODIFIED="1598135242403" LINK="menuitem:_Map-Drive-Inator_on_single_node" BACKGROUND_COLOR="#ab2b59"/>
+<node TEXT="Distribute New Nodes" ID="ID_462223382" CREATED="1590503514564" MODIFIED="1597274444903" LINK="menuitem:_DistributeNewNodes_on_single_node"/>
 <node TEXT="selected node&#xa; and its descendants" STYLE_REF="Organizador" ID="ID_1808490451" CREATED="1597445677095" MODIFIED="1597452205549">
 <node TEXT="Get file timestamps" ID="ID_426177707" CREATED="1597445579923" MODIFIED="1597445666648" LINK="menuitem:_GetFileTimestamps_on_selected_node"/>
 <node TEXT="Clear file timestamps in nodes" ID="ID_871470913" CREATED="1597445587207" MODIFIED="1597445777909" LINK="menuitem:_ClearFileTimestampsInNodes_on_selected_node"/>
@@ -705,7 +706,7 @@
 <font STRIKETHROUGH="false"/>
 </node>
 </node>
-<node TEXT="other" STYLE_REF="Organizador" ID="ID_1743927001" CREATED="1597337666186" MODIFIED="1597452217811">
+<node TEXT="other" STYLE_REF="Organizador" FOLDED="true" ID="ID_1743927001" CREATED="1597337666186" MODIFIED="1597452217811">
 <font STRIKETHROUGH="false"/>
 <node TEXT="video 2" ID="ID_841866417" CREATED="1597347161697" MODIFIED="1597347165010">
 <node TEXT="el resto" ID="ID_1187409569" CREATED="1597347167450" MODIFIED="1597347175477" LINK="https://youtu.be/bd30aySucc4"/>
@@ -747,7 +748,7 @@
 <font STRIKETHROUGH="false"/>
 </node>
 </node>
-<node TEXT="more:" STYLE_REF="Organizador" ID="ID_1047604820" CREATED="1597446614477" MODIFIED="1597452217816">
+<node TEXT="more:" STYLE_REF="Organizador" FOLDED="true" ID="ID_1047604820" CREATED="1597446614477" MODIFIED="1597452217816">
 <node TEXT="Import folders only" ID="ID_345705392" CREATED="1597446635398" MODIFIED="1597452273760" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <node TEXT="imports the folders structure without the files" ID="ID_1717110614" CREATED="1597446766430" MODIFIED="1597446792528"/>
 <node TEXT="This helps at the beginning, before the first full import. So you can define if you want some folders to be ignored (to mark as locked)" ID="ID_1936711595" CREATED="1597446794196" MODIFIED="1597452356495">
@@ -774,6 +775,119 @@
 <node TEXT="clear the timestamps" ID="ID_718889327" CREATED="1597447465341" MODIFIED="1597452273792" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <node TEXT="for the selected node and its descendants" ID="ID_290685175" CREATED="1597447483708" MODIFIED="1597447503154"/>
 <node TEXT="deletes the timestamps attributes in the nodes" ID="ID_7364982" CREATED="1597447535859" MODIFIED="1597447557117"/>
+</node>
+</node>
+<node TEXT="added" STYLE_REF="Organizador" FOLDED="true" ID="ID_1278170436" CREATED="1598135273450" MODIFIED="1598135277623">
+<node TEXT="maxDepth" ID="ID_556445443" CREATED="1598135365162" MODIFIED="1598135370166" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<node TEXT=" The maximum number of directory levels when recursing" ID="ID_909377810" CREATED="1598135353428" MODIFIED="1598135510150"/>
+<node TEXT="(default is -1 which means infinite, set to 0 for no recursion)" ID="ID_189095763" CREATED="1598135353431" MODIFIED="1598135505564"/>
+</node>
+<node TEXT="nameFilter" ID="ID_1499795442" CREATED="1598135449000" MODIFIED="1598135454340" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
+<node TEXT="A filter to perform on the name of traversed files. If set, only files which match are brought." ID="ID_1913078862" CREATED="1598135398030" MODIFIED="1598135499337"/>
+<node TEXT="This option allowes four types of inputs:" ID="ID_1237449337" CREATED="1598135398033" MODIFIED="1598135493752">
+<node TEXT="1. nothing (empty)" ID="ID_1576205460" CREATED="1598135398036" MODIFIED="1598135550854">
+<node TEXT="means no filtering" ID="ID_1651298569" CREATED="1598135537833" MODIFIED="1598135537842"/>
+<node TEXT="(default)" ID="ID_1749507742" CREATED="1598135537821" MODIFIED="1598135537827"/>
+</node>
+<node TEXT="2. regex" ID="ID_124150247" CREATED="1598135398040" MODIFIED="1598135569500">
+<node TEXT="~/.*\.mp3/" ID="ID_36415377" CREATED="1598135621681" MODIFIED="1598135684703"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      example
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="3. &apos;simplified&apos; regex" ID="ID_1348548675" CREATED="1598135398043" MODIFIED="1598135591859">
+<node TEXT="~.*\.mp3" ID="ID_195982893" CREATED="1598135609846" MODIFIED="1598135694117"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      example
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="4. string with *" ID="ID_1493867332" CREATED="1598135398046" MODIFIED="1598135671155">
+<node TEXT="*.mp3" ID="ID_898544369" CREATED="1598135671170" MODIFIED="1598135706463"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      example
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="~/(?i).*\.mp3/" ID="ID_722660512" CREATED="1598135671164" MODIFIED="1598135757336"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      equivalent to regex
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="5. list of strings with * and ;" ID="ID_1032314669" CREATED="1598135398049" MODIFIED="1598135803392">
+<node TEXT="*.mp3;*.png" ID="ID_35285374" CREATED="1598135803405" MODIFIED="1598135812950"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      example
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="~/(?i)(.*\.mp3|.*\.png)/" ID="ID_1400217155" CREATED="1598135803400" MODIFIED="1598135823492"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      equivalent to regex
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
 </node>
 </node>
 </node>

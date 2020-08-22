@@ -1,4 +1,4 @@
-// @ExecutionModes({ON_SELECTED_NODE="/main_menu/ScriptsEdo/MapDriveInator"})
+// @ExecutionModes({ON_SELECTED_NODE="/main_menu/ScriptsEdo/MapDriveInator/TimeStamps"})
 
 import java.nio.file.Files;
 import java.nio.file.Path;

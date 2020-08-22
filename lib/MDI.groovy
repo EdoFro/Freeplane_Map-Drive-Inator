@@ -1,6 +1,8 @@
 
 import org.freeplane.plugin.script.proxy.ScriptUtils
-
+import groovy.io.FileType
+import groovy.io.FileVisitResult
+import org.freeplane.core.ui.components.UITools
 
 class MDI{
     //region: ---------------------- Functions Initial Setup
@@ -167,12 +169,12 @@ class MDI{
             } //eliminar folderName en disco
             return 1
         } else {
-            return 0
+            return 0 
         }
     }
     // end
 
-    //region: ---------------------- Información Desde Nodos
+    //region: ---------------------- getting Information from nodes
     def static N(id){
         return ScriptUtils.node().map.node(id as String)
     }
@@ -272,7 +274,7 @@ class MDI{
     }
     //end
 
-    //region: ---------------------- Modificando Nodos
+    //region: ---------------------- Modifying Nodes
     //adds a [link to a file] to the node
     def static setLink(n, addr){
         // ui.informationMessage(addr.toString())
@@ -311,7 +313,7 @@ class MDI{
     }
     // end
 
-    //region: ---------------------- Manipulando Files En Drive
+    //region: ---------------------- Mannaging Files in Drive
     // create all folders of a path (if they doesn't exist)
     def static createPath(String p) {
         //ui.informationMessage('createPath ' + p)
@@ -331,11 +333,6 @@ class MDI{
             folder.mkdir()
         }
     }
-
-    // function Boolean - does the link points to an existent file?
-    // def static existsInDrive( mylink){
-        // (mylink.uri?.scheme == 'file' && mylink.file.exists())
-    // }
 
     // function boolean - is directory empty?? (privado)
     def static isDirEmpty(dirName) {
@@ -418,5 +415,70 @@ class MDI{
         return costs[s2.length()];
     }
     //end
-      
+    
+    //region: ---------------------- Getting files info from drive
+    
+    def static listFilesFromDrive(rootNode){
+        def rootPath = getPathFromLink(rootNode)
+        def listOfFiles = []
+        def excludedDirs = excludedFolders(rootNode)
+        def sortByTypeThenName = { a, b ->
+         a.isFile() != b.isFile() ? a.isFile() <=> b.isFile() : a.name <=> b.name }  // multiplicando por -1 se puede invertir el orden del sorting
+        def nameFilt = getFilter(rootNode)
+        def maxD = getMaxDepth(rootNode)
+        new File(rootPath).traverse(
+            type         : FileType.FILES,
+            maxDepth     : maxD,
+            nameFilter   : nameFilt,
+            preDir       : { if (it.name[0] == '.' || it.path in excludedDirs) return FileVisitResult.SKIP_SUBTREE },
+            sort         : sortByTypeThenName
+        ){it ->
+            listOfFiles << it.path
+        }
+        return listOfFiles
+    }
+
+    def static getFilter(n) {
+        def attrNameFilter = 'nameFilter' 
+        def defaultNameFilter = ''
+        if(!n.attributes.containsKey(attrNameFilter)){
+            def texto = "\n\nThe import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node: \n\n     nameFilter:\n       A filter to perform on the name of traversed files. If set, only files which match are brought. \n        This options allowes four types of inputs:\n           1. nothing (empty) means no filtering (default) \n           2. regex                   - example:       ~/.*\\.mp3/ \n           3. 'simplified' regex    - example:       ~.*\\.mp3 \n           4. string with *          - example:       *.mp3    (equivalent to regex      ~/(?i).*\\.mp3/  )\n           5. list of strings with * and ;         - example:       *.mp3;*.png   (equivalent to regex      ~/(?i)(.*\\.mp3|.*\\.png)/  )\n\n"
+            n.note += texto
+            // UITools.informationMessage(texto)
+            n[attrNameFilter] = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)?:defaultNameFilter
+        }
+        def filtro = n[attrNameFilter]
+        filtro = filtro==''?null
+                    :filtro[0..1] =='~/'?~filtro[2..-2]
+                        :filtro[0] =='~'?~filtro.drop(1)
+                            :toRegex(filtro)
+        return filtro
+    }
+
+    def static toRegex(texto){
+        def regex = '(?i)('
+        regex += texto.replace('.',/\./).replace('*','.*').split(';').join('|')
+        regex += ')'
+        return ~regex
+    }
+
+    def static getMaxDepth(n, defaultMaxDepth = -1) {
+        def attrNameFilter = 'maxDepth'
+        // def defaultMaxDepth = -1
+        def onErrorMaxDepth = 0
+        if(!n[attrNameFilter]){
+            // n[attrNameFilter]= defaultMaxDepth
+            def texto = "\n   maxDepth:\n       The maximum number of directory levels when recursing \n        (default is -1 which means infinite, set to 0 for no recursion)\n\n   "
+            // UITools.informationMessage(texto)
+            n[attrNameFilter]= UITools.showInputDialog(n.delegate, texto, defaultMaxDepth.toString())?:onErrorMaxDepth.toString()
+            n.note += texto
+        }
+        def maxDepth = n[attrNameFilter].isNum()?n[attrNameFilter].num0.toInteger():onErrorMaxDepth
+        maxDepth = maxDepth>=-1?maxDepth:onErrorMaxDepth
+        n[attrNameFilter] = maxDepth
+        return maxDepth
+    }
+
+    
+    //end
 }

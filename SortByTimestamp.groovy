@@ -1,4 +1,4 @@
-// @ExecutionModes({ON_SINGLE_NODE="/main_menu/ScriptsEdo/MapDriveInator"})
+// @ExecutionModes({ON_SINGLE_NODE="/main_menu/ScriptsEdo/MapDriveInator/TimeStamps"})
 
 //region: main
 def fileAttr = getSortOrder(node)

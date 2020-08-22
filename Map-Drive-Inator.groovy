@@ -2,8 +2,8 @@
 
 //region: =================== IMPORTING LIBS =========================================================
 import groovy.transform.EqualsAndHashCode
-import groovy.io.FileType
-import groovy.io.FileVisitResult
+// import groovy.io.FileType
+// import groovy.io.FileVisitResult
 import java.text.SimpleDateFormat
 import MDI;
 //end
@@ -109,7 +109,7 @@ if(baseFolderNode){
  	if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados drive    ');
 	if(visibilizarAvance) texto.append("\n").append('saca listados de informacion en drive').append("\n")
 
-	listFiles = listFilesFromDrive(baseFolderNode)
+	listFiles = MDI.listFilesFromDrive(baseFolderNode) 
     
 	if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
@@ -554,29 +554,4 @@ def armaListadoRutas(nodo, String path){
     }
 }
 //end
-
-//TODO: pasar estas funciones a librería MDI
-def listFilesFromDrive(rootNode){
-    def rootPath = MDI.getPathFromLink(rootNode)
-    def listOfFiles = []
-    // new File(rootPath).eachFileRecurse(FileType.FILES) { file ->
-        // if (file.name.take(2)!='~$'){
-            // listOfFiles << file.path
-        // }
-    // }
-    def excludedDirs = MDI.excludedFolders(rootNode)
-    def sortByTypeThenName = { a, b ->
-     a.isFile() != b.isFile() ? a.isFile() <=> b.isFile() : a.name <=> b.name }  // multiplicando por -1 se puede invertir el orden del sorting
-    new File(rootPath).traverse(
-        type         : FileType.FILES,
-        //nameFilter   : ~/.*\.pdf/,
-        preDir       : { if (it.name[0] == '.' || it.path in excludedDirs) return FileVisitResult.SKIP_SUBTREE },
-        sort         : sortByTypeThenName
-    ){it ->
-        listOfFiles << it.path
-    }
-    return listOfFiles
-}
-
-
 

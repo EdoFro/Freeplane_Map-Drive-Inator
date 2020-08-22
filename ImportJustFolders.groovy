@@ -19,6 +19,8 @@ def importFoldersFromDrive(rootNode){
     def rootPath = MDI.getPathFromLink(rootNode)
     def excludedDirs = MDI.excludedFolders(rootNode)
     def sortByTypeThenName = { a, b -> a.isFile() != b.isFile() ? a.isFile() <=> b.isFile() : a.name <=> b.name }
+    def maxD = MDI.getMaxDepth(rootNode,0)
+    
     new File(rootPath).traverse(
         type         : FileType.DIRECTORIES,
         maxDepth     : maxD,

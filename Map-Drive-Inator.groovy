@@ -50,6 +50,7 @@ if(baseFolderNode){
 	baseFolderPath = MDI.getPathFromLink(baseFolderNode)
 	//obtener nodo nueva importación
 	nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)
+    deleteNodesWithLinkToOther(nodeNewImports)
 	def visibilizarAvance = MDI.wantToLog(nodeNewImports)
 
 	if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
@@ -57,7 +58,7 @@ if(baseFolderNode){
 
 	//region: ---------------------- Obteniendo Info En Nodos De Files Y Folders ------------------------------
 	// c.statusInfo = '    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    '; 
- 	 if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    ');
+ 	if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    ');
 	if(visibilizarAvance) texto.append("\n").append('arma Listado de Rutas nodos').append("\n")
 	xSingles = []
 	xClones = []
@@ -553,5 +554,14 @@ def armaListadoRutas(nodo, String path){
         }		
     }
 }
+//end
+
+//region: ----- funciones a pasar a MDI
+
+
+def deleteNodesWithLinkToOther(n){
+    n.find{it.link?.text?[0] == '#'}*.delete()
+}
+
 //end
 

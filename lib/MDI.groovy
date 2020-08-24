@@ -172,7 +172,52 @@ class MDI{
             return 0 
         }
     }
-    // end
+    
+    // end 
+    
+    //region: ---------------------- nodes marks
+    
+    def static isLocked(n){
+        return n.hasStyle('locked')
+    }
+    
+    def static isMoved(n){
+        return n.hasStyle('movedRenamed')
+    }
+    
+    def static markAsMoved(n,b){
+        if(b){
+            n.style.name = 'movedRenamed'
+        } else {
+            if (n.style.name == 'movedRenamed') {n.style.name = null}
+        }
+    }
+
+    def static isNew(n){
+        return (n.style.name == 'freshNew')
+    }
+    
+    def static markAsNew(n,b){
+        if(b){
+            n.style.name = 'freshNew'
+        } else {
+            if (isNew(n)) {n.style.name = null}
+        }
+    }
+    
+    def static isBroken(n){
+        return (n.style.name == 'missing')
+    }
+
+    def static markAsBroken(n,b){
+        if(b){
+            n.style.name = 'missing'
+        } else {
+            if (n.style.name == 'missing') {n.style.name = null}
+        }
+    }
+    
+    //end
 
     //region: ---------------------- getting Information from nodes
     def static N(id){
@@ -181,10 +226,6 @@ class MDI{
 
     def static nodeIsFolder(n){
         return n.hasStyle('file_folder')
-    }
-
-    def static isLocked(n){
-        return n.hasStyle('locked')
     }
 
     def static isLinkToFile(n){
@@ -288,29 +329,7 @@ class MDI{
         }
     }
 
-    def static markAsMoved(n,b){
-        if(b){
-            n.style.name = 'movedRenamed'
-        } else {
-            if (n.style.name == 'movedRenamed') {n.style.name = null}
-        }
-    }
-
-    def static markAsNew(n,b){
-        if(b){
-            n.style.name = 'freshNew'
-        } else {
-            if (n.style.name == 'freshNew') {n.style.name = null}
-        }
-    }
     
-    def static markAsBroken(n,b){
-        if(b){
-            n.style.name = 'missing'
-        } else {
-            if (n.style.name == 'missing') {n.style.name = null}
-        }
-    }
     // end
 
     //region: ---------------------- Mannaging Files in Drive

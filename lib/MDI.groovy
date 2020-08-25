@@ -185,12 +185,16 @@ class MDI{
         return n.hasStyle('movedRenamed')
     }
     
-    def static markAsMoved(n,b){
-        if(b){
+    def static markAsMoved(n,b, markMoved = 0){
+        if(b && markMoved!=-1 && (markMoved == 1 || n.style.name == null)){
             n.style.name = 'movedRenamed'
         } else {
             if (n.style.name == 'movedRenamed') {n.style.name = null}
         }
+    }
+    
+    def static markWhenMoved(n){
+        return getMarkMoved(n)
     }
 
     def static isNew(n){
@@ -209,8 +213,12 @@ class MDI{
         return (n.style.name == 'missing')
     }
 
-    def static markAsBroken(n,b){
-        if(b){
+    def static checkIfReallyBroken(n) {
+        return getFilter(n).asBoolean() && getCheckBroken(n)
+    }
+
+    def static markAsBroken(n,b,checkAgain = false){
+        if(b && (!checkAgain || !n.link?.file?.exists())  ){
             n.style.name = 'missing'
         } else {
             if (n.style.name == 'missing') {n.style.name = null}
@@ -461,7 +469,7 @@ class MDI{
         def attrNameFilter = 'nameFilter' 
         def defaultNameFilter = ''
         if(!n.attributes.containsKey(attrNameFilter)){
-            def texto = "\n\nThe import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node: \n\n     nameFilter:\n       A filter to perform on the name of traversed files. If set, only files which match are brought. \n        This options allowes four types of inputs:\n           1. nothing (empty) means no filtering (default) \n           2. regex                   - example:       ~/.*\\.mp3/ \n           3. 'simplified' regex    - example:       ~.*\\.mp3 \n           4. string with *          - example:       *.mp3    (equivalent to regex      ~/(?i).*\\.mp3/  )\n           5. list of strings with * and ;         - example:       *.mp3;*.png   (equivalent to regex      ~/(?i)(.*\\.mp3|.*\\.png)/  )\n\n"
+            def texto = "\n\nThe import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node: \n\n    -- nameFilter:\n       A filter to perform on the name of traversed files. If set, only files which match are brought. \n        This options allowes four types of inputs:\n           1. nothing (empty) means no filtering (default) \n           2. regex                   - example:       ~/.*\\.mp3/ \n           3. 'simplified' regex    - example:       ~.*\\.mp3 \n           4. string with *          - example:       *.mp3    (equivalent to regex      ~/(?i).*\\.mp3/  )\n           5. list of strings with * and ;         - example:       *.mp3;*.png   (equivalent to regex      ~/(?i)(.*\\.mp3|.*\\.png)/  )\n\n"
             n.note += texto
             // UITools.informationMessage(texto)
             n[attrNameFilter] = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)?:defaultNameFilter
@@ -487,7 +495,7 @@ class MDI{
         def onErrorMaxDepth = 0
         if(!n[attrNameFilter]){
             // n[attrNameFilter]= defaultMaxDepth
-            def texto = "\n   maxDepth:\n       The maximum number of directory levels when recursing \n        (default is -1 which means infinite, set to 0 for no recursion)\n\n   "
+            def texto = "\n\n  -- maxDepth:\n       The maximum number of directory levels when recursing \n        (default is -1 which means infinite, set to 0 for no recursion)\n\n   "
             // UITools.informationMessage(texto)
             n[attrNameFilter]= UITools.showInputDialog(n.delegate, texto, defaultMaxDepth.toString())?:onErrorMaxDepth.toString()
             n.note += texto
@@ -498,6 +506,32 @@ class MDI{
         return maxDepth
     }
 
-    
+    def static getCheckBroken(n, defaultCheck = 0) {
+        def attrNameFilter = 'checkIfReallyBroken'
+        if(!n[attrNameFilter]){
+            def texto = "\n\n  -- checkIfReallyBroken:\n       Check if existing nodes pointing to filtered files still exist \n\n    - default is 0 which means don't check --> Mark node as missing also if it doesn't match the current filter,\n\n    - set to 1 to extra check if a not matching file still exists in drive \n\n   "
+            // UITools.informationMessage(texto)
+            n[attrNameFilter]= UITools.showInputDialog(n.delegate, texto, defaultCheck.toString())?:defaultCheck.toString()
+            n.note += texto
+        }
+        def checkBroken = n[attrNameFilter].isNum()?n[attrNameFilter].num0.toInteger():defaultCheck
+        checkBroken = checkBroken in [0, 1]?checkBroken:defaultCheck
+        n[attrNameFilter] = checkBroken
+        return checkBroken==1
+    }   
+
+    def static getMarkMoved(n, defaultMark = 0) {
+        def attrNameFilter = 'markWhenMoved'
+        if(!n[attrNameFilter]){
+            def texto = "\n\n  -- markWhenMoved:\n       change styles to moved/renamed file Nodes \n\n set to: \n    0 : to change style only if node hasn't a previous one (default),\n\n    1 : to allways change the style,\n\n   -1 : to never change the style\n\n   "
+            // UITools.informationMessage(texto)
+            n[attrNameFilter]= UITools.showInputDialog(n.delegate, texto, defaultMark.toString())?:defaultMark.toString()
+            n.note += texto
+        }
+        def markMoved = n[attrNameFilter].isNum()?n[attrNameFilter].num0.toInteger():defaultMark
+        markMoved = markMoved in [-1, 0, 1]?markMoved:defaultMark
+        n[attrNameFilter] = markMoved
+        return markMoved
+    }   
     //end
 }

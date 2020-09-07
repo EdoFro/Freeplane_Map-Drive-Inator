@@ -4,6 +4,7 @@ import MDI
 
 baseFolderNode = MDI.obtainBaseFolder(node)
 if(baseFolderNode){
+    c.select(baseFolderNode)
 	baseFolderNode.style.name = 'baseFolder'
     def nameFilt = MDI.getFilter(baseFolderNode)
     def maxD = MDI.getMaxDepth(baseFolderNode)

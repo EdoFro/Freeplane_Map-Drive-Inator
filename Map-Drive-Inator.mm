@@ -3,7 +3,7 @@
 <attribute_registry SHOW_ATTRIBUTES="selected"/>
 <node TEXT="Example MAP" FOLDED="false" ID="ID_819943156" CREATED="1590784750245" MODIFIED="1597275276457">
 <edge DASH="SOLID"/>
-<hook NAME="MapStyle" zoom="1.1">
+<hook NAME="MapStyle" zoom="0.909">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="BotonMenu" LAST="false">
             <hyper_link_contains TEXT="menuitem:"/>
@@ -87,6 +87,10 @@
 <stylenode TEXT="missing" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3.0 px">
 <icon BUILTIN="broken-line"/>
 </stylenode>
+<stylenode TEXT="modifiedFile" BACKGROUND_COLOR="#ffcc00" BORDER_WIDTH="3.9999999999999996 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#cc6600">
+<icon BUILTIN="emoji-2B55"/>
+<font ITALIC="true"/>
+</stylenode>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000">
@@ -105,13 +109,13 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Map-Drive-Inator" FOLDED="true" POSITION="right" ID="ID_1488840535" CREATED="1589833899017" MODIFIED="1598135166130" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
+<node TEXT="Map-Drive-Inator" POSITION="right" ID="ID_1488840535" CREATED="1589833899017" MODIFIED="1598135166130" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
 <node TEXT="UNDER CONSTUCTION" ID="ID_1021111333" CREATED="1597347715234" MODIFIED="1597347780404" BACKGROUND_COLOR="#ffff00">
 <icon BUILTIN="pencil"/>
 <font SIZE="16" BOLD="true"/>
 </node>
-<node TEXT="Instructions" STYLE_REF="Organizador" FOLDED="true" ID="ID_1687633798" CREATED="1590789587612" MODIFIED="1590791056779"><richcontent TYPE="NOTE">
+<node TEXT="Instructions" STYLE_REF="Organizador" ID="ID_1687633798" CREATED="1590789587612" MODIFIED="1598392632977"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -132,7 +136,7 @@
   </head>
   <body>
     <p>
-      windows
+      Windows
     </p>
   </body>
 </html>
@@ -525,6 +529,10 @@
 <node TEXT="missing" ID="ID_1520632540" CREATED="1597422561327" MODIFIED="1597422654970" BORDER_WIDTH="3.0 px" BACKGROUND_COLOR="#f28bb3">
 <icon BUILTIN="broken-line"/>
 </node>
+<node TEXT="modifiedFile" ID="ID_394158838" CREATED="1599251325090" MODIFIED="1599251800834" BACKGROUND_COLOR="#ffcc00" BORDER_WIDTH="3.9999999999999996 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#cc6600">
+<icon BUILTIN="emoji-2B55"/>
+<font ITALIC="true"/>
+</node>
 </node>
 <node TEXT="Ctrl + C" ID="ID_21737143" CREATED="1592840130776" MODIFIED="1592840139065" NUMBERED="true"/>
 <node TEXT="apply new style from selection" ID="ID_1600968769" CREATED="1592839759108" MODIFIED="1597274597913" LINK="menuitem:_NewUserStyleAction" NUMBERED="true">
@@ -591,6 +599,7 @@
 <node TEXT="file" STYLE_REF="file" ID="ID_1716171840" CREATED="1593213432726" MODIFIED="1593213439198"/>
 <node TEXT="file_folder" STYLE_REF="file_folder" ID="ID_1057732732" CREATED="1593214134748" MODIFIED="1593214153053"/>
 <node TEXT="missing" STYLE_REF="missing" ID="ID_452128965" CREATED="1597422759657" MODIFIED="1597422798947"/>
+<node TEXT="modifiedFile" STYLE_REF="modifiedFile" ID="ID_1247796190" CREATED="1599251835635" MODIFIED="1599251860762"/>
 </node>
 </node>
 <node TEXT="if you want:" STYLE_REF="Organizador" ID="ID_356028967" CREATED="1592841407318" MODIFIED="1597274711148">
@@ -611,6 +620,9 @@
 <node TEXT="Script filter :" ID="ID_594856239" CREATED="1593212822947" MODIFIED="1593212822947">
 <node TEXT="{node.link?.uri?.scheme == &apos;file&apos; &amp;&amp; (node.link.file?.exists()? node.link.file.directory : node.link.uri.path?.reverse()[0] == &apos;/&apos;)}" ID="ID_656365850" CREATED="1593212830874" MODIFIED="1593212830874"/>
 </node>
+</node>
+<node TEXT="modifiedFile" ID="ID_1080248109" CREATED="1599329840839" MODIFIED="1599329876554">
+<node TEXT="modifiedFile Contains &quot;true&quot;" ID="ID_1458055973" CREATED="1599329840834" MODIFIED="1599329876562"/>
 </node>
 </node>
 <node TEXT="Temp Script" ID="ID_1837970204" CREATED="1597275496080" MODIFIED="1597275496098"><richcontent TYPE="NOTE">
@@ -652,20 +664,31 @@
 <node TEXT="Import Just Folders" ID="ID_301694900" CREATED="1597423437025" MODIFIED="1597423471054" LINK="menuitem:_ImportJustFolders_on_single_node"/>
 <node TEXT="MAP-DRIVE-INATOR" ID="ID_1022693340" CREATED="1594333825266" MODIFIED="1598135242403" LINK="menuitem:_Map-Drive-Inator_on_single_node" BACKGROUND_COLOR="#ab2b59"/>
 <node TEXT="Distribute New Nodes" ID="ID_462223382" CREATED="1590503514564" MODIFIED="1597274444903" LINK="menuitem:_DistributeNewNodes_on_single_node"/>
+<node TEXT="Check missing File Nodes" ID="ID_1445454111" CREATED="1599247587525" MODIFIED="1599247610261" LINK="menuitem:_CheckMissingFileNodes_on_single_node"/>
 <node TEXT="selected node&#xa; and its descendants" STYLE_REF="Organizador" ID="ID_1808490451" CREATED="1597445677095" MODIFIED="1597452205549">
+<node TEXT="TimeStamps" STYLE_REF="Organizador" ID="ID_746484724" CREATED="1599247306575" MODIFIED="1599247516858">
 <node TEXT="Get file timestamps" ID="ID_426177707" CREATED="1597445579923" MODIFIED="1597445666648" LINK="menuitem:_GetFileTimestamps_on_selected_node"/>
 <node TEXT="Clear file timestamps in nodes" ID="ID_871470913" CREATED="1597445587207" MODIFIED="1597445777909" LINK="menuitem:_ClearFileTimestampsInNodes_on_selected_node"/>
 <node TEXT="Sort by timestamp" ID="ID_1034853517" CREATED="1597445588339" MODIFIED="1597446361495" LINK="menuitem:_SortByTimestamp_on_single_node"/>
+<node TEXT="Unmark Modified Files" ID="ID_628638023" CREATED="1599247445121" MODIFIED="1599494058354" LINK="menuitem:_UnmarkModifiedFiles_on_selected_node"/>
 </node>
+<node TEXT="clear formats" STYLE_REF="Organizador" ID="ID_1386472999" CREATED="1599247312883" MODIFIED="1599247516861">
+<node TEXT="Unmark moved or renamed nodes" ID="ID_70820238" CREATED="1599247403149" MODIFIED="1599247491307" LINK="menuitem:_UnmarkMovedOrRenamedNodes_on_selected_node"/>
+<node TEXT="Unmark new nodes" ID="ID_1223608095" CREATED="1599247418737" MODIFIED="1599247509341" LINK="menuitem:_UnmarkNewNodes_on_selected_node"/>
+<node ID="ID_1858490962" TREE_ID="ID_628638023"/>
+</node>
+</node>
+<node TEXT="to node" STYLE_REF="Organizador" ID="ID_167372529" CREATED="1599247370672" MODIFIED="1599247526811">
 <node TEXT="give node &apos;file_folder&apos; style" STYLE_REF="file_folder" ID="ID_815319331" CREATED="1590806506996" MODIFIED="1592082554300" LINK="menuitem:_AssignStyleAction.file_folder" MAX_WIDTH="250.0 px" MIN_WIDTH="250.0 px"/>
 <node TEXT="give node &apos;locked&apos; style" ID="ID_1595957319" CREATED="1596484461314" MODIFIED="1596484513782" LINK="menuitem:_AssignStyleAction.locked" MAX_WIDTH="250.0 px" MIN_WIDTH="250.0 px">
 <icon BUILTIN="emoji-1F512"/>
 </node>
 </node>
 </node>
+</node>
 <node TEXT="Features" POSITION="right" ID="ID_1933019455" CREATED="1597336293381" MODIFIED="1597336813997" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
-<node TEXT="basic" STYLE_REF="Organizador" ID="ID_916161454" CREATED="1597337606934" MODIFIED="1597452217797">
+<node TEXT="basic" STYLE_REF="Organizador" FOLDED="true" ID="ID_916161454" CREATED="1597337606934" MODIFIED="1597452217797">
 <node TEXT="video 1" ID="ID_1939874482" CREATED="1597346952852" MODIFIED="1597346956474">
 <node TEXT="lo básico" ID="ID_1757220682" CREATED="1597346968785" MODIFIED="1597346975184" LINK="https://youtu.be/2vwd38rxAlY"/>
 </node>
@@ -764,6 +787,7 @@
 <node TEXT="creationTime" ID="ID_1868439804" CREATED="1597447330003" MODIFIED="1597447330003"/>
 </node>
 <node TEXT="you can use them to sort, search and filter your nodes" ID="ID_1736997860" CREATED="1597447339271" MODIFIED="1597447390432"/>
+<node TEXT="if the file have been modified it can be seen in its style" ID="ID_1264627584" CREATED="1599329985445" MODIFIED="1599330136718"/>
 </node>
 <node TEXT="sort by timestamps" ID="ID_732574262" CREATED="1597447403834" MODIFIED="1597452273788" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <node TEXT="you can sort a node and its descendants by any of the timestamps" ID="ID_1033913354" CREATED="1597447415761" MODIFIED="1597447451002">
@@ -802,7 +826,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -819,7 +842,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -836,7 +858,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="~/(?i).*\.mp3/" ID="ID_722660512" CREATED="1598135671164" MODIFIED="1598135757336"><richcontent TYPE="DETAILS">
 
@@ -850,7 +871,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -868,7 +888,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="~/(?i)(.*\.mp3|.*\.png)/" ID="ID_1400217155" CREATED="1598135803400" MODIFIED="1598135823492"><richcontent TYPE="DETAILS">
 
@@ -882,7 +901,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>

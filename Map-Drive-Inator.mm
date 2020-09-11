@@ -3,7 +3,7 @@
 <attribute_registry SHOW_ATTRIBUTES="selected"/>
 <node TEXT="Example MAP" FOLDED="false" ID="ID_819943156" CREATED="1590784750245" MODIFIED="1597275276457">
 <edge DASH="SOLID"/>
-<hook NAME="MapStyle" zoom="0.909">
+<hook NAME="MapStyle" zoom="1.1">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="BotonMenu" LAST="false">
             <hyper_link_contains TEXT="menuitem:"/>
@@ -21,7 +21,7 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="false"/>
+    <properties fit_to_viewport="false;" show_icon_for_attributes="true" show_note_icons="true" show_notes_in_map="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -684,6 +684,10 @@
 <icon BUILTIN="emoji-1F512"/>
 </node>
 </node>
+<node TEXT="group" STYLE_REF="Organizador" ID="ID_107087638" CREATED="1599865650349" MODIFIED="1599865656847">
+<node TEXT="group Childnodes by" ID="ID_1632882073" CREATED="1599865658135" MODIFIED="1599866212386" LINK="menuitem:_GroupChildnodesBy_on_selected_node"/>
+<node TEXT="ungroup Childnodes" ID="ID_1037285901" CREATED="1599865676125" MODIFIED="1599866234649" LINK="menuitem:_UngroupChildnodes_on_selected_node"/>
+</node>
 </node>
 </node>
 <node TEXT="Features" POSITION="right" ID="ID_1933019455" CREATED="1597336293381" MODIFIED="1597336813997" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
@@ -787,7 +791,9 @@
 <node TEXT="creationTime" ID="ID_1868439804" CREATED="1597447330003" MODIFIED="1597447330003"/>
 </node>
 <node TEXT="you can use them to sort, search and filter your nodes" ID="ID_1736997860" CREATED="1597447339271" MODIFIED="1597447390432"/>
-<node TEXT="if the file have been modified it can be seen in its style" ID="ID_1264627584" CREATED="1599329985445" MODIFIED="1599330136718"/>
+<node TEXT="if the file have been modified it can be seen in its style" ID="ID_1264627584" CREATED="1599329985445" MODIFIED="1599330136718">
+<node TEXT="mofified file" STYLE_REF="modifiedFile" ID="ID_332409081" CREATED="1599866405499" MODIFIED="1599866420738"/>
+</node>
 </node>
 <node TEXT="sort by timestamps" ID="ID_732574262" CREATED="1597447403834" MODIFIED="1597452273788" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <node TEXT="you can sort a node and its descendants by any of the timestamps" ID="ID_1033913354" CREATED="1597447415761" MODIFIED="1597447451002">
@@ -905,6 +911,157 @@
 </node>
 </node>
 </node>
+</node>
+</node>
+</node>
+<node TEXT="group" STYLE_REF="Organizador" ID="ID_1964736207" CREATED="1599866502920" MODIFIED="1599866507432">
+<node TEXT="you can group the childnodes of a node using different conditions:" ID="ID_1771770718" CREATED="1599866509764" MODIFIED="1599866684977">
+<node TEXT="extension of the file" ID="ID_155025783" CREATED="1599866574521" MODIFIED="1599866583752"/>
+<node TEXT="Year or YearMonth when the file was" ID="ID_1134162043" CREATED="1599866584347" MODIFIED="1599866612523">
+<node TEXT="created" ID="ID_1822403100" CREATED="1599866612535" MODIFIED="1599866616323"/>
+<node TEXT="last modified" ID="ID_1914079884" CREATED="1599866618930" MODIFIED="1599866627208"/>
+<node TEXT="last accessed" ID="ID_1307646565" CREATED="1599866628357" MODIFIED="1599866637814"/>
+</node>
+</node>
+<node TEXT="the grouping criteria input strings are:" ID="ID_1848057897" CREATED="1599866708223" MODIFIED="1599867185623"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      upper or lower case deosn't matter
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      for using this script you have two options:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      A. the <b><u>first one</u></b>&nbsp;is to set a restricted set to the 'group by' attribute. I don't know how to do this automatically, but here are the steps to do it manually:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      -setting this script for the first time:
+    </p>
+    <p>
+      1. execute this script on a node
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;- this will add to it a new attribute (&quot;group by&quot;)
+    </p>
+    <p>
+      2. open the Attribute Manager
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;- menu Edit / Node Properties / Attribute Manager ...
+    </p>
+    <p>
+      3. check 'Restricted set' for this attribute
+    </p>
+    <p>
+      4. click 'Edit' for this attribute (another form opens)
+    </p>
+    <p>
+      5. add following strings to its set (one by one. Copy/ Paste taking care not to paste the newline character with it):
+    </p>
+    <ul>
+      <li>
+        Ext
+      </li>
+      <li>
+        creation YearMonth
+      </li>
+      <li>
+        creation Year
+      </li>
+      <li>
+        lastAccess YearMonth
+      </li>
+      <li>
+        lastAccess Year
+      </li>
+      <li>
+        lastModified YearMonth
+      </li>
+      <li>
+        lastModified Year
+      </li>
+    </ul>
+    <p>
+      6. close the 'edit' form
+    </p>
+    <p>
+      7. click 'Ok' button to close the Attribute Manager
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      B. the <b><u>second option</u></b>&nbsp;is not using a restricted set at all and remember the following options to type them as input everytime you use the script. You can type the options listed before, but you have also the posibility to type their &quot;short versions&quot; (in the same order than before) (upper or undercase, it doesn't matter):
+    </p>
+    <ul>
+      <li>
+        ext
+      </li>
+      <li>
+        cYM
+      </li>
+      <li>
+        cY
+      </li>
+      <li>
+        LAYM
+      </li>
+      <li>
+        LAY
+      </li>
+      <li>
+        LMYM
+      </li>
+      <li>
+        LMY
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="long versions" ID="ID_107905866" CREATED="1599866752850" MODIFIED="1599866825684">
+<node TEXT="Ext" ID="ID_1087767970" CREATED="1599866739935" MODIFIED="1599866741487"/>
+<node TEXT="creation YearMonth" ID="ID_933222239" CREATED="1599866735343" MODIFIED="1599866735343"/>
+<node TEXT="creation Year" ID="ID_95730285" CREATED="1599866735343" MODIFIED="1599866735343"/>
+<node TEXT="lastAccess YearMonth" ID="ID_1868458440" CREATED="1599866735347" MODIFIED="1599866735347"/>
+<node TEXT="lastAccess Year" ID="ID_1116271224" CREATED="1599866735349" MODIFIED="1599866735349"/>
+<node TEXT="lastModified YearMonth" ID="ID_1663491893" CREATED="1599866735352" MODIFIED="1599866735352"/>
+<node TEXT="lastModified Year" ID="ID_1196008139" CREATED="1599866735354" MODIFIED="1599866735354"/>
+</node>
+<node TEXT="short versions" ID="ID_798937809" CREATED="1599866826873" MODIFIED="1599866832629">
+<node TEXT="ext" ID="ID_102097204" CREATED="1599866867333" MODIFIED="1599866870234"/>
+<node TEXT="cym" ID="ID_1004998766" CREATED="1599866872459" MODIFIED="1599866874192"/>
+<node TEXT="cy" ID="ID_1582319982" CREATED="1599866875300" MODIFIED="1599866876762"/>
+<node TEXT="laym" ID="ID_1255835225" CREATED="1599866877552" MODIFIED="1599866880041"/>
+<node TEXT="lay" ID="ID_1844038998" CREATED="1599866880522" MODIFIED="1599866881649"/>
+<node TEXT="lmym" ID="ID_974438528" CREATED="1599866888134" MODIFIED="1599866894348"/>
+<node TEXT="lmy" ID="ID_723331714" CREATED="1599866895591" MODIFIED="1599866897258"/>
 </node>
 </node>
 </node>

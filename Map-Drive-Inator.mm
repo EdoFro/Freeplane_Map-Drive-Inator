@@ -3,7 +3,7 @@
 <attribute_registry SHOW_ATTRIBUTES="selected"/>
 <node TEXT="Example MAP" FOLDED="false" ID="ID_819943156" CREATED="1590784750245" MODIFIED="1597275276457">
 <edge DASH="SOLID"/>
-<hook NAME="MapStyle" zoom="1.1">
+<hook NAME="MapStyle">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="BotonMenu" LAST="false">
             <hyper_link_contains TEXT="menuitem:"/>
@@ -21,7 +21,7 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties fit_to_viewport="false;" show_icon_for_attributes="true" show_note_icons="true" show_notes_in_map="false"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -146,7 +146,7 @@
 <font SIZE="16" BOLD="true"/>
 </node>
 <node TEXT="first time:" STYLE_REF="Organizador" ID="ID_242771435" CREATED="1590789610801" MODIFIED="1590789623249">
-<node TEXT="copy scripts to your scripts folder" FOLDED="true" ID="ID_1083806285" CREATED="1590789697917" MODIFIED="1597274967202"><richcontent TYPE="NOTE">
+<node TEXT="copy scripts to your scripts folder" ID="ID_1083806285" CREATED="1590789697917" MODIFIED="1597274967202"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -161,7 +161,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="open User Directory" ID="ID_1766225359" CREATED="1590804727552" MODIFIED="1597272950021" TEXT_SHORTENED="true">
+<node TEXT="open User Directory" ID="ID_1766225359" CREATED="1590804727552" MODIFIED="1599868501225" TEXT_SHORTENED="true">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20001.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
@@ -915,6 +915,18 @@
 </node>
 </node>
 <node TEXT="group" STYLE_REF="Organizador" ID="ID_1964736207" CREATED="1599866502920" MODIFIED="1599866507432">
+<node TEXT="example images" FOLDED="true" ID="ID_1231725632" CREATED="1599868623207" MODIFIED="1599868839439">
+<cloud COLOR="#999999" SHAPE="ROUND_RECT"/>
+<node TEXT="before:" ID="ID_1548039148" CREATED="1599868596556" MODIFIED="1599868751362">
+<hook URI="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/updatesFoldersLikeMap_files/groupingExample%20001.png" SIZE="0.6920415" NAME="ExternalObject"/>
+</node>
+<node TEXT="grouped by creation date Year - Month" ID="ID_424548648" CREATED="1599868596564" MODIFIED="1599868756873">
+<hook URI="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/updatesFoldersLikeMap_files/groupingExample%20002.png" SIZE="0.63829786" NAME="ExternalObject"/>
+</node>
+<node TEXT="grouped by file extension" ID="ID_1134874250" CREATED="1599868596572" MODIFIED="1599868780926">
+<hook URI="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/updatesFoldersLikeMap_files/groupingExample%20003.png" SIZE="0.6772009" NAME="ExternalObject"/>
+</node>
+</node>
 <node TEXT="you can group the childnodes of a node using different conditions:" ID="ID_1771770718" CREATED="1599866509764" MODIFIED="1599866684977">
 <node TEXT="extension of the file" ID="ID_155025783" CREATED="1599866574521" MODIFIED="1599866583752"/>
 <node TEXT="Year or YearMonth when the file was" ID="ID_1134162043" CREATED="1599866584347" MODIFIED="1599866612523">
@@ -935,7 +947,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="NOTE">
 
@@ -1043,7 +1054,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="long versions" ID="ID_107905866" CREATED="1599866752850" MODIFIED="1599866825684">
 <node TEXT="Ext" ID="ID_1087767970" CREATED="1599866739935" MODIFIED="1599866741487"/>

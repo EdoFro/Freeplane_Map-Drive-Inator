@@ -81,22 +81,22 @@ def groupText(n,gcond = 'Ext'){
             def i=n.text.lastIndexOf('.')
             response = i>=1?n.text.substring(i+1):null
             break
-        case 'creation yearmonth' || 'cym':
+        case ['creation yearmonth', 'cym']:
             response = n['creationTime']?.getDate()?.toYearMonth()?.toString()?:null
             break
-        case 'creation year' || 'cy':
+        case ['creation year', 'cy']:
             response = n['creationTime']?.getDate()?.toYear()?.toString()?:null
             break
-        case 'lastaccess yearmonth' || 'laym':
+        case ['lastaccess yearmonth', 'laym']:
             response = n['lastAccessTime']?.getDate()?.toYearMonth()?.toString()?:null
             break
-        case 'lastaccess year' || 'lay':
+        case ['lastaccess year', 'lay']:
             response = n['lastAccessTime']?.getDate()?.toYear()?.toString()?:null
             break
-        case 'lastmodified yearmonth' || 'lmym':
+        case ['lastmodified yearmonth', 'lmym']:
             response = n['lastModifiedTime']?.getDate()?.toYearMonth()?.toString()?:null
             break
-        case 'lastmodified year' || 'lmy':
+        case ['lastmodified year', 'lmy']:
             response = n['lastModifiedTime']?.getDate()?.toYear()?.toString()?:null
             break
         default:

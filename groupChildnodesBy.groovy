@@ -1,43 +1,13 @@
 // @ExecutionModes({ON_SELECTED_NODE="/main_menu/ScriptsEdo/MapDriveInator/Group"})
 
-/*
-for using this script you have two options:
-A. the first one is to set a restricted set to the 'group by' attribute. I don't know how to do this automatically, but here are the steps to do it manually:
--setting this script for the first time:
-1. execute this script on a node
-    - this will add to it a new attribute ("group by")
-2. open the Attribute Manager
-    - menu Edit / Node Properties / Attribute Manager ...
-3. check 'Restricted set' for this attribute
-4. click 'Edit' for this attribute (another form opens) 
-5. add following strings to its set (one by one. Copy/ Paste taking care not to paste the newline character with it):
-Ext
-creation YearMonth
-creation Year
-lastAccess YearMonth
-lastAccess Year
-lastModified YearMonth
-lastModified Year
-6. close the 'edit' form
-7. click 'Ok' button to close the Attribute Manager
-
-B. the second option is not using a restricted set at all and remember the following options to type them as input everytime you use the script. You can type the options listed before, but you have also the posibility to type their "short versions" (in the same order than before) (upper or undercase, it doesn't matter):
-ext 
-cYM
-cY
-LAYM
-LAY
-LMYM
-LMY
-
-*/
-
 
 //println "------------------------ grouping nodes ------------------------------"
 
+gCases = 'Ext,creation YearMonth,creation Year,lastAccess YearMonth,lastAccess Year,lastModified YearMonth,lastModified Year'.split(',')
+
 nodo = node
-if (nodo['group by'] && nodo['group by'] != ''){
-    def groupingCase = nodo['group by']
+def groupingCase = getGroupingCase()
+if (groupingCase){
     def nodos =  nodo.children
     def grupos = addGrupos(nodos,[], groupingCase).sort() //creates list of strings with groupTexts. Starts with an empty list
     def groupNodes = createGroupNodes(nodo, grupos, firstWord(groupingCase)) //creates a node for each groupText and adds it to this list
@@ -50,13 +20,29 @@ if (nodo['group by'] && nodo['group by'] != ''){
         }
     }
 } else {
-    nodo['group by'] = ''
-    ui.informationMessage ("please select grouping option in node's attribute 'group by'")
+    c.statusInfo = " --- grouping canceled ---"
 }
 
 
 //----------Methods-----------------------
+def getGroupingCase(){
+    def texto = new StringBuilder()
+    texto << "Select grouping criteria: \n\n"
+    gCases.eachWithIndex{gC, i ->
+        texto <<  i << " - " << gC << '\n'
+    }
+    texto << '\n\n'
 
+    def cancel = false
+    def respOK = false
+    def response
+    while (!cancel && !respOK){
+        response = ui.showInputDialog(node.delegate, texto.toString(),'0')
+        cancel = !response?true:false
+        respOK = !cancel?response.isNumber() && response.toDouble()>=0 && response.toDouble()< gCases.size()?true:false:false
+    }
+    response?gCases[response.toDouble().toInteger()]:null
+}
 
 //creates list of strings with groupTexts
     //listaNodos: node list to evaluate

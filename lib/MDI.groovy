@@ -475,7 +475,8 @@ class MDI{
             n[attrNameFilter] = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)?:defaultNameFilter
         }
         def filtro = n[attrNameFilter]
-        filtro = filtro==''?null
+//        filtro = filtro==''?null
+        filtro = filtro==''? ~/^(?!~\$).*/   // filters office temp files like "~$Libro.xlsx"
                     :filtro[0..1] =='~/'?~filtro[2..-2]
                         :filtro[0] =='~'?~filtro.drop(1)
                             :toRegex(filtro)
@@ -483,7 +484,8 @@ class MDI{
     }
 
     def static toRegex(texto){
-        def regex = '(?i)('
+        // def regex = '(?i)('
+        def regex = '^(?!~\$)(?i)(' // filters office temp files like "~$Libro.xlsx"
         regex += texto.replace('.',/\./).replace('*','.*').split(';').join('|')
         regex += ')'
         return ~regex

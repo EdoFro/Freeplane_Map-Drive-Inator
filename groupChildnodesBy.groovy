@@ -27,7 +27,7 @@ if (groupingCase){
 //----------Methods-----------------------
 def getGroupingCase(){
     def texto = new StringBuilder()
-    texto << "Select grouping criteria: \n\n"
+    texto << "Select grouping criteria: \n(for time related grouping, 'Get File Timestamps' must have been applied to the branch before)\n\n"
     gCases.eachWithIndex{gC, i ->
         texto <<  i << " - " << gC << '\n'
     }
@@ -64,8 +64,9 @@ def groupText(n,gcond = 'Ext'){
     def response
     switch (gcond.toLowerCase()){
         case 'ext':
-            def i=n.text.lastIndexOf('.')
-            response = i>=1?n.text.substring(i+1):null
+            def texto = n.link.file?.name
+            def i=texto?.lastIndexOf('.')
+            response = i>=1?texto.substring(i+1):null
             break
         case ['creation yearmonth', 'cym']:
             response = n['creationTime']?.getDate()?.toYearMonth()?.toString()?:null

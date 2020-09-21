@@ -21,7 +21,7 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="false"/>
+    <properties fit_to_viewport="false;" show_icon_for_attributes="true" show_note_icons="true" show_notes_in_map="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -928,8 +928,61 @@
 </node>
 </node>
 <node TEXT="you can group the childnodes of a node using different conditions:" ID="ID_1771770718" CREATED="1599866509764" MODIFIED="1599866684977">
-<node TEXT="extension of the file" ID="ID_155025783" CREATED="1599866574521" MODIFIED="1599866583752"/>
-<node TEXT="Year or YearMonth when the file was" ID="ID_1134162043" CREATED="1599866584347" MODIFIED="1599866612523">
+<node TEXT="extension of the file" ID="ID_155025783" CREATED="1599866574521" MODIFIED="1600699461911"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Good to know:<br/>the script use the name of the file linked to the node to get the extension.
+    </p>
+    <p>
+      it get the text after the last dot and it asumes that is the extension.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Year or YearMonth when the file was" ID="ID_1134162043" CREATED="1599866584347" MODIFIED="1600698454516"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      to use this you have to get the filestamps first
+    </p>
+    <p>
+      (TimeStamps / Get file timestamps)
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      to use this you have to get the filestamps first
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      apply TimeStamps / Get file timestamps to the branch you want to group before grouping it.
+    </p>
+  </body>
+</html>
+
+</richcontent>
 <node TEXT="created" ID="ID_1822403100" CREATED="1599866612535" MODIFIED="1599866616323"/>
 <node TEXT="last modified" ID="ID_1914079884" CREATED="1599866618930" MODIFIED="1599866627208"/>
 <node TEXT="last accessed" ID="ID_1307646565" CREATED="1599866628357" MODIFIED="1599866637814"/>

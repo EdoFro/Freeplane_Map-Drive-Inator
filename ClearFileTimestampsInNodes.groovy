@@ -17,6 +17,8 @@ nodo.find{MDI.isLinkToFile(it)}.each{n ->
     n['creationTime'] = null
     n['lastAccessTime'] = null
     n['lastModifiedTime'] = null
+    n['fileSize'] = null
+    
 }
 
 c.statusInfo =' timestamps attributes deleted'

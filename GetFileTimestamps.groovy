@@ -16,7 +16,10 @@ nodo.find{MDI.isLinkToFile(it)}.each{n ->
         n['lastModifiedTime'] = (attr.lastModifiedTime().toInstant().toDate().format('yyyy-MM-dd HH:mm'))
         n['lastAccessTime'] = (attr.lastAccessTime().toInstant().toDate().format('yyyy-MM-dd HH:mm'))
         n['creationTime'] = (attr.creationTime().toInstant().toDate().format('yyyy-MM-dd HH:mm'))
-        
+        n['fileSize'] = attr.size()
+        def i = n.attributes.findFirst('fileSize')
+        n.attributes.setFormat(i,'#,##0')        
+
         n['modifiedFile'] = n['lastModifiedTime']!=previousModifiedTime?true:null
     } else {
         MDI.markAsBroken(n,true,false)

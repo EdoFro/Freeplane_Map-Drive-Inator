@@ -34,8 +34,6 @@ def modoDebug = false
 def tIni = new Date().getTime();
 def texto = new StringBuilder();
 def textoReport = new StringBuilder();
-texto.append("\n").append('(elapsed time in miliseconds)').append("\n")
-texto.append((tIni - new Date().getTime()) as String).append("\n")
 
 //---define nodo Base
 baseFolderNode = MDI.obtainBaseFolder(node)
@@ -44,14 +42,21 @@ baseFolderNode = MDI.obtainBaseFolder(node)
 if(baseFolderNode){
     //region: ---------------------- Initial Setup 2 ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Initial Setup 2    '; 
-     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Initial Setup 2    ');
-    texto.append((tIni - new Date().getTime()) as String).append("\n")
-    baseFolderNode.style.name = 'baseFolder'
-    baseFolderPath = MDI.getPathFromLink(baseFolderNode)
+    if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Initial Setup 2    ');
     //obtener nodo nueva importación
     nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)
-    deleteNodesWithLinkToOther(nodeNewImports)
     def visibilizarAvance = MDI.wantToLog(nodeNewImports)
+    if(visibilizarAvance) texto.append("\n").append('(elapsed time in miliseconds)').append("\n").append((tIni - new Date().getTime()) as String).append("\n")
+    baseFolderNode.style.name = 'baseFolder'
+    baseFolderPath = MDI.getPathFromLink(baseFolderNode)
+    deleteNodesWithLinkToOther(nodeNewImports)
+    if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
+        
+    // brought this to before getting the changes done 
+    def nameFilt = MDI.getFilter(baseFolderNode)
+    def maxD = MDI.getMaxDepth(baseFolderNode)
+    def markMovedOption = MDI.markWhenMoved(baseFolderNode)
+    def checkIfBroken = MDI.checkIfReallyBroken(baseFolderNode)
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
     //end ------------------------------------------------------------------
@@ -251,7 +256,7 @@ if(baseFolderNode){
     // texto.append("\n").append('B) nodos sin files --> marcar nodos como con error \n\n' + nodosSinFile as String)
     textoReport.append("\n ${nodosSinFile.size()} node(s) pointing to unexisting/filtered files (marked as 'broken')")
     
-    def checkIfBroken = MDI.checkIfReallyBroken(baseFolderNode)
+    // def checkIfBroken = MDI.checkIfReallyBroken(baseFolderNode)
     nodosSinFile.each{x ->
         nodo = N(x.id)
         MDI.markAsBroken(nodo,true,checkIfBroken)
@@ -279,7 +284,8 @@ if(baseFolderNode){
     // ui.informationMessage('A - files sin nodos --> importar como nodos \n\n' + filesSinNodos as String)
     // texto.append("\n\n").append('A) files sin nodos --> importar como nodos \n\n' + filesSinNodos as String)
     textoReport.append("\n ${filesSinNodos.size()} new file(s) imported as node(s) ")
-
+    def newFilesImported =  filesSinNodos?true:false
+    
     filesSinNodos.each{f ->
         // agregar f a nodo nueva importación
         def nodoDonde = nodeNewImports
@@ -312,7 +318,7 @@ if(baseFolderNode){
     // ui.informationMessage('C - path cambió en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String)
     textoReport.append("\n ${(xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).size()} node(s) moved/renamed in drive")
     
-    def markMovedOption = MDI.markWhenMoved(baseFolderNode)
+    // def markMovedOption = MDI.markWhenMoved(baseFolderNode)
 
     (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).each{x ->
         nodo = N(x.id)
@@ -516,12 +522,13 @@ if(baseFolderNode){
     //region: ---------------------- Reporte Y Final Main ------------------------------
 
     if(modoDebug) ui.informationMessage('---------------------- Reporte Y Final Main ------------------------------');
-    texto.append((tIni - new Date().getTime()) as String).append("\n")
+    textoReport.append((((new Date().getTime() - tIni)/100).toInteger()/10) as String).append(" seconds\n\n")
+    ui.informationMessage(textoReport.toString())
     textoReport << '=====================================\n\n' << texto
     nodeNewImports.noteText = textoReport
     texto.setLength(0)
     textoReport.setLength(0)
-    c.select(nodeNewImports);
+    if (newFilesImported) c.select(nodeNewImports);
     c.statusInfo = '    -------------   Map-Drive-Inated    -------------      ';
     // c.select(baseFolderNode);
 //end  ------------------------------------------------------------------
@@ -567,4 +574,3 @@ def deleteNodesWithLinkToOther(n){
 }
 
 //end
-

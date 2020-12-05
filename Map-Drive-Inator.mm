@@ -21,7 +21,7 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties fit_to_viewport="false;" show_icon_for_attributes="true" show_note_icons="true" show_notes_in_map="false"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -146,7 +146,7 @@
 <font SIZE="16" BOLD="true"/>
 </node>
 <node TEXT="first time:" STYLE_REF="Organizador" ID="ID_242771435" CREATED="1590789610801" MODIFIED="1590789623249">
-<node TEXT="copy scripts to your scripts folder" ID="ID_1083806285" CREATED="1590789697917" MODIFIED="1597274967202"><richcontent TYPE="NOTE">
+<node TEXT="copy scripts to your scripts folder" FOLDED="true" ID="ID_1083806285" CREATED="1590789697917" MODIFIED="1607175380304"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -161,11 +161,26 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="open User Directory" ID="ID_1766225359" CREATED="1590804727552" MODIFIED="1599868501225" TEXT_SHORTENED="true">
+<node TEXT="To see the images you have to use comand Format / Minimize node" ID="ID_1735978502" CREATED="1607175429429" MODIFIED="1607175545452"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Alt + A
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="open User Directory" ID="ID_1766225359" CREATED="1590804727552" MODIFIED="1607175560741">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20001.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="copy lib to your lib folder" ID="ID_741141676" CREATED="1590789697917" MODIFIED="1597275001048"><richcontent TYPE="NOTE">
+<node TEXT="copy lib to your lib folder" FOLDED="true" ID="ID_741141676" CREATED="1590789697917" MODIFIED="1607175320629"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -180,11 +195,11 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="open User Directory" ID="ID_252880445" CREATED="1590804727552" MODIFIED="1597348042813" TEXT_SHORTENED="true">
+<node TEXT="open User Directory" ID="ID_252880445" CREATED="1590804727552" MODIFIED="1607175572429">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20001.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="allow scripts to read and write files" ID="ID_1427365019" CREATED="1590790718419" MODIFIED="1597275002553"><richcontent TYPE="NOTE">
+<node TEXT="allow scripts to read and write files" FOLDED="true" ID="ID_1427365019" CREATED="1590790718419" MODIFIED="1607175357623"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -208,10 +223,10 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="open Preferences" ID="ID_1408247914" CREATED="1590804727596" MODIFIED="1597275019108" TEXT_SHORTENED="true">
+<node TEXT="open Preferences" ID="ID_1408247914" CREATED="1590804727596" MODIFIED="1607175585194">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20003.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
-<node TEXT="Freeplane scriptspreferences" ID="ID_698032929" CREATED="1590804727613" MODIFIED="1597275031885" TEXT_SHORTENED="true">
+<node TEXT="Freeplane scriptspreferences" ID="ID_698032929" CREATED="1590804727613" MODIFIED="1607175594431">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20004.png" SIZE="0.62434965" NAME="ExternalObject"/>
 </node>
 </node>
@@ -448,7 +463,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="add new Styles" STYLE_REF="Organizador" FOLDED="true" ID="ID_1687318378" CREATED="1592838662490" MODIFIED="1597274889477"><richcontent TYPE="DETAILS">
+<node TEXT="add new Styles" STYLE_REF="Organizador" ID="ID_1687318378" CREATED="1592838662490" MODIFIED="1597274889477"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -461,7 +476,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="for each new Style:" STYLE_REF="Organizador" ID="ID_1129119163" CREATED="1592841393949" MODIFIED="1597274555413">
+<node TEXT="for each new Style:" STYLE_REF="Organizador" FOLDED="true" ID="ID_1129119163" CREATED="1592841393949" MODIFIED="1597274555413">
 <node TEXT="select the muster node" ID="ID_587062624" CREATED="1592839717618" MODIFIED="1597274588878" NUMBERED="true">
 <node TEXT="BotonMenu" ID="ID_416745702" CREATED="1592084803981" MODIFIED="1592842172343" ICON_SIZE="24.0 pt" COLOR="#b2dfff" BACKGROUND_COLOR="#3f657f" STYLE="bubble" BORDER_WIDTH="3.0 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#0097ff"><richcontent TYPE="DETAILS">
 
@@ -914,7 +929,7 @@
 </node>
 </node>
 </node>
-<node TEXT="group" STYLE_REF="Organizador" ID="ID_1964736207" CREATED="1599866502920" MODIFIED="1599866507432">
+<node TEXT="group" STYLE_REF="Organizador" FOLDED="true" ID="ID_1964736207" CREATED="1599866502920" MODIFIED="1599866507432">
 <node TEXT="example images" FOLDED="true" ID="ID_1231725632" CREATED="1599868623207" MODIFIED="1599868839439">
 <cloud COLOR="#999999" SHAPE="ROUND_RECT"/>
 <node TEXT="before:" ID="ID_1548039148" CREATED="1599868596556" MODIFIED="1599868751362">
@@ -943,7 +958,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Year or YearMonth when the file was" ID="ID_1134162043" CREATED="1599866584347" MODIFIED="1600698454516"><richcontent TYPE="DETAILS">
@@ -961,7 +975,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="NOTE">
 
@@ -981,7 +994,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="created" ID="ID_1822403100" CREATED="1599866612535" MODIFIED="1599866616323"/>
 <node TEXT="last modified" ID="ID_1914079884" CREATED="1599866618930" MODIFIED="1599866627208"/>

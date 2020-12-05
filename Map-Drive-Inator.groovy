@@ -290,9 +290,9 @@ if(baseFolderNode){
         // agregar f a nodo nueva importación
         def nodoDonde = nodeNewImports
         def gPath = baseFolderPath
-        (f - baseFolderPath)?.split('\\\\').init().each{String dir ->
+        (f - baseFolderPath)?.split('\\\\').init().each{String dir ->   //TODO: linux
             // ui.informationMessage('dir   :' + dir as String)
-            gPath +=  dir << '\\'
+            gPath +=  dir << '\\'  //TODO: linux
             // ui.informationMessage('gPath   :' + gPath as String)
             nodoDonde = nodoDonde.children.find{it.text == dir}?:nodoDonde.createChild()
             if(nodoDonde.text==''){
@@ -553,7 +553,7 @@ def armaListadoRutas(nodo, String path){
         if(MDI.nodeIsFolder(it)){
             MDI.markAsMoved(it,false)
             def pathF = MDI.getFolderpathFromStrings(path,it)
-            xFolders << new xFile(it.id, MDI.getPathFromLink3(it,'\\'), pathF) 
+            xFolders << new xFile(it.id, MDI.getPathFromLink3(it,'\\'), pathF) //TODO: linux
             if(it.children.size()>0){
                 armaListadoRutas(it, pathF)
             }

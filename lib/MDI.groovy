@@ -5,6 +5,8 @@ import groovy.io.FileVisitResult
 import org.freeplane.core.ui.components.UITools
 
 class MDI{
+    private static final String fs = File.separator
+    
     //region: ---------------------- Functions Initial Setup
     
     
@@ -246,7 +248,7 @@ class MDI{
 
     def static getPathFromLink(n){
         //return n.link.uri.path.drop(1) as String 
-        def lastChar = (n.link.file?.directory || nodeIsFolder(n))?'\\':''
+        def lastChar = (n.link.file?.directory || nodeIsFolder(n))?'\\':'' //TODO: Linux
         return (n.link.file?n.link.file.path + lastChar:null)
     }
 
@@ -266,7 +268,7 @@ class MDI{
         if(baseFolderNode){
             while(!n.equals(baseFolderNode)){
                 if(nodeIsFolder(n)){
-                    texto = correctFolderName(n) << '\\' << texto
+                    texto = correctFolderName(n) << '\\' << texto  //TODO: Linux
                 }
                 n = n.parent
             }
@@ -307,17 +309,17 @@ class MDI{
 
     def static getFolderpathFromStrings(folderPath,nodo){
         String folderName = correctFolderName(nodo)
-        getPathFromStrings(folderPath,folderName) + '\\'
+        getPathFromStrings(folderPath,folderName) + '\\'    //TODO: Linux
     }
     
     //"
     def static soloPath(fileAddress) {
-        fileAddress[0..fileAddress.lastIndexOf('\\')]
+        fileAddress[0..fileAddress.lastIndexOf('\\')]    //TODO: Linux
     }
 
     //function, returns string, looks at text in node and correct it if it can't be used as a foldername (privado)
     def static correctFolderName(n){
-        String texto = n.text.trim().replace('/','-').replace('\\','-')//.replace('.','-') //replaces chars not usefull in a Folder name
+        String texto = n.text.trim().replace('/','-').replace('\\','-')//.replace('.','-') //replaces chars not usefull in a Folder name    //TODO: Linux
         if(n.text != texto) n.text = texto//corrects text in node too
         return texto // returns the corrected text
     }
@@ -344,7 +346,7 @@ class MDI{
     // create all folders of a path (if they doesn't exist)
     def static createPath(String p) {
         //ui.informationMessage('createPath ' + p)
-        def folders = p.replace('\\','/').split('/')
+        def folders = p.replace('\\','/').split('/')    //TODO: Linux
         //ui.informationMessage(folders.toString())
         def path =''
         folders.each{ String f ->

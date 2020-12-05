@@ -5,7 +5,8 @@ import groovy.transform.EqualsAndHashCode
 // import groovy.io.FileType
 // import groovy.io.FileVisitResult
 import java.text.SimpleDateFormat
-import MDI;
+import MDI
+import java.util.regex.Pattern
 //end
 
 //region: =================== DEFINING CLASSES =======================================================
@@ -290,9 +291,9 @@ if(baseFolderNode){
         // agregar f a nodo nueva importación
         def nodoDonde = nodeNewImports
         def gPath = baseFolderPath
-        (f - baseFolderPath)?.split('\\\\').init().each{String dir ->   //TODO: linux
+        (f - baseFolderPath)?.split(Pattern.quote(File.separator)).init().each{String dir ->   //TODO: linux
             // ui.informationMessage('dir   :' + dir as String)
-            gPath +=  dir << '\\'  //TODO: linux
+            gPath +=  dir << File.separator  //TODO: linux
             // ui.informationMessage('gPath   :' + gPath as String)
             nodoDonde = nodoDonde.children.find{it.text == dir}?:nodoDonde.createChild()
             if(nodoDonde.text==''){
@@ -553,7 +554,7 @@ def armaListadoRutas(nodo, String path){
         if(MDI.nodeIsFolder(it)){
             MDI.markAsMoved(it,false)
             def pathF = MDI.getFolderpathFromStrings(path,it)
-            xFolders << new xFile(it.id, MDI.getPathFromLink3(it,'\\'), pathF) //TODO: linux
+            xFolders << new xFile(it.id, MDI.getPathFromLink3(it,File.separator), pathF) //TODO: linux
             if(it.children.size()>0){
                 armaListadoRutas(it, pathF)
             }

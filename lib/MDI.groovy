@@ -5,14 +5,28 @@ import groovy.io.FileVisitResult
 import org.freeplane.core.ui.components.UITools
 
 class MDI{
+    //nodes attributes
+    private static final String attrLog             = 'log_MDI'
+    private static final String attrMarkWhenMoved   = 'markWhenMoved'
+    private static final String attrNameFilter      = 'nameFilter'
+    private static final String attrMaxDepth        = 'maxDepth'
+    private static final String attrReallyBroken    = 'checkIfReallyBroken'
+    //styles
+    private static final String styleLocked         = 'locked'
+    private static final String styleMovedRenamed   = 'movedRenamed'
+    private static final String styleFreshNew       = 'freshNew'
+    private static final String styleBroken         = 'missing'
+    private static final String styleFolder         = 'file_folder'
+    private static final String styleBaseFolder     = 'baseFolder'
+    
     //region: ---------------------- Functions Initial Setup
     
     
     // function, returns Node ("Base folder") under the selected node
     def static obtainBaseFolder(n) {
-        // returns the first node which has a link to a file directory and has style 'file_folder' + 'baseFolder'
-        //return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle('file_folder') && it.hasStyle('baseFolder')}
-        def nBase = n.pathToRoot.find{it.link?.file?.directory && it.hasStyle('file_folder') && it.hasStyle('baseFolder')}?:(n.link?.file?.directory && n.hasStyle('file_folder'))?n:n.pathToRoot.find{it.link?.file?.directory && it.hasStyle('file_folder')}
+        // returns the first node which has a link to a file directory and has style styleFolder + styleBaseFolder
+        //return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
+        def nBase = n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}?:(n.link?.file?.directory && n.hasStyle(styleFolder))?n:n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder)}
         return nBase
     }
 
@@ -23,9 +37,8 @@ class MDI{
     }
     
     def static wantToLog(n){
-        def atribName = 'log_MDI'
-        if(!n[atribName])n[atribName]='No'
-        return n[atribName]==true || [1,'1','true','ok','si','yes','y','ja'].contains(n[atribName].toString().toLowerCase())
+        if(!n[attrLog])n[attrLog]='No'
+        return n[attrLog]==true || [1,'1','true','ok','si','yes','y','ja'].contains(n[attrLog].toString().toLowerCase())
     }
     //end
 
@@ -152,7 +165,7 @@ class MDI{
             createPath(xf.path)
             setLink(nodo, xf.path)
             xf.link = xf.path
-            // TODO: debe ir?? :	if(nodo.style.name=='file_folder'){nodo.style.name = null}
+            // TODO: debe ir?? :	if(nodo.style.name==styleFolder){nodo.style.name = null}
             markAsBroken(nodo,false)
             markAsMoved(nodo,true)
             return 'new'
@@ -178,18 +191,18 @@ class MDI{
     //region: ---------------------- nodes marks
     
     def static isLocked(n){
-        return n.hasStyle('locked')
+        return n.hasStyle(styleLocked)
     }
     
     def static isMoved(n){
-        return n.hasStyle('movedRenamed')
+        return n.hasStyle(styleMovedRenamed)
     }
     
     def static markAsMoved(n,b, markMoved = 0){
         if(b && markMoved!=-1 && (markMoved == 1 || n.style.name == null)){
-            n.style.name = 'movedRenamed'
+            n.style.name = styleMovedRenamed
         } else {
-            if (n.style.name == 'movedRenamed') {n.style.name = null}
+            if (n.style.name == styleMovedRenamed) {n.style.name = null}
         }
     }
     
@@ -198,19 +211,19 @@ class MDI{
     }
 
     def static isNew(n){
-        return (n.style.name == 'freshNew')
+        return (n.style.name == styleFreshNew)
     }
     
     def static markAsNew(n,b){
         if(b){
-            n.style.name = 'freshNew'
+            n.style.name = styleFreshNew
         } else {
             if (isNew(n)) {n.style.name = null}
         }
     }
     
     def static isBroken(n){
-        return (n.style.name == 'missing')
+        return (n.style.name == styleBroken)
     }
 
     def static checkIfReallyBroken(n) {
@@ -219,9 +232,9 @@ class MDI{
 
     def static markAsBroken(n,b,checkAgain = false){
         if(b && (!checkAgain || !n.link?.file?.exists())  ){
-            n.style.name = 'missing'
+            n.style.name = styleBroken
         } else {
-            if (n.style.name == 'missing') {n.style.name = null}
+            if (isBroken(n)) {n.style.name = null}
         }
     }
     
@@ -233,7 +246,7 @@ class MDI{
     }
 
     def static nodeIsFolder(n){
-        return n.hasStyle('file_folder')
+        return n.hasStyle(styleFolder)
     }
 
     def static isLinkToFile(n){
@@ -246,7 +259,7 @@ class MDI{
 
     def static getPathFromLink(n){
         //return n.link.uri.path.drop(1) as String 
-        def lastChar = (n.link.file?.directory || nodeIsFolder(n))?'\\':''
+        def lastChar = (n.link.file?.directory || nodeIsFolder(n))?File.separator:'' //TODO: Linux
         return (n.link.file?n.link.file.path + lastChar:null)
     }
 
@@ -266,7 +279,7 @@ class MDI{
         if(baseFolderNode){
             while(!n.equals(baseFolderNode)){
                 if(nodeIsFolder(n)){
-                    texto = correctFolderName(n) << '\\' << texto
+                    texto = correctFolderName(n) << File.separator << texto  //TODO: Linux
                 }
                 n = n.parent
             }
@@ -307,17 +320,17 @@ class MDI{
 
     def static getFolderpathFromStrings(folderPath,nodo){
         String folderName = correctFolderName(nodo)
-        getPathFromStrings(folderPath,folderName) + '\\'
+        getPathFromStrings(folderPath,folderName) + File.separator    //TODO: Linux
     }
     
     //"
     def static soloPath(fileAddress) {
-        fileAddress[0..fileAddress.lastIndexOf('\\')]
+        fileAddress[0..fileAddress.lastIndexOf(File.separator)]    //TODO: Linux
     }
 
     //function, returns string, looks at text in node and correct it if it can't be used as a foldername (privado)
     def static correctFolderName(n){
-        String texto = n.text.trim().replace('/','-').replace('\\','-')//.replace('.','-') //replaces chars not usefull in a Folder name
+        String texto = n.text.trim().replace('/','-').replace(File.separator,'-')//.replace('.','-') //replaces chars not usefull in a Folder name    //TODO: Linux
         if(n.text != texto) n.text = texto//corrects text in node too
         return texto // returns the corrected text
     }
@@ -344,7 +357,7 @@ class MDI{
     // create all folders of a path (if they doesn't exist)
     def static createPath(String p) {
         //ui.informationMessage('createPath ' + p)
-        def folders = p.replace('\\','/').split('/')
+        def folders = p.replace(File.separator,'/').split('/')    //TODO: Linux
         //ui.informationMessage(folders.toString())
         def path =''
         folders.each{ String f ->
@@ -466,15 +479,15 @@ class MDI{
     }
 
     def static getFilter(n) {
-        def attrNameFilter = 'nameFilter' 
+        def attrFilter = attrNameFilter
         def defaultNameFilter = ''
-        if(!n.attributes.containsKey(attrNameFilter)){
+        if(!n.attributes.containsKey(attrFilter)){
             def texto = "\n\nThe import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node: \n\n    -- nameFilter:\n       A filter to perform on the name of traversed files. If set, only files which match are brought. \n        This options allowes four types of inputs:\n           1. nothing (empty) means no filtering (default) \n           2. regex                   - example:       ~/.*\\.mp3/ \n           3. 'simplified' regex    - example:       ~.*\\.mp3 \n           4. string with *          - example:       *.mp3    (equivalent to regex      ~/(?i).*\\.mp3/  )\n           5. list of strings with * and ;         - example:       *.mp3;*.png   (equivalent to regex      ~/(?i)(.*\\.mp3|.*\\.png)/  )\n\n"
             n.note += texto
             // UITools.informationMessage(texto)
-            n[attrNameFilter] = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)?:defaultNameFilter
+            n[attrFilter] = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)?:defaultNameFilter
         }
-        def filtro = n[attrNameFilter]
+        def filtro = n[attrFilter]
 //        filtro = filtro==''?null
         filtro = filtro==''? ~/^(?!~\$).*/   // filters office temp files like "~$Libro.xlsx"
                     :filtro[0..1] =='~/'?~filtro[2..-2]
@@ -492,47 +505,47 @@ class MDI{
     }
 
     def static getMaxDepth(n, defaultMaxDepth = -1) {
-        def attrNameFilter = 'maxDepth'
+        def attrFilter = attrMaxDepth
         // def defaultMaxDepth = -1
         def onErrorMaxDepth = 0
-        if(!n[attrNameFilter]){
-            // n[attrNameFilter]= defaultMaxDepth
+        if(!n[attrFilter]){
+            // n[attrFilter]= defaultMaxDepth
             def texto = "\n\n  -- maxDepth:\n       The maximum number of directory levels when recursing \n        (default is -1 which means infinite, set to 0 for no recursion)\n\n   "
             // UITools.informationMessage(texto)
-            n[attrNameFilter]= UITools.showInputDialog(n.delegate, texto, defaultMaxDepth.toString())?:onErrorMaxDepth.toString()
+            n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultMaxDepth.toString())?:onErrorMaxDepth.toString()
             n.note += texto
         }
-        def maxDepth = n[attrNameFilter].isNum()?n[attrNameFilter].num0.toInteger():onErrorMaxDepth
+        def maxDepth = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():onErrorMaxDepth
         maxDepth = maxDepth>=-1?maxDepth:onErrorMaxDepth
-        n[attrNameFilter] = maxDepth
+        n[attrFilter] = maxDepth
         return maxDepth
     }
 
     def static getCheckBroken(n, defaultCheck = 0) {
-        def attrNameFilter = 'checkIfReallyBroken'
-        if(!n[attrNameFilter]){
+        def attrFilter = attrReallyBroken
+        if(!n[attrFilter]){
             def texto = "\n\n  -- checkIfReallyBroken:\n       Check if existing nodes pointing to filtered files still exist \n\n    - default is 0 which means don't check --> Mark node as missing also if it doesn't match the current filter,\n\n    - set to 1 to extra check if a not matching file still exists in drive \n\n   "
             // UITools.informationMessage(texto)
-            n[attrNameFilter]= UITools.showInputDialog(n.delegate, texto, defaultCheck.toString())?:defaultCheck.toString()
+            n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultCheck.toString())?:defaultCheck.toString()
             n.note += texto
         }
-        def checkBroken = n[attrNameFilter].isNum()?n[attrNameFilter].num0.toInteger():defaultCheck
+        def checkBroken = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultCheck
         checkBroken = checkBroken in [0, 1]?checkBroken:defaultCheck
-        n[attrNameFilter] = checkBroken
+        n[attrFilter] = checkBroken
         return checkBroken==1
     }   
 
     def static getMarkMoved(n, defaultMark = 0) {
-        def attrNameFilter = 'markWhenMoved'
-        if(!n[attrNameFilter]){
+        def attrFilter = attrMarkWhenMoved
+        if(!n[attrFilter]){
             def texto = "\n\n  -- markWhenMoved:\n       change styles to moved/renamed file Nodes \n\n set to: \n    0 : to change style only if node hasn't a previous one (default),\n\n    1 : to allways change the style,\n\n   -1 : to never change the style\n\n   "
             // UITools.informationMessage(texto)
-            n[attrNameFilter]= UITools.showInputDialog(n.delegate, texto, defaultMark.toString())?:defaultMark.toString()
+            n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultMark.toString())?:defaultMark.toString()
             n.note += texto
         }
-        def markMoved = n[attrNameFilter].isNum()?n[attrNameFilter].num0.toInteger():defaultMark
+        def markMoved = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultMark
         markMoved = markMoved in [-1, 0, 1]?markMoved:defaultMark
-        n[attrNameFilter] = markMoved
+        n[attrFilter] = markMoved
         return markMoved
     }   
     //end

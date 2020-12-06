@@ -2,16 +2,17 @@
 
 import groovy.io.FileType
 import groovy.io.FileVisitResult
+import java.util.regex.Pattern
 
 
 baseFolderNode = MDI.obtainBaseFolder(node)
 if(baseFolderNode){
-	baseFolderNode.style.name = 'baseFolder'
-	baseFolderPath = MDI.getPathFromLink(baseFolderNode)
+    baseFolderNode.style.name = 'baseFolder'
+    baseFolderPath = MDI.getPathFromLink(baseFolderNode)
     doMarkAsNew = !baseFolderNode.leaf
     importFoldersFromDrive(baseFolderNode)
 }else{
-	ui.informationMessage("couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)")
+    ui.informationMessage("couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)")
 }
 
 
@@ -36,9 +37,9 @@ def importFoldersFromDrive(rootNode){
 def addFolderNode(f) {
     def nodoDonde = baseFolderNode
     def gPath = baseFolderPath
-    (f - baseFolderPath)?.split('\\\\').each{String dir ->
-        gPath +=  dir << '\\'
-        nodoDonde = nodoDonde.find{it.text == dir && (it.link?.file?.path + '\\') == gPath }[0]?:nodoDonde.createChild()
+    (f - baseFolderPath)?.split(Pattern.quote(File.separator)).each{String dir -> //TODO: linux
+        gPath +=  dir << File.separator //TODO: linux
+        nodoDonde = nodoDonde.find{it.text == dir && (it.link?.file?.path + File.separator) == gPath }[0]?:nodoDonde.createChild() //TODO: linux
         if(nodoDonde.text==''){
             nodoDonde.text=dir
             if(doMarkAsNew) {MDI.markAsNew(nodoDonde, true)}
@@ -46,6 +47,5 @@ def addFolderNode(f) {
         if(!nodoDonde.link?.file){nodoDonde.link.file = new File(gPath)}
     }
 }
-
 
 

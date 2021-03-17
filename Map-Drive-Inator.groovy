@@ -1,6 +1,6 @@
 // @ExecutionModes({ON_SINGLE_NODE="/main_menu/ScriptsEdo/MapDriveInator"})
 
-//region: =================== IMPORTING LIBS =========================================================
+//region: =================== IMPORTING LIBS ===========================
 import groovy.transform.EqualsAndHashCode
 // import groovy.io.FileType
 // import groovy.io.FileVisitResult
@@ -9,7 +9,7 @@ import MDI
 import java.util.regex.Pattern
 //end
 
-//region: =================== DEFINING CLASSES =======================================================
+//region: =================== DEFINING CLASSES =========================
 @EqualsAndHashCode
 class xFile {
     String id
@@ -25,7 +25,7 @@ class xFile {
 //end
 
 def modoDebug = false
-//region: =================== MAIN SCRIPT ============================================================
+//region: =================== MAIN SCRIPT ==============================
 
     //region: ---------------------- Initial Setup 1 ------------------------------
 

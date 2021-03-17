@@ -9,6 +9,7 @@ if(fPath && fPath != ''){
         if (!node.link.uri){
             def fileName = correctFileName(node.text)
             //return fileName
+            MDI.createPath(fPath)
             def file = new File(fPath + fileName)
             //return file
             file.text = texto

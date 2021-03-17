@@ -11,4 +11,3 @@ if(baseFolderNode){
 }else{
 	ui.informationMessage("couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)")
 }
-

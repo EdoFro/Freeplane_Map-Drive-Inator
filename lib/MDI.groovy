@@ -40,7 +40,7 @@ class MDI{
         if(!n[attrLog])n[attrLog]='No'
         return n[attrLog]==true || [1,'1','true','ok','si','yes','y','ja'].contains(n[attrLog].toString().toLowerCase())
     }
-    //end
+    //end:
 
     //region: ---------------------- Updating Folders In Drive And Map
     // loops all the folders and update them
@@ -186,7 +186,7 @@ class MDI{
         }
     }
     
-    // end 
+    //end:
     
     //region: ---------------------- nodes marks
     
@@ -238,7 +238,7 @@ class MDI{
         }
     }
     
-    //end
+    //end:
 
     //region: ---------------------- getting Information from nodes
     def static N(id){
@@ -310,7 +310,7 @@ class MDI{
         }
         return nodos.link.file.path
     }
-    //end
+    //end:
 
     //region: ---------------------- Funciones Strings
     def static getPathFromStrings(folderPath,fileName){
@@ -334,12 +334,12 @@ class MDI{
         if(n.text != texto) n.text = texto//corrects text in node too
         return texto // returns the corrected text
     }
-    //end
+    //end:
 
     //region: ---------------------- Modifying Nodes
     //adds a [link to a file] to the node
     def static setLink(n, addr){
-        // ui.informationMessage(addr.toString())
+        //  UITools.informationMessage(addr.toString())
         n.link.file = new File(addr.toString())
     }
 
@@ -351,7 +351,7 @@ class MDI{
     }
 
     
-    // end
+    //end:
 
     //region: ---------------------- Mannaging Files in Drive
     // create all folders of a path (if they doesn't exist)
@@ -380,7 +380,7 @@ class MDI{
         dir.exists() && dir.directory && (dir.list() as List).empty
     }
 
-    // end
+    //end:
 
     //region: ---------------------- Choosing Clone With 'Better' Path
     def static chooseClone(xFi){
@@ -416,7 +416,7 @@ class MDI{
         // ui.informationMessage(chosenOnes as String)
         return chosenOnes
     }
-    // end
+    //end:
 
     //region: ---------------------- Similarity 
     private double similarity(String s1, String s2) {
@@ -454,7 +454,7 @@ class MDI{
         }
         return costs[s2.length()];
     }
-    //end
+    //end:
     
     //region: ---------------------- Getting files info from drive
     
@@ -548,5 +548,5 @@ class MDI{
         n[attrFilter] = markMoved
         return markMoved
     }   
-    //end
+    //end:
 }

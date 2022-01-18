@@ -1,9 +1,9 @@
-<map version="freeplane 1.8.0">
-<!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
+<map version="freeplane 1.9.8">
+<!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <attribute_registry SHOW_ATTRIBUTES="selected"/>
 <node TEXT="Example MAP" FOLDED="false" ID="ID_819943156" CREATED="1590784750245" MODIFIED="1597275276457">
 <edge DASH="SOLID"/>
-<hook NAME="MapStyle">
+<hook NAME="MapStyle" zoom="0.8">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="BotonMenu" LAST="false">
             <hyper_link_contains TEXT="menuitem:"/>
@@ -21,13 +21,14 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="false"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="false" mapUsesOwnSaveOptions="true" save_folding="default" save_last_visited_node="default" save_modification_times="false"/>
 
 <map_styles>
-<stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
+<stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
-<stylenode LOCALIZED_TEXT="default" MAX_WIDTH="300.0 px" COLOR="#000000" BACKGROUND_COLOR="#ffffff" STYLE="as_parent">
+<stylenode LOCALIZED_TEXT="default" ID="ID_1312186908" MAX_WIDTH="300 px" COLOR="#000000" BACKGROUND_COLOR="#ffffff" STYLE="as_parent">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1312186908" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Gisha" SIZE="10" BOLD="false" ITALIC="false"/>
 <edge STYLE="bezier" COLOR="#808080" WIDTH="thin"/>
 </stylenode>
@@ -42,6 +43,7 @@
 <edge STYLE="hide_edge"/>
 <cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
 </stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.selection" BACKGROUND_COLOR="#ff9900" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#cc6600"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="styles.topic" COLOR="#18898b" STYLE="fork">
@@ -56,38 +58,38 @@
 <stylenode LOCALIZED_TEXT="styles.important">
 <icon BUILTIN="yes"/>
 </stylenode>
-<stylenode TEXT="BotonMenu" ICON_SIZE="20.0 pt" COLOR="#b2dfff" BACKGROUND_COLOR="#3f657f" STYLE="bubble" BORDER_WIDTH="3.0 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#0097ff"/>
-<stylenode TEXT="baseFolder" ICON_SIZE="20.0 pt" COLOR="#000000" BACKGROUND_COLOR="#ffeca9" BORDER_COLOR="#5566c5">
+<stylenode TEXT="BotonMenu" ICON_SIZE="20 pt" COLOR="#b2dfff" BACKGROUND_COLOR="#3f657f" STYLE="bubble" BORDER_WIDTH="3 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#0097ff"/>
+<stylenode TEXT="baseFolder" ICON_SIZE="20 pt" COLOR="#000000" BACKGROUND_COLOR="#ffeca9" BORDER_COLOR="#5566c5">
 <icon BUILTIN="emoji-1F4BD"/>
 <font BOLD="true"/>
 </stylenode>
-<stylenode TEXT="newFolderImport" ICON_SIZE="20.0 pt" COLOR="#000000" BACKGROUND_COLOR="#ffeca9" BORDER_COLOR="#5566c5">
+<stylenode TEXT="newFolderImport" ICON_SIZE="20 pt" COLOR="#000000" BACKGROUND_COLOR="#ffeca9" BORDER_COLOR="#5566c5">
 <icon BUILTIN="emoji-1F4BE"/>
 <font BOLD="true"/>
 </stylenode>
-<stylenode TEXT="locked" ICON_SIZE="20.0 pt" COLOR="#e1e1e1" BACKGROUND_COLOR="#6f4e4e" BORDER_WIDTH="2.5 px">
+<stylenode TEXT="locked" ICON_SIZE="20 pt" COLOR="#e1e1e1" BACKGROUND_COLOR="#6f4e4e" BORDER_WIDTH="2.5 px">
 <icon BUILTIN="emoji-1F512"/>
 </stylenode>
-<stylenode TEXT="freshNew" ICON_SIZE="20.0 pt" BACKGROUND_COLOR="#ace500">
+<stylenode TEXT="freshNew" ICON_SIZE="20 pt" BACKGROUND_COLOR="#ace500">
 <icon BUILTIN="emoji-1F195"/>
 </stylenode>
-<stylenode TEXT="movedRenamed" ICON_SIZE="20.0 pt" BACKGROUND_COLOR="#ace500">
+<stylenode TEXT="movedRenamed" ICON_SIZE="20 pt" BACKGROUND_COLOR="#ace500">
 <icon BUILTIN="emoji-1F500"/>
 </stylenode>
 <stylenode TEXT="file" BORDER_WIDTH="2.5 px">
 <font NAME="Consolas"/>
 </stylenode>
-<stylenode TEXT="file_folder" BORDER_WIDTH="3.0 px">
+<stylenode TEXT="file_folder" BORDER_WIDTH="3 px">
 <icon BUILTIN="emoji-1F4C2"/>
 </stylenode>
 <stylenode TEXT="Organizador">
 <icon BUILTIN="folder"/>
 <font BOLD="true"/>
 </stylenode>
-<stylenode TEXT="missing" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3.0 px">
+<stylenode TEXT="missing" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3 px">
 <icon BUILTIN="broken-line"/>
 </stylenode>
-<stylenode TEXT="modifiedFile" BACKGROUND_COLOR="#ffcc00" BORDER_WIDTH="3.9999999999999996 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#cc6600">
+<stylenode TEXT="modifiedFile" BACKGROUND_COLOR="#ffcc00" BORDER_WIDTH="4 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#cc6600">
 <icon BUILTIN="emoji-2B55"/>
 <font ITALIC="true"/>
 </stylenode>
@@ -115,8 +117,7 @@
 <icon BUILTIN="pencil"/>
 <font SIZE="16" BOLD="true"/>
 </node>
-<node TEXT="Instructions" STYLE_REF="Organizador" ID="ID_1687633798" CREATED="1590789587612" MODIFIED="1598392632977"><richcontent TYPE="NOTE">
-
+<node TEXT="Instructions" STYLE_REF="Organizador" ID="ID_1687633798" CREATED="1590789587612" MODIFIED="1598392632977"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -126,10 +127,8 @@
       I've tested only in windows. I do`'t know if it runs in other OS.
     </p>
   </body>
-</html>
-</richcontent>
-<richcontent TYPE="DETAILS">
-
+</html></richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -139,15 +138,13 @@
       Windows
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="UNDER CONSTUCTION" ID="ID_1206466179" CREATED="1597347715234" MODIFIED="1597347780398" BACKGROUND_COLOR="#ffff00">
 <icon BUILTIN="pencil"/>
 <font SIZE="16" BOLD="true"/>
 </node>
 <node TEXT="first time:" STYLE_REF="Organizador" ID="ID_242771435" CREATED="1590789610801" MODIFIED="1590789623249">
-<node TEXT="copy scripts to your scripts folder" FOLDED="true" ID="ID_1083806285" CREATED="1590789697917" MODIFIED="1607175380304"><richcontent TYPE="NOTE">
-
+<node TEXT="copy scripts to your scripts folder" ID="ID_1083806285" CREATED="1590789697917" MODIFIED="1607175380304"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -159,10 +156,8 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
-<node TEXT="To see the images you have to use comand Format / Minimize node" ID="ID_1735978502" CREATED="1607175429429" MODIFIED="1607175545452"><richcontent TYPE="DETAILS">
-
+</html></richcontent>
+<node TEXT="To see the images you have to use comand Format / Minimize node" ID="ID_1735978502" CREATED="1607175429429" MODIFIED="1607175545452"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -172,16 +167,13 @@
       Alt + A
     </p>
   </body>
-</html>
-
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="open User Directory" ID="ID_1766225359" CREATED="1590804727552" MODIFIED="1607175560741">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20001.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="copy lib to your lib folder" FOLDED="true" ID="ID_741141676" CREATED="1590789697917" MODIFIED="1607175320629"><richcontent TYPE="NOTE">
-
+<node TEXT="copy lib to your lib folder" FOLDED="true" ID="ID_741141676" CREATED="1590789697917" MODIFIED="1607175320629"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -193,14 +185,12 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="open User Directory" ID="ID_252880445" CREATED="1590804727552" MODIFIED="1607175572429">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20001.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="allow scripts to read and write files" FOLDED="true" ID="ID_1427365019" CREATED="1590790718419" MODIFIED="1607175357623"><richcontent TYPE="NOTE">
-
+<node TEXT="allow scripts to read and write files" FOLDED="true" ID="ID_1427365019" CREATED="1590790718419" MODIFIED="1607175357623"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -221,8 +211,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="open Preferences" ID="ID_1408247914" CREATED="1590804727596" MODIFIED="1607175585194">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20003.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
@@ -230,8 +219,7 @@
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20004.png" SIZE="0.62434965" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="relaunch freeplane" ID="ID_982912135" CREATED="1590789734867" MODIFIED="1590805944229"><richcontent TYPE="NOTE">
-
+<node TEXT="relaunch freeplane" ID="ID_982912135" CREATED="1590789734867" MODIFIED="1590805944229"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -246,15 +234,13 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="To work it need to be used with ABSOLUTE links" ID="ID_1437662581" CREATED="1597275889440" MODIFIED="1597275912193"/>
 </node>
 <node TEXT="importing the folder structure" STYLE_REF="Organizador" ID="ID_1374265871" CREATED="1590792021431" MODIFIED="1597347644141">
 <icon BUILTIN="pencil"/>
-<richcontent TYPE="NOTE">
-
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -264,10 +250,8 @@
       use this map as a template, because it has the <b>user defined styles </b>and <b>conditional styles </b>that are necesary for the script to run correctly
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="copy your base folder to freeplane as a node" ID="ID_1394265874" CREATED="1590792061344" MODIFIED="1590806013157"><richcontent TYPE="NOTE">
-
+</html></richcontent>
+<node TEXT="copy your base folder to freeplane as a node" ID="ID_1394265874" CREATED="1590792061344" MODIFIED="1590806013157"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -297,8 +281,19 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
+<node TEXT="To see the images you have to use comand Format / Minimize node on them" ID="ID_1792082769" CREATED="1607175429429" MODIFIED="1607175732200"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Alt + A
+    </p>
+  </body>
+</html></richcontent>
+</node>
 <node TEXT="copy base folder" ID="ID_966651652" CREATED="1590804727650" MODIFIED="1597275052027" TEXT_SHORTENED="true">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20006.png" SIZE="0.90361446" NAME="ExternalObject"/>
 </node>
@@ -306,8 +301,7 @@
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20007.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="select it" ID="ID_123446570" CREATED="1590792160606" MODIFIED="1590806021353"><richcontent TYPE="NOTE">
-
+<node TEXT="select it" ID="ID_123446570" CREATED="1590792160606" MODIFIED="1590806021353"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -319,16 +313,14 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="TODO:" ID="ID_1110214878" CREATED="1597275114156" MODIFIED="1597347640503">
 <icon BUILTIN="pencil"/>
 </node>
 </node>
-<node TEXT="organizing it" STYLE_REF="Organizador" ID="ID_1011171624" CREATED="1590792542264" MODIFIED="1590792589833">
-<node TEXT="creating new folders" ID="ID_958877563" CREATED="1590794551926" MODIFIED="1590807536831"><richcontent TYPE="NOTE">
-
+<node TEXT="organizing it" STYLE_REF="Organizador" FOLDED="true" ID="ID_1011171624" CREATED="1590792542264" MODIFIED="1590792589833">
+<node TEXT="creating new folders" ID="ID_958877563" CREATED="1590794551926" MODIFIED="1590807536831"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -349,8 +341,19 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
+<node TEXT="To see the images you have to use comand Format / Minimize node on them" ID="ID_1120260851" CREATED="1607175429429" MODIFIED="1607175732200"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Alt + A
+    </p>
+  </body>
+</html></richcontent>
+</node>
 <node TEXT="assign &apos;file_folder&apos; style 1" ID="ID_1270988197" CREATED="1590807331427" MODIFIED="1597275128001" TEXT_SHORTENED="true">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20012.png" SIZE="0.9433962" NAME="ExternalObject"/>
 </node>
@@ -358,8 +361,7 @@
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20011.png" SIZE="0.7444169" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="moving the files nodes to the new folders" ID="ID_1158196008" CREATED="1590794576394" MODIFIED="1590806145410"><richcontent TYPE="NOTE">
-
+<node TEXT="moving the files nodes to the new folders" ID="ID_1158196008" CREATED="1590794576394" MODIFIED="1590806145410"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -371,14 +373,12 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="move &apos;files&apos; nodes into new &apos;folders&apos;" ID="ID_778559080" CREATED="1590807678966" MODIFIED="1597347693789" TEXT_SHORTENED="true">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20013.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="adding other nodes / notes / details" ID="ID_1625194663" CREATED="1590794561668" MODIFIED="1590806309424"><richcontent TYPE="NOTE">
-
+<node TEXT="adding other nodes / notes / details" ID="ID_1625194663" CREATED="1590794561668" MODIFIED="1590806309424"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -408,14 +408,12 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="adding nodes, notes, details" ID="ID_1090104357" CREATED="1590808387849" MODIFIED="1597347700784" TEXT_SHORTENED="true">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20014.png" SIZE="0.9118541" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="changing files names" ID="ID_231729277" CREATED="1590794639542" MODIFIED="1597275176593"><richcontent TYPE="NOTE">
-
+<node TEXT="changing files names" ID="ID_231729277" CREATED="1590794639542" MODIFIED="1597275176593"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -430,15 +428,13 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="renaming files" ID="ID_1420984609" CREATED="1590808632297" MODIFIED="1597347706168" TEXT_SHORTENED="true">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20015.png" SIZE="0.9917355" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
-<node TEXT="update the files and folders in your disk" STYLE_REF="Organizador" ID="ID_1182392227" CREATED="1590794661092" MODIFIED="1597275212745"><richcontent TYPE="NOTE">
-
+<node TEXT="update the files and folders in your disk" STYLE_REF="Organizador" ID="ID_1182392227" CREATED="1590794661092" MODIFIED="1597275212745"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -459,12 +455,10 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node TEXT="add new Styles" STYLE_REF="Organizador" ID="ID_1687318378" CREATED="1592838662490" MODIFIED="1597274889477"><richcontent TYPE="DETAILS">
-
+<node TEXT="add new Styles" STYLE_REF="Organizador" ID="ID_1687318378" CREATED="1592838662490" MODIFIED="1597274889477"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -474,12 +468,10 @@
       for other maps
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="for each new Style:" STYLE_REF="Organizador" FOLDED="true" ID="ID_1129119163" CREATED="1592841393949" MODIFIED="1597274555413">
 <node TEXT="select the muster node" ID="ID_587062624" CREATED="1592839717618" MODIFIED="1597274588878" NUMBERED="true">
-<node TEXT="BotonMenu" ID="ID_416745702" CREATED="1592084803981" MODIFIED="1592842172343" ICON_SIZE="24.0 pt" COLOR="#b2dfff" BACKGROUND_COLOR="#3f657f" STYLE="bubble" BORDER_WIDTH="3.0 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#0097ff"><richcontent TYPE="DETAILS">
-
+<node TEXT="BotonMenu" ID="ID_416745702" CREATED="1592084803981" MODIFIED="1592842172343" ICON_SIZE="24 pt" COLOR="#b2dfff" BACKGROUND_COLOR="#3f657f" STYLE="bubble" BORDER_WIDTH="3 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#0097ff"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -489,14 +481,12 @@
       patrón de base
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node TEXT="baseFolder" ID="ID_504531478" CREATED="1592084803981" MODIFIED="1592842324991" ICON_SIZE="24.0 pt" COLOR="#000000" BACKGROUND_COLOR="#ffeca9" BORDER_COLOR="#5566c5">
+<node TEXT="baseFolder" ID="ID_504531478" CREATED="1592084803981" MODIFIED="1592842324991" ICON_SIZE="24 pt" COLOR="#000000" BACKGROUND_COLOR="#ffeca9" BORDER_COLOR="#5566c5">
 <icon BUILTIN="emoji-1F4BD"/>
 <font BOLD="true"/>
-<richcontent TYPE="DETAILS">
-
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -506,14 +496,12 @@
       patrón de base
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node TEXT="newFolderImport" ID="ID_668585828" CREATED="1592084803981" MODIFIED="1592842324984" ICON_SIZE="24.0 pt" COLOR="#000000" BACKGROUND_COLOR="#ffeca9" BORDER_COLOR="#5566c5">
+<node TEXT="newFolderImport" ID="ID_668585828" CREATED="1592084803981" MODIFIED="1592842324984" ICON_SIZE="24 pt" COLOR="#000000" BACKGROUND_COLOR="#ffeca9" BORDER_COLOR="#5566c5">
 <icon BUILTIN="emoji-1F4BE"/>
 <font BOLD="true"/>
-<richcontent TYPE="DETAILS">
-
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -523,28 +511,27 @@
       patrón de base
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="locked" ID="ID_895342247" CREATED="1593212701967" MODIFIED="1597273698831" COLOR="#e1e1e1" BACKGROUND_COLOR="#6f4e4e" BORDER_WIDTH="2.5 px" BORDER_DASH="DASHES">
 <icon BUILTIN="emoji-1F512"/>
 </node>
-<node TEXT="freshNew" ID="ID_1793616985" CREATED="1593213107807" MODIFIED="1597273552453" ICON_SIZE="20.0 pt" BACKGROUND_COLOR="#ace500">
+<node TEXT="freshNew" ID="ID_1793616985" CREATED="1593213107807" MODIFIED="1597273552453" ICON_SIZE="20 pt" BACKGROUND_COLOR="#ace500">
 <icon BUILTIN="emoji-1F195"/>
 </node>
-<node TEXT="movedRenamed" ID="ID_263862093" CREATED="1595525991989" MODIFIED="1597273528771" ICON_SIZE="20.0 pt" BACKGROUND_COLOR="#ace500">
+<node TEXT="movedRenamed" ID="ID_263862093" CREATED="1595525991989" MODIFIED="1597273528771" ICON_SIZE="20 pt" BACKGROUND_COLOR="#ace500">
 <icon BUILTIN="emoji-1F500"/>
 </node>
 <node TEXT="file" ID="ID_472260282" CREATED="1593213292935" MODIFIED="1593214118016" BORDER_WIDTH="2.5 px">
 <font NAME="Consolas"/>
 </node>
-<node TEXT="file_folder" ID="ID_796157526" CREATED="1593214180238" MODIFIED="1593214523143" ICON_SIZE="12.0 pt" BORDER_WIDTH="3.0 px">
+<node TEXT="file_folder" ID="ID_796157526" CREATED="1593214180238" MODIFIED="1593214523143" ICON_SIZE="12 pt" BORDER_WIDTH="3 px">
 <icon BUILTIN="emoji-1F4C2"/>
 </node>
-<node TEXT="missing" ID="ID_1520632540" CREATED="1597422561327" MODIFIED="1597422654970" BORDER_WIDTH="3.0 px" BACKGROUND_COLOR="#f28bb3">
+<node TEXT="missing" ID="ID_1520632540" CREATED="1597422561327" MODIFIED="1597422654970" BORDER_WIDTH="3 px" BACKGROUND_COLOR="#f28bb3">
 <icon BUILTIN="broken-line"/>
 </node>
-<node TEXT="modifiedFile" ID="ID_394158838" CREATED="1599251325090" MODIFIED="1599251800834" BACKGROUND_COLOR="#ffcc00" BORDER_WIDTH="3.9999999999999996 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#cc6600">
+<node TEXT="modifiedFile" ID="ID_394158838" CREATED="1599251325090" MODIFIED="1599251800834" BACKGROUND_COLOR="#ffcc00" BORDER_WIDTH="4 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#cc6600">
 <icon BUILTIN="emoji-2B55"/>
 <font ITALIC="true"/>
 </node>
@@ -553,8 +540,7 @@
 <node TEXT="apply new style from selection" ID="ID_1600968769" CREATED="1592839759108" MODIFIED="1597274597913" LINK="menuitem:_NewUserStyleAction" NUMBERED="true">
 <node TEXT="take care with trailing spaces when pasting the name" ID="ID_1384968396" CREATED="1597274618871" MODIFIED="1597274646912"/>
 </node>
-<node TEXT="testing nodes" ID="ID_1206257270" CREATED="1592841576802" MODIFIED="1597274679628"><richcontent TYPE="DETAILS">
-
+<node TEXT="testing nodes" ID="ID_1206257270" CREATED="1592841576802" MODIFIED="1597274679628"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -564,10 +550,8 @@
       aquí se debería reflejar si el estilo se cargó correctamente
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="BotonMenu" STYLE_REF="BotonMenu" ID="ID_1221516433" CREATED="1592839269082" MODIFIED="1592839595822"><richcontent TYPE="DETAILS">
-
+</html></richcontent>
+<node TEXT="BotonMenu" STYLE_REF="BotonMenu" ID="ID_1221516433" CREATED="1592839269082" MODIFIED="1592839595822"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -577,11 +561,9 @@
       asignado (prueba)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node TEXT="baseFolder" STYLE_REF="baseFolder" ID="ID_1251497248" CREATED="1592839269082" MODIFIED="1592839621855"><richcontent TYPE="DETAILS">
-
+<node TEXT="baseFolder" STYLE_REF="baseFolder" ID="ID_1251497248" CREATED="1592839269082" MODIFIED="1592839621855"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -591,11 +573,9 @@
       asignado (prueba)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node TEXT="newFolderImport" STYLE_REF="newFolderImport" ID="ID_840043894" CREATED="1592839269082" MODIFIED="1592839607623"><richcontent TYPE="DETAILS">
-
+<node TEXT="newFolderImport" STYLE_REF="newFolderImport" ID="ID_840043894" CREATED="1592839269082" MODIFIED="1592839607623"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -605,8 +585,7 @@
       asignado (prueba)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="locked" STYLE_REF="locked" ID="ID_1964858331" CREATED="1593212005397" MODIFIED="1597273572997"/>
 <node TEXT="freshNew" STYLE_REF="freshNew" ID="ID_87124226" CREATED="1593213236294" MODIFIED="1593213249604"/>
@@ -640,8 +619,7 @@
 <node TEXT="modifiedFile Contains &quot;true&quot;" ID="ID_1458055973" CREATED="1599329840834" MODIFIED="1599329876562"/>
 </node>
 </node>
-<node TEXT="Temp Script" ID="ID_1837970204" CREATED="1597275496080" MODIFIED="1597275496098"><richcontent TYPE="NOTE">
-
+<node TEXT="Temp Script" ID="ID_1837970204" CREATED="1597275496080" MODIFIED="1597275496098"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -657,10 +635,8 @@
       Hello world
     </p>
   </body>
-</html>
-</richcontent>
-<richcontent TYPE="DETAILS">
-
+</html></richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -670,8 +646,7 @@
       .txt
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="Actions:" STYLE_REF="Organizador" ID="ID_1321530167" CREATED="1590503364731" MODIFIED="1597274086662" NUMBERED="true">
@@ -694,8 +669,8 @@
 </node>
 </node>
 <node TEXT="to node" STYLE_REF="Organizador" ID="ID_167372529" CREATED="1599247370672" MODIFIED="1599247526811">
-<node TEXT="give node &apos;file_folder&apos; style" STYLE_REF="file_folder" ID="ID_815319331" CREATED="1590806506996" MODIFIED="1592082554300" LINK="menuitem:_AssignStyleAction.file_folder" MAX_WIDTH="250.0 px" MIN_WIDTH="250.0 px"/>
-<node TEXT="give node &apos;locked&apos; style" ID="ID_1595957319" CREATED="1596484461314" MODIFIED="1596484513782" LINK="menuitem:_AssignStyleAction.locked" MAX_WIDTH="250.0 px" MIN_WIDTH="250.0 px">
+<node TEXT="give node &apos;file_folder&apos; style" STYLE_REF="file_folder" ID="ID_815319331" CREATED="1590806506996" MODIFIED="1592082554300" LINK="menuitem:_AssignStyleAction.file_folder" MAX_WIDTH="250 px" MIN_WIDTH="250 px"/>
+<node TEXT="give node &apos;locked&apos; style" ID="ID_1595957319" CREATED="1596484461314" MODIFIED="1596484513782" LINK="menuitem:_AssignStyleAction.locked" MAX_WIDTH="250 px" MIN_WIDTH="250 px">
 <icon BUILTIN="emoji-1F512"/>
 </node>
 </node>
@@ -705,7 +680,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Features" POSITION="right" ID="ID_1933019455" CREATED="1597336293381" MODIFIED="1597336813997" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
+<node TEXT="Features" FOLDED="true" POSITION="right" ID="ID_1933019455" CREATED="1597336293381" MODIFIED="1597336813997" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
 <node TEXT="basic" STYLE_REF="Organizador" FOLDED="true" ID="ID_916161454" CREATED="1597337606934" MODIFIED="1597452217797">
 <node TEXT="video 1" ID="ID_1939874482" CREATED="1597346952852" MODIFIED="1597346956474">
@@ -759,8 +734,7 @@
 </node>
 <node TEXT="locked" ID="ID_1866219877" CREATED="1597336926216" MODIFIED="1597452273743" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <font STRIKETHROUGH="false"/>
-<richcontent TYPE="DETAILS">
-
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -770,14 +744,13 @@
       ignore nodes in it
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="you can mark some nodes as &apos;locked&apos;. That means that MDI ignores it and its descendant." ID="ID_1653018271" CREATED="1597451193472" MODIFIED="1597451367785"/>
 <node TEXT="ignores outside files and doesn´t move them into the project folder" ID="ID_1931119002" CREATED="1597337957596" MODIFIED="1597347396757" NUMBERED="true">
 <font STRIKETHROUGH="false"/>
 <node TEXT="you can have nodes with links to files outside your base folder wihout having MDI moving the file form its original drive&apos;s position to your base folder." ID="ID_1337052967" CREATED="1597451378657" MODIFIED="1597451601733">
 <node TEXT="this way you can avoid this" ID="ID_1800171867" CREATED="1597451626292" MODIFIED="1597451664584">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#990000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1597509970" STARTINCLINATION="444;0;" ENDINCLINATION="444;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#990000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1597509970" STARTINCLINATION="332.99999 pt;0 pt;" ENDINCLINATION="332.99999 pt;0 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 </node>
 </node>
 </node>
@@ -835,8 +808,7 @@
 <node TEXT="(default)" ID="ID_1749507742" CREATED="1598135537821" MODIFIED="1598135537827"/>
 </node>
 <node TEXT="2. regex" ID="ID_124150247" CREATED="1598135398040" MODIFIED="1598135569500">
-<node TEXT="~/.*\.mp3/" ID="ID_36415377" CREATED="1598135621681" MODIFIED="1598135684703"><richcontent TYPE="DETAILS">
-
+<node TEXT="~/.*\.mp3/" ID="ID_36415377" CREATED="1598135621681" MODIFIED="1598135684703"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -846,13 +818,11 @@
       example
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="3. &apos;simplified&apos; regex" ID="ID_1348548675" CREATED="1598135398043" MODIFIED="1598135591859">
-<node TEXT="~.*\.mp3" ID="ID_195982893" CREATED="1598135609846" MODIFIED="1598135694117"><richcontent TYPE="DETAILS">
-
+<node TEXT="~.*\.mp3" ID="ID_195982893" CREATED="1598135609846" MODIFIED="1598135694117"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -862,13 +832,11 @@
       example
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="4. string with *" ID="ID_1493867332" CREATED="1598135398046" MODIFIED="1598135671155">
-<node TEXT="*.mp3" ID="ID_898544369" CREATED="1598135671170" MODIFIED="1598135706463"><richcontent TYPE="DETAILS">
-
+<node TEXT="*.mp3" ID="ID_898544369" CREATED="1598135671170" MODIFIED="1598135706463"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -878,10 +846,8 @@
       example
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="~/(?i).*\.mp3/" ID="ID_722660512" CREATED="1598135671164" MODIFIED="1598135757336"><richcontent TYPE="DETAILS">
-
+</html></richcontent>
+<node TEXT="~/(?i).*\.mp3/" ID="ID_722660512" CREATED="1598135671164" MODIFIED="1598135757336"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -891,14 +857,12 @@
       equivalent to regex
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
 <node TEXT="5. list of strings with * and ;" ID="ID_1032314669" CREATED="1598135398049" MODIFIED="1598135803392">
-<node TEXT="*.mp3;*.png" ID="ID_35285374" CREATED="1598135803405" MODIFIED="1598135812950"><richcontent TYPE="DETAILS">
-
+<node TEXT="*.mp3;*.png" ID="ID_35285374" CREATED="1598135803405" MODIFIED="1598135812950"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -908,10 +872,8 @@
       example
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="~/(?i)(.*\.mp3|.*\.png)/" ID="ID_1400217155" CREATED="1598135803400" MODIFIED="1598135823492"><richcontent TYPE="DETAILS">
-
+</html></richcontent>
+<node TEXT="~/(?i)(.*\.mp3|.*\.png)/" ID="ID_1400217155" CREATED="1598135803400" MODIFIED="1598135823492"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -921,8 +883,7 @@
       equivalent to regex
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -943,8 +904,7 @@
 </node>
 </node>
 <node TEXT="you can group the childnodes of a node using different conditions:" ID="ID_1771770718" CREATED="1599866509764" MODIFIED="1599866684977">
-<node TEXT="extension of the file" ID="ID_155025783" CREATED="1599866574521" MODIFIED="1600699461911"><richcontent TYPE="NOTE">
-
+<node TEXT="extension of the file" ID="ID_155025783" CREATED="1599866574521" MODIFIED="1600699461911"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -957,11 +917,9 @@
       it get the text after the last dot and it asumes that is the extension.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node TEXT="Year or YearMonth when the file was" ID="ID_1134162043" CREATED="1599866584347" MODIFIED="1600698454516"><richcontent TYPE="DETAILS">
-
+<node TEXT="Year or YearMonth when the file was" ID="ID_1134162043" CREATED="1599866584347" MODIFIED="1600698454516"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -974,10 +932,8 @@
       (TimeStamps / Get file timestamps)
     </p>
   </body>
-</html>
-</richcontent>
-<richcontent TYPE="NOTE">
-
+</html></richcontent>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -993,15 +949,13 @@
       apply TimeStamps / Get file timestamps to the branch you want to group before grouping it.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="created" ID="ID_1822403100" CREATED="1599866612535" MODIFIED="1599866616323"/>
 <node TEXT="last modified" ID="ID_1914079884" CREATED="1599866618930" MODIFIED="1599866627208"/>
 <node TEXT="last accessed" ID="ID_1307646565" CREATED="1599866628357" MODIFIED="1599866637814"/>
 </node>
 </node>
-<node TEXT="the grouping criteria input strings are:" ID="ID_1848057897" CREATED="1599866708223" MODIFIED="1599867185623"><richcontent TYPE="DETAILS">
-
+<node TEXT="the grouping criteria input strings are:" ID="ID_1848057897" CREATED="1599866708223" MODIFIED="1599867185623"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -1011,10 +965,8 @@
       upper or lower case deosn't matter
     </p>
   </body>
-</html>
-</richcontent>
-<richcontent TYPE="NOTE">
-
+</html></richcontent>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -1118,8 +1070,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="long versions" ID="ID_107905866" CREATED="1599866752850" MODIFIED="1599866825684">
 <node TEXT="Ext" ID="ID_1087767970" CREATED="1599866739935" MODIFIED="1599866741487"/>
 <node TEXT="creation YearMonth" ID="ID_933222239" CREATED="1599866735343" MODIFIED="1599866735343"/>
@@ -1146,6 +1097,39 @@
 <node TEXT="look at this videos" ID="ID_525825074" CREATED="1597451868466" MODIFIED="1597451880593">
 <node TEXT="lo básico" ID="ID_1650411941" CREATED="1597346968785" MODIFIED="1597346975184" LINK="https://youtu.be/2vwd38rxAlY"/>
 <node TEXT="el resto" ID="ID_1146532349" CREATED="1597347167450" MODIFIED="1597347175477" LINK="https://youtu.be/bd30aySucc4"/>
+</node>
+<node TEXT="test for linux" STYLE_REF="baseFolder" ID="ID_1927449788" CREATED="1607169700294" MODIFIED="1607177934665" LINK="file:/C:/Temp/testFolder/">
+<icon BUILTIN="bookmarks/Bookmark 1"/>
+<attribute NAME="maxDepth" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      null
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;-- maxDepth:
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The maximum number of directory levels when recursing&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(default is -1 which means infinite, set to 0 for no recursion)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 </node>
 </node>

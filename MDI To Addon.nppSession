@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <Session activeView="1">
+        <mainView activeIndex="2">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="46840" startPos="9972" endPos="9972" selMode="0" offset="0" wrapCount="1" lang="None (Normal Text)" encoding="-1" userReadOnly="no" filename="C:\Users\Edo\AppData\Roaming\Freeplane\1.9.x\logs\log.0" backupFilePath="" originalFileLastModifTimestamp="1804269841" originalFileLastModifTimestampHigh="30936166" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="7667832" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="13741" startPos="255" endPos="255" selMode="0" offset="0" wrapCount="1" lang="CSS" encoding="-1" userReadOnly="no" filename="C:\Downloads\Java Programming Style Guidelines 2_files\style.css" backupFilePath="" originalFileLastModifTimestamp="2102239228" originalFileLastModifTimestampHigh="30934397" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-619089352" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="1" xOffset="0" scrollWidth="1757" startPos="2" endPos="2" selMode="0" offset="0" wrapCount="1" lang="Groovy" encoding="-1" userReadOnly="no" filename="C:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\lib\MDI.groovy" backupFilePath="" originalFileLastModifTimestamp="1181254466" originalFileLastModifTimestampHigh="30934168" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Fold line="32" />
+                <Fold line="38" />
+                <Fold line="46" />
+                <Fold line="112" />
+                <Fold line="175" />
+                <Fold line="192" />
+                <Fold line="196" />
+                <Fold line="200" />
+                <Fold line="208" />
+                <Fold line="212" />
+                <Fold line="216" />
+                <Fold line="224" />
+                <Fold line="232" />
+                <Fold line="243" />
+                <Fold line="247" />
+                <Fold line="251" />
+                <Fold line="259" />
+                <Fold line="265" />
+                <Fold line="269" />
+                <Fold line="294" />
+                <Fold line="303" />
+                <Fold line="315" />
+                <Fold line="320" />
+                <Fold line="326" />
+                <Fold line="331" />
+                <Fold line="340" />
+                <Fold line="346" />
+                <Fold line="357" />
+                <Fold line="369" />
+                <Fold line="377" />
+                <Fold line="385" />
+                <Fold line="421" />
+                <Fold line="430" />
+                <Fold line="498" />
+                <Fold line="523" />
+                <Fold line="537" />
+            </File>
+        </mainView>
+        <subView activeIndex="2">
+            <File firstVisibleLine="55" xOffset="0" scrollWidth="6503" startPos="4134" endPos="4134" selMode="0" offset="0" wrapCount="1" lang="Groovy" encoding="-1" userReadOnly="no" filename="C:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\MDI.groovy" backupFilePath="" originalFileLastModifTimestamp="1159554453" originalFileLastModifTimestampHigh="30936081" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143209984" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2093" startPos="437" endPos="437" selMode="0" offset="0" wrapCount="1" lang="Groovy" encoding="-1" userReadOnly="no" filename="C:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\Sync.groovy" backupFilePath="" originalFileLastModifTimestamp="-722767482" originalFileLastModifTimestampHigh="30935451" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="3407920" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2093" startPos="346" endPos="346" selMode="0" offset="0" wrapCount="1" lang="Groovy" encoding="-1" userReadOnly="no" filename="C:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\CreateBaseFolderNode.groovy" backupFilePath="" originalFileLastModifTimestamp="1298517089" originalFileLastModifTimestampHigh="30935452" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="3407920" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2093" startPos="1429" endPos="1429" selMode="0" offset="0" wrapCount="1" lang="None (Normal Text)" encoding="-1" userReadOnly="no" filename="C:\Users\Edo\AppData\Roaming\Freeplane\1.9.x\scripts\freeplane.dsld" backupFilePath="" originalFileLastModifTimestamp="1425661103" originalFileLastModifTimestampHigh="30936081" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1141866496" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </subView>
+    </Session>
+</NotepadPlus>

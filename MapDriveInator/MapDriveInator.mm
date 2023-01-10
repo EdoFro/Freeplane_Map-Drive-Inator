@@ -1,15 +1,15 @@
 <map version="freeplane 1.9.8">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
-<attribute_layout NAME_WIDTH="103.5 pt" VALUE_WIDTH="116.25 pt"/>
+<attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="180.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
 <attribute NAME="version" VALUE="v0.0.2"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
-<attribute NAME="updateUrl" VALUE=""/>
+<attribute NAME="updateUrl" VALUE="${homepage}/releases/latest/download/version.properties"/>
 <attribute NAME="addonsMenu" VALUE="/menu_bar/edoTools"/>
-<attribute NAME="downloadUrl" VALUE="${homepage}/${name}"/>
+<attribute NAME="downloadUrl" VALUE="${homepage}/releases/download/${version}/"/>
 <attribute NAME="changelogUrl" VALUE=""/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -50,9 +50,8 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
-<hook NAME="MapStyle" background="#f9f9f8" zoom="0.968">
+</html></richcontent>
+<hook NAME="MapStyle" background="#f9f9f8" zoom="0.9">
     <properties mapUsesOwnSaveOptions="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" save_folding="default" associatedTemplateLocation="file:/C:/Users/Edo/Documents/GitHub/Freeplane_MarkdownHelper/MarkdownHelper/MarkdownHelper.mm" fit_to_viewport="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true"/>
 
 <map_styles>
@@ -146,8 +145,7 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="AddOn to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_659221198"/>
 </node>
 <node TEXT="changes" POSITION="left" ID="ID_1078107435">
@@ -162,8 +160,7 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="left" ID="ID_1028448710">
 <edge COLOR="#00ff00"/>
@@ -183,8 +180,7 @@
       The License text has to be entered as a child of the <i>'license'</i>&nbsp;node, either as plain text or as HTML.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="MIT License&#xa;&#xa;Copyright (c) 2021 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_1379820487" VSHIFT_QUANTITY="-0.75 pt"/>
 </node>
 <node TEXT="preferences.xml" POSITION="left" ID="ID_720156944">
@@ -202,8 +198,7 @@
       <font color="#000000" face="SansSerif, sans-serif">Every property in the configuration should receive a default value in <i>default.properties</i>&nbsp;node.</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="default.properties" POSITION="left" ID="ID_536060528">
 <edge COLOR="#00ffff"/>
@@ -225,8 +220,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout NAME_WIDTH="80.25 pt" VALUE_WIDTH="122.25 pt"/>
 </node>
 <node TEXT="translations" POSITION="left" ID="ID_137723580">
@@ -252,8 +246,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="en" ID="ID_1122736476">
 <attribute_layout NAME_WIDTH="164.25 pt" VALUE_WIDTH="164.25 pt"/>
 <attribute NAME="addons.${name}" VALUE="Map Drive Inator"/>
@@ -272,8 +265,7 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout NAME_WIDTH="40.5 pt" VALUE_WIDTH="287.24999 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/CreateBaseFolderNode.groovy"/>
@@ -396,8 +388,7 @@
       &nbsp;&nbsp;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="CreateBaseFolderNode.groovy" ID="ID_891666929">
 <attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="183.74999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.CreateBaseFolderNode"/>
@@ -447,8 +438,7 @@
       &nbsp;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="MapDriveInator.jar" ID="ID_483543962"/>
 </node>
 <node TEXT="zips" POSITION="right" ID="ID_26433714">
@@ -487,8 +477,7 @@
       &nbsp;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="doc" ID="ID_1305821302"/>
 <node TEXT="icons" ID="ID_615436065"/>
 <node TEXT="templates" ID="ID_903379418"/>
@@ -525,40 +514,7 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&nbsp;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="shortcuts" POSITION="right" ID="ID_989188638">
-<edge COLOR="#ff0000"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      some nodes to build AddOn and test changes easily and fast
-    </p>
-  </body>
 </html></richcontent>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Edo
-    </p>
-  </body>
-</html></richcontent>
-<node TEXT="Build add-on" ID="ID_1016684737" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node">
-<icon BUILTIN="emoji-1F527"/>
-</node>
-<node TEXT="Package add-on for publication" ID="ID_806418866" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node">
-<icon BUILTIN="emoji-1F5DC"/>
-</node>
-<node TEXT="MapDriveInator-v0.0.2.addon.mm" ID="ID_1338490097" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.2.addon.mm"/>
 </node>
 <node TEXT="actions" POSITION="right" ID="ID_1052924007"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -568,10 +524,10 @@
   <body>
     Direct links to menu commands
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="Build add-on" ID="ID_14185460" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="Package add-on for publication" ID="ID_1767675080" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
+<node TEXT="MapDriveInator-v0.0.2.addon.mm" ID="ID_1338490097" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.2.addon.mm"/>
 </node>
 </node>
 </map>

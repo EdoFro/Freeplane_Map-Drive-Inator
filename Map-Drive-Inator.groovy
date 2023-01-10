@@ -7,7 +7,7 @@ import groovy.transform.EqualsAndHashCode
 import java.text.SimpleDateFormat
 import MDI
 import java.util.regex.Pattern
-//end
+//end:
 
 //region: =================== DEFINING CLASSES =========================
 @EqualsAndHashCode
@@ -22,7 +22,7 @@ class xFile {
         this.path = path
     }
 }
-//end
+//end:
 
 def modoDebug = false
 //region: =================== MAIN SCRIPT ==============================
@@ -38,13 +38,13 @@ def textoReport = new StringBuilder();
 
 //---define nodo Base
 baseFolderNode = MDI.obtainBaseFolder(node)
-    //end ------------------------------------------------------------------
+    //end: ------------------------------------------------------------------
 
 if(baseFolderNode){
     //region: ---------------------- Initial Setup 2 ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Initial Setup 2    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Initial Setup 2    ');
-    //obtener nodo nueva importación
+    //obtener nodo nueva importaciÃ³n
     nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)
     def visibilizarAvance = MDI.wantToLog(nodeNewImports)
     if(visibilizarAvance) texto.append("\n").append('(elapsed time in miliseconds)').append("\n").append((tIni - new Date().getTime()) as String).append("\n")
@@ -60,7 +60,7 @@ if(baseFolderNode){
     def checkIfBroken = MDI.checkIfReallyBroken(baseFolderNode)
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
-    //end ------------------------------------------------------------------
+    //end: ------------------------------------------------------------------
 
     //region: ---------------------- Obteniendo Info En Nodos De Files Y Folders ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    '; 
@@ -71,10 +71,10 @@ if(baseFolderNode){
     xFolders =[]
     if(modoDebug)  ui.informationMessage("antes de llamar 'armaListadoRutas'")
     armaListadoRutas(baseFolderNode,baseFolderPath)
-    if(modoDebug)  ui.informationMessage("después de llamar 'armaListadoRutas'")
+    if(modoDebug)  ui.informationMessage("despuÃ©s de llamar 'armaListadoRutas'")
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    //end   ------------------------------------------------------------------
+    //end:   ------------------------------------------------------------------
 
     //region: ---------------------- Actualizando Files ------------------------------
     //region: __________________________- sacar listados desde nodos xSingles
@@ -89,15 +89,15 @@ if(baseFolderNode){
 
 
     //Alternativa 2
-    def xConsistentes = xSingles.findAll{it.path == it.link}
-    def listCons=xConsistentes.collect{it.link}
+    def xConsistentes   = xSingles.findAll{it.path == it.link}
+    def listCons        = xConsistentes.collect{it.link}
 
     def xInconsistentes = xSingles.findAll{it.path != it.link}
-    def listInConsLink = xInconsistentes.collect{it.link}
-    def listInConsPath = xInconsistentes.collect{it.path}
+    def listInConsLink  = xInconsistentes.collect{it.link}
+    def listInConsPath  = xInconsistentes.collect{it.path}
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
-    //end
+    //end:
 
     //region: __________________________- sacar listados desde nodos xClones
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados desde nodos xClones    '; 
@@ -108,10 +108,10 @@ if(baseFolderNode){
     def listClonCons = xClonesConsistentes.collect{it.link}
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
-    //end
+    //end:
 
     //region: __________________________- sacar listados drive
-    //---saca listados de información en drive --------------------------------
+    //---saca listados de informaciÃ³n en drive --------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados drive    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados drive    ');
     if(visibilizarAvance) texto.append("\n").append('saca listados de informacion en drive').append("\n")
@@ -120,7 +120,7 @@ if(baseFolderNode){
     
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end
+    // end:
 
     //region: __________________________- obteniendo sublistas
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas    '; 
@@ -129,11 +129,11 @@ if(baseFolderNode){
 
     filesOK       = listFiles.intersect(listCons + listClonCons)  //no se hace nada con esto
 
-    filesNOK      = listFiles - listCons //OJO!! aún incluye algunas que pueden estar ok con nodos clones
+    filesNOK      = listFiles - listCons //OJO!! aÃºn incluye algunas que pueden estar ok con nodos clones
     filesNOK      -= listClonCons //quitando las que pueden estar ok con nodos clones 'consistentes'
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end
+    // end:
 
     //region: __________________________- obtener listado de clones pendientes
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones pendientes    '; 
@@ -155,7 +155,7 @@ if(baseFolderNode){
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end
+    // end:
 
     //region: __________________________- obtener listado de clones inconsistentes
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones inconsistentes    '; 
@@ -166,7 +166,7 @@ if(baseFolderNode){
     def listClonInConsLink = xClonesInconsistentes.collect{it.link}
     def listClonInConsPath = xClonesInconsistentes.collect{it.path}
 
-    nSinFileA = listCons - listFiles //1ª parte de nodos sin files
+    nSinFileA = listCons - listFiles //1Âª parte de nodos sin files
     nodosSinFileA = xConsistentes.findAll{it.link in nSinFileA}
 
     filesSinNodos = filesNOK - listInConsLink - listInConsPath //restando nodos single inconsistentes
@@ -174,7 +174,7 @@ if(baseFolderNode){
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end
+    // end:
 
     //region: __________________________- obteniendo sublistas de xInconsistentes
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas de xInconsistentes    '; 
@@ -183,12 +183,12 @@ if(baseFolderNode){
     def xLinkOk = xInconsistentes.findAll{filesNOK.contains(it.link)} //inconsistentes cuyo link apunta a un archivo real
     def xPathOk = xInconsistentes.findAll{filesNOK.contains(it.path)}//inconsistentes cuyo path del mapa apunta a un archivo real
 
-    nodosSinFileB = xInconsistentes - xLinkOk - xPathOk //inconsistentes que no apuntan a ningun archivo. 2ª parte de nodos sin files
+    nodosSinFileB = xInconsistentes - xLinkOk - xPathOk //inconsistentes que no apuntan a ningun archivo. 2Âª parte de nodos sin files
 
     filesNOK2 = filesNOK - xLinkOk*.link.flatten() - xPathOk*.path.flatten()
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end
+    // end:
 
     //region: __________________________- obteniendo sublistas de xClonesInconsistentes
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas de xClonesInconsistentes    '; 
@@ -239,7 +239,7 @@ if(baseFolderNode){
     nodosSinFile = nodosSinFileA + nodosSinFileBC
     
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
-    // end
+    // end:
 
     //region: __________________________- aplicando acciones FILES
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> aplicando acciones FILES    '; 
@@ -262,7 +262,7 @@ if(baseFolderNode){
         nodo = N(x.id)
         MDI.markAsBroken(nodo,true,checkIfBroken)
     }
-    //end
+    //end:
 
     //region: _______________________________- path y file coinciden --> corregir links
     // sacar de update folder
@@ -279,7 +279,7 @@ if(baseFolderNode){
         //if(!nodo.icons.contains('pencil')){nodo.icons.add('pencil')}
     }
 
-    //end
+    //end:
 
     //region: _______________________________- files sin nodos       --> importar como nodos
     // ui.informationMessage('A - files sin nodos --> importar como nodos \n\n' + filesSinNodos as String)
@@ -288,7 +288,7 @@ if(baseFolderNode){
     def newFilesImported =  filesSinNodos?true:false
     
     filesSinNodos.each{f ->
-        // agregar f a nodo nueva importación
+        // agregar f a nodo nueva importaciÃ³n
         def nodoDonde = nodeNewImports
         def gPath = baseFolderPath
         (f - baseFolderPath)?.split(Pattern.quote(File.separator)).init().each{String dir ->   //TODO: linux
@@ -307,16 +307,16 @@ if(baseFolderNode){
 
 
 
-    //end
+    //end:
 
-    //region: _______________________________- path cambió en mapa   --> ejecutar cambio en disco
+    //region: _______________________________- path cambiÃ³ en mapa   --> ejecutar cambio en disco
     // sacar de update folder
     // ui.informationMessage(xClonLinkOk as String)
     xClonLinkOkChosen = MDI.chooseClone(xClonLinkOk)
     // ui.informationMessage(xClonLinkOkChosen as String)
 
     // c.select( (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).collect{ N(it.id)})
-    // ui.informationMessage('C - path cambió en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String)
+    // ui.informationMessage('C - path cambiÃ³ en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String)
     textoReport.append("\n ${(xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).size()} node(s) moved/renamed in drive")
     
     // def markMovedOption = MDI.markWhenMoved(baseFolderNode)
@@ -334,14 +334,14 @@ if(baseFolderNode){
         MDI.markAsMoved(nodo,true,markMovedOption)
     }
 
-    //end
+    //end:
 
     textoReport.append("\n\n")
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    //end
+    //end:
 
-    //end  ------------------------------------------------------------------
+    //end:  ------------------------------------------------------------------
 
     //region: ---------------------- Actualizando Folders ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Folders    '; 
@@ -355,7 +355,7 @@ if(baseFolderNode){
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    //end  ------------------------------------------------------------------
+    //end:  ------------------------------------------------------------------
 
     //region: ---------------------- Visibilizar Avance En Nota De Nodo ------------------------------
     if(visibilizarAvance){
@@ -480,7 +480,7 @@ if(baseFolderNode){
         }
 
     }
-    //end  ------------------------------------------------------------------
+    //end:  ------------------------------------------------------------------
 
     //region: ---------------------- limpiar variables ----------------------------------
 
@@ -518,7 +518,7 @@ if(baseFolderNode){
     xClonesPend4           =[]
     nodosSinFile           =[]
 
-    //end
+    //end:
 
     //region: ---------------------- Reporte Y Final Main ------------------------------
 
@@ -532,12 +532,12 @@ if(baseFolderNode){
     if (newFilesImported) c.select(nodeNewImports);
     c.statusInfo = '    -------------   Map-Drive-Inated    -------------      ';
     // c.select(baseFolderNode);
-//end  ------------------------------------------------------------------
+//end:  ------------------------------------------------------------------
 }else{
     ui.informationMessage("couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)")
 }
 
-//end ============================== fin: MAIN SCRIPT ============================================================
+//end: ============================== fin: MAIN SCRIPT ============================================================
 
 //region: ---------------------- Armando Listados xFiles
 def armaListadoRutas(nodo, String path){
@@ -565,7 +565,7 @@ def armaListadoRutas(nodo, String path){
         }       
     }
 }
-//end
+//end:
 
 //region: ----- funciones a pasar a MDI
 
@@ -574,4 +574,4 @@ def deleteNodesWithLinkToOther(n){
     n.find{it.link?.text?[0] == '#'}*.delete()
 }
 
-//end
+//end:

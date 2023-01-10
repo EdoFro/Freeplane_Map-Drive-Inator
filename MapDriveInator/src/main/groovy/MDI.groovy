@@ -73,7 +73,6 @@ class MDI{
     //TODO: MDI.getMaxDepth(n) 
     def static getMaxDepth(n, defaultMaxDepth = -1) {
         def attrFilter = attrMaxDepth
-        // def defaultMaxDepth = -1
         def onErrorMaxDepth = 0
         if(!n[attrFilter]){
             // n[attrFilter]= defaultMaxDepth

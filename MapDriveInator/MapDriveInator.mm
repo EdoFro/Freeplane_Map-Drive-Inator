@@ -1,9 +1,22 @@
-<map version="freeplane 1.9.8">
+<map version="freeplane 1.11.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
+<attribute_registry>
+    <attribute_name VISIBLE="true" NAME="addonsMenu"/>
+    <attribute_name VISIBLE="true" NAME="author"/>
+    <attribute_name VISIBLE="true" NAME="changelogUrl"/>
+    <attribute_name VISIBLE="true" NAME="delete"/>
+    <attribute_name VISIBLE="true" NAME="downloadUrl"/>
+    <attribute_name VISIBLE="true" NAME="freeplaneVersionFrom"/>
+    <attribute_name VISIBLE="true" NAME="freeplaneVersionTo"/>
+    <attribute_name VISIBLE="true" NAME="menuLocation"/>
+    <attribute_name VISIBLE="true" NAME="name"/>
+    <attribute_name VISIBLE="true" NAME="updateUrl"/>
+    <attribute_name VISIBLE="true" NAME="version"/>
+</attribute_registry>
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
-<attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="180.74999 pt"/>
+<attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.2"/>
+<attribute NAME="version" VALUE="v0.0.3"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -25,39 +38,73 @@
     </p>
     <ul>
       <li>
-        name: The name of the add-on, normally a technically one (no spaces, no special characters except _.-).
+        <b>name</b>: The name of the add-on, normally a technically one (no spaces, no special characters except _.-).
       </li>
       <li>
-        author: Author's name(s) and (optionally) email adresses.
+        <b>author</b>: Author's name(s) and (optionally) email adresses.
       </li>
       <li>
-        version: Since it's difficult to protect numbers like 1.0 from Freeplane's number parser it's advised to prepend a 'v' to the number, e.g. 'v1.0'.
+        <b>version</b>: Since it's difficult to protect numbers like 1.0 from Freeplane's number parser it's advised to prepend a 'v' to the number, e.g. 'v1.0'.
       </li>
       <li>
-        freeplane-version-from: The oldest compatible Freeplane version. The add-on will not be installed if the Freeplane version is too old.
+        <b>freeplane-version-from</b>: The oldest compatible Freeplane version. The add-on will not be installed if the Freeplane version is too old.
       </li>
       <li>
-        freeplane-version-to: Normally empty: The newest compatible Freeplane version. The add-on will not be installed if the Freeplane version is too new.
+        <b>freeplane-version-to</b>: Normally empty: The newest compatible Freeplane version. The add-on will not be installed if the Freeplane version is too new.
       </li>
       <li>
-        updateUrl: URL of the file containing information (version, download url) on the latest version of this add-on. By default: &quot;${homepage}/version.properties&quot;
+        <b>updateUrl</b>: URL of the file containing information (version, download url) on the latest version of this add-on.<br/>By default: &quot;${homepage}/version.properties&quot;<br/>Examples:
+
+        <ul>
+          <li>
+            <b>For GitHub releases</b>: &quot;${homepage}/releases/latest/download/version.properties&quot;
+          </li>
+          <li>
+            <b>For Github in a folder named like the add-on&nbsp;(in the main repository branch)</b>: &quot;${homepage}/raw/main/${name}/version.properties
+          </li>
+          <li>
+            <b>For Github in a folder named like the add-on&nbsp;(in a repository branch named as the add-on version)</b>: &quot;${homepage}/raw/${version}/${name}/version.properties&quot;
+          </li>
+        </ul>
       </li>
       <li>
-        addonsMenu: Defines the addon's main menu location, defaults menu 'main_menu_scripting'.<br/>Use developer tool menuItemInfo to inspect menu location keys.<br/>This attribute is mandatory.<br/>Example: '/menu_bar/myAddons'
+        <b>addonsMenu</b>: Defines the addon's main menu location, defaults menu 'main_menu_scripting'.<br/>Use developer tool menuItemInfo to inspect menu location keys.<br/>This attribute is mandatory.<br/>Example: '/menu_bar/myAddons'
       </li>
       <li>
-        downloadUrl: URL from the place where the AddOn file will be available for downloading.<br/>By default is the same as the homepage.<br/>You can define a different place or a subfolder of the homepage.<br/>Example: &quot;${homepage}/files/&quot;
+        <b>downloadUrl</b>: URL from the place where the AddOn file will be available for downloading.<br/>By default is the same as the homepage.<br/>You can define a different place or a subfolder of the homepage.<br/>Examples:
+
+        <ul>
+          <li>
+            <b>homepage subfolder 'files'</b>: &quot;${homepage}/files/&quot;
+          </li>
+          <li>
+            <b>For GitHub releases (release named as the add-on version)</b>: ${homepage}/releases/download/${version}/
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>changelogUrl</b>: URL from the place where the history file will be available for downloading.<br/>By default is &quot;${homepage}/history.md&quot;<br/>You can define a different place or a subfolder of the homepage and a different file name and extension if wanted.<br/>Examples:
+
+        <ul>
+          <li>
+            <b>txt file</b>: &quot;${homepage}/history.md&quot;
+          </li>
+          <li>
+            <b>For GitHub releases as Markdown file</b>: &quot;${homepage}/releases/latest/download/history.md&quot;
+          </li>
+        </ul>
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <hook NAME="MapStyle" background="#f9f9f8" zoom="0.9">
-    <properties mapUsesOwnSaveOptions="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" save_folding="default" associatedTemplateLocation="file:/C:/Users/Edo/Documents/GitHub/Freeplane_MarkdownHelper/MarkdownHelper/MarkdownHelper.mm" fit_to_viewport="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" mapUsesOwnSaveOptions="true" save_modification_times="false" save_last_visited_node="default" associatedTemplateLocation="file:/C:/Users/Edo/Documents/GitHub/Freeplane_MarkdownHelper/MarkdownHelper/MarkdownHelper.mm" show_note_icons="true" save_folding="default" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_118736178" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
 <font SIZE="24"/>
-<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 pt" SHAPE_VERTICAL_MARGIN="3 pt" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" MAX_WIDTH="15 cm">
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;0 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="11" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
@@ -81,7 +128,7 @@
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.selection" COLOR="#eceff4" BACKGROUND_COLOR="#bf616a" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#bf616a"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="styles.important" ID="ID_915433779" BORDER_COLOR="#bf616a">
 <icon BUILTIN="yes"/>
 <arrowlink COLOR="#bf616a" TRANSPARENCY="255" DESTINATION="ID_915433779"/>
@@ -89,7 +136,7 @@
 <edge COLOR="#bf616a"/>
 </stylenode>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" ID="ID_1209359852" COLOR="#ffffff" BACKGROUND_COLOR="#484747" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="10 pt" UNIFORM_SHAPE="true" TEXT_ALIGN="CENTER">
 <font SIZE="18"/>
 </stylenode>
@@ -127,7 +174,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="description" POSITION="left" ID="ID_256586764">
+<node TEXT="description" POSITION="top_or_left" ID="ID_256586764">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -145,10 +192,11 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="AddOn to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_659221198"/>
 </node>
-<node TEXT="changes" POSITION="left" ID="ID_1078107435">
+<node TEXT="changes" POSITION="top_or_left" ID="ID_1078107435">
 <edge COLOR="#0000ff"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -160,9 +208,13 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<node TEXT="v0.0.3" ID="ID_1486725916">
+<node TEXT="old script version packed as an Add-on" ID="ID_1092003668"/>
 </node>
-<node TEXT="license" FOLDED="true" POSITION="left" ID="ID_1028448710">
+</node>
+<node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
 <edge COLOR="#00ff00"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -180,10 +232,11 @@
       The License text has to be entered as a child of the <i>'license'</i>&nbsp;node, either as plain text or as HTML.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="MIT License&#xa;&#xa;Copyright (c) 2021 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_1379820487" VSHIFT_QUANTITY="-0.75 pt"/>
 </node>
-<node TEXT="preferences.xml" POSITION="left" ID="ID_720156944">
+<node TEXT="preferences.xml" POSITION="top_or_left" ID="ID_720156944">
 <edge COLOR="#ff00ff"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -195,12 +248,106 @@
       <font color="#000000" face="SansSerif, sans-serif">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </font>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">Every property in the configuration should receive a default value in <i>default.properties</i>&nbsp;node.</font>
+      <font color="#000000" face="SansSerif, sans-serif">&nbsp;</font>
     </p>
+    <p>
+      <font color="#000000" face="SansSerif, sans-serif">Every property in the configuration should receive a default value in <i>default.properties</i>&nbsp;node. </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>Automatic way (new since v0.9.30): </b>
+    </p>
+    <p>
+      you can add the preferences parameters as attributes to this node and then, by checking AddOn it will:
+    </p>
+    <ul>
+      <li>
+        create the child node containing <font color="#000000" face="SansSerif, sans-serif">the add-on configuration as an extension to mindmapmodemenu.xml</font>
+      </li>
+      <li>
+        add the properties to the <font color="#000000" face="SansSerif, sans-serif"><i>default.properties</i>&nbsp;node</font>
+      </li>
+      <li>
+        add the properties to the <i>translations</i><font color="#000000" face="SansSerif, sans-serif">&nbsp;node</font>
+      </li>
+    </ul>
+    <p>
+      
+    </p>
+    <p>
+      <b>How? </b>
+    </p>
+    <ul>
+      <li>
+        Add an attribute for each preference.
+      </li>
+      <li>
+        the attribute name should be the preference name.
+      </li>
+      <li>
+        as attribute value you should specify if it is a <b>boolean</b>, <b>string</b>&nbsp;or <b>number</b>&nbsp;preference
+      </li>
+      <li>
+        if it is a <b>number</b>&nbsp;preference. you should add the min and max value for it (separed by comma)
+      </li>
+    </ul>
+    <p>
+      
+    </p>
+    <p>
+      <b>Example: </b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Attributes:
+    </p>
+    <table border="0" style="width: 80%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0">
+      <tr>
+        <td valign="top" style="width: 50%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            isStudent
+          </p>
+        </td>
+        <td valign="top" style="width: 50%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            boolean
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" style="width: 50%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            userName
+          </p>
+        </td>
+        <td valign="top" style="width: 50%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            string
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" style="width: 50%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            birthMonth
+          </p>
+        </td>
+        <td valign="top" style="width: 50%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            number,1,12
+          </p>
+        </td>
+      </tr>
+    </table>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node TEXT="default.properties" POSITION="left" ID="ID_536060528">
+<node TEXT="default.properties" POSITION="top_or_left" ID="ID_536060528">
 <edge COLOR="#00ffff"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -220,10 +367,11 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <attribute_layout NAME_WIDTH="80.25 pt" VALUE_WIDTH="122.25 pt"/>
 </node>
-<node TEXT="translations" POSITION="left" ID="ID_137723580">
+<node TEXT="translations" POSITION="top_or_left" ID="ID_137723580">
 <edge COLOR="#7c0000"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -244,16 +392,39 @@
       <li>
         'addons.${name}.&lt;scriptname&gt;' for each script since it will be the menu title.
       </li>
+      <li>
+        'OptionPanel.separator.${name}' for the add-on's name in the preferences panel
+      </li>
+      <li>
+        'OptionPanel.&lt;property&gt;' for the label of the property in the preferences panel
+      </li>
+      <li>
+        'OptionPanel.&lt;property&gt;.tooltip' for the tooltip message for the property in the preferences panel (whwn hovering on it with the mouse)
+      </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="en" ID="ID_1122736476">
-<attribute_layout NAME_WIDTH="164.25 pt" VALUE_WIDTH="164.25 pt"/>
-<attribute NAME="addons.${name}" VALUE="Map Drive Inator"/>
-<attribute NAME="addons.${name}.CreateBaseFolderNode" VALUE="Find Base folder node or create new one"/>
+<attribute_layout NAME_WIDTH="196.49999 pt" VALUE_WIDTH="140.25 pt"/>
+<attribute NAME="addons.${name}" VALUE="MapDriveInator"/>
+<attribute NAME="addons.${name}.checkMissingFileNodes" VALUE="Check missing file nodes"/>
+<attribute NAME="addons.${name}.ClearFileTimestampsInNodes" VALUE="Clear file timestamps in nodes"/>
+<attribute NAME="addons.${name}.CreateBaseFolderNode" VALUE="Create base folder node"/>
+<attribute NAME="addons.${name}.createFilesFromNotes" VALUE="Create files from notes"/>
+<attribute NAME="addons.${name}.DistributeNewNodes" VALUE="Distribute new nodes"/>
+<attribute NAME="addons.${name}.GetFileTimestamps" VALUE="Get file timestamps"/>
+<attribute NAME="addons.${name}.groupChildnodesBy" VALUE="Group childnodes by"/>
+<attribute NAME="addons.${name}.ImportJustFolders" VALUE="Import just folders"/>
+<attribute NAME="addons.${name}.MapDriveInator" VALUE="Map drive inator"/>
+<attribute NAME="addons.${name}.SortByTimestamp" VALUE="Sort by timestamp"/>
+<attribute NAME="addons.${name}.ungroupChildnodes" VALUE="Ungroup childnodes"/>
+<attribute NAME="addons.${name}.unmarkModifiedFiles" VALUE="Unmark modified files"/>
+<attribute NAME="addons.${name}.unmarkMovedOrRenamedNodes" VALUE="Unmark moved or renamed nodes"/>
+<attribute NAME="addons.${name}.unmarkNewNodes" VALUE="Unmark new nodes"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="left" ID="ID_982526317">
+<node TEXT="deinstall" POSITION="top_or_left" ID="ID_982526317">
 <edge COLOR="#00007c"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -265,13 +436,27 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <attribute_layout NAME_WIDTH="40.5 pt" VALUE_WIDTH="287.24999 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/checkMissingFileNodes.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/ClearFileTimestampsInNodes.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/CreateBaseFolderNode.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/createFilesFromNotes.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/DistributeNewNodes.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/GetFileTimestamps.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/groupChildnodesBy.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/ImportJustFolders.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/MapDriveInator.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/SortByTimestamp.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/ungroupChildnodes.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/unmarkModifiedFiles.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/unmarkMovedOrRenamedNodes.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/unmarkNewNodes.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/MapDriveInator.jar"/>
 </node>
-<node TEXT="scripts" POSITION="right" ID="ID_428424239">
+<node TEXT="scripts" FOLDED="true" POSITION="bottom_or_right" ID="ID_428424239">
 <edge COLOR="#007c00"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -388,9 +573,22 @@
       &nbsp;&nbsp;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html></richcontent>
-<node TEXT="CreateBaseFolderNode.groovy" ID="ID_891666929">
-<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="183.74999 pt"/>
+</html>
+</richcontent>
+<node TEXT="checkMissingFileNodes.groovy" ID="ID_953928223">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="164.25 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.checkMissingFileNodes"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="CreateBaseFolderNode.groovy" ID="ID_1264392067">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="164.25 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.CreateBaseFolderNode"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
@@ -401,8 +599,152 @@
 <attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
+<node TEXT="createFilesFromNotes.groovy" ID="ID_460854426">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="159 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.createFilesFromNotes"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
 </node>
-<node TEXT="lib" POSITION="right" ID="ID_444808778">
+<node TEXT="DistributeNewNodes.groovy" ID="ID_592356678">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="154.5 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.DistributeNewNodes"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="ImportJustFolders.groovy" ID="ID_1614884004">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="144 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.ImportJustFolders"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="MapDriveInator.groovy" ID="ID_38815239">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="137.25 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.MapDriveInator"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="unmarkNewNodes.groovy" ID="ID_1872514193">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="187.49999 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.unmarkNewNodes"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/ClearFormats"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="unmarkMovedOrRenamedNodes.groovy" ID="ID_422554039">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="196.49999 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.unmarkMovedOrRenamedNodes"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/ClearFormats"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="unmarkModifiedFiles.groovy" ID="ID_850936584">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="187.49999 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.unmarkModifiedFiles"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/ClearFormats"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="ClearFileTimestampsInNodes.groovy" ID="ID_1823916199">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="182.99999 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.ClearFileTimestampsInNodes"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/TimeStamps"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="GetFileTimestamps.groovy" ID="ID_1344221737">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="182.99999 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.GetFileTimestamps"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/TimeStamps"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="SortByTimestamp.groovy" ID="ID_372104228">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="182.99999 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.SortByTimestamp"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/TimeStamps"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="groupChildnodesBy.groovy" ID="ID_525599912">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="162 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.groupChildnodesBy"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/Group"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="ungroupChildnodes.groovy" ID="ID_1762451783">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="162 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.ungroupChildnodes"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/Group"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+</node>
+<node TEXT="lib" POSITION="bottom_or_right" ID="ID_444808778">
 <edge COLOR="#7c007c"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -438,10 +780,11 @@
       &nbsp;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html></richcontent>
-<node TEXT="MapDriveInator.jar" ID="ID_483543962"/>
+</html>
+</richcontent>
+<node TEXT="MapDriveInator.jar" ID="ID_1212321759"/>
 </node>
-<node TEXT="zips" POSITION="right" ID="ID_26433714">
+<node TEXT="zips" POSITION="bottom_or_right" ID="ID_26433714">
 <edge COLOR="#007c7c"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -477,12 +820,13 @@
       &nbsp;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="doc" ID="ID_1305821302"/>
 <node TEXT="icons" ID="ID_615436065"/>
 <node TEXT="templates" ID="ID_903379418"/>
 </node>
-<node TEXT="images" POSITION="right" ID="ID_1104880555">
+<node TEXT="images" POSITION="bottom_or_right" ID="ID_1104880555">
 <edge COLOR="#7c7c00"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -514,9 +858,10 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&nbsp;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node TEXT="actions" POSITION="right" ID="ID_1052924007"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="actions" POSITION="bottom_or_right" ID="ID_1052924007"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -524,10 +869,12 @@
   <body>
     Direct links to menu commands
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="Build add-on" ID="ID_14185460" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="Package add-on for publication" ID="ID_1767675080" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
-<node TEXT="MapDriveInator-v0.0.2.addon.mm" ID="ID_1338490097" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.2.addon.mm"/>
+<node TEXT="Export Translations" ID="ID_1894374378" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>
+<node TEXT="Import Translations" ID="ID_229312748" LINK="menuitem:_addons.devtools.importTranslations_on_single_node"/>
 </node>
 </node>
 </map>

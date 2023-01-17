@@ -194,7 +194,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="AddOn to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_659221198"/>
+<node TEXT="AddOn to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_659221198" CREATED="1642465200103" MODIFIED="1642465200103"/>
 </node>
 <node TEXT="changes" POSITION="top_or_left" ID="ID_1078107435">
 <edge COLOR="#0000ff"/>
@@ -234,7 +234,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="MIT License&#xa;&#xa;Copyright (c) 2021 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_1379820487" VSHIFT_QUANTITY="-0.75 pt"/>
+<node TEXT="MIT License&#xa;&#xa;Copyright (c) 2021 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_1379820487" CREATED="1642465200103" MODIFIED="1642465200103" VSHIFT_QUANTITY="-0.75 pt"/>
 </node>
 <node TEXT="preferences.xml" POSITION="top_or_left" ID="ID_720156944">
 <edge COLOR="#ff00ff"/>
@@ -822,9 +822,9 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="doc" ID="ID_1305821302"/>
-<node TEXT="icons" ID="ID_615436065"/>
-<node TEXT="templates" ID="ID_903379418"/>
+<node TEXT="doc" ID="ID_1305821302" CREATED="1642465200103" MODIFIED="1642465200103"/>
+<node TEXT="icons" ID="ID_615436065" CREATED="1642465200103" MODIFIED="1642465200103"/>
+<node TEXT="templates" ID="ID_903379418" CREATED="1642465200103" MODIFIED="1642465200103"/>
 </node>
 <node TEXT="images" POSITION="bottom_or_right" ID="ID_1104880555">
 <edge COLOR="#7c7c00"/>

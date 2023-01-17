@@ -2,7 +2,7 @@
 
 ## v0.0.4
 
-* Added MDI Styles Template map
+* Added Template map
 * changed obtainBaseFolder logic
 * corrected similarity issue
 * change folder_node recognition logic

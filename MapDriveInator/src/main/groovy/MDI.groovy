@@ -26,7 +26,13 @@ class MDI{
     def static obtainBaseFolder(n) {
         // returns the first node which has a link to a file directory and has style styleFolder + styleBaseFolder
         //return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
-        def nBase = n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}?:(n.link?.file?.directory && n.hasStyle(styleFolder))?n:n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder)}
+        def nBase
+        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
+        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleBaseFolder)}
+        nBase  ?= (n.link?.file?.directory && n.hasStyle(styleFolder))? n : null
+        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder)}
+        nBase  ?= (n.link?.file?.directory)? n : null
+        nBase  ?= n.pathToRoot.find{it.link?.file?.directory}
         return nBase
     }
 
@@ -246,7 +252,7 @@ class MDI{
     }
 
     def static nodeIsFolder(n){
-        return n.hasStyle(styleFolder)
+        return n.hasStyle(styleFolder) || n.link?.file?.directory
     }
 
     def static isLinkToFile(n){
@@ -400,7 +406,7 @@ class MDI{
             xFc.findAll{clonesID.contains(it.id)}.each{
                 // ui.informationMessage(it.link as String)
                 // ui.informationMessage(it.path as String)
-                sim = similarity(it.path,it.link)
+                def sim = similarity(it.path,it.link)
                 // ui.informationMessage(sim as String)
                 if(bestSim < sim){
                     bestSim = sim
@@ -419,7 +425,7 @@ class MDI{
     //end:
 
     //region: ---------------------- Similarity 
-    private double similarity(String s1, String s2) {
+    private static double similarity(String s1, String s2) {
         if (s1.length() < s2.length()) { // s1 should always be bigger
             String swap = s1; s1 = s2; s2 = swap;
         }
@@ -428,7 +434,7 @@ class MDI{
         return (bigLen - computeEditDistance(s1, s2)) / (double) bigLen;
     }
 
-    private int computeEditDistance(String s1, String s2) {
+    private static int computeEditDistance(String s1, String s2) {
         s1 = s1.toLowerCase();
         s2 = s2.toLowerCase();
 

@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.3"/>
+<attribute NAME="version" VALUE="v0.0.4"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -194,7 +194,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="AddOn to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_659221198" CREATED="1642465200103" MODIFIED="1642465200103"/>
+<node TEXT="AddOn to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_659221198"/>
 </node>
 <node TEXT="changes" POSITION="top_or_left" ID="ID_1078107435">
 <edge COLOR="#0000ff"/>
@@ -212,6 +212,12 @@
 </richcontent>
 <node TEXT="v0.0.3" ID="ID_1486725916">
 <node TEXT="old script version packed as an Add-on" ID="ID_1092003668"/>
+</node>
+<node TEXT="v0.0.4" ID="ID_1109048795">
+<node TEXT="Added MDI Styles Template map" ID="ID_93006869"/>
+<node TEXT="changed obtainBaseFolder logic" ID="ID_934053051"/>
+<node TEXT="corrected similarity issue" ID="ID_1643559503"/>
+<node TEXT="change folder_node recognition logic" ID="ID_345068445"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
@@ -234,7 +240,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="MIT License&#xa;&#xa;Copyright (c) 2021 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_1379820487" CREATED="1642465200103" MODIFIED="1642465200103" VSHIFT_QUANTITY="-0.75 pt"/>
+<node TEXT="MIT License&#xa;&#xa;Copyright (c) 2021 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_1379820487" VSHIFT_QUANTITY="-0.75 pt"/>
 </node>
 <node TEXT="preferences.xml" POSITION="top_or_left" ID="ID_720156944">
 <edge COLOR="#ff00ff"/>
@@ -455,6 +461,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/unmarkMovedOrRenamedNodes.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/unmarkNewNodes.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/MapDriveInator.jar"/>
+<attribute NAME="delete" VALUE="${installationbase}/templates/MapDriveInator/MDI styles template.mm"/>
 </node>
 <node TEXT="scripts" FOLDED="true" POSITION="bottom_or_right" ID="ID_428424239">
 <edge COLOR="#007c00"/>
@@ -822,9 +829,9 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="doc" ID="ID_1305821302" CREATED="1642465200103" MODIFIED="1642465200103"/>
-<node TEXT="icons" ID="ID_615436065" CREATED="1642465200103" MODIFIED="1642465200103"/>
-<node TEXT="templates" ID="ID_903379418" CREATED="1642465200103" MODIFIED="1642465200103"/>
+<node TEXT="doc" ID="ID_1305821302"/>
+<node TEXT="icons" ID="ID_615436065"/>
+<node TEXT="templates" ID="ID_903379418"/>
 </node>
 <node TEXT="images" POSITION="bottom_or_right" ID="ID_1104880555">
 <edge COLOR="#7c7c00"/>

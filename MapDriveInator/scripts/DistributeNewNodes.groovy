@@ -2,9 +2,9 @@
 import MDI
 
 def nodo = node
-def menuButtonStyle = 'menuButton'
+//def menuButtonStyle = 'menuButton'
 
-baseFolderNode = obtainBaseFolder(nodo) //obtains "base folder"
+baseFolderNode = MDI.obtainBaseFolder(nodo) //obtains "base folder"
 if(!baseFolderNode){
     ui.informationMessage("couldn't find the current 'baseFolderNode' for the selected node \n\n (path between the selected node and the map's root)")
     return
@@ -80,7 +80,7 @@ while (nodesToMove.size()>0 && evitarLoop<5){
         toBeMoved.moveTo(moveTo)
         //formats the former "folder" to be a button to help the user find where the new node went in the map to
         if(nodeWithTwin.find{it.link.uri.scheme=='file'}.size()<= 1 ){
-            nodeWithTwin.style.name = menuButtonStyle   
+            //nodeWithTwin.style.name = menuButtonStyle   
             nodeWithTwin.link.text = '#' + moveTo.id
         } 
     }else {toBeMoved.moveTo(baseFolderNode)}
@@ -94,16 +94,12 @@ c.statusInfo = "    -------------   new 'file' Nodes positioned    -------------
 
 
 
-// // function, returns Node (Base folder) under the selected node
-    // // the first node which has a link to a file directory and has "file_folder" and "baseFolder" style
-def obtainBaseFolder(n) {
-    return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle('file_folder') && it.hasStyle('baseFolder')}
-}
 
 // function, returns list of Nodes, (folders in rootPath from selected node)
-    // all nodes that have a link to a file directory and have style "file_folder"
 def pathToRootFolders(n) {
-    return n.pathToRoot.findAll{it.link?.file?.directory && it.hasStyle('file_folder')}
+    // all nodes that have a link to a file directory and have style "file_folder"
+    // return n.pathToRoot.findAll{it.link?.file?.directory && it.hasStyle('file_folder')}
+    return n.pathToRoot.findAll{it.link?.file?.directory}
 }
 
 def selectMoveTo(nodos){

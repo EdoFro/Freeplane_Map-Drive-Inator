@@ -252,7 +252,7 @@ if(baseFolderNode){
 
     //region: _______________________________- nodos sin files       --> marcar nodos como con error
     // c.select( nodosSinFile.collect{ N(it.id)})
-    // ui.informationMessage('nodos sin files --> marcar nodos como con error \n\n' + nodosSinFile as String)
+    if(modoDebug) ui.showMessage('nodos sin files --> marcar nodos como con error \n\n' + nodosSinFile as String,1)
     // texto.append("\n").append('B) nodos sin files --> marcar nodos como con error \n\n' + nodosSinFile as String)
     textoReport.append("\n ${nodosSinFile.size()} node(s) pointing to unexisting/filtered files (marked as 'broken')")
     
@@ -266,6 +266,7 @@ if(baseFolderNode){
     //region: _______________________________- path y file coinciden --> corregir links
     // sacar de update folder
     // c.select( (xPathOk + xClonPathOk).collect{ N(it.id)})
+    if(modoDebug) ui.showMessage('path y file coinciden --> corregir links \n\n' + (xPathOk + xClonPathOk) as String,1)
     // ui.informationMessage('path y file coinciden --> corregir links \n\n' + (xPathOk + xClonPathOk) as String)
     // texto.append("\n\n").append('path y file coinciden --> corregir links \n\n' + (xPathOk + xClonPathOk) as String)
     textoReport.append("\n ${(xPathOk + xClonPathOk).size()} link(s) corrected in nodes")
@@ -281,7 +282,7 @@ if(baseFolderNode){
     //end:
 
     //region: _______________________________- files sin nodos       --> importar como nodos
-    // ui.informationMessage('A - files sin nodos --> importar como nodos \n\n' + filesSinNodos as String)
+    if(modoDebug) ui.showMessage('A - files sin nodos --> importar como nodos \n\n' + filesSinNodos as String,1)
     // texto.append("\n\n").append('A) files sin nodos --> importar como nodos \n\n' + filesSinNodos as String)
     textoReport.append("\n ${filesSinNodos.size()} new file(s) imported as node(s) ")
     def newFilesImported =  filesSinNodos?true:false
@@ -310,12 +311,12 @@ if(baseFolderNode){
 
     //region: _______________________________- path cambió en mapa   --> ejecutar cambio en disco
     // sacar de update folder
-    // ui.informationMessage(xClonLinkOk as String)
+    if(modoDebug) ui.showMessage('xClonLinkOk:\n\n' + xClonLinkOk as String,1)
     xClonLinkOkChosen = MDI.chooseClone(xClonLinkOk)
-    // ui.informationMessage(xClonLinkOkChosen as String)
+    if(modoDebug) ui.showMessage('xClonLinkOkChosen:\n\n' + xClonLinkOkChosen as String,1)
 
     // c.select( (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).collect{ N(it.id)})
-    // ui.informationMessage('C - path cambió en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String)
+    if(modoDebug) ui.showMessage('C - path cambió en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String,1)
     textoReport.append("\n ${(xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).size()} node(s) moved/renamed in drive")
     
     // def markMovedOption = MDI.markWhenMoved(baseFolderNode)

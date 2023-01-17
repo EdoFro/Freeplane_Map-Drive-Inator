@@ -1,4 +1,3 @@
-// @ExecutionModes({ON_SINGLE_NODE="/main_menu/ScriptsEdo/MapDriveInator"})
 
 import MDI
 

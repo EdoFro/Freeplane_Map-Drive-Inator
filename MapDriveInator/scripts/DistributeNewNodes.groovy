@@ -2,7 +2,7 @@
 import MDI
 
 def nodo = node
-def menuButtonStyle = 'menuButton'
+//def menuButtonStyle = 'menuButton'
 
 baseFolderNode = MDI.obtainBaseFolder(nodo) //obtains "base folder"
 if(!baseFolderNode){
@@ -80,7 +80,7 @@ while (nodesToMove.size()>0 && evitarLoop<5){
         toBeMoved.moveTo(moveTo)
         //formats the former "folder" to be a button to help the user find where the new node went in the map to
         if(nodeWithTwin.find{it.link.uri.scheme=='file'}.size()<= 1 ){
-            nodeWithTwin.style.name = menuButtonStyle   
+            //nodeWithTwin.style.name = menuButtonStyle   
             nodeWithTwin.link.text = '#' + moveTo.id
         } 
     }else {toBeMoved.moveTo(baseFolderNode)}

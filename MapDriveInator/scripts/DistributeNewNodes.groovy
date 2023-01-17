@@ -1,8 +1,9 @@
-// @ExecutionModes({ON_SINGLE_NODE="/main_menu/ScriptsEdo/MapDriveInator"})
 
 import MDI
 
 def nodo = node
+def menuButtonStyle = 'menuButton'
+
 baseFolderNode = obtainBaseFolder(nodo) //obtains "base folder"
 if(!baseFolderNode){
     ui.informationMessage("couldn't find the current 'baseFolderNode' for the selected node \n\n (path between the selected node and the map's root)")
@@ -79,7 +80,7 @@ while (nodesToMove.size()>0 && evitarLoop<5){
         toBeMoved.moveTo(moveTo)
         //formats the former "folder" to be a button to help the user find where the new node went in the map to
         if(nodeWithTwin.find{it.link.uri.scheme=='file'}.size()<= 1 ){
-            nodeWithTwin.style.name = 'BotonMenu'   
+            nodeWithTwin.style.name = menuButtonStyle   
             nodeWithTwin.link.text = '#' + moveTo.id
         } 
     }else {toBeMoved.moveTo(baseFolderNode)}

@@ -1,5 +1,3 @@
-// @ExecutionModes({ON_SELECTED_NODE="/main_menu/ScriptsEdo/MapDriveInator"})
-
 
 def fPath = MDI.obtainPathFromMap(node)
 

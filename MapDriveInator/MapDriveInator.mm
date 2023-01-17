@@ -214,8 +214,10 @@
 <node TEXT="old script version packed as an Add-on" ID="ID_1092003668"/>
 </node>
 <node TEXT="v0.0.4" ID="ID_1109048795">
-<node TEXT="Added Template map" ID="ID_93006869"/>
+<node TEXT="Added MDI Styles Template map" ID="ID_93006869"/>
 <node TEXT="changed obtainBaseFolder logic" ID="ID_934053051"/>
+<node TEXT="corrected similarity issue" ID="ID_1643559503"/>
+<node TEXT="change folder_node recognition logic" ID="ID_345068445"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">

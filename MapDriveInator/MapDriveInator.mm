@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.3"/>
+<attribute NAME="version" VALUE="v0.0.4"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -212,6 +212,10 @@
 </richcontent>
 <node TEXT="v0.0.3" ID="ID_1486725916">
 <node TEXT="old script version packed as an Add-on" ID="ID_1092003668"/>
+</node>
+<node TEXT="v0.0.4" ID="ID_1109048795">
+<node TEXT="Added Template map" ID="ID_93006869"/>
+<node TEXT="changed obtainBaseFolder logic" ID="ID_934053051"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
@@ -455,6 +459,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/unmarkMovedOrRenamedNodes.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/unmarkNewNodes.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/MapDriveInator.jar"/>
+<attribute NAME="delete" VALUE="${installationbase}/templates/MapDriveInator/MDI styles template.mm"/>
 </node>
 <node TEXT="scripts" FOLDED="true" POSITION="bottom_or_right" ID="ID_428424239">
 <edge COLOR="#007c00"/>

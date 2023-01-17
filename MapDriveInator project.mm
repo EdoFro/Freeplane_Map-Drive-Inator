@@ -1305,7 +1305,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <node TEXT="MapDriveInator.jar" ID="ID_1873606824" CREATED="1673976318687" MODIFIED="1673976576821" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/lib/MapDriveInator.jar"/>
 </node>
 </node>
-<node TEXT="scripts" STYLE_REF="file_folder" FOLDED="true" ID="ID_1180592192" CREATED="1616167740367" MODIFIED="1673969744925" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="scripts" STYLE_REF="file_folder" ID="ID_1180592192" CREATED="1616167740367" MODIFIED="1673969744925" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -1320,7 +1320,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
-<node TEXT="importMDIStyles" ID="ID_50035749" CREATED="1654875862445" MODIFIED="1673969382384"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="importMDIStyles" ID="ID_50035749" CREATED="1654875862445" MODIFIED="1673983897813"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -1345,25 +1345,28 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;&nbsp;&nbsp;def userDir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= c.userDirectory.path
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def mapFileName = &quot;F - MDI styles.mm&quot;
+      &nbsp;&nbsp;&nbsp;&nbsp;def mapFileName = &quot;MDI styles template.mm&quot;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def pathName&nbsp;&nbsp;&nbsp;&nbsp;= userDir + sep + &quot;templates&quot; + sep + &quot;Functional Styles Base&quot; + sep + mapFileName
+      &nbsp;&nbsp;&nbsp;&nbsp;def pathName&nbsp;&nbsp;&nbsp;&nbsp;= userDir + sep + &quot;templates&quot; + sep + &quot;MapDriveInator&quot; + sep + mapFileName
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def sourceMap&nbsp;&nbsp;&nbsp;= getMapFromPath(pathName, false) //usar mapa indicado (pero oculto)
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def targetMap = node.map&nbsp;&nbsp;// --&gt; active map
+      &nbsp;&nbsp;&nbsp;&nbsp;//return &quot;Does the file: '${pathName}' exist? :&nbsp;&nbsp;&nbsp;${exists(pathName)}&quot;
     </p>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;us.copyUserStyles(sourceMap, targetMap)
+      &nbsp;&nbsp;&nbsp;&nbsp;def sourceMap&nbsp;&nbsp;&nbsp;= getMapFromPath(pathName, false) //usar mapa indicado (pero oculto)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;def targetMap = node.map&nbsp;&nbsp;// --&gt; active map
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;us.copyUserStyles(sourceMap, targetMap) //, {it.text.startsWith('mdi_')})
     </p>
     <p>
       
@@ -1468,13 +1471,14 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;&nbsp;&nbsp;}
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      
     </p>
     <p>
       // end:
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -5639,8 +5643,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\lib\
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="Tareas" STYLE_REF="Organizador" FOLDED="true" ID="ID_819044659" CREATED="1641397479073" MODIFIED="1641401944369">
 <node TEXT="transformar MDI en AddOn" STYLE_REF="pendingTask" FOLDED="true" ID="ID_665003007" CREATED="1641650752719" MODIFIED="1648484701199">
@@ -12091,6 +12094,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
+<node TEXT="=MDI.class" ID="ID_1171020170" CREATED="1673978302765" MODIFIED="1673979884152"/>
 </node>
 </node>
 </map>

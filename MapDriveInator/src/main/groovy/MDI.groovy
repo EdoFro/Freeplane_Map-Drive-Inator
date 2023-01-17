@@ -26,7 +26,13 @@ class MDI{
     def static obtainBaseFolder(n) {
         // returns the first node which has a link to a file directory and has style styleFolder + styleBaseFolder
         //return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
-        def nBase = n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}?:(n.link?.file?.directory && n.hasStyle(styleFolder))?n:n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder)}
+        def nBase
+        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
+        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleBaseFolder)}
+        nBase  ?= (n.link?.file?.directory && n.hasStyle(styleFolder))? n : null
+        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder)}
+        nBase  ?= (n.link?.file?.directory)? n : null
+        nBase  ?= n.pathToRoot.find{it.link?.file?.directory}
         return nBase
     }
 
@@ -246,7 +252,7 @@ class MDI{
     }
 
     def static nodeIsFolder(n){
-        return n.hasStyle(styleFolder)
+        return n.hasStyle(styleFolder) || n.link?.file?.directory
     }
 
     def static isLinkToFile(n){

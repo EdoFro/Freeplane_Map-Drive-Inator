@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.5"/>
+<attribute NAME="version" VALUE="v0.0.6"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -219,10 +219,13 @@
 <node TEXT="corrected similarity issue" ID="ID_1643559503"/>
 <node TEXT="change folder_node recognition logic" ID="ID_345068445"/>
 </node>
-<node TEXT="v0.0.5" ID="ID_1412479122">
+<node TEXT="v0.0.5" FOLDED="true" ID="ID_1412479122">
 <node TEXT="corrected createFilesFromNotes" ID="ID_20091226"/>
 <node TEXT="Added &apos;Import MDI styles&apos;&#xa;(without library: only works for users that installed other add-ons that have the `edofro.pseudofreeplaneapi.UserStyles` library.)" ID="ID_1530367506"/>
 <node TEXT="Added exception handling when the mindmap doesn&apos;t have MDI styles" ID="ID_1330881655"/>
+</node>
+<node TEXT="v0.0.6" ID="ID_463111565">
+<node TEXT="MapDriveInator: nodes with style file_folder, loose this style after the folder is created in drive and they get the link to it" ID="ID_1694158485"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">

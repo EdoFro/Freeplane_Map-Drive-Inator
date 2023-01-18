@@ -178,7 +178,7 @@ class MDI{
             createPath(xf.path)
             setLink(nodo, xf.path)
             xf.link = xf.path
-            // TODO: debe ir?? :	if(nodo.style.name==styleFolder){nodo.style.name = null}
+            if(nodo.style.name==styleFolder){nodo.style.name = null}
             markAsBroken(nodo,false)
             markAsMoved(nodo,true)
             return 'new'

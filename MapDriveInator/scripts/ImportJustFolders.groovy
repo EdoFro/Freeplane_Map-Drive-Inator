@@ -6,7 +6,12 @@ import java.util.regex.Pattern
 
 baseFolderNode = MDI.obtainBaseFolder(node)
 if(baseFolderNode){
-    baseFolderNode.style.name = 'baseFolder'
+    try {
+	 baseFolderNode.style.name = MDI.styleBaseFolder
+    } catch(Exception ex) {
+        ui.showMessage("The mindmap has no '${MDI.styleBaseFolder}' style.\n\nPlease import the MDI styles into your map.", 0)
+        return 0
+    }
     baseFolderPath = MDI.getPathFromLink(baseFolderNode)
     doMarkAsNew = !baseFolderNode.leaf
     importFoldersFromDrive(baseFolderNode)

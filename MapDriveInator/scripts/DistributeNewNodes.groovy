@@ -10,6 +10,7 @@ if(!baseFolderNode){
     return
 }
 nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)
+if(!nodeNewImports) return 'Interrupted: no MDI styles'
 
 // obtains list of nodes "file" in selected node and its childrens (excludes directories)
 //def nodesToMove = nodeNewImports.find{it.link?.uri?.scheme == 'file' && !it.hasStyle('file_folder')} // old version

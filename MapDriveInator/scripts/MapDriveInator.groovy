@@ -45,6 +45,7 @@ if(baseFolderNode){
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Initial Setup 2    ');
     //obtener nodo nueva importación
     nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)
+    if(!nodeNewImports) return 'Interrupted: no MDI styles'
     def visibilizarAvance = MDI.wantToLog(nodeNewImports)
     if(visibilizarAvance) texto.append("\n").append('(elapsed time in miliseconds)').append("\n").append((tIni - new Date().getTime()) as String).append("\n")
     baseFolderNode.style.name = 'baseFolder'

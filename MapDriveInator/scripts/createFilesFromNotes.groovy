@@ -1,15 +1,24 @@
 
 def fPath = MDI.obtainPathFromMap(node)
+println '> fPath: ' + fPath
+//return
 
 if(fPath && fPath != ''){
-    def texto = node.note.plain
+    def texto = node.note?.plain
+    println '> texto: \n' +  texto?.take(100) + '\n  ...\n'
+    //return
+    
     if (texto && texto != ''){
+        println '> node.link.uri: ' + node.link.uri
+        //return
         if (!node.link.uri){
             def fileName = correctFileName(node.text)
-            //return fileName
+            println '> fileName: ' + fileName
+            //return
             MDI.createPath(fPath)
             def file = new File(fPath + fileName)
-            //return file
+            println '> file: ' + file
+            //return
             file.text = texto
             node.link.file = file
             node.text = file.name

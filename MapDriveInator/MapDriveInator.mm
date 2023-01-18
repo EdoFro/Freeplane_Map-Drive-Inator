@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.4"/>
+<attribute NAME="version" VALUE="v0.0.5"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -210,14 +210,19 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="v0.0.3" ID="ID_1486725916">
+<node TEXT="v0.0.3" FOLDED="true" ID="ID_1486725916">
 <node TEXT="old script version packed as an Add-on" ID="ID_1092003668"/>
 </node>
-<node TEXT="v0.0.4" ID="ID_1109048795">
+<node TEXT="v0.0.4" FOLDED="true" ID="ID_1109048795">
 <node TEXT="Added Template map" ID="ID_93006869"/>
 <node TEXT="changed obtainBaseFolder logic" ID="ID_934053051"/>
 <node TEXT="corrected similarity issue" ID="ID_1643559503"/>
 <node TEXT="change folder_node recognition logic" ID="ID_345068445"/>
+</node>
+<node TEXT="v0.0.5" ID="ID_1412479122">
+<node TEXT="corrected createFilesFromNotes" ID="ID_20091226"/>
+<node TEXT="Added &apos;Import MDI styles&apos;&#xa;(without library: only works for users that installed other add-ons that have the `edofro.pseudofreeplaneapi.UserStyles` library.)" ID="ID_1530367506"/>
+<node TEXT="Added exception handling when the mindmap doesn&apos;t have MDI styles" ID="ID_1330881655"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
@@ -428,6 +433,7 @@
 <attribute NAME="addons.${name}.unmarkModifiedFiles" VALUE="Unmark modified files"/>
 <attribute NAME="addons.${name}.unmarkMovedOrRenamedNodes" VALUE="Unmark moved or renamed nodes"/>
 <attribute NAME="addons.${name}.unmarkNewNodes" VALUE="Unmark new nodes"/>
+<attribute NAME="addons.${name}.importMDIStyles" VALUE="Import MDI styles"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="top_or_left" ID="ID_982526317">
@@ -462,6 +468,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/unmarkNewNodes.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/MapDriveInator.jar"/>
 <attribute NAME="delete" VALUE="${installationbase}/templates/MapDriveInator/MDI styles template.mm"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/importMDIStyles.groovy"/>
 </node>
 <node TEXT="scripts" FOLDED="true" POSITION="bottom_or_right" ID="ID_428424239">
 <edge COLOR="#007c00"/>
@@ -742,6 +749,18 @@
 <attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="162 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.ungroupChildnodes"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}/Group"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="importMDIStyles.groovy" ID="ID_1490422211">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="137.25 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.importMDIStyles"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE=""/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>

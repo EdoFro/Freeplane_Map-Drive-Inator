@@ -18,6 +18,7 @@ class MDI{
     private static final String styleBroken         = 'missing'
     private static final String styleFolder         = 'file_folder'
     private static final String styleBaseFolder     = 'baseFolder'
+    private static final String styleNewImport      = 'newFolderImport'
     
     //region: ---------------------- Functions Initial Setup
     
@@ -37,8 +38,14 @@ class MDI{
     }
 
     def static obtainNewImportsNode(n){
-        def nImp = n.children.find{it.hasStyle('newFolderImport')}?:n.createChild('new imported files')
-        nImp.style.name = 'newFolderImport'
+        def nImp = n.children.find{it.hasStyle(styleNewImport)}?:n.createChild('new imported files')
+        try {
+            nImp.style.name = styleNewImport
+        } catch(Exception ex) {
+            UITools.showMessage("The mindmap has no '${styleNewImport}' style.\n\nPlease import the MDI styles into your map.", 0)
+            if(nImp.leaf){nImp.delete()}
+            nImp = null
+        }
         return nImp
     }
     

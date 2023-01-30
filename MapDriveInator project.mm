@@ -417,7 +417,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
   </body>
 </html></richcontent>
-<node TEXT="Freeplane_Map-Drive-Inator" STYLE_REF="missing" ID="ID_1171983621" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="Freeplane_Map-Drive-Inator" ID="ID_1171983621" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -1016,7 +1016,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_663250348"/>
 </node>
 </node>
-<node TEXT="MapDriveInator" STYLE_REF="file_folder" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
+<node TEXT="MapDriveInator" STYLE_REF="file_folder" FOLDED="true" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
 <attribute NAME="script1" VALUE="def nodo = node&#xd;&#xa;def texto = nodo.text&#xd;&#xa;&#xd;&#xa;def nodos = nodo.find{it.text.contains(texto)}&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;def cambiarA = ui.showInputDialog(&#xd;&#xa;        nodo.delegate, &#xd;&#xa;        &apos;input new AddOn name (it will CamelCase it and delete spaces)&apos;, &#xd;&#xa;        &apos; my new add on example   &apos;&#xd;&#xa;    )?.trim()&#xd;&#xa;&#xd;&#xa;cambiarA = cambiarA.split(&apos; &apos;)*.capitalize().join()&#xd;&#xa;&#xd;&#xa;nodos.each{n -&gt;&#xd;&#xa;    n.text = n.text.replace(texto,cambiarA)&#xd;&#xa;}"/>
 <attribute NAME="lastModifiedTime" VALUE="18-01-23 11:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:16-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="18-01-23 14:09" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:09-0300|dd-MM-yy HH:mm"/>
@@ -1054,7 +1054,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="25.176" OBJECT="org.freeplane.features.format.FormattedNumber|25176|#,##0"/>
 <node TEXT="class MDI{" FOLDED="true" ID="ID_1196551919">
-<node TEXT="//region: ---------------------- Functions Initial Setup" STYLE_REF="completedTask" FOLDED="true" ID="ID_621271091">
+<node TEXT="//region: ---------------------- Functions Initial Setup" STYLE_REF="completedTask" ID="ID_621271091">
 <node TEXT="def static obtainBaseFolder(n) {" STYLE_REF="completedTask" FOLDED="true" ID="ID_755781680"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -1251,6 +1251,211 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <node TEXT="def static getCheckBroken(n, defaultCheck = 0) {" ID="ID_1701313601"/>
 <node TEXT="def static getMarkMoved(n, defaultMark = 0) {" ID="ID_1427605012"/>
 </node>
+</node>
+</node>
+<node TEXT="getAbsoluteUri example" ID="ID_619435497"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def uri = node.link.uri
+    </p>
+    <p>
+      def map = node.mindMap
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def absoluteUri = getAbsoluteUri(map,uri)
+    </p>
+    <p>
+      println absoluteUri
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      absoluteUri
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //-----------------------methods------------------------
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def getAbsoluteUri(final map, URI uri) throws MalformedURLException {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;if (uri == null&nbsp;&nbsp;|| uri.isAbsolute()) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return uri;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;final String path = uri.getPath();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;println path
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;try {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL context = map.file.toURL();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println context
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println context.class
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(context == null)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL url = new URL(context, path != null &amp;&amp; path.isEmpty() ? &quot;.&quot; : path);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println url
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new URI(url.getProtocol(), url.getHost(), url.getPath(), uri.getQuery(), uri.getFragment());
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;catch (final URISyntaxException e) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LogUtils.severe(e);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html></richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="to test obtainBaseFolder" ID="ID_943148"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import MDI
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      styleFolder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'file_folder'
+    </p>
+    <p>
+      styleBaseFolder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'baseFolder'
+    </p>
+    <p>
+      styleNewImport&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'newFolderImport'
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      baseFolderNode = obtainBaseFolder(node)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println baseFolderNode
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;def obtainBaseFolder(n) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// returns the first node which has a link to a file directory and has style styleFolder + styleBaseFolder
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//return n.pathToRoot.find{it.link?.file?.directory &amp;&amp; it.hasStyle(styleFolder) &amp;&amp; it.hasStyle(styleBaseFolder)}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def nBase
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= n.pathToRoot.find{it.link?.file?.directory &amp;&amp; it.hasStyle(styleFolder) &amp;&amp; it.hasStyle(styleBaseFolder)}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= n.pathToRoot.find{it.link?.file?.directory &amp;&amp; it.hasStyle(styleBaseFolder)}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= (n.link?.file?.directory &amp;&amp; n.hasStyle(styleFolder))? n : null
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= n.pathToRoot.find{it.link?.file?.directory &amp;&amp; it.hasStyle(styleFolder)}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= (n.link?.file?.directory)? n : null
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= n.pathToRoot.find{it.link?.file?.directory}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return nBase
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+  </body>
+</html></richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -3093,8 +3298,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="fileSize" VALUE="266" OBJECT="org.freeplane.features.format.FormattedNumber|266|#,##0"/>
 </node>
 </node>
+<node TEXT="MapDriveInator-v0.0.6.addon.mm" STYLE_REF="freshNew" ID="ID_64331" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.6.addon.mm"/>
 </node>
-<node TEXT="delete" FOLDED="true" ID="ID_780335546" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="delete" ID="ID_780335546" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -3196,6 +3402,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="164" OBJECT="org.freeplane.features.format.FormattedNumber|164|#,##0"/>
+</node>
+<node TEXT="README-MapDriveInator-MDH.mm" ID="ID_1813927967" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/README-MapDriveInator-MDH.mm">
+<attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="fileSize" VALUE="36.189" OBJECT="org.freeplane.features.format.FormattedNumber|36189|#,##0"/>
 </node>
 </node>
 <node TEXT="resources" STYLE_REF="file_folder" ID="ID_1697408639" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/">
@@ -3369,6 +3581,8 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="fileSize" VALUE="5.780" OBJECT="org.freeplane.features.format.FormattedNumber|5780|#,##0"/>
 </node>
 <node TEXT="prueba.mm" ID="ID_1521875293" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/prueba.mm"/>
+<node TEXT="prueba.zip" ID="ID_852635803" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/prueba.zip"/>
+<node TEXT="New Mindmap.mm" ID="ID_1535752470" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/New%20Mindmap.mm"/>
 </node>
 <node TEXT=".gitignore" STYLE_REF="discardedTask" ID="ID_204170711"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -3545,12 +3759,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.073" OBJECT="org.freeplane.features.format.FormattedNumber|1073|#,##0"/>
 </node>
-<node TEXT="README.md" FOLDED="true" ID="ID_1216315313" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
+<node TEXT="README.md" ID="ID_1216315313" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
 <attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="06-01-22 16:54" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T16:54-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="3.469" OBJECT="org.freeplane.features.format.FormattedNumber|3469|#,##0"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
 <html>
   <head>
     
@@ -3818,20 +4032,257 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       deletes the timestamps attributes in the nodes
     </p>
   </body>
+</html>
+</richcontent>
+<node TEXT="README_2.md" ID="ID_1638680456" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README_2.md">
+<attribute NAME="headersToUnderline" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
+<attribute NAME="hideFolded" VALUE="false"/>
+<attribute NAME="headerNumbering" VALUE="false"/>
+<attribute NAME="topHeadersNumbered" VALUE="false"/>
+<attribute NAME="topHeaderStartingNumber" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1"/>
+<attribute NAME="fileLinksRelative" VALUE="false"/>
+<attribute NAME="lineOverHeader" VALUE="true"/>
+<attribute NAME="ignoreHeaderDetails" VALUE="true"/>
+<attribute NAME="ignoreHeaderNotes" VALUE="true"/>
+<attribute NAME="ignoreLeafDetails" VALUE="false"/>
+<attribute NAME="ignoreHeaderImageObjects" VALUE="false"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.document(node)
+    </p>
+  </body>
 </html></richcontent>
-<node TEXT="README-MapDriveInator-MDH.mm" ID="ID_1813927967" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README-MapDriveInator-MDH.mm">
-<attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="36.189" OBJECT="org.freeplane.features.format.FormattedNumber|36189|#,##0"/>
+<node TEXT="Freeplane_Map-Drive-Inator" FOLDED="true" ID="ID_81008987">
+<node TEXT="A groovy script to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_1917746297"/>
+<node TEXT="Features" ID="ID_1831172452">
+<node TEXT="horizontal line" STYLE_REF="MarkdownHelperNode" ID="ID_136922648"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      -----
+    </p>
+  </body>
+</html></richcontent>
 </node>
-<node TEXT="README_2.md" FOLDED="true" ID="ID_1314808839" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README_2.md">
+<node TEXT="basic" ID="ID_1834808569">
+<node TEXT="video 1: lo básico &lt;https://youtu.be/2vwd38rxAlY&gt;" ID="ID_1953045866" LINK="https://youtu.be/2vwd38rxAlY"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1389094514">
+<icon BUILTIN="emoji-1F522"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="**import folder structure**" STYLE_REF="fullMarkDown" ID="ID_1174804831"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**import folder structure**  
+you can import the folder structure of any folder in your drive</text>
+</richcontent>
+</node>
+<node TEXT="**import only new files and folders**" STYLE_REF="fullMarkDown" ID="ID_803428796"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**import only new files and folders**  
+After the first import, Map-Drive-Inator imports only the new files and folders created in your drive without duplicating the allready existing one.</text>
+</richcontent>
+</node>
+<node TEXT="**alerts about missing files**" STYLE_REF="fullMarkDown" ID="ID_126197658"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**alerts about missing files**  
+It alerts if any node links to a deleted or moved file.  
+For example, if another program deletes, moves or renames a file, then MDI will alert you that a link in a node points to a missing file.</text>
+</richcontent>
+</node>
+<node TEXT="**move file from one folder to another**" STYLE_REF="fullMarkDown" ID="ID_32519846"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**move file from one folder to another**  
+if you move a &apos;file&apos; node in your mindmap from one &apos;folder&apos; node to another, the file gets moved in your drive also</text>
+</richcontent>
+</node>
+<node TEXT="**create new folders**" STYLE_REF="fullMarkDown" ID="ID_885166634"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**create new folders**  
+you can create nodes as folders in your map and move file nodes in it. MDI then creates the folders and moves the files into them.</text>
+</richcontent>
+</node>
+<node TEXT="**rename files**" STYLE_REF="fullMarkDown" ID="ID_1106702601"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**rename files**  
+if you modify the text of a file node, the file in the drive gets also renamed to this new text</text>
+</richcontent>
+</node>
+<node TEXT="**rename folders**" STYLE_REF="fullMarkDown" ID="ID_320176363"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**rename folders**  
+if you modify the text of a folder node, the folder in the drive gets also renamed to this new text</text>
+</richcontent>
+</node>
+<node TEXT="**move *outside files* into the project**" STYLE_REF="fullMarkDown" ID="ID_1288066977"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**move *outside files* into the project**  
+if you paste nodes with links to files that are outside of your base folder, MDI move them to their new position in your folder structure</text>
+</richcontent>
+</node>
+<node TEXT="use copy of a folder in multiple positions in the map, but has to remain in the same path position." STYLE_REF="fullMarkDown" ID="ID_395286545"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>use copy of a folder in multiple positions in the map, but has to remain in the same path position.</text>
+</richcontent>
+</node>
+</node>
+<node TEXT="horizontal line" STYLE_REF="MarkdownHelperNode" ID="ID_1837178257"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      -----
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node TEXT="other" ID="ID_932146437">
+<node TEXT="video 2: el resto &lt;https://youtu.be/bd30aySucc4&gt;" ID="ID_1456499730" LINK="https://youtu.be/bd30aySucc4"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_639392960">
+<icon BUILTIN="emoji-1F522"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="**Can handle clones**:" STYLE_REF="fullMarkDown" ID="ID_1808769928"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**Can handle clones**:  
+If you have clones of file or folder nodes in your map, MDI can handle them. If one of them is positioned correctly in the map, MDI understands that this file doesn&apos;t need to be moved.</text>
+</richcontent>
+</node>
+<node TEXT="**locked**:" STYLE_REF="fullMarkDown" ID="ID_1209954358">
+<icon BUILTIN="emoji-1F537"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**locked**:  
+You can mark some nodes as &apos;locked&apos;. That means that MDI **ignores** it and its descendant.</text>
+</richcontent>
+<node TEXT="**Ignores outside files**" STYLE_REF="fullMarkDown" ID="ID_1502388152"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**Ignores outside files** and doesn´t move them into the project folder.  
+You can have nodes with links to files outside your base folder wihout having MDI moving the file form its original drive&apos;s position to your base folder.</text>
+</richcontent>
+</node>
+<node TEXT="**Ignores folders** + subfolders + files" STYLE_REF="fullMarkDown" ID="ID_1727149359"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**Ignores folders** and its subfolders and files when looking **in the drive**.  
+Any &apos;folder&apos; node marked as locked (or inside a locked node) will be ignored (and its content) when searching for file changes in the drive.</text>
+</richcontent>
+</node>
+</node>
+<node TEXT="**Ignores folders** with name ***starting*** with a ***dot***" STYLE_REF="fullMarkDown" ID="ID_1002798586"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**Ignores folders** with name ***starting*** with a ***dot*** (and its subfolders and files when looking in the drive)  
+example: &quot;**.git**&quot;</text>
+</richcontent>
+</node>
+</node>
+<node TEXT="horizontal line" STYLE_REF="MarkdownHelperNode" ID="ID_1381409952"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      -----
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node TEXT="more" ID="ID_468277734">
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_816393856">
+<icon BUILTIN="emoji-1F522"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="**Import folders only**:" STYLE_REF="fullMarkDown" ID="ID_1013264207"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**Import folders only**:  
+Imports the folders structure without the files.
+This helps at the beginning, before the first full import. So you can define if you want some folders to be ignored (to mark as locked).
+So you can import only what you want and don&apos;t get excess files to manage in your map.</text>
+</richcontent>
+</node>
+<node TEXT="**Import timestamps**:" STYLE_REF="fullMarkDown" ID="ID_373291153">
+<icon BUILTIN="emoji-1F537"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**Import timestamps**:  
+for the selected node and its descendants
+you can import as attributes following timestamps from your files
+you can use them to sort, search and filter your nodes</text>
+</richcontent>
+<node TEXT="lastAccessTime" ID="ID_931596145"/>
+<node TEXT="lastModifiedTime" ID="ID_392090719"/>
+<node TEXT="creationTime" ID="ID_1265512850"/>
+</node>
+<node TEXT="**Sort by timestamps**:" STYLE_REF="fullMarkDown" ID="ID_186969378">
+<icon BUILTIN="emoji-1F537"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**Sort by timestamps**:  
+you can sort a node and its descendants by any of the timestamps</text>
+</richcontent>
+<node TEXT="lastAccessTime" ID="ID_143939609"/>
+<node TEXT="lastModifiedTime" ID="ID_1828024220"/>
+<node TEXT="creationTime" ID="ID_1794602662"/>
+</node>
+<node TEXT="**Clear the timestamps**:" STYLE_REF="fullMarkDown" ID="ID_1426983520"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>**Clear the timestamps**:  
+for the selected node and its descendants
+deletes the timestamps attributes in the nodes</text>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="" ID="ID_338724759">
+<hook NAME="FirstGroupNode"/>
+</node>
+<node TEXT="agregar párrafo Freeplane" STYLE_REF="pendingTask" ID="ID_1548672074"/>
+<node TEXT="agregar History" STYLE_REF="pendingTask" ID="ID_1479316402">
+<node TEXT="ejemplo:" ID="ID_618628139">
+<node TEXT="https://github.com/EdoFro/Freeplane_Menu-o-Matic#history" ID="ID_614828809" LINK="https://github.com/EdoFro/Freeplane_Menu-o-Matic#history"/>
+<node TEXT="https://github.com/EdoFro/freeplane-devtools#3-change-log" ID="ID_233323535" LINK="https://github.com/EdoFro/freeplane-devtools#3-change-log"/>
+</node>
+</node>
+<node TEXT="agregar Tasks" STYLE_REF="pendingTask" ID="ID_1572735156">
+<node TEXT="ejemplo:" ID="ID_337700483">
+<node TEXT="https://github.com/EdoFro/Freeplane_Tutorial_AddOn#tasks" ID="ID_398084623" LINK="https://github.com/EdoFro/Freeplane_Tutorial_AddOn#tasks"/>
+</node>
+</node>
+<node TEXT="" ID="ID_1041104200">
+<hook NAME="SummaryNode"/>
+<hook NAME="AlwaysUnfoldedNode"/>
+<node TEXT="agregar a template proyectos" STYLE_REF="pendingTask" ID="ID_1949150606"/>
+</node>
+</node>
+<node TEXT="README_2.md" ID="ID_1314808839" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README_2.md">
 <attribute NAME="lastModifiedTime" VALUE="06-01-22 18:15" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T18:15-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="3.516" OBJECT="org.freeplane.features.format.FormattedNumber|3516|#,##0"/>
 <node TEXT="versión borrador." ID="ID_508217206"/>
-<node TEXT="debo dejar sólo uno" ID="ID_1355708582"/>
+<node TEXT="debo dejar sólo uno" STYLE_REF="nextTask" ID="ID_1355708582"/>
 </node>
 </node>
 </node>
@@ -3845,7 +4296,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </head>
   <body>
     <p>
-      Inated:&nbsp;&nbsp;&nbsp;2023-01-18&nbsp;&nbsp;14:10:15
+      Inated:&nbsp;&nbsp;&nbsp;2023-01-23&nbsp;&nbsp;12:16:47
     </p>
     <p>
       
@@ -3872,7 +4323,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       ------- Folders: --------&nbsp;
     </p>
     <p>
-      39 folders didn't need to be moved&nbsp;
+      36 folders didn't need to be moved&nbsp;
     </p>
     <p>
       
@@ -3881,7 +4332,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       
     </p>
     <p>
-      0.2 seconds
+      0.3 seconds
     </p>
     <p>
       
@@ -3899,13 +4350,13 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       (elapsed time in miliseconds)
     </p>
     <p>
-      -30
+      -33
     </p>
     <p>
-      -37
+      -40
     </p>
     <p>
-      -37
+      -40
     </p>
     <p>
       
@@ -3914,7 +4365,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       arma Listado de Rutas nodos
     </p>
     <p>
-      -136
+      -185
     </p>
     <p>
       
@@ -3923,7 +4374,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       saca listados de informacion en nodos xSingles
     </p>
     <p>
-      -137
+      -185
     </p>
     <p>
       
@@ -3932,7 +4383,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       saca listados de informacion en nodos xClones
     </p>
     <p>
-      -137
+      -185
     </p>
     <p>
       
@@ -3941,7 +4392,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       saca listados de informacion en drive
     </p>
     <p>
-      -248
+      -307
     </p>
     <p>
       
@@ -3950,7 +4401,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       obteniendo sublistas
     </p>
     <p>
-      -249
+      -307
     </p>
     <p>
       
@@ -3959,10 +4410,10 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       obtener listado de clones pendientes
     </p>
     <p>
-      -249
+      -307
     </p>
     <p>
-      -249
+      -307
     </p>
     <p>
       
@@ -3971,7 +4422,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       obtener listado de clones inconsistentes
     </p>
     <p>
-      -250
+      -307
     </p>
     <p>
       
@@ -3980,7 +4431,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       obteniendo sublistas de xInconsistentes
     </p>
     <p>
-      -250
+      -307
     </p>
     <p>
       
@@ -3989,13 +4440,13 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       obteniendo sublistas de xClonesInconsistentes
     </p>
     <p>
-      -250
+      -307
     </p>
     <p>
-      -250
+      -307
     </p>
     <p>
-      -250
+      -307
     </p>
     <p>
       
@@ -4004,7 +4455,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;aplicando acciones FILES
     </p>
     <p>
-      -250
+      -310
     </p>
     <p>
       
@@ -4013,7 +4464,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       ACTUALIZANDO FOLDERS
     </p>
     <p>
-      -255
+      -312
     </p>
     <p>
       
@@ -4136,6 +4587,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.jar
     </p>
     <p>
@@ -4155,6 +4609,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\version.properties
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
@@ -4217,6 +4674,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
     </p>
     <p>
@@ -4226,7 +4689,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README-MapDriveInator-MDH.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
@@ -4364,6 +4827,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.jar
     </p>
     <p>
@@ -4383,6 +4849,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\version.properties
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
@@ -4445,6 +4914,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
     </p>
     <p>
@@ -4454,7 +4929,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README-MapDriveInator-MDH.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
@@ -4595,6 +5070,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.jar
     </p>
     <p>
@@ -4614,6 +5092,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\version.properties
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
@@ -4676,6 +5157,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
     </p>
     <p>
@@ -4685,7 +5172,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README-MapDriveInator-MDH.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
@@ -4796,6 +5283,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
     </p>
     <p>
@@ -4853,6 +5343,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.mm.bak
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\Sync.groovy
     </p>
     <p>
@@ -4865,7 +5358,13 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\Map-Drive-Inator.groovy.bak
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 001.png
@@ -4929,9 +5428,6 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README-MapDriveInator-MDH.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
@@ -5018,6 +5514,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
     </p>
     <p>
@@ -5075,6 +5574,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.mm.bak
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\Sync.groovy
     </p>
     <p>
@@ -5087,7 +5589,13 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\Map-Drive-Inator.groovy.bak
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 001.png
@@ -5151,9 +5659,6 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README-MapDriveInator-MDH.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
@@ -5313,42 +5818,6 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
     <p>
       xFolders:&nbsp;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_168558175
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1943090101
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1227055152
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\
     </p>
     <p>
       
@@ -5785,74 +6254,25 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html>
 </richcontent>
-<node TEXT="MapDriveInator" ID="ID_1227055152" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
-<node TEXT="zips" ID="ID_1943090101" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/">
-<node TEXT="templates" ID="ID_168558175" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/templates/"/>
 </node>
-</node>
-</node>
-<node TEXT="Tareas" STYLE_REF="Organizador" FOLDED="true" ID="ID_819044659">
-<node TEXT="transformar MDI en AddOn" STYLE_REF="pendingTask" FOLDED="true" ID="ID_665003007">
-<node TEXT="replicar librería MDI funcionalidad por funcionalidad" STYLE_REF="pendingTask" ID="ID_144971755"/>
-<node TEXT="separar en varias clases" STYLE_REF="pendingTask" ID="ID_1745361455"/>
-<node TEXT="pasos para crear AddOn" STYLE_REF="Organizador" FOLDED="true" ID="ID_473646928">
-<node TEXT="pasos AddOn" FOLDED="true" ID="ID_1280692201">
-<node TEXT="1 a 5" FOLDED="true" ID="ID_1221469484">
-<node TEXT="In Freeplane create a new empty map by Ctrl+n." STYLE_REF="completedTask" ID="ID_477927437" NUMBERED="true"/>
-<node TEXT="Invoke Tools &gt; Developer Tools &gt; Build add-on. You will be asked for the name of your add-on. Answer My Cool Add-on" STYLE_REF="completedTask" ID="ID_553362650" NUMBERED="true"/>
-<node TEXT="Look through the messages in the info box that is shown if everything looks alright. The name attribute of the root node will be myCoolAddOn. This is the identifying technical name of the add-on that is usually used as a file name, for menu locations and translation keys and so on. The node text My Cool Add-on is the English name/translation of the add-on." STYLE_REF="completedTask" ID="ID_305356603" NUMBERED="true"/>
-<node TEXT="Set the version attribute of the root node to v0.1 and fill the other attributes of the root node (only freeplaneVersionTo is optional)." STYLE_REF="completedTask" ID="ID_1764949961" NUMBERED="true"/>
-<node TEXT="Write an initial description of the add-on as a child node of the description node." STYLE_REF="completedTask" ID="ID_664043439" NUMBERED="true"/>
-</node>
-<node TEXT="5 a 10" FOLDED="true" ID="ID_1932059575">
-<node TEXT="Create a new directory somewhere with the technical name of the add-on, myCoolAddOn." STYLE_REF="completedTask" ID="ID_522100379" NUMBERED="true"/>
-<node TEXT="Save the new map to myCoolAddOn/myCoolAddOn.mm." STYLE_REF="completedTask" ID="ID_1433169455" NUMBERED="true"/>
-<node TEXT="Copy or move myCoolScript.groovy to myCoolAddOn/scripts/myCoolScript.groovy." STYLE_REF="pendingTask" ID="ID_1973196423" NUMBERED="true"/>
-<node TEXT="In the map create a new subnode of the scripts node with name myCoolScript.groovy." STYLE_REF="discardedTask" ID="ID_1194471346" NUMBERED="true"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      no es necesario. lo hace el Build automáticamente
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node TEXT="Copy mycoolicon.png to zips/icons/mycoolicon.png." STYLE_REF="pendingTask" ID="ID_1483352366" NUMBERED="true"/>
-</node>
-<node TEXT="11 a 15" FOLDED="true" ID="ID_855480863">
-<node TEXT="In the map create a new subnode of the zips node with name icons." STYLE_REF="pendingTask" ID="ID_411493290" NUMBERED="true"/>
-<node TEXT="Invoke Tools &gt; Developer Tools &gt; Build add-on again. This will add the required attributes of the script node and proposes proper deinstall rules (just accept them when you are asked for it)." STYLE_REF="pendingTask" ID="ID_318355463" NUMBERED="true"/>
-<node TEXT="Fill the attributes of the myCoolScript.groovy node. The notes on the scripts node will help you to find the right attribute values. See also the section about menuLocation below." STYLE_REF="pendingTask" ID="ID_1275148123" NUMBERED="true"/>
-<node TEXT="Save the map." STYLE_REF="pendingTask" ID="ID_979702267" NUMBERED="true"/>
-<node TEXT="Invoke Tools &gt; Developer Tools &gt; Package add-on for publication. This will create the file myCoolAddOn-v0.1.mm which can be installed via Tools &gt; Scripts &gt; Install Add-on (or via Tools &gt; Add-ons)." STYLE_REF="pendingTask" ID="ID_101028478" NUMBERED="true"/>
-</node>
-</node>
-<node TEXT="guardar mapas como &quot;lean&quot; map" STYLE_REF="completedTask" ID="ID_297611631"/>
-<node TEXT="cambiar imagen de logo" STYLE_REF="pendingTask" ID="ID_572654671"/>
-</node>
-</node>
+<node TEXT="Implementar Tasks v4 acá" STYLE_REF="nextTask" ID="ID_1813016897"/>
+<node TEXT="Tareas" STYLE_REF="Organizador" ID="ID_819044659">
 <node TEXT="pendientes" STYLE_REF="Organizador" FOLDED="true" ID="ID_1189420698">
-<node TEXT="inicializar" STYLE_REF="Organizador" FOLDED="true" ID="ID_60424786">
-<node TEXT="crear fork en Github" ID="ID_1854261940"/>
-</node>
 <node TEXT="Funcionalidad" STYLE_REF="Organizador" FOLDED="true" ID="ID_193658298">
-<node TEXT="incluir preferencias en Addon.mm" FOLDED="true" ID="ID_1798281696">
-<node TEXT="indicar properties" ID="ID_172816119"/>
-<node TEXT="indicar valores default" ID="ID_1628906019"/>
-<node TEXT="indicar traducciones" ID="ID_1038410507"/>
+<node TEXT="incluir preferencias en Addon.mm" ID="ID_1798281696">
+<node TEXT="indicar properties" STYLE_REF="pendingTask" ID="ID_172816119"/>
+<node TEXT="indicar valores default" STYLE_REF="pendingTask" ID="ID_1628906019"/>
+<node TEXT="indicar traducciones" STYLE_REF="pendingTask" ID="ID_1038410507"/>
 </node>
-<node TEXT="llevar ajustes a panel de preferencias" ID="ID_354456841"/>
+<node TEXT="llevar ajustes a panel de preferencias" STYLE_REF="pendingTask" ID="ID_354456841"/>
 </node>
 <node TEXT="documentación" STYLE_REF="Organizador" FOLDED="true" ID="ID_1722874007">
-<node TEXT="actualizar wiki" ID="ID_89220239"/>
+<node TEXT="actualizar wiki" STYLE_REF="pendingTask" ID="ID_89220239"/>
 </node>
 <node TEXT="publicar" STYLE_REF="Organizador" FOLDED="true" ID="ID_1034067313">
-<node TEXT="gradle build" ID="ID_846312997"/>
-<node TEXT="git ignore de gradle Build" ID="ID_1543890607"/>
-<node TEXT="armar AddOn" FOLDED="true" ID="ID_75419868">
+<node TEXT="gradle build" STYLE_REF="completedTask" ID="ID_846312997"/>
+<node TEXT="git ignore de gradle Build" STYLE_REF="completedTask" ID="ID_1543890607"/>
+<node TEXT="armar AddOn" STYLE_REF="completedTask" FOLDED="true" ID="ID_75419868">
 <node TEXT="revisar información de uninstall" ID="ID_552994514"/>
 <node TEXT="actualizar listado de cambios" ID="ID_1960243151"/>
 <node TEXT="poner bien nombres de scripts" ID="ID_1641695413"/>
@@ -5860,9 +6280,9 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <node TEXT="agregar historial de cambios" ID="ID_127148230"/>
 <node TEXT="mejorar descripción de add On" ID="ID_798578687"/>
 </node>
-<node TEXT="testear" ID="ID_593398339"/>
-<node TEXT="agregar release en Github con archivo descargable" ID="ID_175601747"/>
-<node TEXT="actualizar ReadMe" FOLDED="true" ID="ID_873316181">
+<node TEXT="testear" STYLE_REF="completedTask" ID="ID_593398339"/>
+<node TEXT="agregar release en Github con archivo descargable" STYLE_REF="completedTask" ID="ID_175601747"/>
+<node TEXT="actualizar ReadMe" STYLE_REF="pendingTask" ID="ID_873316181">
 <node TEXT="nuevas fumcionalidades" FOLDED="true" ID="ID_1258432485">
 <node TEXT="ver cambios en versiones" ID="ID_1368434930"/>
 </node>
@@ -5876,8 +6296,8 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <node TEXT="agregar descripción de nuevos comandos" ID="ID_594602743"/>
 <node TEXT="agregar historial de cambios" ID="ID_362817623"/>
 </node>
-<node TEXT="comunicar en Openforum" ID="ID_152881947"/>
-<node TEXT="actualizar a listado de AddOns en FP wiki" FOLDED="true" ID="ID_303217866">
+<node TEXT="comunicar en FP Discussions" STYLE_REF="pendingTask" ID="ID_152881947"/>
+<node TEXT="actualizar a listado de AddOns en FP wiki" STYLE_REF="pendingTask" ID="ID_303217866">
 <node TEXT="agregar a listado de AddOns en FP wiki" ID="ID_530503372"/>
 <node TEXT="usar addOn documentation de devTools" ID="ID_214741246"/>
 </node>
@@ -5923,7 +6343,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 </node>
 </node>
-<node TEXT="próximos pasos:" STYLE_REF="Organizador" FOLDED="true" ID="ID_599288701" STYLE="bubble">
+<node TEXT="próximos pasos:" STYLE_REF="Organizador" ID="ID_599288701" STYLE="bubble">
 <node TEXT="ideas / tareas:" ID="ID_1281597789"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -5935,14 +6355,109 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
   </body>
 </html></richcontent>
-<node TEXT="Opciones en Nota de nodo BaseFolder debe tener mejor formato" STYLE_REF="pendingTask" ID="ID_550597183"/>
-<node TEXT="guardar en nota de &quot;new imported files&quot; los cambios realizados en última MDI" STYLE_REF="pendingTask" ID="ID_1310678286"/>
-<node TEXT="revisar y cuidar que al importar nuevos nodosFiles no hayan más de x hijos por nodo" STYLE_REF="pendingTask" ID="ID_859060352">
+<node TEXT="Reparaciones" ID="ID_1993277511"/>
+<node TEXT="Mejoras" FOLDED="true" ID="ID_1886355236">
+<node TEXT="Opciones en Nota de nodo BaseFolder debe tener mejor formato" STYLE_REF="pendingTask" ID="ID_550597183"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      pasar a formato markdown
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="prueba markdown" ID="ID_629687194"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
+    <text>null
+
+# MDI
+
+The import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node:
+
+
+## nameFilter
+
+A filter to perform on the name of traversed files. If set, only files which match are brought.
+
+This option allowes four types of inputs:
+
+
+* nothing
+   * means no filtering (default)|
+* regex
+   * example: `~/.*\.mp3/`
+* &apos;simplified&apos; regex
+   * example: `~.*\.mp3 `
+* string with \*
+   * example: `*.mp3`
+   * equivalent to regex:      `~/(?i).*\.mp3/`
+* list of strings with \* and ; 
+   * example: `*.mp3;*.png`
+   * equivalent to regex:      `~/(?i)(.*\.mp3|.*\.png)/`
+
+
+## maxDepth
+
+The maximum number of directory levels when recursing
+
+(default is -1 which means no limit, set to 0 for no recursion)
+
+
+
+
+## markWhenMoved
+
+change styles to moved/renamed file Nodes
+
+set to|description
+---|---
+0 | to change style only if node hasn&apos;t a previous one (default)
+1 | to allways change the style
+-1 | to never change the style
+
+
+
+
+## checkIfReallyBroken
+
+Check if existing nodes pointing to filtered files still exist.
+This option is only useful if you defined a nameFilter before
+but in the map there are also some files that doesn&apos;t match
+this filter definition
+
+(for example if you brought them manually or import them
+before the actual namefilter setting)
+
+- default is 0 which means don&apos;t check --&gt; Mark node as missing also if it doesn&apos;t match the current filter,
+- set to 1 to extra check if a not matching file still exists in drive
+
+
+---
+  </text>
+</richcontent>
+</node>
+<node TEXT="cambiar css para que mejore codeblocks" ID="ID_1187105636"/>
+</node>
+<node TEXT="Opciones en Nota de nodo &quot;new imported files&quot; debe tener mejor formato" STYLE_REF="pendingTask" ID="ID_796279226"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      pasar a formato markdown
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="revisar y cuidar que al importar nuevos nodosFiles no hayan más de x hijos por nodo" STYLE_REF="pendingTask" FOLDED="true" ID="ID_859060352">
 <node TEXT="porque freeplane se pone muy lento cuando un nodo tien más de X hijos" ID="ID_1162664569"/>
 <node TEXT="determinar X" ID="ID_684991461"/>
 <node TEXT="agrupar en nodos tipo carpeta pero no folder" ID="ID_210408579"/>
-<node TEXT="indicar mensaje al importar" FOLDED="true" ID="ID_425596636">
-<node TEXT="o" FOLDED="true" ID="ID_1538175396">
+<node TEXT="indicar mensaje al importar" ID="ID_425596636">
+<node TEXT="o" ID="ID_1538175396">
 <node TEXT="" ID="ID_82537059">
 <hook NAME="FirstGroupNode"/>
 </node>
@@ -6006,47 +6521,36 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 <node TEXT="probar con" STYLE_REF="locked" ID="ID_51147019">
-<node TEXT="icons" STYLE_REF="missing" ID="ID_843411429" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/">
+<node TEXT="icons" ID="ID_843411429" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/">
 <attribute NAME="lastModifiedTime" VALUE="16-01-22 13:34" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-16T13:34-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-22 19:47" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T19:47-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-05-21 09:53" OBJECT="org.freeplane.features.format.FormattedDate|2021-05-11T09:53-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="12.288" OBJECT="org.freeplane.features.format.FormattedNumber|12288|#,##0"/>
-<node TEXT="Esfuerzo" STYLE_REF="missing" ID="ID_1816416031" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/Esfuerzo/">
+<node TEXT="Esfuerzo" ID="ID_1816416031" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/Esfuerzo/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-19 14:18" OBJECT="org.freeplane.features.format.FormattedDate|2019-01-11T14:18-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-22 13:39" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T13:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="29-01-21 20:35" OBJECT="org.freeplane.features.format.FormattedDate|2021-01-29T20:35-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
-<node TEXT="Importancia" STYLE_REF="missing" ID="ID_271010312" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/Importancia/">
+<node TEXT="Importancia" ID="ID_271010312" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/Importancia/">
 <attribute NAME="lastModifiedTime" VALUE="22-09-18 09:50" OBJECT="org.freeplane.features.format.FormattedDate|2018-09-22T09:50-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-22 13:39" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T13:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="29-01-21 20:35" OBJECT="org.freeplane.features.format.FormattedDate|2021-01-29T20:35-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 </node>
-<node TEXT="Thermometer" STYLE_REF="missing" ID="ID_471448862" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/Thermometer/">
+<node TEXT="Thermometer" ID="ID_471448862" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/Thermometer/">
 <attribute NAME="lastModifiedTime" VALUE="22-09-18 09:50" OBJECT="org.freeplane.features.format.FormattedDate|2018-09-22T09:50-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-22 13:39" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T13:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="29-01-21 20:35" OBJECT="org.freeplane.features.format.FormattedDate|2021-01-29T20:35-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 </node>
-<node TEXT="Visual Studio" STYLE_REF="missing" ID="ID_408683376" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/Visual%20Studio/"/>
+<node TEXT="Visual Studio" ID="ID_408683376" LINK="file:/C:/Users/Edo/AppData/Roaming/Freeplane/1.9.x/icons/Visual%20Studio/"/>
 </node>
 </node>
 </node>
-<node TEXT="marcar nodoFile como  &quot;para copiar&quot;" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1872791515">
-<node TEXT="para el caso donde link no concuerda con posición en mapa" FOLDED="true" ID="ID_580562797">
-<node TEXT="caso movedRenamed" ID="ID_1466824866"/>
-</node>
-<node TEXT="crea copia con nuevo nombre a nueva posición" ID="ID_1050239482"/>
-<node TEXT="queda &quot;marcado&quot; como" FOLDED="true" ID="ID_16848849">
-<node TEXT="o" FOLDED="true" ID="ID_1608644782">
-<node TEXT="freshNew" ID="ID_811625420"/>
-<node TEXT="newCopy" ID="ID_1542700383"/>
-</node>
-</node>
-</node>
-<node TEXT="preferencias FileTimeStamps" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1403569041">
-<node TEXT="actualizar en cada MDI&#xa;automatcamente a archivos" FOLDED="true" ID="ID_880673338">
+<node TEXT="guardar en nota de &quot;new imported files&quot; los cambios realizados en última MDI" STYLE_REF="pendingTask" ID="ID_1310678286"/>
+<node TEXT="preferencias FileTimeStamps" STYLE_REF="pendingTask" ID="ID_1403569041">
+<node TEXT="actualizar en cada MDI&#xa;automatcamente a archivos" ID="ID_880673338">
 <node TEXT="" ID="ID_939845077">
 <hook NAME="FirstGroupNode"/>
 </node>
@@ -6071,24 +6575,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 </node>
-<node TEXT="agregar comando que MDInarice todos los BaseFolder del mapa" STYLE_REF="pendingTask" ID="ID_1225720693"/>
-<node TEXT="submenú Unmark" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1274440134">
-<node TEXT="" ID="ID_1152382969">
-<hook NAME="FirstGroupNode"/>
-</node>
-<node TEXT="que agrupe todos los unmark" ID="ID_749627187"/>
-<node TEXT="agregar unmark todo" ID="ID_685657797"/>
-<node TEXT="" ID="ID_675544576">
-<hook NAME="SummaryNode"/>
-<hook NAME="AlwaysUnfoldedNode"/>
-<node TEXT="opciones" FOLDED="true" ID="ID_91936571">
-<node TEXT="sólo seleccionados" ID="ID_646957449"/>
-<node TEXT="seleccionados y descendientes" ID="ID_364247197"/>
-<node TEXT="todo el base folder y sus descendientes" ID="ID_138515635"/>
-</node>
-</node>
-</node>
-<node TEXT="mejorar estructura de menú MDI" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1550934361">
+<node TEXT="mejorar estructura de menú MDI" STYLE_REF="pendingTask" ID="ID_1550934361">
 <node TEXT="Actual" FOLDED="true" ID="ID_1058208037">
 <node TEXT="Check missing File Nodes" ID="ID_1996076981"/>
 <node TEXT="Time Stamps" FOLDED="true" ID="ID_1135365228">
@@ -6186,6 +6673,92 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <node TEXT="Unmark New Nodes" ID="ID_1114036938" BACKGROUND_COLOR="#33f3de"/>
 <node TEXT="Unmark Modified Files" ID="ID_1621103666" BACKGROUND_COLOR="#bf4cc3"/>
 <node TEXT="Clear File Timestamps in Nodes" ID="ID_1707362672" BACKGROUND_COLOR="#c4c092"/>
+</node>
+</node>
+</node>
+<node TEXT="manejo de clones" ID="ID_1405387639"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      al MDI
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="si nodo es clon, pero link es de fuera del BaseFolder" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1112321110">
+<icon BUILTIN="help"/>
+<node TEXT="si todos los clones descienden de este BaseFolder" FOLDED="true" ID="ID_1453683206">
+<node TEXT="mover" ID="ID_1670172100"/>
+</node>
+<node TEXT="si alguno de los clones están en otros BaseFolder" FOLDED="true" ID="ID_1388877299">
+<node TEXT="link pertenece a alguno de los otros BaseFolders?" FOLDED="true" ID="ID_441036676">
+<node TEXT="si" FOLDED="true" ID="ID_1193874550">
+<node TEXT="revisar si allá está ok" FOLDED="true" ID="ID_114786947">
+<node TEXT="ok" FOLDED="true" ID="ID_1428203203">
+<node TEXT="no hacer nada" ID="ID_1436337955"/>
+</node>
+<node TEXT="No Ok" FOLDED="true" ID="ID_864789468">
+<node TEXT="no mover" ID="ID_1242783137"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      mover cuando se MDI ese BaseFolder
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="no" FOLDED="true" ID="ID_1861247216">
+<node TEXT="mover" ID="ID_221493047"/>
+</node>
+</node>
+</node>
+<node TEXT="hay clones fuera pero ninguno en otro baseFolder" FOLDED="true" ID="ID_167774783">
+<node TEXT="mover" ID="ID_211451922"/>
+</node>
+</node>
+<node TEXT="si hay algunos clones bajo nodos Locked y otros no" STYLE_REF="pendingTask" ID="ID_568199118">
+<icon BUILTIN="help"/>
+</node>
+<node TEXT="combinación de los anteriores???" STYLE_REF="pendingTask" ID="ID_962282018">
+<icon BUILTIN="help"/>
+</node>
+</node>
+</node>
+<node TEXT="Nuevas funcionalidades" FOLDED="true" ID="ID_12900894">
+<node TEXT="marcar nodoFile como  &quot;para copiar&quot;" STYLE_REF="pendingTask" ID="ID_1872791515">
+<node TEXT="para el caso donde link no concuerda con posición en mapa" ID="ID_580562797">
+<node TEXT="caso movedRenamed" ID="ID_1466824866"/>
+</node>
+<node TEXT="crea copia con nuevo nombre a nueva posición" ID="ID_1050239482"/>
+<node TEXT="queda &quot;marcado&quot; como" ID="ID_16848849">
+<node TEXT="o" ID="ID_1608644782">
+<node TEXT="freshNew" ID="ID_811625420"/>
+<node TEXT="newCopy" ID="ID_1542700383"/>
+</node>
+</node>
+</node>
+<node TEXT="agregar comando que MDInarice todos los BaseFolder del mapa" STYLE_REF="pendingTask" ID="ID_1225720693"/>
+<node TEXT="submenú Unmark" STYLE_REF="pendingTask" ID="ID_1274440134">
+<node TEXT="" ID="ID_1152382969">
+<hook NAME="FirstGroupNode"/>
+</node>
+<node TEXT="que agrupe todos los unmark" ID="ID_749627187"/>
+<node TEXT="agregar unmark todo" ID="ID_685657797"/>
+<node TEXT="" ID="ID_675544576">
+<hook NAME="SummaryNode"/>
+<hook NAME="AlwaysUnfoldedNode"/>
+<node TEXT="opciones" ID="ID_91936571">
+<node TEXT="sólo seleccionados" ID="ID_646957449"/>
+<node TEXT="seleccionados y descendientes" ID="ID_364247197"/>
+<node TEXT="todo el base folder y sus descendientes" ID="ID_138515635"/>
 </node>
 </node>
 </node>
@@ -6412,61 +6985,6 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 </node>
-<node TEXT="manejo de clones" FOLDED="true" ID="ID_1405387639"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      al MDI
-    </p>
-  </body>
-</html></richcontent>
-<node TEXT="si nodo es clon, pero link es de fuera del BaseFolder" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1112321110">
-<icon BUILTIN="help"/>
-<node TEXT="si todos los clones descienden de este BaseFolder" FOLDED="true" ID="ID_1453683206">
-<node TEXT="mover" ID="ID_1670172100"/>
-</node>
-<node TEXT="si alguno de los clones están en otros BaseFolder" FOLDED="true" ID="ID_1388877299">
-<node TEXT="link pertenece a alguno de los otros BaseFolders?" FOLDED="true" ID="ID_441036676">
-<node TEXT="si" FOLDED="true" ID="ID_1193874550">
-<node TEXT="revisar si allá está ok" FOLDED="true" ID="ID_114786947">
-<node TEXT="ok" FOLDED="true" ID="ID_1428203203">
-<node TEXT="no hacer nada" ID="ID_1436337955"/>
-</node>
-<node TEXT="No Ok" FOLDED="true" ID="ID_864789468">
-<node TEXT="no mover" ID="ID_1242783137"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      mover cuando se MDI ese BaseFolder
-    </p>
-  </body>
-</html></richcontent>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="no" FOLDED="true" ID="ID_1861247216">
-<node TEXT="mover" ID="ID_221493047"/>
-</node>
-</node>
-</node>
-<node TEXT="hay clones fuera pero ninguno en otro baseFolder" FOLDED="true" ID="ID_167774783">
-<node TEXT="mover" ID="ID_211451922"/>
-</node>
-</node>
-<node TEXT="si hay algunos clones bajo nodos Locked y otros no" STYLE_REF="pendingTask" ID="ID_568199118">
-<icon BUILTIN="help"/>
-</node>
-<node TEXT="combinación de los anteriores???" STYLE_REF="pendingTask" ID="ID_962282018">
-<icon BUILTIN="help"/>
-</node>
-</node>
 <node TEXT="uso de fechaUltimoUpdate" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1408368885"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -6522,89 +7040,21 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 </node>
-<node TEXT="pros" FOLDED="true" ID="ID_589378459">
+<node TEXT="pros" ID="ID_589378459">
 <node TEXT="debería ser mucho más rápida la actualización" ID="ID_866364976"/>
 </node>
-<node TEXT="contras" FOLDED="true" ID="ID_1903245686">
+<node TEXT="contras" ID="ID_1903245686">
 <node TEXT="no revisaría si se eliminaron archivos en el disco de nodos file que no han sido modificados" ID="ID_902233000"/>
 <node TEXT="no movería ni renombraría files" ID="ID_644570136"/>
 </node>
 <node TEXT="sería como un &quot;Quick Import&quot;" ID="ID_943513913"/>
 </node>
-<node TEXT="prueba markdown" STYLE_REF="pendingTask" ID="ID_629687194"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
-    <text>null
-
-# MDI
-
-The import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node:
-
-
-## nameFilter
-
-A filter to perform on the name of traversed files. If set, only files which match are brought.
-
-This option allowes four types of inputs:
-
-
-* nothing
-   * means no filtering (default)|
-* regex
-   * example: `~/.*\.mp3/`
-* &apos;simplified&apos; regex
-   * example: `~.*\.mp3 `
-* string with \*
-   * example: `*.mp3`
-   * equivalent to regex:      `~/(?i).*\.mp3/`
-* list of strings with \* and ; 
-   * example: `*.mp3;*.png`
-   * equivalent to regex:      `~/(?i)(.*\.mp3|.*\.png)/`
-
-
-## maxDepth
-
-The maximum number of directory levels when recursing
-
-(default is -1 which means no limit, set to 0 for no recursion)
-
-
-
-
-## markWhenMoved
-
-change styles to moved/renamed file Nodes
-
-set to|description
----|---
-0 | to change style only if node hasn&apos;t a previous one (default)
-1 | to allways change the style
--1 | to never change the style
-
-
-
-
-## checkIfReallyBroken
-
-Check if existing nodes pointing to filtered files still exist.
-This option is only useful if you defined a nameFilter before
-but in the map there are also some files that doesn&apos;t match
-this filter definition
-
-(for example if you brought them manually or import them
-before the actual namefilter setting)
-
-- default is 0 which means don&apos;t check --&gt; Mark node as missing also if it doesn&apos;t match the current filter,
-- set to 1 to extra check if a not matching file still exists in drive
-
-
----
-  </text>
-</richcontent>
 </node>
 </node>
 <node TEXT="v0.0.1" ID="ID_7917531">
-<node TEXT="a." STYLE_REF="Organizador" FOLDED="true" ID="ID_1300092453">
-<node TEXT="1. breve" STYLE_REF="Organizador" FOLDED="true" ID="ID_1757158879">
-<node TEXT="hacer compatible con Linux" STYLE_REF="completedTask" FOLDED="true" ID="ID_1640404594">
+<node TEXT="a." STYLE_REF="Organizador" ID="ID_1300092453">
+<node TEXT="1. breve" STYLE_REF="Organizador" ID="ID_1757158879">
+<node TEXT="hacer compatible con Linux" STYLE_REF="completedTask" FOLDED="true" ID="ID_1640404594" VGAP_QUANTITY="2 px">
 <node TEXT="agregar file.separator" STYLE_REF="locked" FOLDED="true" ID="ID_68890113">
 <node TEXT="CreateBaseFolderNode.groovy" STYLE_REF="missing" ID="ID_1967464393" LINK="file:/C:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/CreateBaseFolderNode.groovy">
 <attribute NAME="lastAccessTime" VALUE="17-01-22 13:39" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T13:39-0300|dd-MM-yy HH:mm"/>
@@ -6724,7 +7174,7 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 </node>
-<node TEXT="lógica" FOLDED="true" ID="ID_1883105397">
+<node TEXT="lógica" ID="ID_1883105397">
 <node TEXT="sólo si posee Base node en su pathToRoot" STYLE_REF="completedTask" ID="ID_1315579221"/>
 <node TEXT="sólo si no tiene link" STYLE_REF="completedTask" ID="ID_1354867652"/>
 <node TEXT="sólo si tiene nota" STYLE_REF="completedTask" ID="ID_578543257"/>
@@ -6732,7 +7182,7 @@ before the actual namefilter setting)
 <node TEXT="decidí que usuario es el responsable, no el programa" ID="ID_1971368062"/>
 </node>
 </node>
-<node TEXT="debe arreglar texto de nodo para que" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1921939438">
+<node TEXT="debe arreglar texto de nodo para que" STYLE_REF="pendingTask" ID="ID_1921939438">
 <node TEXT="incluya extensión" ID="ID_997462489"/>
 <node TEXT="sea compatible con Sistema Operativo" ID="ID_501252934"/>
 </node>
@@ -6754,7 +7204,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="2. mediano" STYLE_REF="Organizador" FOLDED="true" ID="ID_367107251">
+<node TEXT="2. mediano" STYLE_REF="Organizador" ID="ID_367107251">
 <node TEXT="Map Drive Inator debe escribir los cambios que haga en el disco en el Log de Freeplane" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1673288081">
 <node TEXT="API LogUtils" ID="ID_1389895232" LINK="http://www.freeplane.org/doc/api/index.html?org/freeplane/core/util/LogUtils.html"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -6931,7 +7381,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="3. largo" STYLE_REF="Organizador" FOLDED="true" ID="ID_1437550002">
+<node TEXT="3. largo" STYLE_REF="Organizador" ID="ID_1437550002">
 <node TEXT="cambiar sistema de marcado de nodos/file" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1454764618">
 <node TEXT="marca debe ser atributo" FOLDED="true" ID="ID_1173997015">
 <node TEXT="freshNew" ID="ID_1291949980"/>
@@ -6987,7 +7437,7 @@ before the actual namefilter setting)
 </node>
 </node>
 <node TEXT="b." STYLE_REF="Organizador" ID="ID_742355223">
-<node TEXT="1. breve" STYLE_REF="Organizador" FOLDED="true" ID="ID_4462277">
+<node TEXT="1. breve" STYLE_REF="Organizador" ID="ID_4462277">
 <node TEXT="comando para trabajar con imagen de externalObject" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1297337532" STYLE="bubble">
 <node TEXT="nodo con imagen --&gt; traer link a file" ID="ID_45252433"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -7226,7 +7676,7 @@ before the actual namefilter setting)
 </node>
 <node TEXT="cambiar nombre de FileTimeStamps a FileStamps o FileProperties" STYLE_REF="pendingTask" ID="ID_1459102250" STYLE="bubble"/>
 </node>
-<node TEXT="2. mediano" STYLE_REF="Organizador" FOLDED="true" ID="ID_1576064522">
+<node TEXT="2. mediano" STYLE_REF="Organizador" ID="ID_1576064522">
 <node TEXT="mostrar resultado MDI en mensaje tras aplicarlo" STYLE_REF="completedTask" ID="ID_166914891"/>
 </node>
 <node TEXT="3. largo" STYLE_REF="Organizador" ID="ID_1976981975">
@@ -7484,8 +7934,8 @@ before the actual namefilter setting)
 </node>
 </node>
 <node TEXT="otro" ID="ID_1660443215">
-<node TEXT="c." STYLE_REF="Organizador" FOLDED="true" ID="ID_1121592947">
-<node TEXT="1. breve" STYLE_REF="Organizador" FOLDED="true" ID="ID_909440806">
+<node TEXT="c." STYLE_REF="Organizador" ID="ID_1121592947">
+<node TEXT="1. breve" STYLE_REF="Organizador" ID="ID_909440806">
 <node TEXT="MDI sobre todos los BaseFolders del libro" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1934442049"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -7499,7 +7949,7 @@ before the actual namefilter setting)
 </html></richcontent>
 <node TEXT="apply MDI to all BaseFolderNodes in Map" ID="ID_156016569"/>
 </node>
-<node TEXT="agrupar por primeras palabras de nodos" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1878166666">
+<node TEXT="agrupar por primeras palabras de nodos" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1878166666" VGAP_QUANTITY="2 px">
 <node TEXT="agrupar nodos hermanos por primeras palabras (letras) de texto" FOLDED="true" ID="ID_196915179"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -8368,14 +8818,14 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 <node TEXT="no recuerdo como hice esto, pero podría ser una funcionalidad de acá" STYLE_REF="pendingTask" ID="ID_1802474824" HGAP_QUANTITY="13.25 pt" VSHIFT_QUANTITY="-0.75 pt"/>
-<node TEXT="buscar en pruebas" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1946023991">
+<node TEXT="buscar en pruebas" STYLE_REF="pendingTask" ID="ID_1946023991">
 <node TEXT="acá" ID="ID_1617408256"/>
 <node TEXT="más abajo" ID="ID_718988925"/>
 </node>
 </node>
 </node>
-<node TEXT="2. mediano" STYLE_REF="Organizador" FOLDED="true" ID="ID_1710695786">
-<node TEXT="crear botón para marcar &quot;toBeDeleted&quot; que envíe al archivo a una carpeta &quot;cesta&quot; en la base del proyecto" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1829837337">
+<node TEXT="2. mediano" STYLE_REF="Organizador" ID="ID_1710695786">
+<node TEXT="crear botón para marcar &quot;toBeDeleted&quot; que envíe al archivo a una carpeta &quot;cesta&quot; en la base del proyecto" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1829837337" VGAP_QUANTITY="2 px">
 <node TEXT="debe crear nodo cesta si éste no existe" FOLDED="true" ID="ID_1080657483">
 <node TEXT="nodo cesta debe ser corresponder a un folder en drive?" FOLDED="true" ID="ID_1317431159">
 <node TEXT="tengo la impresión que sí, para evitar confuciones cuando el usuario decide vaciar esa carpeta en el disco duro" ID="ID_435942811"/>
@@ -9029,6 +9479,18 @@ before the actual namefilter setting)
   </body>
 </html>
 </richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Creo que ya lo arreglé. probar.
+    </p>
+  </body>
+</html>
+</richcontent>
 <node TEXT="last lines from log.0 file" ID="ID_1020817298"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -9173,7 +9635,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="3. largo" STYLE_REF="Organizador" FOLDED="true" ID="ID_162699325">
+<node TEXT="3. largo" STYLE_REF="Organizador" ID="ID_162699325">
 <node TEXT="nodos no clones con igual link --&gt; ¿crea copia archivo?" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1364746044">
 <node TEXT="actualmente" STYLE_REF="Iniciativa" FOLDED="true" ID="ID_1166347955">
 <node TEXT="simplemente lo mueve de ida y vuelta" ID="ID_1623044097"/>
@@ -9224,7 +9686,7 @@ before the actual namefilter setting)
 </node>
 <node TEXT="d." STYLE_REF="Organizador" ID="ID_1159149861">
 <node TEXT="1. breve" STYLE_REF="Organizador" ID="ID_678571369"/>
-<node TEXT="2. mediano" STYLE_REF="Organizador" FOLDED="true" ID="ID_1700004273">
+<node TEXT="2. mediano" STYLE_REF="Organizador" ID="ID_1700004273">
 <node TEXT="prueba seleccionar donde debe ir nodo nuevo" STYLE_REF="pendingTask" FOLDED="true" ID="ID_256786237">
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#990000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_565866031" STARTINCLINATION="333.74999 pt;0 pt;" ENDINCLINATION="333.74999 pt;0 pt;" STARTARROW="DEFAULT" ENDARROW="NONE"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -9345,7 +9807,7 @@ before the actual namefilter setting)
 <node TEXT="si anterior funciona, se puede colocar un listener para cambios en los nodos files" STYLE_REF="pendingTask" ID="ID_893492309">
 <node TEXT="listener en nodos (lado freeplane)" ID="ID_1459742431">
 <node TEXT="revisar este script" STYLE_REF="locked" ID="ID_30690468">
-<node TEXT="BookmarksMonitorIcons.groovy" STYLE_REF="missing" ID="ID_713890203" LINK="file:/C:/PortableApps/FreeplanePortable/Data/Freeplane/1.8.x/scripts/init/BookmarksMonitorIcons.groovy">
+<node TEXT="BookmarksMonitorIcons.groovy" ID="ID_713890203" LINK="file:/C:/PortableApps/FreeplanePortable/Data/Freeplane/1.8.x/scripts/init/BookmarksMonitorIcons.groovy">
 <attribute NAME="lastModifiedTime" VALUE="19-12-20 23:02" OBJECT="org.freeplane.features.format.FormattedDate|2020-12-19T23:02-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="19-12-20 23:02" OBJECT="org.freeplane.features.format.FormattedDate|2020-12-19T23:02-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="19-12-20 23:02" OBJECT="org.freeplane.features.format.FormattedDate|2020-12-19T23:02-0300|dd-MM-yy HH:mm"/>
@@ -10047,10 +10509,141 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="listener en directorios y files (lado Drive)" FOLDED="true" ID="ID_244086947">
-<node TEXT="https://www.baeldung.com/java-nio2-watchservice" ID="ID_510882689" LINK="https://www.baeldung.com/java-nio2-watchservice"/>
+<node TEXT="listener en directorios y files (lado Drive)" ID="ID_244086947">
+<node TEXT="https://dzone.com/articles/listening-to-fileevents-with-java-nio" ID="ID_354137306" LINK="https://dzone.com/articles/listening-to-fileevents-with-java-nio">
+<icon BUILTIN="forward"/>
+<icon BUILTIN="messagebox_warning"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ejemplo bien hecho
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="https://www.baeldung.com/java-nio2-watchservice" ID="ID_510882689" LINK="https://www.baeldung.com/java-nio2-watchservice"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ejemplo sencillo
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="Ejemplo de A Guide to WatchService in Java NIO2" ID="ID_1498195946"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import java.nio.file.*
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // ojo: a continuación es JAVA. eventualmente puede simplificarse haciéndolo más groovy
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      WatchService watchService = FileSystems.getDefault().newWatchService();
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Path path = Paths.get(/C:\Users\eduardo.frohlich\Downloads/);
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      path.register(
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;watchService,
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;StandardWatchEventKinds.ENTRY_CREATE,
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;StandardWatchEventKinds.ENTRY_DELETE,
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;StandardWatchEventKinds.ENTRY_MODIFY
+    </p>
+    <p>
+      );
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println 'comenzó'
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      WatchKey key;
+    </p>
+    <p>
+      while ((key = watchService.take()) != null) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;def eventos = key.pollEvents()
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;if(eventos.size()&gt;0) {println '-&gt;'}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;for (WatchEvent&lt;?&gt; event : eventos) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(&quot;Event kind:&quot; + event.kind() + &quot;. File affected: &quot; + event.context() );
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//return event.context().toFile()
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;key.reset();
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 <node TEXT="https://docs.oracle.com/javase/tutorial/essential/io/notification.html" ID="ID_410847179" LINK="https://docs.oracle.com/javase/tutorial/essential/io/notification.html"/>
-<node TEXT="https://dzone.com/articles/listening-to-fileevents-with-java-nio" ID="ID_354137306" LINK="https://dzone.com/articles/listening-to-fileevents-with-java-nio"/>
+</node>
 </node>
 </node>
 </node>
@@ -10342,7 +10935,8 @@ before the actual namefilter setting)
       }
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node TEXT="prueba deleteNodesWithLinkToOther.groovy" ID="ID_905032081"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -12238,9 +12832,89 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-</node>
-</node>
 <node TEXT="=MDI.class" ID="ID_1171020170"/>
+</node>
+<node TEXT="Tasks Sums" ID="ID_682999592">
+<icon BUILTIN="emoji-0023-20E3"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =
+    </p>
+    <p>
+      def nodo = node.parent
+    </p>
+    <p>
+      (node['tasksStyles']?:'nextTask,pendingTask').split(',').collect{st -&gt; &quot;${nodo.find{it.style.name == st &amp;&amp; !it.pathToRoot.any{it.style.name=='tasksBucket'}}.size()}&nbsp;&nbsp;${st}(s)&quot;}.join('\n')
+    </p>
+  </body>
+</html>
+</richcontent>
+<attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask,discardedTask,completedTask"/>
+<attribute NAME="WIP filter" VALUE="false"/>
+</node>
+<node TEXT="tasksBucket" STYLE_REF="tasksBucket" ID="ID_515510075"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =
+    </p>
+    <p>
+      (node['tasksStyles']?:'pendingTask,nextTask').split(',').collect{st -&gt; &quot;${node.find{it.style.name == st}.size()}&nbsp;&nbsp;${st}(s)&quot;}.join('\n')
+    </p>
+  </body>
+</html>
+</richcontent>
+<attribute_layout NAME_WIDTH="80.25 pt" VALUE_WIDTH="284.99999 pt"/>
+<attribute NAME="tasksStyles" VALUE="nextTask"/>
+<attribute NAME="WIP filter" VALUE="false"/>
+<attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
+</node>
+<node TEXT="tasksBucket" STYLE_REF="tasksBucket" ID="ID_1218313823"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =
+    </p>
+    <p>
+      (node['tasksStyles']?:'pendingTask,nextTask').split(',').collect{st -&gt; &quot;${node.find{it.style.name == st}.size()}&nbsp;&nbsp;${st}(s)&quot;}.join('\n')
+    </p>
+  </body>
+</html>
+</richcontent>
+<attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask,discardedTask,completedTask"/>
+<attribute NAME="WIP filter" VALUE="true"/>
+<attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
+</node>
+<node TEXT="tasksBucket" STYLE_REF="tasksBucket" ID="ID_1906111223"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =
+    </p>
+    <p>
+      (node['tasksStyles']?:'pendingTask,nextTask').split(',').collect{st -&gt; &quot;${node.find{it.style.name == st}.size()}&nbsp;&nbsp;${st}(s)&quot;}.join('\n')
+    </p>
+  </body>
+</html>
+</richcontent>
+<attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask"/>
+<attribute NAME="WIP filter" VALUE="false"/>
+<attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
+</node>
 </node>
 </node>
 </map>

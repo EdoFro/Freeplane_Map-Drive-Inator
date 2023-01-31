@@ -259,7 +259,7 @@ class MDI{
     }
 
     def static nodeIsFolder(n){
-        return n.hasStyle(styleFolder) || n.link?.file?.directory
+        return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
     }
 
     def static isLinkToFile(n){
@@ -281,7 +281,7 @@ class MDI{
     }
     
     def static getPathFromLink3(n,lastChar =''){
-        return (n.link.file?n.link.file.path + lastChar:null)
+        return (n.link.file?n.link.file.canonicalPath + lastChar:null)
     }
 
     //function, returns string, builds the new path string by looking at the position of the node in the mindmap

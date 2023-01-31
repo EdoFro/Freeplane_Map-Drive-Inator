@@ -3,6 +3,7 @@
 ## v0.0.6
 
 * MapDriveInator: nodes with style file_folder, loose this style after the folder is created in drive and they get the link to it
+* Bug: ["Allow nodes to have links"](https://github.com/EdoFro/Freeplane_Map-Drive-Inator/issues/15) solved
 
 ## v0.0.5
 

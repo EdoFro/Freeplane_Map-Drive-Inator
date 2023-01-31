@@ -1,7 +1,7 @@
 <map version="freeplane 1.11.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
-<node TEXT="MapDriveInator project.mm" FOLDED="false" ID="ID_113708126" LINK="file:/E:/Respaldo%20EF/ef/Documentos%20con%20macros/08%20Freemind%20Groovy/scripts/ScriptsEnComputadorYDesarrollosEdo%20v1.9.mm"><hook NAME="MapStyle" background="#f9f9f8">
+<node TEXT="MapDriveInator project.mm" FOLDED="false" ID="ID_113708126" LINK="file:/E:/Respaldo%20EF/ef/Documentos%20con%20macros/08%20Freemind%20Groovy/scripts/ScriptsEnComputadorYDesarrollosEdo%20v1.9.mm"><hook NAME="MapStyle" background="#f9f9f8" zoom="0.9">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="file" LAST="false">
             <script_condition>
@@ -406,6 +406,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
   </body>
 </html></richcontent>
+<node TEXT="https://github.com/EdoFro/Freeplane_Map-Drive-Inator" ID="ID_1994582973" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator"/>
 <node TEXT="possible paths" STYLE_REF="locked" ID="ID_399374123"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -592,7 +593,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
-<node TEXT="lib" STYLE_REF="Organizador" FOLDED="true" ID="ID_1299482089">
+<node TEXT="lib" STYLE_REF="Organizador" ID="ID_1299482089">
 <node TEXT="src" ID="ID_598707755" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
@@ -1016,7 +1017,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_663250348"/>
 </node>
 </node>
-<node TEXT="MapDriveInator" STYLE_REF="file_folder" FOLDED="true" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
+<node TEXT="MapDriveInator" STYLE_REF="file_folder" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
 <attribute NAME="script1" VALUE="def nodo = node&#xd;&#xa;def texto = nodo.text&#xd;&#xa;&#xd;&#xa;def nodos = nodo.find{it.text.contains(texto)}&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;def cambiarA = ui.showInputDialog(&#xd;&#xa;        nodo.delegate, &#xd;&#xa;        &apos;input new AddOn name (it will CamelCase it and delete spaces)&apos;, &#xd;&#xa;        &apos; my new add on example   &apos;&#xd;&#xa;    )?.trim()&#xd;&#xa;&#xd;&#xa;cambiarA = cambiarA.split(&apos; &apos;)*.capitalize().join()&#xd;&#xa;&#xd;&#xa;nodos.each{n -&gt;&#xd;&#xa;    n.text = n.text.replace(texto,cambiarA)&#xd;&#xa;}"/>
 <attribute NAME="lastModifiedTime" VALUE="18-01-23 11:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:16-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="18-01-23 14:09" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:09-0300|dd-MM-yy HH:mm"/>
@@ -1253,124 +1254,6 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 </node>
-<node TEXT="getAbsoluteUri example" ID="ID_619435497"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      def uri = node.link.uri
-    </p>
-    <p>
-      def map = node.mindMap
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      def absoluteUri = getAbsoluteUri(map,uri)
-    </p>
-    <p>
-      println absoluteUri
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      absoluteUri
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      //-----------------------methods------------------------
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      def getAbsoluteUri(final map, URI uri) throws MalformedURLException {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;if (uri == null&nbsp;&nbsp;|| uri.isAbsolute()) {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return uri;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;}
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;final String path = uri.getPath();
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;println path
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;try {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL context = map.file.toURL();
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println context
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println context.class
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(context == null)
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL url = new URL(context, path != null &amp;&amp; path.isEmpty() ? &quot;.&quot; : path);
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println url
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new URI(url.getProtocol(), url.getHost(), url.getPath(), uri.getQuery(), uri.getFragment());
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;}
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;catch (final URISyntaxException e) {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LogUtils.severe(e);
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;}
-    </p>
-    <p>
-      }
-    </p>
-  </body>
-</html></richcontent>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      .groovy
-    </p>
-  </body>
-</html></richcontent>
 <node TEXT="to test obtainBaseFolder" ID="ID_943148"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -1417,25 +1300,46 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//return n.pathToRoot.find{it.link?.file?.directory &amp;&amp; it.hasStyle(styleFolder) &amp;&amp; it.hasStyle(styleBaseFolder)}
     </p>
     <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def i = 1
+    </p>
+    <p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def nBase
     </p>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= n.pathToRoot.find{it.link?.file?.directory &amp;&amp; it.hasStyle(styleFolder) &amp;&amp; it.hasStyle(styleBaseFolder)}
     </p>
     <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println &quot;${i++}&nbsp;&nbsp;&nbsp;$nBase&quot;
+    </p>
+    <p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= n.pathToRoot.find{it.link?.file?.directory &amp;&amp; it.hasStyle(styleBaseFolder)}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println &quot;${i++}&nbsp;&nbsp;&nbsp;$nBase&quot;
     </p>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= (n.link?.file?.directory &amp;&amp; n.hasStyle(styleFolder))? n : null
     </p>
     <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println &quot;${i++}&nbsp;&nbsp;&nbsp;$nBase&quot;
+    </p>
+    <p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= n.pathToRoot.find{it.link?.file?.directory &amp;&amp; it.hasStyle(styleFolder)}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println &quot;${i++}&nbsp;&nbsp;&nbsp;$nBase&quot;
     </p>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= (n.link?.file?.directory)? n : null
     </p>
     <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println &quot;${i++}&nbsp;&nbsp;&nbsp;$nBase&quot;
+    </p>
+    <p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nBase&nbsp;&nbsp;?= n.pathToRoot.find{it.link?.file?.directory}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println &quot;${i++}&nbsp;&nbsp;&nbsp;$nBase&quot;
     </p>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return nBase
@@ -1444,7 +1348,8 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;&nbsp;&nbsp;}
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -1456,6 +1361,812 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
   </body>
 </html></richcontent>
+</node>
+<node TEXT="Absolute/Relative" ID="ID_1550780349">
+<node TEXT="getAbsoluteUri example" ID="ID_619435497"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def nombre = &quot;Absolute 02&quot;
+    </p>
+    <p>
+      def nEliminar = node.find{it.text == nombre}
+    </p>
+    <p>
+      nEliminar.reverse().each{it.delete()}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //return
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def nodos = node.children
+    </p>
+    <p>
+      def map = node.mindMap
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      nodos.each{n-&gt;
+    </p>
+    <p>
+      //def n = node
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;def uri = n.link.uri
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;def absoluteUri = getAbsoluteUri(map,uri)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;println &quot;absoluteUri = $absoluteUri&quot;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.createChild(nombre).link.uri = absoluteUri
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;println &quot;&quot;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //absoluteUri
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //-----------------------methods------------------------
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def getAbsoluteUri(final org.freeplane.api.MindMap map, URI uri) throws MalformedURLException {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;if (uri == null&nbsp;&nbsp;|| uri.isAbsolute()) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return uri
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;try {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URI context = map.file.toURI()
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return context?.resolve(uri)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;catch (final URISyntaxException e) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LogUtils.severe(e)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="https://github.com/freeplane/freeplane/blob/c92931ec2bf316c9184f11daed1cd0199bcad062/freeplane/src/main/java/org/freeplane/features/url/UrlManager.java#L97" ID="ID_1857836056" LINK="https://github.com/freeplane/freeplane/blob/c92931ec2bf316c9184f11daed1cd0199bcad062/freeplane/src/main/java/org/freeplane/features/url/UrlManager.java#L97"/>
+</node>
+<node TEXT="createRelativeUri example" ID="ID_1425337425"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def nombre = &quot;Relative 01&quot;
+    </p>
+    <p>
+      def nEliminar = node.find{it.text == nombre}
+    </p>
+    <p>
+      nEliminar.reverse().each{it.delete()}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //return
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def nodos = node.children
+    </p>
+    <p>
+      def map = node.mindMap
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      nodos.each{n-&gt;
+    </p>
+    <p>
+      //def n = node
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;def uri = n.link.uri
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;println uri
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;def relativeUri = createRelativeURI(map, uri)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;println &quot;relativeUri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= $relativeUri&quot;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;n.createChild(nombre).link.uri = relativeUri
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;println &quot;&quot;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //-----------------------methods------------------------
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final int LINK_ABSOLUTE = 0;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final int LINK_RELATIVE_TO_MINDMAP = 1
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public URI createRelativeURI(final org.freeplane.api.MindMap mindMap, final File target) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final URI fileUri = target.getAbsoluteFile().toURI();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return createRelativeURI(mindMap, fileUri)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public URI createRelativeURI(final org.freeplane.api.MindMap mindMap, final URI targetUri) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (targetUri.scheme in ['menuitem','https','http'])
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return targetUri
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (targetUri.isAbsolute() &amp;&amp; targetUri.scheme == 'file'){
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def targetDrive = targetUri.path.takeBefore(':').takeAfter('/')
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def mindMapDrive= mindMap.File.path.takeBefore(':')
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (targetDrive != mindMapDrive) return targetUri
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return createRelativeURI(mindMap.file, targetUri)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public URI createRelativeURI(final org.freeplane.api.MindMap mindMap, Object o) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!o) return null&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      // source code obtained from: Github: freeplane/freeplane/src/main/java/org/freeplane/features/link/LinkController.java
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public URI createRelativeURI(final File mapFile, final File target, final int linkType = LINK_RELATIVE_TO_MINDMAP) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (linkType == LINK_ABSOLUTE) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final URI fileUri = target.getAbsoluteFile().toURI();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return createRelativeURI(mapFile, fileUri);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public URI createRelativeURI(final File mapFile, final URI targetUri) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (mapFile != null) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URI mapUri = mapFile.getAbsoluteFile().toURI();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return createRelativeURI(mapUri, targetUri);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return targetUri;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public URI createRelativeURI(URI mapUri, final URI targetUri){
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boolean isUNCinput = targetUri.getPath().startsWith(&quot;//&quot;);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boolean isUNCmap = mapUri.getPath().startsWith(&quot;//&quot;);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if((isUNCinput != isUNCmap)) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return targetUri;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final String filePathAsString = targetUri.getRawPath();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final String mapPathAsString = mapUri.getRawPath();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int differencePos;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final int lastIndexOfSeparatorInMapPath = mapPathAsString.lastIndexOf(&quot;/&quot;);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final int lastIndexOfSeparatorInFilePath = filePathAsString.lastIndexOf(&quot;/&quot;);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int lastCommonSeparatorPos = -1;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (differencePos = 0; differencePos &lt;= lastIndexOfSeparatorInMapPath
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp; differencePos &lt;= lastIndexOfSeparatorInFilePath
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp; filePathAsString.charAt(differencePos) == mapPathAsString.charAt(differencePos); differencePos++) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (filePathAsString.charAt(differencePos) == '/') {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lastCommonSeparatorPos = differencePos;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (lastCommonSeparatorPos &lt; 0) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return targetUri;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final StringBuilder relativePath = new StringBuilder();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = lastCommonSeparatorPos + 1; i &lt;= lastIndexOfSeparatorInMapPath; i++) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (mapPathAsString.charAt(i) == '/') {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relativePath.append(&quot;../&quot;);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relativePath.append(filePathAsString.substring(lastCommonSeparatorPos + 1));
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final String rawFragment = targetUri.getRawFragment();
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(rawFragment != null)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relativePath.append(&quot;#&quot; + rawFragment);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(relativePath.length() == 0)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relativePath.append(&quot;.&quot;);
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new URI(relativePath.toString());
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch (final URISyntaxException e) {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="https://github.com/freeplane/freeplane/blob/0a628efb0e620d939a4da181cf2999e7abe95cf9/freeplane/src/main/java/org/freeplane/features/link/LinkController.java#L697" ID="ID_486413452" LINK="https://github.com/freeplane/freeplane/blob/0a628efb0e620d939a4da181cf2999e7abe95cf9/freeplane/src/main/java/org/freeplane/features/link/LinkController.java#L697"/>
+<node TEXT="xxx" ID="ID_403612325"/>
+</node>
+<node TEXT="another way to create relative Uri example" ID="ID_1347605700"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import java.nio.file.Path;
+    </p>
+    <p>
+      import java.nio.file.Paths;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def uri = node.link.uri
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def f = node.mindMap.file.parent
+    </p>
+    <p>
+      def p1 = Paths.get(f)
+    </p>
+    <p>
+      def g = node.link.file.path
+    </p>
+    <p>
+      def p2 = Paths.get(g)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def p3 = p1.relativize(p2)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      assert p3.toString().replace('\\','/').replace(' ','%20') == node.parent.link.text
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="probar con este nodo" ID="ID_1030172247" LINK="ignoredByGitHub/New%20Mindmap.mm#ID_1353457907"/>
+</node>
+</node>
+<node TEXT="reparando issue locallink" ID="ID_1925700092">
+<node TEXT="prueba A" ID="ID_233077207"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      final String styleFolder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 'file_folder'
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def n = node
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println n.link.text
+    </p>
+    <p>
+      println n.link.uri
+    </p>
+    <p>
+      println n.link.file?.path
+    </p>
+    <p>
+      println n.link.file?.canonicalPath
+    </p>
+    <p>
+      println ''
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println MDI.nodeIsFolder(n)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println n.hasStyle(styleFolder)
+    </p>
+    <p>
+      println n.link?.file?.directory
+    </p>
+    <p>
+      println n.link?.node == null
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println 'is folder:&nbsp;&nbsp;' + (n.hasStyle(styleFolder) || (n.link?.file?.directory &amp;&amp; n.link?.node == null))
+    </p>
+    <p>
+      println ''
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println MDI.isLinkToFile(n)
+    </p>
+    <p>
+      println&nbsp;&nbsp;(n.link.file &amp;&amp; n.link.uri.scheme =='file')
+    </p>
+    <p>
+      println&nbsp;&nbsp;'is file:&nbsp;&nbsp;' + (MDI.isLinkToFile(n) &amp;&amp; !(n.hasStyle(styleFolder) || (n.link?.file?.directory &amp;&amp; n.link?.node == null)))
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      c.select(n.next)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      n.link
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="prueba B" ID="ID_1145953636"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      baseFolderNode = MDI.obtainBaseFolder(node)
+    </p>
+    <p>
+      baseFolderPath = MDI.getPathFromLink(baseFolderNode)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;xSingles = []
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;xClones = []
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;xFolders =[]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;armaListadoRutas(baseFolderNode,baseFolderPath)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //return xSingles
+    </p>
+    <p>
+      return xFolders
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //----method
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //region: ---------------------- Armando Listados xFiles
+    </p>
+    <p>
+      def armaListadoRutas(nodo, String path){
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;nodo.children.findAll{!MDI.isLocked(it)}.each{
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//es file?--&gt; agregar a listado
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(MDI.isLinkToFile(it) &amp;&amp; !MDI.nodeIsFolder(it)){
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MDI.markAsMoved(it,false)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(it.countNodesSharingContent &gt; 0){
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xClones &lt;&lt; new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text))
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xSingles &lt;&lt; new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text))
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(MDI.nodeIsFolder(it)){
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MDI.markAsMoved(it,false)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def pathF = MDI.getFolderpathFromStrings(path,it)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xFolders &lt;&lt; new xFile(it.id, MDI.getPathFromLink3(it,File.separator), pathF) //TODO: linux
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(it.children.size()&gt;0){
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;armaListadoRutas(it, pathF)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(it.children.size()&gt;0){
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;armaListadoRutas(it, path)
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      //end:
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 </node>
@@ -1489,7 +2200,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
 </node>
-<node TEXT="lib" STYLE_REF="file_folder" ID="ID_930264566" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/lib/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="lib" STYLE_REF="file_folder" FOLDED="true" ID="ID_930264566" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/lib/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -1515,7 +2226,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 </node>
-<node TEXT="scripts" STYLE_REF="file_folder" ID="ID_1180592192" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="scripts" STYLE_REF="file_folder" FOLDED="true" ID="ID_1180592192" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -1715,7 +2426,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="610" OBJECT="org.freeplane.features.format.FormattedNumber|610|#,##0"/>
 </node>
-<node TEXT="MapDriveInator.groovy" FOLDED="true" ID="ID_696665609" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/MapDriveInator.groovy">
+<node TEXT="MapDriveInator.groovy" ID="ID_696665609" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/MapDriveInator.groovy">
 <attribute NAME="lastAccessTime" VALUE="18-01-23 14:06" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:06-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="18-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
@@ -3246,7 +3957,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="3.516" OBJECT="org.freeplane.features.format.FormattedNumber|3516|#,##0"/>
 </node>
-<node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_1941023859"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="generados automáticamente" STYLE_REF="Organizador" FOLDED="true" ID="ID_1941023859"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -3261,17 +3972,17 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_423253710"/>
-<node TEXT="MapDriveInator.mm.bak" ID="ID_703686871" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator.mm.bak">
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 14:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:04-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="18-01-23 14:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:04-0300|datetime"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:39-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="43.016" OBJECT="org.freeplane.features.format.FormattedNumber|43016|#,##0"/>
+<node TEXT="MapDriveInator-v0.0.6.addon.mm" ID="ID_64331" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.6.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="174.629" OBJECT="org.freeplane.features.format.FormattedNumber|174629|#,##0"/>
 </node>
-<node TEXT="MapDriveInator-v0.0.3.addon.mm" ID="ID_1473875230" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.3.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 16:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:20-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 16:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:20-0300|datetime"/>
-<attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="164.384" OBJECT="org.freeplane.features.format.FormattedNumber|164384|#,##0"/>
+<node TEXT="MapDriveInator-v0.0.5.addon.mm" ID="ID_1762691123" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.5.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="18-01-23 14:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:05-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="18-01-23 15:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:32-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="18-01-23 11:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:16-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="174.229" OBJECT="org.freeplane.features.format.FormattedNumber|174229|#,##0"/>
 </node>
 <node TEXT="MapDriveInator-v0.0.4.addon.mm" ID="ID_333399137" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.4.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 19:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T19:54-0300|datetime"/>
@@ -3279,26 +3990,31 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="creationTime" VALUE="17-01-23 16:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:21-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="168.952" OBJECT="org.freeplane.features.format.FormattedNumber|168952|#,##0"/>
 </node>
-<node TEXT="MapDriveInator-v0.0.5.addon.mm" ID="ID_1762691123" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.5.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 14:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:05-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="18-01-23 14:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:05-0300|datetime"/>
-<attribute NAME="creationTime" VALUE="18-01-23 11:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:16-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="174.229" OBJECT="org.freeplane.features.format.FormattedNumber|174229|#,##0"/>
+<node TEXT="MapDriveInator-v0.0.3.addon.mm" ID="ID_1473875230" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.3.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="17-01-23 16:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:20-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 16:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:20-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="164.384" OBJECT="org.freeplane.features.format.FormattedNumber|164384|#,##0"/>
+</node>
+<node TEXT="MapDriveInator.mm.bak" ID="ID_703686871" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator.mm.bak">
+<attribute NAME="lastModifiedTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="17-01-23 12:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:39-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="43.247" OBJECT="org.freeplane.features.format.FormattedNumber|43247|#,##0"/>
 </node>
 <node TEXT="history.md" ID="ID_1399596341" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/history.md">
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 14:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:05-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="18-01-23 14:06" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:06-0300|datetime"/>
+<attribute NAME="lastModifiedTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="18-01-23 19:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T19:20-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="469" OBJECT="org.freeplane.features.format.FormattedNumber|469|#,##0"/>
+<attribute NAME="fileSize" VALUE="611" OBJECT="org.freeplane.features.format.FormattedNumber|611|#,##0"/>
 </node>
 <node TEXT="version.properties" ID="ID_631139260" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/version.properties">
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 14:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:05-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="18-01-23 14:06" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T14:06-0300|datetime"/>
+<attribute NAME="lastModifiedTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="18-01-23 16:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T16:54-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="266" OBJECT="org.freeplane.features.format.FormattedNumber|266|#,##0"/>
 </node>
 </node>
-<node TEXT="MapDriveInator-v0.0.6.addon.mm" STYLE_REF="freshNew" ID="ID_64331" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.6.addon.mm"/>
 </node>
 <node TEXT="delete" ID="ID_780335546" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3315,102 +4031,8 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:12-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
-<node TEXT="MapDriveInator.jar" ID="ID_1216741150" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/MapDriveInator.jar">
-<attribute NAME="lastModifiedTime" VALUE="15-01-22 01:19" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-15T01:19-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:53-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="9.051" OBJECT="org.freeplane.features.format.FormattedNumber|9051|#,##0"/>
 </node>
-<node TEXT="MDIv2.groovy" ID="ID_862730778" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/MDIv2.groovy">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="5.023" OBJECT="org.freeplane.features.format.FormattedNumber|5023|#,##0"/>
-</node>
-<node TEXT="Sync.groovy" ID="ID_1658667853" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/Sync.groovy">
-<attribute NAME="lastModifiedTime" VALUE="14-01-22 20:09" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-14T20:09-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="691" OBJECT="org.freeplane.features.format.FormattedNumber|691|#,##0"/>
-</node>
-<node TEXT="CreateBaseFolderNode.groovy" ID="ID_518040309" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/CreateBaseFolderNode.groovy"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      // @ExecutionModes({ON_SINGLE_NODE=&quot;/main_menu/ScriptsEdo/MapDriveInator&quot;})
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      import MDI
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      baseFolderNode = MDI.obtainBaseFolder(node)
-    </p>
-    <p>
-      if(baseFolderNode){
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;c.select(baseFolderNode)
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baseFolderNode.style.name = 'baseFolder'
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def nameFilt = MDI.getFilter(baseFolderNode)
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def maxD = MDI.getMaxDepth(baseFolderNode)
-    </p>
-    <p>
-      }else{
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ui.informationMessage(&quot;couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)&quot;)
-    </p>
-    <p>
-      }
-    </p>
-  </body>
-</html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="346" OBJECT="org.freeplane.features.format.FormattedNumber|346|#,##0"/>
-</node>
-<node TEXT="MapDriveInator-v0.0.2.addon.mm" ID="ID_1338490097" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/MapDriveInator-v0.0.2.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="17-01-22 22:33" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T22:33-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:54-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="37.509" OBJECT="org.freeplane.features.format.FormattedNumber|37509|#,##0"/>
-</node>
-<node TEXT="MapDriveInator.mm.bak" ID="ID_119328901" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/MapDriveInator.mm.bak">
-<attribute NAME="lastModifiedTime" VALUE="17-01-22 22:33" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T22:33-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:54-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="22.950" OBJECT="org.freeplane.features.format.FormattedNumber|22950|#,##0"/>
-</node>
-<node TEXT="version.properties" ID="ID_1983259881" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/version.properties">
-<attribute NAME="lastModifiedTime" VALUE="17-01-22 22:33" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T22:33-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="164" OBJECT="org.freeplane.features.format.FormattedNumber|164|#,##0"/>
-</node>
-<node TEXT="README-MapDriveInator-MDH.mm" ID="ID_1813927967" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/README-MapDriveInator-MDH.mm">
-<attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="36.189" OBJECT="org.freeplane.features.format.FormattedNumber|36189|#,##0"/>
-</node>
-</node>
-<node TEXT="resources" STYLE_REF="file_folder" ID="ID_1697408639" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/">
+<node TEXT="resources" STYLE_REF="file_folder" FOLDED="true" ID="ID_1697408639" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/">
 <attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
@@ -3759,7 +4381,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.073" OBJECT="org.freeplane.features.format.FormattedNumber|1073|#,##0"/>
 </node>
-<node TEXT="README.md" ID="ID_1216315313" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
+<node TEXT="README.md" FOLDED="true" ID="ID_1216315313" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
 <attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="06-01-22 16:54" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T16:54-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
@@ -4032,8 +4654,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       deletes the timestamps attributes in the nodes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="README_2.md" ID="ID_1638680456" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README_2.md">
 <attribute NAME="headersToUnderline" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
 <attribute NAME="hideFolded" VALUE="false"/>
@@ -4296,7 +4917,7 @@ deletes the timestamps attributes in the nodes</text>
   </head>
   <body>
     <p>
-      Inated:&nbsp;&nbsp;&nbsp;2023-01-23&nbsp;&nbsp;12:16:47
+      Inated:&nbsp;&nbsp;&nbsp;2023-01-31&nbsp;&nbsp;17:49:59
     </p>
     <p>
       
@@ -4305,7 +4926,7 @@ deletes the timestamps attributes in the nodes</text>
       ------- Files: --------&nbsp;
     </p>
     <p>
-      &nbsp;0 node(s) pointing to unexisting/filtered files (marked as 'broken')
+      &nbsp;1 node(s) pointing to unexisting/filtered files (marked as 'broken')
     </p>
     <p>
       &nbsp;0 link(s) corrected in nodes
@@ -4332,7 +4953,7 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      0.3 seconds
+      0.2 seconds
     </p>
     <p>
       
@@ -4350,13 +4971,13 @@ deletes the timestamps attributes in the nodes</text>
       (elapsed time in miliseconds)
     </p>
     <p>
-      -33
+      -35
     </p>
     <p>
-      -40
+      -41
     </p>
     <p>
-      -40
+      -42
     </p>
     <p>
       
@@ -4365,7 +4986,7 @@ deletes the timestamps attributes in the nodes</text>
       arma Listado de Rutas nodos
     </p>
     <p>
-      -185
+      -162
     </p>
     <p>
       
@@ -4374,7 +4995,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xSingles
     </p>
     <p>
-      -185
+      -162
     </p>
     <p>
       
@@ -4383,7 +5004,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xClones
     </p>
     <p>
-      -185
+      -162
     </p>
     <p>
       
@@ -4392,7 +5013,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en drive
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
       
@@ -4401,7 +5022,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
       
@@ -4410,10 +5031,10 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones pendientes
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
       
@@ -4422,7 +5043,7 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones inconsistentes
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
       
@@ -4431,7 +5052,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xInconsistentes
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
       
@@ -4440,13 +5061,13 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xClonesInconsistentes
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
-      -307
+      -274
     </p>
     <p>
       
@@ -4455,7 +5076,7 @@ deletes the timestamps attributes in the nodes</text>
       &nbsp;aplicando acciones FILES
     </p>
     <p>
-      -310
+      -279
     </p>
     <p>
       
@@ -4464,7 +5085,7 @@ deletes the timestamps attributes in the nodes</text>
       ACTUALIZANDO FOLDERS
     </p>
     <p>
-      -312
+      -284
     </p>
     <p>
       
@@ -4569,16 +5190,19 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.4.addon.mm
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\history.md
@@ -4587,31 +5211,7 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\prueba
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
@@ -4809,16 +5409,19 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.4.addon.mm
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\history.md
@@ -4827,31 +5430,7 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\prueba
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
@@ -5052,16 +5631,19 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.4.addon.mm
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\history.md
@@ -5070,31 +5652,7 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\prueba
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
@@ -5328,30 +5886,6 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\version.properties
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\version.properties
-    </p>
-    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\MDI To Addon.nppSession
     </p>
     <p>
@@ -5559,30 +6093,6 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\version.properties
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\README-MapDriveInator-MDH.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\version.properties
-    </p>
-    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\MDI To Addon.nppSession
     </p>
     <p>
@@ -5721,6 +6231,9 @@ deletes the timestamps attributes in the nodes</text>
       nodosSinFileA:&nbsp;
     </p>
     <p>
+      ID_1618558152&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\prueba
+    </p>
+    <p>
       
     </p>
     <p>
@@ -5809,6 +6322,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       nodosSinFile:&nbsp;
+    </p>
+    <p>
+      ID_1618558152&nbsp;&nbsp;&nbsp;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\prueba
     </p>
     <p>
       
@@ -6343,7 +6859,7 @@ deletes the timestamps attributes in the nodes</text>
 </html></richcontent>
 </node>
 </node>
-<node TEXT="próximos pasos:" STYLE_REF="Organizador" ID="ID_599288701" STYLE="bubble">
+<node TEXT="próximos pasos:" STYLE_REF="Organizador" FOLDED="true" ID="ID_599288701" STYLE="bubble">
 <node TEXT="ideas / tareas:" ID="ID_1281597789"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -6367,8 +6883,7 @@ deletes the timestamps attributes in the nodes</text>
       pasar a formato markdown
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="prueba markdown" ID="ID_629687194"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
     <text>null
 
@@ -9489,8 +10004,7 @@ before the actual namefilter setting)
       Creo que ya lo arreglé. probar.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="last lines from log.0 file" ID="ID_1020817298"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -10523,8 +11037,7 @@ before the actual namefilter setting)
       ejemplo bien hecho
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="https://www.baeldung.com/java-nio2-watchservice" ID="ID_510882689" LINK="https://www.baeldung.com/java-nio2-watchservice"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -10536,8 +11049,7 @@ before the actual namefilter setting)
       ejemplo sencillo
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="Ejemplo de A Guide to WatchService in Java NIO2" ID="ID_1498195946"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -10626,8 +11138,7 @@ before the actual namefilter setting)
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -10638,8 +11149,7 @@ before the actual namefilter setting)
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="https://docs.oracle.com/javase/tutorial/essential/io/notification.html" ID="ID_410847179" LINK="https://docs.oracle.com/javase/tutorial/essential/io/notification.html"/>
@@ -10935,8 +11445,7 @@ before the actual namefilter setting)
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="prueba deleteNodesWithLinkToOther.groovy" ID="ID_905032081"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -12852,8 +13361,7 @@ before the actual namefilter setting)
       (node['tasksStyles']?:'nextTask,pendingTask').split(',').collect{st -&gt; &quot;${nodo.find{it.style.name == st &amp;&amp; !it.pathToRoot.any{it.style.name=='tasksBucket'}}.size()}&nbsp;&nbsp;${st}(s)&quot;}.join('\n')
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask,discardedTask,completedTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 </node>
@@ -12870,8 +13378,7 @@ before the actual namefilter setting)
       (node['tasksStyles']?:'pendingTask,nextTask').split(',').collect{st -&gt; &quot;${node.find{it.style.name == st}.size()}&nbsp;&nbsp;${st}(s)&quot;}.join('\n')
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute_layout NAME_WIDTH="80.25 pt" VALUE_WIDTH="284.99999 pt"/>
 <attribute NAME="tasksStyles" VALUE="nextTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
@@ -12890,8 +13397,7 @@ before the actual namefilter setting)
       (node['tasksStyles']?:'pendingTask,nextTask').split(',').collect{st -&gt; &quot;${node.find{it.style.name == st}.size()}&nbsp;&nbsp;${st}(s)&quot;}.join('\n')
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask,discardedTask,completedTask"/>
 <attribute NAME="WIP filter" VALUE="true"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
@@ -12909,8 +13415,7 @@ before the actual namefilter setting)
       (node['tasksStyles']?:'pendingTask,nextTask').split(',').collect{st -&gt; &quot;${node.find{it.style.name == st}.size()}&nbsp;&nbsp;${st}(s)&quot;}.join('\n')
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>

@@ -7,7 +7,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 
 def nodo = node
 
-nodo.find{MDI.isLinkToFile(it)}.each{n ->
+nodo.find{MDI.isLinkToFileOrFolder(it)}.each{n ->
     if (n.link.file.exists()){
         Path                file    =   Paths.get(n.link.file.getAbsolutePath())
         BasicFileAttributes attr    =   Files.readAttributes(file, BasicFileAttributes.class);

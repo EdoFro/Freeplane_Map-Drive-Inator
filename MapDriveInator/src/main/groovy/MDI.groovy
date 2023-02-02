@@ -262,7 +262,7 @@ class MDI{
         return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
     }
 
-    def static isLinkToFile(n){
+    def static isLinkToFileOrFolder(n){
         //n.link && n.link.uri.scheme =='file' && !isLinkToNodeInAnotherMap(n)  //excludes links to nodes (internal and in an other map)
         // to consider:
             // n.link.file  //includes links to files and folders but excludes links to nodes in other map

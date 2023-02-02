@@ -544,12 +544,12 @@ if(baseFolderNode){
 def armaListadoRutas(nodo, String path){
     nodo.children.findAll{!MDI.isLocked(it)}.each{
         //es file?--> agregar a listado
-        if(MDI.isLinkToFile(it) && !MDI.nodeIsFolder(it)){
+        if(MDI.isLinkToFileOrFolder(it) && !MDI.nodeIsFolder(it)){
             MDI.markAsMoved(it,false)
             if(it.countNodesSharingContent > 0){
-                xClones << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text))
+                xClones << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text)) //por qué uso getPathFromLink2 y no la 3 y listo?
             } else {
-                xSingles << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text))
+                xSingles << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text)) //por qué uso getPathFromLink2 y no la 3 y listo?
             }
         }
         if(MDI.nodeIsFolder(it)){

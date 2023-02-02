@@ -273,16 +273,18 @@ class MDI{
     }
 
     def static getPathFromLink(n){
-        //return n.link.uri.path.drop(1) as String 
         def lastChar = (n.link.file?.directory || nodeIsFolder(n))?File.separator:'' //TODO: Linux
-        return (n.link.file?n.link.file.path + lastChar:null)
+        //return (n.link.file?n.link.file.path + lastChar:null)
+        return getPathFromLink3(n, lastChar)
     }
 
     def static getPathFromLink2(n,lastChar =''){
-        return (n.link.file.path + lastChar)
+        //return (n.link.file.path + lastChar)
+        return getPathFromLink3(n,lastChar)
     }
     
     def static getPathFromLink3(n,lastChar =''){
+        //return (n.link.file?n.link.file.path + lastChar:null)
         return (n.link.file?n.link.file.canonicalPath + lastChar:null)
     }
 

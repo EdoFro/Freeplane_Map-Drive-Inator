@@ -1,3 +1,5 @@
+def baseFolderNode = MDI.obtainBaseFolder(node)
+def linkType = baseFolderNode? MDI.getLinkType(baseFolderNode) : 0
 
 def fPath = MDI.obtainPathFromMap(node)
 println '> fPath: ' + fPath
@@ -20,7 +22,7 @@ if(fPath && fPath != ''){
             println '> file: ' + file
             //return
             file.text = texto
-            node.link.file = file
+            MDI.setLink(node, fPath + fileName, linkType)
             node.text = file.name
         } else {
             c.statusInfo = 'selected node has a link already'

@@ -3,6 +3,7 @@ import groovy.io.FileType
 import groovy.io.FileVisitResult
 import java.util.regex.Pattern
 
+linkType = 0
 
 baseFolderNode = MDI.obtainBaseFolder(node)
 if(baseFolderNode){
@@ -13,6 +14,7 @@ if(baseFolderNode){
         return 0
     }
     baseFolderPath = MDI.getPathFromLink(baseFolderNode)
+    linkType = MDI.getLinkType(baseFolderNode)
     doMarkAsNew = !baseFolderNode.leaf
     importFoldersFromDrive(baseFolderNode)
 }else{
@@ -48,7 +50,9 @@ def addFolderNode(f) {
             nodoDonde.text=dir
             if(doMarkAsNew) {MDI.markAsNew(nodoDonde, true)}
         }
-        if(!nodoDonde.link?.file){nodoDonde.link.file = new File(gPath)}
+        if(!nodoDonde.link?.file){
+            MDI.setLink(nodoDonde, gPath, linkType)
+        }
     }
 }
 

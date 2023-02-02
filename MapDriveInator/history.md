@@ -1,5 +1,14 @@
 # History
 
+## v0.0.8
+
+* "normalization" command for absolute/relative links
+* now default "link type value" is taken form freeplane configuration properties
+
+## v0.0.7
+
+* Test version allowing the use of RELATIVE and ABSOLUTE links
+
 ## v0.0.6
 
 * MapDriveInator: nodes with style file_folder, loose this style after the folder is created in drive and they get the link to it

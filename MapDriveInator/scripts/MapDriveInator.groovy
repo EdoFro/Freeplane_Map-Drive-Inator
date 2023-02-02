@@ -43,7 +43,7 @@ if(baseFolderNode){
     //region: ---------------------- Initial Setup 2 ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Initial Setup 2    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Initial Setup 2    ');
-    //obtener nodo nueva importación
+    //obtener nodo nueva importaciÃ³n
     nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)
     if(!nodeNewImports) return 'Interrupted: no MDI styles'
     def visibilizarAvance = MDI.wantToLog(nodeNewImports)
@@ -54,6 +54,7 @@ if(baseFolderNode){
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
         
     // brought this to before getting the changes done 
+    def linkType = MDI.getLinkType(baseFolderNode)
     def nameFilt = MDI.getFilter(baseFolderNode)
     def maxD = MDI.getMaxDepth(baseFolderNode)
     def markMovedOption = MDI.markWhenMoved(baseFolderNode)
@@ -71,7 +72,7 @@ if(baseFolderNode){
     xFolders =[]
     if(modoDebug)  ui.informationMessage("antes de llamar 'armaListadoRutas'")
     armaListadoRutas(baseFolderNode,baseFolderPath)
-    if(modoDebug)  ui.informationMessage("después de llamar 'armaListadoRutas'")
+    if(modoDebug)  ui.informationMessage("despuÃ©s de llamar 'armaListadoRutas'")
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     //end:   ------------------------------------------------------------------
@@ -111,7 +112,7 @@ if(baseFolderNode){
     //end:
 
     //region: __________________________- sacar listados drive
-    //---saca listados de información en drive --------------------------------
+    //---saca listados de informaciÃ³n en drive --------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados drive    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados drive    ');
     if(visibilizarAvance) texto.append("\n").append('saca listados de informacion en drive').append("\n")
@@ -129,7 +130,7 @@ if(baseFolderNode){
 
     filesOK       = listFiles.intersect(listCons + listClonCons)  //no se hace nada con esto
 
-    filesNOK      = listFiles - listCons //OJO!! aún incluye algunas que pueden estar ok con nodos clones
+    filesNOK      = listFiles - listCons //OJO!! aÃºn incluye algunas que pueden estar ok con nodos clones
     filesNOK      -= listClonCons //quitando las que pueden estar ok con nodos clones 'consistentes'
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
@@ -166,7 +167,7 @@ if(baseFolderNode){
     def listClonInConsLink = xClonesInconsistentes.collect{it.link}
     def listClonInConsPath = xClonesInconsistentes.collect{it.path}
 
-    nSinFileA = listCons - listFiles //1ª parte de nodos sin files
+    nSinFileA = listCons - listFiles //1Âª parte de nodos sin files
     nodosSinFileA = xConsistentes.findAll{it.link in nSinFileA}
 
     filesSinNodos = filesNOK - listInConsLink - listInConsPath //restando nodos single inconsistentes
@@ -183,7 +184,7 @@ if(baseFolderNode){
     def xLinkOk = xInconsistentes.findAll{filesNOK.contains(it.link)} //inconsistentes cuyo link apunta a un archivo real
     def xPathOk = xInconsistentes.findAll{filesNOK.contains(it.path)}//inconsistentes cuyo path del mapa apunta a un archivo real
 
-    nodosSinFileB = xInconsistentes - xLinkOk - xPathOk //inconsistentes que no apuntan a ningun archivo. 2ª parte de nodos sin files
+    nodosSinFileB = xInconsistentes - xLinkOk - xPathOk //inconsistentes que no apuntan a ningun archivo. 2Âª parte de nodos sin files
 
     filesNOK2 = filesNOK - xLinkOk*.link.flatten() - xPathOk*.path.flatten()
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
@@ -275,7 +276,7 @@ if(baseFolderNode){
     (xPathOk + xClonPathOk).each{x ->
         nodo = N(x.id)
         MDI.setLinkImage(nodo, x.path)
-        MDI.setLink(nodo, x.path) // cambia link del nodo para que apunte a nueva ubicaci?n
+        MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
         MDI.markAsBroken(nodo,false)
         //if(!nodo.icons.contains('pencil')){nodo.icons.add('pencil')}
     }
@@ -289,7 +290,7 @@ if(baseFolderNode){
     def newFilesImported =  filesSinNodos?true:false
     
     filesSinNodos.each{f ->
-        // agregar f a nodo nueva importación
+        // agregar f a nodo nueva importaciÃ³n
         def nodoDonde = nodeNewImports
         def gPath = baseFolderPath
         (f - baseFolderPath)?.split(Pattern.quote(File.separator)).init().each{String dir ->   //TODO: linux
@@ -301,23 +302,25 @@ if(baseFolderNode){
                 nodoDonde.text=dir
             }
             // ui.informationMessage('nodoDonde   :' + nodoDonde as String)
-            if(!nodoDonde.link?.file){nodoDonde.link.file = new File(gPath)}
+            if(!nodoDonde.link?.file){
+                MDI.setLink(nodoDonde, gPath, linkType)
+            }
         }
-        nodoDonde.createChild(f - gPath).link.file = new File(f)
+        MDI.setLink(nodoDonde.createChild(f - gPath), f, linkType)
     }
 
 
 
     //end:
 
-    //region: _______________________________- path cambió en mapa   --> ejecutar cambio en disco
+    //region: _______________________________- path cambiÃ³ en mapa   --> ejecutar cambio en disco
     // sacar de update folder
     if(modoDebug) ui.showMessage('xClonLinkOk:\n\n' + xClonLinkOk as String,1)
     xClonLinkOkChosen = MDI.chooseClone(xClonLinkOk)
     if(modoDebug) ui.showMessage('xClonLinkOkChosen:\n\n' + xClonLinkOkChosen as String,1)
 
     // c.select( (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).collect{ N(it.id)})
-    if(modoDebug) ui.showMessage('C - path cambió en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String,1)
+    if(modoDebug) ui.showMessage('C - path cambiÃ³ en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String,1)
     textoReport.append("\n ${(xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).size()} node(s) moved/renamed in drive")
     
     // def markMovedOption = MDI.markWhenMoved(baseFolderNode)
@@ -329,7 +332,7 @@ if(baseFolderNode){
         def file = new File(x.link)
         file.renameTo( new File(x.path) )
         MDI.setLinkImage(nodo, x.path)
-        MDI.setLink(nodo, x.path) // cambia link del nodo para que apunte a nueva ubicaci?n
+        MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
         // ui.informationMessage( "el archivo ${file.name} fue reubicado")
         MDI.markAsBroken(nodo,false) 
         MDI.markAsMoved(nodo,true,markMovedOption)
@@ -352,7 +355,7 @@ if(baseFolderNode){
     // texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     textoReport.append('------- Folders: -------- \n')
-    textoReport.append(MDI.updateFolders(xFolders.reverse())).append("\n\n")
+    textoReport.append(MDI.updateFolders(xFolders.reverse(), linkType)).append("\n\n")
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
@@ -544,12 +547,12 @@ if(baseFolderNode){
 def armaListadoRutas(nodo, String path){
     nodo.children.findAll{!MDI.isLocked(it)}.each{
         //es file?--> agregar a listado
-        if(MDI.isLinkToFile(it) && !MDI.nodeIsFolder(it)){
+        if(MDI.isLinkToFileOrFolder(it) && !MDI.nodeIsFolder(it)){
             MDI.markAsMoved(it,false)
             if(it.countNodesSharingContent > 0){
-                xClones << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text))
+                xClones << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text)) //por quÃ© uso getPathFromLink2 y no la 3 y listo?
             } else {
-                xSingles << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text))
+                xSingles << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text)) //por quÃ© uso getPathFromLink2 y no la 3 y listo?
             }
         }
         if(MDI.nodeIsFolder(it)){

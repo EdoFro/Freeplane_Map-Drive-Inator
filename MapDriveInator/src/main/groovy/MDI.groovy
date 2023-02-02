@@ -1,8 +1,10 @@
 
+import org.freeplane.features.link.LinkController
 import org.freeplane.plugin.script.proxy.ScriptUtils
 import groovy.io.FileType
 import groovy.io.FileVisitResult
 import org.freeplane.core.ui.components.UITools
+import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
 
 class MDI{
     //nodes attributes
@@ -11,6 +13,7 @@ class MDI{
     private static final String attrNameFilter      = 'nameFilter'
     private static final String attrMaxDepth        = 'maxDepth'
     private static final String attrReallyBroken    = 'checkIfReallyBroken'
+    private static final String attrLinkType        = 'linkType'
     //styles
     private static final String styleLocked         = 'locked'
     private static final String styleMovedRenamed   = 'movedRenamed'
@@ -19,6 +22,11 @@ class MDI{
     private static final String styleFolder         = 'file_folder'
     private static final String styleBaseFolder     = 'baseFolder'
     private static final String styleNewImport      = 'newFolderImport'
+
+    private static final int LINK_ABSOLUTE            = 0
+    private static final int LINK_RELATIVE_TO_MINDMAP = 1
+    
+    private static ConfigProperties config = new ConfigProperties()
     
     //region: ---------------------- Functions Initial Setup
     
@@ -57,7 +65,7 @@ class MDI{
 
     //region: ---------------------- Updating Folders In Drive And Map
     // loops all the folders and update them
-    def static updateFolders(xfiles){
+    def static updateFolders(xfiles, int linkType = LINK_ABSOLUTE){
         def foldersToDelete =[]
         def notMoved = 0
         def unexistent = 0
@@ -67,7 +75,7 @@ class MDI{
         def corrected = 0
         def cloneOK = 0
         xfiles.each{ xf ->
-            def resultado = updateThisFolder(xf)
+            def resultado = updateThisFolder(xf, linkType)
             switch(resultado) {
                 case 'notMoved':
                     notMoved++
@@ -123,7 +131,7 @@ class MDI{
     }
 
     // updates the position of folder in the drive
-    def static updateThisFolder(xf) {
+    def static updateThisFolder(xf, int linkType = LINK_ABSOLUTE) {
         def nodo = N(xf.id)
         // c.select(nodo)
         // ui.informationMessage('nodo: ' + nodo as String)
@@ -140,7 +148,7 @@ class MDI{
                     if(hasCloneWhithPositionOK(nodo,true)){
                         return 'cloneOK'
                     } else {
-                        setLink(nodo, xf.path)  // cambiarle a nuevo link
+                        setLink(nodo, xf.path, linkType)  // cambiarle a nuevo link
                         markAsBroken(nodo,false)
                         markAsMoved(nodo,true)
                         if (deleteFolder(xf.link)==1)
@@ -157,7 +165,7 @@ class MDI{
                     if (file.isDirectory()) 		//	?existe en el lugar que indica su link (y es folderName)?
                     {
                         //ya existe en posición correcta --> no hacer nada salvo corregir link
-                        setLink(nodo, xf.path)  // cambiarle a nuevo link
+                        setLink(nodo, xf.path, linkType)  // cambiarle a nuevo link
                         return 'corrected'
                     } else {
                         markAsBroken(nodo,true)
@@ -176,7 +184,7 @@ class MDI{
             }
         }else {	// si no tiene link --> ponerle link
             createPath(xf.path)
-            setLink(nodo, xf.path)
+            setLink(nodo, xf.path, linkType)
             xf.link = xf.path
             if(nodo.style.name==styleFolder){nodo.style.name = null}
             markAsBroken(nodo,false)
@@ -259,28 +267,32 @@ class MDI{
     }
 
     def static nodeIsFolder(n){
-        return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
+        //return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
+        return  n.hasStyle(styleFolder) || (isLinkToFileOrFolder(n) && ( n.link?.file?.directory || n.link.uri?.path?.takeRight(1) == '/')  )
     }
 
-    def static isLinkToFile(n){
+    def static isLinkToFileOrFolder(n){
         //n.link && n.link.uri.scheme =='file' && !isLinkToNodeInAnotherMap(n)  //excludes links to nodes (internal and in an other map)
         // to consider:
             // n.link.file  //includes links to files and folders but excludes links to nodes in other map
             // n.link.uri.scheme =='file' //includes links to files but excludes internal links to nodes in same map
-        return (boolean) n.link.file && n.link.uri.scheme =='file'
+        //return (boolean) n.link.file && n.link.uri.scheme =='file'
+        return n.link.file && !n.link.uri?.fragment
     }
 
     def static getPathFromLink(n){
-        //return n.link.uri.path.drop(1) as String 
         def lastChar = (n.link.file?.directory || nodeIsFolder(n))?File.separator:'' //TODO: Linux
-        return (n.link.file?n.link.file.path + lastChar:null)
+        //return (n.link.file?n.link.file.path + lastChar:null)
+        return getPathFromLink3(n, lastChar)
     }
 
     def static getPathFromLink2(n,lastChar =''){
-        return (n.link.file.path + lastChar)
+        //return (n.link.file.path + lastChar)
+        return getPathFromLink3(n,lastChar)
     }
     
     def static getPathFromLink3(n,lastChar =''){
+        //return (n.link.file?n.link.file.path + lastChar:null)
         return (n.link.file?n.link.file.canonicalPath + lastChar:null)
     }
 
@@ -321,7 +333,7 @@ class MDI{
                 nodos = nodos - it.find(false,true,{nodeIsFolder(it)}).minus(it)
             }
         }
-        return nodos.link.file.path
+        return nodos.link.file.canonicalPath
     }
     //end:
 
@@ -351,18 +363,36 @@ class MDI{
 
     //region: ---------------------- Modifying Nodes
     //adds a [link to a file] to the node
-    def static setLink(n, addr){
+    def static setLink(n, addr, int linkType = LINK_ABSOLUTE){
         //  UITools.informationMessage(addr.toString())
-        n.link.file = new File(addr.toString())
+        def targetFile = new File(addr.toString())
+        def uri = getUri(n.mindMap.file, targetFile, linkType)
+        n.link.uri = uri
+    }
+    
+    def static getUri(mapFile, targetFile, linkType){
+        def uri = switch(linkType){
+            case LINK_ABSOLUTE            -> targetFile.getCanonicalFile().toURI()
+            case LINK_RELATIVE_TO_MINDMAP -> LinkController.toLinkTypeDependantURI(mapFile, targetFile, LINK_RELATIVE_TO_MINDMAP)
+        }
+        return uri
     }
 
     //corrects link to image in node which is also a file in the project
+    //TODO: relative/absolute capable
     def static setLinkImage(n, addr){
         if(n.externalObject && n.link.file && n.link.text == n.externalObject.uri){
             n.externalObject.file = new File(addr.toString())
         }
     }
 
+    def static normalizeNode(mapFile, n, linkType){
+        //UITools.informationMessage("${mapFile},\n ${n},\n ${linkType}".toString())
+        def newUri = getUri(mapFile, n.link.file, linkType)
+        if(newUri != n.link.uri){
+            n.link.uri = newUri
+        }
+    }
     
     //end:
 
@@ -486,7 +516,7 @@ class MDI{
             preDir       : { if (it.name[0] == '.' || it.path in excludedDirs) return FileVisitResult.SKIP_SUBTREE },
             sort         : sortByTypeThenName
         ){it ->
-            listOfFiles << it.path
+            listOfFiles << it.canonicalPath
         }
         return listOfFiles
     }
@@ -545,7 +575,7 @@ class MDI{
         def checkBroken = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultCheck
         checkBroken = checkBroken in [0, 1]?checkBroken:defaultCheck
         n[attrFilter] = checkBroken
-        return checkBroken==1
+        return checkBroken == 1
     }   
 
     def static getMarkMoved(n, defaultMark = 0) {
@@ -560,6 +590,24 @@ class MDI{
         markMoved = markMoved in [-1, 0, 1]?markMoved:defaultMark
         n[attrFilter] = markMoved
         return markMoved
+    }
+    
+    
+    
+    def static getLinkType(n, defaultLinkType = 0) {
+        defaultLinkType = ['absolute','relative'].indexOf(config['links'])
+        def attrFilter = attrLinkType
+        if(!n[attrFilter]){
+            def texto = "\n\n-----------------------------------------------------\n  -- linkType:\n-----------------------------------------------------\n       Define if you want to use Absolute or Relative \n       links for files and folders.\n\n set to:\n    0: to use Absolute links\n\n    1: to use Relative links\n\n\n==========================================\n   "
+            // UITools.informationMessage(texto)
+            n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultLinkType.toString())?:defaultLinkType.toString()
+            n.note += texto
+        }
+        def linkType = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultLinkType
+        linkType = linkType in [0, 1]?linkType:defaultLinkType
+        n[attrFilter] = linkType
+        normalizeNode(n.mindMap.file, n, linkType)
+        return linkType
     }   
     //end:
 }

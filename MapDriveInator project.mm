@@ -284,6 +284,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="checkIfReallyBroken" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
 <attribute NAME="fileSize" VALUE="12.288" OBJECT="org.freeplane.features.format.FormattedNumber|12288|#,##0"/>
 <attribute NAME="projectCode" VALUE="Freep.Map-Drive-Inator"/>
+<attribute NAME="linkType" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -375,7 +376,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;
+      
     </p>
     <p>
       
@@ -384,7 +385,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;-- checkIfReallyBroken:
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if existing nodes pointing to filtered files still exist&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if existing nodes pointing to filtered files still exist
     </p>
     <p>
       
@@ -396,7 +397,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;- set to 1 to extra check if a not matching file still exists in drive&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;- set to 1 to extra check if a not matching file still exists in drive
     </p>
     <p>
       
@@ -404,8 +405,54 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     <p>
       &nbsp;&nbsp;&nbsp;
     </p>
+    <p>
+      
+    </p>
+    <p>
+      -----------------------------------------------------
+    </p>
+    <p>
+      &nbsp;&nbsp;-- linkType:
+    </p>
+    <p>
+      -----------------------------------------------------
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Define if you want to use Absolute or Relative&nbsp;
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;links for files and folders.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;set to:
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;0: to use Absolute links
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;1: to use Relative links
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ==========================================
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;
+    </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="https://github.com/EdoFro/Freeplane_Map-Drive-Inator" ID="ID_1994582973" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator"/>
 <node TEXT="possible paths" STYLE_REF="locked" ID="ID_399374123"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3053,6 +3100,19 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.242" OBJECT="org.freeplane.features.format.FormattedNumber|1242|#,##0"/>
 </node>
+<node TEXT="normalizeLinkTypes.groovy" ID="ID_215276188" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/normalizeLinkTypes.groovy"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      xx
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 <node TEXT="selected node&#xa; and descendants" STYLE_REF="Organizador" ID="ID_1531851607">
 <node TEXT="TimeStamps" STYLE_REF="Organizador" ID="ID_1635637876">
 <node TEXT="ClearFileTimestampsInNodes.groovy" ID="ID_440439863" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/ClearFileTimestampsInNodes.groovy">
@@ -4076,6 +4136,8 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_423253710"/>
+<node TEXT="MapDriveInator-v0.0.8.addon.mm" STYLE_REF="freshNew" ID="ID_1868929615" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.8.addon.mm"/>
+<node TEXT="MapDriveInator-v0.0.7.addon.mm" ID="ID_141578992" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.7.addon.mm"/>
 <node TEXT="MapDriveInator-v0.0.6.addon.mm" ID="ID_64331" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.6.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
@@ -5021,7 +5083,7 @@ deletes the timestamps attributes in the nodes</text>
   </head>
   <body>
     <p>
-      Inated:&nbsp;&nbsp;&nbsp;2023-02-01&nbsp;&nbsp;11:51:02
+      Inated:&nbsp;&nbsp;&nbsp;2023-02-02&nbsp;&nbsp;19:06:59
     </p>
     <p>
       
@@ -5036,7 +5098,7 @@ deletes the timestamps attributes in the nodes</text>
       &nbsp;0 link(s) corrected in nodes
     </p>
     <p>
-      &nbsp;0 new file(s) imported as node(s)&nbsp;
+      &nbsp;1 new file(s) imported as node(s)&nbsp;
     </p>
     <p>
       &nbsp;0 node(s) moved/renamed in drive
@@ -5057,7 +5119,7 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      0.8 seconds
+      0.3 seconds
     </p>
     <p>
       
@@ -5075,13 +5137,13 @@ deletes the timestamps attributes in the nodes</text>
       (elapsed time in miliseconds)
     </p>
     <p>
-      -153
+      -38
     </p>
     <p>
-      -181
+      -43
     </p>
     <p>
-      -181
+      -43
     </p>
     <p>
       
@@ -5090,7 +5152,7 @@ deletes the timestamps attributes in the nodes</text>
       arma Listado de Rutas nodos
     </p>
     <p>
-      -525
+      -215
     </p>
     <p>
       
@@ -5099,7 +5161,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xSingles
     </p>
     <p>
-      -535
+      -217
     </p>
     <p>
       
@@ -5108,7 +5170,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xClones
     </p>
     <p>
-      -535
+      -217
     </p>
     <p>
       
@@ -5117,7 +5179,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en drive
     </p>
     <p>
-      -834
+      -338
     </p>
     <p>
       
@@ -5126,7 +5188,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas
     </p>
     <p>
-      -834
+      -339
     </p>
     <p>
       
@@ -5135,10 +5197,10 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones pendientes
     </p>
     <p>
-      -834
+      -339
     </p>
     <p>
-      -834
+      -339
     </p>
     <p>
       
@@ -5147,7 +5209,7 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones inconsistentes
     </p>
     <p>
-      -849
+      -340
     </p>
     <p>
       
@@ -5156,7 +5218,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xInconsistentes
     </p>
     <p>
-      -849
+      -340
     </p>
     <p>
       
@@ -5165,13 +5227,13 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xClonesInconsistentes
     </p>
     <p>
-      -849
+      -340
     </p>
     <p>
-      -849
+      -340
     </p>
     <p>
-      -849
+      -340
     </p>
     <p>
       
@@ -5180,7 +5242,7 @@ deletes the timestamps attributes in the nodes</text>
       &nbsp;aplicando acciones FILES
     </p>
     <p>
-      -849
+      -348
     </p>
     <p>
       
@@ -5189,7 +5251,7 @@ deletes the timestamps attributes in the nodes</text>
       ACTUALIZANDO FOLDERS
     </p>
     <p>
-      -865
+      -352
     </p>
     <p>
       
@@ -5261,6 +5323,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\createFilesFromNotes.groovy
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ClearFileTimestampsInNodes.groovy
     </p>
     <p>
@@ -5292,6 +5357,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
@@ -5477,6 +5545,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\createFilesFromNotes.groovy
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ClearFileTimestampsInNodes.groovy
     </p>
     <p>
@@ -5508,6 +5579,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
@@ -5696,6 +5770,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\createFilesFromNotes.groovy
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ClearFileTimestampsInNodes.groovy
     </p>
     <p>
@@ -5727,6 +5804,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
@@ -5909,6 +5989,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\importMDIStyles.groovy
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ungroupChildnodes.groovy
     </p>
     <p>
@@ -5937,6 +6020,12 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
@@ -6116,6 +6205,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\importMDIStyles.groovy
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ungroupChildnodes.groovy
     </p>
     <p>
@@ -6144,6 +6236,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
@@ -6287,6 +6382,9 @@ deletes the timestamps attributes in the nodes</text>
       filesNOK:&nbsp;
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
+    </p>
+    <p>
       
     </p>
     <p>
@@ -6335,6 +6433,9 @@ deletes the timestamps attributes in the nodes</text>
       filesSinNodos:&nbsp;
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
+    </p>
+    <p>
       
     </p>
     <p>
@@ -6369,6 +6470,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       filesNOK2:&nbsp;
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
     </p>
     <p>
       
@@ -6859,6 +6963,7 @@ deletes the timestamps attributes in the nodes</text>
   </body>
 </html>
 </richcontent>
+<node TEXT="MapDriveInator" ID="ID_927983993" LINK="#ID_1462849055"/>
 </node>
 <node TEXT="Implementar Tasks v4 acá" STYLE_REF="nextTask" ID="ID_1813016897"/>
 <node TEXT="Tareas" STYLE_REF="Organizador" ID="ID_819044659">

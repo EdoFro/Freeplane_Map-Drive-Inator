@@ -4,6 +4,7 @@ import org.freeplane.plugin.script.proxy.ScriptUtils
 import groovy.io.FileType
 import groovy.io.FileVisitResult
 import org.freeplane.core.ui.components.UITools
+import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
 
 class MDI{
     //nodes attributes
@@ -24,6 +25,8 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
+    
+    private static ConfigProperties config = new ConfigProperties()
     
     //region: ---------------------- Functions Initial Setup
     
@@ -330,7 +333,7 @@ class MDI{
                 nodos = nodos - it.find(false,true,{nodeIsFolder(it)}).minus(it)
             }
         }
-        return nodos.link.file.path
+        return nodos.link.file.canonicalPath
     }
     //end:
 
@@ -363,11 +366,16 @@ class MDI{
     def static setLink(n, addr, int linkType = LINK_ABSOLUTE){
         //  UITools.informationMessage(addr.toString())
         def targetFile = new File(addr.toString())
-        def uri = switch(linkType){
-            case LINK_ABSOLUTE            -> targetFile.getAbsoluteFile().toURI()
-            case LINK_RELATIVE_TO_MINDMAP -> LinkController.toLinkTypeDependantURI(n.mindMap.file, targetFile, LINK_RELATIVE_TO_MINDMAP)
-        }
+        def uri = getUri(n.mindMap.file, targetFile, linkType)
         n.link.uri = uri
+    }
+    
+    def static getUri(mapFile, targetFile, linkType){
+        def uri = switch(linkType){
+            case LINK_ABSOLUTE            -> targetFile.getCanonicalFile().toURI()
+            case LINK_RELATIVE_TO_MINDMAP -> LinkController.toLinkTypeDependantURI(mapFile, targetFile, LINK_RELATIVE_TO_MINDMAP)
+        }
+        return uri
     }
 
     //corrects link to image in node which is also a file in the project
@@ -378,6 +386,13 @@ class MDI{
         }
     }
 
+    def static normalizeNode(mapFile, n, linkType){
+        //UITools.informationMessage("${mapFile},\n ${n},\n ${linkType}".toString())
+        def newUri = getUri(mapFile, n.link.file, linkType)
+        if(newUri != n.link.uri){
+            n.link.uri = newUri
+        }
+    }
     
     //end:
 
@@ -577,7 +592,10 @@ class MDI{
         return markMoved
     }
     
+    
+    
     def static getLinkType(n, defaultLinkType = 0) {
+        defaultLinkType = ['absolute','relative'].indexOf(config['links'])
         def attrFilter = attrLinkType
         if(!n[attrFilter]){
             def texto = "\n\n-----------------------------------------------------\n  -- linkType:\n-----------------------------------------------------\n       Define if you want to use Absolute or Relative \n       links for files and folders.\n\n set to:\n    0: to use Absolute links\n\n    1: to use Relative links\n\n\n==========================================\n   "
@@ -588,6 +606,7 @@ class MDI{
         def linkType = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultLinkType
         linkType = linkType in [0, 1]?linkType:defaultLinkType
         n[attrFilter] = linkType
+        normalizeNode(n.mindMap.file, n, linkType)
         return linkType
     }   
     //end:

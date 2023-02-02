@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.7"/>
+<attribute NAME="version" VALUE="v0.0.8"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -231,6 +231,10 @@
 <node TEXT="v0.0.7" ID="ID_555626120">
 <node TEXT="Test version allowing the use of RELATIVE and ABSOLUTE links" ID="ID_48657215"/>
 </node>
+<node TEXT="v0.0.8" ID="ID_1608879225">
+<node TEXT="&quot;normalization&quot; command for absolute/relative links" ID="ID_936451022"/>
+<node TEXT="now default &quot;link type value&quot; is taken form freeplane configuration properties" ID="ID_126482642"/>
+</node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
 <edge COLOR="#00ff00"/>
@@ -441,6 +445,7 @@
 <attribute NAME="addons.${name}.unmarkMovedOrRenamedNodes" VALUE="Unmark moved or renamed nodes"/>
 <attribute NAME="addons.${name}.unmarkNewNodes" VALUE="Unmark new nodes"/>
 <attribute NAME="addons.${name}.importMDIStyles" VALUE="Import MDI styles"/>
+<attribute NAME="addons.${name}.normalizeLinkTypes" VALUE="Normalize link types"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="top_or_left" ID="ID_982526317">
@@ -476,6 +481,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/MapDriveInator.jar"/>
 <attribute NAME="delete" VALUE="${installationbase}/templates/MapDriveInator/MDI styles template.mm"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/importMDIStyles.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/normalizeLinkTypes.groovy"/>
 </node>
 <node TEXT="scripts" FOLDED="true" POSITION="bottom_or_right" ID="ID_428424239">
 <edge COLOR="#007c00"/>
@@ -767,6 +773,18 @@
 <node TEXT="importMDIStyles.groovy" ID="ID_1490422211">
 <attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="137.25 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.importMDIStyles"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
+<node TEXT="normalizeLinkTypes.groovy" ID="ID_998611987">
+<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="151.5 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.normalizeLinkTypes"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE=""/>

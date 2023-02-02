@@ -54,6 +54,7 @@ if(baseFolderNode){
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
         
     // brought this to before getting the changes done 
+    def linkType = MDI.getLinkType(baseFolderNode)
     def nameFilt = MDI.getFilter(baseFolderNode)
     def maxD = MDI.getMaxDepth(baseFolderNode)
     def markMovedOption = MDI.markWhenMoved(baseFolderNode)
@@ -275,7 +276,7 @@ if(baseFolderNode){
     (xPathOk + xClonPathOk).each{x ->
         nodo = N(x.id)
         MDI.setLinkImage(nodo, x.path)
-        MDI.setLink(nodo, x.path) // cambia link del nodo para que apunte a nueva ubicaci?n
+        MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
         MDI.markAsBroken(nodo,false)
         //if(!nodo.icons.contains('pencil')){nodo.icons.add('pencil')}
     }
@@ -301,9 +302,11 @@ if(baseFolderNode){
                 nodoDonde.text=dir
             }
             // ui.informationMessage('nodoDonde   :' + nodoDonde as String)
-            if(!nodoDonde.link?.file){nodoDonde.link.file = new File(gPath)}
+            if(!nodoDonde.link?.file){
+                MDI.setLink(nodoDonde, gPath, linkType)
+            }
         }
-        nodoDonde.createChild(f - gPath).link.file = new File(f)
+        MDI.setLink(nodoDonde.createChild(f - gPath), f, linkType)
     }
 
 
@@ -329,7 +332,7 @@ if(baseFolderNode){
         def file = new File(x.link)
         file.renameTo( new File(x.path) )
         MDI.setLinkImage(nodo, x.path)
-        MDI.setLink(nodo, x.path) // cambia link del nodo para que apunte a nueva ubicaci?n
+        MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
         // ui.informationMessage( "el archivo ${file.name} fue reubicado")
         MDI.markAsBroken(nodo,false) 
         MDI.markAsMoved(nodo,true,markMovedOption)
@@ -352,7 +355,7 @@ if(baseFolderNode){
     // texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     textoReport.append('------- Folders: -------- \n')
-    textoReport.append(MDI.updateFolders(xFolders.reverse())).append("\n\n")
+    textoReport.append(MDI.updateFolders(xFolders.reverse(), linkType)).append("\n\n")
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 

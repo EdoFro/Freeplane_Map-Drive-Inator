@@ -259,7 +259,8 @@ class MDI{
     }
 
     def static nodeIsFolder(n){
-        return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
+        //return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
+        return  n.hasStyle(styleFolder) || (isLinkToFileOrFolder(n) && ( n.link?.file?.directory || n.link.uri?.path?.takeRight(1) == '/')  )
     }
 
     def static isLinkToFileOrFolder(n){
@@ -267,7 +268,8 @@ class MDI{
         // to consider:
             // n.link.file  //includes links to files and folders but excludes links to nodes in other map
             // n.link.uri.scheme =='file' //includes links to files but excludes internal links to nodes in same map
-        return (boolean) n.link.file && n.link.uri.scheme =='file'
+        //return (boolean) n.link.file && n.link.uri.scheme =='file'
+        return n.link.file && !n.link.uri?.fragment
     }
 
     def static getPathFromLink(n){

@@ -1,5 +1,9 @@
 # History
 
+## v0.0.7
+
+* Test version allowing the use of RELATIVE and ABSOLUTE links
+
 ## v0.0.6
 
 * MapDriveInator: nodes with style file_folder, loose this style after the folder is created in drive and they get the link to it

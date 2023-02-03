@@ -305,12 +305,10 @@ class MDI{
     }
 
     def static getPathFromLink2(n,lastChar =''){
-        //return (n.link.file.path + lastChar)
         return getPathFromLink3(n,lastChar)
     }
     
     def static getPathFromLink3(n,lastChar =''){
-        //return (n.link.file?n.link.file.path + lastChar:null)
         return (n.link.file?n.link.file.canonicalPath + lastChar:null)
     }
 
@@ -598,7 +596,6 @@ This option allowes four types of inputs:
 
     def static getMaxDepth(n, defaultMaxDepth = -1) {
         def attrFilter = attrMaxDepth
-        // def defaultMaxDepth = -1
         def onErrorMaxDepth = 0
         if(!n[attrFilter]){
             // n[attrFilter]= defaultMaxDepth

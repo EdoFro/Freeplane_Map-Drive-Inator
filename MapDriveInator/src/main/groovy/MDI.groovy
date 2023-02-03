@@ -24,11 +24,13 @@ class MDI{
     private static final String styleNewImport      = 'newFolderImport'
     
     private static final String statusInfoIcon      = 'emoji-1F4BD'
+    private static final String baseFolderNote      = '\n# MDI: '
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
     
     private static ConfigProperties config = new ConfigProperties()
+    private static Timer timer = new Timer()
     
     //region: ---------------------- Functions Initial Setup
     
@@ -573,6 +575,8 @@ This option allowes four types of inputs:
 
 -----------------------------------------------------
 """
+            n.note ?= ''
+            // n.note += baseFolderNote
             n.note += texto
             // UITools.informationMessage(texto)
             def resp = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)
@@ -609,6 +613,8 @@ The maximum number of directory levels when recursing
 -----------------------------------------------------
 """
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultMaxDepth.toString())?:onErrorMaxDepth.toString()
+            n.note ?= ''
+            // n.note += baseFolderNote
             n.note += texto
         }
         def maxDepth = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():onErrorMaxDepth
@@ -639,6 +645,8 @@ before the actual namefilter setting)
 """
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultCheck.toString())?:defaultCheck.toString()
+            n.note ?= ''
+            // n.note += baseFolderNote
             n.note += texto
         }
         def checkBroken = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultCheck
@@ -668,6 +676,8 @@ set to:
  """
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultMark.toString())?:defaultMark.toString()
+            n.note ?= ''
+            // n.note += baseFolderNote
             n.note += texto
         }
         def markMoved = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultMark
@@ -695,6 +705,8 @@ links for files and folders.
    """
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultLinkType.toString())?:defaultLinkType.toString()
+            n.note ?= ''
+            //n.note += baseFolderNote
             n.note += texto
         }
         def linkType = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultLinkType

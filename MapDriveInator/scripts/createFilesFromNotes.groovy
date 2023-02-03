@@ -1,4 +1,5 @@
 def baseFolderNode = MDI.obtainBaseFolder(node)
+if(!baseFolderNode){ return }
 def linkType = baseFolderNode? MDI.getLinkType(baseFolderNode) : 0
 
 def fPath = MDI.obtainPathFromMap(node)
@@ -14,7 +15,7 @@ if(fPath && fPath != ''){
         println '> node.link.uri: ' + node.link.uri
         //return
         if (!node.link.uri){
-            def fileName = correctFileName(node.text)
+            def fileName = MDI.correctFileName(node.text)
             println '> fileName: ' + fileName
             //return
             MDI.createPath(fPath)
@@ -24,20 +25,13 @@ if(fPath && fPath != ''){
             file.text = texto
             MDI.setLink(node, fPath + fileName, linkType)
             node.text = file.name
+            MDI.statusInfo('File created')
         } else {
-            c.statusInfo = 'selected node has a link already'
+            MDI.statusInfo('selected node has a link already')
         }
     } else {
-        c.statusInfo = 'no Note in selected node'
+        MDI.statusInfo('no Note in selected node')
     }
 } else {
-    c.statusInfo = 'no Base folder node in pathToRoot from selected node'
-}
-
-def correctFileName(s){
-    //TODO: edit text format to get a correct file name string
-    // get rid of:
-    // /, \ , \n
-    def t = s.replace('\n','_').replace('\t','_').replace('/','_').replace('\\','_').replace('__','_')
-    return t.toString()
+    MDI.statusInfo('no baseFolder node in pathToRoot from selected node')
 }

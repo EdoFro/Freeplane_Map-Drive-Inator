@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.8"/>
+<attribute NAME="version" VALUE="v0.0.9"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -174,7 +174,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="description" POSITION="top_or_left" ID="ID_256586764">
+<node TEXT="description" FOLDED="true" POSITION="top_or_left" ID="ID_256586764">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -224,16 +224,23 @@
 <node TEXT="Added &apos;Import MDI styles&apos;&#xa;(without library: only works for users that installed other add-ons that have the `edofro.pseudofreeplaneapi.UserStyles` library.)" ID="ID_1530367506"/>
 <node TEXT="Added exception handling when the mindmap doesn&apos;t have MDI styles" ID="ID_1330881655"/>
 </node>
-<node TEXT="v0.0.6" ID="ID_463111565">
+<node TEXT="v0.0.6" FOLDED="true" ID="ID_463111565">
 <node TEXT="MapDriveInator: nodes with style file_folder, loose this style after the folder is created in drive and they get the link to it" ID="ID_1694158485"/>
 <node TEXT="Bug: [&quot;Allow nodes to have links&quot;](https://github.com/EdoFro/Freeplane_Map-Drive-Inator/issues/15) solved" ID="ID_1645231008"/>
 </node>
-<node TEXT="v0.0.7" ID="ID_555626120">
+<node TEXT="v0.0.7" FOLDED="true" ID="ID_555626120">
 <node TEXT="Test version allowing the use of RELATIVE and ABSOLUTE links" ID="ID_48657215"/>
 </node>
-<node TEXT="v0.0.8" ID="ID_1608879225">
+<node TEXT="v0.0.8" FOLDED="true" ID="ID_1608879225">
 <node TEXT="&quot;normalization&quot; command for absolute/relative links" ID="ID_936451022"/>
 <node TEXT="now default &quot;link type value&quot; is taken form freeplane configuration properties" ID="ID_126482642"/>
+</node>
+<node TEXT="v0.0.9" ID="ID_937830933">
+<node TEXT="Now it recognizes when link of baseFolder node points to an unexisting file/folder" ID="ID_1117543068"/>
+<node TEXT="some refactoring" ID="ID_1502606479"/>
+<node TEXT="central statusInfo method for MDI" ID="ID_1295916751"/>
+<node TEXT="&quot;create base folder node&quot; can now be used to update baseFolderNode parameters" ID="ID_909845566"/>
+<node TEXT="changed baseFolderNode note to markdown format" ID="ID_243745728"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
@@ -432,7 +439,7 @@
 <attribute NAME="addons.${name}" VALUE="MapDriveInator"/>
 <attribute NAME="addons.${name}.checkMissingFileNodes" VALUE="Check missing file nodes"/>
 <attribute NAME="addons.${name}.ClearFileTimestampsInNodes" VALUE="Clear file timestamps in nodes"/>
-<attribute NAME="addons.${name}.CreateBaseFolderNode" VALUE="Create base folder node"/>
+<attribute NAME="addons.${name}.CreateBaseFolderNode" VALUE="Create/update base folder node"/>
 <attribute NAME="addons.${name}.createFilesFromNotes" VALUE="Create files from notes"/>
 <attribute NAME="addons.${name}.DistributeNewNodes" VALUE="Distribute new nodes"/>
 <attribute NAME="addons.${name}.GetFileTimestamps" VALUE="Get file timestamps"/>

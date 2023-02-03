@@ -22,17 +22,21 @@ class MDI{
     private static final String styleFolder         = 'file_folder'
     private static final String styleBaseFolder     = 'baseFolder'
     private static final String styleNewImport      = 'newFolderImport'
+    
+    private static final String statusInfoIcon      = 'emoji-1F4BD'
+    private static final String baseFolderNote      = '\n# MDI: '
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
     
     private static ConfigProperties config = new ConfigProperties()
+    private static Timer timer = new Timer()
     
     //region: ---------------------- Functions Initial Setup
     
     
     // function, returns Node ("Base folder") under the selected node
-    def static obtainBaseFolder(n) {
+    def static obtainBaseFolder(n, boolean showMessageIfNone = true, boolean baseFolderShouldExistInDrive = true) {
         // returns the first node which has a link to a file directory and has style styleFolder + styleBaseFolder
         //return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
         def nBase
@@ -42,6 +46,23 @@ class MDI{
         nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder)}
         nBase  ?= (n.link?.file?.directory)? n : null
         nBase  ?= n.pathToRoot.find{it.link?.file?.directory}
+        
+        if(!nBase){
+            def nBaseNotOK = n.pathToRoot.find{it.hasStyle(styleBaseFolder)}
+            def nBaseFileExists = nBaseNotOK?.link?.file?.exists()?true:false
+            if(nBaseFileExists || (nBaseNotOK && !baseFolderShouldExistInDrive)){
+                nBase = nBaseNotOK
+            } else if (showMessageIfNone){
+                def msg
+                if(nBaseNotOK){
+                    msg = "'baseFolderNode' has no valid link (it links to no existing folder)"
+                    ScriptUtils.c().select(nBaseNotOK)
+                }else {
+                    msg = "couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)"
+                }
+                UITools.informationMessage(UITools.frame, msg, "Map-Drive-Inator", 2)
+            }
+        }
         return nBase
     }
 
@@ -247,8 +268,8 @@ class MDI{
         return (n.style.name == styleBroken)
     }
 
-    def static checkIfReallyBroken(n) {
-        return getFilter(n).asBoolean() && getCheckBroken(n)
+    def static checkIfReallyBroken(n, doUpdate = false) {
+        return getFilter(n).asBoolean() && getCheckBroken(n, doUpdate)
     }
 
     def static markAsBroken(n,b,checkAgain = false){
@@ -281,18 +302,15 @@ class MDI{
     }
 
     def static getPathFromLink(n){
-        def lastChar = (n.link.file?.directory || nodeIsFolder(n))?File.separator:'' //TODO: Linux
-        //return (n.link.file?n.link.file.path + lastChar:null)
+        def lastChar = (n.link.file?.directory || nodeIsFolder(n))? File.separator : ''
         return getPathFromLink3(n, lastChar)
     }
 
     def static getPathFromLink2(n,lastChar =''){
-        //return (n.link.file.path + lastChar)
         return getPathFromLink3(n,lastChar)
     }
     
     def static getPathFromLink3(n,lastChar =''){
-        //return (n.link.file?n.link.file.path + lastChar:null)
         return (n.link.file?n.link.file.canonicalPath + lastChar:null)
     }
 
@@ -300,11 +318,11 @@ class MDI{
     //it uses all the file-folder styled nodes till the base node
     def static obtainPathFromMap(n) {
         def texto =''
-        def baseFolderNode = obtainBaseFolder(n)
+        def baseFolderNode = obtainBaseFolder(n, false)
         if(baseFolderNode){
             while(!n.equals(baseFolderNode)){
                 if(nodeIsFolder(n)){
-                    texto = correctFolderName(n) << File.separator << texto  //TODO: Linux
+                    texto = correctFolderName(n) << File.separator << texto
                 }
                 n = n.parent
             }
@@ -345,20 +363,28 @@ class MDI{
 
     def static getFolderpathFromStrings(folderPath,nodo){
         String folderName = correctFolderName(nodo)
-        getPathFromStrings(folderPath,folderName) + File.separator    //TODO: Linux
+        getPathFromStrings(folderPath,folderName) + File.separator
     }
     
     //"
     def static soloPath(fileAddress) {
-        fileAddress[0..fileAddress.lastIndexOf(File.separator)]    //TODO: Linux
+        fileAddress[0..fileAddress.lastIndexOf(File.separator)]
     }
 
     //function, returns string, looks at text in node and correct it if it can't be used as a foldername (privado)
     def static correctFolderName(n){
-        String texto = n.text.trim().replace('/','-').replace(File.separator,'-')//.replace('.','-') //replaces chars not usefull in a Folder name    //TODO: Linux
+        String texto = n.text.trim().replace('/','-').replace(File.separator,'-')//.replace('.','-') //replaces chars not usefull in a Folder name
         if(n.text != texto) n.text = texto//corrects text in node too
         return texto // returns the corrected text
     }
+    
+    def static correctFileName(s){
+        // get rid of:
+        // /, \ , \n
+        def t = s.replace('\n','_').replace('\t','_').replace('/','_').replace('\\','_').replace('__','_')
+        return t.toString()
+    }
+    
     //end:
 
     //region: ---------------------- Modifying Nodes
@@ -388,10 +414,13 @@ class MDI{
 
     def static normalizeNode(mapFile, n, linkType){
         //UITools.informationMessage("${mapFile},\n ${n},\n ${linkType}".toString())
+        def i = 0
         def newUri = getUri(mapFile, n.link.file, linkType)
         if(newUri != n.link.uri){
             n.link.uri = newUri
+            i = 1
         }
+        return i
     }
     
     //end:
@@ -400,7 +429,7 @@ class MDI{
     // create all folders of a path (if they doesn't exist)
     def static createPath(String p) {
         //ui.informationMessage('createPath ' + p)
-        def folders = p.replace(File.separator,'/').split('/')    //TODO: Linux
+        def folders = p.replace(File.separator,'/').split('/')
         //ui.informationMessage(folders.toString())
         def path =''
         folders.each{ String f ->
@@ -521,14 +550,37 @@ class MDI{
         return listOfFiles
     }
 
-    def static getFilter(n) {
+    def static getFilter(n, doUpdate = false, defaultNameFilter = '') {
         def attrFilter = attrNameFilter
-        def defaultNameFilter = ''
-        if(!n.attributes.containsKey(attrFilter)){
-            def texto = "\n\n================ MDI =====================\n\nThe import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node: \n\n-----------------------------------------------------\n    -- nameFilter:\n-----------------------------------------------------\n       A filter to perform on the name of traversed files. If set, only files which match are brought. \n        This option allowes four types of inputs:\n           1. nothing (empty) means no filtering (default) \n           2. regex                   - example:       ~/.*\\.mp3/ \n           3. 'simplified' regex    - example:       ~.*\\.mp3 \n           4. string with *          - example:       *.mp3    (equivalent to regex      ~/(?i).*\\.mp3/  )\n           5. list of strings with * and ;         - example:       *.mp3;*.png   (equivalent to regex      ~/(?i)(.*\\.mp3|.*\\.png)/  )\n\n"
+        if(!n.attributes.containsKey(attrFilter) || doUpdate){
+            defaultNameFilter = n[attrFilter]?.text?:defaultNameFilter
+            def texto = baseFolderNote + """ parameters
+The import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node:
+
+-----------------------------------------------------
+# MDI: nameFilter:
+A filter to perform on the name of traversed files. If set, only files which match are brought. 
+This option allowes four types of inputs:
+1. nothing (empty) means no filtering (default) 
+2. regex
+  - example: `~/.*\\.mp3/ `
+3. 'simplified' regex
+  - example: `~.*\\.mp3` 
+4. string with *
+  - example: `*.mp3`   
+    (equivalent to regex      `~/(?i).*\\.mp3/`  )
+5. list of strings with '*' and ';'
+  - example: ` *.mp3;*.png `   
+    (equivalent to regex: ` ~/(?i)(.*\\.mp3|.*\\.png)/ `  )
+
+-----------------------------------------------------
+"""
+            n.note ?= ''
+            // n.note += baseFolderNote
             n.note += texto
             // UITools.informationMessage(texto)
-            n[attrFilter] = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)?:defaultNameFilter
+            def resp = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)
+            n[attrFilter] = (resp == null)? defaultNameFilter :resp
         }
         def filtro = n[attrFilter]
 //        filtro = filtro==''?null
@@ -547,15 +599,22 @@ class MDI{
         return ~regex
     }
 
-    def static getMaxDepth(n, defaultMaxDepth = -1) {
+    def static getMaxDepth(n, doUpdate = false, defaultMaxDepth = -1) {
         def attrFilter = attrMaxDepth
-        // def defaultMaxDepth = -1
         def onErrorMaxDepth = 0
-        if(!n[attrFilter]){
-            // n[attrFilter]= defaultMaxDepth
-            def texto = "\n\n-----------------------------------------------------\n  -- maxDepth:\n-----------------------------------------------------\n       The maximum number of directory levels when recursing \n        (default is -1 which means no limit, set to 0 for no recursion)\n\n   "
-            // UITools.informationMessage(texto)
+        if(!n[attrFilter] || doUpdate){
+            defaultMaxDepth = n[attrFilter]?.num?:defaultMaxDepth
+            def texto = baseFolderNote + """ maxDepth:
+
+The maximum number of directory levels when recursing   
+(default is -1 which means no limit, set to 0 for no recursion)
+
+
+-----------------------------------------------------
+"""
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultMaxDepth.toString())?:onErrorMaxDepth.toString()
+            n.note ?= ''
+            // n.note += baseFolderNote
             n.note += texto
         }
         def maxDepth = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():onErrorMaxDepth
@@ -564,12 +623,30 @@ class MDI{
         return maxDepth
     }
 
-    def static getCheckBroken(n, defaultCheck = 0) {
+    def static getCheckBroken(n, doUpdate = false, defaultCheck = 0) {
         def attrFilter = attrReallyBroken
-        if(!n[attrFilter]){
-            def texto = "\n\n-----------------------------------------------------\n  -- checkIfReallyBroken:\n-----------------------------------------------------\n       Check if existing nodes pointing to filtered files still exist. \n       This option is only useful if you defined a nameFilter before \n       but in the map there are also some files that doesn't match \n       this filter definition \n       (for example if you brought them manually or import them \n       before the actual namefilter setting)  \n\n    - default is 0 which means don't check --> Mark node as missing also if it doesn't match the current filter,\n\n    - set to 1 to extra check if a not matching file still exists in drive \n\n\n==========================================\n   "
+        if(!n[attrFilter] || doUpdate){
+            defaultCheck = n[attrFilter]?.num?:defaultCheck
+            def texto = baseFolderNote + """ checkIfReallyBroken:
+Check if existing nodes pointing to filtered files still exist.   
+This option is only useful if you defined a nameFilter before 
+but in the map there are also some files that doesn't match 
+this filter definition 
+(for example if you brought them manually or import them 
+before the actual namefilter setting)  
+
+- default is 0 which means don't check --> Mark node as missing also if it doesn't match the current filter,
+
+- set to 1 to extra check if a not matching file still exists in drive 
+
+
+-----------------------------------------------------
+
+"""
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultCheck.toString())?:defaultCheck.toString()
+            n.note ?= ''
+            // n.note += baseFolderNote
             n.note += texto
         }
         def checkBroken = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultCheck
@@ -578,12 +655,29 @@ class MDI{
         return checkBroken == 1
     }   
 
-    def static getMarkMoved(n, defaultMark = 0) {
+    def static getMarkMoved(n, doUpdate = false, defaultMark = 0) {
         def attrFilter = attrMarkWhenMoved
-        if(!n[attrFilter]){
-            def texto = "\n\n-----------------------------------------------------\n  -- markWhenMoved:\n-----------------------------------------------------\n       change styles to moved/renamed file Nodes \n\n set to: \n    0 : to change style only if node hasn't a previous one (default),\n\n    1 : to allways change the style,\n\n   -1 : to never change the style\n\n   "
+        if(!n[attrFilter] || doUpdate){
+            defaultMark = n[attrFilter]?.num?:defaultMark
+            def texto = baseFolderNote + """ markWhenMoved:
+
+change styles to moved/renamed file Nodes 
+
+set to:   
+ 
+0  : to change style only if node hasn't a previous one (default),
+
+1  : to allways change the style,
+
+-1 : to never change the style
+
+-----------------------------------------------------
+
+ """
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultMark.toString())?:defaultMark.toString()
+            n.note ?= ''
+            // n.note += baseFolderNote
             n.note += texto
         }
         def markMoved = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultMark
@@ -592,15 +686,27 @@ class MDI{
         return markMoved
     }
     
-    
-    
-    def static getLinkType(n, defaultLinkType = 0) {
-        defaultLinkType = ['absolute','relative'].indexOf(config['links'])
+    def static getLinkType(n, doUpdate = false, defaultLinkType = 0) {
         def attrFilter = attrLinkType
-        if(!n[attrFilter]){
-            def texto = "\n\n-----------------------------------------------------\n  -- linkType:\n-----------------------------------------------------\n       Define if you want to use Absolute or Relative \n       links for files and folders.\n\n set to:\n    0: to use Absolute links\n\n    1: to use Relative links\n\n\n==========================================\n   "
+        if(!n[attrFilter] || doUpdate){
+            defaultLinkType = n[attrFilter]?.num?:['absolute','relative'].indexOf(config['links'])
+            def texto = baseFolderNote + """ linkType:
+
+Define if you want to use Absolute or Relative   
+links for files and folders.
+
+ set to:   
+
+0 : to use Absolute links
+
+1 : to use Relative links
+
+-----------------------------------------------------
+   """
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultLinkType.toString())?:defaultLinkType.toString()
+            n.note ?= ''
+            //n.note += baseFolderNote
             n.note += texto
         }
         def linkType = n[attrFilter].isNum()?n[attrFilter].num0.toInteger():defaultLinkType
@@ -609,5 +715,14 @@ class MDI{
         normalizeNode(n.mindMap.file, n, linkType)
         return linkType
     }   
+    //end:
+    
+    //region: ---------------------- User Interface
+    def static statusInfo(t, icon = statusInfoIcon){
+        ScriptUtils.c().setStatusInfo('MDI',  "MDI: ${t}".toString() , icon)
+        timer.runAfter(5000){
+            ScriptUtils.c().setStatusInfo('MDI', '')
+        }
+    }
     //end:
 }

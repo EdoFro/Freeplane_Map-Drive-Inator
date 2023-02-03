@@ -1,5 +1,13 @@
 # History
 
+## v0.0.9
+
+* Now it recognizes when link of baseFolder node points to an unexisting file/folder
+* some refactoring
+* central statusInfo method for MDI
+* "create base folder node" can now be used to update baseFolderNode parameters
+* changed baseFolderNode note to markdown format
+
 ## v0.0.8
 
 * "normalization" command for absolute/relative links

@@ -25,3 +25,6 @@ nodo.find{MDI.isLinkToFileOrFolder(it)}.each{n ->
         MDI.markAsBroken(n,true,false)
     }
 }
+
+MDI.statusInfo(' timestamps attributes updated')
+

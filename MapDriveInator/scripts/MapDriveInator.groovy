@@ -49,14 +49,15 @@ if(baseFolderNode){
     def visibilizarAvance = MDI.wantToLog(nodeNewImports)
     if(visibilizarAvance) texto.append("\n").append('(elapsed time in miliseconds)').append("\n").append((tIni - new Date().getTime()) as String).append("\n")
     baseFolderNode.style.name = MDI.styleBaseFolder
+    baseFolderNode.noteContentType = 'markdown'
     baseFolderPath = MDI.getPathFromLink(baseFolderNode)
     deleteNodesWithLinkToOther(nodeNewImports)
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
         
     // brought this to before getting the changes done 
-    def linkType = MDI.getLinkType(baseFolderNode)
     def nameFilt = MDI.getFilter(baseFolderNode)
     def maxD = MDI.getMaxDepth(baseFolderNode)
+    def linkType = MDI.getLinkType(baseFolderNode)
     def markMovedOption = MDI.markWhenMoved(baseFolderNode)
     def checkIfBroken = MDI.checkIfReallyBroken(baseFolderNode)
 

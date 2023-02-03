@@ -554,7 +554,27 @@ class MDI{
         def attrFilter = attrNameFilter
         def defaultNameFilter = ''
         if(!n.attributes.containsKey(attrFilter)){
-            def texto = "\n\n================ MDI =====================\n\nThe import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node: \n\n-----------------------------------------------------\n    -- nameFilter:\n-----------------------------------------------------\n       A filter to perform on the name of traversed files. If set, only files which match are brought. \n        This option allowes four types of inputs:\n           1. nothing (empty) means no filtering (default) \n           2. regex                   - example:       ~/.*\\.mp3/ \n           3. 'simplified' regex    - example:       ~.*\\.mp3 \n           4. string with *          - example:       *.mp3    (equivalent to regex      ~/(?i).*\\.mp3/  )\n           5. list of strings with * and ;         - example:       *.mp3;*.png   (equivalent to regex      ~/(?i)(.*\\.mp3|.*\\.png)/  )\n\n"
+            def texto = baseFolderNote + """ parameters
+The import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node:
+
+-----------------------------------------------------
+# MDI: nameFilter:
+A filter to perform on the name of traversed files. If set, only files which match are brought. 
+This option allowes four types of inputs:
+1. nothing (empty) means no filtering (default) 
+2. regex
+  - example: `~/.*\\.mp3/ `
+3. 'simplified' regex
+  - example: `~.*\\.mp3` 
+4. string with *
+  - example: `*.mp3`   
+    (equivalent to regex      `~/(?i).*\\.mp3/`  )
+5. list of strings with '*' and ';'
+  - example: ` *.mp3;*.png `   
+    (equivalent to regex: ` ~/(?i)(.*\\.mp3|.*\\.png)/ `  )
+
+-----------------------------------------------------
+"""
             n.note += texto
             // UITools.informationMessage(texto)
             n[attrFilter] = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)?:defaultNameFilter
@@ -582,8 +602,14 @@ class MDI{
         def onErrorMaxDepth = 0
         if(!n[attrFilter]){
             // n[attrFilter]= defaultMaxDepth
-            def texto = "\n\n-----------------------------------------------------\n  -- maxDepth:\n-----------------------------------------------------\n       The maximum number of directory levels when recursing \n        (default is -1 which means no limit, set to 0 for no recursion)\n\n   "
-            // UITools.informationMessage(texto)
+            def texto = baseFolderNote + """ maxDepth:
+
+The maximum number of directory levels when recursing   
+(default is -1 which means no limit, set to 0 for no recursion)
+
+
+-----------------------------------------------------
+"""
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultMaxDepth.toString())?:onErrorMaxDepth.toString()
             n.note += texto
         }
@@ -596,7 +622,22 @@ class MDI{
     def static getCheckBroken(n, defaultCheck = 0) {
         def attrFilter = attrReallyBroken
         if(!n[attrFilter]){
-            def texto = "\n\n-----------------------------------------------------\n  -- checkIfReallyBroken:\n-----------------------------------------------------\n       Check if existing nodes pointing to filtered files still exist. \n       This option is only useful if you defined a nameFilter before \n       but in the map there are also some files that doesn't match \n       this filter definition \n       (for example if you brought them manually or import them \n       before the actual namefilter setting)  \n\n    - default is 0 which means don't check --> Mark node as missing also if it doesn't match the current filter,\n\n    - set to 1 to extra check if a not matching file still exists in drive \n\n\n==========================================\n   "
+            def texto = baseFolderNote + """ checkIfReallyBroken:
+Check if existing nodes pointing to filtered files still exist.   
+This option is only useful if you defined a nameFilter before 
+but in the map there are also some files that doesn't match 
+this filter definition 
+(for example if you brought them manually or import them 
+before the actual namefilter setting)  
+
+- default is 0 which means don't check --> Mark node as missing also if it doesn't match the current filter,
+
+- set to 1 to extra check if a not matching file still exists in drive 
+
+
+-----------------------------------------------------
+
+"""
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultCheck.toString())?:defaultCheck.toString()
             n.note += texto
@@ -610,7 +651,21 @@ class MDI{
     def static getMarkMoved(n, defaultMark = 0) {
         def attrFilter = attrMarkWhenMoved
         if(!n[attrFilter]){
-            def texto = "\n\n-----------------------------------------------------\n  -- markWhenMoved:\n-----------------------------------------------------\n       change styles to moved/renamed file Nodes \n\n set to: \n    0 : to change style only if node hasn't a previous one (default),\n\n    1 : to allways change the style,\n\n   -1 : to never change the style\n\n   "
+            def texto = baseFolderNote + """ markWhenMoved:
+
+change styles to moved/renamed file Nodes 
+
+set to:   
+ 
+0  : to change style only if node hasn't a previous one (default),
+
+1  : to allways change the style,
+
+-1 : to never change the style
+
+-----------------------------------------------------
+
+ """
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultMark.toString())?:defaultMark.toString()
             n.note += texto
@@ -627,7 +682,19 @@ class MDI{
         defaultLinkType = ['absolute','relative'].indexOf(config['links'])
         def attrFilter = attrLinkType
         if(!n[attrFilter]){
-            def texto = "\n\n-----------------------------------------------------\n  -- linkType:\n-----------------------------------------------------\n       Define if you want to use Absolute or Relative \n       links for files and folders.\n\n set to:\n    0: to use Absolute links\n\n    1: to use Relative links\n\n\n==========================================\n   "
+            def texto = baseFolderNote + """ linkType:
+
+Define if you want to use Absolute or Relative   
+links for files and folders.
+
+ set to:   
+
+0 : to use Absolute links
+
+1 : to use Relative links
+
+-----------------------------------------------------
+   """
             // UITools.informationMessage(texto)
             n[attrFilter]= UITools.showInputDialog(n.delegate, texto, defaultLinkType.toString())?:defaultLinkType.toString()
             n.note += texto

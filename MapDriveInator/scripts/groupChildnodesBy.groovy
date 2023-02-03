@@ -109,7 +109,8 @@ def createGroupNodes(n,groups, detailsTxt){
 
 //returns the first word of a string (ok, no, it returns the substring before a space)
 def firstWord(s){
+    s = s.trim()
     def i=s.indexOf(' ')
-    return i>=0?s.substring(0,i):s //if no space then returns the whole string
+    return i>0?s.substring(0,i):s //if no space then returns the whole string
 }
 

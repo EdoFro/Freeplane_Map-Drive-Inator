@@ -2,6 +2,8 @@
 import MDI
 
 baseFolderNode = MDI.obtainBaseFolder(node)
+if(!baseFolderNode){ return }
+
 def broken = baseFolderNode.find{MDI.isBroken(it)}
 def before = broken.size()//.toString()
 

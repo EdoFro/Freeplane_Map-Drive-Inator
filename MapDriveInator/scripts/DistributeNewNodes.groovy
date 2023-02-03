@@ -6,7 +6,6 @@ def nodo = node
 
 baseFolderNode = MDI.obtainBaseFolder(nodo) //obtains "base folder"
 if(!baseFolderNode){
-    ui.informationMessage("couldn't find the current 'baseFolderNode' for the selected node \n\n (path between the selected node and the map's root)")
     return
 }
 nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)

@@ -538,7 +538,7 @@ if(baseFolderNode){
     // c.select(baseFolderNode);
 //end:  ------------------------------------------------------------------
 }else{
-    ui.informationMessage("couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)")
+    return
 }
 
 //end: ============================== fin: MAIN SCRIPT ============================================================

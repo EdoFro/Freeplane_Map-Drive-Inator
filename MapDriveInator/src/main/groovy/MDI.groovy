@@ -34,7 +34,7 @@ class MDI{
     
     
     // function, returns Node ("Base folder") under the selected node
-    def static obtainBaseFolder(n) {
+    def static obtainBaseFolder(n, boolean showMessageIfNone = true, boolean baseFolderShouldExistInDrive = true) {
         // returns the first node which has a link to a file directory and has style styleFolder + styleBaseFolder
         //return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
         def nBase
@@ -44,6 +44,23 @@ class MDI{
         nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder)}
         nBase  ?= (n.link?.file?.directory)? n : null
         nBase  ?= n.pathToRoot.find{it.link?.file?.directory}
+        
+        if(!nBase){
+            def nBaseNotOK = n.pathToRoot.find{it.hasStyle(styleBaseFolder)}
+            def nBaseFileExists = nBaseNotOK?.link?.file?.exists()?true:false
+            if(nBaseFileExists || (nBaseNotOK && !baseFolderShouldExistInDrive)){
+                nBase = nBaseNotOK
+            } else if (showMessageIfNone){
+                def msg
+                if(nBaseNotOK){
+                    msg = "'baseFolderNode' has no valid link (it links to no existing folder)"
+                    ScriptUtils.c().select(nBaseNotOK)
+                }else {
+                    msg = "couldn't find the current 'baseFolderNode' or assign a new one \n\n (path between the selected node and the map's root)"
+                }
+                UITools.informationMessage(UITools.frame, msg, "Map-Drive-Inator", 2)
+            }
+        }
         return nBase
     }
 
@@ -302,7 +319,7 @@ class MDI{
     //it uses all the file-folder styled nodes till the base node
     def static obtainPathFromMap(n) {
         def texto =''
-        def baseFolderNode = obtainBaseFolder(n)
+        def baseFolderNode = obtainBaseFolder(n, false)
         if(baseFolderNode){
             while(!n.equals(baseFolderNode)){
                 if(nodeIsFolder(n)){

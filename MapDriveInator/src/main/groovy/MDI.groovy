@@ -22,6 +22,8 @@ class MDI{
     private static final String styleFolder         = 'file_folder'
     private static final String styleBaseFolder     = 'baseFolder'
     private static final String styleNewImport      = 'newFolderImport'
+    
+    private static final String statusInfoIcon      = 'emoji-1F4BD'
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
@@ -388,10 +390,13 @@ class MDI{
 
     def static normalizeNode(mapFile, n, linkType){
         //UITools.informationMessage("${mapFile},\n ${n},\n ${linkType}".toString())
+        def i = 0
         def newUri = getUri(mapFile, n.link.file, linkType)
         if(newUri != n.link.uri){
             n.link.uri = newUri
+            i = 1
         }
+        return i
     }
     
     //end:

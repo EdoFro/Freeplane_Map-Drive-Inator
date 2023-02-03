@@ -300,8 +300,7 @@ class MDI{
     }
 
     def static getPathFromLink(n){
-        def lastChar = (n.link.file?.directory || nodeIsFolder(n))?File.separator:'' //TODO: Linux
-        //return (n.link.file?n.link.file.path + lastChar:null)
+        def lastChar = (n.link.file?.directory || nodeIsFolder(n))? File.separator : ''
         return getPathFromLink3(n, lastChar)
     }
 
@@ -323,7 +322,7 @@ class MDI{
         if(baseFolderNode){
             while(!n.equals(baseFolderNode)){
                 if(nodeIsFolder(n)){
-                    texto = correctFolderName(n) << File.separator << texto  //TODO: Linux
+                    texto = correctFolderName(n) << File.separator << texto
                 }
                 n = n.parent
             }
@@ -364,17 +363,17 @@ class MDI{
 
     def static getFolderpathFromStrings(folderPath,nodo){
         String folderName = correctFolderName(nodo)
-        getPathFromStrings(folderPath,folderName) + File.separator    //TODO: Linux
+        getPathFromStrings(folderPath,folderName) + File.separator
     }
     
     //"
     def static soloPath(fileAddress) {
-        fileAddress[0..fileAddress.lastIndexOf(File.separator)]    //TODO: Linux
+        fileAddress[0..fileAddress.lastIndexOf(File.separator)]
     }
 
     //function, returns string, looks at text in node and correct it if it can't be used as a foldername (privado)
     def static correctFolderName(n){
-        String texto = n.text.trim().replace('/','-').replace(File.separator,'-')//.replace('.','-') //replaces chars not usefull in a Folder name    //TODO: Linux
+        String texto = n.text.trim().replace('/','-').replace(File.separator,'-')//.replace('.','-') //replaces chars not usefull in a Folder name
         if(n.text != texto) n.text = texto//corrects text in node too
         return texto // returns the corrected text
     }
@@ -430,7 +429,7 @@ class MDI{
     // create all folders of a path (if they doesn't exist)
     def static createPath(String p) {
         //ui.informationMessage('createPath ' + p)
-        def folders = p.replace(File.separator,'/').split('/')    //TODO: Linux
+        def folders = p.replace(File.separator,'/').split('/')
         //ui.informationMessage(folders.toString())
         def path =''
         folders.each{ String f ->

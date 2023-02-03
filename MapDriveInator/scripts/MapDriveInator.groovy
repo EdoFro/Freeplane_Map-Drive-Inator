@@ -48,7 +48,7 @@ if(baseFolderNode){
     if(!nodeNewImports) return 'Interrupted: no MDI styles'
     def visibilizarAvance = MDI.wantToLog(nodeNewImports)
     if(visibilizarAvance) texto.append("\n").append('(elapsed time in miliseconds)').append("\n").append((tIni - new Date().getTime()) as String).append("\n")
-    baseFolderNode.style.name = 'baseFolder'
+    baseFolderNode.style.name = MDI.styleBaseFolder
     baseFolderPath = MDI.getPathFromLink(baseFolderNode)
     deleteNodesWithLinkToOther(nodeNewImports)
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
@@ -232,7 +232,7 @@ if(baseFolderNode){
     }
     xClonesPend4 = xClonesPend.clone()
 
-    def nodosConFileEnOtraParte = (nodosSinFileB + nodosSinFileC).findAll{new File(it.link).exists()}  //TODO: 
+    def nodosConFileEnOtraParte = (nodosSinFileB + nodosSinFileC).findAll{new File(it.link).exists()}
     // ui.informationMessage(nodosConFileEnOtraParte as String)
     def nodosSinFileBC = (nodosSinFileB + nodosSinFileC) - nodosConFileEnOtraParte
     // ui.informationMessage(nodosSinFileBC as String)
@@ -293,9 +293,9 @@ if(baseFolderNode){
         // agregar f a nodo nueva importación
         def nodoDonde = nodeNewImports
         def gPath = baseFolderPath
-        (f - baseFolderPath)?.split(Pattern.quote(File.separator)).init().each{String dir ->   //TODO: linux
+        (f - baseFolderPath)?.split(Pattern.quote(File.separator)).init().each{String dir ->   
             // ui.informationMessage('dir   :' + dir as String)
-            gPath +=  dir << File.separator  //TODO: linux
+            gPath +=  dir << File.separator
             // ui.informationMessage('gPath   :' + gPath as String)
             nodoDonde = nodoDonde.children.find{it.text == dir}?:nodoDonde.createChild()
             if(nodoDonde.text==''){
@@ -526,7 +526,7 @@ if(baseFolderNode){
 
     //region: ---------------------- Reporte Y Final Main ------------------------------
 
-    if(modoDebug) ui.informationMessage('---------------------- Reporte Y Final Main ------------------------------');
+    if(modoDebug) ui.informationMessage('---------------------- Reporte Y Final Main ------------------------------')
     textoReport.append((((new Date().getTime() - tIni)/100).toInteger()/10) as String).append(" seconds\n\n")
     ui.informationMessage(textoReport.toString())
     textoReport << '=====================================\n\n' << texto
@@ -558,7 +558,7 @@ def armaListadoRutas(nodo, String path){
         if(MDI.nodeIsFolder(it)){
             MDI.markAsMoved(it,false)
             def pathF = MDI.getFolderpathFromStrings(path,it)
-            xFolders << new xFile(it.id, MDI.getPathFromLink3(it,File.separator), pathF) //TODO: linux
+            xFolders << new xFile(it.id, MDI.getPathFromLink3(it,File.separator), pathF)
             if(it.children.size()>0){
                 armaListadoRutas(it, pathF)
             }

@@ -378,6 +378,14 @@ class MDI{
         if(n.text != texto) n.text = texto//corrects text in node too
         return texto // returns the corrected text
     }
+    
+    def static correctFileName(s){
+        // get rid of:
+        // /, \ , \n
+        def t = s.replace('\n','_').replace('\t','_').replace('/','_').replace('\\','_').replace('__','_')
+        return t.toString()
+    }
+    
     //end:
 
     //region: ---------------------- Modifying Nodes

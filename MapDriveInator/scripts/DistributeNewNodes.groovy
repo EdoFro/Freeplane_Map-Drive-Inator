@@ -94,7 +94,7 @@ while (nodesToMove.size()>0 && evitarLoop<5){
 }
 
 c.select(nodeNewImports);
-c.statusInfo = "    -------------   new 'file' Nodes positioned    -------------      "
+MDI.statusInfo(" -----   new 'file' Nodes positioned    ----- ")
 
 
 

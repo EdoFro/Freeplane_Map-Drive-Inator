@@ -8,7 +8,7 @@ if(baseFolderNode){
     normalizeNode(baseFolderNode)
     c.statusInfo = "File links normalized"
 } else {
-    c.statusInfo = "couldn't find the current 'baseFolderNode' for the selected node"
+    MDI.statusInfo("File links normalization aborted")
 }
 
 

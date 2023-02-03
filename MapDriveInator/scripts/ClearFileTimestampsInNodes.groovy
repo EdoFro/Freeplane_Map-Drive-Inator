@@ -21,4 +21,4 @@ nodo.find{MDI.isLinkToFileOrFolder(it)}.each{n ->
     
 }
 
-c.statusInfo =' timestamps attributes deleted'
+MDI.statusInfo(' timestamps attributes deleted')

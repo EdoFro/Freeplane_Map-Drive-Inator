@@ -4,10 +4,10 @@
 def fileAttr = getSortOrder(node)
 if(fileAttr){
     sortRecursively(node, fileAttr)
-    c.statusInfo= '-------------------- nodes sorted by ' + fileAttr + ' --------------------'
+    MDI.statusInfo('-------------------- nodes sorted by ' + fileAttr + ' --------------------')
     c.select(node)
 } else {
-    c.statusInfo= '-------------------- sort action cancelled --------------------'
+    MDI.statusInfo('-------------------- sort action cancelled --------------------')
 }
 //end
 

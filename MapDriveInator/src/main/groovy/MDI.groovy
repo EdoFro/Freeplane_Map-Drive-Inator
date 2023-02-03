@@ -610,4 +610,13 @@ class MDI{
         return linkType
     }   
     //end:
+    
+    //region: ---------------------- User Interface
+    def static statusInfo(t, icon = statusInfoIcon){
+        ScriptUtils.c().setStatusInfo('MDI',  "MDI: ${t}".toString() , icon)
+        timer.runAfter(5000){
+            ScriptUtils.c().setStatusInfo('MDI', '')
+        }
+    }
+    //end:
 }

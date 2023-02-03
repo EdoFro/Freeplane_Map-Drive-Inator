@@ -25,13 +25,13 @@ if(fPath && fPath != ''){
             MDI.setLink(node, fPath + fileName, linkType)
             node.text = file.name
         } else {
-            c.statusInfo = 'selected node has a link already'
+            MDI.statusInfo('selected node has a link already')
         }
     } else {
-        c.statusInfo = 'no Note in selected node'
+        MDI.statusInfo('no Note in selected node')
     }
 } else {
-    c.statusInfo = 'no Base folder node in pathToRoot from selected node'
+    MDI.statusInfo('no baseFolder node in pathToRoot from selected node')
 }
 
 def correctFileName(s){

@@ -19,8 +19,9 @@ if (groupingCase){
             mn.moveTo(gn)
         }
     }
+    MDI.statusInfo(" --- grouped ---")
 } else {
-    c.statusInfo = " --- grouping canceled ---"
+    MDI.statusInfo(" --- grouping canceled ---")
 }
 
 

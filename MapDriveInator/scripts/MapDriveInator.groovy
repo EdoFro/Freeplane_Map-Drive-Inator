@@ -534,7 +534,7 @@ if(baseFolderNode){
     texto.setLength(0)
     textoReport.setLength(0)
     if (newFilesImported) c.select(nodeNewImports);
-    c.statusInfo = '    -------------   Map-Drive-Inated    -------------      ';
+    MDI.statusInfo('    -------------   Map-Drive-Inated    -------------      ')
     // c.select(baseFolderNode);
 //end:  ------------------------------------------------------------------
 }else{

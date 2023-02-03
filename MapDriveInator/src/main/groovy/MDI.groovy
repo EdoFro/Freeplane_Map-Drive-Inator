@@ -266,8 +266,8 @@ class MDI{
         return (n.style.name == styleBroken)
     }
 
-    def static checkIfReallyBroken(n) {
-        return getFilter(n).asBoolean() && getCheckBroken(n)
+    def static checkIfReallyBroken(n, doUpdate = false) {
+        return getFilter(n).asBoolean() && getCheckBroken(n, doUpdate)
     }
 
     def static markAsBroken(n,b,checkAgain = false){
@@ -548,10 +548,10 @@ class MDI{
         return listOfFiles
     }
 
-    def static getFilter(n) {
+    def static getFilter(n, doUpdate = false, defaultNameFilter = '') {
         def attrFilter = attrNameFilter
-        def defaultNameFilter = ''
-        if(!n.attributes.containsKey(attrFilter)){
+        if(!n.attributes.containsKey(attrFilter) || doUpdate){
+            defaultNameFilter = n[attrFilter]?.text?:defaultNameFilter
             def texto = baseFolderNote + """ parameters
 The import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node:
 
@@ -575,7 +575,8 @@ This option allowes four types of inputs:
 """
             n.note += texto
             // UITools.informationMessage(texto)
-            n[attrFilter] = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)?:defaultNameFilter
+            def resp = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)
+            n[attrFilter] = (resp == null)? defaultNameFilter :resp
         }
         def filtro = n[attrFilter]
 //        filtro = filtro==''?null
@@ -594,11 +595,11 @@ This option allowes four types of inputs:
         return ~regex
     }
 
-    def static getMaxDepth(n, defaultMaxDepth = -1) {
+    def static getMaxDepth(n, doUpdate = false, defaultMaxDepth = -1) {
         def attrFilter = attrMaxDepth
         def onErrorMaxDepth = 0
-        if(!n[attrFilter]){
-            // n[attrFilter]= defaultMaxDepth
+        if(!n[attrFilter] || doUpdate){
+            defaultMaxDepth = n[attrFilter]?.num?:defaultMaxDepth
             def texto = baseFolderNote + """ maxDepth:
 
 The maximum number of directory levels when recursing   
@@ -616,9 +617,10 @@ The maximum number of directory levels when recursing
         return maxDepth
     }
 
-    def static getCheckBroken(n, defaultCheck = 0) {
+    def static getCheckBroken(n, doUpdate = false, defaultCheck = 0) {
         def attrFilter = attrReallyBroken
-        if(!n[attrFilter]){
+        if(!n[attrFilter] || doUpdate){
+            defaultCheck = n[attrFilter]?.num?:defaultCheck
             def texto = baseFolderNote + """ checkIfReallyBroken:
 Check if existing nodes pointing to filtered files still exist.   
 This option is only useful if you defined a nameFilter before 
@@ -645,9 +647,10 @@ before the actual namefilter setting)
         return checkBroken == 1
     }   
 
-    def static getMarkMoved(n, defaultMark = 0) {
+    def static getMarkMoved(n, doUpdate = false, defaultMark = 0) {
         def attrFilter = attrMarkWhenMoved
-        if(!n[attrFilter]){
+        if(!n[attrFilter] || doUpdate){
+            defaultMark = n[attrFilter]?.num?:defaultMark
             def texto = baseFolderNote + """ markWhenMoved:
 
 change styles to moved/renamed file Nodes 
@@ -673,12 +676,10 @@ set to:
         return markMoved
     }
     
-    
-    
-    def static getLinkType(n, defaultLinkType = 0) {
-        defaultLinkType = ['absolute','relative'].indexOf(config['links'])
+    def static getLinkType(n, doUpdate = false, defaultLinkType = 0) {
         def attrFilter = attrLinkType
-        if(!n[attrFilter]){
+        if(!n[attrFilter] || doUpdate){
+            defaultLinkType = n[attrFilter]?.num?:['absolute','relative'].indexOf(config['links'])
             def texto = baseFolderNote + """ linkType:
 
 Define if you want to use Absolute or Relative   

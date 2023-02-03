@@ -451,8 +451,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;&nbsp;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="https://github.com/EdoFro/Freeplane_Map-Drive-Inator" ID="ID_1994582973" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator"/>
 <node TEXT="possible paths" STYLE_REF="locked" ID="ID_399374123"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -506,13 +505,13 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="files" ID="ID_1340011039">
 <node TEXT=".git" ID="ID_43997028" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.git/">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:33" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:33-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="02-02-23 20:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T20:07-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 </node>
 <node TEXT=".gitattributes" ID="ID_629932038" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.gitattributes">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="02-02-23 19:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T19:18-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="20-07-20 10:32" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-20T10:32-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="66" OBJECT="org.freeplane.features.format.FormattedNumber|66|#,##0"/>
@@ -532,7 +531,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 </node>
 <node TEXT=".gitignore" ID="ID_710272888" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.gitignore">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:02" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:02-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="02-02-23 20:22" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T20:22-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="06-01-22 16:32" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T16:32-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="483" OBJECT="org.freeplane.features.format.FormattedNumber|483|#,##0"/>
@@ -637,23 +636,23 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="MapDriveInatorV2" FOLDED="true" ID="ID_828647119" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <node TEXT="lib" STYLE_REF="Organizador" ID="ID_1299482089">
 <node TEXT="src" ID="ID_598707755" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="main" ID="ID_913704295" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/main/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="groovy" ID="ID_1433998257" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/main/groovy/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -669,13 +668,13 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 <node TEXT="MDIv2.groovy" ID="ID_1835829851" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/main/groovy/MDIv2.groovy">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:13-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 14:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T14:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="5.023" OBJECT="org.freeplane.features.format.FormattedNumber|5023|#,##0"/>
 </node>
 <node TEXT="Sync.groovy" ID="ID_309132156" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/main/groovy/Sync.groovy">
 <attribute NAME="lastModifiedTime" VALUE="14-01-22 20:09" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-14T20:09-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 14:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T14:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="691" OBJECT="org.freeplane.features.format.FormattedNumber|691|#,##0"/>
 </node>
@@ -684,7 +683,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="build" ID="ID_22994202" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -700,20 +699,20 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 <node TEXT="classes" STYLE_REF="locked" ID="ID_873682295" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/classes/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 16:11" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:11-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="18-01-23 15:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:07-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
 <node TEXT="tmp" STYLE_REF="locked" ID="ID_11691582" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/tmp/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 16:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:12-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="18-01-23 15:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:07-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
 </node>
 <node TEXT="lib" ID="ID_38835318" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/lib/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -740,7 +739,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="scripts" ID="ID_1535564200" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/scripts/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -756,7 +755,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 <node TEXT="CreateBaseFolderNode.groovy" ID="ID_895107032" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/scripts/CreateBaseFolderNode.groovy">
 <attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 14:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T14:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="346" OBJECT="org.freeplane.features.format.FormattedNumber|346|#,##0"/>
 </node>
@@ -930,19 +929,19 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="MapDriveInator.mm" ID="ID_151492379" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/MapDriveInator.mm">
 <attribute NAME="lastModifiedTime" VALUE="20-01-22 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-20T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 14:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T14:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="21.759" OBJECT="org.freeplane.features.format.FormattedNumber|21759|#,##0"/>
 </node>
 <node TEXT="build.gradle" ID="ID_56095861" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build.gradle">
 <attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 14:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T14:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="2.086" OBJECT="org.freeplane.features.format.FormattedNumber|2086|#,##0"/>
 </node>
 <node TEXT="zips" ID="ID_675695541" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="icons" ID="ID_1495924276" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/icons/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -957,12 +956,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator" ID="ID_1106013023" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/icons/MapDriveInator/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
@@ -979,12 +978,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator" ID="ID_857784023" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/doc/MapDriveInator/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
@@ -1001,12 +1000,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator" ID="ID_1339117801" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/templates/MapDriveInator/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="agregar template" STYLE_REF="pendingTask" ID="ID_1337837486"/>
@@ -1016,7 +1015,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="images" ID="ID_1547784914" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/images/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator-screenshot-1.png" STYLE_REF="pendingTask" ID="ID_1916027439">
@@ -1057,7 +1056,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="version.properties" ID="ID_734013378" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/version.properties">
 <attribute NAME="lastModifiedTime" VALUE="17-01-22 22:33" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-17T22:33-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 14:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T14:39-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="164" OBJECT="org.freeplane.features.format.FormattedNumber|164|#,##0"/>
 </node>
@@ -1066,19 +1065,19 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="MapDriveInator" STYLE_REF="file_folder" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
 <attribute NAME="script1" VALUE="def nodo = node&#xd;&#xa;def texto = nodo.text&#xd;&#xa;&#xd;&#xa;def nodos = nodo.find{it.text.contains(texto)}&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;def cambiarA = ui.showInputDialog(&#xd;&#xa;        nodo.delegate, &#xd;&#xa;        &apos;input new AddOn name (it will CamelCase it and delete spaces)&apos;, &#xd;&#xa;        &apos; my new add on example   &apos;&#xd;&#xa;    )?.trim()&#xd;&#xa;&#xd;&#xa;cambiarA = cambiarA.split(&apos; &apos;)*.capitalize().join()&#xd;&#xa;&#xd;&#xa;nodos.each{n -&gt;&#xd;&#xa;    n.text = n.text.replace(texto,cambiarA)&#xd;&#xa;}"/>
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 10:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T10:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <node TEXT="lib" STYLE_REF="Organizador" ID="ID_509478984">
 <node TEXT="src" STYLE_REF="file_folder" ID="ID_767967142" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/src/">
 <attribute NAME="lastModifiedTime" VALUE="10-01-22 13:28" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-10T13:28-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="main" STYLE_REF="file_folder" ID="ID_242117641" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/src/main/">
 <attribute NAME="lastModifiedTime" VALUE="10-01-22 13:28" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-10T13:28-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="groovy" STYLE_REF="file_folder" ID="ID_225362559" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/src/main/groovy/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -1093,14 +1092,14 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MDI.groovy" ID="ID_901526658" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/src/main/groovy/MDI.groovy">
-<attribute NAME="lastModifiedTime" VALUE="01-02-23 11:49" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:49-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:49" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:49-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:19-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:34-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="25.256" OBJECT="org.freeplane.features.format.FormattedNumber|25256|#,##0"/>
+<attribute NAME="fileSize" VALUE="28.637" OBJECT="org.freeplane.features.format.FormattedNumber|28637|#,##0"/>
 <node TEXT="class MDI{" FOLDED="true" ID="ID_1196551919">
 <node TEXT="//region: ---------------------- Functions Initial Setup" STYLE_REF="completedTask" ID="ID_621271091">
 <node TEXT="def static obtainBaseFolder(n) {" STYLE_REF="completedTask" FOLDED="true" ID="ID_755781680"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -1395,8 +1394,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;&nbsp;&nbsp;}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -1419,8 +1417,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       se puede borrar
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="getAbsoluteUri example" ID="ID_619435497"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -1539,8 +1536,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -1894,8 +1890,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -1906,8 +1901,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="https://github.com/freeplane/freeplane/blob/0a628efb0e620d939a4da181cf2999e7abe95cf9/freeplane/src/main/java/org/freeplane/features/link/LinkController.java#L697" ID="ID_486413452" LINK="https://github.com/freeplane/freeplane/blob/0a628efb0e620d939a4da181cf2999e7abe95cf9/freeplane/src/main/java/org/freeplane/features/link/LinkController.java#L697"/>
 <node TEXT="xxx" ID="ID_403612325"/>
 </node>
@@ -1960,8 +1954,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       assert p3.toString().replace('\\','/').replace(' ','%20') == node.parent.link.text
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -1972,8 +1965,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="probar con este nodo" ID="ID_1030172247" LINK="ignoredByGitHub/New%20Mindmap.mm#ID_1353457907"/>
 </node>
 </node>
@@ -1987,8 +1979,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       se puede borrar
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="prueba A" ID="ID_233077207"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -2074,8 +2065,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       n.link
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2086,8 +2076,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="prueba B" ID="ID_1145953636"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -2222,8 +2211,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       //end:
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2234,8 +2222,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="prueba C" ID="ID_1709758831"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -2304,8 +2291,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2316,8 +2302,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2335,18 +2320,18 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 16:11" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:11-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="classes" STYLE_REF="locked" ID="ID_492783989" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/build/classes/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:49" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:49-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:34-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 16:11" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:11-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
 <node TEXT="tmp" STYLE_REF="locked" ID="ID_1705582526" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/build/tmp/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="31-01-23 17:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-31T17:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 09:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T09:42-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 16:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:12-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
@@ -2366,14 +2351,14 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:53-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator.jar" ID="ID_1873606824" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/lib/MapDriveInator.jar">
-<attribute NAME="lastModifiedTime" VALUE="01-02-23 11:49" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:49-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="45.754" OBJECT="org.freeplane.features.format.FormattedNumber|45754|#,##0"/>
+<attribute NAME="fileSize" VALUE="50.932" OBJECT="org.freeplane.features.format.FormattedNumber|50932|#,##0"/>
 </node>
 </node>
 </node>
@@ -2388,8 +2373,8 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 11:08" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:08-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="02-02-23 18:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T18:10-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <node TEXT="importMDIStyles.groovy" ID="ID_50035749" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/importMDIStyles.groovy"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -2562,7 +2547,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="18-01-23 11:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:13-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="18-01-23 11:08" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:08-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="1.527" OBJECT="org.freeplane.features.format.FormattedNumber|1527|#,##0"/>
 <node TEXT="add-ons que actualmente usan edofro.pseudofreeplaneapi.UserStyles" ID="ID_480689300">
@@ -2572,16 +2557,16 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 <node TEXT="CreateBaseFolderNode.groovy" ID="ID_1667255103" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/CreateBaseFolderNode.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 10:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T10:12-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="610" OBJECT="org.freeplane.features.format.FormattedNumber|610|#,##0"/>
+<attribute NAME="fileSize" VALUE="472" OBJECT="org.freeplane.features.format.FormattedNumber|472|#,##0"/>
 </node>
 <node TEXT="MapDriveInator.groovy" FOLDED="true" ID="ID_696665609" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/MapDriveInator.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="01-02-23 11:46" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:46-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 10:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T10:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="26.545" OBJECT="org.freeplane.features.format.FormattedNumber|26545|#,##0"/>
+<attribute NAME="fileSize" VALUE="26.583" OBJECT="org.freeplane.features.format.FormattedNumber|26583|#,##0"/>
 <node TEXT="filesOK" ID="ID_1203036016">
 <node TEXT="intersect" LOCALIZED_STYLE_REF="default" ID="ID_1831815539">
 <node TEXT="listFiles" ID="ID_1790725510" BACKGROUND_COLOR="#ff9999"/>
@@ -3067,22 +3052,22 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 <node TEXT="ImportJustFolders.groovy" ID="ID_1971460697" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/ImportJustFolders.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 13:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T13:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 10:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T10:20-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="2.037" OBJECT="org.freeplane.features.format.FormattedNumber|2037|#,##0"/>
+<attribute NAME="fileSize" VALUE="1.987" OBJECT="org.freeplane.features.format.FormattedNumber|1987|#,##0"/>
 </node>
 <node TEXT="DistributeNewNodes.groovy" ID="ID_565866031" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/DistributeNewNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 12:59" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T12:59-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 10:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T10:20-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="5.549" OBJECT="org.freeplane.features.format.FormattedNumber|5549|#,##0"/>
+<attribute NAME="fileSize" VALUE="5.052" OBJECT="org.freeplane.features.format.FormattedNumber|5052|#,##0"/>
 </node>
 <node TEXT="checkMissingFileNodes.groovy" ID="ID_1194216259" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/checkMissingFileNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:48-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 10:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T10:10-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="458" OBJECT="org.freeplane.features.format.FormattedNumber|458|#,##0"/>
+<attribute NAME="fileSize" VALUE="491" OBJECT="org.freeplane.features.format.FormattedNumber|491|#,##0"/>
 </node>
 <node TEXT="createFilesFromNotes.groovy" ID="ID_51150602" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/createFilesFromNotes.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3095,10 +3080,10 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 13:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T13:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 10:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T10:16-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="1.242" OBJECT="org.freeplane.features.format.FormattedNumber|1242|#,##0"/>
+<attribute NAME="fileSize" VALUE="1.333" OBJECT="org.freeplane.features.format.FormattedNumber|1333|#,##0"/>
 </node>
 <node TEXT="normalizeLinkTypes.groovy" ID="ID_215276188" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/normalizeLinkTypes.groovy"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -3110,16 +3095,19 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
       xx
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:24-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="02-02-23 18:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T18:10-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="764" OBJECT="org.freeplane.features.format.FormattedNumber|764|#,##0"/>
 </node>
 <node TEXT="selected node&#xa; and descendants" STYLE_REF="Organizador" ID="ID_1531851607">
 <node TEXT="TimeStamps" STYLE_REF="Organizador" ID="ID_1635637876">
 <node TEXT="ClearFileTimestampsInNodes.groovy" ID="ID_440439863" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/ClearFileTimestampsInNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="11-10-20 19:18" OBJECT="org.freeplane.features.format.FormattedDate|2020-10-11T19:18-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="01-02-23 20:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T20:54-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="948" OBJECT="org.freeplane.features.format.FormattedNumber|948|#,##0"/>
+<attribute NAME="fileSize" VALUE="956" OBJECT="org.freeplane.features.format.FormattedNumber|956|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -3202,10 +3190,10 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 </node>
 <node TEXT="GetFileTimestamps.groovy" ID="ID_1117487438" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/GetFileTimestamps.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="11-10-20 20:21" OBJECT="org.freeplane.features.format.FormattedDate|2020-10-11T20:21-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="01-02-23 20:54" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T20:54-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="1.137" OBJECT="org.freeplane.features.format.FormattedNumber|1137|#,##0"/>
+<attribute NAME="fileSize" VALUE="1.145" OBJECT="org.freeplane.features.format.FormattedNumber|1145|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -3297,7 +3285,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 </node>
 <node TEXT="SortByTimestamp.groovy" ID="ID_81293279" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/SortByTimestamp.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="22-08-20 18:21" OBJECT="org.freeplane.features.format.FormattedDate|2020-08-22T18:21-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.450" OBJECT="org.freeplane.features.format.FormattedNumber|1450|#,##0"/>
@@ -3493,7 +3481,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="clear formats" STYLE_REF="Organizador" ID="ID_1237295602">
 <node TEXT="unmarkMovedOrRenamedNodes.groovy" ID="ID_1993362688" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/unmarkMovedOrRenamedNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:49" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:49-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="79" OBJECT="org.freeplane.features.format.FormattedNumber|79|#,##0"/>
@@ -3528,7 +3516,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 </node>
 <node TEXT="unmarkNewNodes.groovy" ID="ID_545849997" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/unmarkNewNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="151" OBJECT="org.freeplane.features.format.FormattedNumber|151|#,##0"/>
@@ -3558,7 +3546,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="unmarkModifiedFiles.groovy" ID="ID_639733378" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/unmarkModifiedFiles.groovy">
 <attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="365" OBJECT="org.freeplane.features.format.FormattedNumber|365|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -3595,7 +3583,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <node TEXT="group" STYLE_REF="Organizador" ID="ID_88598070">
 <node TEXT="groupChildnodesBy.groovy" FOLDED="true" ID="ID_1701363166" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/groupChildnodesBy.groovy">
 <attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.360" OBJECT="org.freeplane.features.format.FormattedNumber|4360|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -3960,7 +3948,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="ungroupChildnodes.groovy" ID="ID_873893428" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/ungroupChildnodes.groovy">
 <attribute NAME="lastModifiedTime" VALUE="11-09-20 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="251" OBJECT="org.freeplane.features.format.FormattedNumber|251|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -4016,7 +4004,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="zips" FOLDED="true" ID="ID_880600127" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="icons" ID="ID_1806972330" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/icons/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -4031,12 +4019,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:14-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator" ID="ID_305856744" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/icons/MapDriveInator/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:14-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
@@ -4053,12 +4041,12 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator" ID="ID_283320947" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/doc/MapDriveInator/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
@@ -4075,19 +4063,19 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:14-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator" ID="ID_1607178942" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/templates/MapDriveInator/">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 16:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:14-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="agregar template" STYLE_REF="pendingTask" ID="ID_1168481436"/>
 <node TEXT="agregar script para copiar estilos a mapa" STYLE_REF="pendingTask" ID="ID_1314525875"/>
 <node TEXT="MDI styles template.mm" ID="ID_1706841893" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/templates/MapDriveInator/MDI%20styles%20template.mm">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 16:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:34-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 16:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="5.247" OBJECT="org.freeplane.features.format.FormattedNumber|5247|#,##0"/>
 </node>
@@ -4096,7 +4084,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="images" FOLDED="true" ID="ID_513998056" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/images/">
 <attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:51-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator-screenshot-1.png" STYLE_REF="pendingTask" FOLDED="true" ID="ID_331581636">
@@ -4110,14 +4098,14 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 <node TEXT="MapDriveInator.mm" ID="ID_125229745" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator.mm">
-<attribute NAME="lastModifiedTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:35" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:35-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="43.398" OBJECT="org.freeplane.features.format.FormattedNumber|43398|#,##0"/>
+<attribute NAME="fileSize" VALUE="44.980" OBJECT="org.freeplane.features.format.FormattedNumber|44980|#,##0"/>
 </node>
 <node TEXT="build.gradle" ID="ID_487055818" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/build.gradle">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:49" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:49-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:34-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="3.516" OBJECT="org.freeplane.features.format.FormattedNumber|3516|#,##0"/>
 </node>
@@ -4136,11 +4124,27 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
   </body>
 </html></richcontent>
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_423253710"/>
-<node TEXT="MapDriveInator-v0.0.8.addon.mm" STYLE_REF="freshNew" ID="ID_1868929615" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.8.addon.mm"/>
-<node TEXT="MapDriveInator-v0.0.7.addon.mm" ID="ID_141578992" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.7.addon.mm"/>
+<node TEXT="MapDriveInator-v0.0.9.addon.mm" STYLE_REF="freshNew" ID="ID_242233711" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.9.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="03-02-23 10:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T10:51-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="184.778" OBJECT="org.freeplane.features.format.FormattedNumber|184778|#,##0"/>
+</node>
+<node TEXT="MapDriveInator-v0.0.8.addon.mm" ID="ID_1868929615" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.8.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="02-02-23 19:58" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T19:58-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="02-02-23 19:58" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T19:58-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="02-02-23 18:38" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T18:38-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="182.147" OBJECT="org.freeplane.features.format.FormattedNumber|182147|#,##0"/>
+</node>
+<node TEXT="MapDriveInator-v0.0.7.addon.mm" ID="ID_141578992" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.7.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="02-02-23 17:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T17:53-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="02-02-23 17:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T17:53-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="01-02-23 19:37" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T19:37-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="179.078" OBJECT="org.freeplane.features.format.FormattedNumber|179078|#,##0"/>
+</node>
 <node TEXT="MapDriveInator-v0.0.6.addon.mm" ID="ID_64331" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.6.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="02-02-23 19:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T19:05-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="18-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T15:53-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="174.865" OBJECT="org.freeplane.features.format.FormattedNumber|174865|#,##0"/>
 </node>
@@ -4163,20 +4167,20 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="fileSize" VALUE="164.384" OBJECT="org.freeplane.features.format.FormattedNumber|164384|#,##0"/>
 </node>
 <node TEXT="MapDriveInator.mm.bak" ID="ID_703686871" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator.mm.bak">
-<attribute NAME="lastModifiedTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:39-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="43.385" OBJECT="org.freeplane.features.format.FormattedNumber|43385|#,##0"/>
+<attribute NAME="fileSize" VALUE="44.980" OBJECT="org.freeplane.features.format.FormattedNumber|44980|#,##0"/>
 </node>
 <node TEXT="history.md" ID="ID_1399596341" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/history.md">
-<attribute NAME="lastModifiedTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="719" OBJECT="org.freeplane.features.format.FormattedNumber|719|#,##0"/>
+<attribute NAME="fileSize" VALUE="1.057" OBJECT="org.freeplane.features.format.FormattedNumber|1057|#,##0"/>
 </node>
 <node TEXT="version.properties" ID="ID_631139260" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/version.properties">
-<attribute NAME="lastModifiedTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="01-02-23 11:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T11:50-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:52" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:52-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="266" OBJECT="org.freeplane.features.format.FormattedNumber|266|#,##0"/>
 </node>
@@ -4193,16 +4197,16 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:30" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:30-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="30-01-23 12:55" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-30T12:55-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 12:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:12-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 </node>
 <node TEXT="resources" STYLE_REF="file_folder" FOLDED="true" ID="ID_1697408639" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/">
-<attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="17-01-23 14:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T14:25-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
+<attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <node TEXT="mindmap" ID="ID_956395609">
 <node TEXT="Map-Drive-Inator.mm" FOLDED="true" ID="ID_685781911" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/Map-Drive-Inator.mm">
 <attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
@@ -4226,7 +4230,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 </node>
 <node TEXT="updatesFoldersLikeMap_files" FOLDED="true" ID="ID_1565170154" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="16-01-23 12:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:17-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="8.192" OBJECT="org.freeplane.features.format.FormattedNumber|8192|#,##0"/>
@@ -4243,19 +4247,19 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="fileSize" VALUE="29.275" OBJECT="org.freeplane.features.format.FormattedNumber|29275|#,##0"/>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 004.png" ID="ID_1536471609" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20004.png">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="36.179" OBJECT="org.freeplane.features.format.FormattedNumber|36179|#,##0"/>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 005.png" ID="ID_815937043" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20005.png">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="44.990" OBJECT="org.freeplane.features.format.FormattedNumber|44990|#,##0"/>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 006.png" ID="ID_642676289" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20006.png">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="47.863" OBJECT="org.freeplane.features.format.FormattedNumber|47863|#,##0"/>
@@ -4267,7 +4271,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="fileSize" VALUE="15.499" OBJECT="org.freeplane.features.format.FormattedNumber|15499|#,##0"/>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 008.png" ID="ID_1179597338" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20008.png">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="33.957" OBJECT="org.freeplane.features.format.FormattedNumber|33957|#,##0"/>
@@ -4279,7 +4283,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="fileSize" VALUE="23.041" OBJECT="org.freeplane.features.format.FormattedNumber|23041|#,##0"/>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 011.png" ID="ID_1991212190" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20011.png">
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="47.291" OBJECT="org.freeplane.features.format.FormattedNumber|47291|#,##0"/>
@@ -4322,7 +4326,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </node>
 <node TEXT="groupingExample 003.png" ID="ID_1915614281" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/groupingExample%20003.png">
 <attribute NAME="lastModifiedTime" VALUE="11-09-20 20:53" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:53-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-09-20 20:53" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:53-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="49.494" OBJECT="org.freeplane.features.format.FormattedNumber|49494|#,##0"/>
 </node>
@@ -4340,10 +4344,10 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 11:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T11:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="23-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-23T12:14-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:51-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-01-23 11:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T11:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
+<attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <node TEXT="versión sin librería" STYLE_REF="Organizador" ID="ID_218984627"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -4368,9 +4372,24 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="creationTime" VALUE="10-01-23 16:03" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T16:03-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="5.780" OBJECT="org.freeplane.features.format.FormattedNumber|5780|#,##0"/>
 </node>
-<node TEXT="prueba.mm" ID="ID_1521875293" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/prueba.mm"/>
-<node TEXT="prueba.zip" ID="ID_852635803" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/prueba.zip"/>
-<node TEXT="New Mindmap.mm" ID="ID_1535752470" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/New%20Mindmap.mm"/>
+<node TEXT="prueba.mm" ID="ID_1521875293" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/prueba.mm">
+<attribute NAME="lastModifiedTime" VALUE="03-02-23 11:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:25-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:32-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="17-01-23 13:55" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:55-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="167.061" OBJECT="org.freeplane.features.format.FormattedNumber|167061|#,##0"/>
+</node>
+<node TEXT="prueba.zip" ID="ID_852635803" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/prueba.zip">
+<attribute NAME="lastModifiedTime" VALUE="20-01-23 11:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-20T11:32-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="30-01-23 17:28" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-30T17:28-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="20-01-23 11:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-20T11:32-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="10.357" OBJECT="org.freeplane.features.format.FormattedNumber|10357|#,##0"/>
+</node>
+<node TEXT="New Mindmap.mm" ID="ID_1535752470" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/New%20Mindmap.mm">
+<attribute NAME="lastModifiedTime" VALUE="01-02-23 22:11" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-01T22:11-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:32-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="20-01-23 10:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-20T10:45-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="10.847" OBJECT="org.freeplane.features.format.FormattedNumber|10847|#,##0"/>
+</node>
 </node>
 <node TEXT=".gitignore" STYLE_REF="discardedTask" ID="ID_204170711"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -4466,10 +4485,10 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 </html></richcontent>
 </node>
 <node TEXT="MapDriveInator project.mm" ID="ID_92180960" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator%20project.mm">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:35" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:35-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="17-01-23 12:35" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:35-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="02-02-23 19:59" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T19:59-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-02-23 11:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T11:32-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="16-01-23 12:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:10-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="531.360" OBJECT="org.freeplane.features.format.FormattedNumber|531360|#,##0"/>
+<attribute NAME="fileSize" VALUE="521.864" OBJECT="org.freeplane.features.format.FormattedNumber|521864|#,##0"/>
 </node>
 <node TEXT="LICENSE.md" ID="ID_69801780" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/LICENSE.md"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -4548,7 +4567,7 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="fileSize" VALUE="1.073" OBJECT="org.freeplane.features.format.FormattedNumber|1073|#,##0"/>
 </node>
 <node TEXT="README.md" FOLDED="true" ID="ID_1216315313" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
-<attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="23-01-23 12:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-23T12:10-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="06-01-22 16:54" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T16:54-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="3.469" OBJECT="org.freeplane.features.format.FormattedNumber|3469|#,##0"/>
@@ -4833,6 +4852,10 @@ return (c.freeplaneVersion &lt; FreeplaneVersion.getVersion(&quot;1.9.0&quot;) |
 <attribute NAME="ignoreHeaderNotes" VALUE="true"/>
 <attribute NAME="ignoreLeafDetails" VALUE="false"/>
 <attribute NAME="ignoreHeaderImageObjects" VALUE="false"/>
+<attribute NAME="lastModifiedTime" VALUE="06-01-22 18:15" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T18:15-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="3.516" OBJECT="org.freeplane.features.format.FormattedNumber|3516|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -5083,7 +5106,7 @@ deletes the timestamps attributes in the nodes</text>
   </head>
   <body>
     <p>
-      Inated:&nbsp;&nbsp;&nbsp;2023-02-02&nbsp;&nbsp;19:06:59
+      Inated:&nbsp;&nbsp;&nbsp;2023-02-03&nbsp;&nbsp;11:51:39
     </p>
     <p>
       
@@ -5119,7 +5142,7 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      0.3 seconds
+      1.9 seconds
     </p>
     <p>
       
@@ -5137,13 +5160,13 @@ deletes the timestamps attributes in the nodes</text>
       (elapsed time in miliseconds)
     </p>
     <p>
-      -38
+      -238
     </p>
     <p>
-      -43
+      -269
     </p>
     <p>
-      -43
+      -285
     </p>
     <p>
       
@@ -5152,7 +5175,7 @@ deletes the timestamps attributes in the nodes</text>
       arma Listado de Rutas nodos
     </p>
     <p>
-      -215
+      -1526
     </p>
     <p>
       
@@ -5161,7 +5184,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xSingles
     </p>
     <p>
-      -217
+      -1526
     </p>
     <p>
       
@@ -5170,7 +5193,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xClones
     </p>
     <p>
-      -217
+      -1526
     </p>
     <p>
       
@@ -5179,7 +5202,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en drive
     </p>
     <p>
-      -338
+      -1873
     </p>
     <p>
       
@@ -5188,7 +5211,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas
     </p>
     <p>
-      -339
+      -1873
     </p>
     <p>
       
@@ -5197,10 +5220,10 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones pendientes
     </p>
     <p>
-      -339
+      -1873
     </p>
     <p>
-      -339
+      -1873
     </p>
     <p>
       
@@ -5209,7 +5232,7 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones inconsistentes
     </p>
     <p>
-      -340
+      -1873
     </p>
     <p>
       
@@ -5218,7 +5241,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xInconsistentes
     </p>
     <p>
-      -340
+      -1873
     </p>
     <p>
       
@@ -5227,13 +5250,13 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xClonesInconsistentes
     </p>
     <p>
-      -340
+      -1889
     </p>
     <p>
-      -340
+      -1889
     </p>
     <p>
-      -340
+      -1889
     </p>
     <p>
       
@@ -5242,7 +5265,7 @@ deletes the timestamps attributes in the nodes</text>
       &nbsp;aplicando acciones FILES
     </p>
     <p>
-      -348
+      -1927
     </p>
     <p>
       
@@ -5251,7 +5274,7 @@ deletes the timestamps attributes in the nodes</text>
       ACTUALIZANDO FOLDERS
     </p>
     <p>
-      -352
+      -1927
     </p>
     <p>
       
@@ -5357,6 +5380,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
@@ -5579,6 +5605,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
@@ -5806,6 +5835,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
     </p>
     <p>
@@ -6028,6 +6060,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
     </p>
     <p>
@@ -6241,6 +6276,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
     </p>
     <p>
@@ -6382,7 +6420,7 @@ deletes the timestamps attributes in the nodes</text>
       filesNOK:&nbsp;
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
     </p>
     <p>
       
@@ -6433,7 +6471,7 @@ deletes the timestamps attributes in the nodes</text>
       filesSinNodos:&nbsp;
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
     </p>
     <p>
       
@@ -6472,7 +6510,7 @@ deletes the timestamps attributes in the nodes</text>
       filesNOK2:&nbsp;
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
     </p>
     <p>
       
@@ -6963,7 +7001,6 @@ deletes the timestamps attributes in the nodes</text>
   </body>
 </html>
 </richcontent>
-<node TEXT="MapDriveInator" ID="ID_927983993" LINK="#ID_1462849055"/>
 </node>
 <node TEXT="Implementar Tasks v4 acá" STYLE_REF="nextTask" ID="ID_1813016897"/>
 <node TEXT="Tareas" STYLE_REF="Organizador" ID="ID_819044659">

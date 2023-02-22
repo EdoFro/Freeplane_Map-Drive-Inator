@@ -6,6 +6,7 @@ import groovy.transform.EqualsAndHashCode
 import java.text.SimpleDateFormat
 import MDI
 import java.util.regex.Pattern
+import org.freeplane.main.addons.AddOnsController;
 //end:
 
 //region: =================== DEFINING CLASSES =========================
@@ -273,6 +274,9 @@ if(baseFolderNode){
     // ui.informationMessage('path y file coinciden --> corregir links \n\n' + (xPathOk + xClonPathOk) as String)
     // texto.append("\n\n").append('path y file coinciden --> corregir links \n\n' + (xPathOk + xClonPathOk) as String)
     textoReport.append("\n ${(xPathOk + xClonPathOk).size()} link(s) corrected in nodes")
+    
+    //TODO: revisar que pasa si nodo es movido a carpeta que ya posee un archivo con ese nombre.
+        //por lo tanto path y file coinciden, pero aún no ha sido movido (su link antiguo tambien apunta a un archivo real)
 
     (xPathOk + xClonPathOk).each{x ->
         nodo = N(x.id)
@@ -328,10 +332,12 @@ if(baseFolderNode){
 
     (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).each{x ->
         nodo = N(x.id)
-        MDI.createPath(MDI.soloPath(x.path))
+        MDI.createPath(MDI.soloPath(x.path)) //TODO: debe reportar si pudo crear directorio y logear en caso contrario
         //ui.informationMessage("Nombre inicial:  ${previousFullPath} \n Nombre final  :  ${x.path}")
         def file = new File(x.link)
-        file.renameTo( new File(x.path) )
+        file.renameTo( new File(x.path) ) //TODO: debe reportar si pudo mover el archivo
+        //TODO: debe logear casos que no pudieron ser movidos
+        //TODO: debe logear todos los archivos movidos en drive (indicar origen - destino)
         MDI.setLinkImage(nodo, x.path)
         MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
         // ui.informationMessage( "el archivo ${file.name} fue reubicado")
@@ -356,7 +362,7 @@ if(baseFolderNode){
     // texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     textoReport.append('------- Folders: -------- \n')
-    textoReport.append(MDI.updateFolders(xFolders.reverse(), linkType)).append("\n\n")
+    textoReport.append(MDI.updateFolders(xFolders.reverse(), linkType)).append("\n\n") //TODO: debe reportar si udo actualizar directorios
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
@@ -529,6 +535,21 @@ if(baseFolderNode){
 
     if(modoDebug) ui.informationMessage('---------------------- Reporte Y Final Main ------------------------------')
     textoReport.append((((new Date().getTime() - tIni)/100).toInteger()/10) as String).append(" seconds\n\n")
+    
+    def installedVersion = AddOnsController.getController().getInstalledAddOns().find{it.name == 'mapDriveInator'}.version
+    def mdiVersion = MDI.declaredFields*.name.contains('version')? MDI.version : "< v0.0.10"
+    if(mdiVersion!=installedVersion) ui.informationMessage(ui.frame,"ATTENTION!\nInstalled MDI addon version is different from MDI library version!",'MDI',2)
+    textoReport
+        << "-----\n### MDI debug info:\n"
+        << " - Installed MDI addon version : ${installedVersion}\n"
+        << " - MDI library version         : ${mdiVersion}\n"
+        << " - This map's path             : ${node.mindMap.file.path}\n"
+        << " - baseFolder's uri path       : ${baseFolderNode.link.uri?.path}\n"
+        << " - baseFolder's path           : ${baseFolderNode.link.file?.path}\n"
+        << " - baseFolder's absolutePath   : ${baseFolderNode.link.file?.absolutePath}\n"
+        << " - baseFolder's canonicalPath  : ${baseFolderNode.link.file?.canonicalPath}\n"
+        << " - linkType                    : ${['absolute','relative'][linkType]}\n"
+    
     ui.informationMessage(textoReport.toString())
     textoReport << '=====================================\n\n' << texto
     nodeNewImports.noteText = textoReport

@@ -1,12 +1,12 @@
 <map version="freeplane 1.11.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node LOCALIZED_TEXT="new_mindmap" FOLDED="false" ID="ID_696401721" CREATED="1610381621824" MODIFIED="1610381621824" STYLE="oval">
+<node TEXT="New Mindmap" FOLDED="false" ID="ID_696401721" CREATED="1610381621824" MODIFIED="1675690152302" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle" zoom="1.008">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="file" LAST="false">
             <script_condition>
-                <script>{node.link?.uri?.scheme == &apos;file&apos;}</script>
+                <script>{node.link.file &amp;&amp; !node.link.uri?.fragment}</script>
             </script_condition>
         </conditional_style>
         <conditional_style ACTIVE="true" STYLE_REF="modifiedFile" LAST="false">

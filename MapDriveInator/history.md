@@ -1,5 +1,15 @@
 # History
 
+## v0.0.10
+
+* Changed script condition for "file" style in '**MDI styles template.mm**' to also work with relative file links
+* added MDI.version
+* added log info to "new imports" node's note
+* createFilesFromNotes: ask if extension text is correct
+* createFilesFromNotes: request confirmation if file already exists
+* MDI.statusInfo() also writes the message into Freeplane's Log
+* bug correction: added method getPathFromLink4 that solves issues when file.getCanonicalPath fails
+
 ## v0.0.9
 
 * Now it recognizes when link of baseFolder node points to an unexisting file/folder

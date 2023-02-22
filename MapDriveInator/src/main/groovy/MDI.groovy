@@ -1,6 +1,7 @@
 
 import org.freeplane.features.link.LinkController
 import org.freeplane.plugin.script.proxy.ScriptUtils
+import org.freeplane.core.util.LogUtils
 import groovy.io.FileType
 import groovy.io.FileVisitResult
 import org.freeplane.core.ui.components.UITools
@@ -28,9 +29,15 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
+    private static final String version               = "v0.0.10"
     
     private static ConfigProperties config = new ConfigProperties()
     private static Timer timer = new Timer()
+    private static logger = LogUtils.logger
+    
+    // def static getVersion(){
+        // return version
+    // }
     
     //region: ---------------------- Functions Initial Setup
     
@@ -172,7 +179,7 @@ class MDI{
                         setLink(nodo, xf.path, linkType)  // cambiarle a nuevo link
                         markAsBroken(nodo,false)
                         markAsMoved(nodo,true)
-                        if (deleteFolder(xf.link)==1)
+                        if (deleteFolder(xf.link)==1) //TODO: logear los que se van eliminando
                         {
                             return 'previousDeleted'
                         } else {
@@ -183,7 +190,7 @@ class MDI{
                 } else {
                     file = new File(xf.path)
                     // ui.informationMessage('File(xf.path).isDirectory(): ' + file.isDirectory()as String)
-                    if (file.isDirectory()) 		//	?existe en el lugar que indica su link (y es folderName)?
+                    if (file.isDirectory()) 		//	?existe en el lugar que indica su path (y es folderName)?
                     {
                         //ya existe en posición correcta --> no hacer nada salvo corregir link
                         setLink(nodo, xf.path, linkType)  // cambiarle a nuevo link
@@ -204,7 +211,7 @@ class MDI{
                 }
             }
         }else {	// si no tiene link --> ponerle link
-            createPath(xf.path)
+            createPath(xf.path) //TODO: reportar si pudo crear path
             setLink(nodo, xf.path, linkType)
             xf.link = xf.path
             if(nodo.style.name==styleFolder){nodo.style.name = null}
@@ -222,6 +229,7 @@ class MDI{
             if(!file.delete()){
                 sleep(100)
             } //eliminar folderName en disco
+            //TODO: comprobar si folder fue eliminado realmente
             return 1
         } else {
             return 0 
@@ -311,7 +319,22 @@ class MDI{
     }
     
     def static getPathFromLink3(n,lastChar =''){
-        return (n.link.file?n.link.file.canonicalPath + lastChar:null)
+        return (n.link.file? getPathFromLink4(n) + lastChar:null)
+    }
+    
+    def static getPathFromLink4(n){
+        def p
+        try{
+            p = n.link.file.canonicalPath
+        }
+        catch(e){
+            def pFolders = (n.link.file.AbsolutePath).tokenize(File.separator)
+            def newPFolders = []
+            pFolders.each{f -> if (f == '..'){newPFolders.removeLast()} else { newPFolders << f } }
+            p = newPFolders.join(File.separator)
+            logger.info('MDI: node ' + n.id + ' : ' + n.link.file.AbsolutePath + '\n          ---> ' + p)
+       }
+        return p
     }
 
     //function, returns string, builds the new path string by looking at the position of the node in the mindmap
@@ -351,7 +374,8 @@ class MDI{
                 nodos = nodos - it.find(false,true,{nodeIsFolder(it)}).minus(it)
             }
         }
-        return nodos.link.file.canonicalPath
+        // return nodos.link.file.canonicalPath
+        return nodos.collect{getPathFromLink4(it)}
     }
     //end:
 
@@ -429,7 +453,7 @@ class MDI{
     // create all folders of a path (if they doesn't exist)
     def static createPath(String p) {
         //ui.informationMessage('createPath ' + p)
-        def folders = p.replace(File.separator,'/').split('/')
+        def folders = p.replace(File.separator,'/').split('/') //TODO: usar tokenize()
         //ui.informationMessage(folders.toString())
         def path =''
         folders.each{ String f ->
@@ -442,7 +466,7 @@ class MDI{
     def static createFolder(String folderName) {
         def folder = new File(folderName)
         if (!folder.isDirectory()){
-            folder.mkdir()
+            folder.mkdir() //TODO: reportar si lo puede hacer o no, y dejar en el log
         }
     }
 
@@ -720,6 +744,7 @@ links for files and folders.
     //region: ---------------------- User Interface
     def static statusInfo(t, icon = statusInfoIcon){
         ScriptUtils.c().setStatusInfo('MDI',  "MDI: ${t}".toString() , icon)
+        logger.info("MDI: ${t}".toString())
         timer.runAfter(5000){
             ScriptUtils.c().setStatusInfo('MDI', '')
         }

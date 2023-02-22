@@ -17,21 +17,31 @@ if(fPath && fPath != ''){
         if (!node.link.uri){
             def fileName = MDI.correctFileName(node.text)
             println '> fileName: ' + fileName
+            def extension = fileName.reverse().takeBefore('.').reverse()
+            def msg = "The file will be created with ${extension?"'." + extension +"'":'no'} extension\nIs it OK?"
+            if(ui.showConfirmDialog(null, msg, 'MDI', 1, 3)!=0){
+                MDI.statusInfo('File creation aborted')
+                return 'aborted'
+            }
             //return
             MDI.createPath(fPath)
             def file = new File(fPath + fileName)
             println '> file: ' + file
             //return
-            file.text = texto
-            MDI.setLink(node, fPath + fileName, linkType)
-            node.text = file.name
-            MDI.statusInfo('File created')
+            if( !file.exists() || ui.showConfirmDialog(null, 'File already exists in drive.\nDo you want to overwrite it?', 'MDI', 1, 2)==0 ){
+                file.text = texto
+                MDI.setLink(node, fPath + fileName, linkType)
+                node.text = file.name
+                MDI.statusInfo('File created')
+            } else {
+                MDI.statusInfo('Note not saved in file')
+            }
         } else {
-            MDI.statusInfo('selected node has a link already')
+            MDI.statusInfo('Selected node has a link already')
         }
     } else {
-        MDI.statusInfo('no Note in selected node')
+        MDI.statusInfo('No Note in selected node')
     }
 } else {
-    MDI.statusInfo('no baseFolder node in pathToRoot from selected node')
+    MDI.statusInfo('No baseFolder node in pathToRoot from selected node')
 }

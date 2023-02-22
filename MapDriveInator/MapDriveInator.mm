@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.9"/>
+<attribute NAME="version" VALUE="v0.0.10"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -60,10 +60,10 @@
             <b>For GitHub releases</b>: &quot;${homepage}/releases/latest/download/version.properties&quot;
           </li>
           <li>
-            <b>For Github in a folder named like the add-on&nbsp;(in the main repository branch)</b>: &quot;${homepage}/raw/main/${name}/version.properties
+            <b>For Github in a folder named like the add-on&#xa0;(in the main repository branch)</b>: &quot;${homepage}/raw/main/${name}/version.properties
           </li>
           <li>
-            <b>For Github in a folder named like the add-on&nbsp;(in a repository branch named as the add-on version)</b>: &quot;${homepage}/raw/${version}/${name}/version.properties&quot;
+            <b>For Github in a folder named like the add-on&#xa0;(in a repository branch named as the add-on version)</b>: &quot;${homepage}/raw/${version}/${name}/version.properties&quot;
           </li>
         </ul>
       </li>
@@ -186,7 +186,7 @@
       Description would be awkward to edit as an attribute.
     </p>
     <p>
-      So you have to put the add-on description as a child of the <i>'description'</i>&nbsp;node.
+      So you have to put the add-on description as a child of the <i>'description'</i>&#xa0;node.
     </p>
     <p>
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
@@ -235,12 +235,21 @@
 <node TEXT="&quot;normalization&quot; command for absolute/relative links" ID="ID_936451022"/>
 <node TEXT="now default &quot;link type value&quot; is taken form freeplane configuration properties" ID="ID_126482642"/>
 </node>
-<node TEXT="v0.0.9" ID="ID_937830933">
+<node TEXT="v0.0.9" FOLDED="true" ID="ID_937830933">
 <node TEXT="Now it recognizes when link of baseFolder node points to an unexisting file/folder" ID="ID_1117543068"/>
 <node TEXT="some refactoring" ID="ID_1502606479"/>
 <node TEXT="central statusInfo method for MDI" ID="ID_1295916751"/>
 <node TEXT="&quot;create base folder node&quot; can now be used to update baseFolderNode parameters" ID="ID_909845566"/>
 <node TEXT="changed baseFolderNode note to markdown format" ID="ID_243745728"/>
+</node>
+<node TEXT="v0.0.10" ID="ID_154817545">
+<node TEXT="Changed script condition for &quot;file&quot; style in &apos;**MDI styles template.mm**&apos; to also work with relative file links" ID="ID_1643727847"/>
+<node TEXT="added MDI.version" ID="ID_1712756448"/>
+<node TEXT="added log info to &quot;new imports&quot; node&apos;s note" ID="ID_1293807336"/>
+<node TEXT="createFilesFromNotes: ask if extension text is correct" ID="ID_1333778184"/>
+<node TEXT="createFilesFromNotes: request confirmation if file already exists" ID="ID_1016520655"/>
+<node TEXT="MDI.statusInfo() also writes the message into Freeplane&apos;s Log" STYLE_REF="completedTask" ID="ID_88257329"/>
+<node TEXT="bug correction: added method getPathFromLink4 that solves issues when file.getCanonicalPath fails" ID="ID_1341523105"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
@@ -258,7 +267,7 @@
       
     </p>
     <p>
-      The License text has to be entered as a child of the <i>'license'</i>&nbsp;node, either as plain text or as HTML.
+      The License text has to be entered as a child of the <i>'license'</i>&#xa0;node, either as plain text or as HTML.
     </p>
   </body>
 </html>
@@ -277,10 +286,10 @@
       <font color="#000000" face="SansSerif, sans-serif">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </font>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">&nbsp;</font>
+      <font color="#000000" face="SansSerif, sans-serif">&#xa0;</font>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">Every property in the configuration should receive a default value in <i>default.properties</i>&nbsp;node. </font>
+      <font color="#000000" face="SansSerif, sans-serif">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </font>
     </p>
     <p>
       
@@ -296,10 +305,10 @@
         create the child node containing <font color="#000000" face="SansSerif, sans-serif">the add-on configuration as an extension to mindmapmodemenu.xml</font>
       </li>
       <li>
-        add the properties to the <font color="#000000" face="SansSerif, sans-serif"><i>default.properties</i>&nbsp;node</font>
+        add the properties to the <font color="#000000" face="SansSerif, sans-serif"><i>default.properties</i>&#xa0;node</font>
       </li>
       <li>
-        add the properties to the <i>translations</i><font color="#000000" face="SansSerif, sans-serif">&nbsp;node</font>
+        add the properties to the <i>translations</i><font color="#000000" face="SansSerif, sans-serif">&#xa0;node</font>
       </li>
     </ul>
     <p>
@@ -316,10 +325,10 @@
         the attribute name should be the preference name.
       </li>
       <li>
-        as attribute value you should specify if it is a <b>boolean</b>, <b>string</b>&nbsp;or <b>number</b>&nbsp;preference
+        as attribute value you should specify if it is a <b>boolean</b>, <b>string</b>&#xa0;or <b>number</b>&#xa0;preference
       </li>
       <li>
-        if it is a <b>number</b>&nbsp;preference. you should add the min and max value for it (separed by comma)
+        if it is a <b>number</b>&#xa0;preference. you should add the min and max value for it (separed by comma)
       </li>
     </ul>
     <p>
@@ -508,13 +517,13 @@
       * menuLocation: &lt;locationkey&gt;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- Defines the menu location, defaults a sub menu 'main_menu_scripting/addons.${name}'.
+      &#xa0;&#xa0;&#xa0;- Defines the menu location, defaults a sub menu 'main_menu_scripting/addons.${name}'.
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;-&nbsp;Use developer tool menuItemInfo to inspect menu location keys.
+      &#xa0;&#xa0;&#xa0;-&#xa0;Use developer tool menuItemInfo to inspect menu location keys.
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- This attribute is mandatory
+      &#xa0;&#xa0;&#xa0;- This attribute is mandatory
     </p>
     <p>
       
@@ -523,10 +532,10 @@
       * menuTitleKey: &lt;key&gt;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- The menu item title will be looked up under the translation key &lt;key&gt; - don't forget to define its translation.
+      &#xa0;&#xa0;&#xa0;- The menu item title will be looked up under the translation key &lt;key&gt; - don't forget to define its translation.
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- This attribute is mandatory
+      &#xa0;&#xa0;&#xa0;- This attribute is mandatory
     </p>
     <p>
       
@@ -535,22 +544,22 @@
       * executionMode: &lt;mode&gt;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- The execution mode as described in the Freeplane wiki (http://freeplane.sourceforge.net/wiki/index.php/Scripting)
+      &#xa0;&#xa0;&#xa0;- The execution mode as described in the Freeplane wiki (http://freeplane.sourceforge.net/wiki/index.php/Scripting)
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- ON_SINGLE_NODE: Execute the script once. The <i>node</i>&nbsp;variable is set to the selected node.
+      &#xa0;&#xa0;&#xa0;- ON_SINGLE_NODE: Execute the script once. The <i>node</i>&#xa0;variable is set to the selected node.
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- ON_SELECTED_NODE: Execute the script n times for n selected nodes, once for each node.
+      &#xa0;&#xa0;&#xa0;- ON_SELECTED_NODE: Execute the script n times for n selected nodes, once for each node.
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- ON_SELECTED_NODE_RECURSIVELY: Execute the script on every selected node and recursively on all of its children.
+      &#xa0;&#xa0;&#xa0;- ON_SELECTED_NODE_RECURSIVELY: Execute the script on every selected node and recursively on all of its children.
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- In doubt use ON_SINGLE_NODE.
+      &#xa0;&#xa0;&#xa0;- In doubt use ON_SINGLE_NODE.
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- This attribute is mandatory
+      &#xa0;&#xa0;&#xa0;- This attribute is mandatory
     </p>
     <p>
       
@@ -559,52 +568,52 @@
       * keyboardShortcut: &lt;shortcut&gt;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- Optional: keyboard combination / accelerator for this script, e.g. control alt I
+      &#xa0;&#xa0;&#xa0;- Optional: keyboard combination / accelerator for this script, e.g. control alt I
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- Use lowercase letters for modifiers and uppercase for letters. Use no + signs.
+      &#xa0;&#xa0;&#xa0;- Use lowercase letters for modifiers and uppercase for letters. Use no + signs.
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- The available key names are listed at http://download.oracle.com/javase/1.4.2/docs/api/java/awt/event/KeyEvent.html#VK_0
+      &#xa0;&#xa0;&#xa0;- The available key names are listed at http://download.oracle.com/javase/1.4.2/docs/api/java/awt/event/KeyEvent.html#VK_0
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the list only entries with a 'VK_' prefix count. Omit the prefix in the shortcut definition.
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;In the list only entries with a 'VK_' prefix count. Omit the prefix in the shortcut definition.
     </p>
     <p>
       
     </p>
     <p>
-      * Permissions&nbsp;that the script(s) require, each either false or true:
+      * Permissions&#xa0;that the script(s) require, each either false or true:
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- execute_scripts_without_asking
+      &#xa0;&#xa0;&#xa0;- execute_scripts_without_asking
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- execute_scripts_without_file_restriction: permission to read files
+      &#xa0;&#xa0;&#xa0;- execute_scripts_without_file_restriction: permission to read files
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- execute_scripts_without_write_restriction: permission to create/change/delete files
+      &#xa0;&#xa0;&#xa0;- execute_scripts_without_write_restriction: permission to create/change/delete files
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- execute_scripts_without_exec_restriction: permission to execute other programs
+      &#xa0;&#xa0;&#xa0;- execute_scripts_without_exec_restriction: permission to execute other programs
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;- execute_scripts_without_network_restriction: permission to access the network
+      &#xa0;&#xa0;&#xa0;- execute_scripts_without_network_restriction: permission to access the network
     </p>
     <p>
-      &nbsp;&nbsp;Notes:
+      &#xa0;&#xa0;Notes:
     </p>
     <p>
-      &nbsp;&nbsp;- The set of permissions is fixed.
+      &#xa0;&#xa0;- The set of permissions is fixed.
     </p>
     <p>
-      &nbsp;&nbsp;- Don't change the attribute names, don't omit one.
+      &#xa0;&#xa0;- Don't change the attribute names, don't omit one.
     </p>
     <p>
-      &nbsp;&nbsp;- Set the values either to true or to false
+      &#xa0;&#xa0;- Set the values either to true or to false
     </p>
     <p>
-      &nbsp;&nbsp;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
+      &#xa0;&#xa0;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
 </html>
@@ -817,25 +826,25 @@
       
     </p>
     <p>
-      &nbsp;- The immediate child nodes contain the name of the file, e.g. 'mysql-connector-java-5.1.25.jar'). Put the file into a 'lib' subdirectory of the add-on base directory.
+      &#xa0;- The immediate child nodes contain the name of the file, e.g. 'mysql-connector-java-5.1.25.jar'). Put the file into a 'lib' subdirectory of the add-on base directory.
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;- The child nodes of these nodes contain the actual files.
+      &#xa0;- The child nodes of these nodes contain the actual files.
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;- Any lib file will be extracted in &lt;installationbase&gt;/&lt;addonname&gt;/lib.
+      &#xa0;- Any lib file will be extracted in &lt;installationbase&gt;/&lt;addonname&gt;/lib.
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;- The files will be processed in the sequence as seen in the map.
+      &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
 </html>
@@ -857,25 +866,25 @@
       
     </p>
     <p>
-      &nbsp;- The immediate child nodes contain a description of the zip. The devtools script releaseAddOn.groovy allows automatic zip creation if the name of this node matches a directory in the current directory.
+      &#xa0;- The immediate child nodes contain a description of the zip. The devtools script releaseAddOn.groovy allows automatic zip creation if the name of this node matches a directory in the current directory.
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;- The child nodes of these nodes contain the actual zip files.
+      &#xa0;- The child nodes of these nodes contain the actual zip files.
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;- Any zip file will be extracted in the &lt;installationbase&gt;. Currently, &lt;installationbase&gt; is always Freeplane's &lt;userhome&gt;, e.g. ~/.freeplane/1.3.
+      &#xa0;- Any zip file will be extracted in the &lt;installationbase&gt;. Currently, &lt;installationbase&gt; is always Freeplane's &lt;userhome&gt;, e.g. ~/.freeplane/1.3.
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;- The files will be processed in the sequence as seen in the map.
+      &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
 </html>
@@ -896,7 +905,7 @@
       An add-on may define any number of images as child nodes of the images node. The actual image data has to be placed as base64 encoded binary data into the text of a subnode.
     </p>
     <p>
-      The images are saved to the <i>${installationbase}/resources/images</i>&nbsp;directory.
+      The images are saved to the <i>${installationbase}/resources/images</i>&#xa0;directory.
     </p>
     <p>
       
@@ -913,7 +922,7 @@
       </li>
     </ul>
     <p>
-      Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&nbsp;since they have to be (base64) encoded as simple strings.
+      Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&#xa0;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
 </html>
@@ -930,6 +939,9 @@
 </html>
 </richcontent>
 <node TEXT="Build add-on" ID="ID_14185460" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
+<node TEXT="revisar MDI.version" ID="ID_561101604" LINK="menuitem:_ExecuteScriptForSelectionAction">
+<attribute NAME="script1" VALUE="import org.freeplane.main.addons.AddOnProperties;&#xd;&#xa;import org.freeplane.main.addons.AddOnsController;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;List&lt;AddOnProperties&gt; installedAddOns = AddOnsController.getController().getInstalledAddOns()&#xd;&#xa;&#xd;&#xa;def installedVersion = installedAddOns.find{it.name == &apos;mapDriveInator&apos;}.version&#xd;&#xa;def mdiVersion = MDI.version&#xd;&#xa;def addonMapVersion =  node.mindMap.root[&apos;version&apos;]&#xd;&#xa;&#xd;&#xa;def MDIactualizada = installedVersion == mdiVersion&#xd;&#xa;MDIactualizada &amp;= addonMapVersion == mdiVersion&#xd;&#xa;&#xd;&#xa;if (!MDIactualizada){&#xd;&#xa;    def msg = &quot;&quot;&quot;&#xd;&#xa;    Ojo, las versiones del addon son differentes&#xd;&#xa;    &#xd;&#xa;    addon actualmente instalado : ${installedVersion}&#xd;&#xa;    Librería MDI (MDI.version)  : ${mdiVersion}&#xd;&#xa;    mapa addon (este mapa)      : ${addonMapVersion}&#xd;&#xa;    &#xd;&#xa;    &quot;&quot;&quot;&#xd;&#xa;    ui.showMessage(msg,2)&#xd;&#xa;} else {&#xd;&#xa;    ui.informationMessage(&apos;Todo ok&apos;)&#xd;&#xa;}"/>
+</node>
 <node TEXT="Package add-on for publication" ID="ID_1767675080" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
 <node TEXT="Export Translations" ID="ID_1894374378" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>
 <node TEXT="Import Translations" ID="ID_229312748" LINK="menuitem:_addons.devtools.importTranslations_on_single_node"/>

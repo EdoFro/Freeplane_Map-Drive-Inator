@@ -29,11 +29,11 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
-    private static final String version               = "v0.0.11"
+    private static final String version               = "v0.0.12"
     
     private static ConfigProperties config = new ConfigProperties()
     private static Timer timer = new Timer()
-    private static logger = LogUtils.logger
+    private static logger = LogUtils.getLogger()
     
     // def static getVersion(){
         // return version
@@ -332,7 +332,7 @@ class MDI{
             def newPFolders = []
             pFolders.each{f -> if (f == '..'){newPFolders.removeLast()} else { newPFolders << f } }
             p = newPFolders.join(File.separator)
-            logger.info('MDI: node ' + n.id + ' : ' + n.link.file.AbsolutePath + '\n          ---> ' + p)
+            //logger.info('MDI: node ' + n.id + ' : ' + n.link.file.AbsolutePath + '\n          ---> ' + p)
        }
         return p
     }

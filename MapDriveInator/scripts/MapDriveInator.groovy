@@ -6,7 +6,9 @@ import groovy.transform.EqualsAndHashCode
 import java.text.SimpleDateFormat
 import MDI
 import java.util.regex.Pattern
-import org.freeplane.main.addons.AddOnsController;
+import org.freeplane.main.addons.AddOnsController
+import org.freeplane.core.util.LogUtils
+
 //end:
 
 //region: =================== DEFINING CLASSES =========================
@@ -24,23 +26,50 @@ class xFile {
 }
 //end:
 
-def modoDebug = false
 //region: =================== MAIN SCRIPT ==============================
 
     //region: ---------------------- Initial Setup 1 ------------------------------
 
 // c.statusInfo = '    -->   Map-Drive-Inator    --   Initial Setup 1    ';
+def modoDebug = false
 
-
-def tIni = new Date().getTime();
+def logger = LogUtils.getLogger()
+def tIni  = new Date().getTime();
 def texto = new StringBuilder();
+def log   = new StringBuilder();
 def textoReport = new StringBuilder();
 
+def installedVersion = AddOnsController.getController().getInstalledAddOns().find{it.name == 'mapDriveInator'}.version
+def mdiVersion = MDI.declaredFields*.name.contains('version')? MDI.version : "< v0.0.10"
+if(mdiVersion!=installedVersion) ui.informationMessage(ui.frame,"ATTENTION!\nInstalled MDI addon version is different from MDI library version!",'MDI',2)
+
+    //region: --------------------- Log MDI -------------------------------------
+log
+    << "MDI debug info:\n"
+    << " - Installed MDI addon version : ${installedVersion}\n"
+    << " - MDI library version         : ${mdiVersion}\n"
+    << " - This map's path             : ${node.mindMap.file.path}\n"
+logger.info(log.toString())
+    //end:
 //---define nodo Base
 baseFolderNode = MDI.obtainBaseFolder(node)
     //end: ------------------------------------------------------------------
 
 if(baseFolderNode){
+    //region: --------------------- Log baseFolderNode -------------------------------------
+    log
+        << " - baseFolder's uri path       : ${baseFolderNode.link.uri?.path}\n"
+        << " - baseFolder's path           : ${baseFolderNode.link.file?.path}\n"
+        << " - baseFolder's absolutePath   : ${baseFolderNode.link.file?.absolutePath}\n"
+        << " - baseFolder's canonicalPath  : ${MDI.getFileFromLink(baseFolderNode)?.canonicalPath}\n"
+        << "baseFolderNode attributes:\n"
+    baseFolderNode.attributes.map.each{k,v ->
+        log << "   - $k : $v\n"
+    }
+    logger.info(log.toString())
+
+    //end:
+    
     //region: ---------------------- Initial Setup 2 ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Initial Setup 2    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Initial Setup 2    ');
@@ -59,6 +88,7 @@ if(baseFolderNode){
     def nameFilt = MDI.getFilter(baseFolderNode)
     def maxD = MDI.getMaxDepth(baseFolderNode)
     def linkType = MDI.getLinkType(baseFolderNode)
+        logger.info( "MDI: - linkType                    : ${['absolute','relative'][linkType]}\n")
     def markMovedOption = MDI.markWhenMoved(baseFolderNode)
     def checkIfBroken = MDI.checkIfReallyBroken(baseFolderNode)
 
@@ -536,25 +566,14 @@ if(baseFolderNode){
     if(modoDebug) ui.informationMessage('---------------------- Reporte Y Final Main ------------------------------')
     textoReport.append((((new Date().getTime() - tIni)/100).toInteger()/10) as String).append(" seconds\n\n")
     
-    def installedVersion = AddOnsController.getController().getInstalledAddOns().find{it.name == 'mapDriveInator'}.version
-    def mdiVersion = MDI.declaredFields*.name.contains('version')? MDI.version : "< v0.0.10"
-    if(mdiVersion!=installedVersion) ui.informationMessage(ui.frame,"ATTENTION!\nInstalled MDI addon version is different from MDI library version!",'MDI',2)
-    textoReport
-        << "-----\n### MDI debug info:\n"
-        << " - Installed MDI addon version : ${installedVersion}\n"
-        << " - MDI library version         : ${mdiVersion}\n"
-        << " - This map's path             : ${node.mindMap.file.path}\n"
-        << " - baseFolder's uri path       : ${baseFolderNode.link.uri?.path}\n"
-        << " - baseFolder's path           : ${baseFolderNode.link.file?.path}\n"
-        << " - baseFolder's absolutePath   : ${baseFolderNode.link.file?.absolutePath}\n"
-        << " - baseFolder's canonicalPath  : ${MDI.getFileFromLink(baseFolderNode)?.canonicalPath}\n"
-        << " - linkType                    : ${['absolute','relative'][linkType]}\n"
-    
     ui.informationMessage(textoReport.toString())
-    textoReport << '=====================================\n\n' << texto
+    textoReport
+        << '=====================================\n\n' << log
+        << '=====================================\n\n' << texto
     nodeNewImports.noteText = textoReport
     texto.setLength(0)
     textoReport.setLength(0)
+    log.setLength(0)
     if (newFilesImported) c.select(nodeNewImports);
     MDI.statusInfo('    -------------   Map-Drive-Inated    -------------      ')
     // c.select(baseFolderNode);

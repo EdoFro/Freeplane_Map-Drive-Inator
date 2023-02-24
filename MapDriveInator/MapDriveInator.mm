@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.11"/>
+<attribute NAME="version" VALUE="v0.0.12"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -251,9 +251,12 @@
 <node TEXT="MDI.statusInfo() also writes the message into Freeplane&apos;s Log" STYLE_REF="completedTask" ID="ID_88257329"/>
 <node TEXT="bug correction: added method getPathFromLink4 that solves issues when file.getCanonicalPath fails" ID="ID_1341523105"/>
 </node>
-<node TEXT="v0.0.11" ID="ID_873574159">
+<node TEXT="v0.0.11" FOLDED="true" ID="ID_873574159">
 <node TEXT="added getFileFromLink(n) to get to the real file if it is in another drive and link is relative" ID="ID_143420426"/>
 <node TEXT="umweg to get canonicalPaths from files that are in other drives and have relative links" ID="ID_1146418895"/>
+</node>
+<node TEXT="v0.0.12" ID="ID_1823296301">
+<node TEXT="MapDriveInator: Logs MDI version, Map path, baseFolderNode properties" ID="ID_299612617"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
@@ -944,7 +947,7 @@
 </richcontent>
 <node TEXT="Build add-on" ID="ID_14185460" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="revisar MDI.version" ID="ID_561101604" LINK="menuitem:_ExecuteScriptForSelectionAction">
-<attribute NAME="script1" VALUE="import org.freeplane.main.addons.AddOnProperties;&#xd;&#xa;import org.freeplane.main.addons.AddOnsController;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;List&lt;AddOnProperties&gt; installedAddOns = AddOnsController.getController().getInstalledAddOns()&#xd;&#xa;&#xd;&#xa;def installedVersion = installedAddOns.find{it.name == &apos;mapDriveInator&apos;}.version&#xd;&#xa;def mdiVersion = MDI.version&#xd;&#xa;def addonMapVersion =  node.mindMap.root[&apos;version&apos;]&#xd;&#xa;&#xd;&#xa;def MDIactualizada = installedVersion == mdiVersion&#xd;&#xa;MDIactualizada &amp;= addonMapVersion == mdiVersion&#xd;&#xa;&#xd;&#xa;if (!MDIactualizada){&#xd;&#xa;    def msg = &quot;&quot;&quot;&#xd;&#xa;    Ojo, las versiones del addon son differentes&#xd;&#xa;    &#xd;&#xa;    addon actualmente instalado : ${installedVersion}&#xd;&#xa;    Librería MDI (MDI.version)  : ${mdiVersion}&#xd;&#xa;    mapa addon (este mapa)      : ${addonMapVersion}&#xd;&#xa;    &#xd;&#xa;    &quot;&quot;&quot;&#xd;&#xa;    ui.showMessage(msg,2)&#xd;&#xa;} else {&#xd;&#xa;    ui.informationMessage(&apos;Todo ok&apos;)&#xd;&#xa;}"/>
+<attribute NAME="script1" VALUE="import org.freeplane.main.addons.AddOnProperties;&#xd;&#xa;import org.freeplane.main.addons.AddOnsController;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;List&lt;AddOnProperties&gt; installedAddOns = AddOnsController.getController().getInstalledAddOns()&#xd;&#xa;&#xd;&#xa;def installedVersion = installedAddOns.find{it.name == &apos;mapDriveInator&apos;}.version&#xd;&#xa;def mdiVersion = MDI.version&#xd;&#xa;def addonMapVersion =  node.mindMap.root[&apos;version&apos;]&#xd;&#xa;&#xd;&#xa;def MDIactualizada = installedVersion == mdiVersion&#xd;&#xa;MDIactualizada &amp;= addonMapVersion == mdiVersion&#xd;&#xa;&#xd;&#xa;if (!MDIactualizada){&#xd;&#xa;    def msg = &quot;&quot;&quot;&#xd;&#xa;    Ojo, las versiones del addon son differentes&#xd;&#xa;    &#xd;&#xa;    addon actualmente instalado : ${installedVersion}&#xd;&#xa;    Librería MDI (MDI.version)  : ${mdiVersion}&#xd;&#xa;    mapa addon (este mapa)      : ${addonMapVersion}&#xd;&#xa;    &#xd;&#xa;    &quot;&quot;&quot;&#xd;&#xa;    ui.showMessage(msg,2)&#xd;&#xa;} else {&#xd;&#xa;    ui.informationMessage(&apos;Todo ok&apos;)&#xd;&#xa;    c.select(node.next)&#xd;&#xa;}"/>
 </node>
 <node TEXT="Package add-on for publication" ID="ID_1767675080" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
 <node TEXT="Export Translations" ID="ID_1894374378" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>

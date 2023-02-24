@@ -24,7 +24,7 @@ if(fPath && fPath != ''){
                 return 'aborted'
             }
             //return
-            MDI.createPath(fPath)
+            MDI.createPath(fPath) //TODO: reportar si puede crear el directorio o no.
             def file = new File(fPath + fileName)
             println '> file: ' + file
             //return

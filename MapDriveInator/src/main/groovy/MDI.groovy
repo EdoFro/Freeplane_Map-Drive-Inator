@@ -29,7 +29,7 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
-    private static final String version               = "v0.0.10"
+    private static final String version               = "v0.0.11"
     
     private static ConfigProperties config = new ConfigProperties()
     private static Timer timer = new Timer()

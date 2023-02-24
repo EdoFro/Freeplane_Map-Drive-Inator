@@ -35,7 +35,7 @@ while (nodesToMove.size()>0 && evitarLoop<5){
     def toBeMoved = folders.find{f ->
         baseFolderNode.collect(){s ->
             s.find{t ->
-                (t.text == f.text) && (t.link?.file?.canonicalPath == f.link.file.canonicalPath)
+                (t.text == f.text) && (MDI.getPathFromLink3(t) == MDI.getPathFromLink3(f))
             }
         }.flatten().size()==1
     }

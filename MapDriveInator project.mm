@@ -485,7 +485,7 @@
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
 </node>
-<node TEXT="files" ID="ID_1340011039">
+<node TEXT="files" FOLDED="true" ID="ID_1340011039">
 <node TEXT=".git" ID="ID_43997028" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.git/">
 <attribute NAME="lastAccessTime" VALUE="03-02-23 20:57" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:57" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:57-0300|dd-MM-yy HH:mm"/>
@@ -2356,7 +2356,6 @@
 <attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
-<attribute NAME="projectCode" VALUE="scripts"/>
 <node TEXT="importMDIStyles.groovy" FOLDED="true" ID="ID_50035749" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/importMDIStyles.groovy"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -3030,7 +3029,12 @@
 </node>
 </node>
 </node>
+<node TEXT="Log" ID="ID_178118251">
+<attribute NAME="projectCode" VALUE="Log"/>
+<node TEXT="v+1" STYLE_REF="milestone" ID="ID_1634187899">
 <node TEXT="get information if some files couldn&apos;t get moved" STYLE_REF="nextTask" ID="ID_161101455"/>
+</node>
+</node>
 </node>
 <node TEXT="ImportJustFolders.groovy" ID="ID_1971460697" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/ImportJustFolders.groovy">
 <attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
@@ -7266,7 +7270,7 @@ deletes the timestamps attributes in the nodes</text>
 <node TEXT="translate all pending tasks to english" STYLE_REF="pendingTask" ID="ID_1964375859"/>
 </node>
 <node TEXT="Tareas" STYLE_REF="Organizador" ID="ID_819044659">
-<node TEXT="Bugs" ID="ID_566586448">
+<node TEXT="Bugs" FOLDED="true" ID="ID_566586448">
 <attribute NAME="projectCode" VALUE="Bugs"/>
 <node TEXT="&lt;= v0.0.9" STYLE_REF="milestone" ID="ID_1443647664">
 <node STYLE_REF="completedTask" FOLDED="true" ID="ID_904998969"><richcontent TYPE="NODE">
@@ -7417,7 +7421,7 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 </node>
 </node>
-<node TEXT="Revisions" ID="ID_332063569">
+<node TEXT="Revisions" FOLDED="true" ID="ID_332063569">
 <attribute NAME="projectCode" VALUE="Revisions"/>
 <node TEXT="v+1" STYLE_REF="milestone" ID="ID_680298209">
 <node TEXT="revisar manejo de clones" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_1405387639"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -7954,7 +7958,7 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 </node>
 </node>
-<node TEXT="Log" ID="ID_523658204">
+<node TEXT="Log" FOLDED="true" ID="ID_523658204">
 <attribute NAME="projectCode" VALUE="Log"/>
 <node TEXT="v0.0.10" STYLE_REF="milestone" FOLDED="true" ID="ID_240938912">
 <node TEXT="poner en nota de &quot;new imported files&quot;" STYLE_REF="completedTask" FOLDED="true" ID="ID_453209891">
@@ -8150,6 +8154,12 @@ before the actual namefilter setting)
 <node TEXT="intentos de eliminar folders que aún tienen archivos" ID="ID_1059308610"/>
 </node>
 <node TEXT="debe ser un checkbox en preferences" STYLE_REF="pendingTask" ID="ID_56858058"/>
+</node>
+<node TEXT="mindmaps should have the information about which MDI version and template version used" ID="ID_1942878860">
+<node TEXT="MDI should write in map properties its version" STYLE_REF="pendingTask" ID="ID_297046088"/>
+<node TEXT="MDI should validate that styles and their conditional styles in map are compatible con current MDI version" STYLE_REF="pendingTask" ID="ID_107319875"/>
+<node TEXT="When importing MDI styles into a map it should write in its properties the template version" STYLE_REF="pendingTask" ID="ID_633436261"/>
+<node TEXT="use the new conditional styles API to order the MDI conditional styles rules before the “stop” rules" STYLE_REF="pendingTask" ID="ID_1325075964"/>
 </node>
 </node>
 <node TEXT="v+3" STYLE_REF="milestone" ID="ID_184892093"/>
@@ -11455,8 +11465,14 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
+<node TEXT="File2Note" FOLDED="true" ID="ID_1641187464">
+<attribute NAME="projectCode" VALUE="File.2.Note"/>
+<node TEXT="v+2" STYLE_REF="milestone" ID="ID_1735845847">
+<node TEXT="Add command to load in note the text of the linked file" STYLE_REF="pendingTask" ID="ID_1952250719"/>
 </node>
-<node TEXT="pruebas" STYLE_REF="Organizador" FOLDED="true" ID="ID_875561550">
+</node>
+</node>
+<node TEXT="pruebas" STYLE_REF="pendingTask" FOLDED="true" ID="ID_875561550">
 <node TEXT="prueba N(Id).groovy" ID="ID_1423280569"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -13699,8 +13715,13 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="nextTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
+<node TEXT="v+1" STYLE_REF="milestone" FOLDED="true" ID="ID_264229705">
+<node TEXT="Log" STYLE_REF="project" ID="ID_1597380239">
+<node ID="ID_566256000" CONTENT_ID="ID_161101455"/>
 </node>
-<node TEXT="tasksBucket" STYLE_REF="tasksBucket" ID="ID_1906111223"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+</node>
+</node>
+<node TEXT="tasksBucket" STYLE_REF="tasksBucket" FOLDED="true" ID="ID_1906111223"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -13717,137 +13738,150 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
-<node TEXT="v+0" STYLE_REF="milestone" ID="ID_1495714538">
-<node ID="ID_1847878353" CONTENT_ID="ID_1964375859"/>
+<node TEXT="**No milestone**" STYLE_REF="milestone" FOLDED="true" ID="ID_1217899895">
+<node ID="ID_347939890" CONTENT_ID="ID_875561550"/>
 </node>
-<node TEXT="v+1" STYLE_REF="milestone" ID="ID_428426654">
-<node TEXT="Revisions" STYLE_REF="project" ID="ID_702092071">
-<node ID="ID_1281415950" CONTENT_ID="ID_1405387639"/>
-<node ID="ID_1652913931" CONTENT_ID="ID_761127302"/>
-<node ID="ID_1189136878" CONTENT_ID="ID_1852988863"/>
-<node ID="ID_582968620" CONTENT_ID="ID_268438012"/>
+<node TEXT="v+0" STYLE_REF="milestone" FOLDED="true" ID="ID_569540425">
+<node ID="ID_369870901" CONTENT_ID="ID_1964375859"/>
 </node>
+<node TEXT="v+1" STYLE_REF="milestone" FOLDED="true" ID="ID_1205616555">
+<node TEXT="Revisions" STYLE_REF="project" ID="ID_277156700">
+<node ID="ID_41565500" CONTENT_ID="ID_1405387639"/>
+<node ID="ID_7466669" CONTENT_ID="ID_761127302"/>
+<node ID="ID_133481847" CONTENT_ID="ID_1852988863"/>
+<node ID="ID_743205044" CONTENT_ID="ID_268438012"/>
 </node>
-<node TEXT="v+2" STYLE_REF="milestone" FOLDED="true" ID="ID_311228699">
-<node TEXT="UI" STYLE_REF="project" ID="ID_266828697">
-<node TEXT="botonera" STYLE_REF="project" ID="ID_753055070">
-<node ID="ID_16319912" CONTENT_ID="ID_1430648520"/>
-<node ID="ID_593745957" CONTENT_ID="ID_1074393417"/>
-</node>
-<node ID="ID_771810398" CONTENT_ID="ID_1274440134"/>
-</node>
-<node TEXT="document." STYLE_REF="project" ID="ID_84952731">
-<node TEXT="README.md" STYLE_REF="project" ID="ID_1818966412">
-<node ID="ID_432829730" CONTENT_ID="ID_1548672074"/>
-<node ID="ID_1915760619" CONTENT_ID="ID_1479316402"/>
-<node ID="ID_1701443907" CONTENT_ID="ID_1572735156"/>
-<node ID="ID_620521609" CONTENT_ID="ID_114218799"/>
-<node ID="ID_1743707242" CONTENT_ID="ID_1883420691"/>
-<node ID="ID_257680811" CONTENT_ID="ID_1949150606"/>
-<node ID="ID_1201759308" CONTENT_ID="ID_1355708582"/>
-<node ID="ID_272793702" CONTENT_ID="ID_873316181"/>
+<node TEXT="Log" STYLE_REF="project" ID="ID_1979429826">
+<node ID="ID_259222714" CONTENT_ID="ID_161101455"/>
 </node>
 </node>
-<node TEXT="Revisions" STYLE_REF="project" ID="ID_1280116676">
-<node ID="ID_640110340" CONTENT_ID="ID_1139307681">
-<node ID="ID_1636230167" CONTENT_ID="ID_192846341"/>
+<node TEXT="v+2" STYLE_REF="milestone" FOLDED="true" ID="ID_1276247488">
+<node TEXT="UI" STYLE_REF="project" ID="ID_1128123637">
+<node TEXT="botonera" STYLE_REF="project" ID="ID_791519561">
+<node ID="ID_393694146" CONTENT_ID="ID_1430648520"/>
+<node ID="ID_1849755886" CONTENT_ID="ID_1074393417"/>
+</node>
+<node ID="ID_916363899" CONTENT_ID="ID_1274440134"/>
+</node>
+<node TEXT="document." STYLE_REF="project" ID="ID_748530867">
+<node TEXT="README.md" STYLE_REF="project" ID="ID_900784416">
+<node ID="ID_450280071" CONTENT_ID="ID_1548672074"/>
+<node ID="ID_425576579" CONTENT_ID="ID_1479316402"/>
+<node ID="ID_1459302510" CONTENT_ID="ID_1572735156"/>
+<node ID="ID_1634584702" CONTENT_ID="ID_114218799"/>
+<node ID="ID_1065482751" CONTENT_ID="ID_1883420691"/>
+<node ID="ID_1074692707" CONTENT_ID="ID_1949150606"/>
+<node ID="ID_373101295" CONTENT_ID="ID_1355708582"/>
+<node ID="ID_1322042700" CONTENT_ID="ID_873316181"/>
 </node>
 </node>
-<node TEXT="Log" STYLE_REF="project" ID="ID_184871561">
-<node ID="ID_1078809016" CONTENT_ID="ID_1310678286"/>
-<node ID="ID_270822630" CONTENT_ID="ID_796279226"/>
-<node ID="ID_933293218" CONTENT_ID="ID_550597183"/>
-<node ID="ID_1216075562" CONTENT_ID="ID_1673288081">
-<node ID="ID_264126255" CONTENT_ID="ID_1396567126"/>
-<node ID="ID_731358239" CONTENT_ID="ID_889104490"/>
-<node ID="ID_1076084142" CONTENT_ID="ID_56858058"/>
+<node TEXT="Revisions" STYLE_REF="project" ID="ID_1042445293">
+<node ID="ID_821573122" CONTENT_ID="ID_1139307681">
+<node ID="ID_669256417" CONTENT_ID="ID_192846341"/>
 </node>
 </node>
-<node TEXT="Attributes" STYLE_REF="project" ID="ID_209810487">
-<node ID="ID_1081362361" CONTENT_ID="ID_1454764618"/>
+<node TEXT="Log" STYLE_REF="project" ID="ID_1255677181">
+<node ID="ID_755256237" CONTENT_ID="ID_1310678286"/>
+<node ID="ID_749897577" CONTENT_ID="ID_796279226"/>
+<node ID="ID_875445582" CONTENT_ID="ID_550597183"/>
+<node ID="ID_695958872" CONTENT_ID="ID_1673288081">
+<node ID="ID_1642268039" CONTENT_ID="ID_1396567126"/>
+<node ID="ID_306752908" CONTENT_ID="ID_889104490"/>
+<node ID="ID_1302046134" CONTENT_ID="ID_56858058"/>
 </node>
-<node TEXT="preferences" STYLE_REF="project" ID="ID_1731569802">
-<node ID="ID_1338506845" CONTENT_ID="ID_859060352"/>
+<node ID="ID_1887374921" CONTENT_ID="ID_297046088"/>
+<node ID="ID_989807738" CONTENT_ID="ID_107319875"/>
+<node ID="ID_615378744" CONTENT_ID="ID_633436261"/>
+<node ID="ID_1525412821" CONTENT_ID="ID_1325075964"/>
 </node>
-<node TEXT="external.Objects" STYLE_REF="project" ID="ID_926394489">
-<node ID="ID_206157326" CONTENT_ID="ID_1297337532"/>
+<node TEXT="Attributes" STYLE_REF="project" ID="ID_706138321">
+<node ID="ID_312482343" CONTENT_ID="ID_1454764618"/>
 </node>
-<node TEXT="copy.File" STYLE_REF="project" ID="ID_587367627">
-<node ID="ID_1327661774" CONTENT_ID="ID_1872791515"/>
-<node ID="ID_1337031440" CONTENT_ID="ID_1364746044">
-<node ID="ID_1225689548" CONTENT_ID="ID_1531382187"/>
-<node ID="ID_1234147011" CONTENT_ID="ID_1751006135"/>
-<node ID="ID_1018409838" CONTENT_ID="ID_1507780607"/>
-<node ID="ID_107364232" CONTENT_ID="ID_913896595"/>
-<node ID="ID_1283101103" CONTENT_ID="ID_1061306016"/>
-<node ID="ID_1834866483" CONTENT_ID="ID_1394882888"/>
-<node ID="ID_573740246" CONTENT_ID="ID_28848164"/>
+<node TEXT="preferences" STYLE_REF="project" ID="ID_1458958912">
+<node ID="ID_836177663" CONTENT_ID="ID_859060352"/>
 </node>
+<node TEXT="external.Objects" STYLE_REF="project" ID="ID_126074769">
+<node ID="ID_911956011" CONTENT_ID="ID_1297337532"/>
 </node>
-<node TEXT="delete.File" STYLE_REF="project" ID="ID_1890454219">
-<node ID="ID_1316726107" CONTENT_ID="ID_1997152504"/>
-<node ID="ID_1759794544" CONTENT_ID="ID_1829837337"/>
-</node>
-</node>
-<node TEXT="v+3" STYLE_REF="milestone" FOLDED="true" ID="ID_553817570">
-<node TEXT="doc" STYLE_REF="project" ID="ID_145599348">
-<node ID="ID_917301911" CONTENT_ID="ID_684869210"/>
-</node>
-<node TEXT="images" STYLE_REF="project" ID="ID_524791056">
-<node ID="ID_1412494533" CONTENT_ID="ID_331581636"/>
-<node ID="ID_925631592" CONTENT_ID="ID_907083898"/>
-<node ID="ID_760942266" CONTENT_ID="ID_199504070"/>
-</node>
-<node TEXT="MapDriveInator.mm" STYLE_REF="project" ID="ID_1992327426">
-<node TEXT="inclu.prefe.en.Addon.mm" STYLE_REF="project" ID="ID_787842044">
-<node ID="ID_1356096984" CONTENT_ID="ID_1480670447">
-<node ID="ID_1779756286" CONTENT_ID="ID_1150824817"/>
-<node ID="ID_992533476" CONTENT_ID="ID_402920261"/>
-</node>
-<node ID="ID_99974697" CONTENT_ID="ID_294440977"/>
-<node ID="ID_1118401313" CONTENT_ID="ID_172816119"/>
-<node ID="ID_317127300" CONTENT_ID="ID_1628906019"/>
-<node ID="ID_1693516513" CONTENT_ID="ID_1038410507"/>
-<node ID="ID_1924784534" CONTENT_ID="ID_354456841"/>
+<node TEXT="copy.File" STYLE_REF="project" ID="ID_472985855">
+<node ID="ID_409514189" CONTENT_ID="ID_1872791515"/>
+<node ID="ID_1326709065" CONTENT_ID="ID_1364746044">
+<node ID="ID_606165302" CONTENT_ID="ID_1531382187"/>
+<node ID="ID_12636167" CONTENT_ID="ID_1751006135"/>
+<node ID="ID_1881827643" CONTENT_ID="ID_1507780607"/>
+<node ID="ID_304174051" CONTENT_ID="ID_913896595"/>
+<node ID="ID_1714063562" CONTENT_ID="ID_1061306016"/>
+<node ID="ID_1727136289" CONTENT_ID="ID_1394882888"/>
+<node ID="ID_220667487" CONTENT_ID="ID_28848164"/>
 </node>
 </node>
-<node TEXT="document." STYLE_REF="project" ID="ID_790957822">
-<node ID="ID_1470951076" CONTENT_ID="ID_1743612644"/>
-<node ID="ID_1342511065" CONTENT_ID="ID_152881947"/>
-<node ID="ID_1149587627" CONTENT_ID="ID_303217866"/>
+<node TEXT="delete.File" STYLE_REF="project" ID="ID_646030243">
+<node ID="ID_36256121" CONTENT_ID="ID_1997152504"/>
+<node ID="ID_105130153" CONTENT_ID="ID_1829837337"/>
 </node>
-<node TEXT="Attributes" STYLE_REF="project" ID="ID_1301164709">
-<node ID="ID_611579085" CONTENT_ID="ID_1459102250"/>
-</node>
-<node TEXT="preferences" STYLE_REF="project" ID="ID_81312428">
-<node ID="ID_869841651" CONTENT_ID="ID_1496648578">
-<node ID="ID_101906641" CONTENT_ID="ID_1089488788"/>
-<node ID="ID_1210472705" CONTENT_ID="ID_219830976"/>
-<node ID="ID_1053720640" CONTENT_ID="ID_685235846"/>
-<node ID="ID_1139936651" CONTENT_ID="ID_504455264"/>
-</node>
-<node ID="ID_1940639622" CONTENT_ID="ID_1403569041"/>
-</node>
-<node TEXT="mejo.dist.fileNodes.nuev" STYLE_REF="project" ID="ID_1517810598">
-<node ID="ID_328672932" CONTENT_ID="ID_256786237"/>
-</node>
-<node TEXT="other.Functiona" STYLE_REF="project" ID="ID_1491650778">
-<node ID="ID_1653355821" CONTENT_ID="ID_1934442049"/>
-<node ID="ID_91115994" CONTENT_ID="ID_1408368885"/>
-<node ID="ID_910677869" CONTENT_ID="ID_1475784974">
-<node ID="ID_703878791" CONTENT_ID="ID_1802474824"/>
-<node ID="ID_1464432496" CONTENT_ID="ID_1946023991"/>
-</node>
-<node ID="ID_1559656185" CONTENT_ID="ID_1878166666"/>
-<node ID="ID_803990228" CONTENT_ID="ID_517331866"/>
-</node>
-<node TEXT="MDI.direct" STYLE_REF="project" ID="ID_374416901">
-<node ID="ID_115707539" CONTENT_ID="ID_1738150058"/>
-<node ID="ID_1021201049" CONTENT_ID="ID_893492309"/>
+<node TEXT="File.2.Note" STYLE_REF="project" ID="ID_785791442">
+<node ID="ID_469165128" CONTENT_ID="ID_1952250719"/>
 </node>
 </node>
+<node TEXT="v+3" STYLE_REF="milestone" FOLDED="true" ID="ID_247791074">
+<node TEXT="doc" STYLE_REF="project" ID="ID_1552069714">
+<node ID="ID_1809716174" CONTENT_ID="ID_684869210"/>
 </node>
-<node TEXT="WIP tasksBucket" STYLE_REF="tasksBucket" FOLDED="true" ID="ID_243469599"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="images" STYLE_REF="project" ID="ID_1536709913">
+<node ID="ID_1061442521" CONTENT_ID="ID_331581636"/>
+<node ID="ID_1634284823" CONTENT_ID="ID_907083898"/>
+<node ID="ID_485390398" CONTENT_ID="ID_199504070"/>
+</node>
+<node TEXT="MapDriveInator.mm" STYLE_REF="project" ID="ID_1362316527">
+<node TEXT="inclu.prefe.en.Addon.mm" STYLE_REF="project" ID="ID_287008106">
+<node ID="ID_768462226" CONTENT_ID="ID_1480670447">
+<node ID="ID_1654613803" CONTENT_ID="ID_1150824817"/>
+<node ID="ID_904732735" CONTENT_ID="ID_402920261"/>
+</node>
+<node ID="ID_503319256" CONTENT_ID="ID_294440977"/>
+<node ID="ID_543873707" CONTENT_ID="ID_172816119"/>
+<node ID="ID_815733071" CONTENT_ID="ID_1628906019"/>
+<node ID="ID_758842750" CONTENT_ID="ID_1038410507"/>
+<node ID="ID_424629762" CONTENT_ID="ID_354456841"/>
+</node>
+</node>
+<node TEXT="document." STYLE_REF="project" ID="ID_675804872">
+<node ID="ID_1285796819" CONTENT_ID="ID_1743612644"/>
+<node ID="ID_915386201" CONTENT_ID="ID_152881947"/>
+<node ID="ID_830763328" CONTENT_ID="ID_303217866"/>
+</node>
+<node TEXT="Attributes" STYLE_REF="project" ID="ID_1508865900">
+<node ID="ID_1489149086" CONTENT_ID="ID_1459102250"/>
+</node>
+<node TEXT="preferences" STYLE_REF="project" ID="ID_383509754">
+<node ID="ID_287896452" CONTENT_ID="ID_1496648578">
+<node ID="ID_573995569" CONTENT_ID="ID_1089488788"/>
+<node ID="ID_1585083679" CONTENT_ID="ID_219830976"/>
+<node ID="ID_815527059" CONTENT_ID="ID_685235846"/>
+<node ID="ID_1648890416" CONTENT_ID="ID_504455264"/>
+</node>
+<node ID="ID_1084354972" CONTENT_ID="ID_1403569041"/>
+</node>
+<node TEXT="mejo.dist.fileNodes.nuev" STYLE_REF="project" ID="ID_1591568428">
+<node ID="ID_1883687395" CONTENT_ID="ID_256786237"/>
+</node>
+<node TEXT="other.Functiona" STYLE_REF="project" ID="ID_404880393">
+<node ID="ID_1854568009" CONTENT_ID="ID_1934442049"/>
+<node ID="ID_1323238552" CONTENT_ID="ID_1408368885"/>
+<node ID="ID_416302314" CONTENT_ID="ID_1475784974">
+<node ID="ID_580607404" CONTENT_ID="ID_1802474824"/>
+<node ID="ID_769616390" CONTENT_ID="ID_1946023991"/>
+</node>
+<node ID="ID_1223280972" CONTENT_ID="ID_1878166666"/>
+<node ID="ID_580600598" CONTENT_ID="ID_517331866"/>
+</node>
+<node TEXT="MDI.direct" STYLE_REF="project" ID="ID_770814190">
+<node ID="ID_1980989006" CONTENT_ID="ID_1738150058"/>
+<node ID="ID_702962129" CONTENT_ID="ID_893492309"/>
+</node>
+</node>
+</node>
+<node TEXT="WIP tasksBucket" STYLE_REF="tasksBucket" ID="ID_243469599"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -13864,44 +13898,42 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="completedTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
-<node TEXT="&lt;= v0.0.9" STYLE_REF="milestone" FOLDED="true" ID="ID_1006138517">
-<node TEXT="templates" STYLE_REF="project" FOLDED="true" ID="ID_800040257">
-<node ID="ID_482442782" CONTENT_ID="ID_1168481436"/>
-<node ID="ID_419404727" CONTENT_ID="ID_1314525875"/>
+<node TEXT="&lt;= v0.0.9" STYLE_REF="milestone" FOLDED="true" ID="ID_220675688">
+<node TEXT="templates" STYLE_REF="project" ID="ID_1544926276">
+<node ID="ID_46382485" CONTENT_ID="ID_1168481436"/>
+<node ID="ID_1956548506" CONTENT_ID="ID_1314525875"/>
 </node>
-<node TEXT="Bugs" STYLE_REF="project" FOLDED="true" ID="ID_43326462">
-<node ID="ID_1029222717" CONTENT_ID="ID_904998969"/>
+<node TEXT="Bugs" STYLE_REF="project" ID="ID_866238190">
+<node ID="ID_1305962193" CONTENT_ID="ID_904998969"/>
 </node>
-<node ID="ID_880893015" CONTENT_ID="ID_743392305"/>
-<node ID="ID_1820543019" CONTENT_ID="ID_848100773"/>
-<node ID="ID_14600853" CONTENT_ID="ID_786626915"/>
-<node ID="ID_587966058" CONTENT_ID="ID_407915349"/>
-<node ID="ID_567575122" CONTENT_ID="ID_687583462"/>
-<node ID="ID_1040762613" CONTENT_ID="ID_136921619"/>
+<node ID="ID_1901229356" CONTENT_ID="ID_743392305"/>
+<node ID="ID_1974403684" CONTENT_ID="ID_848100773"/>
+<node ID="ID_1987061353" CONTENT_ID="ID_786626915"/>
+<node ID="ID_899582054" CONTENT_ID="ID_407915349"/>
+<node ID="ID_1085029204" CONTENT_ID="ID_687583462"/>
+<node ID="ID_740049505" CONTENT_ID="ID_136921619"/>
 </node>
-<node TEXT="v+0" STYLE_REF="milestone" ID="ID_364249029">
-<node ID="ID_1187548594" CONTENT_ID="ID_1813016897"/>
+<node TEXT="v+0" STYLE_REF="milestone" FOLDED="true" ID="ID_939223954">
+<node ID="ID_1329821190" CONTENT_ID="ID_1813016897"/>
 </node>
-<node TEXT="v+1" STYLE_REF="milestone" ID="ID_1076052863">
-<node TEXT="Log" STYLE_REF="project" FOLDED="true" ID="ID_427578237">
-<node ID="ID_1746724169" CONTENT_ID="ID_1444256972"/>
-</node>
-</node>
-<node TEXT="v0.0.10" STYLE_REF="milestone" ID="ID_1222650043">
-<node TEXT="Log" STYLE_REF="project" ID="ID_420529876">
-<node ID="ID_146028330" CONTENT_ID="ID_267721653"/>
-<node ID="ID_254202441" CONTENT_ID="ID_468933310"/>
-<node ID="ID_912871256" CONTENT_ID="ID_453209891">
-<node ID="ID_466746217" CONTENT_ID="ID_1475717027"/>
-<node ID="ID_607587297" CONTENT_ID="ID_996191110"/>
-<node ID="ID_763933021" CONTENT_ID="ID_255376273"/>
-<node ID="ID_1400976070" CONTENT_ID="ID_227122028"/>
+<node TEXT="v+1" STYLE_REF="milestone" FOLDED="true" ID="ID_437662085">
+<node TEXT="Log" STYLE_REF="project" ID="ID_1020242655">
+<node ID="ID_492977772" CONTENT_ID="ID_1444256972"/>
 </node>
 </node>
-<node TEXT="scripts" STYLE_REF="project" ID="ID_1190148004">
-<node ID="ID_157310632" CONTENT_ID="ID_1921939438"/>
-<node ID="ID_540286397" CONTENT_ID="ID_121670897"/>
+<node TEXT="v0.0.10" STYLE_REF="milestone" FOLDED="true" ID="ID_848317791">
+<node TEXT="Log" STYLE_REF="project" ID="ID_96151658">
+<node ID="ID_463917738" CONTENT_ID="ID_267721653"/>
+<node ID="ID_70893894" CONTENT_ID="ID_468933310"/>
+<node ID="ID_728366307" CONTENT_ID="ID_453209891">
+<node ID="ID_1600627696" CONTENT_ID="ID_1475717027"/>
+<node ID="ID_1505950696" CONTENT_ID="ID_996191110"/>
+<node ID="ID_1960240617" CONTENT_ID="ID_255376273"/>
+<node ID="ID_1999148843" CONTENT_ID="ID_227122028"/>
 </node>
+</node>
+<node ID="ID_564391063" CONTENT_ID="ID_1921939438"/>
+<node ID="ID_623023976" CONTENT_ID="ID_121670897"/>
 </node>
 </node>
 </node>

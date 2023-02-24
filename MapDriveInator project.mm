@@ -485,7 +485,7 @@
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
 </node>
-<node TEXT="files" FOLDED="true" ID="ID_1340011039">
+<node TEXT="files" ID="ID_1340011039">
 <node TEXT=".git" ID="ID_43997028" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.git/">
 <attribute NAME="lastAccessTime" VALUE="03-02-23 20:57" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:57-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:57" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:57-0300|dd-MM-yy HH:mm"/>
@@ -5309,7 +5309,7 @@ deletes the timestamps attributes in the nodes</text>
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-02-22&#xa0;&#xa0;15:28:21
+      Inated:&#xa0;&#xa0;&#xa0;2023-02-24&#xa0;&#xa0;18:58:23
     </p>
     <p>
       
@@ -5327,7 +5327,7 @@ deletes the timestamps attributes in the nodes</text>
       &#xa0;0 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
-      &#xa0;1 node(s) moved/renamed in drive
+      &#xa0;0 node(s) moved/renamed in drive
     </p>
     <p>
       
@@ -5336,7 +5336,7 @@ deletes the timestamps attributes in the nodes</text>
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      36 folders didn't need to be moved&#xa0;
+      37 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -5345,7 +5345,7 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      0.5 seconds
+      1.4 seconds
     </p>
     <p>
       
@@ -5357,10 +5357,10 @@ deletes the timestamps attributes in the nodes</text>
       ### MDI debug info:
     </p>
     <p>
-      &#xa0;- Installed MDI addon version : v0.0.10
+      &#xa0;- Installed MDI addon version : v0.0.12
     </p>
     <p>
-      &#xa0;- MDI library version&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: v0.0.10
+      &#xa0;- MDI library version&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: v0.0.12
     </p>
     <p>
       &#xa0;- This map's path&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
@@ -5393,13 +5393,13 @@ deletes the timestamps attributes in the nodes</text>
       (elapsed time in miliseconds)
     </p>
     <p>
-      -69
+      -269
     </p>
     <p>
-      -84
+      -282
     </p>
     <p>
-      -84
+      -298
     </p>
     <p>
       
@@ -5408,7 +5408,7 @@ deletes the timestamps attributes in the nodes</text>
       arma Listado de Rutas nodos
     </p>
     <p>
-      -300
+      -919
     </p>
     <p>
       
@@ -5417,7 +5417,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xSingles
     </p>
     <p>
-      -300
+      -927
     </p>
     <p>
       
@@ -5426,7 +5426,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xClones
     </p>
     <p>
-      -300
+      -927
     </p>
     <p>
       
@@ -5435,7 +5435,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en drive
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
       
@@ -5444,7 +5444,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
       
@@ -5453,10 +5453,10 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones pendientes
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
       
@@ -5465,7 +5465,7 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones inconsistentes
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
       
@@ -5474,7 +5474,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xInconsistentes
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
       
@@ -5483,13 +5483,13 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xClonesInconsistentes
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
-      -454
+      -1422
     </p>
     <p>
       
@@ -5498,7 +5498,7 @@ deletes the timestamps attributes in the nodes</text>
       &#xa0;aplicando acciones FILES
     </p>
     <p>
-      -532
+      -1430
     </p>
     <p>
       
@@ -5507,7 +5507,7 @@ deletes the timestamps attributes in the nodes</text>
       ACTUALIZANDO FOLDERS
     </p>
     <p>
-      -535
+      -1442
     </p>
     <p>
       
@@ -5727,6 +5727,12 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
     </p>
     <p>
       
@@ -5966,6 +5972,12 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
+    </p>
+    <p>
       
     </p>
     <p>
@@ -6194,6 +6206,12 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
+    </p>
+    <p>
       
     </p>
     <p>
@@ -6204,6 +6222,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota.txt
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con_ un montón de_carácteres raros.txt
     </p>
     <p>
       
@@ -6293,6 +6314,12 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.10.addon.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
     </p>
     <p>
@@ -6365,7 +6392,7 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con _ un montón de_carácteres raros.txt
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con_ un montón de_carácteres raros.txt
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota.txt
@@ -6515,6 +6542,12 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.10.addon.mm
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
     </p>
     <p>
@@ -6585,6 +6618,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con_ un montón de_carácteres raros.txt
     </p>
     <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota.txt
@@ -6674,19 +6710,10 @@ deletes the timestamps attributes in the nodes</text>
       filesNOK:&#xa0;
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con _ un montón de_carácteres raros.txt
-    </p>
-    <p>
       
     </p>
     <p>
       xClonesPend1:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\nota _ con_ un montón de_carácteres raros.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con_ un montón de_carácteres raros.txt
     </p>
     <p>
       
@@ -6767,9 +6794,6 @@ deletes the timestamps attributes in the nodes</text>
       filesNOK2:&#xa0;
     </p>
     <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con _ un montón de_carácteres raros.txt
-    </p>
-    <p>
       
     </p>
     <p>
@@ -6777,12 +6801,6 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       xClonLinkOk:&#xa0;
-    </p>
-    <p>
-      ID_1277604094&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con _ un montón de_carácteres raros.txt
-    </p>
-    <p>
-      ID_1118921209&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con _ un montón de_carácteres raros.txt
     </p>
     <p>
       
@@ -6828,6 +6846,18 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       xFolders:&#xa0;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ID_1635289090
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\
     </p>
     <p>
       
@@ -7264,6 +7294,10 @@ deletes the timestamps attributes in the nodes</text>
   </body>
 </html>
 </richcontent>
+<node TEXT="MapDriveInator" ID="ID_1635289090" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
+<node TEXT="MapDriveInator-v0.0.11.addon.mm" ID="ID_948905" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.11.addon.mm"/>
+<node TEXT="MapDriveInator-v0.0.12.addon.mm" ID="ID_1853120596" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.12.addon.mm"/>
+</node>
 </node>
 <node TEXT="v+0" STYLE_REF="milestone" ID="ID_1144738879">
 <node TEXT="Implementar Tasks v4 acá" STYLE_REF="completedTask" ID="ID_1813016897"/>
@@ -7958,7 +7992,7 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 </node>
 </node>
-<node TEXT="Log" FOLDED="true" ID="ID_523658204">
+<node TEXT="Log" ID="ID_523658204">
 <attribute NAME="projectCode" VALUE="Log"/>
 <node TEXT="v0.0.10" STYLE_REF="milestone" FOLDED="true" ID="ID_240938912">
 <node TEXT="poner en nota de &quot;new imported files&quot;" STYLE_REF="completedTask" FOLDED="true" ID="ID_453209891">
@@ -7985,102 +8019,7 @@ deletes the timestamps attributes in the nodes</text>
 <node TEXT="MDI.statusInfo() should log the message into Freeplane&apos;s Log" STYLE_REF="completedTask" ID="ID_1444256972"/>
 </node>
 <node TEXT="v+2" STYLE_REF="milestone" ID="ID_1435040102">
-<node TEXT="guardar en nota de &quot;new imported files&quot; los cambios realizados en última MDI" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_1310678286"/>
-<node TEXT="Opciones en Nota de nodo &quot;new imported files&quot; debe tener mejor formato" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_796279226"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      pasar a formato markdown
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node TEXT="Opciones en Nota de nodo BaseFolder debe tener mejor formato" STYLE_REF="pendingTask" FOLDED="true" POSITION="bottom_or_right" ID="ID_550597183"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      pasar a formato markdown
-    </p>
-  </body>
-</html></richcontent>
-<node TEXT="prueba markdown" ID="ID_629687194"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
-    <text>null
-
-# MDI
-
-The import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node:
-
-
-## nameFilter
-
-A filter to perform on the name of traversed files. If set, only files which match are brought.
-
-This option allowes four types of inputs:
-
-
-* nothing
-   * means no filtering (default)|
-* regex
-   * example: `~/.*\.mp3/`
-* &apos;simplified&apos; regex
-   * example: `~.*\.mp3 `
-* string with \*
-   * example: `*.mp3`
-   * equivalent to regex:      `~/(?i).*\.mp3/`
-* list of strings with \* and ; 
-   * example: `*.mp3;*.png`
-   * equivalent to regex:      `~/(?i)(.*\.mp3|.*\.png)/`
-
-
-## maxDepth
-
-The maximum number of directory levels when recursing
-
-(default is -1 which means no limit, set to 0 for no recursion)
-
-
-
-
-## markWhenMoved
-
-change styles to moved/renamed file Nodes
-
-set to|description
----|---
-0 | to change style only if node hasn&apos;t a previous one (default)
-1 | to allways change the style
--1 | to never change the style
-
-
-
-
-## checkIfReallyBroken
-
-Check if existing nodes pointing to filtered files still exist.
-This option is only useful if you defined a nameFilter before
-but in the map there are also some files that doesn&apos;t match
-this filter definition
-
-(for example if you brought them manually or import them
-before the actual namefilter setting)
-
-- default is 0 which means don&apos;t check --&gt; Mark node as missing also if it doesn&apos;t match the current filter,
-- set to 1 to extra check if a not matching file still exists in drive
-
-
----
-  </text>
-</richcontent>
-</node>
-<node TEXT="cambiar css para que mejore codeblocks" ID="ID_1187105636"/>
-</node>
-<node TEXT="Map Drive Inator debe escribir los cambios que haga en el disco en el Log de Freeplane" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1673288081">
+<node TEXT="Map Drive Inator debe escribir los cambios que haga en el disco en el Log de Freeplane" STYLE_REF="pendingTask" ID="ID_1673288081">
 <node TEXT="API LogUtils" ID="ID_1389895232" LINK="http://www.freeplane.org/doc/api/index.html?org/freeplane/core/util/LogUtils.html"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -8162,7 +8101,103 @@ before the actual namefilter setting)
 <node TEXT="use the new conditional styles API to order the MDI conditional styles rules before the “stop” rules" STYLE_REF="pendingTask" ID="ID_1325075964"/>
 </node>
 </node>
-<node TEXT="v+3" STYLE_REF="milestone" ID="ID_184892093"/>
+<node TEXT="v+3" STYLE_REF="milestone" ID="ID_184892093">
+<node TEXT="Opciones en Nota de nodo &quot;new imported files&quot; debe tener mejor formato" STYLE_REF="pendingTask" ID="ID_796279226"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      pasar a formato markdown
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="Opciones en Nota de nodo BaseFolder debe tener mejor formato" STYLE_REF="pendingTask" FOLDED="true" ID="ID_550597183"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      pasar a formato markdown
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="prueba markdown" ID="ID_629687194"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
+    <text>null
+
+# MDI
+
+The import of files and folders can be adapted by providing various options in the attributes of the BaseFolder node:
+
+
+## nameFilter
+
+A filter to perform on the name of traversed files. If set, only files which match are brought.
+
+This option allowes four types of inputs:
+
+
+* nothing
+   * means no filtering (default)|
+* regex
+   * example: `~/.*\.mp3/`
+* &apos;simplified&apos; regex
+   * example: `~.*\.mp3 `
+* string with \*
+   * example: `*.mp3`
+   * equivalent to regex:      `~/(?i).*\.mp3/`
+* list of strings with \* and ; 
+   * example: `*.mp3;*.png`
+   * equivalent to regex:      `~/(?i)(.*\.mp3|.*\.png)/`
+
+
+## maxDepth
+
+The maximum number of directory levels when recursing
+
+(default is -1 which means no limit, set to 0 for no recursion)
+
+
+
+
+## markWhenMoved
+
+change styles to moved/renamed file Nodes
+
+set to|description
+---|---
+0 | to change style only if node hasn&apos;t a previous one (default)
+1 | to allways change the style
+-1 | to never change the style
+
+
+
+
+## checkIfReallyBroken
+
+Check if existing nodes pointing to filtered files still exist.
+This option is only useful if you defined a nameFilter before
+but in the map there are also some files that doesn&apos;t match
+this filter definition
+
+(for example if you brought them manually or import them
+before the actual namefilter setting)
+
+- default is 0 which means don&apos;t check --&gt; Mark node as missing also if it doesn&apos;t match the current filter,
+- set to 1 to extra check if a not matching file still exists in drive
+
+
+---
+  </text>
+</richcontent>
+</node>
+<node TEXT="cambiar css para que mejore codeblocks" ID="ID_1187105636"/>
+</node>
+<node TEXT="guardar en nota de &quot;new imported files&quot; los cambios realizados en última MDI" STYLE_REF="pendingTask" ID="ID_1310678286"/>
+</node>
 </node>
 <node TEXT="Attributes" FOLDED="true" ID="ID_1562450086">
 <attribute NAME="projectCode" VALUE="Attributes"/>
@@ -11472,7 +11507,10 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="pruebas" STYLE_REF="pendingTask" FOLDED="true" ID="ID_875561550">
+<node TEXT="pruebas" FOLDED="true" ID="ID_875561550">
+<node TEXT="v+0" STYLE_REF="milestone" ID="ID_1517863394">
+<node TEXT="Revisar rama &apos;pruebas&apos;. A ver si hay algo interesante que aún falte impolementar" STYLE_REF="pendingTask" ID="ID_795140534"/>
+</node>
 <node TEXT="prueba N(Id).groovy" ID="ID_1423280569"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -11506,10 +11544,10 @@ before the actual namefilter setting)
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;//def nodo = N('ID_1423280569') //funciona en scripts pero no en librerías
+      &#xa0;&#xa0;&#xa0;&#xa0;//def nodo = N('ID_1423280569') //funciona en scripts pero no en librerías
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      &#xa0;&#xa0;&#xa0;&#xa0;
     </p>
     <p>
       // para el caso de librerías
@@ -11518,22 +11556,23 @@ before the actual namefilter setting)
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;//seleccionar nodo por su ID
+      &#xa0;&#xa0;&#xa0;&#xa0;//seleccionar nodo por su ID
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def nodo = ScriptUtils.node().map.node('ID_1423280569') //sí funcionó
+      &#xa0;&#xa0;&#xa0;&#xa0;def nodo = ScriptUtils.node().map.node('ID_1423280569') //sí funcionó
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      &#xa0;&#xa0;&#xa0;&#xa0;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def cc = ScriptUtils.c()
+      &#xa0;&#xa0;&#xa0;&#xa0;def cc = ScriptUtils.c()
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;cc.statusInfo = 'text of selected node is ' + nodo.text
+      &#xa0;&#xa0;&#xa0;&#xa0;cc.statusInfo = 'text of selected node is ' + nodo.text
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node TEXT="prueba crea sólo nodos folders.groovy" ID="ID_1618271642"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -13721,7 +13760,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="tasksBucket" STYLE_REF="tasksBucket" FOLDED="true" ID="ID_1906111223"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="tasksBucket" STYLE_REF="tasksBucket" ID="ID_1906111223"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -13738,13 +13777,11 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
-<node TEXT="**No milestone**" STYLE_REF="milestone" FOLDED="true" ID="ID_1217899895">
-<node ID="ID_347939890" CONTENT_ID="ID_875561550"/>
-</node>
 <node TEXT="v+0" STYLE_REF="milestone" FOLDED="true" ID="ID_569540425">
 <node ID="ID_369870901" CONTENT_ID="ID_1964375859"/>
+<node ID="ID_737442536" CONTENT_ID="ID_795140534"/>
 </node>
-<node TEXT="v+1" STYLE_REF="milestone" FOLDED="true" ID="ID_1205616555">
+<node TEXT="v+1" STYLE_REF="milestone" ID="ID_1205616555">
 <node TEXT="Revisions" STYLE_REF="project" ID="ID_277156700">
 <node ID="ID_41565500" CONTENT_ID="ID_1405387639"/>
 <node ID="ID_7466669" CONTENT_ID="ID_761127302"/>
@@ -13755,7 +13792,7 @@ before the actual namefilter setting)
 <node ID="ID_259222714" CONTENT_ID="ID_161101455"/>
 </node>
 </node>
-<node TEXT="v+2" STYLE_REF="milestone" FOLDED="true" ID="ID_1276247488">
+<node TEXT="v+2" STYLE_REF="milestone" ID="ID_1276247488">
 <node TEXT="UI" STYLE_REF="project" ID="ID_1128123637">
 <node TEXT="botonera" STYLE_REF="project" ID="ID_791519561">
 <node ID="ID_393694146" CONTENT_ID="ID_1430648520"/>

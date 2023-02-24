@@ -1,5 +1,9 @@
 # History
 
+## v0.0.12
+
+* MapDriveInator: Logs MDI version, Map path, baseFolderNode properties
+
 ## v0.0.11
 
 * added getFileFromLink(n) to get to the real file if it is in another drive and link is relative

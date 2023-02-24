@@ -47,16 +47,16 @@ class MDI{
         // returns the first node which has a link to a file directory and has style styleFolder + styleBaseFolder
         //return n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
         def nBase
-        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
-        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleBaseFolder)}
-        nBase  ?= (n.link?.file?.directory && n.hasStyle(styleFolder))? n : null
-        nBase  ?= n.pathToRoot.find{it.link?.file?.directory && it.hasStyle(styleFolder)}
-        nBase  ?= (n.link?.file?.directory)? n : null
-        nBase  ?= n.pathToRoot.find{it.link?.file?.directory}
+        nBase  ?= n.pathToRoot.find{getFileFromLink(it)?.directory && it.hasStyle(styleFolder) && it.hasStyle(styleBaseFolder)}
+        nBase  ?= n.pathToRoot.find{getFileFromLink(it)?.directory && it.hasStyle(styleBaseFolder)}
+        nBase  ?= (getFileFromLink(n)?.directory && n.hasStyle(styleFolder))? n : null
+        nBase  ?= n.pathToRoot.find{getFileFromLink(it)?.directory && it.hasStyle(styleFolder)}
+        nBase  ?= (getFileFromLink(n)?.directory)? n : null
+        nBase  ?= n.pathToRoot.find{getFileFromLink(it)?.directory}
         
         if(!nBase){
             def nBaseNotOK = n.pathToRoot.find{it.hasStyle(styleBaseFolder)}
-            def nBaseFileExists = nBaseNotOK?.link?.file?.exists()?true:false
+            def nBaseFileExists = getFileFromLink(nBaseNotOK)?.exists()?true:false
             if(nBaseFileExists || (nBaseNotOK && !baseFolderShouldExistInDrive)){
                 nBase = nBaseNotOK
             } else if (showMessageIfNone){
@@ -377,6 +377,12 @@ class MDI{
         // return nodos.link.file.canonicalPath
         return nodos.collect{getPathFromLink4(it)}
     }
+    
+    //I think this function shouldn't exist. I think it's a bug in Freeplane how it pastes relative links from files in different drives than the mindmap file's drive
+    def static getFileFromLink(n){
+        def path = getPathFromLink4(n)
+        return path? new File(path) : null
+    }
     //end:
 
     //region: ---------------------- Funciones Strings
@@ -439,7 +445,7 @@ class MDI{
     def static normalizeNode(mapFile, n, linkType){
         //UITools.informationMessage("${mapFile},\n ${n},\n ${linkType}".toString())
         def i = 0
-        def newUri = getUri(mapFile, n.link.file, linkType)
+        def newUri = getUri(mapFile, getFileFromLink(n), linkType)
         if(newUri != n.link.uri){
             n.link.uri = newUri
             i = 1

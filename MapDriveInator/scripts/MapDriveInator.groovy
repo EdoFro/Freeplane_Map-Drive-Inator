@@ -547,7 +547,7 @@ if(baseFolderNode){
         << " - baseFolder's uri path       : ${baseFolderNode.link.uri?.path}\n"
         << " - baseFolder's path           : ${baseFolderNode.link.file?.path}\n"
         << " - baseFolder's absolutePath   : ${baseFolderNode.link.file?.absolutePath}\n"
-        << " - baseFolder's canonicalPath  : ${baseFolderNode.link.file?.canonicalPath}\n"
+        << " - baseFolder's canonicalPath  : ${MDI.getFileFromLink(baseFolderNode)?.canonicalPath}\n"
         << " - linkType                    : ${['absolute','relative'][linkType]}\n"
     
     ui.informationMessage(textoReport.toString())

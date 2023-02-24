@@ -325,7 +325,7 @@ class MDI{
     def static getPathFromLink4(n){
         def p
         try{
-            p = n.link.file.canonicalPath
+            p = n.link.file?.canonicalPath
         }
         catch(e){
             def pFolders = (n.link.file.AbsolutePath).tokenize(File.separator)

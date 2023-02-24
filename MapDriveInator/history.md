@@ -1,5 +1,10 @@
 # History
 
+## v0.0.11
+
+* added getFileFromLink(n) to get to the real file if it is in another drive and link is relative
+* umweg to get canonicalPaths from files that are in other drives and have relative links
+
 ## v0.0.10
 
 * Changed script condition for "file" style in '**MDI styles template.mm**' to also work with relative file links

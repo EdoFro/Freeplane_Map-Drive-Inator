@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.10"/>
+<attribute NAME="version" VALUE="v0.0.11"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -242,7 +242,7 @@
 <node TEXT="&quot;create base folder node&quot; can now be used to update baseFolderNode parameters" ID="ID_909845566"/>
 <node TEXT="changed baseFolderNode note to markdown format" ID="ID_243745728"/>
 </node>
-<node TEXT="v0.0.10" ID="ID_154817545">
+<node TEXT="v0.0.10" FOLDED="true" ID="ID_154817545">
 <node TEXT="Changed script condition for &quot;file&quot; style in &apos;**MDI styles template.mm**&apos; to also work with relative file links" ID="ID_1643727847"/>
 <node TEXT="added MDI.version" ID="ID_1712756448"/>
 <node TEXT="added log info to &quot;new imports&quot; node&apos;s note" ID="ID_1293807336"/>
@@ -250,6 +250,10 @@
 <node TEXT="createFilesFromNotes: request confirmation if file already exists" ID="ID_1016520655"/>
 <node TEXT="MDI.statusInfo() also writes the message into Freeplane&apos;s Log" STYLE_REF="completedTask" ID="ID_88257329"/>
 <node TEXT="bug correction: added method getPathFromLink4 that solves issues when file.getCanonicalPath fails" ID="ID_1341523105"/>
+</node>
+<node TEXT="v0.0.11" ID="ID_873574159">
+<node TEXT="added getFileFromLink(n) to get to the real file if it is in another drive and link is relative" ID="ID_143420426"/>
+<node TEXT="umweg to get canonicalPaths from files that are in other drives and have relative links" ID="ID_1146418895"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">

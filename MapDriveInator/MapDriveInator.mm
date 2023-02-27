@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.12"/>
+<attribute NAME="version" VALUE="v0.0.13"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -258,6 +258,7 @@
 <node TEXT="v0.0.12" ID="ID_1823296301">
 <node TEXT="MapDriveInator: Logs MDI version, Map path, baseFolderNode properties" ID="ID_299612617"/>
 </node>
+<node TEXT="v.0.0.13" ID="ID_1424599841"/>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
 <edge COLOR="#00ff00"/>

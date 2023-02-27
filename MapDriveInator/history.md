@@ -1,5 +1,8 @@
 # History
 
+## v.0.0.13
+
+
 ## v0.0.12
 
 * MapDriveInator: Logs MDI version, Map path, baseFolderNode properties

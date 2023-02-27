@@ -2356,7 +2356,22 @@
 <attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
-<node TEXT="importMDIStyles.groovy" FOLDED="true" ID="ID_50035749" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/importMDIStyles.groovy"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="importMDIStyles.groovy" FOLDED="true" ID="ID_50035749" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/importMDIStyles.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="lastModifiedTime" VALUE="18-01-23 11:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:13-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="18-01-23 11:08" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:08-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="1.527" OBJECT="org.freeplane.features.format.FormattedNumber|1527|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -2375,34 +2390,34 @@
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def sep&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= File.separator
+      &#xa0;&#xa0;&#xa0;&#xa0;def sep&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;= File.separator
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def userDir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= c.userDirectory.path
+      &#xa0;&#xa0;&#xa0;&#xa0;def userDir&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;= c.userDirectory.path
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def mapFileName = &quot;MDI styles template.mm&quot;
+      &#xa0;&#xa0;&#xa0;&#xa0;def mapFileName = &quot;MDI styles template.mm&quot;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def pathName&nbsp;&nbsp;&nbsp;&nbsp;= userDir + sep + &quot;templates&quot; + sep + &quot;MapDriveInator&quot; + sep + mapFileName
+      &#xa0;&#xa0;&#xa0;&#xa0;def pathName&#xa0;&#xa0;&#xa0;&#xa0;= userDir + sep + &quot;templates&quot; + sep + &quot;MapDriveInator&quot; + sep + mapFileName
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;//return &quot;Does the file: '${pathName}' exist? :&nbsp;&nbsp;&nbsp;${exists(pathName)}&quot;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def sourceMap&nbsp;&nbsp;&nbsp;= getMapFromPath(pathName, false) //usar mapa indicado (pero oculto)
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def targetMap = node.map&nbsp;&nbsp;// --&gt; active map
+      &#xa0;&#xa0;&#xa0;&#xa0;//return &quot;Does the file: '${pathName}' exist? :&#xa0;&#xa0;&#xa0;${exists(pathName)}&quot;
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;us.copyUserStyles(sourceMap, targetMap) //, {it.text.startsWith('mdi_')})
+      &#xa0;&#xa0;&#xa0;&#xa0;def sourceMap&#xa0;&#xa0;&#xa0;= getMapFromPath(pathName, false) //usar mapa indicado (pero oculto)
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;def targetMap = node.map&#xa0;&#xa0;// --&gt; active map
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;us.copyUserStyles(sourceMap, targetMap) //, {it.text.startsWith('mdi_')})
     </p>
     <p>
       
@@ -2414,34 +2429,34 @@
       /*
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def myString = 'ToM_goto'
+      &#xa0;&#xa0;&#xa0;&#xa0;def myString = 'ToM_goto'
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def myList = 'ToM_nextPage,ToM_goto,ToM_showNode'.split(',')
+      &#xa0;&#xa0;&#xa0;&#xa0;def myList = 'ToM_nextPage,ToM_goto,ToM_showNode'.split(',')
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def myClosure =&nbsp;&nbsp;{it.text.contains('u')}
+      &#xa0;&#xa0;&#xa0;&#xa0;def myClosure =&#xa0;&#xa0;{it.text.contains('u')}
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def myClosure2 =&nbsp;&nbsp;{it.text.startsWith('ToM_')}
-    </p>
-    <p>
-      
+      &#xa0;&#xa0;&#xa0;&#xa0;def myClosure2 =&#xa0;&#xa0;{it.text.startsWith('ToM_')}
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;us.copyUserStyles(sourceMap, targetMap, myString)
+      
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;us.copyUserStyles(sourceMap, targetMap, myList)
+      &#xa0;&#xa0;&#xa0;&#xa0;us.copyUserStyles(sourceMap, targetMap, myString)
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;us.copyUserStyles(sourceMap, targetMap, myClosure)
+      &#xa0;&#xa0;&#xa0;&#xa0;us.copyUserStyles(sourceMap, targetMap, myList)
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;us.copyUserStyles(sourceMap, targetMap, myClosure2)
+      &#xa0;&#xa0;&#xa0;&#xa0;us.copyUserStyles(sourceMap, targetMap, myClosure)
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;us.copyUserStyles(sourceMap, targetMap, myClosure2)
     </p>
     <p>
       */
@@ -2462,49 +2477,49 @@
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def getMapFromPath(filePath, withView){
+      &#xa0;&#xa0;&#xa0;&#xa0;def getMapFromPath(filePath, withView){
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(exists(filePath)){
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if(exists(filePath)){
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def m = c.mapLoader(filePath)
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;def m = c.mapLoader(filePath)
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(withView) m.withView()
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if(withView) m.withView()
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return m.getMindMap()
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;return m.getMindMap()
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;}
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def exists(String path){
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exists(new File(path))
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;}
+      &#xa0;&#xa0;&#xa0;&#xa0;}
     </p>
     <p>
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;def exists(File file){
+      &#xa0;&#xa0;&#xa0;&#xa0;def exists(String path){
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file.isFile()
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exists(new File(path))
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;}
+      &#xa0;&#xa0;&#xa0;&#xa0;}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;def exists(File file){
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;file.isFile()
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;}
     </p>
     <p>
       
@@ -2514,21 +2529,6 @@
     </p>
   </body>
 </html></richcontent>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      .groovy
-    </p>
-  </body>
-</html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="18-01-23 11:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:13-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="18-01-23 11:08" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:08-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="1.527" OBJECT="org.freeplane.features.format.FormattedNumber|1527|#,##0"/>
 <node TEXT="add-ons que actualmente usan edofro.pseudofreeplaneapi.UserStyles" ID="ID_480689300">
 <node TEXT="Tutorial-o-Matic" ID="ID_1090523809"/>
 <node TEXT="groovyNode" ID="ID_1886046925"/>
@@ -2546,6 +2546,797 @@
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="26.638" OBJECT="org.freeplane.features.format.FormattedNumber|26638|#,##0"/>
+<node TEXT="v+0" STYLE_REF="milestone" ID="ID_1306964706">
+<node TEXT="documentar arbol de algoritmo acá" STYLE_REF="nextTask" ID="ID_1797095930">
+<icon BUILTIN="25%"/>
+<node TEXT="ver conectores" ID="ID_321432147">
+<node TEXT="only arrows" ID="ID_182112229" LINK="menuitem:_SetStringPropertyAction.show_connectors.false"/>
+<node TEXT="for selection" ID="ID_635388311" LINK="menuitem:_SetStringPropertyAction.show_connectors.for_selection"/>
+<node TEXT="always" ID="ID_776202255" LINK="menuitem:_SetStringPropertyAction.show_connectors.true"/>
+</node>
+<node TEXT="algoritmo:" ID="ID_986167843" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
+<node TEXT="desde info Mapa" ID="ID_1043282937" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
+<node TEXT="Obteniendo Info En Nodos De Files Y Folders" STYLE_REF="Organizador" FOLDED="true" ID="ID_1594139799" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      se llenan con método &quot;armaListadoRutas&quot;
+    </p>
+    <p>
+      - revisa estructura de nodos actual
+    </p>
+    <p>
+      - info de mapa, no desde disco
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="a)" ID="ID_1497557966">
+<node TEXT="xFile" ID="ID_822667930" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      fields:
+    </p>
+    <p>
+      - id
+    </p>
+    <p>
+      - link
+    </p>
+    <p>
+      - path
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="xSingles" ID="ID_165417287" BACKGROUND_COLOR="#cdd972" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#cdd972" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#cdd972" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de nodos files que no son folder ni poseen clones
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="xClones" ID="ID_941473986" BACKGROUND_COLOR="#d880fb" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#d880fb" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#d880fb" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de nodos files que no son folder y SÍ poseen clones
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="xFolders" FOLDED="true" ID="ID_1372196112" BACKGROUND_COLOR="#e4da79" MIN_WIDTH="10 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de nodos folders
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="cumplen esta condición:" FOLDED="true" ID="ID_1963222963">
+<node TEXT="o" FOLDED="true" ID="ID_915187066">
+<node TEXT="con estilo styleFolder" ID="ID_1115224832"/>
+<node TEXT="y" FOLDED="true" ID="ID_1582321132">
+<node TEXT="isLinkToFileOrFolder" FOLDED="true" ID="ID_1448007609">
+<node TEXT="y" FOLDED="true" ID="ID_1096521973">
+<node TEXT="link posee file" ID="ID_1409561304"/>
+<node TEXT="uri de link no posee fragment" ID="ID_864382810"/>
+</node>
+</node>
+<node TEXT="o" FOLDED="true" ID="ID_1707406349">
+<node TEXT="file.directory" ID="ID_1155304862"/>
+<node TEXT="uri termina en &apos;/&apos;" ID="ID_988669278"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="- sacar listados desde nodos xSingles" STYLE_REF="Organizador" FOLDED="true" ID="ID_581302696" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="a)" ID="ID_823991070">
+<node TEXT=" xFile" ID="ID_1758816135" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="xConsistentes" ID="ID_1728271171" BACKGROUND_COLOR="#fff13f" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#fff13f" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#fff13f" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado xSingles: donde coincida su link con path en mapa
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="xInconsistentes" ID="ID_696885987" BACKGROUND_COLOR="#fa9af5" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#fa9af5" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#fa9af5" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#fa9af5" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#fa9af5" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#fa9af5" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado xSingles: donde no coincida su link con path en mapa
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="strings" ID="ID_965844478" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="listCons" ID="ID_1449344127" BACKGROUND_COLOR="#59daea" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#59daea" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#59daea" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#59daea" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado paths xSingles consistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="listInConsLink" ID="ID_222700761" BACKGROUND_COLOR="#d9f666" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#d9f666" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de links de xSingles inconsistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="listInConsPath" ID="ID_880787997" BACKGROUND_COLOR="#55f8f0" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#55f8f0" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de path (sacado de mapa) de xSingles inconsistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="- sacar listados desde nodos xClones" STYLE_REF="Organizador" FOLDED="true" ID="ID_378288434" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="a)" ID="ID_382777995">
+<node TEXT=" xFile" ID="ID_128476726" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="xClonesConsistentes" ID="ID_8826842" BACKGROUND_COLOR="#e190ce" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#e190ce" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de xClones donde coincide su link con path en mapa
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="no se puede sacar directamente los xClones inconsistentes, porque hay que asegurar que TODOS sus clones son inconsistentes" ID="ID_1715428632" BACKGROUND_COLOR="#9bdfa9" MIN_WIDTH="10 cm"/>
+</node>
+<node TEXT="strings" ID="ID_910720035" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="listClonCons" ID="ID_349118599" BACKGROUND_COLOR="#f742d4" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#f742d4" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#f742d4" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#f742d4" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado paths xClonesConsistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="desde drive directamente" ID="ID_1878488170" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
+<node TEXT="- sacar listados drive" STYLE_REF="Organizador" FOLDED="true" ID="ID_1070866230" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="a)" ID="ID_328700633">
+<node TEXT="strings" ID="ID_1232101777" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="listFiles" ID="ID_1740766224" BACKGROUND_COLOR="#8fecf8" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#8fecf8" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#8fecf8" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#8fecf8" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#8fecf8" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de files de drive, no folders
+    </p>
+    <p>
+      canonicalPath
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="comparando drive con mapa" ID="ID_1709750762" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
+<node TEXT="- obteniendo sublistas de files" STYLE_REF="Organizador" FOLDED="true" ID="ID_1095704251" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="a)" ID="ID_1062195123">
+<node TEXT="strings" ID="ID_293457487" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="filesOK" FOLDED="true" ID="ID_1753944704" BACKGROUND_COLOR="#9095f3" MIN_WIDTH="10 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de files en disco que están correctamente indicadas en el mapa (tienen igual link e igual path de mapa)
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= listFiles.intersect(listCons + listClonCons)" ID="ID_530915850"/>
+<node TEXT=" //no se hace nada con esto" ID="ID_391487637"/>
+</node>
+<node TEXT="filesNOK" FOLDED="true" ID="ID_206474696" BACKGROUND_COLOR="#3ada72" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#3ada72" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#3ada72" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#3ada72" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#3ada72" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de files que no se encuentran correctas en el mapa
+    </p>
+    <p>
+      No tienen nodos consistentes en el mapa
+    </p>
+    <p>
+      //OJO!! aún incluye algunas que pueden estar ok con&#xa0;nodos inconsistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= listFiles - listCons - listClonCons" ID="ID_333114207"/>
+<node TEXT="//OJO!! aún incluye algunas que pueden estar ok con nodos clones" ID="ID_1215271098"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="- obtener listado de clones pendientes" STYLE_REF="Organizador" FOLDED="true" ID="ID_692971929" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="a)" ID="ID_1533790880">
+<node TEXT="strings" ID="ID_437031505" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="listClonConsOK" FOLDED="true" ID="ID_378200257" BACKGROUND_COLOR="#e97ed6" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#e97ed6" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de clones consistentes que tienen file en drive
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= listClonCons.intersect(listFiles)" ID="ID_1465008750"/>
+</node>
+</node>
+<node TEXT=" xFile" ID="ID_1945224635" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="xClonesPendA" ID="ID_1741926360" BACKGROUND_COLOR="#8d71dd" MIN_WIDTH="10 cm" VGAP_QUANTITY="2 px">
+<arrowlink COLOR="#8d71dd" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#8d71dd" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#8d71dd" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#8d71dd" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado xClones al que se le quitan todos los nodos y sus respectivos clones que:
+    </p>
+    <p>
+      - son consistentes y apuntan correctamente a un file
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="- obtener listado de clones inconsistentes" STYLE_REF="Organizador" FOLDED="true" ID="ID_944419240" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="a)" ID="ID_1427297824">
+<node TEXT=" xFile" ID="ID_778609159" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="xClonesInconsistentes" ID="ID_194444289" BACKGROUND_COLOR="#d30aa5" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#d30aa5" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#d30aa5" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de clones con link diferente de path de mapa
+    </p>
+    <p>
+      (ninguno de sus clones coincide)
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= xClonesPendA.findAll{it.path != it.link}" ID="ID_746314280"/>
+</node>
+</node>
+<node TEXT="strings" ID="ID_649471847" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="listClonInConsLink" ID="ID_137536010" BACKGROUND_COLOR="#eafe62" MIN_WIDTH="10 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de links de clones inconsistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="listClonInConsPath" ID="ID_1268437436" BACKGROUND_COLOR="#845de5" MIN_WIDTH="10 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de path de mapa de clones inconsistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="b)" ID="ID_1836198603">
+<node TEXT="strings" ID="ID_112820311" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="filesSinNodos" FOLDED="true" ID="ID_983344430" BACKGROUND_COLOR="#e31db4" MIN_WIDTH="10 cm">
+<arrowlink DESTINATION="ID_1868060012"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de files en drives que no tienen contraparte en el mapa en links y paths consistentes e inconsistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= filesNOK - listInConsLink - listInConsPath" FOLDED="true" ID="ID_872836876">
+<node TEXT=" //restando nodos single inconsistentes" ID="ID_237510869"/>
+</node>
+<node TEXT="-= (listClonInConsLink + listClonInConsPath)" FOLDED="true" ID="ID_419272673">
+<node TEXT="//restando nodos clones inconsistentes" ID="ID_102694419"/>
+</node>
+</node>
+<node TEXT="nSinFileA" FOLDED="true" ID="ID_1061547658" BACKGROUND_COLOR="#5ddcc1" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#5ddcc1" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de consistentes que no están en el disco
+    </p>
+    <p>
+      //1ª parte de nodos sin files
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= listCons - listFiles" ID="ID_878522955"/>
+</node>
+</node>
+<node TEXT=" xFile" ID="ID_373670302" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="nodosSinFileA" FOLDED="true" ID="ID_356291057" BACKGROUND_COLOR="#3dbebf" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#3dbebf" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      xFiles de nodos consistentes que no están en el disco
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= xConsistentes.findAll{it.link in nSinFileA}" ID="ID_1834051093"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="- obteniendo sublistas de xInconsistentes" STYLE_REF="Organizador" FOLDED="true" ID="ID_387496136" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="a)" ID="ID_361880354">
+<node TEXT=" xFile" ID="ID_989496827" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="xLinkOk" FOLDED="true" ID="ID_316413262" BACKGROUND_COLOR="#7b42fc" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#7b42fc" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#7b42fc" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink DESTINATION="ID_1375558629"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      xFile inconsistentes cuyo link apunta a un archivo real
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.link)}" ID="ID_1943774658"/>
+</node>
+<node TEXT="xPathOk" FOLDED="true" ID="ID_1159347345" BACKGROUND_COLOR="#07f4f6" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#07f4f6" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#07f4f6" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink DESTINATION="ID_172671060"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      xFile inconsistentes cuyo path del mapa apunta a un archivo real
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.path)}" ID="ID_645764921"/>
+</node>
+<node TEXT="nodosSinFileB" FOLDED="true" ID="ID_344563498" BACKGROUND_COLOR="#41e97b" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#41e97b" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#41e97b" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      xFile inconsistentes que no apuntan a ningun archivo.
+    </p>
+    <p>
+      2ª parte de nodos sin files
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= xInconsistentes - xLinkOk - xPathOk" ID="ID_1582107874"/>
+</node>
+</node>
+<node TEXT="strings" ID="ID_741812634" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="filesNOK2" FOLDED="true" ID="ID_1066812066" BACKGROUND_COLOR="#defc87" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#defc87" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#defc87" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de files que no se encuentran el mapa:
+    </p>
+    <p>
+      - ni en nodos consistentes
+    </p>
+    <p>
+      - ni como link o path de nodos inconsistentes
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= filesNOK - xLinkOk*.link.flatten() - xPathOk*.path.flatten()" ID="ID_1108414560"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="- obteniendo sublistas de xClonesInconsistentes" STYLE_REF="Organizador" FOLDED="true" ID="ID_1624851255" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="a)" ID="ID_451238278">
+<node TEXT=" xFile" ID="ID_1458832460" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="xClonPathOk" FOLDED="true" ID="ID_1867993651" BACKGROUND_COLOR="#c0f4b2" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#c0f4b2" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink DESTINATION="ID_172671060"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      xFiles clones inconsistentes cuyo path del mapa apunta a un archivo real
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= xClonesPendA.findAll{filesNOK2.contains(it.path)}" ID="ID_939300010"/>
+</node>
+<node TEXT="xClonLinkOk" FOLDED="true" ID="ID_1059454003" BACKGROUND_COLOR="#2fdbfe" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#2fdbfe" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink DESTINATION="ID_866457386"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      xFiles clones inconsistentes cuyo link apunta a un archivo real
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= xClonesPendA.findAll{filesNOK2.contains(it.link)}" ID="ID_1759038454"/>
+</node>
+<node TEXT="xClonLinkOkChosen" FOLDED="true" ID="ID_866457386" BACKGROUND_COLOR="#3dbebf" MIN_WIDTH="10 cm">
+<arrowlink DESTINATION="ID_1375558629"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Listado con clones cuyo path más se asemeja a su link
+    </p>
+    <p>
+      (link da a file)
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= MDI.chooseClone(xClonLinkOk)" ID="ID_1320148770"/>
+</node>
+<node TEXT="xClonesPendB" ID="ID_709757688" BACKGROUND_COLOR="#56aec7" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#56aec7" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado xClones al que se le quitan todos los nodos y sus respectivos clones que:
+    </p>
+    <p>
+      + son consistentes y apuntan correctamente a un file
+    </p>
+    <p>
+      + inconsistentes con link apuntando correctamente a file
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="xClonesPendC" ID="ID_577118003" BACKGROUND_COLOR="#dd6ff0" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#dd6ff0" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado xClones al que se le quitan todos los nodos y sus respectivos clones que:
+    </p>
+    <p>
+      + son consistentes y apuntan correctamente a un file
+    </p>
+    <p>
+      + inconsistentes con link apuntando correctamente a file
+    </p>
+    <p>
+      + inconsistentes con path de mapa apuntando correctamente a file
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="b)" ID="ID_964965837">
+<node TEXT=" xFile" ID="ID_1354083867" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="xClonesPendD" ID="ID_1949443174" BACKGROUND_COLOR="#e30db9" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#e30db9" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      idem a xClonesPendC que se va vaciando para armar listado nodosSinFileC. Al final debería terminar vacío
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="nodosSinFileC" ID="ID_628350763" BACKGROUND_COLOR="#b6dffc" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#b6dffc" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#b6dffc" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      recolecta todos los nodos clones que no apuntan a un file (ni por link ni path de mapa). recolecta un nodo por cada grupo de clones.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="c)" ID="ID_1142947675">
+<node TEXT=" xFile" ID="ID_655494205" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
+<node TEXT="nodosConFileEnOtraParte" FOLDED="true" ID="ID_615907990" BACKGROUND_COLOR="#abeaea" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#abeaea" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink DESTINATION="ID_1375558629"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      lista de nodos que no apuntan a ningun file del baseFolder pero que sí apuntan a nodos existentes en otra parte.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= (nodosSinFileB + nodosSinFileC).findAll{new File(it.link).exists()}" ID="ID_307193104"/>
+</node>
+<node TEXT="nodosSinFile" FOLDED="true" ID="ID_728454038" BACKGROUND_COLOR="#dcf4c2" MIN_WIDTH="10 cm">
+<arrowlink DESTINATION="ID_463892142"/>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      listado de nodos que realmente no están relacionados de alguna forma con File en disco
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="&apos;= (nodosSinFileA + nodosSinFileB + nodosSinFileC) - nodosConFileEnOtraParte" ID="ID_422143644"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="acciones:" ID="ID_1941107011" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
+<node TEXT="- aplicando acciones FILES" STYLE_REF="Organizador" ID="ID_1789042587" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
+<node TEXT="- nodos sin files --&gt; marcar nodos como con error" STYLE_REF="Organizador" ID="ID_738243658" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="nodosSinFile" ID="ID_463892142">
+<node TEXT="markAsBroken" ID="ID_1409068533"/>
+</node>
+</node>
+<node TEXT="- path y file coinciden --&gt; corregir links" STYLE_REF="Organizador" ID="ID_401148387" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="xPathOk + xClonPathOk" ID="ID_172671060">
+<node TEXT="setLinkImage" ID="ID_825127285"/>
+<node TEXT="setLink" ID="ID_550393515"/>
+<node TEXT="markAsBroken" ID="ID_814141441">
+<node TEXT="false" ID="ID_1349124234"/>
+</node>
+</node>
+</node>
+<node TEXT="- files sin nodos       --&gt; importar como nodos" STYLE_REF="Organizador" ID="ID_1484980987" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="filesSinNodos" ID="ID_1868060012">
+<node TEXT="crear en nodeNewImports" ID="ID_1185483691"/>
+<node TEXT="setLink" ID="ID_1891615001"/>
+</node>
+</node>
+<node TEXT="- path cambió en mapa --&gt; ejecutar cambio en disco" STYLE_REF="Organizador" ID="ID_192808602" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
+<node TEXT="(xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)" ID="ID_1375558629">
+<node TEXT="createPath" ID="ID_1872922337"/>
+<node TEXT="file.renameTo" ID="ID_776257392"/>
+<node TEXT="setLinkImage" ID="ID_612061972"/>
+<node TEXT="setLink" ID="ID_1713673909"/>
+<node TEXT="markAsBroken" ID="ID_585892402">
+<node TEXT="false" ID="ID_1364259242"/>
+</node>
+<node TEXT="markAsMoved" ID="ID_1863631412">
+<node TEXT="true" ID="ID_1670008984"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="estructura de cálculo de listados" ID="ID_1071373172">
 <node TEXT="filesOK" FOLDED="true" ID="ID_1203036016">
 <node TEXT="intersect" LOCALIZED_STYLE_REF="default" ID="ID_1831815539">
 <node TEXT="listFiles" ID="ID_1790725510" BACKGROUND_COLOR="#ff9999"/>
@@ -2589,7 +3380,7 @@
 </node>
 </node>
 <node TEXT="listInConsLink" ID="ID_59426809">
-<node TEXT="xInconsistentes" ID="ID_1109643201">
+<node TEXT="xInconsistentes" ID="ID_1109643201" BACKGROUND_COLOR="#ff99ff">
 <node ID="ID_121091108" CONTENT_ID="ID_963121278"/>
 </node>
 </node>
@@ -2654,7 +3445,7 @@
 </node>
 </node>
 <node TEXT="nodosSinFileB" ID="ID_1206363834">
-<node TEXT="xInconsistentes" ID="ID_39219233">
+<node TEXT="xInconsistentes" ID="ID_39219233" BACKGROUND_COLOR="#ff99ff">
 <node ID="ID_1944147998" CONTENT_ID="ID_21439795"/>
 </node>
 <node TEXT="xLinkOk" ID="ID_301903505">
@@ -2853,7 +3644,7 @@
   </body>
 </html></richcontent>
 <node TEXT="xPathOk" ID="ID_676787321">
-<node TEXT="xInconsistentes" ID="ID_882919079">
+<node TEXT="xInconsistentes" ID="ID_882919079" BACKGROUND_COLOR="#ff99ff">
 <node TEXT="xSingles" ID="ID_1487006220" BACKGROUND_COLOR="#66ff99"/>
 </node>
 <node TEXT="filesNOK" ID="ID_1942377905">
@@ -2947,7 +3738,7 @@
   </body>
 </html></richcontent>
 <node TEXT="xLinkOk" ID="ID_939656994">
-<node TEXT="xInconsistentes" ID="ID_1240757332">
+<node TEXT="xInconsistentes" ID="ID_1240757332" BACKGROUND_COLOR="#ff99ff">
 <node TEXT="xSingles" ID="ID_621420174" BACKGROUND_COLOR="#66ff99"/>
 </node>
 <node TEXT="filesNOK" ID="ID_1552780683">
@@ -3029,10 +3820,19 @@
 </node>
 </node>
 </node>
+</node>
 <node TEXT="Log" ID="ID_178118251">
 <attribute NAME="projectCode" VALUE="Log"/>
 <node TEXT="v+1" STYLE_REF="milestone" ID="ID_1634187899">
 <node TEXT="get information if some files couldn&apos;t get moved" STYLE_REF="nextTask" ID="ID_161101455"/>
+</node>
+</node>
+<node TEXT="Revisions" ID="ID_210781872">
+<attribute NAME="projectCode" VALUE="Revisions"/>
+<node TEXT="v+1" STYLE_REF="milestone" ID="ID_628264588">
+<node TEXT="see what happens when a file is moved to a folder that already has a file with that name. Handle this cases" STYLE_REF="nextTask" ID="ID_1372672925">
+<icon BUILTIN="0%"/>
+</node>
 </node>
 </node>
 </node>
@@ -3187,8 +3987,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="nota.txt" ID="ID_1035824433" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/nota.txt">
 <attribute NAME="lastModifiedTime" VALUE="27-12-20 17:56" OBJECT="org.freeplane.features.format.FormattedDate|2020-12-27T17:56-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
@@ -4301,8 +5100,28 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_423253710"/>
-<node TEXT="MapDriveInator-v0.0.10.addon.mm" STYLE_REF="freshNew" ID="ID_903413920" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.10.addon.mm">
+<node TEXT="MapDriveInator-v0.0.12.addon.mm" STYLE_REF="freshNew" ID="ID_1853120596" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.12.addon.mm"/>
+<node TEXT="MapDriveInator.mm.bak" ID="ID_703686871" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator.mm.bak">
+<attribute NAME="lastModifiedTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="17-01-23 12:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:39-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="45.534" OBJECT="org.freeplane.features.format.FormattedNumber|45534|#,##0"/>
+</node>
+<node TEXT="history.md" ID="ID_1399596341" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/history.md">
+<attribute NAME="lastModifiedTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="1.349" OBJECT="org.freeplane.features.format.FormattedNumber|1349|#,##0"/>
+</node>
+<node TEXT="version.properties" ID="ID_631139260" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/version.properties">
+<attribute NAME="lastModifiedTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
+<attribute NAME="fileSize" VALUE="269" OBJECT="org.freeplane.features.format.FormattedNumber|269|#,##0"/>
+</node>
+<node TEXT="versiones anteriores" STYLE_REF="Organizador" FOLDED="true" ID="ID_423253710">
+<node TEXT="MapDriveInator-v0.0.11.addon.mm" ID="ID_948905" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.11.addon.mm"/>
+<node TEXT="MapDriveInator-v0.0.10.addon.mm" ID="ID_903413920" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.10.addon.mm">
 <attribute NAME="lastModifiedTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|datetime"/>
 <attribute NAME="creationTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|datetime"/>
@@ -4350,23 +5169,6 @@
 <attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="164.384" OBJECT="org.freeplane.features.format.FormattedNumber|164384|#,##0"/>
 </node>
-<node TEXT="MapDriveInator.mm.bak" ID="ID_703686871" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator.mm.bak">
-<attribute NAME="lastModifiedTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:39-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="45.534" OBJECT="org.freeplane.features.format.FormattedNumber|45534|#,##0"/>
-</node>
-<node TEXT="history.md" ID="ID_1399596341" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/history.md">
-<attribute NAME="lastModifiedTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="1.349" OBJECT="org.freeplane.features.format.FormattedNumber|1349|#,##0"/>
-</node>
-<node TEXT="version.properties" ID="ID_631139260" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/version.properties">
-<attribute NAME="lastModifiedTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="269" OBJECT="org.freeplane.features.format.FormattedNumber|269|#,##0"/>
 </node>
 </node>
 </node>
@@ -4573,6 +5375,7 @@
 </node>
 <node ID="ID_227406944" TREE_ID="ID_1035824433"/>
 <node ID="ID_1118921209" TREE_ID="ID_1277604094"/>
+<node TEXT="prueba vs GTD.mm" STYLE_REF="freshNew" ID="ID_492086566" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/ignoredByGitHub/prueba%20vs%20GTD.mm"/>
 </node>
 <node TEXT=".gitignore" STYLE_REF="discardedTask" ID="ID_204170711"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -5309,7 +6112,7 @@ deletes the timestamps attributes in the nodes</text>
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-02-24&#xa0;&#xa0;18:58:23
+      Inated:&#xa0;&#xa0;&#xa0;2023-02-27&#xa0;&#xa0;19:31:11
     </p>
     <p>
       
@@ -5324,7 +6127,7 @@ deletes the timestamps attributes in the nodes</text>
       &#xa0;0 link(s) corrected in nodes
     </p>
     <p>
-      &#xa0;0 new file(s) imported as node(s)&#xa0;
+      &#xa0;1 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
       &#xa0;0 node(s) moved/renamed in drive
@@ -5345,16 +6148,19 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      1.4 seconds
+      0.7 seconds
     </p>
     <p>
       
     </p>
     <p>
-      -----
+      =====================================
     </p>
     <p>
-      ### MDI debug info:
+      
+    </p>
+    <p>
+      MDI debug info:
     </p>
     <p>
       &#xa0;- Installed MDI addon version : v0.0.12
@@ -5378,7 +6184,40 @@ deletes the timestamps attributes in the nodes</text>
       &#xa0;- baseFolder's canonicalPath&#xa0;&#xa0;: E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator
     </p>
     <p>
-      &#xa0;- linkType&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: absolute
+      baseFolderNode attributes:
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- nameFilter :&#xa0;
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- maxDepth : -1
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- markWhenMoved : 0
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- lastAccessTime : 03-02-23 21:03
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- lastModifiedTime : 03-02-23 20:24
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- creationTime : 10-01-23 15:44
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- checkIfReallyBroken : 0
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- fileSize : 12.288
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- projectCode : Freep.Map-Drive-Inator
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- linkType : 0
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- modifiedFile : true
     </p>
     <p>
       =====================================
@@ -5393,13 +6232,13 @@ deletes the timestamps attributes in the nodes</text>
       (elapsed time in miliseconds)
     </p>
     <p>
-      -269
+      -195
     </p>
     <p>
-      -282
+      -210
     </p>
     <p>
-      -298
+      -221
     </p>
     <p>
       
@@ -5408,7 +6247,7 @@ deletes the timestamps attributes in the nodes</text>
       arma Listado de Rutas nodos
     </p>
     <p>
-      -919
+      -506
     </p>
     <p>
       
@@ -5417,7 +6256,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xSingles
     </p>
     <p>
-      -927
+      -507
     </p>
     <p>
       
@@ -5426,7 +6265,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en nodos xClones
     </p>
     <p>
-      -927
+      -509
     </p>
     <p>
       
@@ -5435,7 +6274,7 @@ deletes the timestamps attributes in the nodes</text>
       saca listados de informacion en drive
     </p>
     <p>
-      -1422
+      -718
     </p>
     <p>
       
@@ -5444,7 +6283,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas
     </p>
     <p>
-      -1422
+      -719
     </p>
     <p>
       
@@ -5453,10 +6292,10 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones pendientes
     </p>
     <p>
-      -1422
+      -719
     </p>
     <p>
-      -1422
+      -726
     </p>
     <p>
       
@@ -5465,7 +6304,7 @@ deletes the timestamps attributes in the nodes</text>
       obtener listado de clones inconsistentes
     </p>
     <p>
-      -1422
+      -726
     </p>
     <p>
       
@@ -5474,7 +6313,7 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xInconsistentes
     </p>
     <p>
-      -1422
+      -726
     </p>
     <p>
       
@@ -5483,13 +6322,13 @@ deletes the timestamps attributes in the nodes</text>
       obteniendo sublistas de xClonesInconsistentes
     </p>
     <p>
-      -1422
+      -727
     </p>
     <p>
-      -1422
+      -727
     </p>
     <p>
-      -1422
+      -727
     </p>
     <p>
       
@@ -5498,7 +6337,7 @@ deletes the timestamps attributes in the nodes</text>
       &#xa0;aplicando acciones FILES
     </p>
     <p>
-      -1430
+      -741
     </p>
     <p>
       
@@ -5507,7 +6346,7 @@ deletes the timestamps attributes in the nodes</text>
       ACTUALIZANDO FOLDERS
     </p>
     <p>
-      -1442
+      -754
     </p>
     <p>
       
@@ -6398,6 +7237,9 @@ deletes the timestamps attributes in the nodes</text>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota.txt
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba vs GTD.mm
+    </p>
+    <p>
       E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
     </p>
     <p>
@@ -6710,6 +7552,9 @@ deletes the timestamps attributes in the nodes</text>
       filesNOK:&#xa0;
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba vs GTD.mm
+    </p>
+    <p>
       
     </p>
     <p>
@@ -6758,6 +7603,9 @@ deletes the timestamps attributes in the nodes</text>
       filesSinNodos:&#xa0;
     </p>
     <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba vs GTD.mm
+    </p>
+    <p>
       
     </p>
     <p>
@@ -6792,6 +7640,9 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       filesNOK2:&#xa0;
+    </p>
+    <p>
+      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba vs GTD.mm
     </p>
     <p>
       
@@ -7294,16 +8145,14 @@ deletes the timestamps attributes in the nodes</text>
   </body>
 </html>
 </richcontent>
-<node TEXT="MapDriveInator" ID="ID_1635289090" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
-<node TEXT="MapDriveInator-v0.0.11.addon.mm" ID="ID_948905" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.11.addon.mm"/>
-<node TEXT="MapDriveInator-v0.0.12.addon.mm" ID="ID_1853120596" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.12.addon.mm"/>
-</node>
+<node TEXT="MapDriveInator" ID="ID_1635289090" LINK="#ID_1462849055"/>
+<node TEXT="ignoredByGitHub" ID="ID_262166885" LINK="#ID_434109182"/>
 </node>
 <node TEXT="v+0" STYLE_REF="milestone" ID="ID_1144738879">
 <node TEXT="Implementar Tasks v4 acá" STYLE_REF="completedTask" ID="ID_1813016897"/>
 <node TEXT="translate all pending tasks to english" STYLE_REF="pendingTask" ID="ID_1964375859"/>
 </node>
-<node TEXT="Tareas" STYLE_REF="Organizador" ID="ID_819044659">
+<node TEXT="Tareas" STYLE_REF="Organizador" FOLDED="true" ID="ID_819044659">
 <node TEXT="Bugs" FOLDED="true" ID="ID_566586448">
 <attribute NAME="projectCode" VALUE="Bugs"/>
 <node TEXT="&lt;= v0.0.9" STYLE_REF="milestone" ID="ID_1443647664">
@@ -8510,8 +9359,7 @@ before the actual namefilter setting)
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="no sé si aplica o es necesario." ID="ID_1269140089"/>
 <node TEXT="creo que es un intento parecido a node magnet" ID="ID_1671631936"/>
 <node TEXT="ver si una adaptación de nodemagnet podría ser útil acá" ID="ID_1812627835"/>
@@ -11571,8 +12419,7 @@ before the actual namefilter setting)
       &#xa0;&#xa0;&#xa0;&#xa0;cc.statusInfo = 'text of selected node is ' + nodo.text
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="prueba crea sólo nodos folders.groovy" ID="ID_1618271642"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -13735,6 +14582,14 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask,discardedTask,completedTask"/>
 <attribute NAME="WIP filter" VALUE="true"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
+<node TEXT="v+0" STYLE_REF="milestone" ID="ID_942736103">
+<node ID="ID_439356675" CONTENT_ID="ID_1797095930"/>
+</node>
+<node TEXT="v+1" STYLE_REF="milestone" ID="ID_380269522">
+<node TEXT="Revisions" STYLE_REF="project" ID="ID_333763766">
+<node ID="ID_1205716243" CONTENT_ID="ID_1372672925"/>
+</node>
+</node>
 </node>
 <node TEXT="tasksBucket" STYLE_REF="tasksBucket" ID="ID_515510075"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -13754,13 +14609,19 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="nextTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
-<node TEXT="v+1" STYLE_REF="milestone" FOLDED="true" ID="ID_264229705">
+<node TEXT="v+0" STYLE_REF="milestone" ID="ID_47160456">
+<node ID="ID_1184230716" CONTENT_ID="ID_1797095930"/>
+</node>
+<node TEXT="v+1" STYLE_REF="milestone" ID="ID_264229705">
 <node TEXT="Log" STYLE_REF="project" ID="ID_1597380239">
 <node ID="ID_566256000" CONTENT_ID="ID_161101455"/>
 </node>
+<node TEXT="Revisions" STYLE_REF="project" ID="ID_1609342095">
+<node ID="ID_917604803" CONTENT_ID="ID_1372672925"/>
 </node>
 </node>
-<node TEXT="tasksBucket" STYLE_REF="tasksBucket" ID="ID_1906111223"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+</node>
+<node TEXT="tasksBucket" STYLE_REF="tasksBucket" FOLDED="true" ID="ID_1906111223"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -13780,6 +14641,7 @@ before the actual namefilter setting)
 <node TEXT="v+0" STYLE_REF="milestone" FOLDED="true" ID="ID_569540425">
 <node ID="ID_369870901" CONTENT_ID="ID_1964375859"/>
 <node ID="ID_737442536" CONTENT_ID="ID_795140534"/>
+<node ID="ID_1645420314" CONTENT_ID="ID_1797095930"/>
 </node>
 <node TEXT="v+1" STYLE_REF="milestone" ID="ID_1205616555">
 <node TEXT="Revisions" STYLE_REF="project" ID="ID_277156700">
@@ -13787,12 +14649,13 @@ before the actual namefilter setting)
 <node ID="ID_7466669" CONTENT_ID="ID_761127302"/>
 <node ID="ID_133481847" CONTENT_ID="ID_1852988863"/>
 <node ID="ID_743205044" CONTENT_ID="ID_268438012"/>
+<node ID="ID_644286920" CONTENT_ID="ID_1372672925"/>
 </node>
 <node TEXT="Log" STYLE_REF="project" ID="ID_1979429826">
 <node ID="ID_259222714" CONTENT_ID="ID_161101455"/>
 </node>
 </node>
-<node TEXT="v+2" STYLE_REF="milestone" ID="ID_1276247488">
+<node TEXT="v+2" STYLE_REF="milestone" FOLDED="true" ID="ID_1276247488">
 <node TEXT="UI" STYLE_REF="project" ID="ID_1128123637">
 <node TEXT="botonera" STYLE_REF="project" ID="ID_791519561">
 <node ID="ID_393694146" CONTENT_ID="ID_1430648520"/>
@@ -13918,7 +14781,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="WIP tasksBucket" STYLE_REF="tasksBucket" ID="ID_243469599"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="WIP tasksBucket" STYLE_REF="tasksBucket" FOLDED="true" ID="ID_243469599"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     

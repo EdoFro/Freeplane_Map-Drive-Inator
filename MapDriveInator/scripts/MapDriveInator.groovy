@@ -52,7 +52,7 @@ log
 logger.info(log.toString())
     //end:
 //---define nodo Base
-baseFolderNode = MDI.obtainBaseFolder(node)
+def baseFolderNode = MDI.obtainBaseFolder(node)
     //end: ------------------------------------------------------------------
 
 if(baseFolderNode){
@@ -74,13 +74,13 @@ if(baseFolderNode){
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Initial Setup 2    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Initial Setup 2    ');
     //obtener nodo nueva importación
-    nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)
+    def nodeNewImports = MDI.obtainNewImportsNode(baseFolderNode)
     if(!nodeNewImports) return 'Interrupted: no MDI styles'
     def visibilizarAvance = MDI.wantToLog(nodeNewImports)
     if(visibilizarAvance) texto.append("\n").append('(elapsed time in miliseconds)').append("\n").append((tIni - new Date().getTime()) as String).append("\n")
     baseFolderNode.style.name = MDI.styleBaseFolder
     baseFolderNode.noteContentType = 'markdown'
-    baseFolderPath = MDI.getPathFromLink(baseFolderNode)
+    def baseFolderPath = MDI.getPathFromLink(baseFolderNode)
     deleteNodesWithLinkToOther(nodeNewImports)
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
         
@@ -99,11 +99,11 @@ if(baseFolderNode){
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    ');
     if(visibilizarAvance) texto.append("\n").append('arma Listado de Rutas nodos').append("\n")
-    xSingles = []
+    if(modoDebug)  ui.informationMessage("antes de llamar 'armaListadoRutas'")
+    xSingles = [] //estos están sin def para que "armaListadoRutas" los pueda ver //TODO: cambiar a la forma: def (xSingles, xClones, xFolders) = armaListadoRutas(baseFolderNode, baseFolderPath)
     xClones = []
     xFolders =[]
-    if(modoDebug)  ui.informationMessage("antes de llamar 'armaListadoRutas'")
-    armaListadoRutas(baseFolderNode,baseFolderPath)
+    armaListadoRutas(baseFolderNode, baseFolderPath)
     if(modoDebug)  ui.informationMessage("después de llamar 'armaListadoRutas'")
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
@@ -149,21 +149,20 @@ if(baseFolderNode){
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados drive    ');
     if(visibilizarAvance) texto.append("\n").append('saca listados de informacion en drive').append("\n")
 
-    listFiles = MDI.listFilesFromDrive(baseFolderNode) 
+    def listFiles = MDI.listFilesFromDrive(baseFolderNode) 
     
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     // end:
 
-    //region: __________________________- obteniendo sublistas
+    //region: __________________________- obteniendo sublistas de files
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas    ');
     if(visibilizarAvance) texto.append("\n").append('obteniendo sublistas').append("\n")
 
-    filesOK       = listFiles.intersect(listCons + listClonCons)  //no se hace nada con esto
+    def filesOK       = listFiles.intersect(listCons + listClonCons)  //no se hace nada con esto
 
-    filesNOK      = listFiles - listCons //OJO!! aún incluye algunas que pueden estar ok con nodos clones
-    filesNOK      -= listClonCons //quitando las que pueden estar ok con nodos clones 'consistentes'
+    def filesNOK      = listFiles - (listCons + listClonCons) //quitando las que pueden estar ok con nodos clones 'consistentes'
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     // end:
@@ -172,19 +171,18 @@ if(baseFolderNode){
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones pendientes    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones pendientes    ');
     if(visibilizarAvance) texto.append("\n").append('obtener listado de clones pendientes').append("\n")
-    xClonesPend = xClones.clone()
-    listClonConsOK = listClonCons.intersect(listFiles)
+    def listClonConsOK = listClonCons.intersect(listFiles)
+    def xClonesPendA = xClones.clone()
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     listClonConsOK.each{ ok ->
         def clonId = xClones.find{x -> x.link == ok}.id
         def clones = N(clonId).nodesSharingContent
-        def clonesID = clones*.id.flatten() << clonId
+        def clonesID = clones*.id.flatten() << clonId //TODO: revisar si debe ser <<, podría ser mejor +
         clonesID.each{cID ->
-            xClonesPend.removeAll { it.id == cID }
+            xClonesPendA.removeAll { it.id == cID }
         }
     }
-    xClonesPend1 = xClonesPend.clone()
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
@@ -195,14 +193,14 @@ if(baseFolderNode){
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones inconsistentes    ');
     if(visibilizarAvance) texto.append("\n").append('obtener listado de clones inconsistentes').append("\n")
 
-    def xClonesInconsistentes = xClonesPend.findAll{it.path != it.link}
+    def xClonesInconsistentes = xClonesPendA.findAll{it.path != it.link}
     def listClonInConsLink = xClonesInconsistentes.collect{it.link}
     def listClonInConsPath = xClonesInconsistentes.collect{it.path}
 
-    nSinFileA = listCons - listFiles //1ª parte de nodos sin files
-    nodosSinFileA = xConsistentes.findAll{it.link in nSinFileA}
+    def nSinFileA = listCons - listFiles //1ª parte de nodos sin files
+    def nodosSinFileA = xConsistentes.findAll{it.link in nSinFileA}
 
-    filesSinNodos = filesNOK - listInConsLink - listInConsPath //restando nodos single inconsistentes
+    def filesSinNodos = filesNOK - listInConsLink - listInConsPath //restando nodos single inconsistentes
     filesSinNodos -= (listClonInConsLink + listClonInConsPath) //restando nodos clones inconsistentes
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
@@ -216,9 +214,9 @@ if(baseFolderNode){
     def xLinkOk = xInconsistentes.findAll{filesNOK.contains(it.link)} //inconsistentes cuyo link apunta a un archivo real
     def xPathOk = xInconsistentes.findAll{filesNOK.contains(it.path)}//inconsistentes cuyo path del mapa apunta a un archivo real
 
-    nodosSinFileB = xInconsistentes - xLinkOk - xPathOk //inconsistentes que no apuntan a ningun archivo. 2ª parte de nodos sin files
+    def nodosSinFileB = xInconsistentes - xLinkOk - xPathOk //inconsistentes que no apuntan a ningun archivo. 2ª parte de nodos sin files
 
-    filesNOK2 = filesNOK - xLinkOk*.link.flatten() - xPathOk*.path.flatten()
+    def filesNOK2 = filesNOK - xLinkOk*.link.flatten() - xPathOk*.path.flatten()
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     // end:
@@ -227,49 +225,52 @@ if(baseFolderNode){
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas de xClonesInconsistentes    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas de xClonesInconsistentes    ');
     if(visibilizarAvance) texto.append("\n").append('obteniendo sublistas de xClonesInconsistentes').append("\n")
-    def xClonLinkOk = xClonesPend.findAll{filesNOK2.contains(it.link)} //inconsistentes cuyo link apunta a un archivo real
-    def xClonPathOk = xClonesPend.findAll{filesNOK2.contains(it.path)}//inconsistentes cuyo path del mapa apunta a un archivo real
+    def xClonPathOk = xClonesPendA.findAll{filesNOK2.contains(it.path)}//inconsistentes cuyo path del mapa apunta a un archivo real
+    def xClonLinkOk = xClonesPendA.findAll{filesNOK2.contains(it.link)} //inconsistentes cuyo link apunta a un archivo real
+    if(modoDebug) ui.showMessage('xClonLinkOk:\n\n' + xClonLinkOk as String,1)
+    def xClonLinkOkChosen = MDI.chooseClone(xClonLinkOk)
+    if(modoDebug) ui.showMessage('xClonLinkOkChosen:\n\n' + xClonLinkOkChosen as String,1)    
 
+
+    def xClonesPendB = xClonesPendA.clone()
     xClonLinkOk.each{ ok ->
-        clones = N(ok.id).nodesSharingContent
-        clonesID = clones*.id.flatten() << ok.id
+        def clones = N(ok.id).nodesSharingContent
+        def clonesID = clones*.id.flatten() << ok.id
         clonesID.each{cID ->
-            xClonesPend.removeAll { it.id == cID }
+            xClonesPendB.removeAll { it.id == cID }
         }
     }
-    xClonesPend2 = xClonesPend.clone()
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
+    def xClonesPendC = xClonesPendB.clone()
     xClonPathOk.each{ ok ->
-        clones = N(ok.id).nodesSharingContent
-        clonesID = clones*.id.flatten() << ok.id
+        def clones = N(ok.id).nodesSharingContent
+        def clonesID = clones*.id.flatten() << ok.id
         clonesID.each{cID ->
-            xClonesPend.removeAll { it.id == cID }
+            xClonesPendC.removeAll { it.id == cID }
         }
     }
-    xClonesPend3 = xClonesPend.clone()
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    nodosSinFileC = []
-    while (xClonesPend.size()>0){
-        nodosSinFileC << xClonesPend[0]
-        clonId = xClonesPend[0].id
-        clones = N(clonId).nodesSharingContent
-        clonesID = clones*.id.flatten() << clonId
+    def nodosSinFileC = []
+    def xClonesPendD = xClonesPendC.clone()
+    while (xClonesPendD.size()>0){
+        nodosSinFileC << xClonesPendD[0]
+        def clonId = xClonesPendD[0].id
+        def clones = N(clonId).nodesSharingContent
+        def clonesID = clones*.id.flatten() << clonId
         clonesID.each{cID ->
-            xClonesPend.removeAll { it.id == cID }
+            xClonesPendD.removeAll { it.id == cID }
         }
     }
-    xClonesPend4 = xClonesPend.clone()
 
-    def nodosConFileEnOtraParte = (nodosSinFileB + nodosSinFileC).findAll{new File(it.link).exists()}
+    def nodosConFileEnOtraParte = (nodosSinFileB + nodosSinFileC).findAll{new File(it.link).exists()} //lista de nodos que no apuntan a ningún file del baseFolder pero que sí apuntan a nodos existentes en otra parte. (no se incluye nodosSinFileA, porque link apunta dentro de baseFolder (es consistente: link == path)
     // ui.informationMessage(nodosConFileEnOtraParte as String)
-    def nodosSinFileBC = (nodosSinFileB + nodosSinFileC) - nodosConFileEnOtraParte
-    // ui.informationMessage(nodosSinFileBC as String)
     
-    nodosSinFile = nodosSinFileA + nodosSinFileBC
+    def nodosSinFile = (nodosSinFileA + nodosSinFileB + nodosSinFileC) - nodosConFileEnOtraParte
+    
     
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
     // end:
@@ -350,9 +351,6 @@ if(baseFolderNode){
 
     //region: _______________________________- path cambió en mapa   --> ejecutar cambio en disco
     // sacar de update folder
-    if(modoDebug) ui.showMessage('xClonLinkOk:\n\n' + xClonLinkOk as String,1)
-    xClonLinkOkChosen = MDI.chooseClone(xClonLinkOk)
-    if(modoDebug) ui.showMessage('xClonLinkOkChosen:\n\n' + xClonLinkOkChosen as String,1)
 
     // c.select( (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).collect{ N(it.id)})
     if(modoDebug) ui.showMessage('C - path cambió en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String,1)
@@ -365,7 +363,7 @@ if(baseFolderNode){
         MDI.createPath(MDI.soloPath(x.path)) //TODO: debe reportar si pudo crear directorio y logear en caso contrario
         //ui.informationMessage("Nombre inicial:  ${previousFullPath} \n Nombre final  :  ${x.path}")
         def file = new File(x.link)
-        file.renameTo( new File(x.path) ) //TODO: debe reportar si pudo mover el archivo
+        file.renameTo( new File(x.path) ) //TODO: debe reportar si pudo mover el archivo //Returns: true if and only if the renaming succeeded; false otherwise
         //TODO: debe logear casos que no pudieron ser movidos
         //TODO: debe logear todos los archivos movidos en drive (indicar origen - destino)
         MDI.setLinkImage(nodo, x.path)
@@ -415,17 +413,13 @@ if(baseFolderNode){
         xConsistentes?.each{
             texto.append(it.path).append('\n')
         }
-        texto.append("\n\ninconsistentes: \n")
-        xInconsistentes?.each{
-            texto.append(it.path).append('\n')
-        }
         texto.append("\n\nlistCons: \n")
         listCons?.each{
             texto.append(it).append('\n')
         }
-        texto.append("\n\nlistClonCons: \n")
-        listClonCons?.each{
-            texto.append(it).append('\n')
+        texto.append("\n\ninconsistentes: \n")
+        xInconsistentes?.each{
+            texto << it.path << '  !=   ' << it.link << '\n'
         }
         texto.append("\n\nlistInConsLink: \n")
         listInConsLink?.each{
@@ -433,6 +427,14 @@ if(baseFolderNode){
         }
         texto.append("\n\nlistInConsPath: \n")
         listInConsPath?.each{
+            texto.append(it).append('\n')
+        }
+        texto.append("\n\nxClonesConsistentes: \n")
+        xClonesConsistentes?.each{
+            texto.append(it.path).append('\n')
+        }
+        texto.append("\n\nlistClonCons: \n")
+        listClonCons?.each{
             texto.append(it).append('\n')
         }
         texto.append("\n\nlistFiles: \n")
@@ -447,33 +449,29 @@ if(baseFolderNode){
         filesNOK?.each{
             texto.append(it).append('\n')
         }
-        texto.append("\nxClonesPend1: \n")
-        xClonesPend1?.each{
+        texto.append("\n\nlistClonConsOK: \n")
+        listClonConsOK?.each{
+            texto.append(it).append('\n')
+        }
+        texto.append("\nxClonesPendA: \n")
+        xClonesPendA?.each{
             texto.append(it.path).append('\n')
         }
-        texto.append("\nxClonesPend2: \n")
-        xClonesPend2?.each{
-            texto.append(it.path).append('\n')
-        }
-        texto.append("\nxClonesPend3: \n")
-        xClonesPend3?.each{
-            texto.append(it.path).append('\n')
-        }
-        texto.append("\nxClonesPend4: \n")
-        xClonesPend4?.each{
-            texto.append(it.path).append('\n')
-        }
-        texto.append("\nxClonesPend: \n")
-        xClonesPend?.each{
-            texto.append(it.path).append('\n')
-        }
-        texto.append("\n\nnodosSinFileA: \n")
-        nodosSinFileA?.each{
-            texto.append(it.id).append('   ').append(it.path).append('\n')
+        texto.append("\nxClonesInconsistentes: \n")
+        xClonesInconsistentes?.each{
+            texto << it.path << '  !=   ' << it.link << '\n'
         }
         texto.append("\n\nfilesSinNodos: \n")
         filesSinNodos?.each{
             texto.append(it).append('\n')
+        }
+        texto.append("\n\nnSinFileA: \n")
+        nSinFileA?.each{
+            texto.append(it).append('\n')
+        }
+        texto.append("\n\nnodosSinFileA: \n")
+        nodosSinFileA?.each{
+            texto.append(it.id).append('   ').append(it.path).append('\n')
         }
         texto.append("\n\nxLinkOk: \n")
         xLinkOk?.each{
@@ -491,13 +489,29 @@ if(baseFolderNode){
         filesNOK2?.each{
             texto.append(it).append('\n')
         }
-        texto.append("\n\nxClonLinkOk: \n")
-        xClonLinkOk?.each{
-            texto.append(it.id).append('   ').append(it.link).append('\n')
+        texto.append("\n\nxClonPathOk: \n")
+        xClonPathOk?.each{
+            texto.append(it.id).append('   ').append(it.path).append('\n')
         }
         texto.append("\n\nxClonPathOk: \n")
         xClonPathOk?.each{
             texto.append(it.id).append('   ').append(it.path).append('\n')
+        }
+        texto.append("\n\nxClonLinkOkChosen: \n")
+        xClonLinkOkChosen?.each{
+            texto.append(it.id).append('   ').append(it.link).append('\n')
+        }
+        texto.append("\nxClonesPendB: \n")
+        xClonesPendB?.each{
+            texto.append(it.path).append('\n')
+        }
+        texto.append("\nxClonesPendC: \n")
+        xClonesPendC?.each{
+            texto.append(it.path).append('\n')
+        }
+        texto.append("\nxClonesPendD: \n")
+        xClonesPendD?.each{
+            texto.append(it.path).append('\n')
         }
         texto.append("\n\nnodosSinFileC: \n")
         nodosSinFileC?.each{
@@ -519,45 +533,66 @@ if(baseFolderNode){
                     texto << xF.link << '\n\t'
                     texto << xF.path << '\n'
         }
+        
+        texto << '\n\n----------Acciones-------------\n\n'
+        texto << '\n\n- nodos sin files --> marcar nodos como con error\n'
+        nodosSinFile?.each{
+            texto << "  -x- ${it.id}   ${it.path}\n"
+        }
+        texto << '\n\n- path y file coinciden --> corregir links\n'
+        (xPathOk + xClonPathOk)?.each{
+            texto << "  -c- ${it.id}   ${it.path}\n"
+        }
+        texto << '\n\n- files sin nodos       --> importar como nodos\n'
+        (filesSinNodos)?.each{
+            texto << "  -i- ${it}\n"
+        }
+        texto << '\n\n- path cambió en mapa --> ejecutar cambio en disco\n'
+        (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)?.each{
+            texto << "  -m- ${it.id}   ${it.link} -> ${it.path}\n"
+        }
+        
+        
 
     }
     //end:  ------------------------------------------------------------------
 
     //region: ---------------------- limpiar variables ----------------------------------
 
-    xSingles               =[]
-    xClones                =[]
-    xFolders               =[]
-    xConsistentes          =[]
-    listCons               =[]
-    xInconsistentes        =[]
-    listInConsLink         =[]
-    listInConsPath         =[]
-    xClonesConsistentes    =[]
-    listClonCons           =[]
-    listFiles              =[]
-    filesOK                =[]
-    filesNOK               =[]
-    xClonesPend            =[]
-    listClonConsOK         =[]
-    xClonesPend1           =[]
-    xClonesInconsistentes  =[]
-    listClonInConsLink     =[]
-    listClonInConsPath     =[]
-    nSinFileA              =[]
-    nodosSinFileA          =[]
-    filesSinNodos          =[]
-    xLinkOk                =[]
-    xPathOk                =[]
-    nodosSinFileB          =[]
-    filesNOK2              =[]
-    xClonLinkOk            =[]
-    xClonPathOk            =[]
-    xClonesPend2           =[]
-    xClonesPend3           =[]
-    nodosSinFileC          =[]
-    xClonesPend4           =[]
-    nodosSinFile           =[]
+    xSingles                =[]
+    xClones                 =[]
+    xFolders                =[]
+    xConsistentes           =[]
+    listCons                =[]
+    xInconsistentes         =[]
+    listInConsLink          =[]
+    listInConsPath          =[]
+    xClonesConsistentes     =[]
+    listClonCons            =[]
+    listFiles               =[]
+    filesOK                 =[]
+    filesNOK                =[]
+    listClonConsOK          =[]
+    xClonesPendA            =[]
+    xClonesInconsistentes   =[]
+    listClonInConsLink      =[]
+    listClonInConsPath      =[]
+    nSinFileA               =[]
+    nodosSinFileA           =[]
+    filesSinNodos           =[]
+    xLinkOk                 =[]
+    xPathOk                 =[]
+    nodosSinFileB           =[]
+    filesNOK2               =[]
+    xClonPathOk             =[]
+    xClonLinkOk             =[]
+    xClonLinkOkChosen       =[]
+    xClonesPendB            =[]
+    xClonesPendC            =[]
+    nodosSinFileC           =[]
+    xClonesPendD            =[]
+    nodosConFileEnOtraParte =[]
+    nodosSinFile            =[]
 
     //end:
 

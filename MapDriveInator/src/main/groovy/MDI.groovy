@@ -29,7 +29,7 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
-    private static final String version               = "v0.0.12"
+    private static final String version               = "v0.0.13"
     
     private static ConfigProperties config = new ConfigProperties()
     private static Timer timer = new Timer()
@@ -297,7 +297,10 @@ class MDI{
 
     def static nodeIsFolder(n){
         //return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
-        return  n.hasStyle(styleFolder) || (isLinkToFileOrFolder(n) && ( n.link?.file?.directory || n.link.uri?.path?.takeRight(1) == '/')  )
+        
+        //TODO: ver si es necesario cambiar n.link?.file?.directory por getFileFromLink(n).directory
+        //TODO: cambiar n.link.uri?.path?.takeRight(1) == '/' por n.link.uri?.path?.endsWith('/') por un tema de orden
+        return  n.hasStyle(styleFolder) || (isLinkToFileOrFolder(n) && ( n.link?.file?.directory || n.link.uri?.path?.takeRight(1) == '/')  ) 
     }
 
     def static isLinkToFileOrFolder(n){

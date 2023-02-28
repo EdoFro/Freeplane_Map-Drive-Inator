@@ -262,6 +262,7 @@
 <node TEXT="Refactoring MapDriveInator for future changes" ID="ID_1154677857"/>
 <node TEXT="Now it marks fileNodes that couldn&apos;t be moved in drive" ID="ID_465948501"/>
 <node TEXT="added &apos;notMovedRenamed&apos; style to template mindmap" ID="ID_1688035947"/>
+<node TEXT="Now it controls if the MDI template used in the map is up to date" ID="ID_1895041994"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">

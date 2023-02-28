@@ -320,6 +320,7 @@ if(baseFolderNode){
         MDI.setLinkImage(nodo, x.path)
         MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
         MDI.markAsBroken(nodo,false)
+        MDI.markAsNotMoved(nodo,false)
         //if(!nodo.icons.contains('pencil')){nodo.icons.add('pencil')}
     }
 

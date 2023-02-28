@@ -2356,7 +2356,7 @@
 <attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
-<node TEXT="importMDIStyles.groovy" FOLDED="true" ID="ID_50035749" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/importMDIStyles.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="importMDIStyles.groovy" ID="ID_50035749" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/importMDIStyles.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -2554,7 +2554,49 @@
 <node TEXT="for selection" ID="ID_635388311" LINK="menuitem:_SetStringPropertyAction.show_connectors.for_selection"/>
 <node TEXT="always" ID="ID_776202255" LINK="menuitem:_SetStringPropertyAction.show_connectors.true"/>
 </node>
-<node TEXT="algoritmo:" ID="ID_986167843" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
+<node TEXT="script de ayuda" ID="ID_1307067870">
+<node TEXT="seleccionar finales de rama visibles" ID="ID_1784493022"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def nodos = node.find{n-&gt;
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;(n.pathToRoot-n).every{!it.folded}
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&amp;&amp; (n.leaf || n.folded)
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      c.select(nodos)
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="algoritmo:" FOLDED="true" ID="ID_986167843" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
 <node TEXT="desde info Mapa" ID="ID_1043282937" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
 <node TEXT="Obteniendo Info En Nodos De Files Y Folders" STYLE_REF="Organizador" FOLDED="true" ID="ID_1594139799" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3297,7 +3339,7 @@
 </node>
 </node>
 <node TEXT="acciones:" ID="ID_1941107011" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
-<node TEXT="- aplicando acciones FILES" STYLE_REF="Organizador" ID="ID_1789042587" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
+<node TEXT="- aplicando acciones FILES" STYLE_REF="Organizador" FOLDED="true" ID="ID_1789042587" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
 <node TEXT="- nodos sin files --&gt; marcar nodos como con error" STYLE_REF="Organizador" ID="ID_738243658" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm">
 <node TEXT="nodosSinFile" ID="ID_463892142">
 <node TEXT="markAsBroken" ID="ID_1409068533"/>
@@ -3332,6 +3374,9 @@
 </node>
 </node>
 </node>
+</node>
+<node TEXT="actualizando Folders" STYLE_REF="Organizador" ID="ID_961779489">
+<icon BUILTIN="pencil"/>
 </node>
 </node>
 </node>

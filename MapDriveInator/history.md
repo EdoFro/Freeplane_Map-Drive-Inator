@@ -2,6 +2,9 @@
 
 ## v.0.0.13
 
+* Refactoring MapDriveInator for future changes
+* Now it marks fileNodes that couldn't be moved in drive
+* added 'notMovedRenamed' style to template mindmap
 
 ## v0.0.12
 

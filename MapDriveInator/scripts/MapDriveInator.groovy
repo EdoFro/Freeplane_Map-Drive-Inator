@@ -106,7 +106,7 @@ if(baseFolderNode){
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    ');
     if(visibilizarAvance) texto.append("\n").append('arma Listado de Rutas nodos').append("\n")
     if(modoDebug)  ui.informationMessage("antes de llamar 'armaListadoRutas'")
-    xSingles = [] //estos están sin def para que "armaListadoRutas" los pueda ver //TODO: cambiar a la forma: def (xSingles, xClones, xFolders) = armaListadoRutas(baseFolderNode, baseFolderPath)
+    xSingles = [] //estos están sin def para que "armaListadoRutas" los pueda ver
     xClones = []
     xFolders =[]
     armaListadoRutas(baseFolderNode, baseFolderPath)
@@ -408,7 +408,7 @@ if(baseFolderNode){
     // texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     textoReport.append('------- Folders: -------- \n')
-    textoReport.append(MDI.updateFolders(xFolders.reverse(), linkType)).append("\n\n") //TODO: debe reportar si udo actualizar directorios
+    textoReport.append(MDI.updateFolders(xFolders.reverse(), linkType)).append("\n\n") //TODO: debe reportar si pudo actualizar directorios
 
     if(visibilizarAvance) texto.append((tIni - new Date().getTime()) as String).append("\n")
 

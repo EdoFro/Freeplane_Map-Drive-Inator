@@ -255,10 +255,14 @@
 <node TEXT="added getFileFromLink(n) to get to the real file if it is in another drive and link is relative" ID="ID_143420426"/>
 <node TEXT="umweg to get canonicalPaths from files that are in other drives and have relative links" ID="ID_1146418895"/>
 </node>
-<node TEXT="v0.0.12" ID="ID_1823296301">
+<node TEXT="v0.0.12" FOLDED="true" ID="ID_1823296301">
 <node TEXT="MapDriveInator: Logs MDI version, Map path, baseFolderNode properties" ID="ID_299612617"/>
 </node>
-<node TEXT="v.0.0.13" ID="ID_1424599841"/>
+<node TEXT="v.0.0.13" ID="ID_1424599841">
+<node TEXT="Refactoring MapDriveInator for future changes" ID="ID_1154677857"/>
+<node TEXT="Now it marks fileNodes that couldn&apos;t be moved in drive" ID="ID_465948501"/>
+<node TEXT="added &apos;notMovedRenamed&apos; style to template mindmap" ID="ID_1688035947"/>
+</node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
 <edge COLOR="#00ff00"/>

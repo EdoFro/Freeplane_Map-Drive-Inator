@@ -12,6 +12,8 @@ import edofro.pseudofreeplaneapi.UserStyles as us
     def targetMap = node.map  // --> active map
 
     us.copyUserStyles(sourceMap, targetMap) //, {it.text.startsWith('mdi_')})
+    
+    targetMap.storage[MDI.MapTemplateVersionStorage] = MDI.version
 
 //Other use case examples on how to use edofro.pseudofreeplaneapi.UserStyles.copyUserStyles
 /*

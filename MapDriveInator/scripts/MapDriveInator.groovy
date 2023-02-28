@@ -43,6 +43,12 @@ def installedVersion = AddOnsController.getController().getInstalledAddOns().fin
 def mdiVersion = MDI.declaredFields*.name.contains('version')? MDI.version : "< v0.0.10"
 if(mdiVersion!=installedVersion) ui.informationMessage(ui.frame,"ATTENTION!\nInstalled MDI addon version is different from MDI library version!",'MDI',2)
 
+def templateOutdated = false
+if(!MDI.mapHasMinTemplate(node.map)){
+    ui.informationMessage(ui.frame,"ATTENTION!\nMDI styles in this map are outdated.\nPlease reimport MDI styles",'MDI',2)
+    templateOutdated = true
+}
+
     //region: --------------------- Log MDI -------------------------------------
 log
     << "MDI debug info:\n"

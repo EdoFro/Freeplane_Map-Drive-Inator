@@ -6,6 +6,7 @@ import groovy.io.FileType
 import groovy.io.FileVisitResult
 import org.freeplane.core.ui.components.UITools
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
+import org.freeplane.core.util.FreeplaneVersion
 
 class MDI{
     //nodes attributes
@@ -29,7 +30,11 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
-    private static final String version               = "v0.0.13"
+    private static final String version               = 'v0.0.13'
+    private static final String minTemplateVersion    = 'v0.0.13'
+    
+    private static final String MapTemplateVersionStorage   = 'MDI_template'
+    private static final String MapMdiVersionStorage   = 'MDI_version'
     
     private static ConfigProperties config = new ConfigProperties()
     private static Timer timer = new Timer()
@@ -38,6 +43,14 @@ class MDI{
     // def static getVersion(){
         // return version
     // }
+    //region: ---------------------- Functions MDI versions
+    def static mapHasMinTemplate(mapa){
+        def templateVersion = (mapa.storage[MDI.MapTemplateVersionStorage]?:'v0.0.0').toString()
+        return !FreeplaneVersion.getVersion(templateVersion).isOlderThan(FreeplaneVersion.getVersion(MDI.minTemplateVersion))
+
+    }
+
+    //end:
     
     //region: ---------------------- Functions Initial Setup
     

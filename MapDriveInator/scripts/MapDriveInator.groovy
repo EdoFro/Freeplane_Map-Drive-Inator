@@ -360,24 +360,35 @@ if(baseFolderNode){
 
     // c.select( (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).collect{ N(it.id)})
     if(modoDebug) ui.showMessage('C - path cambió en mapa --> ejecutar cambio en disco \n\n' + (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte)as String,1)
-    textoReport.append("\n ${(xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).size()} node(s) moved/renamed in drive")
     
     // def markMovedOption = MDI.markWhenMoved(baseFolderNode)
+    
+    def iMoved = 0
+    def iNotMoved = 0
+    
 
     (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).each{x ->
         nodo = N(x.id)
         MDI.createPath(MDI.soloPath(x.path)) //TODO: debe reportar si pudo crear directorio y logear en caso contrario
         //ui.informationMessage("Nombre inicial:  ${previousFullPath} \n Nombre final  :  ${x.path}")
         def file = new File(x.link)
-        file.renameTo( new File(x.path) ) //TODO: debe reportar si pudo mover el archivo //Returns: true if and only if the renaming succeeded; false otherwise
-        //TODO: debe logear casos que no pudieron ser movidos
-        //TODO: debe logear todos los archivos movidos en drive (indicar origen - destino)
-        MDI.setLinkImage(nodo, x.path)
-        MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
-        // ui.informationMessage( "el archivo ${file.name} fue reubicado")
-        MDI.markAsBroken(nodo,false) 
-        MDI.markAsMoved(nodo,true,markMovedOption)
+        if(file.renameTo( new File(x.path) )){ //TODO: debe reportar si pudo mover el archivo //Returns: true if and only if the renaming succeeded; false otherwise
+            //TODO: debe logear todos los archivos movidos en drive (indicar origen - destino)
+            MDI.setLinkImage(nodo, x.path)
+            MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
+            // ui.informationMessage( "el archivo ${file.name} fue reubicado")
+            MDI.markAsBroken(nodo,false)
+            MDI.markAsNotMoved(nodo,false)
+            MDI.markAsMoved(nodo,true,markMovedOption)
+            iMoved++
+        } else {
+            //TODO: debe logear casos que no pudieron ser movidos
+            if (!templateOutdated) MDI.markAsNotMoved(nodo, true)
+            iNotMoved++
+        }
     }
+    textoReport.append("\n ${iMoved} node(s) moved/renamed in drive")
+    textoReport.append("\n ${iNotMoved} node(s) couldn't be moved/renamed in drive (marked as 'notMovedRenamed')")
 
     //end:
 
@@ -631,6 +642,7 @@ def armaListadoRutas(nodo, String path){
         //es file?--> agregar a listado
         if(MDI.isLinkToFileOrFolder(it) && !MDI.nodeIsFolder(it)){
             MDI.markAsMoved(it,false)
+            //TODO: ¿agregar markAsBroken false y markAsNotMoved false acá tambien?
             if(it.countNodesSharingContent > 0){
                 xClones << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text)) //por qué uso getPathFromLink2 y no la 3 y listo?
             } else {
@@ -639,6 +651,7 @@ def armaListadoRutas(nodo, String path){
         }
         if(MDI.nodeIsFolder(it)){
             MDI.markAsMoved(it,false)
+            //TODO: ¿agregar markAsBroken false y markAsNotMoved false acá tambien?
             def pathF = MDI.getFolderpathFromStrings(path,it)
             xFolders << new xFile(it.id, MDI.getPathFromLink3(it,File.separator), pathF)
             if(it.children.size()>0){

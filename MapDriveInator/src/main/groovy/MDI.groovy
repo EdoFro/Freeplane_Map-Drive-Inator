@@ -19,6 +19,7 @@ class MDI{
     //styles
     private static final String styleLocked         = 'locked'
     private static final String styleMovedRenamed   = 'movedRenamed'
+    private static final String styleNotMovedRenamed= 'notMovedRenamed'
     private static final String styleFreshNew       = 'freshNew'
     private static final String styleBroken         = 'missing'
     private static final String styleFolder         = 'file_folder'
@@ -262,12 +263,20 @@ class MDI{
     }
     
     def static markAsMoved(n,b, markMoved = 0){
-        if(b && markMoved!=-1 && (markMoved == 1 || n.style.name == null)){
+        if(b && markMoved!=-1 && (markMoved == 1 || n.style.name == null || n.style.name == styleNotMovedRenamed)){
             n.style.name = styleMovedRenamed
         } else {
             if (n.style.name == styleMovedRenamed) {n.style.name = null}
         }
     }
+
+    def static markAsNotMoved(n, b){
+        if(b){
+            n.style.name = styleNotMovedRenamed
+        } else {
+            if(n.style.name == styleNotMovedRenamed) {n.style.name = null}
+        }
+     }
     
     def static markWhenMoved(n){
         return getMarkMoved(n)

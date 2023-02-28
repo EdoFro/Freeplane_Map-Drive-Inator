@@ -13,7 +13,7 @@
             <attribute_contains_condition ATTRIBUTE="modifiedFile" VALUE="true"/>
         </conditional_style>
     </conditional_styles>
-    <properties show_icon_for_attributes="true" show_notes_in_map="false" BookmarksKeys="{&quot;103&quot;:&quot;ID_1479759080&quot;,&quot;118&quot;:&quot;ID_128687180&quot;,&quot;119&quot;:&quot;ID_1586584839&quot;,&quot;97&quot;:&quot;ID_234882181&quot;}" mapVariable_de_prueba="valor variable 75" show_note_icons="true" fit_to_viewport="false;"/>
+    <properties show_icon_for_attributes="true" show_notes_in_map="false" BookmarksKeys="{&quot;103&quot;:&quot;ID_1479759080&quot;,&quot;118&quot;:&quot;ID_128687180&quot;,&quot;119&quot;:&quot;ID_1586584839&quot;,&quot;97&quot;:&quot;ID_234882181&quot;}" mapVariable_de_prueba="valor variable 75" show_note_icons="true" fit_to_viewport="false;" mapUsesOwnSaveOptions="true" save_folding="default" save_last_visited_node="default" save_modification_times="default"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_1625586047" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -72,6 +72,9 @@
 </stylenode>
 <stylenode TEXT="file_folder_with_icon" ID="ID_319652685">
 <icon BUILTIN="emoji-1F4CD"/>
+</stylenode>
+<stylenode TEXT="notMovedRenamed" ID="ID_738909208" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3 px">
+<icon BUILTIN="emoji-26D4"/>
 </stylenode>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">

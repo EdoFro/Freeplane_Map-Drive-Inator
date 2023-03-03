@@ -380,10 +380,8 @@ if(baseFolderNode){
 
     (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).each{x ->
         nodo = N(x.id)
-        MDI.createPath(MDI.soloPath(x.path)) //TODO: debe reportar si pudo crear directorio y logear en caso contrario
-        //ui.informationMessage("Nombre inicial:  ${previousFullPath} \n Nombre final  :  ${x.path}")
         def file = new File(x.link)
-        if(file.renameTo( new File(x.path) )){ //Returns: true if and only if the renaming succeeded; false otherwise
+        if(MDI.createPath(MDI.soloPath(x.path)) && file.renameTo( new File(x.path) )){ //Returns: true if and only if the renaming succeeded; false otherwise
             MDI.setLinkImage(nodo, x.path)
             MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
             // ui.informationMessage( "el archivo ${file.name} fue reubicado")
@@ -427,7 +425,7 @@ if(baseFolderNode){
     // texto.append((tIni - new Date().getTime()) as String).append("\n")
 
     textoReport.append('------- Folders: -------- \n')
-    textoReport.append(MDI.updateFolders(xFolders.reverse(), linkType)).append("\n\n") //TODO: debe reportar si pudo actualizar directorios
+    textoReport.append(MDI.updateFolders(xFolders.reverse(), linkType)).append("\n\n")
 
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 

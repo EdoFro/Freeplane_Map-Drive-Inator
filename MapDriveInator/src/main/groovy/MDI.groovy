@@ -117,6 +117,7 @@ class MDI{
         def deleted = 0
         def keeped = 0
         def created = 0
+        def creationError = 0
         def corrected = 0
         def cloneOK = 0
         xfiles.each{ xf ->
@@ -137,6 +138,9 @@ class MDI{
                     break
                 case 'new':
                     created++
+                    break
+                case 'newError':
+                    creationError++
                     break
                 case 'corrected':
                     corrected++
@@ -164,6 +168,7 @@ class MDI{
         // informationMessage about folder operations
         def Texto=""
         if(created>0){Texto = Texto << "${created} new folders created \n"}
+        if(creationError>0){Texto = Texto << "${corrected} new folders couldn't be created \n"}
         if(notMoved>0){Texto = Texto << "${notMoved} folders didn't need to be moved \n"}
         if(deleted>0){Texto = Texto << "${deleted} folders were created in new position and deleted in old one \n"}
         if(keeped>0){Texto = Texto << "${keeped} folders were created in new position and keeped in old one because they were not empty \n"}
@@ -228,13 +233,16 @@ class MDI{
                 }
             }
         }else {	// si no tiene link --> ponerle link
-            createPath(xf.path) //TODO: reportar si pudo crear path
-            setLink(nodo, xf.path, linkType)
-            xf.link = xf.path
-            if(nodo.style.name==styleFolder){nodo.style.name = null}
-            markAsBroken(nodo,false)
-            markAsMoved(nodo,true)
-            return 'new'
+            if(createPath(xf.path)){
+                setLink(nodo, xf.path, linkType)
+                xf.link = xf.path
+                if(nodo.style.name==styleFolder){nodo.style.name = null}
+                markAsBroken(nodo,false)
+                markAsMoved(nodo,true)
+                return 'new'
+            } else {
+                return 'newError'
+            }
         }
     }
 
@@ -246,7 +254,6 @@ class MDI{
             if(!file.delete()){
                 sleep(100)
             } //eliminar folderName en disco
-            //TODO: comprobar si folder fue eliminado realmente
             return 1
         } else {
             return 0 
@@ -490,18 +497,17 @@ class MDI{
         def folders = p.replace(File.separator,'/').split('/') //TODO: usar tokenize()
         //ui.informationMessage(folders.toString())
         def path =''
-        folders.each{ String f ->
-            path = path << f  << '/'
-            createFolder(path.toString())
-        }	
+        def resp = folders.every{ String f ->
+                        path = path << f  << '/'
+                        return createFolder(path.toString())
+                    }
+        return resp
     }
 
     // create new folder if it doesn't exist (privado)
     def static createFolder(String folderName) {
         def folder = new File(folderName)
-        if (!folder.isDirectory()){
-            folder.mkdir() //TODO: reportar si lo puede hacer o no, y dejar en el log
-        }
+        return folder.isDirectory()? true : folder.mkdir()
     }
 
     // function boolean - is directory empty?? (privado)

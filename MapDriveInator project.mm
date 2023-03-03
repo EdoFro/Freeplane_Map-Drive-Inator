@@ -5081,6 +5081,70 @@
 <attribute NAME="lastAccessTime" VALUE="06-02-23 10:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T10:04-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 16:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="5.245" OBJECT="org.freeplane.features.format.FormattedNumber|5245|#,##0"/>
+<node TEXT="actualizar template version" ID="ID_1387527561"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def file = node.parent.link.file
+    </p>
+    <p>
+      def withView = true
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      if(file.isFile() &amp;&amp; node.parent.text == 'MDI styles template.mm'){
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;def m = c.mapLoader(file)
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;if(withView) m.withView()
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;def templateMap = m.getMindMap()
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;templateMap.storage[MDI.MapTemplateVersionStorage] = MDI.minTemplateVersion
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;templateMap.save(true)
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;ui.showMessage(&quot;Map property '${MDI.MapTemplateVersionStorage}' set to '${MDI.minTemplateVersion}'&quot;,1)
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;'done'
+    </p>
+    <p>
+      } else {
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;'no changes made'
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 </node>

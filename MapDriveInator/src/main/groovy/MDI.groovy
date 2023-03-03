@@ -330,9 +330,9 @@ class MDI{
     def static nodeIsFolder(n){
         //return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
         
-        //TODO: ver si es necesario cambiar n.link?.file?.directory por getFileFromLink(n).directory
+        //TODO: ver si es necesario cambiar n.link?.file?.directory por getFileFromLink(n).directory // lo hice para asegurarme.
         //TODO: cambiar n.link.uri?.path?.takeRight(1) == '/' por n.link.uri?.path?.endsWith('/') por un tema de orden
-        return  n.hasStyle(styleFolder) || (isLinkToFileOrFolder(n) && ( n.link?.file?.directory || n.link.uri?.path?.takeRight(1) == '/')  ) 
+        return  n.hasStyle(styleFolder) || (isLinkToFileOrFolder(n) && ( getFileFromLink(n)?.directory || n.link.uri?.path?.takeRight(1) == '/')  ) 
     }
 
     def static isLinkToFileOrFolder(n){

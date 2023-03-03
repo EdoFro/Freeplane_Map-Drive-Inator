@@ -166,7 +166,7 @@ class MDI{
         if(keeped>0){Texto = Texto << "${keeped} folders were created in new position and keeped in old one because they were not empty \n"}
         if(unexistent>0){Texto = Texto << "${unexistent} folders were not found \n"}
         if(corrected>0){Texto = Texto << "${corrected} links to folders were corrected \n"}
-        if(cloneOK>0){Texto = Texto << "${cloneOK} nodes having case: 'mapPosition != drivePosition' but that had Clones that were OK --> they were OK \n"}
+        if(cloneOK>0){Texto = Texto << "${cloneOK} folder node(s) having case: 'mapPosition != drivePosition' but that had Clones that were OK --> they were OK \n"}
         // ui.informationMessage(Texto.toString())
         foldersToDelete =[]
         return (Texto.toString())

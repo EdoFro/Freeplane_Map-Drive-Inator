@@ -35,8 +35,12 @@ def modoDebug = false
 
 def logger = LogUtils.getLogger()
 def tIni  = new Date().getTime();
-def texto = new StringBuilder();
-def log   = new StringBuilder();
+
+def texto       = new StringBuilder();
+def log         = new StringBuilder();
+def logMoved    = new StringBuilder();
+def logNotMoved = new StringBuilder();
+
 def textoReport = new StringBuilder();
 
 def installedVersion = AddOnsController.getController().getInstalledAddOns().find{it.name == 'mapDriveInator'}.version
@@ -68,9 +72,9 @@ if(baseFolderNode){
         << " - baseFolder's path           : ${baseFolderNode.link.file?.path}\n"
         << " - baseFolder's absolutePath   : ${baseFolderNode.link.file?.absolutePath}\n"
         << " - baseFolder's canonicalPath  : ${MDI.getFileFromLink(baseFolderNode)?.canonicalPath}\n"
-        << "baseFolderNode attributes:\n"
+        << " - baseFolderNode attributes:\n"
     baseFolderNode.attributes.map.each{k,v ->
-        log << "   - $k : $v\n"
+        log << "   | $k : $v\n"
     }
     logger.info(log.toString())
 
@@ -94,7 +98,7 @@ if(baseFolderNode){
     def nameFilt = MDI.getFilter(baseFolderNode)
     def maxD = MDI.getMaxDepth(baseFolderNode)
     def linkType = MDI.getLinkType(baseFolderNode)
-        logger.info( "MDI: - linkType                    : ${['absolute','relative'][linkType]}\n")
+        logger.info( "MDI: - linkType:  ${['absolute','relative'][linkType]}\n")
     def markMovedOption = MDI.markWhenMoved(baseFolderNode)
     def checkIfBroken = MDI.checkIfReallyBroken(baseFolderNode)
 
@@ -312,8 +316,6 @@ if(baseFolderNode){
     // texto.append("\n\n").append('path y file coinciden --> corregir links \n\n' + (xPathOk + xClonPathOk) as String)
     textoReport.append("\n ${(xPathOk + xClonPathOk).size()} link(s) corrected in nodes")
     
-    //TODO: revisar que pasa si nodo es movido a carpeta que ya posee un archivo con ese nombre.
-        //por lo tanto path y file coinciden, pero aún no ha sido movido (su link antiguo tambien apunta a un archivo real)
 
     (xPathOk + xClonPathOk).each{x ->
         nodo = N(x.id)
@@ -373,8 +375,7 @@ if(baseFolderNode){
         MDI.createPath(MDI.soloPath(x.path)) //TODO: debe reportar si pudo crear directorio y logear en caso contrario
         //ui.informationMessage("Nombre inicial:  ${previousFullPath} \n Nombre final  :  ${x.path}")
         def file = new File(x.link)
-        if(file.renameTo( new File(x.path) )){ //TODO: debe reportar si pudo mover el archivo //Returns: true if and only if the renaming succeeded; false otherwise
-            //TODO: debe logear todos los archivos movidos en drive (indicar origen - destino)
+        if(file.renameTo( new File(x.path) )){ //Returns: true if and only if the renaming succeeded; false otherwise
             MDI.setLinkImage(nodo, x.path)
             MDI.setLink(nodo, x.path, linkType) // cambia link del nodo para que apunte a nueva ubicaci?n
             // ui.informationMessage( "el archivo ${file.name} fue reubicado")
@@ -382,15 +383,25 @@ if(baseFolderNode){
             MDI.markAsNotMoved(nodo,false)
             MDI.markAsMoved(nodo,true,markMovedOption)
             iMoved++
+            logMoved
+                << " ${iMoved}. node: ${x.id}\n"
+                << "    from: ${x.link}\n"
+                << "      to: ${x.path}\n"
         } else {
-            //TODO: debe logear casos que no pudieron ser movidos
             if (!templateOutdated) MDI.markAsNotMoved(nodo, true)
             iNotMoved++
+            logNotMoved
+                << " ${iNotMoved}. node: ${x.id}\n"
+                << "    from: ${x.link}\n"
+                << "      xx: ${x.path}\n"
         }
     }
     textoReport.append("\n ${iMoved} node(s) moved/renamed in drive")
     textoReport.append("\n ${iNotMoved} node(s) couldn't be moved/renamed in drive (marked as 'notMovedRenamed')")
-
+            
+    logger.info(   "MDI: Moved/renamed files in drive: ${iMoved}\n"                  + logMoved.toString()   )
+    logger.warning("MDI: 'Couldn't be moved/renamed' files in drive: ${iNotMoved}\n" + logNotMoved.toString())
+    
     //end:
 
     textoReport.append("\n\n")
@@ -622,7 +633,7 @@ if(baseFolderNode){
     ui.informationMessage(textoReport.toString())
     textoReport
         << '=====================================\n\n' << log
-        << '=====================================\n\n' << texto
+        << '\n=====================================\n\n' << texto
     nodeNewImports.noteText = textoReport
     texto.setLength(0)
     textoReport.setLength(0)

@@ -5,6 +5,7 @@
 * Refactoring MapDriveInator for future changes
 * Now it marks fileNodes that couldn't be moved in drive
 * added 'notMovedRenamed' style to template mindmap
+* It logs which files were moved/renamed and which couldn't be moved/renamed
 
 ## v0.0.12
 

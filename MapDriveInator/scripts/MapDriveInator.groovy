@@ -634,7 +634,7 @@ if(baseFolderNode){
     ui.informationMessage(textoReport.toString())
 
     if(wantToLogLevel >= 5) textoReport << '\n=====================================\n\n' << log
-    if(wantToLogLevel >= 2) textoReport << '\n=====================================\n\n' << iNotMoved==0?'No failed operation in drive':"${iNotMoved} file(s) couldn't get moved/renamed in drive:\n" << logNotMoved
+    if(wantToLogLevel >= 2) textoReport << '\n=====================================\n\n' << (iNotMoved==0?'No failed operation in drive':"${iNotMoved} file(s) couldn't get moved/renamed in drive:\n") << logNotMoved
     if(wantToLogLevel >= 3) textoReport << '\n=====================================\n\n' << "${iMoved==0?'No':iMoved} file(s) were moved/renamed in drive\n" << logMoved
     if(wantToLogLevel >= 4) textoReport << texto
 

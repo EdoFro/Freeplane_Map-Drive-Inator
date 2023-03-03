@@ -264,6 +264,7 @@
 <node TEXT="added &apos;notMovedRenamed&apos; style to template mindmap" ID="ID_1688035947"/>
 <node TEXT="Now it controls if the MDI template used in the map is up to date" ID="ID_1895041994"/>
 <node TEXT="It logs which files were moved/renamed and which couldn&apos;t be moved/renamed" ID="ID_1258770961"/>
+<node TEXT="Now newImportsNode &apos;s note can show different levels of logging:&#xa;- (0) no log at all&#xa;- (1) Legacy message&#xa;- (2) + Failed actions in drive (default)&#xa;- (3) + Moved/renamed files in drive&#xa;- (4) + Changes made to mindMap&#xa;- (5) + MDI debug info&#xa;- (6) + Elapsed times&#xa;- (7) + Lists calculated to MD-inate" ID="ID_1752132670"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">

@@ -52,7 +52,7 @@
             <attribute_contains_condition ATTRIBUTE="modifiedFile" VALUE="true"/>
         </conditional_style>
     </conditional_styles>
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" BookmarksKeys="{}" followedTemplateLocation="template:/DFGHI%20Proyecto-Groovy-Tareas-MDI-menuButton%20(vis01).mm" pruebaDiccionario="ID_311366985|:|idDictionary|-|ID_323296041|:|ToM Actions|-|" show_icon_for_attributes="true" show_notes_in_map="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" mdhFreeMindmapPath="hhgf" save_folding="save_folding_if_map_is_changed" followedMapLastTime="1661362125221" fit_to_viewport="false"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" BookmarksKeys="{}" followedTemplateLocation="template:/DFGHI%20Proyecto-Groovy-Tareas-MDI-menuButton%20(vis01).mm" pruebaDiccionario="ID_311366985|:|idDictionary|-|ID_323296041|:|ToM Actions|-|" show_icon_for_attributes="true" show_notes_in_map="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" mdhFreeMindmapPath="hhgf" save_folding="save_folding_if_map_is_changed" followedMapLastTime="1661362125221" fit_to_viewport="false" MDI_template="v0.0.13"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_118736178" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -214,6 +214,9 @@
 </stylenode>
 <stylenode TEXT="fullMarkDown" ID="ID_897231475" FORMAT="markdownPatternFormat" BORDER_DASH="SOLID"><richcontent CONTENT-TYPE="plain/markdown" TYPE="DETAILS"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown"/>
+</stylenode>
+<stylenode TEXT="notMovedRenamed" ID="ID_1385105520" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3 px">
+<icon BUILTIN="emoji-26D4"/>
 </stylenode>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">
@@ -2580,8 +2583,7 @@
       c.select(nodos)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2592,8 +2594,7 @@
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="algoritmo:" FOLDED="true" ID="ID_986167843" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
@@ -2614,8 +2615,7 @@
       - info de mapa, no desde disco
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="a)" ID="ID_1497557966">
 <node TEXT="xFile" ID="ID_822667930" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -2636,11 +2636,10 @@
       - path
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="xSingles" ID="ID_165417287" BACKGROUND_COLOR="#cdd972" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#cdd972" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#cdd972" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2651,12 +2650,11 @@
       listado de nodos files que no son folder ni poseen clones
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="xClones" ID="ID_941473986" BACKGROUND_COLOR="#d880fb" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d880fb" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#d880fb" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2667,8 +2665,7 @@
       listado de nodos files que no son folder y SÍ poseen clones
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="xFolders" FOLDED="true" ID="ID_1372196112" BACKGROUND_COLOR="#e4da79" MIN_WIDTH="10 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -2680,8 +2677,7 @@
       listado de nodos folders
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="cumplen esta condición:" FOLDED="true" ID="ID_1963222963">
 <node TEXT="o" FOLDED="true" ID="ID_915187066">
 <node TEXT="con estilo styleFolder" ID="ID_1115224832"/>
@@ -2707,8 +2703,8 @@
 <node TEXT="a)" ID="ID_823991070">
 <node TEXT=" xFile" ID="ID_1758816135" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xConsistentes" ID="ID_1728271171" BACKGROUND_COLOR="#fff13f" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#fff13f" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#fff13f" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2719,15 +2715,14 @@
       listado xSingles: donde coincida su link con path en mapa
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="xInconsistentes" ID="ID_696885987" BACKGROUND_COLOR="#fa9af5" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#fa9af5" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#fa9af5" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#fa9af5" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#fa9af5" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#fa9af5" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2738,15 +2733,14 @@
       listado xSingles: donde no coincida su link con path en mapa
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="strings" ID="ID_965844478" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listCons" ID="ID_1449344127" BACKGROUND_COLOR="#59daea" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#59daea" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#59daea" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#59daea" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2757,11 +2751,10 @@
       listado paths xSingles consistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="listInConsLink" ID="ID_222700761" BACKGROUND_COLOR="#d9f666" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d9f666" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#d9f666" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2772,11 +2765,10 @@
       listado de links de xSingles inconsistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="listInConsPath" ID="ID_880787997" BACKGROUND_COLOR="#55f8f0" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#55f8f0" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#55f8f0" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2787,8 +2779,7 @@
       listado de path (sacado de mapa) de xSingles inconsistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2797,7 +2788,7 @@
 <node TEXT="a)" ID="ID_382777995">
 <node TEXT=" xFile" ID="ID_128476726" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesConsistentes" ID="ID_8826842" BACKGROUND_COLOR="#e190ce" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e190ce" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#e190ce" TRANSPARENCY="255" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2808,16 +2799,15 @@
       listado de xClones donde coincide su link con path en mapa
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="no se puede sacar directamente los xClones inconsistentes, porque hay que asegurar que TODOS sus clones son inconsistentes" ID="ID_1715428632" BACKGROUND_COLOR="#9bdfa9" MIN_WIDTH="10 cm"/>
 </node>
 <node TEXT="strings" ID="ID_910720035" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listClonCons" ID="ID_349118599" BACKGROUND_COLOR="#f742d4" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#f742d4" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#f742d4" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#f742d4" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2828,8 +2818,7 @@
       listado paths xClonesConsistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2840,10 +2829,10 @@
 <node TEXT="a)" ID="ID_328700633">
 <node TEXT="strings" ID="ID_1232101777" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listFiles" ID="ID_1740766224" BACKGROUND_COLOR="#8fecf8" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#8fecf8" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#8fecf8" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#8fecf8" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#8fecf8" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2857,8 +2846,7 @@
       canonicalPath
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2878,16 +2866,15 @@
       listado de files en disco que están correctamente indicadas en el mapa (tienen igual link e igual path de mapa)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= listFiles.intersect(listCons + listClonCons)" ID="ID_530915850"/>
 <node TEXT=" //no se hace nada con esto" ID="ID_391487637"/>
 </node>
 <node TEXT="filesNOK" FOLDED="true" ID="ID_206474696" BACKGROUND_COLOR="#3ada72" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#3ada72" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#3ada72" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#3ada72" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#3ada72" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2904,8 +2891,7 @@
       //OJO!! aún incluye algunas que pueden estar ok con&#xa0;nodos inconsistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= listFiles - listCons - listClonCons" ID="ID_333114207"/>
 <node TEXT="//OJO!! aún incluye algunas que pueden estar ok con nodos clones" ID="ID_1215271098"/>
 </node>
@@ -2916,7 +2902,7 @@
 <node TEXT="a)" ID="ID_1533790880">
 <node TEXT="strings" ID="ID_437031505" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listClonConsOK" FOLDED="true" ID="ID_378200257" BACKGROUND_COLOR="#e97ed6" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e97ed6" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#e97ed6" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2927,17 +2913,16 @@
       listado de clones consistentes que tienen file en drive
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= listClonCons.intersect(listFiles)" ID="ID_1465008750"/>
 </node>
 </node>
 <node TEXT=" xFile" ID="ID_1945224635" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesPendA" ID="ID_1741926360" BACKGROUND_COLOR="#8d71dd" MIN_WIDTH="10 cm" VGAP_QUANTITY="2 px">
-<arrowlink COLOR="#8d71dd" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#8d71dd" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#8d71dd" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#8d71dd" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2951,8 +2936,7 @@
       - son consistentes y apuntan correctamente a un file
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2961,8 +2945,8 @@
 <node TEXT="a)" ID="ID_1427297824">
 <node TEXT=" xFile" ID="ID_778609159" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesInconsistentes" ID="ID_194444289" BACKGROUND_COLOR="#d30aa5" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d30aa5" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#d30aa5" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2976,8 +2960,7 @@
       (ninguno de sus clones coincide)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= xClonesPendA.findAll{it.path != it.link}" ID="ID_746314280"/>
 </node>
 </node>
@@ -2992,8 +2975,7 @@
       listado de links de clones inconsistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="listClonInConsPath" ID="ID_1268437436" BACKGROUND_COLOR="#845de5" MIN_WIDTH="10 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3005,8 +2987,7 @@
       listado de path de mapa de clones inconsistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -3024,8 +3005,7 @@
       listado de files en drives que no tienen contraparte en el mapa en links y paths consistentes e inconsistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= filesNOK - listInConsLink - listInConsPath" FOLDED="true" ID="ID_872836876">
 <node TEXT=" //restando nodos single inconsistentes" ID="ID_237510869"/>
 </node>
@@ -3034,7 +3014,7 @@
 </node>
 </node>
 <node TEXT="nSinFileA" FOLDED="true" ID="ID_1061547658" BACKGROUND_COLOR="#5ddcc1" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#5ddcc1" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#5ddcc1" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3048,14 +3028,13 @@
       //1ª parte de nodos sin files
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= listCons - listFiles" ID="ID_878522955"/>
 </node>
 </node>
 <node TEXT=" xFile" ID="ID_373670302" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="nodosSinFileA" FOLDED="true" ID="ID_356291057" BACKGROUND_COLOR="#3dbebf" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#3dbebf" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#3dbebf" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3066,8 +3045,7 @@
       xFiles de nodos consistentes que no están en el disco
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= xConsistentes.findAll{it.link in nSinFileA}" ID="ID_1834051093"/>
 </node>
 </node>
@@ -3077,8 +3055,8 @@
 <node TEXT="a)" ID="ID_361880354">
 <node TEXT=" xFile" ID="ID_989496827" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xLinkOk" FOLDED="true" ID="ID_316413262" BACKGROUND_COLOR="#7b42fc" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#7b42fc" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#7b42fc" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <arrowlink DESTINATION="ID_1375558629"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3090,14 +3068,13 @@
       xFile inconsistentes cuyo link apunta a un archivo real
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.link)}" ID="ID_1943774658"/>
 </node>
 <node TEXT="xPathOk" FOLDED="true" ID="ID_1159347345" BACKGROUND_COLOR="#07f4f6" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#07f4f6" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#07f4f6" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <arrowlink DESTINATION="ID_172671060"/>
+<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3108,13 +3085,12 @@
       xFile inconsistentes cuyo path del mapa apunta a un archivo real
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.path)}" ID="ID_645764921"/>
 </node>
 <node TEXT="nodosSinFileB" FOLDED="true" ID="ID_344563498" BACKGROUND_COLOR="#41e97b" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#41e97b" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#41e97b" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3128,15 +3104,14 @@
       2ª parte de nodos sin files
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= xInconsistentes - xLinkOk - xPathOk" ID="ID_1582107874"/>
 </node>
 </node>
 <node TEXT="strings" ID="ID_741812634" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="filesNOK2" FOLDED="true" ID="ID_1066812066" BACKGROUND_COLOR="#defc87" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#defc87" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#defc87" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3153,8 +3128,7 @@
       - ni como link o path de nodos inconsistentes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= filesNOK - xLinkOk*.link.flatten() - xPathOk*.path.flatten()" ID="ID_1108414560"/>
 </node>
 </node>
@@ -3164,7 +3138,7 @@
 <node TEXT="a)" ID="ID_451238278">
 <node TEXT=" xFile" ID="ID_1458832460" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonPathOk" FOLDED="true" ID="ID_1867993651" BACKGROUND_COLOR="#c0f4b2" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#c0f4b2" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#c0f4b2" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <arrowlink DESTINATION="ID_172671060"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3176,12 +3150,11 @@
       xFiles clones inconsistentes cuyo path del mapa apunta a un archivo real
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= xClonesPendA.findAll{filesNOK2.contains(it.path)}" ID="ID_939300010"/>
 </node>
 <node TEXT="xClonLinkOk" FOLDED="true" ID="ID_1059454003" BACKGROUND_COLOR="#2fdbfe" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#2fdbfe" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#2fdbfe" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <arrowlink DESTINATION="ID_866457386"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3193,8 +3166,7 @@
       xFiles clones inconsistentes cuyo link apunta a un archivo real
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= xClonesPendA.findAll{filesNOK2.contains(it.link)}" ID="ID_1759038454"/>
 </node>
 <node TEXT="xClonLinkOkChosen" FOLDED="true" ID="ID_866457386" BACKGROUND_COLOR="#3dbebf" MIN_WIDTH="10 cm">
@@ -3212,12 +3184,11 @@
       (link da a file)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= MDI.chooseClone(xClonLinkOk)" ID="ID_1320148770"/>
 </node>
 <node TEXT="xClonesPendB" ID="ID_709757688" BACKGROUND_COLOR="#56aec7" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#56aec7" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#56aec7" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3234,11 +3205,10 @@
       + inconsistentes con link apuntando correctamente a file
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="xClonesPendC" ID="ID_577118003" BACKGROUND_COLOR="#dd6ff0" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#dd6ff0" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#dd6ff0" TRANSPARENCY="255" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3258,15 +3228,14 @@
       + inconsistentes con path de mapa apuntando correctamente a file
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
 <node TEXT="b)" ID="ID_964965837">
 <node TEXT=" xFile" ID="ID_1354083867" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesPendD" ID="ID_1949443174" BACKGROUND_COLOR="#e30db9" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e30db9" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#e30db9" TRANSPARENCY="255" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3277,12 +3246,11 @@
       idem a xClonesPendC que se va vaciando para armar listado nodosSinFileC. Al final debería terminar vacío
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="nodosSinFileC" ID="ID_628350763" BACKGROUND_COLOR="#b6dffc" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#b6dffc" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
-<arrowlink COLOR="#b6dffc" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
+<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3293,16 +3261,15 @@
       recolecta todos los nodos clones que no apuntan a un file (ni por link ni path de mapa). recolecta un nodo por cada grupo de clones.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
 <node TEXT="c)" ID="ID_1142947675">
 <node TEXT=" xFile" ID="ID_655494205" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="nodosConFileEnOtraParte" FOLDED="true" ID="ID_615907990" BACKGROUND_COLOR="#abeaea" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#abeaea" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-15 pt;"/>
 <arrowlink DESTINATION="ID_1375558629"/>
+<arrowlink COLOR="#abeaea" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3313,8 +3280,7 @@
       lista de nodos que no apuntan a ningun file del baseFolder pero que sí apuntan a nodos existentes en otra parte.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= (nodosSinFileB + nodosSinFileC).findAll{new File(it.link).exists()}" ID="ID_307193104"/>
 </node>
 <node TEXT="nodosSinFile" FOLDED="true" ID="ID_728454038" BACKGROUND_COLOR="#dcf4c2" MIN_WIDTH="10 cm">
@@ -3329,8 +3295,7 @@
       listado de nodos que realmente no están relacionados de alguna forma con File en disco
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="&apos;= (nodosSinFileA + nodosSinFileB + nodosSinFileC) - nodosConFileEnOtraParte" ID="ID_422143644"/>
 </node>
 </node>
@@ -3870,6 +3835,16 @@
 <attribute NAME="projectCode" VALUE="Log"/>
 <node TEXT="v+1" STYLE_REF="milestone" ID="ID_1634187899">
 <node TEXT="get information if some files couldn&apos;t get moved" STYLE_REF="nextTask" ID="ID_161101455"/>
+</node>
+<node TEXT="levels" ID="ID_731609564">
+<node TEXT="0 no log at all" STYLE_REF="completedTask" ID="ID_762155832"/>
+<node TEXT="just minimal message with numbers of things done (&quot;Inated&quot;)" STYLE_REF="completedTask" ID="ID_977686138" NUMBERED="true"/>
+<node TEXT="failed actions in drive" STYLE_REF="completedTask" ID="ID_344499975" NUMBERED="true"/>
+<node TEXT="detalle acciones en drive" STYLE_REF="completedTask" ID="ID_770562552" NUMBERED="true"/>
+<node TEXT="detalle acciones en mapa" STYLE_REF="completedTask" ID="ID_401611918" NUMBERED="true"/>
+<node TEXT="MDI debug info:" STYLE_REF="completedTask" ID="ID_1687085059" NUMBERED="true"/>
+<node TEXT="elapsed times" STYLE_REF="completedTask" ID="ID_1027942467" NUMBERED="true"/>
+<node TEXT="visibilizar avance en Nota de nodo" STYLE_REF="completedTask" ID="ID_1838907605" NUMBERED="true"/>
 </node>
 </node>
 <node TEXT="Revisions" ID="ID_210781872">
@@ -5130,8 +5105,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -5142,8 +5116,7 @@
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -5280,6 +5253,7 @@
 </node>
 </node>
 </node>
+<node TEXT="MapDriveInator-v0.0.13.addon.mm" STYLE_REF="freshNew" ID="ID_1593427627" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.13.addon.mm"/>
 </node>
 <node TEXT="delete" ID="ID_780335546" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/delete/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -6213,7 +6187,7 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 <node TEXT="versión instalada en AddOns" STYLE_REF="locked" ID="ID_145121050"/>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_31519401">
-<attribute NAME="log_MDI" VALUE="yes"/>
+<attribute NAME="log_MDI" VALUE="3" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleNumber&amp;#x7c;3|number:decimal:#0.####"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -6221,7 +6195,7 @@ deletes the timestamps attributes in the nodes</text>
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-02-27&#xa0;&#xa0;19:31:11
+      Inated:&#xa0;&#xa0;&#xa0;2023-03-03&#xa0;&#xa0;13:05:58
     </p>
     <p>
       
@@ -6236,10 +6210,13 @@ deletes the timestamps attributes in the nodes</text>
       &#xa0;0 link(s) corrected in nodes
     </p>
     <p>
-      &#xa0;1 new file(s) imported as node(s)&#xa0;
+      &#xa0;0 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
       &#xa0;0 node(s) moved/renamed in drive
+    </p>
+    <p>
+      &#xa0;0 node(s) couldn't be moved/renamed in drive (marked as 'notMovedRenamed')
     </p>
     <p>
       
@@ -6248,7 +6225,7 @@ deletes the timestamps attributes in the nodes</text>
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      37 folders didn't need to be moved&#xa0;
+      36 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -6257,7 +6234,10 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      0.7 seconds
+      0.4 seconds
+    </p>
+    <p>
+      
     </p>
     <p>
       
@@ -6269,64 +6249,7 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      MDI debug info:
-    </p>
-    <p>
-      &#xa0;- Installed MDI addon version : v0.0.12
-    </p>
-    <p>
-      &#xa0;- MDI library version&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: v0.0.12
-    </p>
-    <p>
-      &#xa0;- This map's path&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
-    </p>
-    <p>
-      &#xa0;- baseFolder's uri path&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: /E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/
-    </p>
-    <p>
-      &#xa0;- baseFolder's path&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator
-    </p>
-    <p>
-      &#xa0;- baseFolder's absolutePath&#xa0;&#xa0;&#xa0;: E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator
-    </p>
-    <p>
-      &#xa0;- baseFolder's canonicalPath&#xa0;&#xa0;: E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator
-    </p>
-    <p>
-      baseFolderNode attributes:
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- nameFilter :&#xa0;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- maxDepth : -1
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- markWhenMoved : 0
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- lastAccessTime : 03-02-23 21:03
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- lastModifiedTime : 03-02-23 20:24
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- creationTime : 10-01-23 15:44
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- checkIfReallyBroken : 0
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- fileSize : 12.288
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- projectCode : Freep.Map-Drive-Inator
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- linkType : 0
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;- modifiedFile : true
+      No failed operation in drive
     </p>
     <p>
       =====================================
@@ -6335,1927 +6258,11 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      
-    </p>
-    <p>
-      (elapsed time in miliseconds)
-    </p>
-    <p>
-      -195
-    </p>
-    <p>
-      -210
-    </p>
-    <p>
-      -221
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      arma Listado de Rutas nodos
-    </p>
-    <p>
-      -506
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      saca listados de informacion en nodos xSingles
-    </p>
-    <p>
-      -507
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      saca listados de informacion en nodos xClones
-    </p>
-    <p>
-      -509
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      saca listados de informacion en drive
-    </p>
-    <p>
-      -718
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      obteniendo sublistas
-    </p>
-    <p>
-      -719
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      obtener listado de clones pendientes
-    </p>
-    <p>
-      -719
-    </p>
-    <p>
-      -726
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      obtener listado de clones inconsistentes
-    </p>
-    <p>
-      -726
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      obteniendo sublistas de xInconsistentes
-    </p>
-    <p>
-      -726
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      obteniendo sublistas de xClonesInconsistentes
-    </p>
-    <p>
-      -727
-    </p>
-    <p>
-      -727
-    </p>
-    <p>
-      -727
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &#xa0;aplicando acciones FILES
-    </p>
-    <p>
-      -741
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ACTUALIZANDO FOLDERS
-    </p>
-    <p>
-      -754
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      visibilizar avance en Nota de nodo
-    </p>
-    <p>
-      xSingles:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitattributes
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitignore
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\MDI.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\importMDIStyles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\MapDriveInator.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ImportJustFolders.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\DistributeNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\checkMissingFileNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\createFilesFromNotes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ClearFileTimestampsInNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\GetFileTimestamps.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\SortByTimestamp.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkMovedOrRenamedNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkModifiedFiles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\groupChildnodesBy.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ungroupChildnodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\MapDriveInator\MDI styles template.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.10.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.4.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\history.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 004.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 005.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 006.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 007.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 008.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 009.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 011.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 012.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 013.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 014.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 015.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 002.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\Map-Drive-Inator.groovy.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\MDI To Addon.nppSession
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\LICENSE.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xClones:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\nota.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\nota _ con_ un montón de_carácteres raros.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con_ un montón de_carácteres raros.txt
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      consistentes:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitattributes
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitignore
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\MDI.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\importMDIStyles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\MapDriveInator.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ImportJustFolders.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\DistributeNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\checkMissingFileNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\createFilesFromNotes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ClearFileTimestampsInNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\GetFileTimestamps.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\SortByTimestamp.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkMovedOrRenamedNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkModifiedFiles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\groupChildnodesBy.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ungroupChildnodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\MapDriveInator\MDI styles template.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.10.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.4.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\history.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 004.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 005.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 006.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 007.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 008.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 009.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 011.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 012.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 013.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 014.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 015.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 002.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\Map-Drive-Inator.groovy.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\MDI To Addon.nppSession
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\LICENSE.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      inconsistentes:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      listCons:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitattributes
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitignore
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\MDI.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\importMDIStyles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\MapDriveInator.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ImportJustFolders.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\DistributeNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\checkMissingFileNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\createFilesFromNotes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ClearFileTimestampsInNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\GetFileTimestamps.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\SortByTimestamp.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkMovedOrRenamedNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkModifiedFiles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\groupChildnodesBy.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ungroupChildnodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\MapDriveInator\MDI styles template.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.10.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.4.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\history.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 004.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 005.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 006.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 007.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 008.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 009.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 011.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 012.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 013.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 014.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 015.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 002.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\Map-Drive-Inator.groovy.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\MDI To Addon.nppSession
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\LICENSE.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      listClonCons:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con_ un montón de_carácteres raros.txt
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      listInConsLink:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      listInConsPath:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      listFiles:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ClearFileTimestampsInNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\DistributeNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\GetFileTimestamps.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ImportJustFolders.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\MapDriveInator.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\SortByTimestamp.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\checkMissingFileNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\createFilesFromNotes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\groupChildnodesBy.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\importMDIStyles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ungroupChildnodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkModifiedFiles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkMovedOrRenamedNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\MDI.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\MapDriveInator\MDI styles template.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.10.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.4.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\history.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\MDI To Addon.nppSession
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\Map-Drive-Inator.groovy.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con_ un montón de_carácteres raros.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba vs GTD.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 002.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 004.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 005.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 006.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 007.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 008.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 009.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 011.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 012.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 013.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 014.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 015.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitattributes
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitignore
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\LICENSE.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      filesOK:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ClearFileTimestampsInNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\DistributeNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\GetFileTimestamps.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ImportJustFolders.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\MapDriveInator.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\SortByTimestamp.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\checkMissingFileNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\createFilesFromNotes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\groupChildnodesBy.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\importMDIStyles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\normalizeLinkTypes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\ungroupChildnodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkModifiedFiles.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkMovedOrRenamedNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\unmarkNewNodes.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\MDI.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\MapDriveInator\MDI styles template.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.10.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.11.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.12.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.3.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.4.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.5.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.6.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.7.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.8.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator-v0.0.9.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\history.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\lib\MapDriveInator.jar
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\scripts\CreateBaseFolderNode.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\MDIv2.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\Sync.groovy
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator-v0.0.2.addon.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\MapDriveInator.mm.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\build.gradle
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\version.properties
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\MDI To Addon.nppSession
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\Map-Drive-Inator.groovy.bak
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\New Mindmap.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota _ con_ un montón de_carácteres raros.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\nota.txt
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba.zip
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 002.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\groupingExample 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 001.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 003.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 004.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 005.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 006.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 007.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 008.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 009.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 011.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 012.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 013.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 014.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\updatesFoldersLikeMap Img 015.png
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\Map-Drive-Inator.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitattributes
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.gitignore
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\LICENSE.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator project.mm
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README.md
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\README_2.md
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      filesNOK:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba vs GTD.mm
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xClonesPend1:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xClonesPend2:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xClonesPend3:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xClonesPend4:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xClonesPend:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      nodosSinFileA:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      filesSinNodos:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba vs GTD.mm
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xLinkOk:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xPathOk:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      nodosSinFileB:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      filesNOK2:&#xa0;
-    </p>
-    <p>
-      E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\prueba vs GTD.mm
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xClonLinkOk:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xClonPathOk:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      nodosSinFileC:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      nodosConFileEnOtraParte:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      nodosSinFile:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      xFolders:&#xa0;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1635289090
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_434109182
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\ignoredByGitHub\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1565170154
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\updatesFoldersLikeMap_files\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1697408639
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\resources\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_780335546
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\delete\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_513998056
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\images\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\images\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1607178942
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\MapDriveInator\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\MapDriveInator\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1535051774
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\templates\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_283320947
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\doc\MapDriveInator\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\doc\MapDriveInator\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_676804992
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\doc\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\doc\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_305856744
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\icons\MapDriveInator\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\icons\MapDriveInator\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1806972330
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\icons\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\icons\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_880600127
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\zips\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1180592192
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\scripts\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_930264566
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\lib\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\lib\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1037823891
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\build\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_225362559
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\groovy\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_242117641
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\main\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_767967142
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\src\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1462849055
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInator\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1547784914
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\images\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\images\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1339117801
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\templates\MapDriveInator\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\templates\MapDriveInator\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1709021293
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\templates\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\templates\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_857784023
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\doc\MapDriveInator\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\doc\MapDriveInator\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_680771650
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\doc\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\doc\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1106013023
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\icons\MapDriveInator\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\icons\MapDriveInator\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1495924276
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\icons\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\icons\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_675695541
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\zips\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1535564200
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\scripts\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\scripts\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_38835318
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\lib\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\lib\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_22994202
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\build\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\build\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1433998257
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\groovy\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_913704295
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\main\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_598707755
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\src\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_828647119
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\MapDriveInatorV2\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_43997028
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.git\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\.git\
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ID_1893653910
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\lib\
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;E:\Users\Edo\Documents\GitHub\Freeplane_Map-Drive-Inator\lib\
+      No file(s) were moved/renamed in drive
     </p>
   </body>
 </html>
 </richcontent>
-<node TEXT="MapDriveInator" ID="ID_1635289090" LINK="#ID_1462849055"/>
-<node TEXT="ignoredByGitHub" ID="ID_262166885" LINK="#ID_434109182"/>
 </node>
 <node TEXT="v+0" STYLE_REF="milestone" ID="ID_1144738879">
 <node TEXT="Implementar Tasks v4 acá" STYLE_REF="completedTask" ID="ID_1813016897"/>

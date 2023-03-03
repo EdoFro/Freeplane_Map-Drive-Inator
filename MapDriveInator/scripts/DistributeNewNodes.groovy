@@ -79,7 +79,7 @@ while (nodesToMove.size()>0 && evitarLoop<5){
         // --> this node is the destination node where the toBeMoved node should be moved
         // "moveTo" is a node
         def moveTos = baseFolderNode.find{it.link.uri == uriBuscado}.collect().minus(nodeWithTwin)
-        def moveTo = moveTos[selectMoveTo(moveTos)]  //TODO: lo lleva al primero que encuentra. debería llevarlo sólo si hay uno, si hay más debería dar la opción de elegir
+        def moveTo = moveTos[selectMoveTo(moveTos)]
         // and the moving action itself!!!
         toBeMoved.moveTo(moveTo)
         //formats the former "folder" to be a button to help the user find where the new node went in the map to

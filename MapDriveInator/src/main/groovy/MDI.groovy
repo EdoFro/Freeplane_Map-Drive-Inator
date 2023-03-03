@@ -6,6 +6,7 @@ import groovy.io.FileType
 import groovy.io.FileVisitResult
 import org.freeplane.core.ui.components.UITools
 import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
+import org.freeplane.core.util.FreeplaneVersion
 
 class MDI{
     //nodes attributes
@@ -18,6 +19,7 @@ class MDI{
     //styles
     private static final String styleLocked         = 'locked'
     private static final String styleMovedRenamed   = 'movedRenamed'
+    private static final String styleNotMovedRenamed= 'notMovedRenamed'
     private static final String styleFreshNew       = 'freshNew'
     private static final String styleBroken         = 'missing'
     private static final String styleFolder         = 'file_folder'
@@ -29,7 +31,11 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
-    private static final String version               = "v0.0.12"
+    private static final String version               = 'v0.0.13'
+    private static final String minTemplateVersion    = 'v0.0.13'
+    
+    private static final String MapTemplateVersionStorage   = 'MDI_template'
+    private static final String MapMdiVersionStorage   = 'MDI_version'
     
     private static ConfigProperties config = new ConfigProperties()
     private static Timer timer = new Timer()
@@ -38,6 +44,14 @@ class MDI{
     // def static getVersion(){
         // return version
     // }
+    //region: ---------------------- Functions MDI versions
+    def static mapHasMinTemplate(mapa){
+        def templateVersion = (mapa.storage[MDI.MapTemplateVersionStorage]?:'v0.0.0').toString()
+        return !FreeplaneVersion.getVersion(templateVersion).isOlderThan(FreeplaneVersion.getVersion(MDI.minTemplateVersion))
+
+    }
+
+    //end:
     
     //region: ---------------------- Functions Initial Setup
     
@@ -76,7 +90,7 @@ class MDI{
     def static obtainNewImportsNode(n){
         def nImp = n.children.find{it.hasStyle(styleNewImport)}?:n.createChild('new imported files')
         try {
-            nImp.style.name = styleNewImport
+            if(nImp.style.name != styleNewImport) {nImp.style.name = styleNewImport}
         } catch(Exception ex) {
             UITools.showMessage("The mindmap has no '${styleNewImport}' style.\n\nPlease import the MDI styles into your map.", 0)
             if(nImp.leaf){nImp.delete()}
@@ -86,8 +100,11 @@ class MDI{
     }
     
     def static wantToLog(n){
-        if(!n[attrLog])n[attrLog]='No'
-        return n[attrLog]==true || [1,'1','true','ok','si','yes','y','ja'].contains(n[attrLog].toString().toLowerCase())
+        n[attrLog] ?= 2
+        if(!n[attrLog].isNum()){
+            n[attrLog] = (n[attrLog]==true || ['true','ok','si','yes','y','ja'].contains(n[attrLog].toString().toLowerCase()))? 5 : 2
+        }
+        return n[attrLog].to.num
     }
     //end:
 
@@ -100,6 +117,7 @@ class MDI{
         def deleted = 0
         def keeped = 0
         def created = 0
+        def creationError = 0
         def corrected = 0
         def cloneOK = 0
         xfiles.each{ xf ->
@@ -120,6 +138,9 @@ class MDI{
                     break
                 case 'new':
                     created++
+                    break
+                case 'newError':
+                    creationError++
                     break
                 case 'corrected':
                     corrected++
@@ -147,12 +168,13 @@ class MDI{
         // informationMessage about folder operations
         def Texto=""
         if(created>0){Texto = Texto << "${created} new folders created \n"}
+        if(creationError>0){Texto = Texto << "${corrected} new folders couldn't be created \n"}
         if(notMoved>0){Texto = Texto << "${notMoved} folders didn't need to be moved \n"}
         if(deleted>0){Texto = Texto << "${deleted} folders were created in new position and deleted in old one \n"}
         if(keeped>0){Texto = Texto << "${keeped} folders were created in new position and keeped in old one because they were not empty \n"}
         if(unexistent>0){Texto = Texto << "${unexistent} folders were not found \n"}
         if(corrected>0){Texto = Texto << "${corrected} links to folders were corrected \n"}
-        if(cloneOK>0){Texto = Texto << "${cloneOK} nodes having case: 'mapPosition != drivePosition' but that had Clones that were OK --> they were OK \n"}
+        if(cloneOK>0){Texto = Texto << "${cloneOK} folder node(s) having case: 'mapPosition != drivePosition' but that had Clones that were OK --> they were OK \n"}
         // ui.informationMessage(Texto.toString())
         foldersToDelete =[]
         return (Texto.toString())
@@ -211,13 +233,16 @@ class MDI{
                 }
             }
         }else {	// si no tiene link --> ponerle link
-            createPath(xf.path) //TODO: reportar si pudo crear path
-            setLink(nodo, xf.path, linkType)
-            xf.link = xf.path
-            if(nodo.style.name==styleFolder){nodo.style.name = null}
-            markAsBroken(nodo,false)
-            markAsMoved(nodo,true)
-            return 'new'
+            if(createPath(xf.path)){
+                setLink(nodo, xf.path, linkType)
+                xf.link = xf.path
+                if(nodo.style.name==styleFolder){nodo.style.name = null}
+                markAsBroken(nodo,false)
+                markAsMoved(nodo,true)
+                return 'new'
+            } else {
+                return 'newError'
+            }
         }
     }
 
@@ -229,7 +254,6 @@ class MDI{
             if(!file.delete()){
                 sleep(100)
             } //eliminar folderName en disco
-            //TODO: comprobar si folder fue eliminado realmente
             return 1
         } else {
             return 0 
@@ -249,12 +273,20 @@ class MDI{
     }
     
     def static markAsMoved(n,b, markMoved = 0){
-        if(b && markMoved!=-1 && (markMoved == 1 || n.style.name == null)){
+        if(b && markMoved!=-1 && (markMoved == 1 || n.style.name == null || n.style.name == styleNotMovedRenamed)){
             n.style.name = styleMovedRenamed
         } else {
             if (n.style.name == styleMovedRenamed) {n.style.name = null}
         }
     }
+
+    def static markAsNotMoved(n, b){
+        if(b){
+            if(n.style.name != styleNotMovedRenamed) n.style.name = styleNotMovedRenamed
+        } else {
+            if(n.style.name == styleNotMovedRenamed) {n.style.name = null}
+        }
+     }
     
     def static markWhenMoved(n){
         return getMarkMoved(n)
@@ -282,7 +314,7 @@ class MDI{
 
     def static markAsBroken(n,b,checkAgain = false){
         if(b && (!checkAgain || !n.link?.file?.exists())  ){
-            n.style.name = styleBroken
+            if(n.style.name != styleBroken) {n.style.name = styleBroken}
         } else {
             if (isBroken(n)) {n.style.name = null}
         }
@@ -297,7 +329,10 @@ class MDI{
 
     def static nodeIsFolder(n){
         //return n.hasStyle(styleFolder) ||  (n.link?.file?.directory && n.link?.node == null)
-        return  n.hasStyle(styleFolder) || (isLinkToFileOrFolder(n) && ( n.link?.file?.directory || n.link.uri?.path?.takeRight(1) == '/')  )
+        
+        //TODO: ver si es necesario cambiar n.link?.file?.directory por getFileFromLink(n).directory // lo hice para asegurarme.
+        //TODO: cambiar n.link.uri?.path?.takeRight(1) == '/' por n.link.uri?.path?.endsWith('/') por un tema de orden
+        return  n.hasStyle(styleFolder) || (isLinkToFileOrFolder(n) && ( getFileFromLink(n)?.directory || n.link.uri?.path?.takeRight(1) == '/')  ) 
     }
 
     def static isLinkToFileOrFolder(n){
@@ -462,18 +497,17 @@ class MDI{
         def folders = p.replace(File.separator,'/').split('/') //TODO: usar tokenize()
         //ui.informationMessage(folders.toString())
         def path =''
-        folders.each{ String f ->
-            path = path << f  << '/'
-            createFolder(path.toString())
-        }	
+        def resp = folders.every{ String f ->
+                        path = path << f  << '/'
+                        return createFolder(path.toString())
+                    }
+        return resp
     }
 
     // create new folder if it doesn't exist (privado)
     def static createFolder(String folderName) {
         def folder = new File(folderName)
-        if (!folder.isDirectory()){
-            folder.mkdir() //TODO: reportar si lo puede hacer o no, y dejar en el log
-        }
+        return folder.isDirectory()? true : folder.mkdir()
     }
 
     // function boolean - is directory empty?? (privado)

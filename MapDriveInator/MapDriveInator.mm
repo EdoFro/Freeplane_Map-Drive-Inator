@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.12"/>
+<attribute NAME="version" VALUE="v0.0.13"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -255,8 +255,18 @@
 <node TEXT="added getFileFromLink(n) to get to the real file if it is in another drive and link is relative" ID="ID_143420426"/>
 <node TEXT="umweg to get canonicalPaths from files that are in other drives and have relative links" ID="ID_1146418895"/>
 </node>
-<node TEXT="v0.0.12" ID="ID_1823296301">
+<node TEXT="v0.0.12" FOLDED="true" ID="ID_1823296301">
 <node TEXT="MapDriveInator: Logs MDI version, Map path, baseFolderNode properties" ID="ID_299612617"/>
+</node>
+<node TEXT="v.0.0.13" FOLDED="true" ID="ID_1424599841">
+<node TEXT="Refactoring MapDriveInator for future changes" ID="ID_1154677857"/>
+<node TEXT="Now it marks fileNodes that couldn&apos;t be moved in drive" ID="ID_465948501"/>
+<node TEXT="Added &apos;notMovedRenamed&apos; style to template mindmap" ID="ID_1688035947"/>
+<node TEXT="Now it controls if the MDI template used in the map is up to date" ID="ID_1895041994"/>
+<node TEXT="It logs which files were moved/renamed and which couldn&apos;t be moved/renamed&#xa;(in log.0 file)" ID="ID_1258770961"/>
+<node TEXT="Now newImportsNode &apos;s note can show different levels of logging:&#xa;  - (0) no log at all&#xa;  - (1) Legacy message&#xa;  - (2) + Failed actions in drive (default)&#xa;  - (3) + Moved/renamed files in drive&#xa;  - (4) + Changes made to mindMap&#xa;  - (5) + MDI debug info&#xa;  - (6) + Elapsed times&#xa;  - (7) + Lists calculated to MD-inate" ID="ID_1752132670"/>
+<node TEXT="Correction: MDI doesn&apos;t mark already marked nodes to not raise false &apos;node changed&apos; events in Freeplane" ID="ID_835803694"/>
+<node TEXT="Better information about new created folders" ID="ID_678080904"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
@@ -947,7 +957,7 @@
 </richcontent>
 <node TEXT="Build add-on" ID="ID_14185460" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="revisar MDI.version" ID="ID_561101604" LINK="menuitem:_ExecuteScriptForSelectionAction">
-<attribute NAME="script1" VALUE="import org.freeplane.main.addons.AddOnProperties;&#xd;&#xa;import org.freeplane.main.addons.AddOnsController;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;List&lt;AddOnProperties&gt; installedAddOns = AddOnsController.getController().getInstalledAddOns()&#xd;&#xa;&#xd;&#xa;def installedVersion = installedAddOns.find{it.name == &apos;mapDriveInator&apos;}.version&#xd;&#xa;def mdiVersion = MDI.version&#xd;&#xa;def addonMapVersion =  node.mindMap.root[&apos;version&apos;]&#xd;&#xa;&#xd;&#xa;def MDIactualizada = installedVersion == mdiVersion&#xd;&#xa;MDIactualizada &amp;= addonMapVersion == mdiVersion&#xd;&#xa;&#xd;&#xa;if (!MDIactualizada){&#xd;&#xa;    def msg = &quot;&quot;&quot;&#xd;&#xa;    Ojo, las versiones del addon son differentes&#xd;&#xa;    &#xd;&#xa;    addon actualmente instalado : ${installedVersion}&#xd;&#xa;    Librería MDI (MDI.version)  : ${mdiVersion}&#xd;&#xa;    mapa addon (este mapa)      : ${addonMapVersion}&#xd;&#xa;    &#xd;&#xa;    &quot;&quot;&quot;&#xd;&#xa;    ui.showMessage(msg,2)&#xd;&#xa;} else {&#xd;&#xa;    ui.informationMessage(&apos;Todo ok&apos;)&#xd;&#xa;    c.select(node.next)&#xd;&#xa;}"/>
+<attribute NAME="script1" VALUE="import org.freeplane.main.addons.AddOnProperties;&#xd;&#xa;import org.freeplane.main.addons.AddOnsController;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;List&lt;AddOnProperties&gt; installedAddOns = AddOnsController.getController().getInstalledAddOns()&#xd;&#xa;&#xd;&#xa;def installedVersion      = installedAddOns.find{it.name == &apos;mapDriveInator&apos;}.version&#xd;&#xa;def mdiVersion            = MDI.version&#xd;&#xa;def mdiMinTemplateVersion = MDI.minTemplateVersion&#xd;&#xa;def addonMapVersion       = node.mindMap.root[&apos;version&apos;]&#xd;&#xa;def sep         = File.separator&#xd;&#xa;def pathName    = c.userDirectory.path + sep + &quot;templates&quot; + sep + &quot;MapDriveInator&quot; + sep + &quot;MDI styles template.mm&quot;&#xd;&#xa;def templateMap = getMapFromPath(pathName, false)&#xd;&#xa;def templateVersion = templateMap.storage[MDI.MapTemplateVersionStorage]//.toString()&#xd;&#xa;&#xd;&#xa;def MDIactualizada = installedVersion == mdiVersion&#xd;&#xa;MDIactualizada &amp;= addonMapVersion == mdiVersion&#xd;&#xa;MDIactualizada &amp;= MDI.mapHasMinTemplate(templateMap)&#xd;&#xa;//return MDIactualizada&#xd;&#xa;&#xd;&#xa;def msg = &quot;&quot;&quot;&#xd;&#xa;    addon actualmente instalado : ${installedVersion}&#xd;&#xa;    Librería MDI (MDI.version)  : ${mdiVersion}&#xd;&#xa;    mapa addon (este mapa)      : ${addonMapVersion}&#xd;&#xa;    &#xd;&#xa;    min Template version        : ${mdiMinTemplateVersion}&#xd;&#xa;    Template version            : ${templateVersion}&#xd;&#xa;    &quot;&quot;&quot;&#xd;&#xa;&#xd;&#xa;if (!MDIactualizada){&#xd;&#xa;    msg = &apos;Ojo, las versiones del addon son differentes\n&apos; + msg&#xd;&#xa;    ui.showMessage(msg, 2)&#xd;&#xa;} else {&#xd;&#xa;    ui.showMessage(&apos;Todo ok\n&apos; + msg, 1)&#xd;&#xa;    c.select(node.next)&#xd;&#xa;}&#xd;&#xa;&#xd;&#xa;// region: --------------------------- help methods ------------------------&#xd;&#xa;&#xd;&#xa;    def getMapFromPath(filePath, withView){&#xd;&#xa;        if(exists(filePath)){&#xd;&#xa;            def m = c.mapLoader(filePath)&#xd;&#xa;            if(withView) m.withView()&#xd;&#xa;            return m.getMindMap()&#xd;&#xa;        }&#xd;&#xa;    }&#xd;&#xa;&#xd;&#xa;    def exists(String path){&#xd;&#xa;        exists(new File(path))&#xd;&#xa;    }&#xd;&#xa;&#xd;&#xa;    def exists(File file){&#xd;&#xa;        file.isFile()&#xd;&#xa;    }&#xd;&#xa;&#xd;&#xa;// end:"/>
 </node>
 <node TEXT="Package add-on for publication" ID="ID_1767675080" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
 <node TEXT="Export Translations" ID="ID_1894374378" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>

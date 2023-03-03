@@ -1,5 +1,25 @@
 # History
 
+## v.0.0.13
+
+* Refactoring MapDriveInator for future changes
+* Now it marks fileNodes that couldn't be moved in drive
+* Added 'notMovedRenamed' style to template mindmap
+* Now it controls if the MDI template used in the map is up to date
+* It logs which files were moved/renamed and which couldn't be moved/renamed
+(in log.0 file)
+* Now newImportsNode 's note can show different levels of logging:
+  - (0) no log at all
+  - (1) Legacy message
+  - (2) + Failed actions in drive (default)
+  - (3) + Moved/renamed files in drive
+  - (4) + Changes made to mindMap
+  - (5) + MDI debug info
+  - (6) + Elapsed times
+  - (7) + Lists calculated to MD-inate
+* Correction: MDI doesn't mark already marked nodes to not raise false 'node changed' events in Freeplane
+* Better information about new created folders
+
 ## v0.0.12
 
 * MapDriveInator: Logs MDI version, Map path, baseFolderNode properties

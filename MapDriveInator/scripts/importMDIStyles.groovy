@@ -9,9 +9,24 @@ import edofro.pseudofreeplaneapi.UserStyles as us
     //return "Does the file: '${pathName}' exist? :   ${exists(pathName)}"
 
     def sourceMap   = getMapFromPath(pathName, false) //usar mapa indicado (pero oculto)
-    def targetMap = node.map  // --> active map
+    def targetMap   = node.map  // --> active map
+    def templateVersion = sourceMap.storage[MDI.MapTemplateVersionStorage] 
+    
+    if(!MDI.mapHasMinTemplate(sourceMap)){
+        //sourceMap   = getMapFromPath(pathName, true) //idea: cargar con vista para que se actualice. pero no sé si será suficiente para leer el valor actualizado durante el mismo script
+        ui.showMessage("""The MDI template map hasn't been updated yet.
+        It's version is: '${templateVersion}'
+        The minimal template version should be '${MDI.minTemplateVersion}'.
+        
+        If you updated MDI recently, try restarting Freeplane.
+        
+        MDI styles will be copied into your map using the old version.
+        """,2)
+    }
 
     us.copyUserStyles(sourceMap, targetMap) //, {it.text.startsWith('mdi_')})
+    
+    targetMap.storage[MDI.MapTemplateVersionStorage] = templateVersion
 
 //Other use case examples on how to use edofro.pseudofreeplaneapi.UserStyles.copyUserStyles
 /*

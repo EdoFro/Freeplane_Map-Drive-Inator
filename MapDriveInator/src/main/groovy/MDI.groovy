@@ -100,8 +100,11 @@ class MDI{
     }
     
     def static wantToLog(n){
-        if(!n[attrLog])n[attrLog]='No'
-        return n[attrLog]==true || [1,'1','true','ok','si','yes','y','ja'].contains(n[attrLog].toString().toLowerCase())
+        n[attrLog] ?= 2
+        if(!n[attrLog].isNum()){
+            n[attrLog] = (n[attrLog]==true || ['true','ok','si','yes','y','ja'].contains(n[attrLog].toString().toLowerCase()))? 5 : 2
+        }
+        return n[attrLog].to.num
     }
     //end:
 

@@ -90,7 +90,7 @@ class MDI{
     def static obtainNewImportsNode(n){
         def nImp = n.children.find{it.hasStyle(styleNewImport)}?:n.createChild('new imported files')
         try {
-            nImp.style.name = styleNewImport
+            if(nImp.style.name != styleNewImport) {nImp.style.name = styleNewImport}
         } catch(Exception ex) {
             UITools.showMessage("The mindmap has no '${styleNewImport}' style.\n\nPlease import the MDI styles into your map.", 0)
             if(nImp.leaf){nImp.delete()}
@@ -275,7 +275,7 @@ class MDI{
 
     def static markAsNotMoved(n, b){
         if(b){
-            n.style.name = styleNotMovedRenamed
+            if(n.style.name != styleNotMovedRenamed) n.style.name = styleNotMovedRenamed
         } else {
             if(n.style.name == styleNotMovedRenamed) {n.style.name = null}
         }
@@ -307,7 +307,7 @@ class MDI{
 
     def static markAsBroken(n,b,checkAgain = false){
         if(b && (!checkAgain || !n.link?.file?.exists())  ){
-            n.style.name = styleBroken
+            if(n.style.name != styleBroken) {n.style.name = styleBroken}
         } else {
             if (isBroken(n)) {n.style.name = null}
         }

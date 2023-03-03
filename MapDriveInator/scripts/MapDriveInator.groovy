@@ -88,7 +88,7 @@ if(baseFolderNode){
     if(!nodeNewImports) return 'Interrupted: no MDI styles'
     def wantToLogLevel = MDI.wantToLog(nodeNewImports)
     if(wantToLogLevel >= 6) texto.append('\n=====================================\n\n').append('(elapsed time in miliseconds)').append("\n").append((tIni - new Date().getTime()) as String).append("\n")
-    baseFolderNode.style.name = MDI.styleBaseFolder
+    if(baseFolderNode.style.name != MDI.styleBaseFolder){baseFolderNode.style.name = MDI.styleBaseFolder}
     baseFolderNode.noteContentType = 'markdown'
     def baseFolderPath = MDI.getPathFromLink(baseFolderNode)
     deleteNodesWithLinkToOther(nodeNewImports)
@@ -294,6 +294,14 @@ if(baseFolderNode){
         << 'Inated:   '
         << (new SimpleDateFormat("yyyy-MM-dd  HH:mm:ss").format(new Date()))
         << '\n\n------- Files: -------- '
+    
+    //region: _______________________________- filesOK               --> desmarcar marcas anteriores
+    (xConsistentes + xClonesConsistentes).findAll{it.path in filesOK}.each{x ->
+        def nodo = N(x.id) 
+        MDI.markAsMoved(nodo,false)
+        MDI.markAsBroken(nodo,false)
+        MDI.markAsNotMoved(nodo,false)
+    }
 
     //region: _______________________________- nodos sin files       --> marcar nodos como con error
     // c.select( nodosSinFile.collect{ N(it.id)})
@@ -651,8 +659,6 @@ def armaListadoRutas(nodo, String path){
     nodo.children.findAll{!MDI.isLocked(it)}.each{
         //es file?--> agregar a listado
         if(MDI.isLinkToFileOrFolder(it) && !MDI.nodeIsFolder(it)){
-            MDI.markAsMoved(it,false)
-            //TODO: ¿agregar markAsBroken false y markAsNotMoved false acá tambien?
             if(it.countNodesSharingContent > 0){
                 xClones << new xFile(it.id, MDI.getPathFromLink2(it), MDI.getPathFromStrings(path,it.text)) //por qué uso getPathFromLink2 y no la 3 y listo?
             } else {
@@ -660,8 +666,6 @@ def armaListadoRutas(nodo, String path){
             }
         }
         if(MDI.nodeIsFolder(it)){
-            MDI.markAsMoved(it,false)
-            //TODO: ¿agregar markAsBroken false y markAsNotMoved false acá tambien?
             def pathF = MDI.getFolderpathFromStrings(path,it)
             xFolders << new xFile(it.id, MDI.getPathFromLink3(it,File.separator), pathF)
             if(it.children.size()>0){

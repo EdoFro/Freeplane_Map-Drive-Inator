@@ -3,7 +3,7 @@
 <attribute_registry SHOW_ATTRIBUTES="selected">
     <attribute_name VISIBLE="true" NAME="projectCode"/>
 </attribute_registry>
-<node TEXT="MapDriveInator project.mm" FOLDED="false" ID="ID_113708126" LINK="file:/E:/Respaldo%20EF/ef/Documentos%20con%20macros/08%20Freemind%20Groovy/scripts/ScriptsEnComputadorYDesarrollosEdo%20v1.9.mm"><hook NAME="MapStyle" background="#f9f9f8" zoom="0.9">
+<node TEXT="MapDriveInator project.mm" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_113708126" LINK="file:/E:/Respaldo%20EF/ef/Documentos%20con%20macros/08%20Freemind%20Groovy/scripts/ScriptsEnComputadorYDesarrollosEdo%20v1.9.mm" MAX_WIDTH="7 cm"><hook NAME="MapStyle" background="#f9f9f8" zoom="0.9">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="customMenuPackage" LAST="false">
             <attribute_exists_condition ATTRIBUTE="tbActions"/>
@@ -52,7 +52,7 @@
             <attribute_contains_condition ATTRIBUTE="modifiedFile" VALUE="true"/>
         </conditional_style>
     </conditional_styles>
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" BookmarksKeys="{}" followedTemplateLocation="template:/DFGHI%20Proyecto-Groovy-Tareas-MDI-menuButton%20(vis01).mm" pruebaDiccionario="ID_311366985|:|idDictionary|-|ID_323296041|:|ToM Actions|-|" show_icon_for_attributes="true" show_notes_in_map="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" mdhFreeMindmapPath="hhgf" save_folding="save_folding_if_map_is_changed" followedMapLastTime="1661362125221" fit_to_viewport="false" MDI_template="v0.0.13"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" BookmarksKeys="{}" followedTemplateLocation="template:/DFGHI%20Proyecto-Groovy-Tareas-MDI-menuButton%20(vis01).mm" pruebaDiccionario="ID_311366985|:|idDictionary|-|ID_323296041|:|ToM Actions|-|" show_icon_for_attributes="true" show_notes_in_map="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" MDI_template="v0.0.13" mdhFreeMindmapPath="hhgf" save_folding="save_folding_if_map_is_changed" followedMapLastTime="1661362125221" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_118736178" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -1036,7 +1036,7 @@
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_663250348"/>
 </node>
 </node>
-<node TEXT="MapDriveInator" STYLE_REF="file_folder" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
+<node TEXT="MapDriveInator" STYLE_REF="file_folder" FOLDED="true" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
 <attribute NAME="script1" VALUE="def nodo = node&#xd;&#xa;def texto = nodo.text&#xd;&#xa;&#xd;&#xa;def nodos = nodo.find{it.text.contains(texto)}&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;def cambiarA = ui.showInputDialog(&#xd;&#xa;        nodo.delegate, &#xd;&#xa;        &apos;input new AddOn name (it will CamelCase it and delete spaces)&apos;, &#xd;&#xa;        &apos; my new add on example   &apos;&#xd;&#xa;    )?.trim()&#xd;&#xa;&#xd;&#xa;cambiarA = cambiarA.split(&apos; &apos;)*.capitalize().join()&#xd;&#xa;&#xd;&#xa;nodos.each{n -&gt;&#xd;&#xa;    n.text = n.text.replace(texto,cambiarA)&#xd;&#xa;}"/>
 <attribute NAME="lastModifiedTime" VALUE="27-02-23 19:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-27T19:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
@@ -2642,8 +2642,8 @@
   </body>
 </html></richcontent>
 <node TEXT="xSingles" ID="ID_165417287" BACKGROUND_COLOR="#cdd972" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2657,8 +2657,8 @@
 </html></richcontent>
 </node>
 <node TEXT="xClones" ID="ID_941473986" BACKGROUND_COLOR="#d880fb" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2707,8 +2707,8 @@
 <node TEXT="a)" ID="ID_823991070">
 <node TEXT=" xFile" ID="ID_1758816135" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xConsistentes" ID="ID_1728271171" BACKGROUND_COLOR="#fff13f" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2722,11 +2722,11 @@
 </html></richcontent>
 </node>
 <node TEXT="xInconsistentes" ID="ID_696885987" BACKGROUND_COLOR="#fa9af5" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2742,9 +2742,9 @@
 </node>
 <node TEXT="strings" ID="ID_965844478" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listCons" ID="ID_1449344127" BACKGROUND_COLOR="#59daea" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2758,7 +2758,7 @@
 </html></richcontent>
 </node>
 <node TEXT="listInConsLink" ID="ID_222700761" BACKGROUND_COLOR="#d9f666" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d9f666" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#d9f666" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2772,7 +2772,7 @@
 </html></richcontent>
 </node>
 <node TEXT="listInConsPath" ID="ID_880787997" BACKGROUND_COLOR="#55f8f0" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#55f8f0" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#55f8f0" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2792,7 +2792,7 @@
 <node TEXT="a)" ID="ID_382777995">
 <node TEXT=" xFile" ID="ID_128476726" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesConsistentes" ID="ID_8826842" BACKGROUND_COLOR="#e190ce" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e190ce" TRANSPARENCY="255" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#e190ce" TRANSPARENCY="255" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2809,9 +2809,9 @@
 </node>
 <node TEXT="strings" ID="ID_910720035" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listClonCons" ID="ID_349118599" BACKGROUND_COLOR="#f742d4" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2833,10 +2833,10 @@
 <node TEXT="a)" ID="ID_328700633">
 <node TEXT="strings" ID="ID_1232101777" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listFiles" ID="ID_1740766224" BACKGROUND_COLOR="#8fecf8" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2875,10 +2875,10 @@
 <node TEXT=" //no se hace nada con esto" ID="ID_391487637"/>
 </node>
 <node TEXT="filesNOK" FOLDED="true" ID="ID_206474696" BACKGROUND_COLOR="#3ada72" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2906,7 +2906,7 @@
 <node TEXT="a)" ID="ID_1533790880">
 <node TEXT="strings" ID="ID_437031505" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listClonConsOK" FOLDED="true" ID="ID_378200257" BACKGROUND_COLOR="#e97ed6" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e97ed6" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#e97ed6" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2923,10 +2923,10 @@
 </node>
 <node TEXT=" xFile" ID="ID_1945224635" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesPendA" ID="ID_1741926360" BACKGROUND_COLOR="#8d71dd" MIN_WIDTH="10 cm" VGAP_QUANTITY="2 px">
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2949,8 +2949,8 @@
 <node TEXT="a)" ID="ID_1427297824">
 <node TEXT=" xFile" ID="ID_778609159" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesInconsistentes" ID="ID_194444289" BACKGROUND_COLOR="#d30aa5" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3018,7 +3018,7 @@
 </node>
 </node>
 <node TEXT="nSinFileA" FOLDED="true" ID="ID_1061547658" BACKGROUND_COLOR="#5ddcc1" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#5ddcc1" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#5ddcc1" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3038,7 +3038,7 @@
 </node>
 <node TEXT=" xFile" ID="ID_373670302" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="nodosSinFileA" FOLDED="true" ID="ID_356291057" BACKGROUND_COLOR="#3dbebf" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#3dbebf" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#3dbebf" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3059,8 +3059,8 @@
 <node TEXT="a)" ID="ID_361880354">
 <node TEXT=" xFile" ID="ID_989496827" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xLinkOk" FOLDED="true" ID="ID_316413262" BACKGROUND_COLOR="#7b42fc" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <arrowlink DESTINATION="ID_1375558629"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3076,9 +3076,9 @@
 <node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.link)}" ID="ID_1943774658"/>
 </node>
 <node TEXT="xPathOk" FOLDED="true" ID="ID_1159347345" BACKGROUND_COLOR="#07f4f6" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <arrowlink DESTINATION="ID_172671060"/>
-<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3093,8 +3093,8 @@
 <node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.path)}" ID="ID_645764921"/>
 </node>
 <node TEXT="nodosSinFileB" FOLDED="true" ID="ID_344563498" BACKGROUND_COLOR="#41e97b" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3114,8 +3114,8 @@
 </node>
 <node TEXT="strings" ID="ID_741812634" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="filesNOK2" FOLDED="true" ID="ID_1066812066" BACKGROUND_COLOR="#defc87" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3142,8 +3142,8 @@
 <node TEXT="a)" ID="ID_451238278">
 <node TEXT=" xFile" ID="ID_1458832460" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonPathOk" FOLDED="true" ID="ID_1867993651" BACKGROUND_COLOR="#c0f4b2" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#c0f4b2" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <arrowlink DESTINATION="ID_172671060"/>
+<arrowlink COLOR="#c0f4b2" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3158,7 +3158,7 @@
 <node TEXT="&apos;= xClonesPendA.findAll{filesNOK2.contains(it.path)}" ID="ID_939300010"/>
 </node>
 <node TEXT="xClonLinkOk" FOLDED="true" ID="ID_1059454003" BACKGROUND_COLOR="#2fdbfe" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#2fdbfe" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#2fdbfe" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <arrowlink DESTINATION="ID_866457386"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3192,7 +3192,7 @@
 <node TEXT="&apos;= MDI.chooseClone(xClonLinkOk)" ID="ID_1320148770"/>
 </node>
 <node TEXT="xClonesPendB" ID="ID_709757688" BACKGROUND_COLOR="#56aec7" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#56aec7" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#56aec7" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3212,7 +3212,7 @@
 </html></richcontent>
 </node>
 <node TEXT="xClonesPendC" ID="ID_577118003" BACKGROUND_COLOR="#dd6ff0" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#dd6ff0" TRANSPARENCY="255" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#dd6ff0" TRANSPARENCY="255" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3239,7 +3239,7 @@
 <node TEXT="b)" ID="ID_964965837">
 <node TEXT=" xFile" ID="ID_1354083867" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesPendD" ID="ID_1949443174" BACKGROUND_COLOR="#e30db9" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e30db9" TRANSPARENCY="255" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#e30db9" TRANSPARENCY="255" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3253,8 +3253,8 @@
 </html></richcontent>
 </node>
 <node TEXT="nodosSinFileC" ID="ID_628350763" BACKGROUND_COLOR="#b6dffc" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
-<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
+<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3272,8 +3272,8 @@
 <node TEXT="c)" ID="ID_1142947675">
 <node TEXT=" xFile" ID="ID_655494205" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="nodosConFileEnOtraParte" FOLDED="true" ID="ID_615907990" BACKGROUND_COLOR="#abeaea" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#abeaea" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <arrowlink DESTINATION="ID_1375558629"/>
-<arrowlink COLOR="#abeaea" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-14.25 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -5580,7 +5580,7 @@
 <attribute NAME="creationTime" VALUE="16-01-23 12:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:10-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="508.013" OBJECT="org.freeplane.features.format.FormattedNumber|508013|#,##0"/>
 </node>
-<node TEXT="documentation/publishing" FOLDED="true" ID="ID_719240358">
+<node TEXT="documentation/publishing" ID="ID_719240358">
 <attribute NAME="projectCode" VALUE="document."/>
 <node TEXT="LICENSE.md" ID="ID_69801780" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/LICENSE.md"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -5953,7 +5953,7 @@
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
     <text>= edofro.MarkDownHelper.MDH.document(node)</text>
 </richcontent>
-<node TEXT="Freeplane_Map-Drive-Inator" FOLDED="true" ID="ID_81008987">
+<node TEXT="Freeplane_Map-Drive-Inator" ID="ID_81008987">
 <node TEXT="A groovy script to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_1917746297"/>
 <node TEXT="Features" ID="ID_1831172452">
 <node TEXT="horizontal line" STYLE_REF="MarkdownHelperNode" ID="ID_136922648"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -6046,17 +6046,9 @@ if you paste nodes with links to files that are outside of your base folder, MDI
 <node TEXT="video 2: el resto &lt;https://youtu.be/bd30aySucc4&gt;" ID="ID_1456499730" LINK="https://youtu.be/bd30aySucc4"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_639392960">
 <icon BUILTIN="emoji-1F522"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      = edofro.MarkDownHelper.MDH.list(node)
-    </p>
-  </body>
-</html></richcontent>
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>= edofro.MarkDownHelper.MDH.list(node)</text>
+</richcontent>
 <node TEXT="**Can handle clones**:" STYLE_REF="fullMarkDown" ID="ID_1808769928"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
     <text>**Can handle clones**:  
 If you have clones of file or folder nodes in your map, MDI can handle them. If one of them is positioned correctly in the map, MDI understands that this file doesn&apos;t need to be moved.</text>
@@ -6207,7 +6199,7 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 <node TEXT="versión instalada en AddOns" STYLE_REF="locked" ID="ID_145121050"/>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_31519401">
-<attribute NAME="log_MDI" VALUE="3" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleText&amp;#x7c;3|number:decimal:#0.####"/>
+<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2|#0.####"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -6215,7 +6207,7 @@ deletes the timestamps attributes in the nodes</text>
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-03-03&#xa0;&#xa0;18:42:24
+      Inated:&#xa0;&#xa0;&#xa0;2023-03-08&#xa0;&#xa0;09:22:07
     </p>
     <p>
       
@@ -6254,7 +6246,7 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      1.5 seconds
+      1.6 seconds
     </p>
     <p>
       
@@ -6270,15 +6262,6 @@ deletes the timestamps attributes in the nodes</text>
     </p>
     <p>
       No failed operation in drive
-    </p>
-    <p>
-      =====================================
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      No file(s) were moved/renamed in drive
     </p>
   </body>
 </html>

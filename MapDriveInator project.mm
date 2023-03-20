@@ -487,7 +487,7 @@
 <attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
 </node>
-<node TEXT="files" FOLDED="true" ID="ID_1340011039">
+<node TEXT="files" ID="ID_1340011039">
 <node TEXT=".git" ID="ID_43997028" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.git/">
 <attribute NAME="lastAccessTime" VALUE="03-03-23 18:30" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:30-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-03-23 17:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:44-0300|dd-MM-yy HH:mm"/>
@@ -1036,7 +1036,7 @@
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_663250348"/>
 </node>
 </node>
-<node TEXT="MapDriveInator" STYLE_REF="file_folder" FOLDED="true" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
+<node TEXT="MapDriveInator" STYLE_REF="file_folder" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
 <attribute NAME="script1" VALUE="def nodo = node&#xd;&#xa;def texto = nodo.text&#xd;&#xa;&#xd;&#xa;def nodos = nodo.find{it.text.contains(texto)}&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;def cambiarA = ui.showInputDialog(&#xd;&#xa;        nodo.delegate, &#xd;&#xa;        &apos;input new AddOn name (it will CamelCase it and delete spaces)&apos;, &#xd;&#xa;        &apos; my new add on example   &apos;&#xd;&#xa;    )?.trim()&#xd;&#xa;&#xd;&#xa;cambiarA = cambiarA.split(&apos; &apos;)*.capitalize().join()&#xd;&#xa;&#xd;&#xa;nodos.each{n -&gt;&#xd;&#xa;    n.text = n.text.replace(texto,cambiarA)&#xd;&#xa;}"/>
 <attribute NAME="lastModifiedTime" VALUE="27-02-23 19:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-27T19:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
@@ -2555,7 +2555,7 @@
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="32.041" OBJECT="org.freeplane.features.format.FormattedNumber|32041|#,##0"/>
 <node TEXT="v+0" STYLE_REF="milestone" ID="ID_1306964706">
-<node TEXT="documentar arbol de algoritmo acá" STYLE_REF="pendingTask" FOLDED="true" ID="ID_1797095930">
+<node TEXT="árbol de algoritmo" ID="ID_1797095930">
 <node TEXT="ver conectores" ID="ID_321432147">
 <node TEXT="only arrows" ID="ID_182112229" LINK="menuitem:_SetStringPropertyAction.show_connectors.false"/>
 <node TEXT="for selection" ID="ID_635388311" LINK="menuitem:_SetStringPropertyAction.show_connectors.for_selection"/>
@@ -2601,7 +2601,7 @@
 </html></richcontent>
 </node>
 </node>
-<node TEXT="algoritmo:" FOLDED="true" ID="ID_986167843" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
+<node TEXT="algoritmo:" ID="ID_986167843" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
 <node TEXT="desde info Mapa" ID="ID_1043282937" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
 <node TEXT="Obteniendo Info En Nodos De Files Y Folders" STYLE_REF="Organizador" FOLDED="true" ID="ID_1594139799" MAX_WIDTH="5.7 cm" MIN_WIDTH="5.7 cm"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -2642,8 +2642,8 @@
   </body>
 </html></richcontent>
 <node TEXT="xSingles" ID="ID_165417287" BACKGROUND_COLOR="#cdd972" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2657,8 +2657,8 @@
 </html></richcontent>
 </node>
 <node TEXT="xClones" ID="ID_941473986" BACKGROUND_COLOR="#d880fb" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2707,8 +2707,8 @@
 <node TEXT="a)" ID="ID_823991070">
 <node TEXT=" xFile" ID="ID_1758816135" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xConsistentes" ID="ID_1728271171" BACKGROUND_COLOR="#fff13f" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2722,11 +2722,11 @@
 </html></richcontent>
 </node>
 <node TEXT="xInconsistentes" ID="ID_696885987" BACKGROUND_COLOR="#fa9af5" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2742,9 +2742,9 @@
 </node>
 <node TEXT="strings" ID="ID_965844478" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listCons" ID="ID_1449344127" BACKGROUND_COLOR="#59daea" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2758,7 +2758,7 @@
 </html></richcontent>
 </node>
 <node TEXT="listInConsLink" ID="ID_222700761" BACKGROUND_COLOR="#d9f666" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d9f666" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#d9f666" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2772,7 +2772,7 @@
 </html></richcontent>
 </node>
 <node TEXT="listInConsPath" ID="ID_880787997" BACKGROUND_COLOR="#55f8f0" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#55f8f0" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#55f8f0" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2792,7 +2792,7 @@
 <node TEXT="a)" ID="ID_382777995">
 <node TEXT=" xFile" ID="ID_128476726" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesConsistentes" ID="ID_8826842" BACKGROUND_COLOR="#e190ce" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e190ce" TRANSPARENCY="255" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#e190ce" TRANSPARENCY="255" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2809,9 +2809,9 @@
 </node>
 <node TEXT="strings" ID="ID_910720035" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listClonCons" ID="ID_349118599" BACKGROUND_COLOR="#f742d4" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2833,10 +2833,10 @@
 <node TEXT="a)" ID="ID_328700633">
 <node TEXT="strings" ID="ID_1232101777" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listFiles" ID="ID_1740766224" BACKGROUND_COLOR="#8fecf8" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2875,10 +2875,10 @@
 <node TEXT=" //no se hace nada con esto" ID="ID_391487637"/>
 </node>
 <node TEXT="filesNOK" FOLDED="true" ID="ID_206474696" BACKGROUND_COLOR="#3ada72" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2906,7 +2906,7 @@
 <node TEXT="a)" ID="ID_1533790880">
 <node TEXT="strings" ID="ID_437031505" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listClonConsOK" FOLDED="true" ID="ID_378200257" BACKGROUND_COLOR="#e97ed6" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e97ed6" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#e97ed6" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2923,10 +2923,10 @@
 </node>
 <node TEXT=" xFile" ID="ID_1945224635" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesPendA" ID="ID_1741926360" BACKGROUND_COLOR="#8d71dd" MIN_WIDTH="10 cm" VGAP_QUANTITY="2 px">
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2949,8 +2949,8 @@
 <node TEXT="a)" ID="ID_1427297824">
 <node TEXT=" xFile" ID="ID_778609159" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesInconsistentes" ID="ID_194444289" BACKGROUND_COLOR="#d30aa5" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3018,7 +3018,7 @@
 </node>
 </node>
 <node TEXT="nSinFileA" FOLDED="true" ID="ID_1061547658" BACKGROUND_COLOR="#5ddcc1" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#5ddcc1" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#5ddcc1" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3038,7 +3038,7 @@
 </node>
 <node TEXT=" xFile" ID="ID_373670302" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="nodosSinFileA" FOLDED="true" ID="ID_356291057" BACKGROUND_COLOR="#3dbebf" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#3dbebf" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#3dbebf" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3059,8 +3059,8 @@
 <node TEXT="a)" ID="ID_361880354">
 <node TEXT=" xFile" ID="ID_989496827" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xLinkOk" FOLDED="true" ID="ID_316413262" BACKGROUND_COLOR="#7b42fc" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <arrowlink DESTINATION="ID_1375558629"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3076,9 +3076,9 @@
 <node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.link)}" ID="ID_1943774658"/>
 </node>
 <node TEXT="xPathOk" FOLDED="true" ID="ID_1159347345" BACKGROUND_COLOR="#07f4f6" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <arrowlink DESTINATION="ID_172671060"/>
-<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3093,8 +3093,8 @@
 <node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.path)}" ID="ID_645764921"/>
 </node>
 <node TEXT="nodosSinFileB" FOLDED="true" ID="ID_344563498" BACKGROUND_COLOR="#41e97b" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3114,8 +3114,8 @@
 </node>
 <node TEXT="strings" ID="ID_741812634" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="filesNOK2" FOLDED="true" ID="ID_1066812066" BACKGROUND_COLOR="#defc87" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3142,8 +3142,8 @@
 <node TEXT="a)" ID="ID_451238278">
 <node TEXT=" xFile" ID="ID_1458832460" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonPathOk" FOLDED="true" ID="ID_1867993651" BACKGROUND_COLOR="#c0f4b2" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#c0f4b2" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <arrowlink DESTINATION="ID_172671060"/>
-<arrowlink COLOR="#c0f4b2" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3158,8 +3158,8 @@
 <node TEXT="&apos;= xClonesPendA.findAll{filesNOK2.contains(it.path)}" ID="ID_939300010"/>
 </node>
 <node TEXT="xClonLinkOk" FOLDED="true" ID="ID_1059454003" BACKGROUND_COLOR="#2fdbfe" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#2fdbfe" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <arrowlink DESTINATION="ID_866457386"/>
+<arrowlink COLOR="#2fdbfe" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3192,7 +3192,7 @@
 <node TEXT="&apos;= MDI.chooseClone(xClonLinkOk)" ID="ID_1320148770"/>
 </node>
 <node TEXT="xClonesPendB" ID="ID_709757688" BACKGROUND_COLOR="#56aec7" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#56aec7" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#56aec7" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3212,7 +3212,7 @@
 </html></richcontent>
 </node>
 <node TEXT="xClonesPendC" ID="ID_577118003" BACKGROUND_COLOR="#dd6ff0" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#dd6ff0" TRANSPARENCY="255" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#dd6ff0" TRANSPARENCY="255" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3239,7 +3239,7 @@
 <node TEXT="b)" ID="ID_964965837">
 <node TEXT=" xFile" ID="ID_1354083867" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesPendD" ID="ID_1949443174" BACKGROUND_COLOR="#e30db9" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e30db9" TRANSPARENCY="255" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#e30db9" TRANSPARENCY="255" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3253,8 +3253,8 @@
 </html></richcontent>
 </node>
 <node TEXT="nodosSinFileC" ID="ID_628350763" BACKGROUND_COLOR="#b6dffc" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
-<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
+<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3272,8 +3272,8 @@
 <node TEXT="c)" ID="ID_1142947675">
 <node TEXT=" xFile" ID="ID_655494205" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="nodosConFileEnOtraParte" FOLDED="true" ID="ID_615907990" BACKGROUND_COLOR="#abeaea" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#abeaea" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-13.5 pt;"/>
 <arrowlink DESTINATION="ID_1375558629"/>
+<arrowlink COLOR="#abeaea" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3306,6 +3306,7 @@
 </node>
 </node>
 </node>
+<node TEXT="documentar algoritmo FOLDERS" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_1427253164"/>
 </node>
 <node TEXT="acciones:" ID="ID_1941107011" MAX_WIDTH="2 cm" MIN_WIDTH="2 cm">
 <node TEXT="- aplicando acciones FILES" STYLE_REF="Organizador" FOLDED="true" ID="ID_1789042587" MAX_WIDTH="3.5 cm" MIN_WIDTH="3.5 cm">
@@ -5658,8 +5659,246 @@
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.073" OBJECT="org.freeplane.features.format.FormattedNumber|1073|#,##0"/>
 </node>
-<node TEXT="v+2" STYLE_REF="milestone" ID="ID_131784816">
-<node TEXT="README.md" ID="ID_1216315313" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
+<node TEXT="README.md" ID="ID_1314808839" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
+<attribute NAME="lastModifiedTime" VALUE="06-01-22 18:15" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T18:15-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="fileSize" VALUE="3.516" OBJECT="org.freeplane.features.format.FormattedNumber|3516|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      # Freeplane_Map-Drive-Inator
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      A groovy script to coordinate the disk's folder structure with the nodes structure in the mind map (back and forth)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ## Features
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      -----
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ### basic
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      video 1: lo básico &lt;https://youtu.be/2vwd38rxAlY&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      1. **import folder structure**&#xa0;&#xa0;&lt;br&gt;you can import the folder structure of any folder in your drive
+    </p>
+    <p>
+      1. **import only new files and folders**&#xa0;&#xa0;&lt;br&gt;After the first import, Map-Drive-Inator imports only the new files and folders created in your drive without duplicating the allready existing one.
+    </p>
+    <p>
+      1. **alerts about missing files**&#xa0;&#xa0;&lt;br&gt;It alerts if any node links to a deleted or moved file.&#xa0;&#xa0;&lt;br&gt;For example, if another program deletes, moves or renames a file, then MDI will alert you that a link in a node points to a missing file.
+    </p>
+    <p>
+      1. **move file from one folder to another**&#xa0;&#xa0;&lt;br&gt;if you move a 'file' node in your mindmap from one 'folder' node to another, the file gets moved in your drive also
+    </p>
+    <p>
+      1. **create new folders**&#xa0;&#xa0;&lt;br&gt;you can create nodes as folders in your map and move file nodes in it. MDI then creates the folders and moves the files into them.
+    </p>
+    <p>
+      1. **rename files**&#xa0;&#xa0;&lt;br&gt;if you modify the text of a file node, the file in the drive gets also renamed to this new text
+    </p>
+    <p>
+      1. **rename folders**&#xa0;&#xa0;&lt;br&gt;if you modify the text of a folder node, the folder in the drive gets also renamed to this new text
+    </p>
+    <p>
+      1. **move *outside files* into the project**&#xa0;&#xa0;&lt;br&gt;if you paste nodes with links to files that are outside of your base folder, MDI move them to their new position in your folder structure
+    </p>
+    <p>
+      1. use copy of a folder in multiple positions in the map, but has to remain in the same path position.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      -----
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ### other
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      video 2: el resto &lt;https://youtu.be/bd30aySucc4&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      1. **Can handle clones**:&#xa0;&#xa0;&lt;br&gt;If you have clones of file or folder nodes in your map, MDI can handle them. If one of them is positioned correctly in the map, MDI understands that this file doesn't need to be moved.
+    </p>
+    <p>
+      1. **locked**:&#xa0;&#xa0;&lt;br&gt;You can mark some nodes as 'locked'. That means that MDI **ignores** it and its descendant.
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- **Ignores outside files** and doesn´t move them into the project folder.&#xa0;&#xa0;&lt;br&gt;You can have nodes with links to files outside your base folder wihout having MDI moving the file form its original drive's position to your base folder.
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- **Ignores folders** and its subfolders and files when looking **in the drive**.&#xa0;&#xa0;&lt;br&gt;Any 'folder' node marked as locked (or inside a locked node) will be ignored (and its content) when searching for file changes in the drive.
+    </p>
+    <p>
+      1. **Ignores folders** with name ***starting*** with a ***dot*** (and its subfolders and files when looking in the drive)&#xa0;&#xa0;&lt;br&gt;example: &quot;**.git**&quot;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      -----
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ### more
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      1. **Import folders only**:&#xa0;&#xa0;&lt;br&gt;Imports the folders structure without the files.&lt;br&gt;This helps at the beginning, before the first full import. So you can define if you want some folders to be ignored (to mark as locked).&lt;br&gt;So you can import only what you want and don't get excess files to manage in your map.
+    </p>
+    <p>
+      1. **Import timestamps**:&#xa0;&#xa0;&lt;br&gt;for the selected node and its descendants&lt;br&gt;you can import as attributes following timestamps from your files&lt;br&gt;you can use them to sort, search and filter your nodes
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- lastAccessTime
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- lastModifiedTime
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- creationTime
+    </p>
+    <p>
+      1. **Sort by timestamps**:&#xa0;&#xa0;&lt;br&gt;you can sort a node and its descendants by any of the timestamps
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- lastAccessTime
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- lastModifiedTime
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;- creationTime
+    </p>
+    <p>
+      1. **Clear the timestamps**:&#xa0;&#xa0;&lt;br&gt;for the selected node and its descendants&lt;br&gt;deletes the timestamps attributes in the nodes
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      agregar párrafo Freeplane
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # agregar History
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ## ejemplo:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      https://github.com/EdoFro/Freeplane_Menu-o-Matic#history
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      https://github.com/EdoFro/freeplane-devtools#3-change-log
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # agregar Tasks
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ## ejemplo:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      https://github.com/EdoFro/Freeplane_Tutorial_AddOn#tasks
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      revisar mapa de instrucciones
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      traspasar mapa de instrucciones acá
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      #&#xa0;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      agregar a template proyectos
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="README.md anterior" POSITION="top_or_left" ID="ID_1216315313">
 <attribute NAME="lastAccessTime" VALUE="23-01-23 12:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-23T12:10-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="06-01-22 16:54" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T16:54-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
@@ -5678,7 +5917,7 @@
       
     </p>
     <p>
-      &nbsp;A groovy script to coordinate the disk's folder structure with the nodes structure in the mind map (back and forth)
+      &#xa0;A groovy script to coordinate the disk's folder structure with the nodes structure in the mind map (back and forth)
     </p>
     <p>
       
@@ -5708,7 +5947,7 @@
       
     </p>
     <p>
-      1. **import folder structure**&nbsp;&nbsp;
+      1. **import folder structure**&#xa0;&#xa0;
     </p>
     <p>
       you can import the folder structure of any folder in your drive
@@ -5717,7 +5956,7 @@
       
     </p>
     <p>
-      2. **import only new files and folders**&nbsp;&nbsp;
+      2. **import only new files and folders**&#xa0;&#xa0;
     </p>
     <p>
       After the first import, Map-Drive-Inator imports only the new files and folders created in your drive without duplicating the allready existing one.
@@ -5726,7 +5965,7 @@
       
     </p>
     <p>
-      3. **alerts about missing files**&nbsp;&nbsp;
+      3. **alerts about missing files**&#xa0;&#xa0;
     </p>
     <p>
       It alerts if any node links to a deleted or moved file.
@@ -5738,7 +5977,7 @@
       
     </p>
     <p>
-      4. **move file from one folder to another**&nbsp;&nbsp;
+      4. **move file from one folder to another**&#xa0;&#xa0;
     </p>
     <p>
       if you move a 'file' node in your mindmap from one 'folder' node to another, the file gets moved in your drive also
@@ -5747,7 +5986,7 @@
       
     </p>
     <p>
-      5. **create new folders**&nbsp;&nbsp;
+      5. **create new folders**&#xa0;&#xa0;
     </p>
     <p>
       you can create nodes as folders in your map and move file nodes in it. MDI then creates the folders and moves the files into them.
@@ -5756,7 +5995,7 @@
       
     </p>
     <p>
-      6. **rename files**&nbsp;&nbsp;
+      6. **rename files**&#xa0;&#xa0;
     </p>
     <p>
       if you modify the text of a file node, the file in the drive gets also renamed to this new text
@@ -5765,7 +6004,7 @@
       
     </p>
     <p>
-      7. **rename folders**&nbsp;&nbsp;
+      7. **rename folders**&#xa0;&#xa0;
     </p>
     <p>
       if you modify the text of a folder node, the folder in the drive gets also renamed to this new text
@@ -5774,7 +6013,7 @@
       
     </p>
     <p>
-      8. **move *outside files* into the project**&nbsp;&nbsp;
+      8. **move *outside files* into the project**&#xa0;&#xa0;
     </p>
     <p>
       if you paste nodes with links to files that are outside of your base folder, MDI move them to their new position in your folder structure
@@ -5801,13 +6040,13 @@
       
     </p>
     <p>
-      video 2: el resto &lt;https://youtu.be/bd30aySucc4&gt;&nbsp;&nbsp;
+      video 2: el resto &lt;https://youtu.be/bd30aySucc4&gt;&#xa0;&#xa0;
     </p>
     <p>
       
     </p>
     <p>
-      1. **Can handle clones**:&nbsp;&nbsp;
+      1. **Can handle clones**:&#xa0;&#xa0;
     </p>
     <p>
       If you have clones of file or folder nodes in your map, MDI can handle them. If one of them is positioned correctly in the map, MDI understands that this file doesn't need to be moved.
@@ -5816,7 +6055,7 @@
       
     </p>
     <p>
-      2. **locked**:&nbsp;&nbsp;
+      2. **locked**:&#xa0;&#xa0;
     </p>
     <p>
       You can mark some nodes as 'locked'. That means that MDI **ignores** it and its descendant.
@@ -5825,7 +6064,7 @@
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;* **Ignores outside files** and doesn´t move them into the project folder.&nbsp;&nbsp;
+      &#xa0;&#xa0;&#xa0;* **Ignores outside files** and doesn´t move them into the project folder.&#xa0;&#xa0;
     </p>
     <p>
       You can have nodes with links to files outside your base folder wihout having MDI moving the file form its original drive's position to your base folder.
@@ -5834,7 +6073,7 @@
       
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;* **Ignores folders** and its subfolders and files when looking **in the drive**.&nbsp;&nbsp;
+      &#xa0;&#xa0;&#xa0;* **Ignores folders** and its subfolders and files when looking **in the drive**.&#xa0;&#xa0;
     </p>
     <p>
       Any 'folder' node marked as locked (or inside a locked node) will be ignored (and its content) when searching for file changes in the drive.
@@ -5843,7 +6082,7 @@
       
     </p>
     <p>
-      3. **Ignores folders** with name ***starting*** with a ***dot*** (and its subfolders and files when looking in the drive)&nbsp;&nbsp;
+      3. **Ignores folders** with name ***starting*** with a ***dot*** (and its subfolders and files when looking in the drive)&#xa0;&#xa0;
     </p>
     <p>
       example: &quot;**.git**&quot;
@@ -5864,13 +6103,13 @@
       
     </p>
     <p>
-      1. **Import folders only**:&nbsp;&nbsp;
+      1. **Import folders only**:&#xa0;&#xa0;
     </p>
     <p>
-      Imports the folders structure without the files.&nbsp;&nbsp;
+      Imports the folders structure without the files.&#xa0;&#xa0;
     </p>
     <p>
-      This helps at the beginning, before the first full import. So you can define if you want some folders to be ignored (to mark as locked).&nbsp;&nbsp;
+      This helps at the beginning, before the first full import. So you can define if you want some folders to be ignored (to mark as locked).&#xa0;&#xa0;
     </p>
     <p>
       So you can import only what you want and don't get excess files to manage in your map.
@@ -5879,52 +6118,52 @@
       
     </p>
     <p>
-      2. **Import timestamps**:&nbsp;&nbsp;
+      2. **Import timestamps**:&#xa0;&#xa0;
     </p>
     <p>
       for the selected node and its descendants
     </p>
     <p>
-      you can import as attributes following timestamps from your files&nbsp;&nbsp;
+      you can import as attributes following timestamps from your files&#xa0;&#xa0;
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;* lastAccessTime
+      &#xa0;&#xa0;&#xa0;* lastAccessTime
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;* lastModifiedTime
+      &#xa0;&#xa0;&#xa0;* lastModifiedTime
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;* creationTime
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;you can use them to sort, search and filter your nodes
+      &#xa0;&#xa0;&#xa0;* creationTime
     </p>
     <p>
       
     </p>
     <p>
-      3. **Sort by timestamps**:&nbsp;&nbsp;
+      &#xa0;&#xa0;&#xa0;you can use them to sort, search and filter your nodes
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      3. **Sort by timestamps**:&#xa0;&#xa0;
     </p>
     <p>
       you can sort a node and its descendants by any of the timestamps
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;* lastAccessTime
+      &#xa0;&#xa0;&#xa0;* lastAccessTime
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;* lastModifiedTime
+      &#xa0;&#xa0;&#xa0;* lastModifiedTime
     </p>
     <p>
-      &nbsp;&nbsp;&nbsp;* creationTime
+      &#xa0;&#xa0;&#xa0;* creationTime
     </p>
     <p>
       
     </p>
     <p>
-      4. **Clear the timestamps**:&nbsp;&nbsp;
+      4. **Clear the timestamps**:&#xa0;&#xa0;
     </p>
     <p>
       for the selected node and its descendants
@@ -5933,8 +6172,48 @@
       deletes the timestamps attributes in the nodes
     </p>
   </body>
-</html></richcontent>
-<node TEXT="README_2.md" STYLE_REF="MarkdownHelperNode" ID="ID_1638680456" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README_2.md">
+</html>
+</richcontent>
+</node>
+<node TEXT="v+1" STYLE_REF="milestone" POSITION="top_or_left" ID="ID_913915420">
+<node TEXT="actualizar ReadMe" STYLE_REF="nextTask" ID="ID_873316181">
+<icon BUILTIN="0%"/>
+<node TEXT="nuevas fumcionalidades" ID="ID_1258432485">
+<node TEXT="ver cambios en versiones" ID="ID_1368434930"/>
+</node>
+<node TEXT="link a último release" ID="ID_477113700"/>
+<node TEXT="imágenes de funcionalidades" ID="ID_1932637359"/>
+<node TEXT="Agregar imágenes" ID="ID_1086865870"/>
+<node TEXT="agregar descripción de nuevos comandos" ID="ID_594602743"/>
+</node>
+</node>
+<node TEXT="v+2" STYLE_REF="milestone" FOLDED="true" POSITION="top_or_left" ID="ID_131784816">
+<node TEXT="revisar mapa de instrucciones" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_114218799" LINK="#ID_956395609">
+<arrowlink DESTINATION="ID_956395609"/>
+</node>
+<node TEXT="traspasar mapa de instrucciones acá" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_1883420691" LINK="#ID_956395609"/>
+<node TEXT="" POSITION="bottom_or_right" ID="ID_338724759">
+<hook NAME="FirstGroupNode"/>
+</node>
+<node TEXT="agregar párrafo Freeplane" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_1548672074"/>
+<node TEXT="agregar History" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_1479316402">
+<node TEXT="ejemplo:" ID="ID_618628139">
+<node TEXT="https://github.com/EdoFro/Freeplane_Menu-o-Matic#history" ID="ID_614828809" LINK="https://github.com/EdoFro/Freeplane_Menu-o-Matic#history"/>
+<node TEXT="https://github.com/EdoFro/freeplane-devtools#3-change-log" ID="ID_233323535" LINK="https://github.com/EdoFro/freeplane-devtools#3-change-log"/>
+</node>
+</node>
+<node TEXT="agregar Tasks" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_1572735156">
+<node TEXT="ejemplo:" ID="ID_337700483">
+<node TEXT="https://github.com/EdoFro/Freeplane_Tutorial_AddOn#tasks" ID="ID_398084623" LINK="https://github.com/EdoFro/Freeplane_Tutorial_AddOn#tasks"/>
+</node>
+</node>
+<node TEXT="" POSITION="bottom_or_right" ID="ID_1041104200">
+<hook NAME="SummaryNode"/>
+<hook NAME="AlwaysUnfoldedNode"/>
+<node TEXT="agregar a template proyectos" STYLE_REF="pendingTask" ID="ID_1949150606"/>
+</node>
+</node>
+<node TEXT="README.md" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1638680456" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
 <attribute NAME="headersToUnderline" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
 <attribute NAME="hideFolded" VALUE="false"/>
 <attribute NAME="headerNumbering" VALUE="false"/>
@@ -5950,25 +6229,73 @@
 <attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|datetime"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="3.516" OBJECT="org.freeplane.features.format.FormattedNumber|3516|#,##0"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto">
     <text>= edofro.MarkDownHelper.MDH.document(node)</text>
 </richcontent>
 <node TEXT="Freeplane_Map-Drive-Inator" ID="ID_81008987">
-<node TEXT="A groovy script to coordinate the disk&apos;s folder structure with the nodes structure in the mind map (back and forth)" ID="ID_1917746297"/>
-<node TEXT="Features" ID="ID_1831172452">
-<node TEXT="horizontal line" STYLE_REF="MarkdownHelperNode" ID="ID_136922648"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      -----
-    </p>
-  </body>
-</html></richcontent>
+<node TEXT="Map-Drive-Inator (MDI) is a Freeplane Add-on to replicate/coordinate/update a drive&apos;s folder structure (with its subfolders and files) with the nodes structure in your mind map (back and forth)" ID="ID_1917746297"/>
+<node TEXT="details" STYLE_REF="MarkdownHelperNode" ID="ID_544795179"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto">
+    <text>=&#xd;
+import edofro.MarkDownHelper.MDH&#xd;
+&#xd;
+def preResumen =&apos;\n\n### &apos;&#xd;
+&#xd;
+def texto =&quot;&quot;&#xd;
+node.children.each{ n-&gt;&#xd;
+    def resumen = preResumen + n.text&#xd;
+    def contenido = MDH.document(n)&#xd;
+    &#xd;
+    texto += &quot;&lt;details&gt;&lt;summary&gt;${resumen}&lt;/summary&gt;\n\n${contenido}----\n&lt;/details&gt;&quot; &#xd;
+}&#xd;
+&#xd;
+return texto?:&apos;-----\n--- No details items found! ---\n\n----\n&apos;&#xd;
+&#xd;
+</text>
+</richcontent>
+<node TEXT="Quick starting guide" ID="ID_857751858">
+<node TEXT="details" STYLE_REF="MarkdownHelperNode" ID="ID_681644559"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto">
+    <text>=&#xd;
+import edofro.MarkDownHelper.MDH&#xd;
+&#xd;
+def preResumen =&apos;&apos;&#xd;
+&#xd;
+def texto =&quot;&quot;&#xd;
+node.children.each{ n-&gt;&#xd;
+    def resumen = preResumen + n.text&#xd;
+    def contenido = MDH.document(n)&#xd;
+    &#xd;
+    texto += &quot;&lt;details&gt;&lt;summary&gt;${resumen}&lt;/summary&gt;\n\n${contenido}----\n&lt;/details&gt;&quot; &#xd;
+}&#xd;
+&#xd;
+return texto?:&apos;-----\n--- No details items found! ---\n\n----\n&apos;&#xd;
+&#xd;
+</text>
+</richcontent>
+<node TEXT="Installation" ID="ID_1562080097"/>
+<node TEXT="First use" ID="ID_1398413776"/>
+<node TEXT="Basic concepts" ID="ID_1042916142"/>
 </node>
-<node TEXT="basic" ID="ID_1834808569">
+</node>
+<node TEXT="Features" POSITION="bottom_or_right" ID="ID_1831172452">
+<node TEXT="details" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1993256911"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto">
+    <text>=&#xd;
+import edofro.MarkDownHelper.MDH&#xd;
+&#xd;
+def preResumen =&apos;&apos;&#xd;
+&#xd;
+def texto =&quot;&quot;&#xd;
+node.children.each{ n-&gt;&#xd;
+    def resumen = preResumen + n.text&#xd;
+    def contenido = MDH.document(n)&#xd;
+    &#xd;
+    texto += &quot;&lt;details&gt;&lt;summary&gt;${resumen}&lt;/summary&gt;\n\n${contenido}----\n&lt;/details&gt;&quot; &#xd;
+}&#xd;
+&#xd;
+return texto?:&apos;-----\n--- No details items found! ---\n\n----\n&apos;&#xd;
+&#xd;
+</text>
+</richcontent>
+<node TEXT="basic" POSITION="bottom_or_right" ID="ID_1834808569">
 <node TEXT="video 1: lo básico &lt;https://youtu.be/2vwd38rxAlY&gt;" ID="ID_1953045866" LINK="https://youtu.be/2vwd38rxAlY"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1389094514">
 <icon BUILTIN="emoji-1F522"/>
@@ -6029,20 +6356,8 @@ if you paste nodes with links to files that are outside of your base folder, MDI
 </richcontent>
 </node>
 </node>
-<node TEXT="horizontal line" STYLE_REF="MarkdownHelperNode" ID="ID_1837178257"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      -----
-    </p>
-  </body>
-</html></richcontent>
 </node>
-</node>
-<node TEXT="other" ID="ID_932146437">
+<node TEXT="other" POSITION="bottom_or_right" ID="ID_932146437">
 <node TEXT="video 2: el resto &lt;https://youtu.be/bd30aySucc4&gt;" ID="ID_1456499730" LINK="https://youtu.be/bd30aySucc4"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_639392960">
 <icon BUILTIN="emoji-1F522"/>
@@ -6077,20 +6392,8 @@ example: &quot;**.git**&quot;</text>
 </richcontent>
 </node>
 </node>
-<node TEXT="horizontal line" STYLE_REF="MarkdownHelperNode" ID="ID_1381409952"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      -----
-    </p>
-  </body>
-</html></richcontent>
 </node>
-</node>
-<node TEXT="more" ID="ID_468277734">
+<node TEXT="more" POSITION="bottom_or_right" ID="ID_468277734">
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_816393856">
 <icon BUILTIN="emoji-1F522"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -6143,47 +6446,7 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 </node>
 </node>
-<node TEXT="" ID="ID_338724759">
-<hook NAME="FirstGroupNode"/>
 </node>
-<node TEXT="agregar párrafo Freeplane" STYLE_REF="pendingTask" ID="ID_1548672074"/>
-<node TEXT="agregar History" STYLE_REF="pendingTask" ID="ID_1479316402">
-<node TEXT="ejemplo:" ID="ID_618628139">
-<node TEXT="https://github.com/EdoFro/Freeplane_Menu-o-Matic#history" ID="ID_614828809" LINK="https://github.com/EdoFro/Freeplane_Menu-o-Matic#history"/>
-<node TEXT="https://github.com/EdoFro/freeplane-devtools#3-change-log" ID="ID_233323535" LINK="https://github.com/EdoFro/freeplane-devtools#3-change-log"/>
-</node>
-</node>
-<node TEXT="agregar Tasks" STYLE_REF="pendingTask" ID="ID_1572735156">
-<node TEXT="ejemplo:" ID="ID_337700483">
-<node TEXT="https://github.com/EdoFro/Freeplane_Tutorial_AddOn#tasks" ID="ID_398084623" LINK="https://github.com/EdoFro/Freeplane_Tutorial_AddOn#tasks"/>
-</node>
-</node>
-<node TEXT="revisar mapa de instrucciones" STYLE_REF="pendingTask" ID="ID_114218799" LINK="#ID_956395609">
-<arrowlink DESTINATION="ID_956395609"/>
-</node>
-<node TEXT="traspasar mapa de instrucciones acá" STYLE_REF="pendingTask" ID="ID_1883420691" LINK="#ID_956395609"/>
-<node TEXT="" ID="ID_1041104200">
-<hook NAME="SummaryNode"/>
-<hook NAME="AlwaysUnfoldedNode"/>
-<node TEXT="agregar a template proyectos" STYLE_REF="pendingTask" ID="ID_1949150606"/>
-</node>
-</node>
-<node TEXT="README_2.md" ID="ID_1314808839" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README_2.md">
-<attribute NAME="lastModifiedTime" VALUE="06-01-22 18:15" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T18:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="3.516" OBJECT="org.freeplane.features.format.FormattedNumber|3516|#,##0"/>
-<node TEXT="versión borrador." ID="ID_508217206"/>
-<node TEXT="debo dejar sólo uno" STYLE_REF="pendingTask" ID="ID_1355708582"/>
-</node>
-<node TEXT="actualizar ReadMe" STYLE_REF="pendingTask" POSITION="bottom_or_right" ID="ID_873316181">
-<node TEXT="nuevas fumcionalidades" FOLDED="true" ID="ID_1258432485">
-<node TEXT="ver cambios en versiones" ID="ID_1368434930"/>
-</node>
-<node TEXT="link a último release" ID="ID_477113700"/>
-<node TEXT="imágenes de funcionalidades" ID="ID_1932637359"/>
-<node TEXT="Agregar imágenes" ID="ID_1086865870"/>
-<node TEXT="agregar descripción de nuevos comandos" ID="ID_594602743"/>
 </node>
 </node>
 </node>
@@ -6199,7 +6462,7 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 <node TEXT="versión instalada en AddOns" STYLE_REF="locked" ID="ID_145121050"/>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_31519401">
-<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2|#0.####"/>
+<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleNumber&amp;#x7c;2|number:decimal:#0.####"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -6207,7 +6470,7 @@ deletes the timestamps attributes in the nodes</text>
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-03-08&#xa0;&#xa0;09:22:07
+      Inated:&#xa0;&#xa0;&#xa0;2023-03-17&#xa0;&#xa0;19:59:36
     </p>
     <p>
       
@@ -6246,7 +6509,7 @@ deletes the timestamps attributes in the nodes</text>
       
     </p>
     <p>
-      1.6 seconds
+      1.2 seconds
     </p>
     <p>
       
@@ -10474,7 +10737,7 @@ before the actual namefilter setting)
 </node>
 <node TEXT="pruebas" FOLDED="true" ID="ID_875561550">
 <node TEXT="v+0" STYLE_REF="milestone" ID="ID_1517863394">
-<node TEXT="Revisar rama &apos;pruebas&apos;. A ver si hay algo interesante que aún falte impolementar" STYLE_REF="pendingTask" ID="ID_795140534"/>
+<node TEXT="Revisar rama &apos;pruebas&apos;. A ver si hay algo interesante que aún falte implementar" STYLE_REF="pendingTask" ID="ID_795140534"/>
 </node>
 <node TEXT="prueba N(Id).groovy" ID="ID_1423280569"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -12699,8 +12962,13 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask,discardedTask,completedTask"/>
 <attribute NAME="WIP filter" VALUE="true"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
+<node TEXT="v+1" STYLE_REF="milestone" ID="ID_1859909636">
+<node TEXT="document." STYLE_REF="project" ID="ID_1192405512">
+<node ID="ID_244094716" CONTENT_ID="ID_873316181"/>
 </node>
-<node TEXT="next Tasks" STYLE_REF="tasksBucket" ID="ID_515510075"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+</node>
+</node>
+<node TEXT="next Tasks" STYLE_REF="tasksBucket" FOLDED="true" ID="ID_515510075"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -12718,6 +12986,11 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="nextTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
+<node TEXT="v+2" STYLE_REF="milestone" FOLDED="true" ID="ID_309977885">
+<node TEXT="document." STYLE_REF="project" ID="ID_1380686609">
+<node ID="ID_1749344253" CONTENT_ID="ID_873316181"/>
+</node>
+</node>
 </node>
 <node TEXT="tasksBucket" STYLE_REF="tasksBucket" FOLDED="true" ID="ID_1906111223"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -12736,134 +13009,133 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="nextTask,pendingTask,maybeTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
-<node TEXT="v+0" STYLE_REF="milestone" ID="ID_653490475">
-<node ID="ID_1144945227" CONTENT_ID="ID_1797095930"/>
-<node ID="ID_838240149" CONTENT_ID="ID_1964375859"/>
-<node ID="ID_1773190931" CONTENT_ID="ID_795140534"/>
+<node TEXT="v+0" STYLE_REF="milestone" FOLDED="true" ID="ID_723745852">
+<node ID="ID_1228187948" CONTENT_ID="ID_1427253164"/>
+<node ID="ID_1609373239" CONTENT_ID="ID_1964375859"/>
+<node ID="ID_1152694309" CONTENT_ID="ID_795140534"/>
 </node>
-<node TEXT="v+1" STYLE_REF="milestone" ID="ID_304303049">
-<node TEXT="Revisions" STYLE_REF="project" ID="ID_1775638385">
-<node ID="ID_586413653" CONTENT_ID="ID_1405387639"/>
-<node ID="ID_316684169" CONTENT_ID="ID_761127302"/>
-<node ID="ID_1527088929" CONTENT_ID="ID_1852988863"/>
-<node ID="ID_248108280" CONTENT_ID="ID_268438012"/>
+<node TEXT="v+1" STYLE_REF="milestone" FOLDED="true" ID="ID_872669727">
+<node TEXT="document." STYLE_REF="project" ID="ID_761777436">
+<node ID="ID_1964211019" CONTENT_ID="ID_873316181"/>
 </node>
-<node TEXT="document." STYLE_REF="project" POSITION="bottom_or_right" ID="ID_464715315">
-<node TEXT="README.md" STYLE_REF="project" ID="ID_612956899">
-<node ID="ID_1133942579" CONTENT_ID="ID_1548672074"/>
-<node ID="ID_1332155543" CONTENT_ID="ID_1479316402"/>
-<node ID="ID_108264372" CONTENT_ID="ID_1572735156"/>
-<node ID="ID_1589700816" CONTENT_ID="ID_114218799"/>
-<node ID="ID_1932253638" CONTENT_ID="ID_1883420691"/>
-<node ID="ID_1828487081" CONTENT_ID="ID_1949150606"/>
-<node ID="ID_1459542161" CONTENT_ID="ID_1355708582"/>
-<node ID="ID_1556242501" CONTENT_ID="ID_873316181"/>
+<node TEXT="Styles" STYLE_REF="project" ID="ID_1216563172">
+<node ID="ID_1517189844" CONTENT_ID="ID_1325075964"/>
+</node>
+<node TEXT="Revisions" STYLE_REF="project" ID="ID_1780561141">
+<node ID="ID_897675419" CONTENT_ID="ID_1405387639"/>
+<node ID="ID_334876798" CONTENT_ID="ID_761127302"/>
+<node ID="ID_781230001" CONTENT_ID="ID_1852988863"/>
+<node ID="ID_130955818" CONTENT_ID="ID_268438012"/>
 </node>
 </node>
-<node TEXT="UI" STYLE_REF="project" POSITION="bottom_or_right" ID="ID_1038867411">
-<node TEXT="botonera" STYLE_REF="project" ID="ID_46052275">
-<node ID="ID_1165896942" CONTENT_ID="ID_1430648520"/>
-<node ID="ID_804329774" CONTENT_ID="ID_1074393417"/>
+<node TEXT="v+2" STYLE_REF="milestone" FOLDED="true" ID="ID_412102726">
+<node TEXT="UI" STYLE_REF="project" ID="ID_524739527">
+<node TEXT="botonera" STYLE_REF="project" ID="ID_1216464484">
+<node ID="ID_214378154" CONTENT_ID="ID_1430648520"/>
+<node ID="ID_532726494" CONTENT_ID="ID_1074393417"/>
 </node>
-<node ID="ID_929701375" CONTENT_ID="ID_1274440134"/>
+<node ID="ID_1236176749" CONTENT_ID="ID_1274440134"/>
 </node>
-<node TEXT="Styles" STYLE_REF="project" POSITION="bottom_or_right" ID="ID_267442277">
-<node ID="ID_1441342802" CONTENT_ID="ID_1325075964"/>
+<node TEXT="document." STYLE_REF="project" ID="ID_730784432">
+<node ID="ID_799232095" CONTENT_ID="ID_114218799"/>
+<node ID="ID_34805594" CONTENT_ID="ID_1883420691"/>
+<node ID="ID_1709366466" CONTENT_ID="ID_1548672074"/>
+<node ID="ID_651609958" CONTENT_ID="ID_1479316402"/>
+<node ID="ID_119783968" CONTENT_ID="ID_1572735156"/>
+<node ID="ID_792552184" CONTENT_ID="ID_1949150606"/>
 </node>
-</node>
-<node TEXT="v+2" STYLE_REF="milestone" FOLDED="true" ID="ID_1842066046" VGAP_QUANTITY="2 px">
-<node TEXT="delete.File" STYLE_REF="project" ID="ID_1770375466">
-<node ID="ID_618059146" CONTENT_ID="ID_1997152504"/>
-<node ID="ID_1264933957" CONTENT_ID="ID_1829837337"/>
-</node>
-<node TEXT="File.2.Note" STYLE_REF="project" ID="ID_1657653387">
-<node ID="ID_741395566" CONTENT_ID="ID_1952250719"/>
-</node>
-<node TEXT="Revisions" STYLE_REF="project" FOLDED="true" ID="ID_1287796654">
-<node ID="ID_1928171159" CONTENT_ID="ID_1139307681">
-<node ID="ID_1097039328" CONTENT_ID="ID_192846341"/>
+<node TEXT="Revisions" STYLE_REF="project" ID="ID_1197308059">
+<node ID="ID_1630297185" CONTENT_ID="ID_1139307681">
+<node ID="ID_988042729" CONTENT_ID="ID_192846341"/>
 </node>
 </node>
-<node TEXT="Attributes" STYLE_REF="project" FOLDED="true" ID="ID_1012417871">
-<node ID="ID_831356092" CONTENT_ID="ID_1454764618"/>
+<node TEXT="Attributes" STYLE_REF="project" ID="ID_34342326">
+<node ID="ID_109583059" CONTENT_ID="ID_1454764618"/>
 </node>
-<node TEXT="preferences" STYLE_REF="project" FOLDED="true" ID="ID_1307395288">
-<node ID="ID_347601349" CONTENT_ID="ID_859060352"/>
+<node TEXT="preferences" STYLE_REF="project" ID="ID_31509588">
+<node ID="ID_1185204668" CONTENT_ID="ID_859060352"/>
 </node>
-<node TEXT="external.Objects" STYLE_REF="project" FOLDED="true" ID="ID_675614272">
-<node ID="ID_1942320311" CONTENT_ID="ID_1297337532"/>
+<node TEXT="external.Objects" STYLE_REF="project" ID="ID_2407564">
+<node ID="ID_147064637" CONTENT_ID="ID_1297337532"/>
 </node>
-<node TEXT="copy.File" STYLE_REF="project" FOLDED="true" ID="ID_1698902358">
-<node ID="ID_122341305" CONTENT_ID="ID_1872791515"/>
-<node ID="ID_499368436" CONTENT_ID="ID_1364746044">
-<node ID="ID_1347566764" CONTENT_ID="ID_1531382187"/>
-<node ID="ID_1010126316" CONTENT_ID="ID_1751006135"/>
-<node ID="ID_44208197" CONTENT_ID="ID_1507780607"/>
-<node ID="ID_1347364068" CONTENT_ID="ID_913896595"/>
-<node ID="ID_139981820" CONTENT_ID="ID_1061306016"/>
-<node ID="ID_752783018" CONTENT_ID="ID_1394882888"/>
-<node ID="ID_1273404435" CONTENT_ID="ID_28848164"/>
-</node>
-</node>
-</node>
-<node TEXT="v+3" STYLE_REF="milestone" FOLDED="true" ID="ID_561693935">
-<node TEXT="doc" STYLE_REF="project" ID="ID_1559918888">
-<node ID="ID_696876845" CONTENT_ID="ID_684869210"/>
-</node>
-<node TEXT="images" STYLE_REF="project" ID="ID_1987376346">
-<node ID="ID_634492984" CONTENT_ID="ID_331581636"/>
-<node ID="ID_1524860819" CONTENT_ID="ID_907083898"/>
-<node ID="ID_479822414" CONTENT_ID="ID_199504070"/>
-</node>
-<node TEXT="Log" STYLE_REF="project" ID="ID_602728140">
-<node ID="ID_687628292" CONTENT_ID="ID_796279226"/>
-</node>
-<node TEXT="document." STYLE_REF="project" ID="ID_1956150003">
-<node ID="ID_1722892803" CONTENT_ID="ID_1743612644"/>
-<node ID="ID_1459536347" CONTENT_ID="ID_152881947"/>
-<node ID="ID_418134927" CONTENT_ID="ID_303217866"/>
-</node>
-<node TEXT="MapDriveInator.mm" STYLE_REF="project" FOLDED="true" ID="ID_1888894584">
-<node TEXT="inclu.prefe.en.Addon.mm" STYLE_REF="project" ID="ID_743786302">
-<node ID="ID_498881537" CONTENT_ID="ID_1480670447">
-<node ID="ID_1972213928" CONTENT_ID="ID_1150824817"/>
-<node ID="ID_228752971" CONTENT_ID="ID_402920261"/>
-</node>
-<node ID="ID_525499633" CONTENT_ID="ID_294440977"/>
-<node ID="ID_1498908128" CONTENT_ID="ID_172816119"/>
-<node ID="ID_1076552815" CONTENT_ID="ID_1628906019"/>
-<node ID="ID_1802204836" CONTENT_ID="ID_1038410507"/>
-<node ID="ID_1284242593" CONTENT_ID="ID_354456841"/>
+<node TEXT="copy.File" STYLE_REF="project" ID="ID_639048042">
+<node ID="ID_206192408" CONTENT_ID="ID_1872791515"/>
+<node ID="ID_1135234454" CONTENT_ID="ID_1364746044">
+<node ID="ID_806567940" CONTENT_ID="ID_1531382187"/>
+<node ID="ID_300244023" CONTENT_ID="ID_1751006135"/>
+<node ID="ID_1399357199" CONTENT_ID="ID_1507780607"/>
+<node ID="ID_1697765756" CONTENT_ID="ID_913896595"/>
+<node ID="ID_1901127038" CONTENT_ID="ID_1061306016"/>
+<node ID="ID_1022858392" CONTENT_ID="ID_1394882888"/>
+<node ID="ID_1608781768" CONTENT_ID="ID_28848164"/>
 </node>
 </node>
-<node TEXT="Attributes" STYLE_REF="project" FOLDED="true" ID="ID_1346699744">
-<node ID="ID_504300582" CONTENT_ID="ID_1459102250"/>
+<node TEXT="delete.File" STYLE_REF="project" ID="ID_978782390">
+<node ID="ID_87537191" CONTENT_ID="ID_1997152504"/>
+<node ID="ID_298766137" CONTENT_ID="ID_1829837337"/>
 </node>
-<node TEXT="preferences" STYLE_REF="project" FOLDED="true" ID="ID_1372331316">
-<node ID="ID_1167332094" CONTENT_ID="ID_1496648578">
-<node ID="ID_680426896" CONTENT_ID="ID_1089488788"/>
-<node ID="ID_1692510071" CONTENT_ID="ID_219830976"/>
-<node ID="ID_364945966" CONTENT_ID="ID_685235846"/>
-<node ID="ID_337058623" CONTENT_ID="ID_504455264"/>
+<node TEXT="File.2.Note" STYLE_REF="project" ID="ID_563341580">
+<node ID="ID_968477095" CONTENT_ID="ID_1952250719"/>
 </node>
-<node ID="ID_864349592" CONTENT_ID="ID_1403569041"/>
 </node>
-<node TEXT="mejo.dist.fileNodes.nuev" STYLE_REF="project" FOLDED="true" ID="ID_709882431">
-<node ID="ID_462901412" CONTENT_ID="ID_256786237"/>
+<node TEXT="v+3" STYLE_REF="milestone" FOLDED="true" ID="ID_286820281">
+<node TEXT="doc" STYLE_REF="project" ID="ID_1918266807">
+<node ID="ID_1365583562" CONTENT_ID="ID_684869210"/>
 </node>
-<node TEXT="other.Functiona" STYLE_REF="project" FOLDED="true" ID="ID_1060245374">
-<node ID="ID_1468755350" CONTENT_ID="ID_1934442049"/>
-<node ID="ID_1312282279" CONTENT_ID="ID_1408368885"/>
-<node ID="ID_927780061" CONTENT_ID="ID_1475784974">
-<node ID="ID_1842504229" CONTENT_ID="ID_1802474824"/>
-<node ID="ID_888413471" CONTENT_ID="ID_1946023991"/>
+<node TEXT="images" STYLE_REF="project" ID="ID_553204227">
+<node ID="ID_577284341" CONTENT_ID="ID_331581636"/>
+<node ID="ID_84491965" CONTENT_ID="ID_907083898"/>
+<node ID="ID_918083656" CONTENT_ID="ID_199504070"/>
 </node>
-<node ID="ID_861706206" CONTENT_ID="ID_1878166666"/>
-<node ID="ID_1574258675" CONTENT_ID="ID_517331866"/>
+<node TEXT="MapDriveInator.mm" STYLE_REF="project" ID="ID_1601966405">
+<node TEXT="inclu.prefe.en.Addon.mm" STYLE_REF="project" ID="ID_1094976368">
+<node ID="ID_1919639744" CONTENT_ID="ID_1480670447">
+<node ID="ID_1800559238" CONTENT_ID="ID_1150824817"/>
+<node ID="ID_600878725" CONTENT_ID="ID_402920261"/>
 </node>
-<node TEXT="MDI.direct" STYLE_REF="project" FOLDED="true" ID="ID_1526365997">
-<node ID="ID_422951434" CONTENT_ID="ID_1738150058"/>
-<node ID="ID_1104661510" CONTENT_ID="ID_893492309"/>
+<node ID="ID_763787849" CONTENT_ID="ID_294440977"/>
+<node ID="ID_251264495" CONTENT_ID="ID_172816119"/>
+<node ID="ID_1137173446" CONTENT_ID="ID_1628906019"/>
+<node ID="ID_1006183083" CONTENT_ID="ID_1038410507"/>
+<node ID="ID_1201445589" CONTENT_ID="ID_354456841"/>
+</node>
+</node>
+<node TEXT="document." STYLE_REF="project" ID="ID_1269505308">
+<node ID="ID_1225240650" CONTENT_ID="ID_1743612644"/>
+<node ID="ID_1742426985" CONTENT_ID="ID_152881947"/>
+<node ID="ID_1418030065" CONTENT_ID="ID_303217866"/>
+</node>
+<node TEXT="Log" STYLE_REF="project" ID="ID_1467347265">
+<node ID="ID_1678250874" CONTENT_ID="ID_796279226"/>
+</node>
+<node TEXT="Attributes" STYLE_REF="project" ID="ID_830588208">
+<node ID="ID_1991598239" CONTENT_ID="ID_1459102250"/>
+</node>
+<node TEXT="preferences" STYLE_REF="project" ID="ID_1913544">
+<node ID="ID_1652325234" CONTENT_ID="ID_1496648578">
+<node ID="ID_1945602858" CONTENT_ID="ID_1089488788"/>
+<node ID="ID_203201245" CONTENT_ID="ID_219830976"/>
+<node ID="ID_1536506661" CONTENT_ID="ID_685235846"/>
+<node ID="ID_1590714810" CONTENT_ID="ID_504455264"/>
+</node>
+<node ID="ID_746593279" CONTENT_ID="ID_1403569041"/>
+</node>
+<node TEXT="mejo.dist.fileNodes.nuev" STYLE_REF="project" ID="ID_401643180">
+<node ID="ID_1584568183" CONTENT_ID="ID_256786237"/>
+</node>
+<node TEXT="other.Functiona" STYLE_REF="project" ID="ID_27550370">
+<node ID="ID_829322899" CONTENT_ID="ID_1934442049"/>
+<node ID="ID_963001419" CONTENT_ID="ID_1408368885"/>
+<node ID="ID_579694206" CONTENT_ID="ID_1475784974">
+<node ID="ID_1744646272" CONTENT_ID="ID_1802474824"/>
+<node ID="ID_547846517" CONTENT_ID="ID_1946023991"/>
+</node>
+<node ID="ID_1980043921" CONTENT_ID="ID_1878166666"/>
+<node ID="ID_38536828" CONTENT_ID="ID_517331866"/>
+</node>
+<node TEXT="MDI.direct" STYLE_REF="project" ID="ID_565085778">
+<node ID="ID_1700099180" CONTENT_ID="ID_1738150058"/>
+<node ID="ID_1442653902" CONTENT_ID="ID_893492309"/>
 </node>
 </node>
 </node>
@@ -12884,55 +13156,55 @@ before the actual namefilter setting)
 <attribute NAME="tasksStyles" VALUE="completedTask"/>
 <attribute NAME="WIP filter" VALUE="false"/>
 <attribute NAME="groupingLevels" VALUE="10" OBJECT="org.freeplane.features.format.FormattedNumber|10"/>
-<node TEXT="&lt;= v0.0.9" STYLE_REF="milestone" FOLDED="true" ID="ID_213789414">
-<node TEXT="templates" STYLE_REF="project" ID="ID_1950130635">
-<node ID="ID_876399976" CONTENT_ID="ID_1168481436"/>
-<node ID="ID_1793743583" CONTENT_ID="ID_1314525875"/>
+<node TEXT="&lt;= v0.0.9" STYLE_REF="milestone" FOLDED="true" ID="ID_1421205643">
+<node TEXT="templates" STYLE_REF="project" ID="ID_1198099686">
+<node ID="ID_1116109971" CONTENT_ID="ID_1168481436"/>
+<node ID="ID_692003308" CONTENT_ID="ID_1314525875"/>
 </node>
-<node TEXT="Bugs" STYLE_REF="project" ID="ID_988420556">
-<node ID="ID_721680953" CONTENT_ID="ID_904998969"/>
+<node TEXT="Bugs" STYLE_REF="project" ID="ID_686648931">
+<node ID="ID_1041407297" CONTENT_ID="ID_904998969"/>
 </node>
-<node ID="ID_140512828" CONTENT_ID="ID_743392305"/>
-<node ID="ID_1507562937" CONTENT_ID="ID_848100773"/>
-<node ID="ID_98513514" CONTENT_ID="ID_786626915"/>
-<node ID="ID_26919376" CONTENT_ID="ID_407915349"/>
-<node ID="ID_1173909976" CONTENT_ID="ID_687583462"/>
-<node ID="ID_1086164410" CONTENT_ID="ID_136921619"/>
+<node ID="ID_352227283" CONTENT_ID="ID_743392305"/>
+<node ID="ID_1151065716" CONTENT_ID="ID_848100773"/>
+<node ID="ID_789591596" CONTENT_ID="ID_786626915"/>
+<node ID="ID_319033857" CONTENT_ID="ID_407915349"/>
+<node ID="ID_237773445" CONTENT_ID="ID_687583462"/>
+<node ID="ID_31227641" CONTENT_ID="ID_136921619"/>
 </node>
-<node TEXT="v0.0.10" STYLE_REF="milestone" FOLDED="true" ID="ID_86220847">
-<node TEXT="Log" STYLE_REF="project" ID="ID_293022173">
-<node ID="ID_1993024234" CONTENT_ID="ID_267721653"/>
-<node ID="ID_1225579973" CONTENT_ID="ID_468933310"/>
-<node ID="ID_1645117539" CONTENT_ID="ID_453209891">
-<node ID="ID_1306456486" CONTENT_ID="ID_1475717027"/>
-<node ID="ID_76545708" CONTENT_ID="ID_996191110"/>
-<node ID="ID_326083064" CONTENT_ID="ID_255376273"/>
-<node ID="ID_1588024542" CONTENT_ID="ID_227122028"/>
-</node>
-</node>
-<node ID="ID_1424297694" CONTENT_ID="ID_1921939438"/>
-<node ID="ID_48643937" CONTENT_ID="ID_121670897"/>
-</node>
-<node TEXT="v0.0.12" STYLE_REF="milestone" FOLDED="true" ID="ID_1021415726">
-<node TEXT="Log" STYLE_REF="project" ID="ID_1152222427">
-<node ID="ID_792969973" CONTENT_ID="ID_1444256972"/>
+<node TEXT="v0.0.10" STYLE_REF="milestone" FOLDED="true" ID="ID_1155602481">
+<node TEXT="Log" STYLE_REF="project" ID="ID_996067250">
+<node ID="ID_788369494" CONTENT_ID="ID_267721653"/>
+<node ID="ID_526845981" CONTENT_ID="ID_468933310"/>
+<node ID="ID_6604350" CONTENT_ID="ID_453209891">
+<node ID="ID_811329595" CONTENT_ID="ID_1475717027"/>
+<node ID="ID_1287355013" CONTENT_ID="ID_996191110"/>
+<node ID="ID_396744875" CONTENT_ID="ID_255376273"/>
+<node ID="ID_836632816" CONTENT_ID="ID_227122028"/>
 </node>
 </node>
-<node TEXT="v0.0.13" STYLE_REF="milestone" FOLDED="true" ID="ID_1842341386">
-<node TEXT="Log" STYLE_REF="project" ID="ID_561696294">
-<node ID="ID_917329746" CONTENT_ID="ID_161101455"/>
-<node ID="ID_1471107135" CONTENT_ID="ID_1673288081">
-<node ID="ID_38951309" CONTENT_ID="ID_1396567126"/>
-<node ID="ID_1801738473" CONTENT_ID="ID_889104490"/>
+<node ID="ID_347164516" CONTENT_ID="ID_1921939438"/>
+<node ID="ID_1069186112" CONTENT_ID="ID_121670897"/>
 </node>
-<node ID="ID_1195311483" CONTENT_ID="ID_297046088"/>
-<node ID="ID_966658797" CONTENT_ID="ID_107319875"/>
-<node ID="ID_1844125961" CONTENT_ID="ID_633436261"/>
-<node ID="ID_963432119" CONTENT_ID="ID_1310678286"/>
-<node ID="ID_143044603" CONTENT_ID="ID_550597183"/>
+<node TEXT="v0.0.12" STYLE_REF="milestone" FOLDED="true" ID="ID_43691624">
+<node TEXT="Log" STYLE_REF="project" ID="ID_475900817">
+<node ID="ID_1950673761" CONTENT_ID="ID_1444256972"/>
 </node>
-<node TEXT="Revisions" STYLE_REF="project" ID="ID_1909425052">
-<node ID="ID_263708489" CONTENT_ID="ID_1372672925"/>
+</node>
+<node TEXT="v0.0.13" STYLE_REF="milestone" FOLDED="true" ID="ID_349380145">
+<node TEXT="Log" STYLE_REF="project" ID="ID_571671534">
+<node ID="ID_1187412190" CONTENT_ID="ID_161101455"/>
+<node ID="ID_1831704186" CONTENT_ID="ID_1673288081">
+<node ID="ID_441486357" CONTENT_ID="ID_1396567126"/>
+<node ID="ID_1027784872" CONTENT_ID="ID_889104490"/>
+</node>
+<node ID="ID_443622818" CONTENT_ID="ID_297046088"/>
+<node ID="ID_964832962" CONTENT_ID="ID_107319875"/>
+<node ID="ID_293859930" CONTENT_ID="ID_633436261"/>
+<node ID="ID_110093529" CONTENT_ID="ID_1310678286"/>
+<node ID="ID_1751897318" CONTENT_ID="ID_550597183"/>
+</node>
+<node TEXT="Revisions" STYLE_REF="project" ID="ID_1464045585">
+<node ID="ID_297593488" CONTENT_ID="ID_1372672925"/>
 </node>
 </node>
 </node>

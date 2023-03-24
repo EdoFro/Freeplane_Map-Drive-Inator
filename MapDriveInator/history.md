@@ -1,5 +1,9 @@
 # History
 
+## v0.0.14
+
+* timeStamps are not longer added to folder nodes
+
 ## v.0.0.13
 
 * Refactoring MapDriveInator for future changes

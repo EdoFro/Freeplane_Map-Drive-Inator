@@ -262,11 +262,7 @@
 <attribute NAME="nameFilter" VALUE=""/>
 <attribute NAME="maxDepth" VALUE="-1" OBJECT="org.freeplane.features.format.FormattedNumber|-1|#0.####"/>
 <attribute NAME="markWhenMoved" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="19-02-23 21:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-19T21:00-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="checkIfReallyBroken" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
-<attribute NAME="fileSize" VALUE="12.288" OBJECT="org.freeplane.features.format.FormattedNumber|12288|#,##0"/>
 <attribute NAME="projectCode" VALUE="Freep.Map-Drive-Inator"/>
 <attribute NAME="linkType" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
@@ -473,27 +469,13 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="19-02-23 21:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-19T21:00-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="12.288" OBJECT="org.freeplane.features.format.FormattedNumber|12288|#,##0"/>
 </node>
 </node>
 <node TEXT="old" ID="ID_981665497">
-<node TEXT="lib" ID="ID_1893653910" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/lib/">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:34-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-</node>
+<node TEXT="lib" ID="ID_1893653910" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/lib/"/>
 </node>
 <node TEXT="files" ID="ID_1340011039">
-<node TEXT=".git" ID="ID_43997028" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.git/">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:30" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:30-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="03-03-23 17:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
-</node>
+<node TEXT=".git" ID="ID_43997028" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.git/"/>
 <node TEXT=".gitattributes" ID="ID_629932038" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/.gitattributes">
 <attribute NAME="lastAccessTime" VALUE="03-03-23 18:30" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:30-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="20-07-20 10:32" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-20T10:32-0400|datetime"/>
@@ -619,27 +601,10 @@
 </html></richcontent>
 </node>
 <node TEXT="MapDriveInatorV2" FOLDED="true" ID="ID_828647119" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <node TEXT="lib" STYLE_REF="Organizador" ID="ID_1299482089">
 <node TEXT="src" ID="ID_598707755" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="main" ID="ID_913704295" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/main/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="groovy" ID="ID_1433998257" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/main/groovy/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="groovy" ID="ID_1433998257" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/src/main/groovy/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -665,12 +630,7 @@
 </node>
 </node>
 </node>
-<node TEXT="build" ID="ID_22994202" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="build" ID="ID_22994202" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -681,25 +641,10 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="classes" STYLE_REF="locked" ID="ID_873682295" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/classes/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 16:11" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:11-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="06-02-23 11:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T11:00-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
+<node TEXT="classes" STYLE_REF="locked" ID="ID_873682295" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/classes/"/>
+<node TEXT="tmp" STYLE_REF="locked" ID="ID_11691582" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/tmp/"/>
 </node>
-<node TEXT="tmp" STYLE_REF="locked" ID="ID_11691582" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/build/tmp/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 16:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:12-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="06-02-23 11:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T11:00-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-</node>
-</node>
-<node TEXT="lib" ID="ID_38835318" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/lib/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="lib" ID="ID_38835318" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/lib/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -721,12 +666,7 @@
 </node>
 </node>
 </node>
-<node TEXT="scripts" ID="ID_1535564200" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/scripts/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="scripts" ID="ID_1535564200" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/scripts/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -924,10 +864,6 @@
 <attribute NAME="fileSize" VALUE="2.086" OBJECT="org.freeplane.features.format.FormattedNumber|2086|#,##0"/>
 </node>
 <node TEXT="zips" ID="ID_675695541" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="icons" ID="ID_1495924276" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/icons/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -939,16 +875,7 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="MapDriveInator" ID="ID_1106013023" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/icons/MapDriveInator/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-</node>
+<node TEXT="MapDriveInator" ID="ID_1106013023" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/icons/MapDriveInator/"/>
 </node>
 <node TEXT="doc" ID="ID_680771650" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/doc/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -961,16 +888,7 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="MapDriveInator" ID="ID_857784023" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/doc/MapDriveInator/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-</node>
+<node TEXT="MapDriveInator" ID="ID_857784023" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/doc/MapDriveInator/"/>
 </node>
 <node TEXT="templates" ID="ID_1709021293" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/templates/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -983,24 +901,10 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="MapDriveInator" ID="ID_1339117801" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/templates/MapDriveInator/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
+<node TEXT="MapDriveInator" ID="ID_1339117801" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/zips/templates/MapDriveInator/"/>
 </node>
 </node>
-</node>
-<node TEXT="images" ID="ID_1547784914" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/images/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="17-01-23 12:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-</node>
+<node TEXT="images" ID="ID_1547784914" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInatorV2/images/"/>
 <node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_111849460"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -1038,21 +942,9 @@
 </node>
 <node TEXT="MapDriveInator" STYLE_REF="file_folder" ID="ID_1462849055" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/">
 <attribute NAME="script1" VALUE="def nodo = node&#xd;&#xa;def texto = nodo.text&#xd;&#xa;&#xd;&#xa;def nodos = nodo.find{it.text.contains(texto)}&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;def cambiarA = ui.showInputDialog(&#xd;&#xa;        nodo.delegate, &#xd;&#xa;        &apos;input new AddOn name (it will CamelCase it and delete spaces)&apos;, &#xd;&#xa;        &apos; my new add on example   &apos;&#xd;&#xa;    )?.trim()&#xd;&#xa;&#xd;&#xa;cambiarA = cambiarA.split(&apos; &apos;)*.capitalize().join()&#xd;&#xa;&#xd;&#xa;nodos.each{n -&gt;&#xd;&#xa;    n.text = n.text.replace(texto,cambiarA)&#xd;&#xa;}"/>
-<attribute NAME="lastModifiedTime" VALUE="27-02-23 19:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-27T19:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="8.192" OBJECT="org.freeplane.features.format.FormattedNumber|8192|#,##0"/>
 <node TEXT="lib" STYLE_REF="Organizador" ID="ID_509478984">
 <node TEXT="src" STYLE_REF="file_folder" ID="ID_767967142" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/src/">
-<attribute NAME="lastModifiedTime" VALUE="10-01-22 13:28" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-10T13:28-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="main" STYLE_REF="file_folder" ID="ID_242117641" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/src/main/">
-<attribute NAME="lastModifiedTime" VALUE="10-01-22 13:28" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-10T13:28-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="groovy" STYLE_REF="file_folder" ID="ID_225362559" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/src/main/groovy/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -1064,15 +956,12 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MDI.groovy" FOLDED="true" ID="ID_901526658" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/src/main/groovy/MDI.groovy">
-<attribute NAME="lastModifiedTime" VALUE="03-03-23 17:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:25-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 17:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:44-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="22-03-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:16-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:17-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="32.706" OBJECT="org.freeplane.features.format.FormattedNumber|32706|#,##0"/>
+<attribute NAME="fileSize" VALUE="32.711" OBJECT="org.freeplane.features.format.FormattedNumber|32711|#,##0"/>
+<attribute NAME="modifiedFile" VALUE="true"/>
 <node TEXT="class MDI{" FOLDED="true" ID="ID_1196551919">
 <node TEXT="//region: ---------------------- Functions Initial Setup" ID="ID_621271091">
 <node TEXT="def static obtainBaseFolder(n) {" ID="ID_755781680"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
@@ -2300,22 +2189,8 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 16:11" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:11-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-<node TEXT="classes" STYLE_REF="locked" ID="ID_492783989" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/build/classes/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 17:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:25-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 16:11" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:11-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-</node>
-<node TEXT="tmp" STYLE_REF="locked" ID="ID_1705582526" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/build/tmp/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="06-02-23 11:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-06T11:00-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 16:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T16:12-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
-</node>
+<node TEXT="classes" STYLE_REF="locked" ID="ID_492783989" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/build/classes/"/>
+<node TEXT="tmp" STYLE_REF="locked" ID="ID_1705582526" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/build/tmp/"/>
 </node>
 <node TEXT="lib" STYLE_REF="file_folder" FOLDED="true" ID="ID_930264566" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/lib/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -2331,15 +2206,12 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:53" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:53-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator.jar" ID="ID_1873606824" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/lib/MapDriveInator.jar">
-<attribute NAME="lastModifiedTime" VALUE="03-03-23 17:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:25-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="22-03-23 13:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:17-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="57.456" OBJECT="org.freeplane.features.format.FormattedNumber|57456|#,##0"/>
+<attribute NAME="fileSize" VALUE="57.468" OBJECT="org.freeplane.features.format.FormattedNumber|57468|#,##0"/>
+<attribute NAME="modifiedFile" VALUE="true"/>
 </node>
 </node>
 </node>
@@ -2354,11 +2226,7 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="19-02-23 21:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-19T21:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="8.192" OBJECT="org.freeplane.features.format.FormattedNumber|8192|#,##0"/>
-<node TEXT="importMDIStyles.groovy" ID="ID_50035749" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/importMDIStyles.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="importMDIStyles.groovy" FOLDED="true" ID="ID_50035749" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/importMDIStyles.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -2370,7 +2238,7 @@
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="03-03-23 09:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T09:50-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="18-01-23 11:08" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-18T11:08-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="2.286" OBJECT="org.freeplane.features.format.FormattedNumber|2286|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -2544,13 +2412,13 @@
 </node>
 </node>
 <node TEXT="CreateBaseFolderNode.groovy" ID="ID_1667255103" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/CreateBaseFolderNode.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.165" OBJECT="org.freeplane.features.format.FormattedNumber|1165|#,##0"/>
 </node>
-<node TEXT="MapDriveInator.groovy" ID="ID_696665609" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/MapDriveInator.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<node TEXT="MapDriveInator.groovy" FOLDED="true" ID="ID_696665609" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/MapDriveInator.groovy">
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-03-23 17:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:17-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="32.041" OBJECT="org.freeplane.features.format.FormattedNumber|32041|#,##0"/>
@@ -2642,8 +2510,8 @@
   </body>
 </html></richcontent>
 <node TEXT="xSingles" ID="ID_165417287" BACKGROUND_COLOR="#cdd972" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_1728271171" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#cdd972" TRANSPARENCY="255" DESTINATION="ID_696885987" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2657,8 +2525,8 @@
 </html></richcontent>
 </node>
 <node TEXT="xClones" ID="ID_941473986" BACKGROUND_COLOR="#d880fb" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_8826842" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#d880fb" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2707,8 +2575,8 @@
 <node TEXT="a)" ID="ID_823991070">
 <node TEXT=" xFile" ID="ID_1758816135" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xConsistentes" ID="ID_1728271171" BACKGROUND_COLOR="#fff13f" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#fff13f" TRANSPARENCY="255" DESTINATION="ID_1449344127" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2722,11 +2590,11 @@
 </html></richcontent>
 </node>
 <node TEXT="xInconsistentes" ID="ID_696885987" BACKGROUND_COLOR="#fa9af5" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_222700761" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_880787997" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#fa9af5" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2742,9 +2610,9 @@
 </node>
 <node TEXT="strings" ID="ID_965844478" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listCons" ID="ID_1449344127" BACKGROUND_COLOR="#59daea" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#59daea" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2758,7 +2626,7 @@
 </html></richcontent>
 </node>
 <node TEXT="listInConsLink" ID="ID_222700761" BACKGROUND_COLOR="#d9f666" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d9f666" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#d9f666" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2772,7 +2640,7 @@
 </html></richcontent>
 </node>
 <node TEXT="listInConsPath" ID="ID_880787997" BACKGROUND_COLOR="#55f8f0" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#55f8f0" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#55f8f0" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2792,7 +2660,7 @@
 <node TEXT="a)" ID="ID_382777995">
 <node TEXT=" xFile" ID="ID_128476726" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesConsistentes" ID="ID_8826842" BACKGROUND_COLOR="#e190ce" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e190ce" TRANSPARENCY="255" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#e190ce" TRANSPARENCY="255" DESTINATION="ID_349118599" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2809,9 +2677,9 @@
 </node>
 <node TEXT="strings" ID="ID_910720035" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listClonCons" ID="ID_349118599" BACKGROUND_COLOR="#f742d4" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#f742d4" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2833,10 +2701,10 @@
 <node TEXT="a)" ID="ID_328700633">
 <node TEXT="strings" ID="ID_1232101777" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listFiles" ID="ID_1740766224" BACKGROUND_COLOR="#8fecf8" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_378200257" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1753944704" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_206474696" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#8fecf8" TRANSPARENCY="255" DESTINATION="ID_1061547658" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2875,10 +2743,10 @@
 <node TEXT=" //no se hace nada con esto" ID="ID_391487637"/>
 </node>
 <node TEXT="filesNOK" FOLDED="true" ID="ID_206474696" BACKGROUND_COLOR="#3ada72" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_1159347345" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_316413262" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#3ada72" TRANSPARENCY="255" DESTINATION="ID_983344430" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2906,7 +2774,7 @@
 <node TEXT="a)" ID="ID_1533790880">
 <node TEXT="strings" ID="ID_437031505" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="listClonConsOK" FOLDED="true" ID="ID_378200257" BACKGROUND_COLOR="#e97ed6" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e97ed6" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#e97ed6" TRANSPARENCY="255" DESTINATION="ID_1741926360" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2923,10 +2791,10 @@
 </node>
 <node TEXT=" xFile" ID="ID_1945224635" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesPendA" ID="ID_1741926360" BACKGROUND_COLOR="#8d71dd" MIN_WIDTH="10 cm" VGAP_QUANTITY="2 px">
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_194444289" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#8d71dd" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -2949,8 +2817,8 @@
 <node TEXT="a)" ID="ID_1427297824">
 <node TEXT=" xFile" ID="ID_778609159" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesInconsistentes" ID="ID_194444289" BACKGROUND_COLOR="#d30aa5" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_137536010" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#d30aa5" TRANSPARENCY="255" DESTINATION="ID_1268437436" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3018,7 +2886,7 @@
 </node>
 </node>
 <node TEXT="nSinFileA" FOLDED="true" ID="ID_1061547658" BACKGROUND_COLOR="#5ddcc1" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#5ddcc1" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#5ddcc1" TRANSPARENCY="255" DESTINATION="ID_356291057" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3038,7 +2906,7 @@
 </node>
 <node TEXT=" xFile" ID="ID_373670302" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="nodosSinFileA" FOLDED="true" ID="ID_356291057" BACKGROUND_COLOR="#3dbebf" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#3dbebf" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#3dbebf" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3059,8 +2927,8 @@
 <node TEXT="a)" ID="ID_361880354">
 <node TEXT=" xFile" ID="ID_989496827" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xLinkOk" FOLDED="true" ID="ID_316413262" BACKGROUND_COLOR="#7b42fc" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#7b42fc" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <arrowlink DESTINATION="ID_1375558629"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3077,8 +2945,8 @@
 </node>
 <node TEXT="xPathOk" FOLDED="true" ID="ID_1159347345" BACKGROUND_COLOR="#07f4f6" MIN_WIDTH="10 cm">
 <arrowlink DESTINATION="ID_172671060"/>
-<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_1066812066" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#07f4f6" TRANSPARENCY="255" DESTINATION="ID_344563498" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3093,8 +2961,8 @@
 <node TEXT="&apos;= xInconsistentes.findAll{filesNOK.contains(it.path)}" ID="ID_645764921"/>
 </node>
 <node TEXT="nodosSinFileB" FOLDED="true" ID="ID_344563498" BACKGROUND_COLOR="#41e97b" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#41e97b" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3114,8 +2982,8 @@
 </node>
 <node TEXT="strings" ID="ID_741812634" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="filesNOK2" FOLDED="true" ID="ID_1066812066" BACKGROUND_COLOR="#defc87" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1059454003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#defc87" TRANSPARENCY="255" DESTINATION="ID_1867993651" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3142,7 +3010,7 @@
 <node TEXT="a)" ID="ID_451238278">
 <node TEXT=" xFile" ID="ID_1458832460" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonPathOk" FOLDED="true" ID="ID_1867993651" BACKGROUND_COLOR="#c0f4b2" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#c0f4b2" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#c0f4b2" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <arrowlink DESTINATION="ID_172671060"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -3158,8 +3026,8 @@
 <node TEXT="&apos;= xClonesPendA.findAll{filesNOK2.contains(it.path)}" ID="ID_939300010"/>
 </node>
 <node TEXT="xClonLinkOk" FOLDED="true" ID="ID_1059454003" BACKGROUND_COLOR="#2fdbfe" MIN_WIDTH="10 cm">
+<arrowlink COLOR="#2fdbfe" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <arrowlink DESTINATION="ID_866457386"/>
-<arrowlink COLOR="#2fdbfe" TRANSPARENCY="255" DESTINATION="ID_709757688" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3192,7 +3060,7 @@
 <node TEXT="&apos;= MDI.chooseClone(xClonLinkOk)" ID="ID_1320148770"/>
 </node>
 <node TEXT="xClonesPendB" ID="ID_709757688" BACKGROUND_COLOR="#56aec7" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#56aec7" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#56aec7" TRANSPARENCY="255" DESTINATION="ID_577118003" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3212,7 +3080,7 @@
 </html></richcontent>
 </node>
 <node TEXT="xClonesPendC" ID="ID_577118003" BACKGROUND_COLOR="#dd6ff0" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#dd6ff0" TRANSPARENCY="255" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#dd6ff0" TRANSPARENCY="255" DESTINATION="ID_1949443174" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3239,7 +3107,7 @@
 <node TEXT="b)" ID="ID_964965837">
 <node TEXT=" xFile" ID="ID_1354083867" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="xClonesPendD" ID="ID_1949443174" BACKGROUND_COLOR="#e30db9" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#e30db9" TRANSPARENCY="255" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#e30db9" TRANSPARENCY="255" DESTINATION="ID_628350763" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3253,8 +3121,8 @@
 </html></richcontent>
 </node>
 <node TEXT="nodosSinFileC" ID="ID_628350763" BACKGROUND_COLOR="#b6dffc" MIN_WIDTH="10 cm">
-<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
-<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
+<arrowlink COLOR="#b6dffc" TRANSPARENCY="255" DESTINATION="ID_615907990" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3273,7 +3141,7 @@
 <node TEXT=" xFile" ID="ID_655494205" MAX_WIDTH="1.5 cm" MIN_WIDTH="1.5 cm">
 <node TEXT="nodosConFileEnOtraParte" FOLDED="true" ID="ID_615907990" BACKGROUND_COLOR="#abeaea" MIN_WIDTH="10 cm">
 <arrowlink DESTINATION="ID_1375558629"/>
-<arrowlink COLOR="#abeaea" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12.75 pt;"/>
+<arrowlink COLOR="#abeaea" TRANSPARENCY="255" DESTINATION="ID_728454038" STARTINCLINATION="150 pt;15 pt;" ENDINCLINATION="150 pt;-12 pt;"/>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -3860,24 +3728,24 @@
 </node>
 </node>
 <node TEXT="ImportJustFolders.groovy" ID="ID_1971460697" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/ImportJustFolders.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.987" OBJECT="org.freeplane.features.format.FormattedNumber|1987|#,##0"/>
 </node>
 <node TEXT="DistributeNewNodes.groovy" ID="ID_565866031" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/DistributeNewNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-03-23 17:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:16-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.897" OBJECT="org.freeplane.features.format.FormattedNumber|4897|#,##0"/>
 </node>
 <node TEXT="checkMissingFileNodes.groovy" ID="ID_1194216259" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/checkMissingFileNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="491" OBJECT="org.freeplane.features.format.FormattedNumber|491|#,##0"/>
 </node>
-<node TEXT="createFilesFromNotes.groovy" ID="ID_51150602" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/createFilesFromNotes.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="createFilesFromNotes.groovy" FOLDED="true" ID="ID_51150602" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/createFilesFromNotes.groovy"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -3889,7 +3757,7 @@
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="24-02-23 13:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-24T13:14-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.874" OBJECT="org.freeplane.features.format.FormattedNumber|1874|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -4061,14 +3929,14 @@
   </body>
 </html></richcontent>
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="02-02-23 18:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-02T18:10-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="779" OBJECT="org.freeplane.features.format.FormattedNumber|779|#,##0"/>
 </node>
-<node TEXT="selected node&#xa; and descendants" STYLE_REF="Organizador" FOLDED="true" ID="ID_1531851607">
+<node TEXT="selected node&#xa; and descendants" STYLE_REF="Organizador" ID="ID_1531851607">
 <node TEXT="TimeStamps" STYLE_REF="Organizador" ID="ID_1635637876">
 <node TEXT="ClearFileTimestampsInNodes.groovy" ID="ID_440439863" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/ClearFileTimestampsInNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="982" OBJECT="org.freeplane.features.format.FormattedNumber|982|#,##0"/>
@@ -4154,10 +4022,11 @@
 </html></richcontent>
 </node>
 <node TEXT="GetFileTimestamps.groovy" ID="ID_1117487438" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/GetFileTimestamps.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="22-03-23 13:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:20-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="1.226" OBJECT="org.freeplane.features.format.FormattedNumber|1226|#,##0"/>
+<attribute NAME="fileSize" VALUE="1.425" OBJECT="org.freeplane.features.format.FormattedNumber|1425|#,##0"/>
+<attribute NAME="modifiedFile" VALUE="true"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -4247,9 +4116,82 @@
     </p>
   </body>
 </html></richcontent>
+<node TEXT="clearFileTimestampsInFolderNodes" ID="ID_1517213292"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      def filter = {n -&gt; (n.link.file?true:false) &amp;&amp; n['fileSize'] &amp;&amp; n.link.file.directory}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def nodos = node.find(filter)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println &quot;nodes to clear: ${nodos.size()}&quot;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //c.select(nodos)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      nodos.eachWithIndex{n, i -&gt;
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;n['lastModifiedTime'] = null
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;n['lastAccessTime'] = null
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;n['creationTime'] = null
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;n['fileSize'] = null
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;if(i%10==0)println i
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println 'ready!'
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 <node TEXT="SortByTimestamp.groovy" ID="ID_81293279" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/SortByTimestamp.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.514" OBJECT="org.freeplane.features.format.FormattedNumber|1514|#,##0"/>
@@ -4445,7 +4387,7 @@
 </node>
 <node TEXT="clear formats" STYLE_REF="Organizador" ID="ID_1237295602">
 <node TEXT="unmarkMovedOrRenamedNodes.groovy" ID="ID_1993362688" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/unmarkMovedOrRenamedNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 12:49" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:49-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="79" OBJECT="org.freeplane.features.format.FormattedNumber|79|#,##0"/>
@@ -4480,7 +4422,7 @@
 </html></richcontent>
 </node>
 <node TEXT="unmarkNewNodes.groovy" ID="ID_545849997" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/unmarkNewNodes.groovy">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="151" OBJECT="org.freeplane.features.format.FormattedNumber|151|#,##0"/>
@@ -4510,7 +4452,7 @@
 </node>
 <node TEXT="unmarkModifiedFiles.groovy" ID="ID_639733378" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/unmarkModifiedFiles.groovy">
 <attribute NAME="lastModifiedTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="365" OBJECT="org.freeplane.features.format.FormattedNumber|365|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -4547,7 +4489,7 @@
 <node TEXT="group" STYLE_REF="Organizador" ID="ID_88598070">
 <node TEXT="groupChildnodesBy.groovy" FOLDED="true" ID="ID_1701363166" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/groupChildnodesBy.groovy">
 <attribute NAME="lastModifiedTime" VALUE="03-02-23 20:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-03T20:24-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="4.418" OBJECT="org.freeplane.features.format.FormattedNumber|4418|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -4912,7 +4854,7 @@
 </node>
 <node TEXT="ungroupChildnodes.groovy" ID="ID_873893428" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/scripts/ungroupChildnodes.groovy">
 <attribute NAME="lastModifiedTime" VALUE="11-09-20 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="251" OBJECT="org.freeplane.features.format.FormattedNumber|251|#,##0"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -4968,10 +4910,6 @@
 </node>
 <node TEXT="resources" ID="ID_306235396">
 <node TEXT="zips" ID="ID_880600127" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="icons" ID="ID_1806972330" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/icons/"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -4983,15 +4921,7 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:14-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="MapDriveInator" ID="ID_305856744" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/icons/MapDriveInator/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:14-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="UI" ID="ID_219363031">
 <attribute NAME="projectCode" VALUE="UI"/>
 <node TEXT="botonera" ID="ID_1748155414">
@@ -5014,16 +4944,8 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <attribute NAME="projectCode" VALUE="doc"/>
 <node TEXT="MapDriveInator" ID="ID_283320947" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/doc/MapDriveInator/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="v+3" STYLE_REF="milestone" ID="ID_1776645957">
 <node TEXT="add tutorial" STYLE_REF="pendingTask" ID="ID_684869210"/>
 </node>
@@ -5040,23 +4962,15 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:14-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <attribute NAME="projectCode" VALUE="templates"/>
 <node TEXT="MapDriveInator" ID="ID_1607178942" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/templates/MapDriveInator/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 16:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:15-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:14-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <node TEXT="&lt;= v0.0.9" STYLE_REF="milestone" ID="ID_1190262556">
 <node TEXT="agregar template" STYLE_REF="completedTask" ID="ID_1168481436"/>
 <node TEXT="agregar script para copiar estilos a mapa" STYLE_REF="completedTask" ID="ID_1314525875"/>
 </node>
 <node TEXT="MDI styles template.mm" ID="ID_1706841893" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/zips/templates/MapDriveInator/MDI%20styles%20template.mm">
 <attribute NAME="lastModifiedTime" VALUE="03-03-23 08:49" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T08:49-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 16:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T16:15-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="5.188" OBJECT="org.freeplane.features.format.FormattedNumber|5188|#,##0"/>
 <node TEXT="actualizar template version" ID="ID_1387527561"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -5126,10 +5040,6 @@
 </node>
 </node>
 <node TEXT="images" ID="ID_513998056" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/images/">
-<attribute NAME="lastModifiedTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:13" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:13-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 <attribute NAME="projectCode" VALUE="images"/>
 <node TEXT="v+3" STYLE_REF="milestone" ID="ID_607638780">
 <node TEXT="MapDriveInator-screenshot-1.png" STYLE_REF="pendingTask" FOLDED="true" ID="ID_331581636">
@@ -5145,11 +5055,12 @@
 </node>
 </node>
 <node TEXT="MapDriveInator.mm" FOLDED="true" ID="ID_125229745" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator.mm" BACKGROUND_COLOR="#ff6666">
-<attribute NAME="lastModifiedTime" VALUE="03-03-23 18:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:17-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="22-03-23 13:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:14-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="50.398" OBJECT="org.freeplane.features.format.FormattedNumber|50398|#,##0"/>
+<attribute NAME="fileSize" VALUE="50.533" OBJECT="org.freeplane.features.format.FormattedNumber|50533|#,##0"/>
 <attribute NAME="projectCode" VALUE="MapDriveInator.mm"/>
+<attribute NAME="modifiedFile" VALUE="true"/>
 <node TEXT="v+3" STYLE_REF="milestone" ID="ID_459679465">
 <node TEXT="incluir preferencias en Addon.mm" ID="ID_1798281696">
 <attribute NAME="projectCode" VALUE="inclu.prefe.en.Addon.mm"/>
@@ -5167,7 +5078,7 @@
 </node>
 <node TEXT="build.gradle" ID="ID_487055818" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/build.gradle">
 <attribute NAME="lastModifiedTime" VALUE="17-01-23 13:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:16-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 17:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T17:25-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:17-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="3.516" OBJECT="org.freeplane.features.format.FormattedNumber|3516|#,##0"/>
 </node>
@@ -5186,28 +5097,32 @@
   </body>
 </html></richcontent>
 <node TEXT="MapDriveInator-v0.0.13.addon.mm" ID="ID_1593427627" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.13.addon.mm">
-<attribute NAME="lastModifiedTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|datetime"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|datetime"/>
+<attribute NAME="lastModifiedTime" VALUE="03-03-23 18:46" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:46-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="03-03-23 18:46" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:46-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="27-02-23 19:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-27T19:44-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="208.372" OBJECT="org.freeplane.features.format.FormattedNumber|208372|#,##0"/>
+<attribute NAME="modifiedFile" VALUE="true"/>
 </node>
 <node TEXT="MapDriveInator.mm.bak" ID="ID_703686871" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator.mm.bak">
-<attribute NAME="lastModifiedTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="22-03-23 13:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:20-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:20" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:20-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 12:39" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:39-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="50.398" OBJECT="org.freeplane.features.format.FormattedNumber|50398|#,##0"/>
+<attribute NAME="fileSize" VALUE="50.533" OBJECT="org.freeplane.features.format.FormattedNumber|50533|#,##0"/>
+<attribute NAME="modifiedFile" VALUE="true"/>
 </node>
 <node TEXT="history.md" ID="ID_1399596341" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/history.md">
-<attribute NAME="lastModifiedTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
-<attribute NAME="fileSize" VALUE="2.776" OBJECT="org.freeplane.features.format.FormattedNumber|2776|#,##0"/>
+<attribute NAME="fileSize" VALUE="2.855" OBJECT="org.freeplane.features.format.FormattedNumber|2855|#,##0"/>
+<attribute NAME="modifiedFile" VALUE="true"/>
 </node>
 <node TEXT="version.properties" ID="ID_631139260" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/version.properties">
-<attribute NAME="lastModifiedTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:41" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:41-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastModifiedTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
+<attribute NAME="lastAccessTime" VALUE="22-03-23 13:21" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-22T13:21-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="17-01-23 13:50" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T13:50-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="269" OBJECT="org.freeplane.features.format.FormattedNumber|269|#,##0"/>
+<attribute NAME="modifiedFile" VALUE="true"/>
 </node>
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_423253710">
 <node TEXT="MapDriveInator-v0.0.12.addon.mm" ID="ID_1853120596" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/MapDriveInator/MapDriveInator-v0.0.12.addon.mm">
@@ -5284,16 +5199,8 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="30-01-23 12:55" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-30T12:55-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 12:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T12:12-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#,##0"/>
 </node>
 <node TEXT="resources" STYLE_REF="file_folder" ID="ID_1697408639" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/">
-<attribute NAME="lastModifiedTime" VALUE="17-01-23 14:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T14:25-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <node TEXT="mindmap" ID="ID_956395609">
 <node TEXT="Map-Drive-Inator.mm" ID="ID_685781911" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/Map-Drive-Inator.mm">
 <attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
@@ -5312,106 +5219,278 @@
   </body>
 </html></richcontent>
 </node>
-<node TEXT="updatesFoldersLikeMap_files" FOLDED="true" ID="ID_1565170154" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/">
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastModifiedTime" VALUE="16-01-23 12:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:17-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="8.192" OBJECT="org.freeplane.features.format.FormattedNumber|8192|#,##0"/>
+<node TEXT="updatesFoldersLikeMap_files" ID="ID_1565170154" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/">
 <node TEXT="updatesFoldersLikeMap Img 001.png" ID="ID_619234156" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20001.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="29.269" OBJECT="org.freeplane.features.format.FormattedNumber|29269|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 003.png" ID="ID_238889045" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20003.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="29.275" OBJECT="org.freeplane.features.format.FormattedNumber|29275|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 004.png" ID="ID_1536471609" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20004.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="36.179" OBJECT="org.freeplane.features.format.FormattedNumber|36179|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 005.png" ID="ID_815937043" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20005.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="44.990" OBJECT="org.freeplane.features.format.FormattedNumber|44990|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 006.png" ID="ID_642676289" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20006.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="47.863" OBJECT="org.freeplane.features.format.FormattedNumber|47863|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 007.png" ID="ID_484042396" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20007.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="15.499" OBJECT="org.freeplane.features.format.FormattedNumber|15499|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 008.png" ID="ID_1179597338" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20008.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="33.957" OBJECT="org.freeplane.features.format.FormattedNumber|33957|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 009.png" ID="ID_441978424" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20009.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="23.041" OBJECT="org.freeplane.features.format.FormattedNumber|23041|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 011.png" ID="ID_1991212190" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20011.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="47.291" OBJECT="org.freeplane.features.format.FormattedNumber|47291|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 012.png" ID="ID_1590808200" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20012.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="63.448" OBJECT="org.freeplane.features.format.FormattedNumber|63448|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 013.png" ID="ID_1659555300" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20013.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="13.467" OBJECT="org.freeplane.features.format.FormattedNumber|13467|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 014.png" ID="ID_1725660397" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20014.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="22.674" OBJECT="org.freeplane.features.format.FormattedNumber|22674|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="updatesFoldersLikeMap Img 015.png" ID="ID_1695103670" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20015.png">
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="creationTime" VALUE="23-07-20 20:36" OBJECT="org.freeplane.features.format.FormattedDate|2020-07-23T20:36-0400|datetime"/>
 <attribute NAME="fileSize" VALUE="18.797" OBJECT="org.freeplane.features.format.FormattedNumber|18797|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="groupingExample 001.png" ID="ID_607274147" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/groupingExample%20001.png">
 <attribute NAME="lastModifiedTime" VALUE="11-09-20 20:53" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:53-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-09-20 20:53" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:53-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="47.480" OBJECT="org.freeplane.features.format.FormattedNumber|47480|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="groupingExample 002.png" ID="ID_858882664" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/groupingExample%20002.png">
 <attribute NAME="lastModifiedTime" VALUE="11-09-20 20:53" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:53-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:01" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:01-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-09-20 20:53" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:53-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="54.897" OBJECT="org.freeplane.features.format.FormattedNumber|54897|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 <node TEXT="groupingExample 003.png" ID="ID_1915614281" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/resources/updatesFoldersLikeMap_files/groupingExample%20003.png">
 <attribute NAME="lastModifiedTime" VALUE="11-09-20 20:53" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:53-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="17-01-23 12:00" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-17T12:00-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="11-09-20 20:53" OBJECT="org.freeplane.features.format.FormattedDate|2020-09-11T20:53-0300|datetime"/>
 <attribute NAME="fileSize" VALUE="49.494" OBJECT="org.freeplane.features.format.FormattedNumber|49494|#,##0"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/markdown">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      =&quot;![](${node.link.uri})&quot;
+    </p>
+  </body>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -5427,10 +5506,6 @@
     </p>
   </body>
 </html></richcontent>
-<attribute NAME="lastModifiedTime" VALUE="26-02-23 14:18" OBJECT="org.freeplane.features.format.FormattedDate|2023-02-26T14:18-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="lastAccessTime" VALUE="03-03-23 18:42" OBJECT="org.freeplane.features.format.FormattedDate|2023-03-03T18:42-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="creationTime" VALUE="11-01-23 11:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-11T11:04-0300|dd-MM-yy HH:mm"/>
-<attribute NAME="fileSize" VALUE="4.096" OBJECT="org.freeplane.features.format.FormattedNumber|4096|#,##0"/>
 <node TEXT="versión sin librería" STYLE_REF="Organizador" ID="ID_218984627"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -5659,7 +5734,7 @@
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="fileSize" VALUE="1.073" OBJECT="org.freeplane.features.format.FormattedNumber|1073|#,##0"/>
 </node>
-<node TEXT="README.md" ID="ID_1314808839" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
+<node TEXT="README.md" FOLDED="true" ID="ID_1314808839" LINK="file:/E:/Users/Edo/Documents/GitHub/Freeplane_Map-Drive-Inator/README.md">
 <attribute NAME="lastModifiedTime" VALUE="06-01-22 18:15" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T18:15-0300|datetime"/>
 <attribute NAME="lastAccessTime" VALUE="16-01-23 12:19" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-16T12:19-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="creationTime" VALUE="10-01-23 15:44" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-10T15:44-0300|dd-MM-yy HH:mm"/>
@@ -5896,8 +5971,7 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="README.md anterior" POSITION="top_or_left" ID="ID_1216315313">
 <attribute NAME="lastAccessTime" VALUE="23-01-23 12:10" OBJECT="org.freeplane.features.format.FormattedDate|2023-01-23T12:10-0300|dd-MM-yy HH:mm"/>
 <attribute NAME="lastModifiedTime" VALUE="06-01-22 16:54" OBJECT="org.freeplane.features.format.FormattedDate|2022-01-06T16:54-0300|dd-MM-yy HH:mm"/>
@@ -6172,8 +6246,7 @@
       deletes the timestamps attributes in the nodes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="v+1" STYLE_REF="milestone" POSITION="top_or_left" ID="ID_913915420">
 <node TEXT="actualizar ReadMe" STYLE_REF="nextTask" ID="ID_873316181">
@@ -6271,7 +6344,308 @@ return texto?:&apos;-----\n--- No details items found! ---\n\n----\n&apos;&#xd;
 &#xd;
 </text>
 </richcontent>
-<node TEXT="Installation" ID="ID_1562080097"/>
+<node TEXT="Installing the AddOn" ID="ID_644861717">
+<node TEXT="Introducción" ID="ID_744739861"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Installing a new AddOn is very straight forward in Freeplane.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="You only need to follow these **simple steps**:" ID="ID_1909144568"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_656979838">
+<icon BUILTIN="emoji-1F522"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="text block" STYLE_REF="MarkdownHelperNode" ID="ID_1959083006"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.textBlock(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="download the addOn" ID="ID_871892169"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Download the $1 of the addOn
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="web link" STYLE_REF="MarkdownHelperNode" ID="ID_1322276093"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.webLink(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="latest release" ID="ID_387295666" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator/releases/latest"/>
+</node>
+</node>
+</node>
+<node TEXT="Open it in Freeplane" ID="ID_1070260105"/>
+<node TEXT="text block" STYLE_REF="MarkdownHelperNode" ID="ID_1780273767"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.textBlock(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="dialog" ID="ID_1657075442"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      $1<br/>$2
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="A first dialog will open." ID="ID_996269935"/>
+<node TEXT="local image" STYLE_REF="MarkdownHelperNode" ID="ID_1428711066"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>= edofro.MarkDownHelper.MDH.imageLink(node, true)</text>
+</richcontent>
+<node TEXT="= edofro.MarkDownHelper.MDH.linkedNodeText(node)" STYLE_REF="MarkdownHelperLink" ID="ID_305371940"/>
+</node>
+</node>
+</node>
+<node TEXT="Click **Yes** and follow the instructions." ID="ID_562997526"/>
+<node TEXT="Close and reopen Freeplane to complete the installation." ID="ID_1054145521"/>
+</node>
+<node TEXT="text block" STYLE_REF="MarkdownHelperNode" FOLDED="true" ID="ID_452237489"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.textBlock(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="more info" ID="ID_40855485"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      More information about Add Ons and how to install them in Freeplane can be found in the oficial $1.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="web link" STYLE_REF="MarkdownHelperNode" ID="ID_475990360"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.webLink(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Freeplane wiki: Add-ons_(install)" ID="ID_1278496374" LINK="https://www.freeplane.org/wiki/index.php/Add-ons_(install)"/>
+</node>
+</node>
+</node>
+<node TEXT="imagen dialog instalación" ID="ID_658859693">
+<icon BUILTIN="emoji-26D4"/>
+<node TEXT="local image" STYLE_REF="MarkdownHelperNode" ID="ID_531749021"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>= edofro.MarkDownHelper.MDH.imageLink(node, true)</text>
+</richcontent>
+<node TEXT="= edofro.MarkDownHelper.MDH.linkedNodeText(node)" STYLE_REF="MarkdownHelperLink" ID="ID_139714360"/>
+</node>
+</node>
+</node>
+<node TEXT="Setting your map up" FOLDED="true" ID="ID_1707274159">
+<node TEXT="The map where you want to use this AddOn needs to have two custom format styles to work properly." ID="ID_668631412"/>
+<node TEXT="Their names are:" ID="ID_78785983"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" FOLDED="true" ID="ID_1173816117"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="MarkdownHelperNode" ID="ID_670560519"/>
+<node TEXT="MarkdownHelperLink" ID="ID_1463183255"/>
+</node>
+<node TEXT="So, you need to add them to your map before using the AddOn on it." ID="ID_402932560"/>
+<node TEXT="To do that, you have different choises" ID="ID_1861901637"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" FOLDED="true" ID="ID_265135030"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="import them from a template map" ID="ID_1982474739"/>
+<node TEXT="create them manually" ID="ID_627508904"/>
+</node>
+<node TEXT="A brief explanation:" ID="ID_1612734300"/>
+<node TEXT="Using the Markdown Helper Template Map" ID="ID_744916804">
+<node TEXT="Map templates are an excellent tool to easily format your maps the way you like and to mantain a standarized outlook between them." ID="ID_585668590"/>
+<node TEXT="Since Freeplane v1.9.0 you have the possibilty to import formats from multiple template maps and assign template maps to be followed. This way you define any change in you base template and all your maps will follow these changes." ID="ID_1646153376"/>
+<node TEXT="getting the styles" FOLDED="true" ID="ID_143330569">
+<node TEXT="**This AddOn has its own template map that you can find in the user templates folder.**" ID="ID_60919418"/>
+<node TEXT="To add the custom format styles needed for the AddOn to work in your map you have to **follow these steps**" ID="ID_1423541364"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" FOLDED="true" ID="ID_1683859539">
+<icon BUILTIN="emoji-1F522"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="open the map you want to work with" ID="ID_1445176730"/>
+<node TEXT="use the menu command:&#xa;Format / Manage styles / Copy map styles from ..." ID="ID_459547460"/>
+<node TEXT="the &quot;open&quot; dialog appears" ID="ID_1601770243"/>
+<node TEXT="text block" STYLE_REF="MarkdownHelperNode" FOLDED="true" ID="ID_1662022324"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.textBlock(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="dialog" FOLDED="true" ID="ID_1109029824"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      $1<br/>$2
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Select in &quot;Files of type&quot; the option &quot;User templates&quot;" ID="ID_1565634634"/>
+<node TEXT="local image" STYLE_REF="MarkdownHelperNode" FOLDED="true" ID="ID_449135723"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/">
+    <text>= edofro.MarkDownHelper.MDH.imageLink(node, true)</text>
+</richcontent>
+<node TEXT="= edofro.MarkDownHelper.MDH.linkedNodeText(node)" STYLE_REF="MarkdownHelperLink" ID="ID_1016931156"/>
+</node>
+</node>
+</node>
+<node TEXT="Select the Markdown Helper template map in the MarkdownHelper folder and open it." ID="ID_1459797305"/>
+</node>
+<node TEXT="Now your map have these two new formats adn your ready to go!" ID="ID_1902300328"/>
+</node>
+<node TEXT="some additional information:" FOLDED="true" ID="ID_666979441">
+<node TEXT="Your map took also the standard formats from the template. If you don&apos;t like them you can copy the formats from your own template and the styles will change again, but the custom Styles needed for this AddOn will remain." ID="ID_1356228800"/>
+<node TEXT="I recomend you to make your own templates and that they have all the custom styles you need." ID="ID_187245966"/>
+<node TEXT="I also recomend you to make a copy of the Markdown Helper template map and modify the styles the way you like them, so you can use this map as your template when using the addon." ID="ID_1818193477"/>
+<node TEXT="Do not use the original template map to customize the styles, because every time the AddOn get updated your customization will beet lost. Not a big deal, but certainly anoying." ID="ID_1770403671"/>
+</node>
+</node>
+<node TEXT="Creating custom Styles manually" ID="ID_63543856">
+<node TEXT="The other way is to create the two styles manually." ID="ID_677106435"/>
+<node TEXT="This may be a better option if you have already created a lot of custom styles or customized the standard styles in the map and you don&apos;t have a copy of these styles in a template." ID="ID_1306609147"/>
+<node TEXT="I recomend you to create a template and learn how to use them. They are very useful. But in the meantime you can do this:" ID="ID_1047139929"/>
+<node TEXT="Option A: Create style from selection" FOLDED="true" ID="ID_840757132">
+<node TEXT="This is the simpliest way to crate a new style:" ID="ID_1837337524"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" FOLDED="true" ID="ID_428931688"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Add a new node" ID="ID_554662266"/>
+<node TEXT="Change some format options to the node&#xa;For example:" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1311028321">
+<node TEXT="Node background color" ID="ID_903721436"/>
+<node TEXT="Node Text color" ID="ID_450634557"/>
+<node TEXT="Node shape" ID="ID_507038101"/>
+<node TEXT="Add some icon" ID="ID_760549703"/>
+</node>
+<node TEXT="Select the node" ID="ID_689142142" BACKGROUND_COLOR="#ffff00">
+<icon BUILTIN="emoji-1F522"/>
+</node>
+<node TEXT="Apply menu command:&#xa;**Format / Manage Styles / new style from selection**" ID="ID_201316378"/>
+<node TEXT="Enter **MarkdownHelperNode** as new style&apos;s name&#xa;(*)" ID="ID_204742587"/>
+<node TEXT="Repeat all again to create the **MarkdownHelperLink** (*) custom style" ID="ID_1493926816"/>
+</node>
+<node TEXT="(*) The names must be written the same as shown here, including upper and lower cases." ID="ID_1605110754"/>
+</node>
+<node TEXT="Option B: Edit Styles..." FOLDED="true" ID="ID_459188221">
+<node TEXT="You can create the styles (or modify them) in the &quot;Edit Styles ...&quot; map" ID="ID_1422022844"/>
+<node TEXT="It is very similar as the previous procedure: The difference is that you name the style first, when creating the node, and then you do the changes to the node." ID="ID_518535424"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" FOLDED="true" ID="ID_918264972"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.list(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="use menu command&#xa;**Format / Manage Styles / Edit Styles...**" ID="ID_1183069511"/>
+<node TEXT="the styles map opens" ID="ID_1820299688"/>
+<node TEXT="Select a node with a Style to use as starting format" FOLDED="true" ID="ID_630016270">
+<node TEXT="for example Details or Attributes" ID="ID_870639508"/>
+</node>
+<node TEXT="Right click on it and aselect &quot;new style from selection&quot; option" ID="ID_1576978983"/>
+<node ID="ID_1391994300" TREE_ID="ID_204742587"/>
+<node TEXT="change the format of the new node the way you like" ID="ID_545165341"/>
+<node ID="ID_1318283993" TREE_ID="ID_1493926816"/>
+<node TEXT="close the editor by clicking the green check icon or by pressing Ctrl + Enter" ID="ID_1489969625"/>
+</node>
+</node>
+</node>
+</node>
 <node TEXT="First use" ID="ID_1398413776"/>
 <node TEXT="Basic concepts" ID="ID_1042916142"/>
 </node>
@@ -6447,8 +6821,74 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 </node>
 </node>
+<node TEXT="About Freeplane" ID="ID_1151383315">
+<node TEXT="text block" STYLE_REF="MarkdownHelperNode" ID="ID_924468549"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.textBlock(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="about Freeplane" ID="ID_517807401"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      $1 is a free and open source software application that supports thinking, sharing information and getting things done at work, in school and at home. The software can be used for $2 and analyzing the information contained in mind maps. Freeplane runs on any operating system that has a current version of Java installed. It can be run locally or $3&nbsp;from removable storage like an USB drive.
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="web link" STYLE_REF="MarkdownHelperNode" ID="ID_735073256"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.webLink(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Freeplane" ID="ID_1884331663" LINK="https://www.freeplane.org/wiki/index.php/Home"/>
+</node>
+<node TEXT="web link" STYLE_REF="MarkdownHelperNode" ID="ID_172778365"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.webLink(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="mind mapping" ID="ID_749522998" LINK="https://secure.wikimedia.org/wikipedia/en/wiki/Mind_map"/>
+</node>
+<node TEXT="web link" STYLE_REF="MarkdownHelperNode" ID="ID_51429832"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      = edofro.MarkDownHelper.MDH.webLink(node)
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="portably" ID="ID_785390742" LINK="https://en.wikipedia.org/wiki/Portable_application"/>
 </node>
 </node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="readme resources" STYLE_REF="file_folder" POSITION="bottom_or_right" ID="ID_1948482412"/>
 </node>
 <node TEXT="v+3" STYLE_REF="milestone" ID="ID_1860096710">
 <node TEXT="create a wiki" STYLE_REF="pendingTask" ID="ID_1743612644"/>
@@ -6462,7 +6902,7 @@ deletes the timestamps attributes in the nodes</text>
 </node>
 <node TEXT="versión instalada en AddOns" STYLE_REF="locked" ID="ID_145121050"/>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_31519401">
-<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleNumber&amp;#x7c;2|number:decimal:#0.####"/>
+<attribute NAME="log_MDI" VALUE="org.freeplane.plugin.script.proxy.ConvertibleNumber|2" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.freeplane.plugin.script.proxy.ConvertibleNumber&amp;#x7c;2|number:decimal:#0.####"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
@@ -6527,8 +6967,7 @@ deletes the timestamps attributes in the nodes</text>
       No failed operation in drive
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="v+0" STYLE_REF="milestone" ID="ID_1144738879">
 <node TEXT="translate all pending tasks to english" STYLE_REF="pendingTask" ID="ID_1964375859"/>

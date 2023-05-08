@@ -1,4 +1,4 @@
-<map version="freeplane 1.9.8">
+<map version="freeplane 1.11.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <attribute_registry SHOW_ATTRIBUTES="selected"/>
 <node TEXT="Example MAP" FOLDED="false" ID="ID_819943156" CREATED="1590784750245" MODIFIED="1597275276457">
@@ -21,12 +21,12 @@
             </script_condition>
         </conditional_style>
     </conditional_styles>
-    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="false" mapUsesOwnSaveOptions="true" save_folding="default" save_last_visited_node="default" save_modification_times="false"/>
+    <properties show_icon_for_attributes="true" mapUsesOwnSaveOptions="true" show_notes_in_map="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" save_folding="default" fit_to_viewport="false;"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
 <font SIZE="24"/>
-<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_1312186908" MAX_WIDTH="300 px" COLOR="#000000" BACKGROUND_COLOR="#ffffff" STYLE="as_parent">
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1312186908" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Gisha" SIZE="10" BOLD="false" ITALIC="false"/>
@@ -45,7 +45,7 @@
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.selection" BACKGROUND_COLOR="#ff9900" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#cc6600"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="styles.topic" COLOR="#18898b" STYLE="fork">
 <font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
 </stylenode>
@@ -94,7 +94,7 @@
 <font ITALIC="true"/>
 </stylenode>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000">
 <font SIZE="18"/>
 </stylenode>
@@ -111,7 +111,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Map-Drive-Inator" POSITION="right" ID="ID_1488840535" CREATED="1589833899017" MODIFIED="1598135166130" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
+<node TEXT="Map-Drive-Inator" POSITION="bottom_or_right" ID="ID_1488840535" CREATED="1589833899017" MODIFIED="1598135166130" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
 <node TEXT="UNDER CONSTUCTION" ID="ID_1021111333" CREATED="1597347715234" MODIFIED="1597347780404" BACKGROUND_COLOR="#ffff00">
 <icon BUILTIN="pencil"/>
@@ -319,8 +319,8 @@
 <icon BUILTIN="pencil"/>
 </node>
 </node>
-<node TEXT="organizing it" STYLE_REF="Organizador" FOLDED="true" ID="ID_1011171624" CREATED="1590792542264" MODIFIED="1590792589833">
-<node TEXT="creating new folders" ID="ID_958877563" CREATED="1590794551926" MODIFIED="1590807536831"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="organizing it" STYLE_REF="Organizador" ID="ID_1011171624" CREATED="1590792542264" MODIFIED="1590792589833">
+<node TEXT="creating new folders" ID="ID_958877563" CREATED="1590794551926" MODIFIED="1679342134142"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -354,10 +354,10 @@
   </body>
 </html></richcontent>
 </node>
-<node TEXT="assign &apos;file_folder&apos; style 1" ID="ID_1270988197" CREATED="1590807331427" MODIFIED="1597275128001" TEXT_SHORTENED="true">
+<node TEXT="assign &apos;file_folder&apos; style 1" ID="ID_1270988197" CREATED="1590807331427" MODIFIED="1679342178015">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20012.png" SIZE="0.9433962" NAME="ExternalObject"/>
 </node>
-<node TEXT="assign &apos;file_folder&apos; style 3" ID="ID_1814807565" CREATED="1590807331481" MODIFIED="1597275131942" TEXT_SHORTENED="true">
+<node TEXT="assign &apos;file_folder&apos; style 3" ID="ID_1814807565" CREATED="1590807331481" MODIFIED="1679342139651" TEXT_SHORTENED="true">
 <hook URI="updatesFoldersLikeMap_files/updatesFoldersLikeMap%20Img%20011.png" SIZE="0.7444169" NAME="ExternalObject"/>
 </node>
 </node>
@@ -458,7 +458,7 @@
 </html></richcontent>
 </node>
 </node>
-<node TEXT="add new Styles" STYLE_REF="Organizador" ID="ID_1687318378" CREATED="1592838662490" MODIFIED="1597274889477"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
+<node TEXT="add new Styles" STYLE_REF="Organizador" FOLDED="true" ID="ID_1687318378" CREATED="1592838662490" MODIFIED="1597274889477"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
     
@@ -469,7 +469,7 @@
     </p>
   </body>
 </html></richcontent>
-<node TEXT="for each new Style:" STYLE_REF="Organizador" FOLDED="true" ID="ID_1129119163" CREATED="1592841393949" MODIFIED="1597274555413">
+<node TEXT="for each new Style:" STYLE_REF="Organizador" ID="ID_1129119163" CREATED="1592841393949" MODIFIED="1597274555413">
 <node TEXT="select the muster node" ID="ID_587062624" CREATED="1592839717618" MODIFIED="1597274588878" NUMBERED="true">
 <node TEXT="BotonMenu" ID="ID_416745702" CREATED="1592084803981" MODIFIED="1592842172343" ICON_SIZE="24 pt" COLOR="#b2dfff" BACKGROUND_COLOR="#3f657f" STYLE="bubble" BORDER_WIDTH="3 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#0097ff"><richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
@@ -649,7 +649,7 @@
 </html></richcontent>
 </node>
 </node>
-<node TEXT="Actions:" STYLE_REF="Organizador" ID="ID_1321530167" CREATED="1590503364731" MODIFIED="1597274086662" NUMBERED="true">
+<node TEXT="Actions:" STYLE_REF="Organizador" FOLDED="true" ID="ID_1321530167" CREATED="1590503364731" MODIFIED="1597274086662" NUMBERED="true">
 <node TEXT="Create BaseFolder Node" ID="ID_1941122703" CREATED="1598135040614" MODIFIED="1598135093458" LINK="menuitem:_CreateBaseFolderNode_on_single_node"/>
 <node TEXT="Import Just Folders" ID="ID_301694900" CREATED="1597423437025" MODIFIED="1597423471054" LINK="menuitem:_ImportJustFolders_on_single_node"/>
 <node TEXT="MAP-DRIVE-INATOR" ID="ID_1022693340" CREATED="1594333825266" MODIFIED="1598135242403" LINK="menuitem:_Map-Drive-Inator_on_single_node" BACKGROUND_COLOR="#ab2b59"/>
@@ -680,7 +680,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Features" FOLDED="true" POSITION="right" ID="ID_1933019455" CREATED="1597336293381" MODIFIED="1597336813997" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
+<node TEXT="Features" POSITION="bottom_or_right" ID="ID_1933019455" CREATED="1597336293381" MODIFIED="1597336813997" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
 <node TEXT="basic" STYLE_REF="Organizador" FOLDED="true" ID="ID_916161454" CREATED="1597337606934" MODIFIED="1597452217797">
 <node TEXT="video 1" ID="ID_1939874482" CREATED="1597346952852" MODIFIED="1597346956474">
@@ -795,7 +795,7 @@
 <node TEXT="deletes the timestamps attributes in the nodes" ID="ID_7364982" CREATED="1597447535859" MODIFIED="1597447557117"/>
 </node>
 </node>
-<node TEXT="added" STYLE_REF="Organizador" FOLDED="true" ID="ID_1278170436" CREATED="1598135273450" MODIFIED="1598135277623">
+<node TEXT="added" STYLE_REF="Organizador" ID="ID_1278170436" CREATED="1598135273450" MODIFIED="1598135277623">
 <node TEXT="maxDepth" ID="ID_556445443" CREATED="1598135365162" MODIFIED="1598135370166" BACKGROUND_COLOR="#99ccff" NUMBERED="true">
 <node TEXT=" The maximum number of directory levels when recursing" ID="ID_909377810" CREATED="1598135353428" MODIFIED="1598135510150"/>
 <node TEXT="(default is -1 which means infinite, set to 0 for no recursion)" ID="ID_189095763" CREATED="1598135353431" MODIFIED="1598135505564"/>
@@ -890,7 +890,7 @@
 </node>
 </node>
 </node>
-<node TEXT="group" STYLE_REF="Organizador" FOLDED="true" ID="ID_1964736207" CREATED="1599866502920" MODIFIED="1599866507432">
+<node TEXT="group" STYLE_REF="Organizador" ID="ID_1964736207" CREATED="1599866502920" MODIFIED="1599866507432">
 <node TEXT="example images" FOLDED="true" ID="ID_1231725632" CREATED="1599868623207" MODIFIED="1599868839439">
 <cloud COLOR="#999999" SHAPE="ROUND_RECT"/>
 <node TEXT="before:" ID="ID_1548039148" CREATED="1599868596556" MODIFIED="1599868751362">
@@ -1092,44 +1092,11 @@
 </node>
 </node>
 </node>
-<node TEXT="Example:" POSITION="right" ID="ID_1316259066" CREATED="1597276969516" MODIFIED="1597276975690" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
+<node TEXT="Example:" FOLDED="true" POSITION="bottom_or_right" ID="ID_1316259066" CREATED="1597276969516" MODIFIED="1597276975690" COLOR="#3333ff" BACKGROUND_COLOR="#bbbbff">
 <font SIZE="14" BOLD="true"/>
 <node TEXT="look at this videos" ID="ID_525825074" CREATED="1597451868466" MODIFIED="1597451880593">
 <node TEXT="lo básico" ID="ID_1650411941" CREATED="1597346968785" MODIFIED="1597346975184" LINK="https://youtu.be/2vwd38rxAlY"/>
 <node TEXT="el resto" ID="ID_1146532349" CREATED="1597347167450" MODIFIED="1597347175477" LINK="https://youtu.be/bd30aySucc4"/>
-</node>
-<node TEXT="test for linux" STYLE_REF="baseFolder" ID="ID_1927449788" CREATED="1607169700294" MODIFIED="1607177934665" LINK="file:/C:/Temp/testFolder/">
-<icon BUILTIN="bookmarks/Bookmark 1"/>
-<attribute NAME="maxDepth" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      null
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;-- maxDepth:
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The maximum number of directory levels when recursing&nbsp;
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(default is -1 which means infinite, set to 0 for no recursion)
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;
-    </p>
-  </body>
-</html></richcontent>
 </node>
 </node>
 </node>

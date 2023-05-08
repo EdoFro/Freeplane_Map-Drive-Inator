@@ -16,7 +16,7 @@
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.13"/>
+<attribute NAME="version" VALUE="v0.0.14"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -267,6 +267,9 @@
 <node TEXT="Now newImportsNode &apos;s note can show different levels of logging:&#xa;  - (0) no log at all&#xa;  - (1) Legacy message&#xa;  - (2) + Failed actions in drive (default)&#xa;  - (3) + Moved/renamed files in drive&#xa;  - (4) + Changes made to mindMap&#xa;  - (5) + MDI debug info&#xa;  - (6) + Elapsed times&#xa;  - (7) + Lists calculated to MD-inate" ID="ID_1752132670"/>
 <node TEXT="Correction: MDI doesn&apos;t mark already marked nodes to not raise false &apos;node changed&apos; events in Freeplane" ID="ID_835803694"/>
 <node TEXT="Better information about new created folders" ID="ID_678080904"/>
+</node>
+<node TEXT="v0.0.14" ID="ID_1677532639">
+<node TEXT="timeStamps are not longer added to folder nodes" ID="ID_154572768"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">

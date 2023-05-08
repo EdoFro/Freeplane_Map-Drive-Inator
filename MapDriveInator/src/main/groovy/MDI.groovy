@@ -31,8 +31,9 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
-    private static final String version               = 'v0.0.13'
-    private static final String minTemplateVersion    = 'v0.0.13'
+    private static final String version               = 'v0.0.14'
+    private static final String minTemplateVersion    = 'v0.0.13' // this should only be updated if the template map is modified. If so, then both versions should get the same version as MDI add-on
+   
     
     private static final String MapTemplateVersionStorage   = 'MDI_template'
     private static final String MapMdiVersionStorage   = 'MDI_version'

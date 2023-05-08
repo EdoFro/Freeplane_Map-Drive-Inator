@@ -8,7 +8,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 def nodo = node
 
 nodo.find{MDI.isLinkToFileOrFolder(it)}.each{n ->
-    if (n.link.file.exists()){
+    if (n.link.file.exists() && !n.link.file.directory){    // I decided not to add timestamps to folders. It makes filtering more difficult
         Path                file    =   Paths.get(n.link.file.getAbsolutePath())
         BasicFileAttributes attr    =   Files.readAttributes(file, BasicFileAttributes.class);
 
@@ -22,7 +22,7 @@ nodo.find{MDI.isLinkToFileOrFolder(it)}.each{n ->
 
         n['modifiedFile'] = n['lastModifiedTime']!=previousModifiedTime?true:null
     } else {
-        MDI.markAsBroken(n,true,false)
+        // MDI.markAsBroken(n,true,false) // it doesn't consider if branches are 'locked' -> it shouldn't mark them as 'broken'
     }
 }
 

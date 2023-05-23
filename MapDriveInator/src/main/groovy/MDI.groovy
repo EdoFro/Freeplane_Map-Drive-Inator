@@ -639,9 +639,10 @@ This option allowes four types of inputs:
 
 -----------------------------------------------------
 """
-            n.note ?= ''
-            // n.note += baseFolderNote
-            n.note += texto
+            n.note = (n.note ?: '') + texto
+            // n.note ?= ''
+            // // n.note += baseFolderNote
+            // n.note += texto
             // UITools.informationMessage(texto)
             def resp = UITools.showInputDialog(n.delegate, texto, defaultNameFilter)
             n[attrFilter] = (resp == null)? defaultNameFilter :resp

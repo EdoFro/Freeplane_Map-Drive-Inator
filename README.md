@@ -1,10 +1,19 @@
 # Freeplane_Map-Drive-Inator
 
- A groovy script to coordinate the disk's folder structure with the nodes structure in the mind map (back and forth)
+ A Freeplane's Add-on to coordinate the disk's folder structure with the nodes structure in the mind map (back and forth)
+ 
+ ----
+ 
+## Quick Starting Guide
+
+ Look at [this discussion thread](https://github.com/EdoFro/Freeplane_Map-Drive-Inator/discussions/39) to see an example how it can be used.
+ 
+ All comments are welcommed: they help me improving the documentation.
+ 
+----
 
 ## Features
 
-____
 
 ### basic
 

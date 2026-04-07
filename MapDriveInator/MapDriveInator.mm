@@ -1,4 +1,4 @@
-<map version="freeplane 1.11.1">
+<map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <attribute_registry>
     <attribute_name VISIBLE="true" NAME="addonsMenu"/>
@@ -14,9 +14,9 @@
     <attribute_name VISIBLE="true" NAME="version"/>
 </attribute_registry>
 <node TEXT="MapDriveInator" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_696401721" LINK="https://github.com/EdoFro/Freeplane_Map-Drive-Inator">
-<attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
+<attribute_layout NAME_WIDTH="104.25 pt" VALUE_WIDTH="233.24999 pt"/>
 <attribute NAME="name" VALUE="mapDriveInator"/>
-<attribute NAME="version" VALUE="v0.0.14"/>
+<attribute NAME="version" VALUE="v0.0.15"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.0"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -24,7 +24,7 @@
 <attribute NAME="addonsMenu" VALUE="/menu_bar/edoTools"/>
 <attribute NAME="downloadUrl" VALUE="${homepage}/releases/download/${version}/"/>
 <attribute NAME="changelogUrl" VALUE="${homepage}/releases/latest/download/history.md"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -109,7 +109,7 @@
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;0 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="11" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
-<richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
+<richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details" ID="ID_861824498" COLOR="#006666" BACKGROUND_COLOR="#a5cece" BACKGROUND_ALPHA="204" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true">
@@ -176,7 +176,7 @@
 </hook>
 <node TEXT="description" FOLDED="true" POSITION="top_or_left" ID="ID_256586764">
 <edge COLOR="#ff0000"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -198,7 +198,7 @@
 </node>
 <node TEXT="changes" POSITION="top_or_left" ID="ID_1078107435">
 <edge COLOR="#0000ff"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -270,11 +270,16 @@
 </node>
 <node TEXT="v0.0.14" ID="ID_1677532639">
 <node TEXT="timeStamps are not longer added to folder nodes" ID="ID_154572768"/>
+<node TEXT="&apos;Import just folders&apos; now asks allways how many levels do you want to import" ID="ID_496136310"/>
+</node>
+<node TEXT="v0.0.15" ID="ID_973467121">
+<node TEXT="WIP" ID="ID_1918043435"/>
+<node TEXT="better grouping script" ID="ID_273164773"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1028448710">
 <edge COLOR="#00ff00"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -296,20 +301,20 @@
 </node>
 <node TEXT="preferences.xml" POSITION="top_or_left" ID="ID_720156944">
 <edge COLOR="#ff00ff"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
   </head>
   <body>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </span>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">&#xa0;</font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;</span>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </span>
     </p>
     <p>
       
@@ -322,13 +327,13 @@
     </p>
     <ul>
       <li>
-        create the child node containing <font color="#000000" face="SansSerif, sans-serif">the add-on configuration as an extension to mindmapmodemenu.xml</font>
+        create the child node containing <span style="color: #000000; font-family: SansSerif, sans-serif;">the add-on configuration as an extension to mindmapmodemenu.xml</span>
       </li>
       <li>
-        add the properties to the <font color="#000000" face="SansSerif, sans-serif"><i>default.properties</i>&#xa0;node</font>
+        add the properties to the <i><span style="color: #000000; font-family: SansSerif, sans-serif;">default.properties</span></i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span>
       </li>
       <li>
-        add the properties to the <i>translations</i><font color="#000000" face="SansSerif, sans-serif">&#xa0;node</font>
+        add the properties to the <i>translations</i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span>
       </li>
     </ul>
     <p>
@@ -407,7 +412,7 @@
 </node>
 <node TEXT="default.properties" POSITION="top_or_left" ID="ID_536060528">
 <edge COLOR="#00ffff"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -431,7 +436,7 @@
 </node>
 <node TEXT="translations" POSITION="top_or_left" ID="ID_137723580">
 <edge COLOR="#7c0000"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -464,7 +469,7 @@
 </html>
 </richcontent>
 <node TEXT="en" ID="ID_1122736476">
-<attribute_layout NAME_WIDTH="196.49999 pt" VALUE_WIDTH="140.25 pt"/>
+<attribute_layout NAME_WIDTH="200.99999 pt" VALUE_WIDTH="144.75 pt"/>
 <attribute NAME="addons.${name}" VALUE="MapDriveInator"/>
 <attribute NAME="addons.${name}.checkMissingFileNodes" VALUE="Check missing file nodes"/>
 <attribute NAME="addons.${name}.ClearFileTimestampsInNodes" VALUE="Clear file timestamps in nodes"/>
@@ -486,7 +491,7 @@
 </node>
 <node TEXT="deinstall" POSITION="top_or_left" ID="ID_982526317">
 <edge COLOR="#00007c"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -521,7 +526,7 @@
 </node>
 <node TEXT="scripts" FOLDED="true" POSITION="bottom_or_right" ID="ID_428424239">
 <edge COLOR="#007c00"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -833,7 +838,7 @@
 </node>
 <node TEXT="lib" POSITION="bottom_or_right" ID="ID_444808778">
 <edge COLOR="#7c007c"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -873,7 +878,7 @@
 </node>
 <node TEXT="zips" POSITION="bottom_or_right" ID="ID_26433714">
 <edge COLOR="#007c7c"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -915,7 +920,7 @@
 </node>
 <node TEXT="images" POSITION="bottom_or_right" ID="ID_1104880555">
 <edge COLOR="#7c7c00"/>
-<richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -948,7 +953,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="actions" POSITION="bottom_or_right" ID="ID_1052924007"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="actions" POSITION="bottom_or_right" ID="ID_1052924007"><richcontent TYPE="NOTE">
 <html>
   <head>
     

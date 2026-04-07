@@ -10,6 +10,7 @@ import org.freeplane.core.util.FreeplaneVersion
 
 class MDI{
     //nodes attributes
+    //region ---------------------- constants definition
     private static final String attrLog             = 'log_MDI'
     private static final String attrMarkWhenMoved   = 'markWhenMoved'
     private static final String attrNameFilter      = 'nameFilter'
@@ -31,30 +32,34 @@ class MDI{
 
     private static final int LINK_ABSOLUTE            = 0
     private static final int LINK_RELATIVE_TO_MINDMAP = 1
-    private static final String version               = 'v0.0.14'
+    private static final String version               = 'v0.0.15'
     private static final String minTemplateVersion    = 'v0.0.13' // this should only be updated if the template map is modified. If so, then both versions should get the same version as MDI add-on
    
     
     private static final String MapTemplateVersionStorage   = 'MDI_template'
     private static final String MapMdiVersionStorage   = 'MDI_version'
-    
+    //endregion
+
+    // region ---------------------- initializing static vars
     private static ConfigProperties config = new ConfigProperties()
     private static Timer timer = new Timer()
     private static logger = LogUtils.getLogger()
-    
+
+    //endregion
+
     // def static getVersion(){
         // return version
     // }
-    //region: ---------------------- Functions MDI versions
+    //region ---------------------- Functions MDI versions
     def static mapHasMinTemplate(mapa){
         def templateVersion = (mapa.storage[MDI.MapTemplateVersionStorage]?:'v0.0.0').toString()
         return !FreeplaneVersion.getVersion(templateVersion).isOlderThan(FreeplaneVersion.getVersion(MDI.minTemplateVersion))
 
     }
 
-    //end:
+    //endregion
     
-    //region: ---------------------- Functions Initial Setup
+    //region ---------------------- Functions Initial Setup
     
     
     // function, returns Node ("Base folder") under the selected node
@@ -107,9 +112,9 @@ class MDI{
         }
         return n[attrLog].to.num
     }
-    //end:
+    //endregion
 
-    //region: ---------------------- Updating Folders In Drive And Map
+    //region ---------------------- Updating Folders In Drive And Map
     // loops all the folders and update them
     def static updateFolders(xfiles, int linkType = LINK_ABSOLUTE){
         def foldersToDelete =[]
@@ -261,9 +266,9 @@ class MDI{
         }
     }
     
-    //end:
+    //endregion
     
-    //region: ---------------------- nodes marks
+    //region ---------------------- nodes marks
     
     def static isLocked(n){
         return n.hasStyle(styleLocked)
@@ -321,9 +326,9 @@ class MDI{
         }
     }
     
-    //end:
+    //endregion
 
-    //region: ---------------------- getting Information from nodes
+    //region ---------------------- getting Information from nodes
     def static N(id){
         return ScriptUtils.node().map.node(id as String)
     }
@@ -418,9 +423,9 @@ class MDI{
         def path = getPathFromLink4(n)
         return path? new File(path) : null
     }
-    //end:
+    //endregion
 
-    //region: ---------------------- Funciones Strings
+    //region ---------------------- Funciones Strings
     def static getPathFromStrings(folderPath,fileName){
         //folderPath.toString() + fileName.toString()
         folderPath + fileName
@@ -450,9 +455,9 @@ class MDI{
         return t.toString()
     }
     
-    //end:
+    //endregion
 
-    //region: ---------------------- Modifying Nodes
+    //region ---------------------- Modifying Nodes
     //adds a [link to a file] to the node
     def static setLink(n, addr, int linkType = LINK_ABSOLUTE){
         //  UITools.informationMessage(addr.toString())
@@ -488,9 +493,9 @@ class MDI{
         return i
     }
     
-    //end:
+    //endregion
 
-    //region: ---------------------- Mannaging Files in Drive
+    //region ---------------------- Mannaging Files in Drive
     // create all folders of a path (if they doesn't exist)
     def static createPath(String p) {
         //ui.informationMessage('createPath ' + p)
@@ -516,9 +521,9 @@ class MDI{
         dir.exists() && dir.directory && (dir.list() as List).empty
     }
 
-    //end:
+    //endregion
 
-    //region: ---------------------- Choosing Clone With 'Better' Path
+    //region ---------------------- Choosing Clone With 'Better' Path
     def static chooseClone(xFi){
         def xFc = xFi.clone()
         // ui.informationMessage(xFc as String)
@@ -552,9 +557,9 @@ class MDI{
         // ui.informationMessage(chosenOnes as String)
         return chosenOnes
     }
-    //end:
+    //endregion
 
-    //region: ---------------------- Similarity 
+    //region ---------------------- Similarity 
     private static double similarity(String s1, String s2) {
         if (s1.length() < s2.length()) { // s1 should always be bigger
             String swap = s1; s1 = s2; s2 = swap;
@@ -590,9 +595,9 @@ class MDI{
         }
         return costs[s2.length()];
     }
-    //end:
+    //endregion
     
-    //region: ---------------------- Getting files info from drive
+    //region ---------------------- Getting files info from drive
     
     def static listFilesFromDrive(rootNode){
         def rootPath = getPathFromLink(rootNode)
@@ -780,9 +785,9 @@ links for files and folders.
         normalizeNode(n.mindMap.file, n, linkType)
         return linkType
     }   
-    //end:
+    //endregion
     
-    //region: ---------------------- User Interface
+    //region ---------------------- User Interface
     def static statusInfo(t, icon = statusInfoIcon){
         ScriptUtils.c().setStatusInfo('MDI',  "MDI: ${t}".toString() , icon)
         logger.info("MDI: ${t}".toString())
@@ -790,5 +795,5 @@ links for files and folders.
             ScriptUtils.c().setStatusInfo('MDI', '')
         }
     }
-    //end:
+    //endregion
 }

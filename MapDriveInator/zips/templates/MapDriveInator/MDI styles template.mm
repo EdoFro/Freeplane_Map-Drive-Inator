@@ -1,6 +1,6 @@
-<map version="freeplane 1.11.1">
+<map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="New Mindmap" FOLDED="false" ID="ID_696401721" CREATED="1610381621824" MODIFIED="1675690152302" STYLE="oval">
+<node TEXT="New Mindmap" FOLDED="false" ID="ID_696401721" CREATED="1701876342109" MODIFIED="1701876826261" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle" zoom="1.008">
     <conditional_styles>
@@ -12,19 +12,31 @@
         <conditional_style ACTIVE="true" STYLE_REF="modifiedFile" LAST="false">
             <attribute_contains_condition ATTRIBUTE="modifiedFile" VALUE="true"/>
         </conditional_style>
+        <conditional_style ACTIVE="true" STYLE_REF="MDI_mindMap" LAST="false">
+            <attribute_compare_condition VALUE="true" ATTRIBUTE="isMdiMap" COMPARATION_RESULT="0" SUCCEED="true"/>
+        </conditional_style>
+        <conditional_style ACTIVE="true" STYLE_REF="MoM_mindMap" LAST="false">
+            <attribute_contains_condition ATTRIBUTE="hasMomNodes" VALUE="true"/>
+        </conditional_style>
+        <conditional_style ACTIVE="true" STYLE_REF="mindMapWithGroovyScripts" LAST="false">
+            <attribute_contains_condition ATTRIBUTE="hasGroovyScripts" VALUE="true"/>
+        </conditional_style>
+        <conditional_style ACTIVE="true" STYLE_REF="mindMapWithLinksToGroovyFiles" LAST="false">
+            <attribute_contains_condition ATTRIBUTE="hasLinksToGroovyFiles" VALUE="true"/>
+        </conditional_style>
     </conditional_styles>
-    <properties show_icon_for_attributes="true" show_notes_in_map="false" show_note_icons="true" fit_to_viewport="false;" MDI_template="v0.0.13"/>
+    <properties show_icon_for_attributes="true" show_notes_in_map="false" show_note_icons="true" MDI_template="v0.0.13" fit_to_viewport="false;"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_1625586047" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
-<stylenode LOCALIZED_TEXT="default" ID="ID_168525555" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" MAX_WIDTH="300 px" MIN_WIDTH="0 cm" COLOR="#000000" BACKGROUND_COLOR="#ffffff" STYLE="as_parent" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" CHILD_NODES_LAYOUT="AUTO" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1 px" BORDER_COLOR_LIKE_EDGE="true" BORDER_COLOR="#808080" BORDER_DASH_LIKE_EDGE="false" BORDER_DASH="SOLID">
+<stylenode LOCALIZED_TEXT="default" ID="ID_168525555" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" MAX_WIDTH="300 px" MIN_WIDTH="0 cm" COLOR="#000000" BACKGROUND_COLOR="#ffffff" STYLE="as_parent" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" TEXT_WRITING_DIRECTION="LEFT_TO_RIGHT" CHILD_NODES_LAYOUT="AUTO" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1 px" BORDER_COLOR_LIKE_EDGE="true" BORDER_COLOR="#808080" BORDER_DASH_LIKE_EDGE="false" BORDER_DASH="SOLID">
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_168525555" STARTARROW="DEFAULT" ENDARROW="NONE"/>
 <font NAME="Gisha" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="bezier" COLOR="#808080" WIDTH="thin"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/html"/>
-<richcontent CONTENT-TYPE="plain/html" TYPE="DETAILS"/>
+<richcontent TYPE="DETAILS" CONTENT-TYPE="plain/html"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details" COLOR="#006666">
 <font NAME="Tahoma" SIZE="7" ITALIC="false"/>
@@ -75,6 +87,26 @@
 </stylenode>
 <stylenode TEXT="notMovedRenamed" ID="ID_738909208" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3 px">
 <icon BUILTIN="emoji-26D4"/>
+</stylenode>
+<stylenode TEXT="moveToTrash" ID="ID_82852427" BACKGROUND_COLOR="#e0e000">
+<icon BUILTIN="emoji-1F6AE"/>
+<font STRIKETHROUGH="false" ITALIC="true"/>
+</stylenode>
+<stylenode TEXT="trashFolder" ID="ID_1551887131" BACKGROUND_COLOR="#e0e000" STYLE="rectangle" BORDER_WIDTH="3 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#c61b26">
+<icon BUILTIN="emoji-1F5D1"/>
+</stylenode>
+<stylenode TEXT="MDI_mindMap" BACKGROUND_COLOR="#a0bbff">
+<icon BUILTIN="emoji-1F4BD"/>
+<font BOLD="true"/>
+</stylenode>
+<stylenode TEXT="MoM_mindMap">
+<icon BUILTIN="Menu-o-Matic/MoM_dialog"/>
+</stylenode>
+<stylenode TEXT="mindMapWithGroovyScripts">
+<icon BUILTIN="groovyNode/groovy-G"/>
+</stylenode>
+<stylenode TEXT="mindMapWithLinksToGroovyFiles">
+<icon BUILTIN="groovyNode/pl-groovy-02"/>
 </stylenode>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">

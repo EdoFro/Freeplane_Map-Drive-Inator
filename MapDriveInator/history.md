@@ -1,8 +1,14 @@
 # History
 
+## v0.0.15
+
+* WIP
+* better grouping script
+
 ## v0.0.14
 
 * timeStamps are not longer added to folder nodes
+* 'Import just folders' now asks allways how many levels do you want to import
 
 ## v.0.0.13
 

@@ -26,8 +26,15 @@ def importFoldersFromDrive(rootNode){
     def rootPath = MDI.getPathFromLink(rootNode)
     def excludedDirs = MDI.excludedFolders(rootNode)
     def sortByTypeThenName = { a, b -> a.isFile() != b.isFile() ? a.isFile() <=> b.isFile() : a.name <=> b.name }
-    def maxD = MDI.getMaxDepth(rootNode,0)
-    
+    def msg = 'Please input the maximum level (depth) of folders to explore.\n\nInteger bigger or equal to -1\n -1: No limit\n  0: first level\n  1: two levels\n  and so on...'
+    String resp
+    do{
+        resp = ui.showInputDialog(node.delegate ,msg ,MDI.getMaxDepth(rootNode,0).toString())
+        if(!resp)
+            return 'aborted by user'
+    } while (!(resp.isInteger() && resp.toInteger()>=-1))
+    def maxD = resp.toInteger()
+
     new File(rootPath).traverse(
         type         : FileType.DIRECTORIES,
         maxDepth     : maxD,
@@ -43,9 +50,9 @@ def importFoldersFromDrive(rootNode){
 def addFolderNode(f) {
     def nodoDonde = baseFolderNode
     def gPath = baseFolderPath
-    (f - baseFolderPath)?.split(Pattern.quote(File.separator)).each{String dir -> //TODO: linux
-        gPath +=  dir << File.separator //TODO: linux
-        nodoDonde = nodoDonde.find{it.text == dir && (it.link?.file?.path + File.separator) == gPath }[0]?:nodoDonde.createChild() //TODO: linux
+    (f - baseFolderPath)?.split(Pattern.quote(File.separator)).each{String dir ->
+        gPath +=  dir << File.separator
+        nodoDonde = nodoDonde.find{it.text == dir && (it.link?.file?.path + File.separator) == gPath }[0]?:nodoDonde.createChild()
         if(nodoDonde.text==''){
             nodoDonde.text=dir
             if(doMarkAsNew) {MDI.markAsNew(nodoDonde, true)}

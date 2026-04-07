@@ -4,13 +4,16 @@
 //println "------------------------ grouping nodes ------------------------------"
 
 gCases = 'Ext,creation YearMonth,creation Year,lastAccess YearMonth,lastAccess Year,lastModified YearMonth,lastModified Year'.split(',')
+groupAttribute = 'group'
 
 nodo = node
 def groupingCase = getGroupingCase()
 if (groupingCase){
-    def nodos =  nodo.children
+    def nodos =  nodo.children.findAll{it[groupAttribute]?false:true}
+    def existingGroups = nodo.children.findAll{it[groupAttribute]?true:false}
     def grupos = addGrupos(nodos,[], groupingCase).sort() //creates list of strings with groupTexts. Starts with an empty list
-    def groupNodes = createGroupNodes(nodo, grupos, firstWord(groupingCase)) //creates a node for each groupText and adds it to this list
+    grupos -= existingGroups*.text
+    def groupNodes = createGroupNodes(nodo, grupos, firstWord(groupingCase)) + existingGroups//creates a node for each groupText and adds it to this list
     //moves each node to its corresponding groupNode
     groupNodes.each{gn ->
         def cond = gn.text
@@ -101,7 +104,7 @@ def createGroupNodes(n,groups, detailsTxt){
     groups.each{g ->
         def gn = n.createChild(g)
         gn.details = detailsTxt
-        gn['group'] = true
+        gn[groupAttribute] = true
         nods << gn
     }
     return nods
@@ -113,4 +116,3 @@ def firstWord(s){
     def i=s.indexOf(' ')
     return i>0?s.substring(0,i):s //if no space then returns the whole string
 }
-

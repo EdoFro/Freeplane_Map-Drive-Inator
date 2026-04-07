@@ -1,5 +1,5 @@
 
-//region: =================== IMPORTING LIBS ===========================
+//region =================== IMPORTING LIBS ===========================
 import groovy.transform.EqualsAndHashCode
 // import groovy.io.FileType
 // import groovy.io.FileVisitResult
@@ -9,9 +9,9 @@ import java.util.regex.Pattern
 import org.freeplane.main.addons.AddOnsController
 import org.freeplane.core.util.LogUtils
 
-//end:
+//endregion
 
-//region: =================== DEFINING CLASSES =========================
+//region =================== DEFINING CLASSES =========================
 @EqualsAndHashCode
 class xFile {
     String id
@@ -24,11 +24,11 @@ class xFile {
         this.path = path
     }
 }
-//end:
+//endregion
 
-//region: =================== MAIN SCRIPT ==============================
+//region =================== MAIN SCRIPT ==============================
 
-    //region: ---------------------- Initial Setup 1 ------------------------------
+    //region ---------------------- Initial Setup 1 ------------------------------
 
 // c.statusInfo = '    -->   Map-Drive-Inator    --   Initial Setup 1    ';
 def modoDebug = false
@@ -53,20 +53,20 @@ if(!MDI.mapHasMinTemplate(node.map)){
     templateOutdated = true
 }
 
-    //region: --------------------- Log MDI -------------------------------------
+    //region --------------------- Log MDI -------------------------------------
 log
     << "MDI debug info:\n"
     << " - Installed MDI addon version : ${installedVersion}\n"
     << " - MDI library version         : ${mdiVersion}\n"
     << " - This map's path             : ${node.mindMap.file.path}\n"
 logger.info(log.toString())
-    //end:
+    //endregion
 //---define nodo Base
 def baseFolderNode = MDI.obtainBaseFolder(node)
-    //end: ------------------------------------------------------------------
+    //endregion ------------------------------------------------------------------
 
 if(baseFolderNode){
-    //region: --------------------- Log baseFolderNode -------------------------------------
+    //region --------------------- Log baseFolderNode -------------------------------------
     log
         << " - baseFolder's uri path       : ${baseFolderNode.link.uri?.path}\n"
         << " - baseFolder's path           : ${baseFolderNode.link.file?.path}\n"
@@ -78,9 +78,9 @@ if(baseFolderNode){
     }
     logger.info(log.toString())
 
-    //end:
+    //endregion
     
-    //region: ---------------------- Initial Setup 2 ------------------------------
+    //region ---------------------- Initial Setup 2 ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Initial Setup 2    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Initial Setup 2    ');
     //obtener nodo nueva importación
@@ -103,9 +103,9 @@ if(baseFolderNode){
     def checkIfBroken = MDI.checkIfReallyBroken(baseFolderNode)
 
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
-    //end: ------------------------------------------------------------------
+    //endregion ------------------------------------------------------------------
 
-    //region: ---------------------- Obteniendo Info En Nodos De Files Y Folders ------------------------------
+    //region ---------------------- Obteniendo Info En Nodos De Files Y Folders ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Obteniendo Info En Nodos De Files Y Folders    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('arma Listado de Rutas nodos').append("\n")
@@ -117,10 +117,10 @@ if(baseFolderNode){
     if(modoDebug)  ui.informationMessage("después de llamar 'armaListadoRutas'")
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    //end:   ------------------------------------------------------------------
+    //endregion   ------------------------------------------------------------------
 
-    //region: ---------------------- Actualizando Files ------------------------------
-    //region: __________________________- sacar listados desde nodos xSingles
+    //region ---------------------- Actualizando Files ------------------------------
+    //region __________________________- sacar listados desde nodos xSingles
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados desde nodos xSingles    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados desde nodos xSingles    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('saca listados de informacion en nodos xSingles').append("\n")
@@ -140,9 +140,9 @@ if(baseFolderNode){
     def listInConsPath  = xInconsistentes.collect{it.path}
 
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
-    //end:
+    //endregion
 
-    //region: __________________________- sacar listados desde nodos xClones
+    //region __________________________- sacar listados desde nodos xClones
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados desde nodos xClones    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados desde nodos xClones    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('saca listados de informacion en nodos xClones').append("\n")
@@ -151,9 +151,9 @@ if(baseFolderNode){
     def listClonCons = xClonesConsistentes.collect{it.link}
 
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
-    //end:
+    //endregion
 
-    //region: __________________________- sacar listados drive
+    //region __________________________- sacar listados drive
     //---saca listados de información en drive --------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados drive    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> sacar listados drive    ');
@@ -163,9 +163,9 @@ if(baseFolderNode){
     
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end:
+    //endregion
 
-    //region: __________________________- obteniendo sublistas de files
+    //region __________________________- obteniendo sublistas de files
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('obteniendo sublistas').append("\n")
@@ -175,9 +175,9 @@ if(baseFolderNode){
     def filesNOK      = listFiles - (listCons + listClonCons) //quitando las que pueden estar ok con nodos clones 'consistentes'
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end:
+    //endregion
 
-    //region: __________________________- obtener listado de clones pendientes
+    //region __________________________- obtener listado de clones pendientes
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones pendientes    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones pendientes    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('obtener listado de clones pendientes').append("\n")
@@ -196,9 +196,9 @@ if(baseFolderNode){
 
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end:
+    //endregion
 
-    //region: __________________________- obtener listado de clones inconsistentes
+    //region __________________________- obtener listado de clones inconsistentes
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones inconsistentes    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obtener listado de clones inconsistentes    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('obtener listado de clones inconsistentes').append("\n")
@@ -215,9 +215,9 @@ if(baseFolderNode){
 
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end:
+    //endregion
 
-    //region: __________________________- obteniendo sublistas de xInconsistentes
+    //region __________________________- obteniendo sublistas de xInconsistentes
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas de xInconsistentes    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas de xInconsistentes    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('obteniendo sublistas de xInconsistentes').append("\n")
@@ -229,9 +229,9 @@ if(baseFolderNode){
     def filesNOK2 = filesNOK - xLinkOk*.link.flatten() - xPathOk*.path.flatten()
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    // end:
+    //endregion
 
-    //region: __________________________- obteniendo sublistas de xClonesInconsistentes
+    //region __________________________- obteniendo sublistas de xClonesInconsistentes
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas de xClonesInconsistentes    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> obteniendo sublistas de xClonesInconsistentes    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('obteniendo sublistas de xClonesInconsistentes').append("\n")
@@ -283,9 +283,9 @@ if(baseFolderNode){
     
     
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
-    // end:
+    //endregion
 
-    //region: __________________________- aplicando acciones FILES
+    //region __________________________- aplicando acciones FILES
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Files --> aplicando acciones FILES    '; 
     if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Files --> aplicando acciones FILES    ');
     if(wantToLogLevel >= 6) texto.append('\n aplicando acciones FILES\n')
@@ -295,7 +295,7 @@ if(baseFolderNode){
         << (new SimpleDateFormat("yyyy-MM-dd  HH:mm:ss").format(new Date()))
         << '\n\n------- Files: -------- '
     
-    //region: _______________________________- filesOK               --> desmarcar marcas anteriores
+    //region _______________________________- filesOK               --> desmarcar marcas anteriores
     (xConsistentes + xClonesConsistentes).findAll{it.path in filesOK}.each{x ->
         def nodo = N(x.id) 
         MDI.markAsMoved(nodo,false)
@@ -303,7 +303,9 @@ if(baseFolderNode){
         MDI.markAsNotMoved(nodo,false)
     }
 
-    //region: _______________________________- nodos sin files       --> marcar nodos como con error
+    //endregion
+
+    //region _______________________________- nodos sin files       --> marcar nodos como con error
     // c.select( nodosSinFile.collect{ N(it.id)})
     if(modoDebug) ui.showMessage('nodos sin files --> marcar nodos como con error \n\n' + nodosSinFile as String,1)
     // texto.append("\n").append('B) nodos sin files --> marcar nodos como con error \n\n' + nodosSinFile as String)
@@ -314,9 +316,9 @@ if(baseFolderNode){
         nodo = N(x.id)
         MDI.markAsBroken(nodo,true,checkIfBroken)
     }
-    //end:
+    //endregion
 
-    //region: _______________________________- path y file coinciden --> corregir links
+    //region _______________________________- path y file coinciden --> corregir links
     // sacar de update folder
     // c.select( (xPathOk + xClonPathOk).collect{ N(it.id)})
     if(modoDebug) ui.showMessage('path y file coinciden --> corregir links \n\n' + (xPathOk + xClonPathOk) as String,1)
@@ -334,9 +336,9 @@ if(baseFolderNode){
         //if(!nodo.icons.contains('pencil')){nodo.icons.add('pencil')}
     }
 
-    //end:
+    //endregion
 
-    //region: _______________________________- files sin nodos       --> importar como nodos
+    //region _______________________________- files sin nodos       --> importar como nodos
     if(modoDebug) ui.showMessage('A - files sin nodos --> importar como nodos \n\n' + filesSinNodos as String,1)
     // texto.append("\n\n").append('A) files sin nodos --> importar como nodos \n\n' + filesSinNodos as String)
     textoReport.append("\n ${filesSinNodos.size()} new file(s) imported as node(s) ")
@@ -364,9 +366,9 @@ if(baseFolderNode){
 
 
 
-    //end:
+    //endregion
 
-    //region: _______________________________- path cambió en mapa   --> ejecutar cambio en disco
+    //region _______________________________- path cambió en mapa   --> ejecutar cambio en disco
     // sacar de update folder
 
     // c.select( (xClonLinkOkChosen + xLinkOk + nodosConFileEnOtraParte).collect{ N(it.id)})
@@ -408,16 +410,16 @@ if(baseFolderNode){
     logger.info(   "MDI: Moved/renamed files in drive: ${iMoved}\n"                  + logMoved.toString()   )
     logger.warning("MDI: 'Couldn't be moved/renamed' files in drive: ${iNotMoved}\n" + logNotMoved.toString())
     
-    //end:
+    //endregion
 
     textoReport.append("\n\n")
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    //end:
+    //endregion
 
-    //end:  ------------------------------------------------------------------
+    //endregion  ------------------------------------------------------------------
 
-    //region: ---------------------- Actualizando Folders ------------------------------
+    //region ---------------------- Actualizando Folders ------------------------------
     // c.statusInfo = '    -->   Map-Drive-Inator    --   Actualizando Folders    '; 
      if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Actualizando Folders    ');
     if(wantToLogLevel >= 6) texto.append("\n").append('ACTUALIZANDO FOLDERS').append("\n")
@@ -429,9 +431,9 @@ if(baseFolderNode){
 
     if(wantToLogLevel >= 6) texto.append((tIni - new Date().getTime()) as String).append("\n")
 
-    //end:  ------------------------------------------------------------------
+    //endregion  ------------------------------------------------------------------
 
-    //region: ---------------------- Visibilizar Avance En Nota De Nodo ------------------------------
+    //region ---------------------- Visibilizar Avance En Nota De Nodo ------------------------------
     if(wantToLogLevel >= 7){
         // c.statusInfo = '    -->   Map-Drive-Inator    --   Visibilizar Avance En Nota De Nodo    ';
         if(modoDebug) ui.informationMessage('    -->   Map-Drive-Inator    --   Visibilizar Avance En Nota De Nodo    ');
@@ -585,9 +587,9 @@ if(baseFolderNode){
             texto << "  - ${it}\n"
         }
      }
-    //end:  ------------------------------------------------------------------
+    //endregion  ------------------------------------------------------------------
 
-    //region: ---------------------- limpiar variables ----------------------------------
+    //region ---------------------- limpiar variables ----------------------------------
 
     xSingles                =[]
     xClones                 =[]
@@ -624,9 +626,9 @@ if(baseFolderNode){
     nodosConFileEnOtraParte =[]
     nodosSinFile            =[]
 
-    //end:
+    //endregion
 
-    //region: ---------------------- Reporte Y Final Main ------------------------------
+    //region ---------------------- Reporte Y Final Main ------------------------------
 
     if(modoDebug) ui.informationMessage('---------------------- Reporte Y Final Main ------------------------------')
     textoReport.append((((new Date().getTime() - tIni)/100).toInteger()/10) as String).append(" seconds\n\n")
@@ -645,14 +647,14 @@ if(baseFolderNode){
     if (newFilesImported) c.select(nodeNewImports);
     MDI.statusInfo('    -------------   Map-Drive-Inated    -------------      ')
     // c.select(baseFolderNode);
-//end:  ------------------------------------------------------------------
+//endregion  ------------------------------------------------------------------
 }else{
     return
 }
 
-//end: ============================== fin: MAIN SCRIPT ============================================================
+//endregion ============================== fin: MAIN SCRIPT ============================================================
 
-//region: ---------------------- Armando Listados xFiles
+//region ---------------------- Armando Listados xFiles
 def armaListadoRutas(nodo, String path){
     nodo.children.findAll{!MDI.isLocked(it)}.each{
         //es file?--> agregar a listado
@@ -676,13 +678,13 @@ def armaListadoRutas(nodo, String path){
         }       
     }
 }
-//end:
+//endregion
 
-//region: ----- funciones a pasar a MDI
+//region ----- funciones a pasar a MDI
 
 
 def deleteNodesWithLinkToOther(n){
     n.find{it.link?.text?[0] == '#'}*.delete()
 }
 
-//end:
+//endregion
